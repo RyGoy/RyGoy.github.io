@@ -1,52 +1,326 @@
-<html>
 <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
-     
-</head>    
-<body>
-     
-    
-<nav class="flex border-b border-gray-200 bg-white sticky top-0" aria-label="Breadcrumb">
-    <ol role="list" class="mx-auto flex w-full max-w-screen-xl space-x-4 px-4 sm:px-6 lg:px-8">
-      <li class="flex">
-        <div class="flex items-center">
-          <a href="/" class="text-gray-400 hover:text-gray-500">
-            <svg class="h-5 w-5 flex-shrink-0" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-              <path fill-rule="evenodd" d="M9.293 2.293a1 1 0 011.414 0l7 7A1 1 0 0117 11h-1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-3a1 1 0 00-1-1H9a1 1 0 00-1 1v3a1 1 0 01-1 1H5a1 1 0 01-1-1v-6H3a1 1 0 01-.707-1.707l7-7z" clip-rule="evenodd" />
-            </svg>
-            <span class="sr-only">Home</span>
-          </a>
-        </div>
-      </li>
-      <li class="flex">
-        <div class="flex items-center">
-          <svg class="h-full w-6 flex-shrink-0 text-gray-200" viewBox="0 0 24 44" preserveAspectRatio="none" fill="currentColor" aria-hidden="true">
-            <path d="M.293 0l22 22-22 22h1.414l22-22-22-22H.293z" />
-          </svg>
-          <a href="/vol_iii/462493170453287_541366495899287/" class="ml-4 text-sm font-medium text-gray-500 hover:text-gray-700"></a>
-        </div>
-      </li>
-      <li class="flex">
-        <div class="flex items-center">
-          <svg class="h-full w-6 flex-shrink-0 text-gray-200" viewBox="0 0 24 44" preserveAspectRatio="none" fill="currentColor" aria-hidden="true">
-            <path d="M.293 0l22 22-22 22h1.414l22-22-22-22H.293z" />
-          </svg>
-          <a href="/vol_iii/462493170453287_541366495899287/" class="ml-4 text-sm font-medium text-gray-500 hover:text-gray-700" aria-current="page">462493170453287_541366495899287</a>
-        </div>
-      </li>
-    </ol>
-  </nav>
-  
-    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css" rel="stylesheet" />
+</head>
+<script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
+
 <html>
 <body>
+  
+<button data-drawer-target="sidebar-multi-level-sidebar" data-drawer-toggle="sidebar-multi-level-sidebar" aria-controls="sidebar-multi-level-sidebar" type="button" class=" sticky top-0 inline-flex items-center p-2 mt-2 ms-3 text-sm text-gray-500 rounded-lg sm:hidden bg-gray-100 hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600">
+  <span class="sr-only">Open sidebar</span>
+  <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+  <path clip-rule="evenodd" fill-rule="evenodd" d="M2 4.75A.75.75 0 012.75 4h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 4.75zm0 10.5a.75.75 0 01.75-.75h7.5a.75.75 0 010 1.5h-7.5a.75.75 0 01-.75-.75zM2 10a.75.75 0 01.75-.75h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 10z"></path>
+  </svg>
+</button>
+
+<aside id="sidebar-multi-level-sidebar" class="fixed top-0 left-0 z-40 w-64 h-screen transition-transform -translate-x-full sm:translate-x-0" aria-label="Sidebar">
+  <div class="h-full px-3 py-4 overflow-y-auto bg-gray-50 dark:bg-gray-800">
+     <ul class="space-y-2 font-medium">
+        <li>
+           <a href="/" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+              <svg class="w-5 h-5 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 21">
+                 <path d="M16.975 11H10V4.025a1 1 0 0 0-1.066-.998 8.5 8.5 0 1 0 9.039 9.039.999.999 0 0 0-1-1.066h.002Z"/>
+                 <path d="M12.5 0c-.157 0-.311.01-.565.027A1 1 0 0 0 11 1.02V10h8.975a1 1 0 0 0 1-.935c.013-.188.028-.374.028-.565A8.51 8.51 0 0 0 12.5 0Z"/>
+              </svg>
+              <span class="ms-3 text-3xl font-semibold">TTFL</span>
+           </a>
+        </li>
+        <li>
+           <button type="button" class="flex items-center w-full p-2 text-base text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700" aria-controls="dropdown-example" data-collapse-toggle="dropdown-example">
+                 <svg class="flex-shrink-0 w-5 h-5 text-gray-500 transition duration-75 group-hover:text-gray-900 dark:text-gray-400 dark:group-hover:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
+                  <path d="M2.5 3.5A1.5 1.5 0 0 1 4 2h4.879a1.5 1.5 0 0 1 1.06.44l3.122 3.12a1.5 1.5 0 0 1 .439 1.061V12.5A1.5 1.5 0 0 1 12 14H4a1.5 1.5 0 0 1-1.5-1.5v-9Z" />
+                  </svg>
+                
+                 <span class="flex-1 ms-3 text-left rtl:text-right whitespace-nowrap">Volumes</span>
+                 <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
+                 </svg>
+           </button>
+           
+           
+           <ul id="dropdown-example" class="hidden py-2 space-y-2">
+              
+                  
+              
+                  
+              
+                  
+              
+                  
+              
+                  
+              
+                  
+              
+                  
+              
+                  
+                      
+                      
+                          
+                          
+                          <li>
+                              <a href="/vol_i/" class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">Volume 1</a>
+                          </li>
+                      
+                  
+              
+                  
+                      
+                      
+                          
+                          
+                          <li>
+                              <a href="/vol_ii/" class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">Volume 2</a>
+                          </li>
+                      
+                  
+              
+                  
+                      
+                      
+                          
+                          
+                          <li>
+                              <a href="/vol_iii/" class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">Volume 3</a>
+                          </li>
+                      
+                  
+              
+                  
+                      
+                      
+                          
+                          
+                          <li>
+                              <a href="/vol_iv/" class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">Volume 4</a>
+                          </li>
+                      
+                  
+              
+                  
+                      
+                      
+                          
+                          
+                          <li>
+                              <a href="/vol_ix/" class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">Volume 9</a>
+                          </li>
+                      
+                  
+              
+                  
+                      
+                      
+                          
+                          
+                          <li>
+                              <a href="/vol_v/" class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">Volume 5</a>
+                          </li>
+                      
+                  
+              
+                  
+                      
+                      
+                          
+                          
+                          <li>
+                              <a href="/vol_vi/" class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">Volume 6</a>
+                          </li>
+                      
+                  
+              
+                  
+                      
+                      
+                          
+                          
+                          <li>
+                              <a href="/vol_vii/" class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">Volume 1</a>
+                          </li>
+                      
+                  
+              
+                  
+                      
+                      
+                          
+                          
+                          <li>
+                              <a href="/vol_viii/" class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">Volume 8</a>
+                          </li>
+                      
+                  
+              
+                  
+                      
+                      
+                          
+                          
+                          <li>
+                              <a href="/vol_x/" class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">Volume 10</a>
+                          </li>
+                      
+                  
+              
+                  
+                      
+                      
+                          
+                          
+                          <li>
+                              <a href="/vol_xi/" class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">Volume 11</a>
+                          </li>
+                      
+                  
+              
+                  
+                      
+                      
+                          
+                          
+                          <li>
+                              <a href="/vol_xii/" class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">Volume 12</a>
+                          </li>
+                      
+                  
+              
+                  
+                      
+                      
+                          
+                          
+                          <li>
+                              <a href="/vol_xiii/" class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">Volume 13</a>
+                          </li>
+                      
+                  
+              
+                  
+                      
+                      
+                          
+                          
+                          <li>
+                              <a href="/vol_xiv/" class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">Volume 14</a>
+                          </li>
+                      
+                  
+              
+           </ul>
+        </li>
+        <li>
+          <button type="button" class="flex items-center w-full p-2 text-base text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700" aria-controls="dropdown-example1" data-collapse-toggle="dropdown-example1">
+                <svg class="flex-shrink-0 w-5 h-5 text-gray-500 transition duration-75 group-hover:text-gray-900 dark:text-gray-400 dark:group-hover:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 0 0 6 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 0 1 6 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 0 1 6-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0 0 18 18a8.967 8.967 0 0 0-6 2.292m0-14.25v14.25" />
+                </svg>
+                <span class="flex-1 ms-3 text-left rtl:text-right whitespace-nowrap">Articles</span>
+                <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                   <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
+                </svg>
+          </button>
+          
+          
+          <ul id="dropdown-example1" class="hidden py-2 space-y-2">
+               
+               
+              
+                
+                  
+                  
+                     
+                         
+                          <li>
+                              <a href="/articles/chris-schulte/" class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">
+                                  Chris Schulte
+                              </a>
+                          </li>
+                      
+                  
+              
+                
+                  
+                  
+                     
+                         
+                          <li>
+                              <a href="/articles/scott-duncan/" class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">
+                                  Scott Duncan
+                              </a>
+                          </li>
+                      
+                  
+              
+                
+                  
+                  
+                     
+                         
+                          <li>
+                              <a href="/articles/tara-duncan/" class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">
+                                  Tara Duncan
+                              </a>
+                          </li>
+                      
+                  
+              
+                
+                  
+                  
+                     
+                         
+                          <li>
+                              <a href="/articles/various-authors/" class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">
+                                  Various Authors
+                              </a>
+                          </li>
+                      
+                  
+              
+          </ul>
+       </li>
+        <li>
+           <a href="/accounting" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+
+              <span class="flex-1 ms-3 whitespace-nowrap">Accounting</span>
+           </a>
+        </li>
+        <li>
+           <a href="/agency" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+              <span class="flex-1 ms-3 whitespace-nowrap">Agency</span>
+           </a>
+        </li>
+        <li>
+           <a href="/bills-of-exchange" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+              <span class="flex-1 ms-3 whitespace-nowrap">Bills of Exchange</span>
+           </a>
+        </li>
+        <li>
+           <a href="/insurance" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+              <span class="flex-1 ms-3 whitespace-nowrap">Insurance</span>
+           </a>
+        </li>
+        <li>
+           <a href="/title&property" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+              <span class="flex-1 ms-3 whitespace-nowrap">Title and Property</span>
+           </a>
+        </li>
+     </ul>
+  </div>
+</aside>
+
+  <div class="p-4 sm:ml-64">
+    <div class="p-4 border-2 border-gray-200 border-dashed rounded-lg dark:border-gray-700">
+      
     
-       
-    
-    
-    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 overflow-hidden rounded-lg bg-white shadow">
-      <div class="px-4 py-5 sm:p-6">
-         
-         <div>
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 overflow-hidden rounded-lg bg-white shadow">
+        <div class="px-4 py-5 sm:p-6">
+           
+           <div>
   <div>
     <h2 class="text-xl">Scott Duncan</h2>
     
@@ -94,27 +368,26 @@
     </div>
   </div>
 </div> 
-      </div>
-      <div class="mx-auto max-w-3xl bg-gray-50 px-4 py-4 sm:px-6">
-        
-        
-        <div>
+        </div>
+        <div class="mx-auto max-w-3xl px-4 py-4 sm:px-6">
           
+          
+          <div>
+            
 <div>
      
     <a>Unique ID: 541369069232363<br>Parent ID: 462493170453287_541366495899287</a>
     
 </div> 
+          </div>
         </div>
-      </div>
-    </div><br><br>
+      </div><br><br>
+          
     
-        
-    
-    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 overflow-hidden rounded-lg bg-white shadow">
-      <div class="px-4 py-5 sm:p-6">
-         
-         <div>
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 overflow-hidden rounded-lg bg-white shadow">
+        <div class="px-4 py-5 sm:p-6">
+           
+           <div>
   <div>
     <h2 class="text-xl">John Quicktree Muellers</h2>
     
@@ -162,27 +435,26 @@
     </div>
   </div>
 </div> 
-      </div>
-      <div class="mx-auto max-w-3xl bg-gray-50 px-4 py-4 sm:px-6">
-        
-        
-        <div>
+        </div>
+        <div class="mx-auto max-w-3xl px-4 py-4 sm:px-6">
           
+          
+          <div>
+            
 <div>
      
     <a>Unique ID: 541369325899004<br>Parent ID: 462493170453287_541366495899287</a>
     
 </div> 
+          </div>
         </div>
-      </div>
-    </div><br><br>
+      </div><br><br>
+          
     
-        
-    
-    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 overflow-hidden rounded-lg bg-white shadow">
-      <div class="px-4 py-5 sm:p-6">
-         
-         <div>
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 overflow-hidden rounded-lg bg-white shadow">
+        <div class="px-4 py-5 sm:p-6">
+           
+           <div>
   <div>
     <h2 class="text-xl">John Quicktree Muellers</h2>
     
@@ -230,27 +502,26 @@
     </div>
   </div>
 </div> 
-      </div>
-      <div class="mx-auto max-w-3xl bg-gray-50 px-4 py-4 sm:px-6">
-        
-        
-        <div>
+        </div>
+        <div class="mx-auto max-w-3xl px-4 py-4 sm:px-6">
           
+          
+          <div>
+            
 <div>
      
     <a>Unique ID: 541369545898982<br>Parent ID: 462493170453287_541366495899287</a>
     
 </div> 
+          </div>
         </div>
-      </div>
-    </div><br><br>
+      </div><br><br>
+          
     
-        
-    
-    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 overflow-hidden rounded-lg bg-white shadow">
-      <div class="px-4 py-5 sm:p-6">
-         
-         <div>
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 overflow-hidden rounded-lg bg-white shadow">
+        <div class="px-4 py-5 sm:p-6">
+           
+           <div>
   <div>
     <h2 class="text-xl">Steven Sharp</h2>
     
@@ -298,27 +569,26 @@
     </div>
   </div>
 </div> 
-      </div>
-      <div class="mx-auto max-w-3xl bg-gray-50 px-4 py-4 sm:px-6">
-        
-        
-        <div>
+        </div>
+        <div class="mx-auto max-w-3xl px-4 py-4 sm:px-6">
           
+          
+          <div>
+            
 <div>
      
     <a>Unique ID: 541369815898955<br>Parent ID: 462493170453287_541366495899287</a>
     
 </div> 
+          </div>
         </div>
-      </div>
-    </div><br><br>
+      </div><br><br>
+          
     
-        
-    
-    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 overflow-hidden rounded-lg bg-white shadow">
-      <div class="px-4 py-5 sm:p-6">
-         
-         <div>
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 overflow-hidden rounded-lg bg-white shadow">
+        <div class="px-4 py-5 sm:p-6">
+           
+           <div>
   <div>
     <h2 class="text-xl">Andrew Ingalls Watson</h2>
     
@@ -366,27 +636,26 @@
     </div>
   </div>
 </div> 
-      </div>
-      <div class="mx-auto max-w-3xl bg-gray-50 px-4 py-4 sm:px-6">
-        
-        
-        <div>
+        </div>
+        <div class="mx-auto max-w-3xl px-4 py-4 sm:px-6">
           
+          
+          <div>
+            
 <div>
      
     <a>Unique ID: 541370045898932<br>Parent ID: 462493170453287_541366495899287</a>
     
 </div> 
+          </div>
         </div>
-      </div>
-    </div><br><br>
+      </div><br><br>
+          
     
-        
-    
-    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 overflow-hidden rounded-lg bg-white shadow">
-      <div class="px-4 py-5 sm:p-6">
-         
-         <div>
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 overflow-hidden rounded-lg bg-white shadow">
+        <div class="px-4 py-5 sm:p-6">
+           
+           <div>
   <div>
     <h2 class="text-xl">Adam Thomas</h2>
     
@@ -436,27 +705,26 @@ Lol...lol..hahaha....I can go on n on forever....what the hell were those women 
     </div>
   </div>
 </div> 
-      </div>
-      <div class="mx-auto max-w-3xl bg-gray-50 px-4 py-4 sm:px-6">
-        
-        
-        <div>
+        </div>
+        <div class="mx-auto max-w-3xl px-4 py-4 sm:px-6">
           
+          
+          <div>
+            
 <div>
      
     <a>Unique ID: 541372675898669<br>Parent ID: 462493170453287_541366495899287</a>
     
 </div> 
+          </div>
         </div>
-      </div>
-    </div><br><br>
+      </div><br><br>
+          
     
-        
-    
-    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 overflow-hidden rounded-lg bg-white shadow">
-      <div class="px-4 py-5 sm:p-6">
-         
-         <div>
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 overflow-hidden rounded-lg bg-white shadow">
+        <div class="px-4 py-5 sm:p-6">
+           
+           <div>
   <div>
     <h2 class="text-xl">Adam Thomas</h2>
     
@@ -505,27 +773,26 @@ Any jesus freaks in here??
     </div>
   </div>
 </div> 
-      </div>
-      <div class="mx-auto max-w-3xl bg-gray-50 px-4 py-4 sm:px-6">
-        
-        
-        <div>
+        </div>
+        <div class="mx-auto max-w-3xl px-4 py-4 sm:px-6">
           
+          
+          <div>
+            
 <div>
      
     <a>Unique ID: 541373005898636<br>Parent ID: 462493170453287_541366495899287</a>
     
 </div> 
+          </div>
         </div>
-      </div>
-    </div><br><br>
+      </div><br><br>
+          
     
-        
-    
-    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 overflow-hidden rounded-lg bg-white shadow">
-      <div class="px-4 py-5 sm:p-6">
-         
-         <div>
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 overflow-hidden rounded-lg bg-white shadow">
+        <div class="px-4 py-5 sm:p-6">
+           
+           <div>
   <div>
     <h2 class="text-xl">Steven Sharp</h2>
     
@@ -577,27 +844,26 @@ Also, not a jesus freak.
     </div>
   </div>
 </div> 
-      </div>
-      <div class="mx-auto max-w-3xl bg-gray-50 px-4 py-4 sm:px-6">
-        
-        
-        <div>
+        </div>
+        <div class="mx-auto max-w-3xl px-4 py-4 sm:px-6">
           
+          
+          <div>
+            
 <div>
      
     <a>Unique ID: 541381812564422<br>Parent ID: 462493170453287_541366495899287</a>
     
 </div> 
+          </div>
         </div>
-      </div>
-    </div><br><br>
+      </div><br><br>
+          
     
-        
-    
-    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 overflow-hidden rounded-lg bg-white shadow">
-      <div class="px-4 py-5 sm:p-6">
-         
-         <div>
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 overflow-hidden rounded-lg bg-white shadow">
+        <div class="px-4 py-5 sm:p-6">
+           
+           <div>
   <div>
     <h2 class="text-xl">Steven Sharp</h2>
     
@@ -645,27 +911,26 @@ Also, not a jesus freak.
     </div>
   </div>
 </div> 
-      </div>
-      <div class="mx-auto max-w-3xl bg-gray-50 px-4 py-4 sm:px-6">
-        
-        
-        <div>
+        </div>
+        <div class="mx-auto max-w-3xl px-4 py-4 sm:px-6">
           
+          
+          <div>
+            
 <div>
      
     <a>Unique ID: 541382302564373<br>Parent ID: 462493170453287_541366495899287</a>
     
 </div> 
+          </div>
         </div>
-      </div>
-    </div><br><br>
+      </div><br><br>
+          
     
-        
-    
-    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 overflow-hidden rounded-lg bg-white shadow">
-      <div class="px-4 py-5 sm:p-6">
-         
-         <div>
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 overflow-hidden rounded-lg bg-white shadow">
+        <div class="px-4 py-5 sm:p-6">
+           
+           <div>
   <div>
     <h2 class="text-xl">Pete Daoust</h2>
     
@@ -713,27 +978,26 @@ Also, not a jesus freak.
     </div>
   </div>
 </div> 
-      </div>
-      <div class="mx-auto max-w-3xl bg-gray-50 px-4 py-4 sm:px-6">
-        
-        
-        <div>
+        </div>
+        <div class="mx-auto max-w-3xl px-4 py-4 sm:px-6">
           
+          
+          <div>
+            
 <div>
      
     <a>Unique ID: 541384765897460<br>Parent ID: 462493170453287_541366495899287</a>
     
 </div> 
+          </div>
         </div>
-      </div>
-    </div><br><br>
+      </div><br><br>
+          
     
-        
-    
-    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 overflow-hidden rounded-lg bg-white shadow">
-      <div class="px-4 py-5 sm:p-6">
-         
-         <div>
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 overflow-hidden rounded-lg bg-white shadow">
+        <div class="px-4 py-5 sm:p-6">
+           
+           <div>
   <div>
     <h2 class="text-xl">Pete Daoust</h2>
     
@@ -781,27 +1045,26 @@ Also, not a jesus freak.
     </div>
   </div>
 </div> 
-      </div>
-      <div class="mx-auto max-w-3xl bg-gray-50 px-4 py-4 sm:px-6">
-        
-        
-        <div>
+        </div>
+        <div class="mx-auto max-w-3xl px-4 py-4 sm:px-6">
           
+          
+          <div>
+            
 <div>
      
     <a>Unique ID: 541386545897282<br>Parent ID: 462493170453287_541366495899287</a>
     
 </div> 
+          </div>
         </div>
-      </div>
-    </div><br><br>
+      </div><br><br>
+          
     
-        
-    
-    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 overflow-hidden rounded-lg bg-white shadow">
-      <div class="px-4 py-5 sm:p-6">
-         
-         <div>
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 overflow-hidden rounded-lg bg-white shadow">
+        <div class="px-4 py-5 sm:p-6">
+           
+           <div>
   <div>
     <h2 class="text-xl">Dino Disenfranchised</h2>
     
@@ -849,27 +1112,26 @@ Also, not a jesus freak.
     </div>
   </div>
 </div> 
-      </div>
-      <div class="mx-auto max-w-3xl bg-gray-50 px-4 py-4 sm:px-6">
-        
-        
-        <div>
+        </div>
+        <div class="mx-auto max-w-3xl px-4 py-4 sm:px-6">
           
+          
+          <div>
+            
 <div>
      
     <a>Unique ID: 541390309230239<br>Parent ID: 462493170453287_541366495899287</a>
     
 </div> 
+          </div>
         </div>
-      </div>
-    </div><br><br>
+      </div><br><br>
+          
     
-        
-    
-    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 overflow-hidden rounded-lg bg-white shadow">
-      <div class="px-4 py-5 sm:p-6">
-         
-         <div>
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 overflow-hidden rounded-lg bg-white shadow">
+        <div class="px-4 py-5 sm:p-6">
+           
+           <div>
   <div>
     <h2 class="text-xl">Pete Daoust</h2>
     
@@ -917,27 +1179,26 @@ Also, not a jesus freak.
     </div>
   </div>
 </div> 
-      </div>
-      <div class="mx-auto max-w-3xl bg-gray-50 px-4 py-4 sm:px-6">
-        
-        
-        <div>
+        </div>
+        <div class="mx-auto max-w-3xl px-4 py-4 sm:px-6">
           
+          
+          <div>
+            
 <div>
      
     <a>Unique ID: 541390762563527<br>Parent ID: 462493170453287_541366495899287</a>
     
 </div> 
+          </div>
         </div>
-      </div>
-    </div><br><br>
+      </div><br><br>
+          
     
-        
-    
-    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 overflow-hidden rounded-lg bg-white shadow">
-      <div class="px-4 py-5 sm:p-6">
-         
-         <div>
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 overflow-hidden rounded-lg bg-white shadow">
+        <div class="px-4 py-5 sm:p-6">
+           
+           <div>
   <div>
     <h2 class="text-xl">Dino Disenfranchised</h2>
     
@@ -987,27 +1248,26 @@ If there ever was, or still is, a Creator, would it believe in itself or would i
     </div>
   </div>
 </div> 
-      </div>
-      <div class="mx-auto max-w-3xl bg-gray-50 px-4 py-4 sm:px-6">
-        
-        
-        <div>
+        </div>
+        <div class="mx-auto max-w-3xl px-4 py-4 sm:px-6">
           
+          
+          <div>
+            
 <div>
      
     <a>Unique ID: 541392192563384<br>Parent ID: 462493170453287_541366495899287</a>
     
 </div> 
+          </div>
         </div>
-      </div>
-    </div><br><br>
+      </div><br><br>
+          
     
-        
-    
-    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 overflow-hidden rounded-lg bg-white shadow">
-      <div class="px-4 py-5 sm:p-6">
-         
-         <div>
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 overflow-hidden rounded-lg bg-white shadow">
+        <div class="px-4 py-5 sm:p-6">
+           
+           <div>
   <div>
     <h2 class="text-xl">Pete Daoust</h2>
     
@@ -1055,27 +1315,26 @@ If there ever was, or still is, a Creator, would it believe in itself or would i
     </div>
   </div>
 </div> 
-      </div>
-      <div class="mx-auto max-w-3xl bg-gray-50 px-4 py-4 sm:px-6">
-        
-        
-        <div>
+        </div>
+        <div class="mx-auto max-w-3xl px-4 py-4 sm:px-6">
           
+          
+          <div>
+            
 <div>
      
     <a>Unique ID: 541392345896702<br>Parent ID: 462493170453287_541366495899287</a>
     
 </div> 
+          </div>
         </div>
-      </div>
-    </div><br><br>
+      </div><br><br>
+          
     
-        
-    
-    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 overflow-hidden rounded-lg bg-white shadow">
-      <div class="px-4 py-5 sm:p-6">
-         
-         <div>
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 overflow-hidden rounded-lg bg-white shadow">
+        <div class="px-4 py-5 sm:p-6">
+           
+           <div>
   <div>
     <h2 class="text-xl">Dino Disenfranchised</h2>
     
@@ -1123,27 +1382,26 @@ If there ever was, or still is, a Creator, would it believe in itself or would i
     </div>
   </div>
 </div> 
-      </div>
-      <div class="mx-auto max-w-3xl bg-gray-50 px-4 py-4 sm:px-6">
-        
-        
-        <div>
+        </div>
+        <div class="mx-auto max-w-3xl px-4 py-4 sm:px-6">
           
+          
+          <div>
+            
 <div>
      
     <a>Unique ID: 541392875896649<br>Parent ID: 462493170453287_541366495899287</a>
     
 </div> 
+          </div>
         </div>
-      </div>
-    </div><br><br>
+      </div><br><br>
+          
     
-        
-    
-    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 overflow-hidden rounded-lg bg-white shadow">
-      <div class="px-4 py-5 sm:p-6">
-         
-         <div>
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 overflow-hidden rounded-lg bg-white shadow">
+        <div class="px-4 py-5 sm:p-6">
+           
+           <div>
   <div>
     <h2 class="text-xl">Pete Daoust</h2>
     
@@ -1191,27 +1449,26 @@ If there ever was, or still is, a Creator, would it believe in itself or would i
     </div>
   </div>
 </div> 
-      </div>
-      <div class="mx-auto max-w-3xl bg-gray-50 px-4 py-4 sm:px-6">
-        
-        
-        <div>
+        </div>
+        <div class="mx-auto max-w-3xl px-4 py-4 sm:px-6">
           
+          
+          <div>
+            
 <div>
      
     <a>Unique ID: 541392929229977<br>Parent ID: 462493170453287_541366495899287</a>
     
 </div> 
+          </div>
         </div>
-      </div>
-    </div><br><br>
+      </div><br><br>
+          
     
-        
-    
-    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 overflow-hidden rounded-lg bg-white shadow">
-      <div class="px-4 py-5 sm:p-6">
-         
-         <div>
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 overflow-hidden rounded-lg bg-white shadow">
+        <div class="px-4 py-5 sm:p-6">
+           
+           <div>
   <div>
     <h2 class="text-xl">Scott Duncan</h2>
     
@@ -1261,27 +1518,26 @@ I just wondered who all these people are that are so interested in what I have t
     </div>
   </div>
 </div> 
-      </div>
-      <div class="mx-auto max-w-3xl bg-gray-50 px-4 py-4 sm:px-6">
-        
-        
-        <div>
+        </div>
+        <div class="mx-auto max-w-3xl px-4 py-4 sm:px-6">
           
+          
+          <div>
+            
 <div>
      
     <a>Unique ID: 541400305895906<br>Parent ID: 462493170453287_541366495899287</a>
     
 </div> 
+          </div>
         </div>
-      </div>
-    </div><br><br>
+      </div><br><br>
+          
     
-        
-    
-    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 overflow-hidden rounded-lg bg-white shadow">
-      <div class="px-4 py-5 sm:p-6">
-         
-         <div>
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 overflow-hidden rounded-lg bg-white shadow">
+        <div class="px-4 py-5 sm:p-6">
+           
+           <div>
   <div>
     <h2 class="text-xl">Scott Duncan</h2>
     
@@ -1333,27 +1589,26 @@ I just wondered who all these people are that are so interested in what I have t
     </div>
   </div>
 </div> 
-      </div>
-      <div class="mx-auto max-w-3xl bg-gray-50 px-4 py-4 sm:px-6">
-        
-        
-        <div>
+        </div>
+        <div class="mx-auto max-w-3xl px-4 py-4 sm:px-6">
           
+          
+          <div>
+            
 <div>
      
     <a>Unique ID: 541402249229045<br>Parent ID: 462493170453287_541366495899287</a>
     
 </div> 
+          </div>
         </div>
-      </div>
-    </div><br><br>
+      </div><br><br>
+          
     
-        
-    
-    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 overflow-hidden rounded-lg bg-white shadow">
-      <div class="px-4 py-5 sm:p-6">
-         
-         <div>
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 overflow-hidden rounded-lg bg-white shadow">
+        <div class="px-4 py-5 sm:p-6">
+           
+           <div>
   <div>
     <h2 class="text-xl">Steven Sharp</h2>
     
@@ -1405,27 +1660,26 @@ Closest thing to an answer that I&#39;ve found has been the so called &#39;freed
     </div>
   </div>
 </div> 
-      </div>
-      <div class="mx-auto max-w-3xl bg-gray-50 px-4 py-4 sm:px-6">
-        
-        
-        <div>
+        </div>
+        <div class="mx-auto max-w-3xl px-4 py-4 sm:px-6">
           
+          
+          <div>
+            
 <div>
      
     <a>Unique ID: 541402985895638<br>Parent ID: 462493170453287_541366495899287</a>
     
 </div> 
+          </div>
         </div>
-      </div>
-    </div><br><br>
+      </div><br><br>
+          
     
-        
-    
-    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 overflow-hidden rounded-lg bg-white shadow">
-      <div class="px-4 py-5 sm:p-6">
-         
-         <div>
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 overflow-hidden rounded-lg bg-white shadow">
+        <div class="px-4 py-5 sm:p-6">
+           
+           <div>
   <div>
     <h2 class="text-xl">Scott Duncan</h2>
     
@@ -1484,27 +1738,26 @@ Your bullshit filter will get a workout here. I do this test knowing all the ans
     </div>
   </div>
 </div> 
-      </div>
-      <div class="mx-auto max-w-3xl bg-gray-50 px-4 py-4 sm:px-6">
-        
-        
-        <div>
+        </div>
+        <div class="mx-auto max-w-3xl px-4 py-4 sm:px-6">
           
+          
+          <div>
+            
 <div>
      
     <a>Unique ID: 541406589228611<br>Parent ID: 462493170453287_541366495899287</a>
     
 </div> 
+          </div>
         </div>
-      </div>
-    </div><br><br>
+      </div><br><br>
+          
     
-        
-    
-    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 overflow-hidden rounded-lg bg-white shadow">
-      <div class="px-4 py-5 sm:p-6">
-         
-         <div>
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 overflow-hidden rounded-lg bg-white shadow">
+        <div class="px-4 py-5 sm:p-6">
+           
+           <div>
   <div>
     <h2 class="text-xl">Steven Sharp</h2>
     
@@ -1558,27 +1811,26 @@ So we don&#39;t have much exposure to what happens to people that do as you&#39;
     </div>
   </div>
 </div> 
-      </div>
-      <div class="mx-auto max-w-3xl bg-gray-50 px-4 py-4 sm:px-6">
-        
-        
-        <div>
+        </div>
+        <div class="mx-auto max-w-3xl px-4 py-4 sm:px-6">
           
+          
+          <div>
+            
 <div>
      
     <a>Unique ID: 541406935895243<br>Parent ID: 462493170453287_541366495899287</a>
     
 </div> 
+          </div>
         </div>
-      </div>
-    </div><br><br>
+      </div><br><br>
+          
     
-        
-    
-    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 overflow-hidden rounded-lg bg-white shadow">
-      <div class="px-4 py-5 sm:p-6">
-         
-         <div>
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 overflow-hidden rounded-lg bg-white shadow">
+        <div class="px-4 py-5 sm:p-6">
+           
+           <div>
   <div>
     <h2 class="text-xl">Scott Duncan</h2>
     
@@ -1628,27 +1880,26 @@ Why do you want this freedom? The only thing waiting for you is struggle... or s
     </div>
   </div>
 </div> 
-      </div>
-      <div class="mx-auto max-w-3xl bg-gray-50 px-4 py-4 sm:px-6">
-        
-        
-        <div>
+        </div>
+        <div class="mx-auto max-w-3xl px-4 py-4 sm:px-6">
           
+          
+          <div>
+            
 <div>
      
     <a>Unique ID: 541407675895169<br>Parent ID: 462493170453287_541366495899287</a>
     
 </div> 
+          </div>
         </div>
-      </div>
-    </div><br><br>
+      </div><br><br>
+          
     
-        
-    
-    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 overflow-hidden rounded-lg bg-white shadow">
-      <div class="px-4 py-5 sm:p-6">
-         
-         <div>
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 overflow-hidden rounded-lg bg-white shadow">
+        <div class="px-4 py-5 sm:p-6">
+           
+           <div>
   <div>
     <h2 class="text-xl">Steven Sharp</h2>
     
@@ -1703,27 +1954,26 @@ Two thoughts come to mind:
     </div>
   </div>
 </div> 
-      </div>
-      <div class="mx-auto max-w-3xl bg-gray-50 px-4 py-4 sm:px-6">
-        
-        
-        <div>
+        </div>
+        <div class="mx-auto max-w-3xl px-4 py-4 sm:px-6">
           
+          
+          <div>
+            
 <div>
      
     <a>Unique ID: 541408132561790<br>Parent ID: 462493170453287_541366495899287</a>
     
 </div> 
+          </div>
         </div>
-      </div>
-    </div><br><br>
+      </div><br><br>
+          
     
-        
-    
-    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 overflow-hidden rounded-lg bg-white shadow">
-      <div class="px-4 py-5 sm:p-6">
-         
-         <div>
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 overflow-hidden rounded-lg bg-white shadow">
+        <div class="px-4 py-5 sm:p-6">
+           
+           <div>
   <div>
     <h2 class="text-xl">Lei Gh</h2>
     
@@ -1771,27 +2021,26 @@ Two thoughts come to mind:
     </div>
   </div>
 </div> 
-      </div>
-      <div class="mx-auto max-w-3xl bg-gray-50 px-4 py-4 sm:px-6">
-        
-        
-        <div>
+        </div>
+        <div class="mx-auto max-w-3xl px-4 py-4 sm:px-6">
           
+          
+          <div>
+            
 <div>
      
     <a>Unique ID: 541408475895089<br>Parent ID: 462493170453287_541366495899287</a>
     
 </div> 
+          </div>
         </div>
-      </div>
-    </div><br><br>
+      </div><br><br>
+          
     
-        
-    
-    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 overflow-hidden rounded-lg bg-white shadow">
-      <div class="px-4 py-5 sm:p-6">
-         
-         <div>
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 overflow-hidden rounded-lg bg-white shadow">
+        <div class="px-4 py-5 sm:p-6">
+           
+           <div>
   <div>
     <h2 class="text-xl">Lei Gh</h2>
     
@@ -1839,27 +2088,26 @@ Two thoughts come to mind:
     </div>
   </div>
 </div> 
-      </div>
-      <div class="mx-auto max-w-3xl bg-gray-50 px-4 py-4 sm:px-6">
-        
-        
-        <div>
+        </div>
+        <div class="mx-auto max-w-3xl px-4 py-4 sm:px-6">
           
+          
+          <div>
+            
 <div>
      
     <a>Unique ID: 541408685895068<br>Parent ID: 462493170453287_541366495899287</a>
     
 </div> 
+          </div>
         </div>
-      </div>
-    </div><br><br>
+      </div><br><br>
+          
     
-        
-    
-    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 overflow-hidden rounded-lg bg-white shadow">
-      <div class="px-4 py-5 sm:p-6">
-         
-         <div>
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 overflow-hidden rounded-lg bg-white shadow">
+        <div class="px-4 py-5 sm:p-6">
+           
+           <div>
   <div>
     <h2 class="text-xl">Pete Daoust</h2>
     
@@ -1909,27 +2157,26 @@ I just want to be &#34;ME&#34;....the heck with all these complications :D
     </div>
   </div>
 </div> 
-      </div>
-      <div class="mx-auto max-w-3xl bg-gray-50 px-4 py-4 sm:px-6">
-        
-        
-        <div>
+        </div>
+        <div class="mx-auto max-w-3xl px-4 py-4 sm:px-6">
           
+          
+          <div>
+            
 <div>
      
     <a>Unique ID: 541409145895022<br>Parent ID: 462493170453287_541366495899287</a>
     
 </div> 
+          </div>
         </div>
-      </div>
-    </div><br><br>
+      </div><br><br>
+          
     
-        
-    
-    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 overflow-hidden rounded-lg bg-white shadow">
-      <div class="px-4 py-5 sm:p-6">
-         
-         <div>
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 overflow-hidden rounded-lg bg-white shadow">
+        <div class="px-4 py-5 sm:p-6">
+           
+           <div>
   <div>
     <h2 class="text-xl">Lei Gh</h2>
     
@@ -1977,27 +2224,26 @@ I just want to be &#34;ME&#34;....the heck with all these complications :D
     </div>
   </div>
 </div> 
-      </div>
-      <div class="mx-auto max-w-3xl bg-gray-50 px-4 py-4 sm:px-6">
-        
-        
-        <div>
+        </div>
+        <div class="mx-auto max-w-3xl px-4 py-4 sm:px-6">
           
+          
+          <div>
+            
 <div>
      
     <a>Unique ID: 541409169228353<br>Parent ID: 462493170453287_541366495899287</a>
     
 </div> 
+          </div>
         </div>
-      </div>
-    </div><br><br>
+      </div><br><br>
+          
     
-        
-    
-    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 overflow-hidden rounded-lg bg-white shadow">
-      <div class="px-4 py-5 sm:p-6">
-         
-         <div>
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 overflow-hidden rounded-lg bg-white shadow">
+        <div class="px-4 py-5 sm:p-6">
+           
+           <div>
   <div>
     <h2 class="text-xl">Pete Daoust</h2>
     
@@ -2045,27 +2291,26 @@ I just want to be &#34;ME&#34;....the heck with all these complications :D
     </div>
   </div>
 </div> 
-      </div>
-      <div class="mx-auto max-w-3xl bg-gray-50 px-4 py-4 sm:px-6">
-        
-        
-        <div>
+        </div>
+        <div class="mx-auto max-w-3xl px-4 py-4 sm:px-6">
           
+          
+          <div>
+            
 <div>
      
     <a>Unique ID: 541409485894988<br>Parent ID: 462493170453287_541366495899287</a>
     
 </div> 
+          </div>
         </div>
-      </div>
-    </div><br><br>
+      </div><br><br>
+          
     
-        
-    
-    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 overflow-hidden rounded-lg bg-white shadow">
-      <div class="px-4 py-5 sm:p-6">
-         
-         <div>
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 overflow-hidden rounded-lg bg-white shadow">
+        <div class="px-4 py-5 sm:p-6">
+           
+           <div>
   <div>
     <h2 class="text-xl">Lei Gh</h2>
     
@@ -2113,27 +2358,26 @@ I just want to be &#34;ME&#34;....the heck with all these complications :D
     </div>
   </div>
 </div> 
-      </div>
-      <div class="mx-auto max-w-3xl bg-gray-50 px-4 py-4 sm:px-6">
-        
-        
-        <div>
+        </div>
+        <div class="mx-auto max-w-3xl px-4 py-4 sm:px-6">
           
+          
+          <div>
+            
 <div>
      
     <a>Unique ID: 541409622561641<br>Parent ID: 462493170453287_541366495899287</a>
     
 </div> 
+          </div>
         </div>
-      </div>
-    </div><br><br>
+      </div><br><br>
+          
     
-        
-    
-    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 overflow-hidden rounded-lg bg-white shadow">
-      <div class="px-4 py-5 sm:p-6">
-         
-         <div>
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 overflow-hidden rounded-lg bg-white shadow">
+        <div class="px-4 py-5 sm:p-6">
+           
+           <div>
   <div>
     <h2 class="text-xl">Scott Duncan</h2>
     
@@ -2181,27 +2425,26 @@ I just want to be &#34;ME&#34;....the heck with all these complications :D
     </div>
   </div>
 </div> 
-      </div>
-      <div class="mx-auto max-w-3xl bg-gray-50 px-4 py-4 sm:px-6">
-        
-        
-        <div>
+        </div>
+        <div class="mx-auto max-w-3xl px-4 py-4 sm:px-6">
           
+          
+          <div>
+            
 <div>
      
     <a>Unique ID: 541409722561631<br>Parent ID: 462493170453287_541366495899287</a>
     
 </div> 
+          </div>
         </div>
-      </div>
-    </div><br><br>
+      </div><br><br>
+          
     
-        
-    
-    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 overflow-hidden rounded-lg bg-white shadow">
-      <div class="px-4 py-5 sm:p-6">
-         
-         <div>
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 overflow-hidden rounded-lg bg-white shadow">
+        <div class="px-4 py-5 sm:p-6">
+           
+           <div>
   <div>
     <h2 class="text-xl">Lei Gh</h2>
     
@@ -2249,27 +2492,26 @@ I just want to be &#34;ME&#34;....the heck with all these complications :D
     </div>
   </div>
 </div> 
-      </div>
-      <div class="mx-auto max-w-3xl bg-gray-50 px-4 py-4 sm:px-6">
-        
-        
-        <div>
+        </div>
+        <div class="mx-auto max-w-3xl px-4 py-4 sm:px-6">
           
+          
+          <div>
+            
 <div>
      
     <a>Unique ID: 541409775894959<br>Parent ID: 462493170453287_541366495899287</a>
     
 </div> 
+          </div>
         </div>
-      </div>
-    </div><br><br>
+      </div><br><br>
+          
     
-        
-    
-    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 overflow-hidden rounded-lg bg-white shadow">
-      <div class="px-4 py-5 sm:p-6">
-         
-         <div>
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 overflow-hidden rounded-lg bg-white shadow">
+        <div class="px-4 py-5 sm:p-6">
+           
+           <div>
   <div>
     <h2 class="text-xl">Pete Daoust</h2>
     
@@ -2319,27 +2561,26 @@ http://3.bp.blogspot.com/-eXh2pgjG9ac/UQ6nHkHQV1I/AAAAAAAAAGA/O5PPLt6FiHE/s400/w
     </div>
   </div>
 </div> 
-      </div>
-      <div class="mx-auto max-w-3xl bg-gray-50 px-4 py-4 sm:px-6">
-        
-        
-        <div>
+        </div>
+        <div class="mx-auto max-w-3xl px-4 py-4 sm:px-6">
           
+          
+          <div>
+            
 <div>
      
     <a>Unique ID: 541410542561549<br>Parent ID: 462493170453287_541366495899287</a>
     
 </div> 
+          </div>
         </div>
-      </div>
-    </div><br><br>
+      </div><br><br>
+          
     
-        
-    
-    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 overflow-hidden rounded-lg bg-white shadow">
-      <div class="px-4 py-5 sm:p-6">
-         
-         <div>
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 overflow-hidden rounded-lg bg-white shadow">
+        <div class="px-4 py-5 sm:p-6">
+           
+           <div>
   <div>
     <h2 class="text-xl">Pete Daoust</h2>
     
@@ -2387,27 +2628,26 @@ http://3.bp.blogspot.com/-eXh2pgjG9ac/UQ6nHkHQV1I/AAAAAAAAAGA/O5PPLt6FiHE/s400/w
     </div>
   </div>
 </div> 
-      </div>
-      <div class="mx-auto max-w-3xl bg-gray-50 px-4 py-4 sm:px-6">
-        
-        
-        <div>
+        </div>
+        <div class="mx-auto max-w-3xl px-4 py-4 sm:px-6">
           
+          
+          <div>
+            
 <div>
      
     <a>Unique ID: 541410929228177<br>Parent ID: 462493170453287_541366495899287</a>
     
 </div> 
+          </div>
         </div>
-      </div>
-    </div><br><br>
+      </div><br><br>
+          
     
-        
-    
-    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 overflow-hidden rounded-lg bg-white shadow">
-      <div class="px-4 py-5 sm:p-6">
-         
-         <div>
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 overflow-hidden rounded-lg bg-white shadow">
+        <div class="px-4 py-5 sm:p-6">
+           
+           <div>
   <div>
     <h2 class="text-xl">Lei Gh</h2>
     
@@ -2455,27 +2695,26 @@ http://3.bp.blogspot.com/-eXh2pgjG9ac/UQ6nHkHQV1I/AAAAAAAAAGA/O5PPLt6FiHE/s400/w
     </div>
   </div>
 </div> 
-      </div>
-      <div class="mx-auto max-w-3xl bg-gray-50 px-4 py-4 sm:px-6">
-        
-        
-        <div>
+        </div>
+        <div class="mx-auto max-w-3xl px-4 py-4 sm:px-6">
           
+          
+          <div>
+            
 <div>
      
     <a>Unique ID: 541411125894824<br>Parent ID: 462493170453287_541366495899287</a>
     
 </div> 
+          </div>
         </div>
-      </div>
-    </div><br><br>
+      </div><br><br>
+          
     
-        
-    
-    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 overflow-hidden rounded-lg bg-white shadow">
-      <div class="px-4 py-5 sm:p-6">
-         
-         <div>
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 overflow-hidden rounded-lg bg-white shadow">
+        <div class="px-4 py-5 sm:p-6">
+           
+           <div>
   <div>
     <h2 class="text-xl">Lei Gh</h2>
     
@@ -2523,27 +2762,26 @@ http://3.bp.blogspot.com/-eXh2pgjG9ac/UQ6nHkHQV1I/AAAAAAAAAGA/O5PPLt6FiHE/s400/w
     </div>
   </div>
 </div> 
-      </div>
-      <div class="mx-auto max-w-3xl bg-gray-50 px-4 py-4 sm:px-6">
-        
-        
-        <div>
+        </div>
+        <div class="mx-auto max-w-3xl px-4 py-4 sm:px-6">
           
+          
+          <div>
+            
 <div>
      
     <a>Unique ID: 541411235894813<br>Parent ID: 462493170453287_541366495899287</a>
     
 </div> 
+          </div>
         </div>
-      </div>
-    </div><br><br>
+      </div><br><br>
+          
     
-        
-    
-    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 overflow-hidden rounded-lg bg-white shadow">
-      <div class="px-4 py-5 sm:p-6">
-         
-         <div>
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 overflow-hidden rounded-lg bg-white shadow">
+        <div class="px-4 py-5 sm:p-6">
+           
+           <div>
   <div>
     <h2 class="text-xl">Pete Daoust</h2>
     
@@ -2591,27 +2829,26 @@ http://3.bp.blogspot.com/-eXh2pgjG9ac/UQ6nHkHQV1I/AAAAAAAAAGA/O5PPLt6FiHE/s400/w
     </div>
   </div>
 </div> 
-      </div>
-      <div class="mx-auto max-w-3xl bg-gray-50 px-4 py-4 sm:px-6">
-        
-        
-        <div>
+        </div>
+        <div class="mx-auto max-w-3xl px-4 py-4 sm:px-6">
           
+          
+          <div>
+            
 <div>
      
     <a>Unique ID: 541411389228131<br>Parent ID: 462493170453287_541366495899287</a>
     
 </div> 
+          </div>
         </div>
-      </div>
-    </div><br><br>
+      </div><br><br>
+          
     
-        
-    
-    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 overflow-hidden rounded-lg bg-white shadow">
-      <div class="px-4 py-5 sm:p-6">
-         
-         <div>
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 overflow-hidden rounded-lg bg-white shadow">
+        <div class="px-4 py-5 sm:p-6">
+           
+           <div>
   <div>
     <h2 class="text-xl">Lei Gh</h2>
     
@@ -2659,27 +2896,26 @@ http://3.bp.blogspot.com/-eXh2pgjG9ac/UQ6nHkHQV1I/AAAAAAAAAGA/O5PPLt6FiHE/s400/w
     </div>
   </div>
 </div> 
-      </div>
-      <div class="mx-auto max-w-3xl bg-gray-50 px-4 py-4 sm:px-6">
-        
-        
-        <div>
+        </div>
+        <div class="mx-auto max-w-3xl px-4 py-4 sm:px-6">
           
+          
+          <div>
+            
 <div>
      
     <a>Unique ID: 541411419228128<br>Parent ID: 462493170453287_541366495899287</a>
     
 </div> 
+          </div>
         </div>
-      </div>
-    </div><br><br>
+      </div><br><br>
+          
     
-        
-    
-    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 overflow-hidden rounded-lg bg-white shadow">
-      <div class="px-4 py-5 sm:p-6">
-         
-         <div>
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 overflow-hidden rounded-lg bg-white shadow">
+        <div class="px-4 py-5 sm:p-6">
+           
+           <div>
   <div>
     <h2 class="text-xl">Pete Daoust</h2>
     
@@ -2727,27 +2963,26 @@ http://3.bp.blogspot.com/-eXh2pgjG9ac/UQ6nHkHQV1I/AAAAAAAAAGA/O5PPLt6FiHE/s400/w
     </div>
   </div>
 </div> 
-      </div>
-      <div class="mx-auto max-w-3xl bg-gray-50 px-4 py-4 sm:px-6">
-        
-        
-        <div>
+        </div>
+        <div class="mx-auto max-w-3xl px-4 py-4 sm:px-6">
           
+          
+          <div>
+            
 <div>
      
     <a>Unique ID: 541411469228123<br>Parent ID: 462493170453287_541366495899287</a>
     
 </div> 
+          </div>
         </div>
-      </div>
-    </div><br><br>
+      </div><br><br>
+          
     
-        
-    
-    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 overflow-hidden rounded-lg bg-white shadow">
-      <div class="px-4 py-5 sm:p-6">
-         
-         <div>
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 overflow-hidden rounded-lg bg-white shadow">
+        <div class="px-4 py-5 sm:p-6">
+           
+           <div>
   <div>
     <h2 class="text-xl">Lei Gh</h2>
     
@@ -2795,27 +3030,26 @@ http://3.bp.blogspot.com/-eXh2pgjG9ac/UQ6nHkHQV1I/AAAAAAAAAGA/O5PPLt6FiHE/s400/w
     </div>
   </div>
 </div> 
-      </div>
-      <div class="mx-auto max-w-3xl bg-gray-50 px-4 py-4 sm:px-6">
-        
-        
-        <div>
+        </div>
+        <div class="mx-auto max-w-3xl px-4 py-4 sm:px-6">
           
+          
+          <div>
+            
 <div>
      
     <a>Unique ID: 541411482561455<br>Parent ID: 462493170453287_541366495899287</a>
     
 </div> 
+          </div>
         </div>
-      </div>
-    </div><br><br>
+      </div><br><br>
+          
     
-        
-    
-    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 overflow-hidden rounded-lg bg-white shadow">
-      <div class="px-4 py-5 sm:p-6">
-         
-         <div>
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 overflow-hidden rounded-lg bg-white shadow">
+        <div class="px-4 py-5 sm:p-6">
+           
+           <div>
   <div>
     <h2 class="text-xl">Dino Disenfranchised</h2>
     
@@ -2866,27 +3100,26 @@ As my active life is over, my struggle is not for freedom, but exposure of truth
     </div>
   </div>
 </div> 
-      </div>
-      <div class="mx-auto max-w-3xl bg-gray-50 px-4 py-4 sm:px-6">
-        
-        
-        <div>
+        </div>
+        <div class="mx-auto max-w-3xl px-4 py-4 sm:px-6">
           
+          
+          <div>
+            
 <div>
      
     <a>Unique ID: 541413819227888<br>Parent ID: 462493170453287_541366495899287</a>
     
 </div> 
+          </div>
         </div>
-      </div>
-    </div><br><br>
+      </div><br><br>
+          
     
-        
-    
-    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 overflow-hidden rounded-lg bg-white shadow">
-      <div class="px-4 py-5 sm:p-6">
-         
-         <div>
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 overflow-hidden rounded-lg bg-white shadow">
+        <div class="px-4 py-5 sm:p-6">
+           
+           <div>
   <div>
     <h2 class="text-xl">Pete Daoust</h2>
     
@@ -2934,27 +3167,26 @@ As my active life is over, my struggle is not for freedom, but exposure of truth
     </div>
   </div>
 </div> 
-      </div>
-      <div class="mx-auto max-w-3xl bg-gray-50 px-4 py-4 sm:px-6">
-        
-        
-        <div>
+        </div>
+        <div class="mx-auto max-w-3xl px-4 py-4 sm:px-6">
           
+          
+          <div>
+            
 <div>
      
     <a>Unique ID: 541414352561168<br>Parent ID: 462493170453287_541366495899287</a>
     
 </div> 
+          </div>
         </div>
-      </div>
-    </div><br><br>
+      </div><br><br>
+          
     
-        
-    
-    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 overflow-hidden rounded-lg bg-white shadow">
-      <div class="px-4 py-5 sm:p-6">
-         
-         <div>
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 overflow-hidden rounded-lg bg-white shadow">
+        <div class="px-4 py-5 sm:p-6">
+           
+           <div>
   <div>
     <h2 class="text-xl">Dino Disenfranchised</h2>
     
@@ -3004,27 +3236,26 @@ The bright side is I can see things I never seen before.
     </div>
   </div>
 </div> 
-      </div>
-      <div class="mx-auto max-w-3xl bg-gray-50 px-4 py-4 sm:px-6">
-        
-        
-        <div>
+        </div>
+        <div class="mx-auto max-w-3xl px-4 py-4 sm:px-6">
           
+          
+          <div>
+            
 <div>
      
     <a>Unique ID: 541415809227689<br>Parent ID: 462493170453287_541366495899287</a>
     
 </div> 
+          </div>
         </div>
-      </div>
-    </div><br><br>
+      </div><br><br>
+          
     
-        
-    
-    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 overflow-hidden rounded-lg bg-white shadow">
-      <div class="px-4 py-5 sm:p-6">
-         
-         <div>
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 overflow-hidden rounded-lg bg-white shadow">
+        <div class="px-4 py-5 sm:p-6">
+           
+           <div>
   <div>
     <h2 class="text-xl">Pete Daoust</h2>
     
@@ -3072,27 +3303,26 @@ The bright side is I can see things I never seen before.
     </div>
   </div>
 </div> 
-      </div>
-      <div class="mx-auto max-w-3xl bg-gray-50 px-4 py-4 sm:px-6">
-        
-        
-        <div>
+        </div>
+        <div class="mx-auto max-w-3xl px-4 py-4 sm:px-6">
           
+          
+          <div>
+            
 <div>
      
     <a>Unique ID: 541417879227482<br>Parent ID: 462493170453287_541366495899287</a>
     
 </div> 
+          </div>
         </div>
-      </div>
-    </div><br><br>
+      </div><br><br>
+          
     
-        
-    
-    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 overflow-hidden rounded-lg bg-white shadow">
-      <div class="px-4 py-5 sm:p-6">
-         
-         <div>
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 overflow-hidden rounded-lg bg-white shadow">
+        <div class="px-4 py-5 sm:p-6">
+           
+           <div>
   <div>
     <h2 class="text-xl">Dino Disenfranchised</h2>
     
@@ -3140,27 +3370,26 @@ The bright side is I can see things I never seen before.
     </div>
   </div>
 </div> 
-      </div>
-      <div class="mx-auto max-w-3xl bg-gray-50 px-4 py-4 sm:px-6">
-        
-        
-        <div>
+        </div>
+        <div class="mx-auto max-w-3xl px-4 py-4 sm:px-6">
           
+          
+          <div>
+            
 <div>
      
     <a>Unique ID: 541418475894089<br>Parent ID: 462493170453287_541366495899287</a>
     
 </div> 
+          </div>
         </div>
-      </div>
-    </div><br><br>
+      </div><br><br>
+          
     
-        
-    
-    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 overflow-hidden rounded-lg bg-white shadow">
-      <div class="px-4 py-5 sm:p-6">
-         
-         <div>
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 overflow-hidden rounded-lg bg-white shadow">
+        <div class="px-4 py-5 sm:p-6">
+           
+           <div>
   <div>
     <h2 class="text-xl">Pete Daoust</h2>
     
@@ -3210,27 +3439,26 @@ http://img.pandawhale.com/50191-Have-you-tried-turning-it-off-y6XN.jpeg
     </div>
   </div>
 </div> 
-      </div>
-      <div class="mx-auto max-w-3xl bg-gray-50 px-4 py-4 sm:px-6">
-        
-        
-        <div>
+        </div>
+        <div class="mx-auto max-w-3xl px-4 py-4 sm:px-6">
           
+          
+          <div>
+            
 <div>
      
     <a>Unique ID: 541418682560735<br>Parent ID: 462493170453287_541366495899287</a>
     
 </div> 
+          </div>
         </div>
-      </div>
-    </div><br><br>
+      </div><br><br>
+          
     
-        
-    
-    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 overflow-hidden rounded-lg bg-white shadow">
-      <div class="px-4 py-5 sm:p-6">
-         
-         <div>
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 overflow-hidden rounded-lg bg-white shadow">
+        <div class="px-4 py-5 sm:p-6">
+           
+           <div>
   <div>
     <h2 class="text-xl">Dino Disenfranchised</h2>
     
@@ -3278,27 +3506,26 @@ http://img.pandawhale.com/50191-Have-you-tried-turning-it-off-y6XN.jpeg
     </div>
   </div>
 </div> 
-      </div>
-      <div class="mx-auto max-w-3xl bg-gray-50 px-4 py-4 sm:px-6">
-        
-        
-        <div>
+        </div>
+        <div class="mx-auto max-w-3xl px-4 py-4 sm:px-6">
           
+          
+          <div>
+            
 <div>
      
     <a>Unique ID: 541419659227304<br>Parent ID: 462493170453287_541366495899287</a>
     
 </div> 
+          </div>
         </div>
-      </div>
-    </div><br><br>
+      </div><br><br>
+          
     
-        
-    
-    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 overflow-hidden rounded-lg bg-white shadow">
-      <div class="px-4 py-5 sm:p-6">
-         
-         <div>
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 overflow-hidden rounded-lg bg-white shadow">
+        <div class="px-4 py-5 sm:p-6">
+           
+           <div>
   <div>
     <h2 class="text-xl">Derek Moran</h2>
     
@@ -3346,27 +3573,26 @@ http://img.pandawhale.com/50191-Have-you-tried-turning-it-off-y6XN.jpeg
     </div>
   </div>
 </div> 
-      </div>
-      <div class="mx-auto max-w-3xl bg-gray-50 px-4 py-4 sm:px-6">
-        
-        
-        <div>
+        </div>
+        <div class="mx-auto max-w-3xl px-4 py-4 sm:px-6">
           
+          
+          <div>
+            
 <div>
      
     <a>Unique ID: 541432349226035<br>Parent ID: 462493170453287_541366495899287</a>
     
 </div> 
+          </div>
         </div>
-      </div>
-    </div><br><br>
+      </div><br><br>
+          
     
-        
-    
-    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 overflow-hidden rounded-lg bg-white shadow">
-      <div class="px-4 py-5 sm:p-6">
-         
-         <div>
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 overflow-hidden rounded-lg bg-white shadow">
+        <div class="px-4 py-5 sm:p-6">
+           
+           <div>
   <div>
     <h2 class="text-xl">Cara Small</h2>
     
@@ -3414,27 +3640,26 @@ http://img.pandawhale.com/50191-Have-you-tried-turning-it-off-y6XN.jpeg
     </div>
   </div>
 </div> 
-      </div>
-      <div class="mx-auto max-w-3xl bg-gray-50 px-4 py-4 sm:px-6">
-        
-        
-        <div>
+        </div>
+        <div class="mx-auto max-w-3xl px-4 py-4 sm:px-6">
           
+          
+          <div>
+            
 <div>
      
     <a>Unique ID: 541435295892407<br>Parent ID: 462493170453287_541366495899287</a>
     
 </div> 
+          </div>
         </div>
-      </div>
-    </div><br><br>
+      </div><br><br>
+          
     
-        
-    
-    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 overflow-hidden rounded-lg bg-white shadow">
-      <div class="px-4 py-5 sm:p-6">
-         
-         <div>
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 overflow-hidden rounded-lg bg-white shadow">
+        <div class="px-4 py-5 sm:p-6">
+           
+           <div>
   <div>
     <h2 class="text-xl">Adam Thomas</h2>
     
@@ -3482,27 +3707,26 @@ http://img.pandawhale.com/50191-Have-you-tried-turning-it-off-y6XN.jpeg
     </div>
   </div>
 </div> 
-      </div>
-      <div class="mx-auto max-w-3xl bg-gray-50 px-4 py-4 sm:px-6">
-        
-        
-        <div>
+        </div>
+        <div class="mx-auto max-w-3xl px-4 py-4 sm:px-6">
           
+          
+          <div>
+            
 <div>
      
     <a>Unique ID: 541489905886946<br>Parent ID: 462493170453287_541366495899287</a>
     
 </div> 
+          </div>
         </div>
-      </div>
-    </div><br><br>
+      </div><br><br>
+          
     
-        
-    
-    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 overflow-hidden rounded-lg bg-white shadow">
-      <div class="px-4 py-5 sm:p-6">
-         
-         <div>
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 overflow-hidden rounded-lg bg-white shadow">
+        <div class="px-4 py-5 sm:p-6">
+           
+           <div>
   <div>
     <h2 class="text-xl">Adam Thomas</h2>
     
@@ -3551,27 +3775,26 @@ Why don&#39;t the POPE like condoms? ?
     </div>
   </div>
 </div> 
-      </div>
-      <div class="mx-auto max-w-3xl bg-gray-50 px-4 py-4 sm:px-6">
-        
-        
-        <div>
+        </div>
+        <div class="mx-auto max-w-3xl px-4 py-4 sm:px-6">
           
+          
+          <div>
+            
 <div>
      
     <a>Unique ID: 541490052553598<br>Parent ID: 462493170453287_541366495899287</a>
     
 </div> 
+          </div>
         </div>
-      </div>
-    </div><br><br>
+      </div><br><br>
+          
     
-        
-    
-    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 overflow-hidden rounded-lg bg-white shadow">
-      <div class="px-4 py-5 sm:p-6">
-         
-         <div>
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 overflow-hidden rounded-lg bg-white shadow">
+        <div class="px-4 py-5 sm:p-6">
+           
+           <div>
   <div>
     <h2 class="text-xl">Chad Brodgesell</h2>
     
@@ -3629,27 +3852,26 @@ Sht I shouldn&#39;t post after drinking 20 cups of coffee.
     </div>
   </div>
 </div> 
-      </div>
-      <div class="mx-auto max-w-3xl bg-gray-50 px-4 py-4 sm:px-6">
-        
-        
-        <div>
+        </div>
+        <div class="mx-auto max-w-3xl px-4 py-4 sm:px-6">
           
+          
+          <div>
+            
 <div>
      
     <a>Unique ID: 541553755880561<br>Parent ID: 462493170453287_541366495899287</a>
     
 </div> 
+          </div>
         </div>
-      </div>
-    </div><br><br>
+      </div><br><br>
+          
     
-        
-    
-    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 overflow-hidden rounded-lg bg-white shadow">
-      <div class="px-4 py-5 sm:p-6">
-         
-         <div>
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 overflow-hidden rounded-lg bg-white shadow">
+        <div class="px-4 py-5 sm:p-6">
+           
+           <div>
   <div>
     <h2 class="text-xl">Chad Brodgesell</h2>
     
@@ -3699,27 +3921,26 @@ There is the odd exceptions in history though.
     </div>
   </div>
 </div> 
-      </div>
-      <div class="mx-auto max-w-3xl bg-gray-50 px-4 py-4 sm:px-6">
-        
-        
-        <div>
+        </div>
+        <div class="mx-auto max-w-3xl px-4 py-4 sm:px-6">
           
+          
+          <div>
+            
 <div>
      
     <a>Unique ID: 541558955880041<br>Parent ID: 462493170453287_541366495899287</a>
     
 </div> 
+          </div>
         </div>
-      </div>
-    </div><br><br>
+      </div><br><br>
+          
     
-        
-    
-    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 overflow-hidden rounded-lg bg-white shadow">
-      <div class="px-4 py-5 sm:p-6">
-         
-         <div>
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 overflow-hidden rounded-lg bg-white shadow">
+        <div class="px-4 py-5 sm:p-6">
+           
+           <div>
   <div>
     <h2 class="text-xl">Adam Thomas</h2>
     
@@ -3768,27 +3989,26 @@ There is the odd exceptions in history though.
     </div>
   </div>
 </div> 
-      </div>
-      <div class="mx-auto max-w-3xl bg-gray-50 px-4 py-4 sm:px-6">
-        
-        
-        <div>
+        </div>
+        <div class="mx-auto max-w-3xl px-4 py-4 sm:px-6">
           
+          
+          <div>
+            
 <div>
      
     <a>Unique ID: 541563272546276<br>Parent ID: 462493170453287_541366495899287</a>
     
 </div> 
+          </div>
         </div>
-      </div>
-    </div><br><br>
+      </div><br><br>
+          
     
-        
-    
-    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 overflow-hidden rounded-lg bg-white shadow">
-      <div class="px-4 py-5 sm:p-6">
-         
-         <div>
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 overflow-hidden rounded-lg bg-white shadow">
+        <div class="px-4 py-5 sm:p-6">
+           
+           <div>
   <div>
     <h2 class="text-xl">Chad Brodgesell</h2>
     
@@ -3837,27 +4057,26 @@ I seriously need a downer right now.:)
     </div>
   </div>
 </div> 
-      </div>
-      <div class="mx-auto max-w-3xl bg-gray-50 px-4 py-4 sm:px-6">
-        
-        
-        <div>
+        </div>
+        <div class="mx-auto max-w-3xl px-4 py-4 sm:px-6">
           
+          
+          <div>
+            
 <div>
      
     <a>Unique ID: 541564609212809<br>Parent ID: 462493170453287_541366495899287</a>
     
 </div> 
+          </div>
         </div>
-      </div>
-    </div><br><br>
+      </div><br><br>
+          
     
-        
-    
-    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 overflow-hidden rounded-lg bg-white shadow">
-      <div class="px-4 py-5 sm:p-6">
-         
-         <div>
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 overflow-hidden rounded-lg bg-white shadow">
+        <div class="px-4 py-5 sm:p-6">
+           
+           <div>
   <div>
     <h2 class="text-xl">Adam Thomas</h2>
     
@@ -3908,27 +4127,26 @@ Hubby says &#39; just before I cum I&#39;ll stop punching you in the face&#39;..
     </div>
   </div>
 </div> 
-      </div>
-      <div class="mx-auto max-w-3xl bg-gray-50 px-4 py-4 sm:px-6">
-        
-        
-        <div>
+        </div>
+        <div class="mx-auto max-w-3xl px-4 py-4 sm:px-6">
           
+          
+          <div>
+            
 <div>
      
     <a>Unique ID: 541587069210563<br>Parent ID: 462493170453287_541366495899287</a>
     
 </div> 
+          </div>
         </div>
-      </div>
-    </div><br><br>
+      </div><br><br>
+          
     
-        
-    
-    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 overflow-hidden rounded-lg bg-white shadow">
-      <div class="px-4 py-5 sm:p-6">
-         
-         <div>
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 overflow-hidden rounded-lg bg-white shadow">
+        <div class="px-4 py-5 sm:p-6">
+           
+           <div>
   <div>
     <h2 class="text-xl">Adam Thomas</h2>
     
@@ -3976,27 +4194,26 @@ Hubby says &#39; just before I cum I&#39;ll stop punching you in the face&#39;..
     </div>
   </div>
 </div> 
-      </div>
-      <div class="mx-auto max-w-3xl bg-gray-50 px-4 py-4 sm:px-6">
-        
-        
-        <div>
+        </div>
+        <div class="mx-auto max-w-3xl px-4 py-4 sm:px-6">
           
+          
+          <div>
+            
 <div>
      
     <a>Unique ID: 541587269210543<br>Parent ID: 462493170453287_541366495899287</a>
     
 </div> 
+          </div>
         </div>
-      </div>
-    </div><br><br>
+      </div><br><br>
+          
     
-        
-    
-    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 overflow-hidden rounded-lg bg-white shadow">
-      <div class="px-4 py-5 sm:p-6">
-         
-         <div>
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 overflow-hidden rounded-lg bg-white shadow">
+        <div class="px-4 py-5 sm:p-6">
+           
+           <div>
   <div>
     <h2 class="text-xl">Adam Thomas</h2>
     
@@ -4044,27 +4261,26 @@ Hubby says &#39; just before I cum I&#39;ll stop punching you in the face&#39;..
     </div>
   </div>
 </div> 
-      </div>
-      <div class="mx-auto max-w-3xl bg-gray-50 px-4 py-4 sm:px-6">
-        
-        
-        <div>
+        </div>
+        <div class="mx-auto max-w-3xl px-4 py-4 sm:px-6">
           
+          
+          <div>
+            
 <div>
      
     <a>Unique ID: 541587279210542<br>Parent ID: 462493170453287_541366495899287</a>
     
 </div> 
+          </div>
         </div>
-      </div>
-    </div><br><br>
+      </div><br><br>
+          
     
-        
-    
-    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 overflow-hidden rounded-lg bg-white shadow">
-      <div class="px-4 py-5 sm:p-6">
-         
-         <div>
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 overflow-hidden rounded-lg bg-white shadow">
+        <div class="px-4 py-5 sm:p-6">
+           
+           <div>
   <div>
     <h2 class="text-xl">Adam Thomas</h2>
     
@@ -4112,27 +4328,26 @@ Hubby says &#39; just before I cum I&#39;ll stop punching you in the face&#39;..
     </div>
   </div>
 </div> 
-      </div>
-      <div class="mx-auto max-w-3xl bg-gray-50 px-4 py-4 sm:px-6">
-        
-        
-        <div>
+        </div>
+        <div class="mx-auto max-w-3xl px-4 py-4 sm:px-6">
           
+          
+          <div>
+            
 <div>
      
     <a>Unique ID: 541587959210474<br>Parent ID: 462493170453287_541366495899287</a>
     
 </div> 
+          </div>
         </div>
-      </div>
-    </div><br><br>
+      </div><br><br>
+          
     
-        
-    
-    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 overflow-hidden rounded-lg bg-white shadow">
-      <div class="px-4 py-5 sm:p-6">
-         
-         <div>
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 overflow-hidden rounded-lg bg-white shadow">
+        <div class="px-4 py-5 sm:p-6">
+           
+           <div>
   <div>
     <h2 class="text-xl">Adam Thomas</h2>
     
@@ -4180,27 +4395,26 @@ Hubby says &#39; just before I cum I&#39;ll stop punching you in the face&#39;..
     </div>
   </div>
 </div> 
-      </div>
-      <div class="mx-auto max-w-3xl bg-gray-50 px-4 py-4 sm:px-6">
-        
-        
-        <div>
+        </div>
+        <div class="mx-auto max-w-3xl px-4 py-4 sm:px-6">
           
+          
+          <div>
+            
 <div>
      
     <a>Unique ID: 541588379210432<br>Parent ID: 462493170453287_541366495899287</a>
     
 </div> 
+          </div>
         </div>
-      </div>
-    </div><br><br>
+      </div><br><br>
+          
     
-        
-    
-    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 overflow-hidden rounded-lg bg-white shadow">
-      <div class="px-4 py-5 sm:p-6">
-         
-         <div>
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 overflow-hidden rounded-lg bg-white shadow">
+        <div class="px-4 py-5 sm:p-6">
+           
+           <div>
   <div>
     <h2 class="text-xl">David Johansen</h2>
     
@@ -4250,27 +4464,26 @@ if YOU can see all of the cards, then why not just ask you to be the trustee?
     </div>
   </div>
 </div> 
-      </div>
-      <div class="mx-auto max-w-3xl bg-gray-50 px-4 py-4 sm:px-6">
-        
-        
-        <div>
+        </div>
+        <div class="mx-auto max-w-3xl px-4 py-4 sm:px-6">
           
+          
+          <div>
+            
 <div>
      
     <a>Unique ID: 542193525816584<br>Parent ID: 462493170453287_541366495899287</a>
     
 </div> 
+          </div>
         </div>
-      </div>
-    </div><br><br>
+      </div><br><br>
+          
     
-        
-    
-    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 overflow-hidden rounded-lg bg-white shadow">
-      <div class="px-4 py-5 sm:p-6">
-         
-         <div>
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 overflow-hidden rounded-lg bg-white shadow">
+        <div class="px-4 py-5 sm:p-6">
+           
+           <div>
   <div>
     <h2 class="text-xl">Scott Duncan</h2>
     
@@ -4318,27 +4531,26 @@ if YOU can see all of the cards, then why not just ask you to be the trustee?
     </div>
   </div>
 </div> 
-      </div>
-      <div class="mx-auto max-w-3xl bg-gray-50 px-4 py-4 sm:px-6">
-        
-        
-        <div>
+        </div>
+        <div class="mx-auto max-w-3xl px-4 py-4 sm:px-6">
           
+          
+          <div>
+            
 <div>
      
     <a>Unique ID: 542197312482872<br>Parent ID: 462493170453287_541366495899287</a>
     
 </div> 
+          </div>
         </div>
-      </div>
-    </div><br><br>
+      </div><br><br>
+          
     
-        
-    
-    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 overflow-hidden rounded-lg bg-white shadow">
-      <div class="px-4 py-5 sm:p-6">
-         
-         <div>
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 overflow-hidden rounded-lg bg-white shadow">
+        <div class="px-4 py-5 sm:p-6">
+           
+           <div>
   <div>
     <h2 class="text-xl">Scott Duncan</h2>
     
@@ -4388,27 +4600,26 @@ If we are feared and hated by Commercial Policy enforcers and its supporting ind
     </div>
   </div>
 </div> 
-      </div>
-      <div class="mx-auto max-w-3xl bg-gray-50 px-4 py-4 sm:px-6">
-        
-        
-        <div>
+        </div>
+        <div class="mx-auto max-w-3xl px-4 py-4 sm:px-6">
           
+          
+          <div>
+            
 <div>
      
     <a>Unique ID: 542198895816047<br>Parent ID: 462493170453287_541366495899287</a>
     
 </div> 
+          </div>
         </div>
-      </div>
-    </div><br><br>
+      </div><br><br>
+          
     
-        
-    
-    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 overflow-hidden rounded-lg bg-white shadow">
-      <div class="px-4 py-5 sm:p-6">
-         
-         <div>
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 overflow-hidden rounded-lg bg-white shadow">
+        <div class="px-4 py-5 sm:p-6">
+           
+           <div>
   <div>
     <h2 class="text-xl">Scott Duncan</h2>
     
@@ -4466,27 +4677,26 @@ SUCK IT UP. THE WORDS I TYPE HERE MAKE ME BETTER THAN GOD! BY BEING HERE, YOU AD
     </div>
   </div>
 </div> 
-      </div>
-      <div class="mx-auto max-w-3xl bg-gray-50 px-4 py-4 sm:px-6">
-        
-        
-        <div>
+        </div>
+        <div class="mx-auto max-w-3xl px-4 py-4 sm:px-6">
           
+          
+          <div>
+            
 <div>
      
     <a>Unique ID: 542201532482450<br>Parent ID: 462493170453287_541366495899287</a>
     
 </div> 
+          </div>
         </div>
-      </div>
-    </div><br><br>
+      </div><br><br>
+          
     
-        
-    
-    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 overflow-hidden rounded-lg bg-white shadow">
-      <div class="px-4 py-5 sm:p-6">
-         
-         <div>
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 overflow-hidden rounded-lg bg-white shadow">
+        <div class="px-4 py-5 sm:p-6">
+           
+           <div>
   <div>
     <h2 class="text-xl">Adam Thomas</h2>
     
@@ -4534,27 +4744,26 @@ SUCK IT UP. THE WORDS I TYPE HERE MAKE ME BETTER THAN GOD! BY BEING HERE, YOU AD
     </div>
   </div>
 </div> 
-      </div>
-      <div class="mx-auto max-w-3xl bg-gray-50 px-4 py-4 sm:px-6">
-        
-        
-        <div>
+        </div>
+        <div class="mx-auto max-w-3xl px-4 py-4 sm:px-6">
           
+          
+          <div>
+            
 <div>
      
     <a>Unique ID: 542201885815748<br>Parent ID: 462493170453287_541366495899287</a>
     
 </div> 
+          </div>
         </div>
-      </div>
-    </div><br><br>
+      </div><br><br>
+          
     
-        
-    
-    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 overflow-hidden rounded-lg bg-white shadow">
-      <div class="px-4 py-5 sm:p-6">
-         
-         <div>
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 overflow-hidden rounded-lg bg-white shadow">
+        <div class="px-4 py-5 sm:p-6">
+           
+           <div>
   <div>
     <h2 class="text-xl">Adam Thomas</h2>
     
@@ -4602,27 +4811,26 @@ SUCK IT UP. THE WORDS I TYPE HERE MAKE ME BETTER THAN GOD! BY BEING HERE, YOU AD
     </div>
   </div>
 </div> 
-      </div>
-      <div class="mx-auto max-w-3xl bg-gray-50 px-4 py-4 sm:px-6">
-        
-        
-        <div>
+        </div>
+        <div class="mx-auto max-w-3xl px-4 py-4 sm:px-6">
           
+          
+          <div>
+            
 <div>
      
     <a>Unique ID: 542202162482387<br>Parent ID: 462493170453287_541366495899287</a>
     
 </div> 
+          </div>
         </div>
-      </div>
-    </div><br><br>
+      </div><br><br>
+          
     
-        
-    
-    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 overflow-hidden rounded-lg bg-white shadow">
-      <div class="px-4 py-5 sm:p-6">
-         
-         <div>
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 overflow-hidden rounded-lg bg-white shadow">
+        <div class="px-4 py-5 sm:p-6">
+           
+           <div>
   <div>
     <h2 class="text-xl">Adam Thomas</h2>
     
@@ -4670,27 +4878,26 @@ SUCK IT UP. THE WORDS I TYPE HERE MAKE ME BETTER THAN GOD! BY BEING HERE, YOU AD
     </div>
   </div>
 </div> 
-      </div>
-      <div class="mx-auto max-w-3xl bg-gray-50 px-4 py-4 sm:px-6">
-        
-        
-        <div>
+        </div>
+        <div class="mx-auto max-w-3xl px-4 py-4 sm:px-6">
           
+          
+          <div>
+            
 <div>
      
     <a>Unique ID: 542202412482362<br>Parent ID: 462493170453287_541366495899287</a>
     
 </div> 
+          </div>
         </div>
-      </div>
-    </div><br><br>
+      </div><br><br>
+          
     
-        
-    
-    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 overflow-hidden rounded-lg bg-white shadow">
-      <div class="px-4 py-5 sm:p-6">
-         
-         <div>
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 overflow-hidden rounded-lg bg-white shadow">
+        <div class="px-4 py-5 sm:p-6">
+           
+           <div>
   <div>
     <h2 class="text-xl">Chad Brodgesell</h2>
     
@@ -4739,27 +4946,26 @@ Knowledge of the USE of Facts to obtain a goal is the Learning of Facts. Here is
     </div>
   </div>
 </div> 
-      </div>
-      <div class="mx-auto max-w-3xl bg-gray-50 px-4 py-4 sm:px-6">
-        
-        
-        <div>
+        </div>
+        <div class="mx-auto max-w-3xl px-4 py-4 sm:px-6">
           
+          
+          <div>
+            
 <div>
      
     <a>Unique ID: 542204732482130<br>Parent ID: 462493170453287_541366495899287</a>
     
 </div> 
+          </div>
         </div>
-      </div>
-    </div><br><br>
+      </div><br><br>
+          
     
-        
-    
-    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 overflow-hidden rounded-lg bg-white shadow">
-      <div class="px-4 py-5 sm:p-6">
-         
-         <div>
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 overflow-hidden rounded-lg bg-white shadow">
+        <div class="px-4 py-5 sm:p-6">
+           
+           <div>
   <div>
     <h2 class="text-xl">Pete Daoust</h2>
     
@@ -4807,27 +5013,26 @@ Knowledge of the USE of Facts to obtain a goal is the Learning of Facts. Here is
     </div>
   </div>
 </div> 
-      </div>
-      <div class="mx-auto max-w-3xl bg-gray-50 px-4 py-4 sm:px-6">
-        
-        
-        <div>
+        </div>
+        <div class="mx-auto max-w-3xl px-4 py-4 sm:px-6">
           
+          
+          <div>
+            
 <div>
      
     <a>Unique ID: 542205005815436<br>Parent ID: 462493170453287_541366495899287</a>
     
 </div> 
+          </div>
         </div>
-      </div>
-    </div><br><br>
+      </div><br><br>
+          
     
-        
-    
-    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 overflow-hidden rounded-lg bg-white shadow">
-      <div class="px-4 py-5 sm:p-6">
-         
-         <div>
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 overflow-hidden rounded-lg bg-white shadow">
+        <div class="px-4 py-5 sm:p-6">
+           
+           <div>
   <div>
     <h2 class="text-xl">Adam Thomas</h2>
     
@@ -4875,27 +5080,26 @@ Knowledge of the USE of Facts to obtain a goal is the Learning of Facts. Here is
     </div>
   </div>
 </div> 
-      </div>
-      <div class="mx-auto max-w-3xl bg-gray-50 px-4 py-4 sm:px-6">
-        
-        
-        <div>
+        </div>
+        <div class="mx-auto max-w-3xl px-4 py-4 sm:px-6">
           
+          
+          <div>
+            
 <div>
      
     <a>Unique ID: 542205855815351<br>Parent ID: 462493170453287_541366495899287</a>
     
 </div> 
+          </div>
         </div>
-      </div>
-    </div><br><br>
+      </div><br><br>
+          
     
-        
-    
-    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 overflow-hidden rounded-lg bg-white shadow">
-      <div class="px-4 py-5 sm:p-6">
-         
-         <div>
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 overflow-hidden rounded-lg bg-white shadow">
+        <div class="px-4 py-5 sm:p-6">
+           
+           <div>
   <div>
     <h2 class="text-xl">Scott Duncan</h2>
     
@@ -4947,27 +5151,26 @@ Silly me. Carry on. They won&#39;t even notice :D
     </div>
   </div>
 </div> 
-      </div>
-      <div class="mx-auto max-w-3xl bg-gray-50 px-4 py-4 sm:px-6">
-        
-        
-        <div>
+        </div>
+        <div class="mx-auto max-w-3xl px-4 py-4 sm:px-6">
           
+          
+          <div>
+            
 <div>
      
     <a>Unique ID: 542216925814244<br>Parent ID: 462493170453287_541366495899287</a>
     
 </div> 
+          </div>
         </div>
-      </div>
-    </div><br><br>
+      </div><br><br>
+          
     
-        
-    
-    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 overflow-hidden rounded-lg bg-white shadow">
-      <div class="px-4 py-5 sm:p-6">
-         
-         <div>
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 overflow-hidden rounded-lg bg-white shadow">
+        <div class="px-4 py-5 sm:p-6">
+           
+           <div>
   <div>
     <h2 class="text-xl">Dean Clifford</h2>
     
@@ -5015,27 +5218,26 @@ Silly me. Carry on. They won&#39;t even notice :D
     </div>
   </div>
 </div> 
-      </div>
-      <div class="mx-auto max-w-3xl bg-gray-50 px-4 py-4 sm:px-6">
-        
-        
-        <div>
+        </div>
+        <div class="mx-auto max-w-3xl px-4 py-4 sm:px-6">
           
+          
+          <div>
+            
 <div>
      
     <a>Unique ID: 542217172480886<br>Parent ID: 462493170453287_541366495899287</a>
     
 </div> 
+          </div>
         </div>
-      </div>
-    </div><br><br>
+      </div><br><br>
+          
     
-        
-    
-    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 overflow-hidden rounded-lg bg-white shadow">
-      <div class="px-4 py-5 sm:p-6">
-         
-         <div>
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 overflow-hidden rounded-lg bg-white shadow">
+        <div class="px-4 py-5 sm:p-6">
+           
+           <div>
   <div>
     <h2 class="text-xl">David Johansen</h2>
     
@@ -5083,27 +5285,26 @@ Silly me. Carry on. They won&#39;t even notice :D
     </div>
   </div>
 </div> 
-      </div>
-      <div class="mx-auto max-w-3xl bg-gray-50 px-4 py-4 sm:px-6">
-        
-        
-        <div>
+        </div>
+        <div class="mx-auto max-w-3xl px-4 py-4 sm:px-6">
           
+          
+          <div>
+            
 <div>
      
     <a>Unique ID: 542217895814147<br>Parent ID: 462493170453287_541366495899287</a>
     
 </div> 
+          </div>
         </div>
-      </div>
-    </div><br><br>
+      </div><br><br>
+          
     
-        
-    
-    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 overflow-hidden rounded-lg bg-white shadow">
-      <div class="px-4 py-5 sm:p-6">
-         
-         <div>
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 overflow-hidden rounded-lg bg-white shadow">
+        <div class="px-4 py-5 sm:p-6">
+           
+           <div>
   <div>
     <h2 class="text-xl">Lei Gh</h2>
     
@@ -5151,27 +5352,26 @@ Silly me. Carry on. They won&#39;t even notice :D
     </div>
   </div>
 </div> 
-      </div>
-      <div class="mx-auto max-w-3xl bg-gray-50 px-4 py-4 sm:px-6">
-        
-        
-        <div>
+        </div>
+        <div class="mx-auto max-w-3xl px-4 py-4 sm:px-6">
           
+          
+          <div>
+            
 <div>
      
     <a>Unique ID: 542218249147445<br>Parent ID: 462493170453287_541366495899287</a>
     
 </div> 
+          </div>
         </div>
-      </div>
-    </div><br><br>
+      </div><br><br>
+          
     
-        
-    
-    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 overflow-hidden rounded-lg bg-white shadow">
-      <div class="px-4 py-5 sm:p-6">
-         
-         <div>
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 overflow-hidden rounded-lg bg-white shadow">
+        <div class="px-4 py-5 sm:p-6">
+           
+           <div>
   <div>
     <h2 class="text-xl">David Johansen</h2>
     
@@ -5219,27 +5419,26 @@ Silly me. Carry on. They won&#39;t even notice :D
     </div>
   </div>
 </div> 
-      </div>
-      <div class="mx-auto max-w-3xl bg-gray-50 px-4 py-4 sm:px-6">
-        
-        
-        <div>
+        </div>
+        <div class="mx-auto max-w-3xl px-4 py-4 sm:px-6">
           
+          
+          <div>
+            
 <div>
      
     <a>Unique ID: 542218365814100<br>Parent ID: 462493170453287_541366495899287</a>
     
 </div> 
+          </div>
         </div>
-      </div>
-    </div><br><br>
+      </div><br><br>
+          
     
-        
-    
-    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 overflow-hidden rounded-lg bg-white shadow">
-      <div class="px-4 py-5 sm:p-6">
-         
-         <div>
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 overflow-hidden rounded-lg bg-white shadow">
+        <div class="px-4 py-5 sm:p-6">
+           
+           <div>
   <div>
     <h2 class="text-xl">Scott Duncan</h2>
     
@@ -5291,27 +5490,26 @@ How many FEMINISTS does it take to screw in a lightbulb?
     </div>
   </div>
 </div> 
-      </div>
-      <div class="mx-auto max-w-3xl bg-gray-50 px-4 py-4 sm:px-6">
-        
-        
-        <div>
+        </div>
+        <div class="mx-auto max-w-3xl px-4 py-4 sm:px-6">
           
+          
+          <div>
+            
 <div>
      
     <a>Unique ID: 542218402480763<br>Parent ID: 462493170453287_541366495899287</a>
     
 </div> 
+          </div>
         </div>
-      </div>
-    </div><br><br>
+      </div><br><br>
+          
     
-        
-    
-    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 overflow-hidden rounded-lg bg-white shadow">
-      <div class="px-4 py-5 sm:p-6">
-         
-         <div>
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 overflow-hidden rounded-lg bg-white shadow">
+        <div class="px-4 py-5 sm:p-6">
+           
+           <div>
   <div>
     <h2 class="text-xl">Pete Daoust</h2>
     
@@ -5359,27 +5557,26 @@ How many FEMINISTS does it take to screw in a lightbulb?
     </div>
   </div>
 </div> 
-      </div>
-      <div class="mx-auto max-w-3xl bg-gray-50 px-4 py-4 sm:px-6">
-        
-        
-        <div>
+        </div>
+        <div class="mx-auto max-w-3xl px-4 py-4 sm:px-6">
           
+          
+          <div>
+            
 <div>
      
     <a>Unique ID: 542218479147422<br>Parent ID: 462493170453287_541366495899287</a>
     
 </div> 
+          </div>
         </div>
-      </div>
-    </div><br><br>
+      </div><br><br>
+          
     
-        
-    
-    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 overflow-hidden rounded-lg bg-white shadow">
-      <div class="px-4 py-5 sm:p-6">
-         
-         <div>
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 overflow-hidden rounded-lg bg-white shadow">
+        <div class="px-4 py-5 sm:p-6">
+           
+           <div>
   <div>
     <h2 class="text-xl">Scott Duncan</h2>
     
@@ -5427,27 +5624,26 @@ How many FEMINISTS does it take to screw in a lightbulb?
     </div>
   </div>
 </div> 
-      </div>
-      <div class="mx-auto max-w-3xl bg-gray-50 px-4 py-4 sm:px-6">
-        
-        
-        <div>
+        </div>
+        <div class="mx-auto max-w-3xl px-4 py-4 sm:px-6">
           
+          
+          <div>
+            
 <div>
      
     <a>Unique ID: 542218512480752<br>Parent ID: 462493170453287_541366495899287</a>
     
 </div> 
+          </div>
         </div>
-      </div>
-    </div><br><br>
+      </div><br><br>
+          
     
-        
-    
-    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 overflow-hidden rounded-lg bg-white shadow">
-      <div class="px-4 py-5 sm:p-6">
-         
-         <div>
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 overflow-hidden rounded-lg bg-white shadow">
+        <div class="px-4 py-5 sm:p-6">
+           
+           <div>
   <div>
     <h2 class="text-xl">Pete Daoust</h2>
     
@@ -5495,27 +5691,26 @@ How many FEMINISTS does it take to screw in a lightbulb?
     </div>
   </div>
 </div> 
-      </div>
-      <div class="mx-auto max-w-3xl bg-gray-50 px-4 py-4 sm:px-6">
-        
-        
-        <div>
+        </div>
+        <div class="mx-auto max-w-3xl px-4 py-4 sm:px-6">
           
+          
+          <div>
+            
 <div>
      
     <a>Unique ID: 542218582480745<br>Parent ID: 462493170453287_541366495899287</a>
     
 </div> 
+          </div>
         </div>
-      </div>
-    </div><br><br>
+      </div><br><br>
+          
     
-        
-    
-    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 overflow-hidden rounded-lg bg-white shadow">
-      <div class="px-4 py-5 sm:p-6">
-         
-         <div>
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 overflow-hidden rounded-lg bg-white shadow">
+        <div class="px-4 py-5 sm:p-6">
+           
+           <div>
   <div>
     <h2 class="text-xl">Pete Daoust</h2>
     
@@ -5563,27 +5758,26 @@ How many FEMINISTS does it take to screw in a lightbulb?
     </div>
   </div>
 </div> 
-      </div>
-      <div class="mx-auto max-w-3xl bg-gray-50 px-4 py-4 sm:px-6">
-        
-        
-        <div>
+        </div>
+        <div class="mx-auto max-w-3xl px-4 py-4 sm:px-6">
           
+          
+          <div>
+            
 <div>
      
     <a>Unique ID: 542218672480736<br>Parent ID: 462493170453287_541366495899287</a>
     
 </div> 
+          </div>
         </div>
-      </div>
-    </div><br><br>
+      </div><br><br>
+          
     
-        
-    
-    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 overflow-hidden rounded-lg bg-white shadow">
-      <div class="px-4 py-5 sm:p-6">
-         
-         <div>
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 overflow-hidden rounded-lg bg-white shadow">
+        <div class="px-4 py-5 sm:p-6">
+           
+           <div>
   <div>
     <h2 class="text-xl">Scott Duncan</h2>
     
@@ -5633,27 +5827,26 @@ That&#39;s the same mentality that blinded you all these years.
     </div>
   </div>
 </div> 
-      </div>
-      <div class="mx-auto max-w-3xl bg-gray-50 px-4 py-4 sm:px-6">
-        
-        
-        <div>
+        </div>
+        <div class="mx-auto max-w-3xl px-4 py-4 sm:px-6">
           
+          
+          <div>
+            
 <div>
      
     <a>Unique ID: 542218802480723<br>Parent ID: 462493170453287_541366495899287</a>
     
 </div> 
+          </div>
         </div>
-      </div>
-    </div><br><br>
+      </div><br><br>
+          
     
-        
-    
-    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 overflow-hidden rounded-lg bg-white shadow">
-      <div class="px-4 py-5 sm:p-6">
-         
-         <div>
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 overflow-hidden rounded-lg bg-white shadow">
+        <div class="px-4 py-5 sm:p-6">
+           
+           <div>
   <div>
     <h2 class="text-xl">Pete Daoust</h2>
     
@@ -5701,27 +5894,26 @@ That&#39;s the same mentality that blinded you all these years.
     </div>
   </div>
 </div> 
-      </div>
-      <div class="mx-auto max-w-3xl bg-gray-50 px-4 py-4 sm:px-6">
-        
-        
-        <div>
+        </div>
+        <div class="mx-auto max-w-3xl px-4 py-4 sm:px-6">
           
+          
+          <div>
+            
 <div>
      
     <a>Unique ID: 542218972480706<br>Parent ID: 462493170453287_541366495899287</a>
     
 </div> 
+          </div>
         </div>
-      </div>
-    </div><br><br>
+      </div><br><br>
+          
     
-        
-    
-    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 overflow-hidden rounded-lg bg-white shadow">
-      <div class="px-4 py-5 sm:p-6">
-         
-         <div>
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 overflow-hidden rounded-lg bg-white shadow">
+        <div class="px-4 py-5 sm:p-6">
+           
+           <div>
   <div>
     <h2 class="text-xl">Pete Daoust</h2>
     
@@ -5769,27 +5961,26 @@ That&#39;s the same mentality that blinded you all these years.
     </div>
   </div>
 </div> 
-      </div>
-      <div class="mx-auto max-w-3xl bg-gray-50 px-4 py-4 sm:px-6">
-        
-        
-        <div>
+        </div>
+        <div class="mx-auto max-w-3xl px-4 py-4 sm:px-6">
           
+          
+          <div>
+            
 <div>
      
     <a>Unique ID: 542218995814037<br>Parent ID: 462493170453287_541366495899287</a>
     
 </div> 
+          </div>
         </div>
-      </div>
-    </div><br><br>
+      </div><br><br>
+          
     
-        
-    
-    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 overflow-hidden rounded-lg bg-white shadow">
-      <div class="px-4 py-5 sm:p-6">
-         
-         <div>
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 overflow-hidden rounded-lg bg-white shadow">
+        <div class="px-4 py-5 sm:p-6">
+           
+           <div>
   <div>
     <h2 class="text-xl">Cara Small</h2>
     
@@ -5837,27 +6028,26 @@ That&#39;s the same mentality that blinded you all these years.
     </div>
   </div>
 </div> 
-      </div>
-      <div class="mx-auto max-w-3xl bg-gray-50 px-4 py-4 sm:px-6">
-        
-        
-        <div>
+        </div>
+        <div class="mx-auto max-w-3xl px-4 py-4 sm:px-6">
           
+          
+          <div>
+            
 <div>
      
     <a>Unique ID: 542218999147370<br>Parent ID: 462493170453287_541366495899287</a>
     
 </div> 
+          </div>
         </div>
-      </div>
-    </div><br><br>
+      </div><br><br>
+          
     
-        
-    
-    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 overflow-hidden rounded-lg bg-white shadow">
-      <div class="px-4 py-5 sm:p-6">
-         
-         <div>
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 overflow-hidden rounded-lg bg-white shadow">
+        <div class="px-4 py-5 sm:p-6">
+           
+           <div>
   <div>
     <h2 class="text-xl">Cara Small</h2>
     
@@ -5905,27 +6095,26 @@ That&#39;s the same mentality that blinded you all these years.
     </div>
   </div>
 </div> 
-      </div>
-      <div class="mx-auto max-w-3xl bg-gray-50 px-4 py-4 sm:px-6">
-        
-        
-        <div>
+        </div>
+        <div class="mx-auto max-w-3xl px-4 py-4 sm:px-6">
           
+          
+          <div>
+            
 <div>
      
     <a>Unique ID: 542219282480675<br>Parent ID: 462493170453287_541366495899287</a>
     
 </div> 
+          </div>
         </div>
-      </div>
-    </div><br><br>
+      </div><br><br>
+          
     
-        
-    
-    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 overflow-hidden rounded-lg bg-white shadow">
-      <div class="px-4 py-5 sm:p-6">
-         
-         <div>
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 overflow-hidden rounded-lg bg-white shadow">
+        <div class="px-4 py-5 sm:p-6">
+           
+           <div>
   <div>
     <h2 class="text-xl">Pete Daoust</h2>
     
@@ -5973,27 +6162,26 @@ That&#39;s the same mentality that blinded you all these years.
     </div>
   </div>
 </div> 
-      </div>
-      <div class="mx-auto max-w-3xl bg-gray-50 px-4 py-4 sm:px-6">
-        
-        
-        <div>
+        </div>
+        <div class="mx-auto max-w-3xl px-4 py-4 sm:px-6">
           
+          
+          <div>
+            
 <div>
      
     <a>Unique ID: 542219412480662<br>Parent ID: 462493170453287_541366495899287</a>
     
 </div> 
+          </div>
         </div>
-      </div>
-    </div><br><br>
+      </div><br><br>
+          
     
-        
-    
-    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 overflow-hidden rounded-lg bg-white shadow">
-      <div class="px-4 py-5 sm:p-6">
-         
-         <div>
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 overflow-hidden rounded-lg bg-white shadow">
+        <div class="px-4 py-5 sm:p-6">
+           
+           <div>
   <div>
     <h2 class="text-xl">Scott Duncan</h2>
     
@@ -6041,27 +6229,26 @@ That&#39;s the same mentality that blinded you all these years.
     </div>
   </div>
 </div> 
-      </div>
-      <div class="mx-auto max-w-3xl bg-gray-50 px-4 py-4 sm:px-6">
-        
-        
-        <div>
+        </div>
+        <div class="mx-auto max-w-3xl px-4 py-4 sm:px-6">
           
+          
+          <div>
+            
 <div>
      
     <a>Unique ID: 542219705813966<br>Parent ID: 462493170453287_541366495899287</a>
     
 </div> 
+          </div>
         </div>
-      </div>
-    </div><br><br>
+      </div><br><br>
+          
     
-        
-    
-    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 overflow-hidden rounded-lg bg-white shadow">
-      <div class="px-4 py-5 sm:p-6">
-         
-         <div>
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 overflow-hidden rounded-lg bg-white shadow">
+        <div class="px-4 py-5 sm:p-6">
+           
+           <div>
   <div>
     <h2 class="text-xl">Pete Daoust</h2>
     
@@ -6109,27 +6296,26 @@ That&#39;s the same mentality that blinded you all these years.
     </div>
   </div>
 </div> 
-      </div>
-      <div class="mx-auto max-w-3xl bg-gray-50 px-4 py-4 sm:px-6">
-        
-        
-        <div>
+        </div>
+        <div class="mx-auto max-w-3xl px-4 py-4 sm:px-6">
           
+          
+          <div>
+            
 <div>
      
     <a>Unique ID: 542219759147294<br>Parent ID: 462493170453287_541366495899287</a>
     
 </div> 
+          </div>
         </div>
-      </div>
-    </div><br><br>
+      </div><br><br>
+          
     
-        
-    
-    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 overflow-hidden rounded-lg bg-white shadow">
-      <div class="px-4 py-5 sm:p-6">
-         
-         <div>
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 overflow-hidden rounded-lg bg-white shadow">
+        <div class="px-4 py-5 sm:p-6">
+           
+           <div>
   <div>
     <h2 class="text-xl">Cara Small</h2>
     
@@ -6177,27 +6363,26 @@ That&#39;s the same mentality that blinded you all these years.
     </div>
   </div>
 </div> 
-      </div>
-      <div class="mx-auto max-w-3xl bg-gray-50 px-4 py-4 sm:px-6">
-        
-        
-        <div>
+        </div>
+        <div class="mx-auto max-w-3xl px-4 py-4 sm:px-6">
           
+          
+          <div>
+            
 <div>
      
     <a>Unique ID: 542219835813953<br>Parent ID: 462493170453287_541366495899287</a>
     
 </div> 
+          </div>
         </div>
-      </div>
-    </div><br><br>
+      </div><br><br>
+          
     
-        
-    
-    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 overflow-hidden rounded-lg bg-white shadow">
-      <div class="px-4 py-5 sm:p-6">
-         
-         <div>
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 overflow-hidden rounded-lg bg-white shadow">
+        <div class="px-4 py-5 sm:p-6">
+           
+           <div>
   <div>
     <h2 class="text-xl">Pete Daoust</h2>
     
@@ -6245,27 +6430,26 @@ That&#39;s the same mentality that blinded you all these years.
     </div>
   </div>
 </div> 
-      </div>
-      <div class="mx-auto max-w-3xl bg-gray-50 px-4 py-4 sm:px-6">
-        
-        
-        <div>
+        </div>
+        <div class="mx-auto max-w-3xl px-4 py-4 sm:px-6">
           
+          
+          <div>
+            
 <div>
      
     <a>Unique ID: 542219865813950<br>Parent ID: 462493170453287_541366495899287</a>
     
 </div> 
+          </div>
         </div>
-      </div>
-    </div><br><br>
+      </div><br><br>
+          
     
-        
-    
-    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 overflow-hidden rounded-lg bg-white shadow">
-      <div class="px-4 py-5 sm:p-6">
-         
-         <div>
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 overflow-hidden rounded-lg bg-white shadow">
+        <div class="px-4 py-5 sm:p-6">
+           
+           <div>
   <div>
     <h2 class="text-xl">Scott Duncan</h2>
     
@@ -6314,27 +6498,26 @@ and
     </div>
   </div>
 </div> 
-      </div>
-      <div class="mx-auto max-w-3xl bg-gray-50 px-4 py-4 sm:px-6">
-        
-        
-        <div>
+        </div>
+        <div class="mx-auto max-w-3xl px-4 py-4 sm:px-6">
           
+          
+          <div>
+            
 <div>
      
     <a>Unique ID: 542219945813942<br>Parent ID: 462493170453287_541366495899287</a>
     
 </div> 
+          </div>
         </div>
-      </div>
-    </div><br><br>
+      </div><br><br>
+          
     
-        
-    
-    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 overflow-hidden rounded-lg bg-white shadow">
-      <div class="px-4 py-5 sm:p-6">
-         
-         <div>
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 overflow-hidden rounded-lg bg-white shadow">
+        <div class="px-4 py-5 sm:p-6">
+           
+           <div>
   <div>
     <h2 class="text-xl">Scott Duncan</h2>
     
@@ -6382,27 +6565,26 @@ and
     </div>
   </div>
 </div> 
-      </div>
-      <div class="mx-auto max-w-3xl bg-gray-50 px-4 py-4 sm:px-6">
-        
-        
-        <div>
+        </div>
+        <div class="mx-auto max-w-3xl px-4 py-4 sm:px-6">
           
+          
+          <div>
+            
 <div>
      
     <a>Unique ID: 542219962480607<br>Parent ID: 462493170453287_541366495899287</a>
     
 </div> 
+          </div>
         </div>
-      </div>
-    </div><br><br>
+      </div><br><br>
+          
     
-        
-    
-    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 overflow-hidden rounded-lg bg-white shadow">
-      <div class="px-4 py-5 sm:p-6">
-         
-         <div>
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 overflow-hidden rounded-lg bg-white shadow">
+        <div class="px-4 py-5 sm:p-6">
+           
+           <div>
   <div>
     <h2 class="text-xl">Pete Daoust</h2>
     
@@ -6450,27 +6632,26 @@ and
     </div>
   </div>
 </div> 
-      </div>
-      <div class="mx-auto max-w-3xl bg-gray-50 px-4 py-4 sm:px-6">
-        
-        
-        <div>
+        </div>
+        <div class="mx-auto max-w-3xl px-4 py-4 sm:px-6">
           
+          
+          <div>
+            
 <div>
      
     <a>Unique ID: 542219992480604<br>Parent ID: 462493170453287_541366495899287</a>
     
 </div> 
+          </div>
         </div>
-      </div>
-    </div><br><br>
+      </div><br><br>
+          
     
-        
-    
-    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 overflow-hidden rounded-lg bg-white shadow">
-      <div class="px-4 py-5 sm:p-6">
-         
-         <div>
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 overflow-hidden rounded-lg bg-white shadow">
+        <div class="px-4 py-5 sm:p-6">
+           
+           <div>
   <div>
     <h2 class="text-xl">Scott Duncan</h2>
     
@@ -6518,27 +6699,26 @@ and
     </div>
   </div>
 </div> 
-      </div>
-      <div class="mx-auto max-w-3xl bg-gray-50 px-4 py-4 sm:px-6">
-        
-        
-        <div>
+        </div>
+        <div class="mx-auto max-w-3xl px-4 py-4 sm:px-6">
           
+          
+          <div>
+            
 <div>
      
     <a>Unique ID: 542220089147261<br>Parent ID: 462493170453287_541366495899287</a>
     
 </div> 
+          </div>
         </div>
-      </div>
-    </div><br><br>
+      </div><br><br>
+          
     
-        
-    
-    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 overflow-hidden rounded-lg bg-white shadow">
-      <div class="px-4 py-5 sm:p-6">
-         
-         <div>
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 overflow-hidden rounded-lg bg-white shadow">
+        <div class="px-4 py-5 sm:p-6">
+           
+           <div>
   <div>
     <h2 class="text-xl">Cara Small</h2>
     
@@ -6586,27 +6766,26 @@ and
     </div>
   </div>
 </div> 
-      </div>
-      <div class="mx-auto max-w-3xl bg-gray-50 px-4 py-4 sm:px-6">
-        
-        
-        <div>
+        </div>
+        <div class="mx-auto max-w-3xl px-4 py-4 sm:px-6">
           
+          
+          <div>
+            
 <div>
      
     <a>Unique ID: 542220509147219<br>Parent ID: 462493170453287_541366495899287</a>
     
 </div> 
+          </div>
         </div>
-      </div>
-    </div><br><br>
+      </div><br><br>
+          
     
-        
-    
-    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 overflow-hidden rounded-lg bg-white shadow">
-      <div class="px-4 py-5 sm:p-6">
-         
-         <div>
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 overflow-hidden rounded-lg bg-white shadow">
+        <div class="px-4 py-5 sm:p-6">
+           
+           <div>
   <div>
     <h2 class="text-xl">Chad Brodgesell</h2>
     
@@ -6654,27 +6833,26 @@ and
     </div>
   </div>
 </div> 
-      </div>
-      <div class="mx-auto max-w-3xl bg-gray-50 px-4 py-4 sm:px-6">
-        
-        
-        <div>
+        </div>
+        <div class="mx-auto max-w-3xl px-4 py-4 sm:px-6">
           
+          
+          <div>
+            
 <div>
      
     <a>Unique ID: 542220529147217<br>Parent ID: 462493170453287_541366495899287</a>
     
 </div> 
+          </div>
         </div>
-      </div>
-    </div><br><br>
+      </div><br><br>
+          
     
-        
-    
-    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 overflow-hidden rounded-lg bg-white shadow">
-      <div class="px-4 py-5 sm:p-6">
-         
-         <div>
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 overflow-hidden rounded-lg bg-white shadow">
+        <div class="px-4 py-5 sm:p-6">
+           
+           <div>
   <div>
     <h2 class="text-xl">Cara Small</h2>
     
@@ -6722,27 +6900,26 @@ and
     </div>
   </div>
 </div> 
-      </div>
-      <div class="mx-auto max-w-3xl bg-gray-50 px-4 py-4 sm:px-6">
-        
-        
-        <div>
+        </div>
+        <div class="mx-auto max-w-3xl px-4 py-4 sm:px-6">
           
+          
+          <div>
+            
 <div>
      
     <a>Unique ID: 542220875813849<br>Parent ID: 462493170453287_541366495899287</a>
     
 </div> 
+          </div>
         </div>
-      </div>
-    </div><br><br>
+      </div><br><br>
+          
     
-        
-    
-    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 overflow-hidden rounded-lg bg-white shadow">
-      <div class="px-4 py-5 sm:p-6">
-         
-         <div>
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 overflow-hidden rounded-lg bg-white shadow">
+        <div class="px-4 py-5 sm:p-6">
+           
+           <div>
   <div>
     <h2 class="text-xl">Chad Brodgesell</h2>
     
@@ -6790,27 +6967,26 @@ and
     </div>
   </div>
 </div> 
-      </div>
-      <div class="mx-auto max-w-3xl bg-gray-50 px-4 py-4 sm:px-6">
-        
-        
-        <div>
+        </div>
+        <div class="mx-auto max-w-3xl px-4 py-4 sm:px-6">
           
+          
+          <div>
+            
 <div>
      
     <a>Unique ID: 542221189147151<br>Parent ID: 462493170453287_541366495899287</a>
     
 </div> 
+          </div>
         </div>
-      </div>
-    </div><br><br>
+      </div><br><br>
+          
     
-        
-    
-    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 overflow-hidden rounded-lg bg-white shadow">
-      <div class="px-4 py-5 sm:p-6">
-         
-         <div>
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 overflow-hidden rounded-lg bg-white shadow">
+        <div class="px-4 py-5 sm:p-6">
+           
+           <div>
   <div>
     <h2 class="text-xl">Adam Thomas</h2>
     
@@ -6859,27 +7035,26 @@ and
     </div>
   </div>
 </div> 
-      </div>
-      <div class="mx-auto max-w-3xl bg-gray-50 px-4 py-4 sm:px-6">
-        
-        
-        <div>
+        </div>
+        <div class="mx-auto max-w-3xl px-4 py-4 sm:px-6">
           
+          
+          <div>
+            
 <div>
      
     <a>Unique ID: 542221319147138<br>Parent ID: 462493170453287_541366495899287</a>
     
 </div> 
+          </div>
         </div>
-      </div>
-    </div><br><br>
+      </div><br><br>
+          
     
-        
-    
-    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 overflow-hidden rounded-lg bg-white shadow">
-      <div class="px-4 py-5 sm:p-6">
-         
-         <div>
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 overflow-hidden rounded-lg bg-white shadow">
+        <div class="px-4 py-5 sm:p-6">
+           
+           <div>
   <div>
     <h2 class="text-xl">Adam Thomas</h2>
     
@@ -6927,27 +7102,26 @@ and
     </div>
   </div>
 </div> 
-      </div>
-      <div class="mx-auto max-w-3xl bg-gray-50 px-4 py-4 sm:px-6">
-        
-        
-        <div>
+        </div>
+        <div class="mx-auto max-w-3xl px-4 py-4 sm:px-6">
           
+          
+          <div>
+            
 <div>
      
     <a>Unique ID: 542221569147113<br>Parent ID: 462493170453287_541366495899287</a>
     
 </div> 
+          </div>
         </div>
-      </div>
-    </div><br><br>
+      </div><br><br>
+          
     
-        
-    
-    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 overflow-hidden rounded-lg bg-white shadow">
-      <div class="px-4 py-5 sm:p-6">
-         
-         <div>
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 overflow-hidden rounded-lg bg-white shadow">
+        <div class="px-4 py-5 sm:p-6">
+           
+           <div>
   <div>
     <h2 class="text-xl">Adam Thomas</h2>
     
@@ -6996,27 +7170,26 @@ Q; Why do women masturbate with this middle finger ??
     </div>
   </div>
 </div> 
-      </div>
-      <div class="mx-auto max-w-3xl bg-gray-50 px-4 py-4 sm:px-6">
-        
-        
-        <div>
+        </div>
+        <div class="mx-auto max-w-3xl px-4 py-4 sm:px-6">
           
+          
+          <div>
+            
 <div>
      
     <a>Unique ID: 542221812480422<br>Parent ID: 462493170453287_541366495899287</a>
     
 </div> 
+          </div>
         </div>
-      </div>
-    </div><br><br>
+      </div><br><br>
+          
     
-        
-    
-    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 overflow-hidden rounded-lg bg-white shadow">
-      <div class="px-4 py-5 sm:p-6">
-         
-         <div>
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 overflow-hidden rounded-lg bg-white shadow">
+        <div class="px-4 py-5 sm:p-6">
+           
+           <div>
   <div>
     <h2 class="text-xl">Pete Daoust</h2>
     
@@ -7064,27 +7237,26 @@ Q; Why do women masturbate with this middle finger ??
     </div>
   </div>
 </div> 
-      </div>
-      <div class="mx-auto max-w-3xl bg-gray-50 px-4 py-4 sm:px-6">
-        
-        
-        <div>
+        </div>
+        <div class="mx-auto max-w-3xl px-4 py-4 sm:px-6">
           
+          
+          <div>
+            
 <div>
      
     <a>Unique ID: 542222055813731<br>Parent ID: 462493170453287_541366495899287</a>
     
 </div> 
+          </div>
         </div>
-      </div>
-    </div><br><br>
+      </div><br><br>
+          
     
-        
-    
-    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 overflow-hidden rounded-lg bg-white shadow">
-      <div class="px-4 py-5 sm:p-6">
-         
-         <div>
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 overflow-hidden rounded-lg bg-white shadow">
+        <div class="px-4 py-5 sm:p-6">
+           
+           <div>
   <div>
     <h2 class="text-xl">David Johansen</h2>
     
@@ -7132,27 +7304,26 @@ Q; Why do women masturbate with this middle finger ??
     </div>
   </div>
 </div> 
-      </div>
-      <div class="mx-auto max-w-3xl bg-gray-50 px-4 py-4 sm:px-6">
-        
-        
-        <div>
+        </div>
+        <div class="mx-auto max-w-3xl px-4 py-4 sm:px-6">
           
+          
+          <div>
+            
 <div>
      
     <a>Unique ID: 542232562479347<br>Parent ID: 462493170453287_541366495899287</a>
     
 </div> 
+          </div>
         </div>
-      </div>
-    </div><br><br>
+      </div><br><br>
+          
     
-        
-    
-    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 overflow-hidden rounded-lg bg-white shadow">
-      <div class="px-4 py-5 sm:p-6">
-         
-         <div>
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 overflow-hidden rounded-lg bg-white shadow">
+        <div class="px-4 py-5 sm:p-6">
+           
+           <div>
   <div>
     <h2 class="text-xl">Chad Brodgesell</h2>
     
@@ -7201,27 +7372,26 @@ Must grab their attention in the first 20 words. Hand out at will.
     </div>
   </div>
 </div> 
-      </div>
-      <div class="mx-auto max-w-3xl bg-gray-50 px-4 py-4 sm:px-6">
-        
-        
-        <div>
+        </div>
+        <div class="mx-auto max-w-3xl px-4 py-4 sm:px-6">
           
+          
+          <div>
+            
 <div>
      
     <a>Unique ID: 542235259145744<br>Parent ID: 462493170453287_541366495899287</a>
     
 </div> 
+          </div>
         </div>
-      </div>
-    </div><br><br>
+      </div><br><br>
+          
     
-        
-    
-    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 overflow-hidden rounded-lg bg-white shadow">
-      <div class="px-4 py-5 sm:p-6">
-         
-         <div>
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 overflow-hidden rounded-lg bg-white shadow">
+        <div class="px-4 py-5 sm:p-6">
+           
+           <div>
   <div>
     <h2 class="text-xl">Chad Brodgesell</h2>
     
@@ -7269,27 +7439,26 @@ Must grab their attention in the first 20 words. Hand out at will.
     </div>
   </div>
 </div> 
-      </div>
-      <div class="mx-auto max-w-3xl bg-gray-50 px-4 py-4 sm:px-6">
-        
-        
-        <div>
+        </div>
+        <div class="mx-auto max-w-3xl px-4 py-4 sm:px-6">
           
+          
+          <div>
+            
 <div>
      
     <a>Unique ID: 542235672479036<br>Parent ID: 462493170453287_541366495899287</a>
     
 </div> 
+          </div>
         </div>
-      </div>
-    </div><br><br>
+      </div><br><br>
+          
     
-        
-    
-    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 overflow-hidden rounded-lg bg-white shadow">
-      <div class="px-4 py-5 sm:p-6">
-         
-         <div>
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 overflow-hidden rounded-lg bg-white shadow">
+        <div class="px-4 py-5 sm:p-6">
+           
+           <div>
   <div>
     <h2 class="text-xl">Chad Brodgesell</h2>
     
@@ -7338,27 +7507,26 @@ And sorry for misunderstanding your comment. :)
     </div>
   </div>
 </div> 
-      </div>
-      <div class="mx-auto max-w-3xl bg-gray-50 px-4 py-4 sm:px-6">
-        
-        
-        <div>
+        </div>
+        <div class="mx-auto max-w-3xl px-4 py-4 sm:px-6">
           
+          
+          <div>
+            
 <div>
      
     <a>Unique ID: 542235885812348<br>Parent ID: 462493170453287_541366495899287</a>
     
 </div> 
+          </div>
         </div>
-      </div>
-    </div><br><br>
+      </div><br><br>
+          
     
-        
-    
-    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 overflow-hidden rounded-lg bg-white shadow">
-      <div class="px-4 py-5 sm:p-6">
-         
-         <div>
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 overflow-hidden rounded-lg bg-white shadow">
+        <div class="px-4 py-5 sm:p-6">
+           
+           <div>
   <div>
     <h2 class="text-xl">Chad Brodgesell</h2>
     
@@ -7406,27 +7574,26 @@ And sorry for misunderstanding your comment. :)
     </div>
   </div>
 </div> 
-      </div>
-      <div class="mx-auto max-w-3xl bg-gray-50 px-4 py-4 sm:px-6">
-        
-        
-        <div>
+        </div>
+        <div class="mx-auto max-w-3xl px-4 py-4 sm:px-6">
           
+          
+          <div>
+            
 <div>
      
     <a>Unique ID: 542236195812317<br>Parent ID: 462493170453287_541366495899287</a>
     
 </div> 
+          </div>
         </div>
-      </div>
-    </div><br><br>
+      </div><br><br>
+          
     
-        
-    
-    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 overflow-hidden rounded-lg bg-white shadow">
-      <div class="px-4 py-5 sm:p-6">
-         
-         <div>
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 overflow-hidden rounded-lg bg-white shadow">
+        <div class="px-4 py-5 sm:p-6">
+           
+           <div>
   <div>
     <h2 class="text-xl">Adam Thomas</h2>
     
@@ -7474,27 +7641,26 @@ And sorry for misunderstanding your comment. :)
     </div>
   </div>
 </div> 
-      </div>
-      <div class="mx-auto max-w-3xl bg-gray-50 px-4 py-4 sm:px-6">
-        
-        
-        <div>
+        </div>
+        <div class="mx-auto max-w-3xl px-4 py-4 sm:px-6">
           
+          
+          <div>
+            
 <div>
      
     <a>Unique ID: 542259585809978<br>Parent ID: 462493170453287_541366495899287</a>
     
 </div> 
+          </div>
         </div>
-      </div>
-    </div><br><br>
+      </div><br><br>
+          
     
-        
-    
-    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 overflow-hidden rounded-lg bg-white shadow">
-      <div class="px-4 py-5 sm:p-6">
-         
-         <div>
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 overflow-hidden rounded-lg bg-white shadow">
+        <div class="px-4 py-5 sm:p-6">
+           
+           <div>
   <div>
     <h2 class="text-xl">Chad Brodgesell</h2>
     
@@ -7542,27 +7708,26 @@ And sorry for misunderstanding your comment. :)
     </div>
   </div>
 </div> 
-      </div>
-      <div class="mx-auto max-w-3xl bg-gray-50 px-4 py-4 sm:px-6">
-        
-        
-        <div>
+        </div>
+        <div class="mx-auto max-w-3xl px-4 py-4 sm:px-6">
           
+          
+          <div>
+            
 <div>
      
     <a>Unique ID: 542270649142205<br>Parent ID: 462493170453287_541366495899287</a>
     
 </div> 
+          </div>
         </div>
-      </div>
-    </div><br><br>
+      </div><br><br>
+          
     
-        
-    
-    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 overflow-hidden rounded-lg bg-white shadow">
-      <div class="px-4 py-5 sm:p-6">
-         
-         <div>
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 overflow-hidden rounded-lg bg-white shadow">
+        <div class="px-4 py-5 sm:p-6">
+           
+           <div>
   <div>
     <h2 class="text-xl">Sirwade Firsbey</h2>
     
@@ -7610,27 +7775,26 @@ And sorry for misunderstanding your comment. :)
     </div>
   </div>
 </div> 
-      </div>
-      <div class="mx-auto max-w-3xl bg-gray-50 px-4 py-4 sm:px-6">
-        
-        
-        <div>
+        </div>
+        <div class="mx-auto max-w-3xl px-4 py-4 sm:px-6">
           
+          
+          <div>
+            
 <div>
      
     <a>Unique ID: 542276939141576<br>Parent ID: 462493170453287_541366495899287</a>
     
 </div> 
+          </div>
         </div>
-      </div>
-    </div><br><br>
+      </div><br><br>
+          
     
-        
-    
-    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 overflow-hidden rounded-lg bg-white shadow">
-      <div class="px-4 py-5 sm:p-6">
-         
-         <div>
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 overflow-hidden rounded-lg bg-white shadow">
+        <div class="px-4 py-5 sm:p-6">
+           
+           <div>
   <div>
     <h2 class="text-xl">David Johansen</h2>
     
@@ -7678,27 +7842,26 @@ And sorry for misunderstanding your comment. :)
     </div>
   </div>
 </div> 
-      </div>
-      <div class="mx-auto max-w-3xl bg-gray-50 px-4 py-4 sm:px-6">
-        
-        
-        <div>
+        </div>
+        <div class="mx-auto max-w-3xl px-4 py-4 sm:px-6">
           
+          
+          <div>
+            
 <div>
      
     <a>Unique ID: 542286065807330<br>Parent ID: 462493170453287_541366495899287</a>
     
 </div> 
+          </div>
         </div>
-      </div>
-    </div><br><br>
+      </div><br><br>
+          
     
-        
-    
-    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 overflow-hidden rounded-lg bg-white shadow">
-      <div class="px-4 py-5 sm:p-6">
-         
-         <div>
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 overflow-hidden rounded-lg bg-white shadow">
+        <div class="px-4 py-5 sm:p-6">
+           
+           <div>
   <div>
     <h2 class="text-xl">David Johansen</h2>
     
@@ -7746,27 +7909,26 @@ And sorry for misunderstanding your comment. :)
     </div>
   </div>
 </div> 
-      </div>
-      <div class="mx-auto max-w-3xl bg-gray-50 px-4 py-4 sm:px-6">
-        
-        
-        <div>
+        </div>
+        <div class="mx-auto max-w-3xl px-4 py-4 sm:px-6">
           
+          
+          <div>
+            
 <div>
      
     <a>Unique ID: 542286205807316<br>Parent ID: 462493170453287_541366495899287</a>
     
 </div> 
+          </div>
         </div>
-      </div>
-    </div><br><br>
+      </div><br><br>
+          
     
-        
-    
-    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 overflow-hidden rounded-lg bg-white shadow">
-      <div class="px-4 py-5 sm:p-6">
-         
-         <div>
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 overflow-hidden rounded-lg bg-white shadow">
+        <div class="px-4 py-5 sm:p-6">
+           
+           <div>
   <div>
     <h2 class="text-xl">Sirwade Firsbey</h2>
     
@@ -7814,27 +7976,26 @@ And sorry for misunderstanding your comment. :)
     </div>
   </div>
 </div> 
-      </div>
-      <div class="mx-auto max-w-3xl bg-gray-50 px-4 py-4 sm:px-6">
-        
-        
-        <div>
+        </div>
+        <div class="mx-auto max-w-3xl px-4 py-4 sm:px-6">
           
+          
+          <div>
+            
 <div>
      
     <a>Unique ID: 542303882472215<br>Parent ID: 462493170453287_541366495899287</a>
     
 </div> 
+          </div>
         </div>
-      </div>
-    </div><br><br>
+      </div><br><br>
+          
     
-        
-    
-    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 overflow-hidden rounded-lg bg-white shadow">
-      <div class="px-4 py-5 sm:p-6">
-         
-         <div>
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 overflow-hidden rounded-lg bg-white shadow">
+        <div class="px-4 py-5 sm:p-6">
+           
+           <div>
   <div>
     <h2 class="text-xl">Adam Thomas</h2>
     
@@ -7882,27 +8043,26 @@ And sorry for misunderstanding your comment. :)
     </div>
   </div>
 </div> 
-      </div>
-      <div class="mx-auto max-w-3xl bg-gray-50 px-4 py-4 sm:px-6">
-        
-        
-        <div>
+        </div>
+        <div class="mx-auto max-w-3xl px-4 py-4 sm:px-6">
           
+          
+          <div>
+            
 <div>
      
     <a>Unique ID: 542318859137384<br>Parent ID: 462493170453287_541366495899287</a>
     
 </div> 
+          </div>
         </div>
-      </div>
-    </div><br><br>
+      </div><br><br>
+          
     
-        
-    
-    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 overflow-hidden rounded-lg bg-white shadow">
-      <div class="px-4 py-5 sm:p-6">
-         
-         <div>
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 overflow-hidden rounded-lg bg-white shadow">
+        <div class="px-4 py-5 sm:p-6">
+           
+           <div>
   <div>
     <h2 class="text-xl">Derek Moran</h2>
     
@@ -7961,27 +8121,26 @@ Your bullshit filter will get a workout here. I do this test knowing all the ans
     </div>
   </div>
 </div> 
-      </div>
-      <div class="mx-auto max-w-3xl bg-gray-50 px-4 py-4 sm:px-6">
-        
-        
-        <div>
+        </div>
+        <div class="mx-auto max-w-3xl px-4 py-4 sm:px-6">
           
+          
+          <div>
+            
 <div>
      
     <a>Unique ID: 602432559792680<br>Parent ID: 462493170453287_541366495899287</a>
     
 </div> 
+          </div>
         </div>
-      </div>
-    </div><br><br>
+      </div><br><br>
+          
     
-        
-    
-    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 overflow-hidden rounded-lg bg-white shadow">
-      <div class="px-4 py-5 sm:p-6">
-         
-         <div>
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 overflow-hidden rounded-lg bg-white shadow">
+        <div class="px-4 py-5 sm:p-6">
+           
+           <div>
   <div>
     <h2 class="text-xl">Derek Moran</h2>
     
@@ -8031,157 +8190,23 @@ Why do you want this freedom? The only thing waiting for you is struggle... or s
     </div>
   </div>
 </div> 
-      </div>
-      <div class="mx-auto max-w-3xl bg-gray-50 px-4 py-4 sm:px-6">
-        
-        
-        <div>
+        </div>
+        <div class="mx-auto max-w-3xl px-4 py-4 sm:px-6">
           
+          
+          <div>
+            
 <div>
      
     <a>Unique ID: 602433589792577<br>Parent ID: 462493170453287_541366495899287</a>
     
 </div> 
+          </div>
         </div>
-      </div>
-    </div><br><br>
-    
-        
-    
+      </div><br><br>
+          
+    </div>
+ </div>
 </body>
-<script src="/js/buttons.js"></script>
 </html>
 
-    
-<footer class="bg-gray-900" aria-labelledby="footer-heading">
-    <h2 id="footer-heading" class="sr-only">Footer</h2>
-    <div class="mx-auto max-w-7xl px-6 pb-8 pt-16 sm:pt-24 lg:px-8 lg:pt-32">
-      <div class="xl:grid xl:grid-cols-3 xl:gap-8">
-        <div class="space-y-8">
-          <img class="h-7" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500" alt="Company name">
-          <p class="text-sm leading-6 text-gray-300">Making the world a better place through constructing elegant hierarchies.</p>
-          <div class="flex space-x-6">
-            <a href="https://www.facebook.com/AQUILAETRUST/" target=”_blank” class="text-gray-500 hover:text-gray-400">
-              <span class="sr-only">Facebook</span>
-              <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                <path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd" />
-              </svg>
-            </a>
-            <a href="https://www.instagram.com/roguesupport/?hl=en" target=”_blank” class="text-gray-500 hover:text-gray-400">
-              <span class="sr-only">Instagram</span>
-              <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                <path fill-rule="evenodd" d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z" clip-rule="evenodd" />
-              </svg>
-            </a>
-            <a href="https://twitter.com/thetenderforlaw" target=”_blank” class="text-gray-500 hover:text-gray-400">
-              <span class="sr-only">Twitter</span>
-              <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                <path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" />
-              </svg>
-            </a>
-            <a href="https://github.com/roguesupport-scott" target=”_blank” class="text-gray-500 hover:text-gray-400">
-              <span class="sr-only">GitHub</span>
-              <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                <path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd" />
-              </svg>
-            </a>
-            <a href="https://www.youtube.com/channel/UCzWU4QHTXS_LNWEd16Egm5g" target=”_blank” class="text-gray-500 hover:text-gray-400">
-              <span class="sr-only">YouTube</span>
-              <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                <path fill-rule="evenodd" d="M19.812 5.418c.861.23 1.538.907 1.768 1.768C21.998 8.746 22 12 22 12s0 3.255-.418 4.814a2.504 2.504 0 0 1-1.768 1.768c-1.56.419-7.814.419-7.814.419s-6.255 0-7.814-.419a2.505 2.505 0 0 1-1.768-1.768C2 15.255 2 12 2 12s0-3.255.417-4.814a2.507 2.507 0 0 1 1.768-1.768C5.744 5 11.998 5 11.998 5s6.255 0 7.814.418ZM15.194 12 10 15V9l5.194 3Z" clip-rule="evenodd" />
-              </svg>
-            </a>
-          </div>
-        </div>
-        <div class="mt-16 grid grid-cols-2 gap-8 xl:col-span-2 xl:mt-0">
-          <div class="md:grid md:grid-cols-2 md:gap-8">
-            <div>
-              <h3 class="text-sm font-semibold leading-6 text-white">Required Playing</h3>
-              <ul role="list" class="mt-6 space-y-4">
-                <li>
-                  <a href="#" target="_blank" class="text-sm leading-6 text-gray-300 hover:text-white">Bf2142</a>
-                </li>
-                <li>
-                  <a href="#" target="_blank" class="text-sm leading-6 text-gray-300 hover:text-white">Grand Fluff Auto (altV)</a>
-                </li>
-                <li>
-                  <a href="#" target="_blank" class="text-sm leading-6 text-gray-300 hover:text-white">FoldIt</a>
-                </li>
-                <li>
-                  
-                </li>
-              </ul>
-            </div>
-            <div class="mt-10 md:mt-0">
-              <h3 class="text-sm font-semibold leading-6 text-white">Required Veiwing</h3>
-              <ul role="list" class="mt-6 space-y-4">
-                <li>
-                  <a href="https://youtu.be/QzVKuCKt35s?si=vg2IKF-L0fL5ie6g" target="_blank" class="text-sm leading-6 text-gray-300 hover:text-white">Money As Debt 3</a>
-                </li>
-                <li>
-                  <a href="https://youtu.be/aDheNy_Swbk?si=jORRlNpjMtH_Lf4W" target="_blank" class="text-sm leading-6 text-gray-300 hover:text-white">Rich Dad, Poor Dad</a>
-                </li>
-                <li>
-                  <a href="https://youtu.be/kZA9Hnp3aV4?si=DG4Gwced_0lIRc3p" target="_blank" class="text-sm leading-6 text-gray-300 hover:text-white">The Exponential Function</a>
-                </li>
-                <li>
-                  <a href="https://youtu.be/uO7uwCpcau8?si=MGMk1GEz8SCTDXeo" target="_blank" class="text-sm leading-6 text-gray-300 hover:text-white">The Essence Of Money</a>
-                </li>
-                <li>
-                  <a href="https://youtu.be/2uISqw9bNwc?si=VKIo_B6uS60WldoZ" target="_blank" class="text-sm leading-6 text-gray-300 hover:text-white">Lesson From A Rabbi</a>
-                </li>
-                <li>
-                  <a href="https://archive.org/details/adolf-hitler-the-greatest-story-never-told" target="_blank" class="text-sm leading-6 text-gray-300 hover:text-white">The Greatest Story Never Told</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="md:grid md:grid-cols-2 md:gap-8">
-            <div>
-              <h3 class="text-sm font-semibold leading-6 text-white">Required Reading</h3>
-              <ul role="list" class="mt-6 space-y-4">
-                <li>
-                  <a href="https://www.community-exchange.org/docs/Riegel/private_enterprise_money.pdf" target="_blank" class="text-sm leading-6 text-gray-300 hover:text-white">Private Enterprise Money</a>
-                </li>
-                <li>
-                  <a href="https://uncitral.un.org/sites/uncitral.un.org/files/media-documents/uncitral/en/hamburg_rules_e.pdf" target="_blank" class="text-sm leading-6 text-gray-300 hover:text-white">Goods Carried By Sea</a>
-                </li>
-                <li>
-                  <a href="https://uncitral.un.org/sites/uncitral.un.org/files/media-documents/uncitral/en/x_12_e.pdf" target="_blank" class="text-sm leading-6 text-gray-300 hover:text-white">UNCITRAL Negoitable Instruments</a>
-                </li>  
-                <li>
-                  <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&ved=2ahUKEwjPyKaL49WCAxUqODQIHYnwBPwQFnoECAwQAQ&url=https%3A%2F%2Fa2533-17319523.cluster45.canvas-user-content.com%2Fcourses%2F2533~41886%2Ffiles%2F2533~17319523%2Fcourse%2520files%2FACC101week1_sco_3%2F9781402219757.pdf&usg=AOvVaw1XUf-fdtPYAGTMOQ5eanf2&opi=89978449" target="_blank" class="text-sm leading-6 text-gray-300 hover:text-white">Lemonade Stand Accounting E-book (download)</a>
-                </li>
-                <li>
-                  <a href="https://bitcoin.org/bitcoin.pdf" target="_blank" class="text-sm leading-6 text-gray-300 hover:text-white">Satoshi White Paper</a>
-                </li>
-              </ul>
-            </div>
-            <div class="mt-10 md:mt-0">
-              <h3 class="text-sm font-semibold leading-6 text-white">Legal Definitions</h3>
-              <ul role="list" class="mt-6 space-y-4">
-                <li>
-                  <a href="https://www.law.cornell.edu/wex" target="_blank" class="text-sm leading-6 text-gray-300 hover:text-white">Cornell Wex</a>
-                </li>
-                <li>
-                  <a href="https://dictionary.law.com/" target="_blank" class="text-sm leading-6 text-gray-300 hover:text-white">Law.com</a>
-                </li>
-                <li>
-                  <a href="https://legal-dictionary.thefreedictionary.com/" target="_blank" class="text-sm leading-6 text-gray-300 hover:text-white">TheFreeDictionary.com</a>
-                </li> 
-                <li>
-                  <a href="#" class="text-sm leading-6 text-gray-300 hover:text-white">TTFL Dictionary (coming soon)</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="mt-16 border-t border-white/10 pt-8 sm:mt-20 lg:mt-24">
-        <p class="text-xs leading-5 text-gray-400">&copy; Creative Commons 3.0 Unported License - NO COMMERCE EXPECTED OR IMPLIED</p>
-      </div>
-    </div>
-  </footer>
-  
-</body>
-</html>
