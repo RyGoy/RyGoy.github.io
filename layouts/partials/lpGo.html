@@ -1,0 +1,10 @@
+<!-- THIS IS THE LIST PAGE GO CODE FOR DISCERNING IF CONTENT IS A COMMENT OR POST -->
+<div>
+    {{ if eq .Params.place "None" }} <!-- THEN IS A POST-->
+    <a href="{{.Permalink}}" class="text-indigo-600 hover:text-indigo-500 bg-indigo-100 p-2 relative rounded-md"><strong>Read Comments</strong></a><br>
+    <br><br>
+    <a>Unique ID: {{.Params.id}}</a>
+    {{else}} <!-- IS A COMMENT -->
+    <a>Unique ID: {{.Params.id}}<br>Parent ID: {{.Params.post_id}}</a>
+    {{end}}
+</div> 

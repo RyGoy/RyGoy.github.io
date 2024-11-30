@@ -1,0 +1,29 @@
+{{ define "main"}}
+<html>
+<body>
+    <!--{{ partial "header" (dict "Kind" .Kind "Template" "List") }}-->
+       
+    {{ range .Pages }}<!-- THIS IS STANDARD LIST PAGE TEMPLATE-->
+    
+<div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 overflow-hidden rounded-lg bg-white shadow">
+  <div class="px-4 py-5 sm:p-6">
+    <!-- Content goes here -->
+    <div>
+      <a>{{.Params.from_name}}<br>{{.Params.created_time}}<br><br>{{.Params.message}}</a>
+    </div> 
+  </div>
+  <div class="mx-auto max-w-3xl bg-gray-50 px-4 py-4 sm:px-6">
+    <!-- Content goes here -->
+    <!-- We use less vertical padding on card footers at all sizes than on headers or body sections -->
+    <div>
+      
+    </div> 
+  </div>
+</div><br><br>
+
+    {{ end }}
+    
+</body>
+<script src="/js/buttons.js"></script>
+</html>
+{{end}}

@@ -1,0 +1,16 @@
+ {
+   "id": "462493170453287_660882243947711",
+   "created_time": "2014-05-02T00:47:18+0000",
+   "updated_time": "2014-05-08T02:09:36+0000",
+   "from_name": "Will Jefferson",
+   "from_id": "861229973892415",
+   "to_name": "[{u'id': u'462493170453287', u'name': u'THE TENDER FOR LAW', u'privacy': u'OPEN'}]",
+   "message": "Ok, so my buddy in Manitoba was taken for a ride by some scammers who gave him a phony cheque for 6,100$ which he deposited and now the bank claims he owes them the amount. He doesn't have it, the money already went to pay a few personnal debts he had and the rest went to his fiance. The bank is desperate for some money and in their haste made my buddy think they were going to call the cops on him (he's quebecois), but they just wanted him to take a copy of the bad cheque to the cops. So today I sent him to the bank with a letter asking them to help him administate this debt via his PERSONs surety and to give him a signed bill and/or remittance, this landed him in the managers office at which point they refused to give him the remittance until he goes to the cops, he says \"no, give me the remittance first\" and NOW they ARE threatening to call the cops even though my buddy has remained in good faith. So now I have amended the letter which he is planning on registered mailing tomorrow morning I was hoping to get some insight from you guys on wether or not this will be effective and if the fee schedule is indeen enforceable. Here it is, you may find it familiar;\n\nDear Mr Randy Brown, Manager at Westoba Credit Union,\nI, Matteo, am the Sole Authorized Administrator, for the PERSON the government created when I was 21 years old, and named DANNY MATTEO BEAUREGARD, and has the registration number 11987xxxxxxxx.\nI choose to NOT buy back ANY debt addressed to that PERSON.\nIf me, or anyone else, have lead you to believe, that I am one of your \"employee\", and/or \"agent\", and/or \"the queen\" and/or, \"an organization\", and/or, a \"slave\" and/or a \"legal person\", that would be a MISTAKE, and please forgive me.\nPlease, dear Westoba Credit Union HELP me on administrating this debt via that person's surety, which is the Bank of Canada.\nI wish to remain in honour and to settle this debt in good faith, if I or anyone else have led you or Westoba to believe that i am guilty of any kind of fraud or criminal activity then that would be a MISTAKE, and please forgive me.\nSo far I have done everything in my power to settle the debt in good faith and therefore I must insist that you refrain from going to the authorities (RCMP) and claiming that I am doing anything otherwise. Deviation from this will impede my ability to settle the debt and may result in harm to my person, which will benefit no one including Westoba. My FEE SCHEDULE for false claims against myself is $50,000(CAD) and another $50,000(CAD) for any harm that results from any false claims made.\nPlease send a proper SIGNED BILL complete with a tear off REMITTANCE slip within 14 days so that I may settle the debt, or I will UNDERSTAND that this debt is not in existence anymore.\nWith LOVE\nBY:_______________________________\nSole Authorized Administrator for DANNY MATTEO BEAUREGARD",
+   "link": "",
+   "name": "",
+   "caption": "",
+   "description": "",
+   "source": "",
+   "type": "status",
+   "place": "None"
+ }

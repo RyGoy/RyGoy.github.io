@@ -1,0 +1,16 @@
+ {
+   "id": "462493170453287_624623710906898",
+   "created_time": "2014-02-13T19:37:01+0000",
+   "updated_time": "2014-02-14T01:14:59+0000",
+   "from_name": "August le Blanc",
+   "from_id": "1.01530787868601E+016",
+   "to_name": "[{u'id': u'462493170453287', u'name': u'THE TENDER FOR LAW', u'privacy': u'OPEN'} {u'name': u'Lana Dukakis', u'id': u'1597301487185764'}]",
+   "message": "Ok, Scott says Pete is the only one to get things right.\nI have been thinking, to figure out why.\nI accept it, but I do not comprehend it.\nMy best thinking brings me to: Mining and the use of Crypto currency.\nI had the good fortune of having some Private conversations, with Scott, when at one time, we were friends here.\nAs a result of those conversations I took some actions thru my buddy = duly authorized trustee corp.\nThose actions got me a response ( I am thinking it is a different prong in the agenda of which I am not privy to, nor is it my business).\nAs a result of those actions taken,  it was my thinking that why not discharge the whole fucking debt; created by, the creation of this thing a few days after my Birth dated aug 24/19##. \nSo, I went about it, through a buddy.\nI did not want to be a slave to any one or any thing. I know I am not.\nHere is where I am at:\nI received this response:\n\nRequ�tes RG - RG Enquire RequetesRG.RGEnquire@tpsgc-pwgsc.gc.ca\nJan 30\n\nto 1732964 \nGood day,\n\nYour correspondence was reviewed, and it has been concluded that the matter you raised does not fall within the Receiver General for Canada's mandate.  Although all payments to and from the Government of Canada are made in the name of the Receiver General, enquiries regarding payments should be made directly to the department responsible for the particular product and/or service: http://canada.ca/en/ .\n\nPlease note that the Receiver General will take no further action on this matter.\n\nSincerely,\n\nReceveur g�n�ral du Canada / Receiver General for Canada\n\nt�l�copieur/ facsimile 819-956-1664\n\nncr.rgenquire@tpsgc.gc.ca <mailto:ncr.rgenquire@tpsgc.gc.ca>\nncr.rgenquire@pwgsc.gc.ca <mailto:ncr.rgenquire@pwgsc.gc.ca>\n\nTravaux publics et Services gouvernementaux Canada\n11A2 - Portage III\nGatineau, Qu�bec K1A 0S5\n\nPublic Works and Government Services Canada\n11A2 - Portage III\nGatineau, Quebec K1A 0S5\n\nAs part of my ongoing education, I and saw the following video, that shows, the deductive reasoning approach, to deciphering the meaning of their clubhouse interpretations of things.  Scott said it was important to figure out why.\nI listen and act based on that.  \nThis is why it is important to have a buddy do things under title�.\nI have tried to block Lana Dukakis from this, but am unable to, FACEBOOK WILL NOT LET ME, as I do not think she it has earned the right to this�.  \nThe rest of here have put the effort in to be here.\nI have shared my journey up until this point and will continue to do so.\nI think I would be remiss in not sharing this knowledge, with most of you.\nSo this is my shovel:\nPut that in your pipe and smoke it.\n :-)\n\nhttp://www.youtube.com/watch?v=iRMGzfuuHyQ",
+   "link": "",
+   "name": "",
+   "caption": "",
+   "description": "",
+   "source": "",
+   "type": "status",
+   "place": "None"
+ }

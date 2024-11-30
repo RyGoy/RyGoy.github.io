@@ -1,0 +1,36 @@
+<html>
+  {{ partial "head" . }}
+  <body>
+      {{ partial "navbar" . }}
+
+    <div class="p-4 sm:ml-64">
+      <!-- {{ partial "header" (dict "Kind" .Kind "Template" "List") }} -->
+      <div class="p-4 border-2 border-gray-200 border-dashed rounded-lg dark:border-gray-700">
+        {{ range .Pages }} <!-- THIS IS Articles LIST PAGE TEMPLATE-->
+        
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 overflow-hidden rounded-lg bg-white shadow">
+          <div class="px-4 py-5 sm:p-6">
+          <!-- Content goes here -->
+            <div>
+              <a>{{.Params.author}}<br>{{.Params.date}}<br></a>
+            </div> 
+          </div>
+          <div class="mx-auto max-w-3xl bg-gray-50 px-4 py-4 sm:px-6">
+            <!-- Content goes here -->
+            <!-- We use less vertical padding on card footers at all sizes than on headers or body sections -->
+            <div>
+              <a href="{{.Permalink}}" class="text-indigo-600 hover:text-indigo-500">{{.Title}}</a>
+            </div> 
+          </div>
+        </div><br><br>
+    
+        {{ end }}
+      </div>
+    </div>
+  </body>
+</html>
+
+<body>
+
+    
+</body>

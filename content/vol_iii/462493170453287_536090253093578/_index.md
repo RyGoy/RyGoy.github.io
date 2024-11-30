@@ -1,0 +1,16 @@
+ {
+   "id": "462493170453287_536090253093578",
+   "created_time": "2013-07-12T21:25:10+0000",
+   "updated_time": "2013-07-12T21:25:10+0000",
+   "from_name": "Ceit Butler",
+   "from_id": "1.0153923542315E+016",
+   "to_name": "[{u'id': u'462493170453287', u'name': u'THE TENDER FOR LAW', u'privacy': u'OPEN'}]",
+   "message": "I tried to share this before, but Facebook seems to be eating most of my posts. They're from Ontario, so we know who this updated version is directed at...\n\n\" Canadian post-punk outfit Alexisonfire (pronounced �Alexis-on-fire�) put out a 7-inch vinyl single with two cover tracks: �The Dead Heart� and �I'm Stranded� (originally done by a band called The Saints). Over the weekend, though, when I first heard their version of �The Dead Heart,� I was driving and not paying close attention. So I thought it was the Midnight Oil original. �The Dead Heart� starts with the same forceful lead guitar, propulsive drumming and group-chorus sung �Doo dot doo dot doo doo doo,� but then lead singer/punk screamer George Pettit comes in with an almost terrifying shouted cry from the heart when he sings: �We don't serve your country/Don't serve your king/know your custom don't speak your tongue/White man came took everyone.� It made me pull over and listen. This was not the version I knew (it's played much faster too). Midnight Oil's version was angry; Alexisonfire is filled with hate, contempt and venom. There is no doubting here what this song is about. The music is still pretty and you can still dance to it, but you cannot avoid the intent of the lyrics. Pettit spits them in your face and forces you to listen. The chorus, �We carry in our hearts the true country/and that cannot be stolen/follow in the steps of our ancestry/and that cannot be broken,� is sung by guitarist/pianist Dallas Green in a more melodic fashion. It ends up being perfect counterpoint to Pettit's full-bore venom.Alexisonfire lead singer George PettitThe fact that Alexisonfire is a St. Catharines, Ontario, band, and all-white, is astounding. When they sing this version, you forget that Midnight Oil was singing strictly about Australian aborigines because Alexisonfire version is done for all repressed people: be they Native North Americans, African slaves or indigenous peoples of Australia or New Zealand.The song is important because it details what our ancestors did to the native cultures of the many lands they colonized. There are many things my ancestors did that I would probably not be proud of. However, I live my life in a way that obviates that way of thinking. A song like this should be heard and understood, so we know what happened. But if we are to carry forward in this world, the hatred must end. Alexisonfire's version suggests the anger is still there, yet by understanding that anger, it is a starting point for reconciliation.\"",
+   "link": "http://www.youtube.com/watch?v=KndTLHz_HvI",
+   "name": "Alexisonfire - Dead Hearts (Midnight Oil Cover, New 2010)",
+   "caption": "www.youtube.com",
+   "description": "Off the Australian Tour 7 inch EP. ENJOY! Download the EP here: http://hotfile.com/dl/76830613/a397efa/Alexisonfire_-_Aussie_Tour_7_Inch.zip.html",
+   "source": "",
+   "type": "link",
+   "place": "None"
+ }

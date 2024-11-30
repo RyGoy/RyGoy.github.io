@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>TheTenderForLaw.com Test Deployment</title>
+    <link>//localhost:1313/vol_i/462493170453287_481634205205850/</link>
+    <description>Recent content on TheTenderForLaw.com Test Deployment</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="//localhost:1313/vol_i/462493170453287_481634205205850/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>//localhost:1313/vol_i/462493170453287_481634205205850/462493170453287_481634205205850-521359344566669/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/vol_i/462493170453287_481634205205850/462493170453287_481634205205850-521359344566669/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title></title>
+      <link>//localhost:1313/vol_i/462493170453287_481634205205850/462493170453287_481634205205850-521359847899952/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/vol_i/462493170453287_481634205205850/462493170453287_481634205205850-521359847899952/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title></title>
+      <link>//localhost:1313/vol_i/462493170453287_481634205205850/462493170453287_481634205205850-521687871200483/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/vol_i/462493170453287_481634205205850/462493170453287_481634205205850-521687871200483/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title></title>
+      <link>//localhost:1313/vol_i/462493170453287_481634205205850/462493170453287_481634205205850-521692431200027/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/vol_i/462493170453287_481634205205850/462493170453287_481634205205850-521692431200027/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title></title>
+      <link>//localhost:1313/vol_i/462493170453287_481634205205850/462493170453287_481634205205850-521693454533258/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/vol_i/462493170453287_481634205205850/462493170453287_481634205205850-521693454533258/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title></title>
+      <link>//localhost:1313/vol_i/462493170453287_481634205205850/462493170453287_481634205205850-521695111199759/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/vol_i/462493170453287_481634205205850/462493170453287_481634205205850-521695111199759/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

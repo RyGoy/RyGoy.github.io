@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>COVID-19 on TheTenderForLaw.com Test Deployment</title>
+    <link>//localhost:1313/tags/covid-19/</link>
+    <description>Recent content in COVID-19 on TheTenderForLaw.com Test Deployment</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 04 Jun 2020 00:00:00 +0000</lastBuildDate>
+    <atom:link href="//localhost:1313/tags/covid-19/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Eliminating Disease</title>
+      <link>//localhost:1313/articles/scott-duncan/eliminating-disease/</link>
+      <pubDate>Thu, 04 Jun 2020 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/articles/scott-duncan/eliminating-disease/</guid>
+      <description>&lt;p&gt;Scott Duncan - Vice President; Rogue Support Inc.&lt;/p&gt;&#xA;&lt;p&gt;Unless you have literally been living on another planet, it is an absolute certainty you&amp;rsquo;ve heard the term, &amp;ldquo;COVID-19&amp;rdquo;. Throughout this imaginary crisis I have made declarations that later turned out to be true. I know most of you hate facts, reason and knowledge, and say I&amp;rsquo;m a really bad person for daring to speak out against the &amp;ldquo;expert&amp;rdquo; opinions of our substitute drama teacher Prime Minister&amp;hellip;&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

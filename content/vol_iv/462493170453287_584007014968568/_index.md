@@ -1,0 +1,16 @@
+ {
+   "id": "462493170453287_584007014968568",
+   "created_time": "2013-11-06T17:38:47+0000",
+   "updated_time": "2013-11-08T16:05:59+0000",
+   "from_name": "Harold Austerman",
+   "from_id": "739373829449191",
+   "to_name": "[{u'id': u'462493170453287', u'name': u'THE TENDER FOR LAW', u'privacy': u'OPEN'}]",
+   "message": "SCOTT DUNCAN- CAN YOU PLACE THIS BY THE DOUBLE AMPUTEE STORY, THANKS! \n There were once some words written on a piece of parchment (with those words now known as the Fourth Amendment), that said that you have the right to be free from unreasonable searches and seizures at the hands of �government� agents. In Indiana today, what could that possibly mean? The message from the ruling class is quite clear, and utterly insane. It amounts to this: �We don�t have the right to invade your home without probable cause � but if we DO, you have no right to stop us, and we have the right to arrest you if you try.�\n\nWhy not apply that to the rest of the Bill of Rights, while we�re at it? �You have the right to say what you want, but if we use violence to shut you up, you have to let us.� (I can personally attest to the fact that that is the attitude of the U.S. �Department of Justice.�) �You have the right to have guns, but if we try to forcibly and illegally disarm you, and you resist, we have the right to kill you.� (Ask Randy Weaver and the Branch Davidians about that one.) �You have the right to not testify against yourself, but when we coerce you into confessing (and call it a �plea agreement�), you can�t do a thing about it.� What good is a �right��what does the term �right� even mean�if you have an obligation to allow jackboots to violate your so-called �rights�? It makes the term absolutely meaningless.\n\nTo be blunt, if you have the right to do �A,� it means that if someone tries to STOP you from doing �A��even if he has a badge and a politician�s scribble (�law�) on his side�you have the right to use whatever amount of force is necessary to resist that person. That�s what it means to have an unalienable right. If you have the unalienable right to speak your mind (a la the First Amendment), then you have the right to KILL �government� agents who try to shut you up. If you have the unalienable right to be armed, then you have the right to KILL �government� agents who try to disarm you. If you have the right to not be subjected to unreasonable searches and seizures, then you have the right to KILL �government� agents who try to inflict those on you.\n\nThose who are proud to be �law-abiding� don�t like to hear this, and don�t like to think about this, but what�s the alternative? If you do NOT have the right to forcibly resist injustice�even if the injustice is called �law��that logically implies that you have an obligation to allow �government� agents to do absolutely anything they want to you, your home, your family, and so on. Really, there are only two choices: you are a slave, the property of the politicians, without any rights at all, or you have the right to violently resist �government� attempts to oppress you. There can be no other option.",
+   "link": "",
+   "name": "",
+   "caption": "",
+   "description": "",
+   "source": "",
+   "type": "status",
+   "place": "None"
+ }

@@ -1,0 +1,16 @@
+ {
+   "id": "462493170453287_894248513944415",
+   "created_time": "2015-10-21T02:42:22+0000",
+   "updated_time": "2015-10-21T03:01:11+0000",
+   "from_name": "Scott Duncan",
+   "from_id": "927379467328526",
+   "to_name": "[{u'id': u'462493170453287', u'name': u'THE TENDER FOR LAW', u'privacy': u'OPEN'}]",
+   "message": "THE TENDER FOR LAW is an examination of what you need to know to fight Judicial corruption, by examining the stuff you are LIED TO about. MONEY, and the hidden-in-plain-sight contract that is tendered daily.\n\nSPOILERS: IT'S ALWAYS ABOUT ACCOUNTING AND SURETY.\n\nOn the subject of liars:IF YOU ARE A CHRISTIAN, YOU ARE NOT WELCOME HERE! YOUR DELUSIONS ARE WHAT CAUSED ALL OF THIS IN THE FIRST PLACE. YOU HARM OTHERS WITH THOSE DELUSIONS. ADULTS WITH IMAGINARY FRIENDS ARE NOT ADULTS! THIS IS NOT A CHILDREN'S FORUM!\n\n\n...I digress\n\nYou are BOUND by ACTS, STATUTES, and CODES when you use MONEY. \n\nOn that money are the words THIS  NOTE IS LEGAL TENDER:\n\nTHIS NOTE - The note the words (NOTICE) is written on.\n\nIS LEGAL - CODES, ACTS, AND STATUTES with the force of law.\n\nTENDER - tender verb\nten�dered ten�der�ing \nDefinition of TENDER\n\ntransitive verb\n1: to make a tender of\n2: to present for acceptance : offer \"tendered my resignation\"\nintransitive verb\n: to make a bid or tender\nOrigin of TENDER\nMiddle English tendren, from Anglo-French tendre offer\nFirst Known Use: 15th century\n\nTHIS NOTE IS LEGAL TENDER = THIS NOTE IS A TENDER FOR LAW \n\nThis forum is where you can ask all your questions, and we don't have to keep typing the same answers over and over. To that end, I am telling you to WATCH THIS FIRST:\n\nhttp://youtu.be/3P7izAUe3ZM\n\nNOT watching this, and then posting a question and/or making idiotic statements which reveal you HAVEN'T watched this, means you are DELIBERATELY ignoring these instructions, and you will be banned.\n\nAnd when your examination of these things is done, you will see that we also have a REAL SOLUTION to the problem. YOU CAN'T BUY that shit ANYWHERE! :D\n\n...no really. You can't. It's copyrighted.\n\nUnless otherwise stated, BY DEFAULT, anything Scott. and/or Tara Duncan publishes, in THE TENDER FOR LAW, is under a Creative Commons Attribution-NonCommercial-NoDerivs 3.0 Unported License:\n\n1) You MUST say where it came from (Tara, Myself, or THE TENDER FOR LAW group)\n\n2) You CANNOT derive works from it\n\n3) You CANNOT MAKE MONEY off it.\n\nMake all the money you like off of \"Scottisms\"\n\nTL;DR - IT'S ALWAYS ABOUT ACCOUNTING AND SURETY. THIS NOTE IS LEGAL TENDER = OFFERING AN UNCONDITIONAL \"BENEFIT\" OF ACTS, STATUTES AND CODES.\n\nPEREMPTORY NOTICE:\n\nALL WRITINGS PUBLISHED HERE BY AQUILAE AND/OR ITS TRUSTEES AND/OR ITS GRANTORS, ARE, UNLESS OTHERWISE STATED, PUBLISHED under a Creative Commons Attribution-NonCommercial-NoDerivs 3.0 Unported License. \n\nHave you tried to join and been IGNORED? GOOD! That's what's supposed to happen!\n\nIf you don't have a ROGUESUPPORT BATTLEFIELD 2142 SOLDIERNAME, YOU DON\"T GET IN! You had 2 years. Go fuck yourself. WORK for it. Read the group and figure out how. EARN YOUR VOICE HERE!\n\n\nAlso: Jimmy Hoffa; Call your office.\n\n",
+   "link": "",
+   "name": "",
+   "caption": "",
+   "description": "",
+   "source": "",
+   "type": "status",
+   "place": "None"
+ }

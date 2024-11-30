@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tag1 on TheTenderForLaw.com Test Deployment</title>
+    <link>//localhost:1313/tags/tag1/</link>
+    <description>Recent content in Tag1 on TheTenderForLaw.com Test Deployment</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="//localhost:1313/tags/tag1/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>UNDERSTANDING JURISDICTION</title>
+      <link>//localhost:1313/articles/various-authors/understanding-jurisdiction/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/articles/various-authors/understanding-jurisdiction/</guid>
+      <description>&lt;p&gt;In all of history there has been but one successful protest against an income tax. It is little understood in that light, primarily because the remnants of protest groups still exist, but no longer wish to appear to be &amp;ldquo;anti-government.&amp;rdquo; They don’t talk much about these roots. Few even know them. We need to go back in time about 400 years to find this success. It succeeded only because the term &amp;ldquo;jurisdiction&amp;rdquo; was still well understood at that time as meaning &amp;ldquo;oath spoken.&amp;rdquo; &amp;ldquo;Juris,&amp;rdquo; in the original Latin meaning, is &amp;ldquo;oath.&amp;rdquo; &amp;ldquo;Diction&amp;rdquo; as everyone knows, means &amp;ldquo;spoken.&amp;rdquo; The protest obviously didn’t happen here. It occurred in England. Given that the origins of our law are traced there, most of the relevant facts in this matter are still applicable in this nation. Here’s what happened.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

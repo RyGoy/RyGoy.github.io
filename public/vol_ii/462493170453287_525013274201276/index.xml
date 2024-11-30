@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>TheTenderForLaw.com Test Deployment</title>
+    <link>//localhost:1313/vol_ii/462493170453287_525013274201276/</link>
+    <description>Recent content on TheTenderForLaw.com Test Deployment</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="//localhost:1313/vol_ii/462493170453287_525013274201276/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>//localhost:1313/vol_ii/462493170453287_525013274201276/462493170453287_525013274201276-525042667531670/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/vol_ii/462493170453287_525013274201276/462493170453287_525013274201276-525042667531670/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title></title>
+      <link>//localhost:1313/vol_ii/462493170453287_525013274201276/462493170453287_525013274201276-525042904198313/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/vol_ii/462493170453287_525013274201276/462493170453287_525013274201276-525042904198313/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title></title>
+      <link>//localhost:1313/vol_ii/462493170453287_525013274201276/462493170453287_525013274201276-525043054198298/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/vol_ii/462493170453287_525013274201276/462493170453287_525013274201276-525043054198298/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title></title>
+      <link>//localhost:1313/vol_ii/462493170453287_525013274201276/462493170453287_525013274201276-525043147531622/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/vol_ii/462493170453287_525013274201276/462493170453287_525013274201276-525043147531622/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

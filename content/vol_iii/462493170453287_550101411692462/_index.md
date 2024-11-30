@@ -1,0 +1,16 @@
+ {
+   "id": "462493170453287_550101411692462",
+   "created_time": "2013-08-18T21:54:21+0000",
+   "updated_time": "2013-09-22T15:05:17+0000",
+   "from_name": "Chris Evan",
+   "from_id": "1.02024820688268E+016",
+   "to_name": "[{u'id': u'462493170453287', u'name': u'THE TENDER FOR LAW', u'privacy': u'OPEN'}]",
+   "message": "I got arrested last night.  They pulled me over for swerving (I did because I was leaving a party and checking TT4L!!!  funny).  I wouldn't identify myself or produce ID, so they opened my door and cuffed me, i didn't resist.  I was expecting to get my legs beat with batons pretty badly, but it wasn't like that at all.  They just kept locking me in a cage every time I wouldn't \"cooperate\" with them.  They didn't care about any law I cited, only the ones they cited.  Very strange!!!\n\nI wouldn't tell them my name other than \"Chris\".  I told them my DOB was hearsay.  I told them my address was none of their business.  When they asked where I was going, I told them \"I was going to get laid.\"  They weren't happy, so they locked me in a cage.  Then I yelled \"I will answer your questions under protest and duress.\"  They let me out and continued the BOOKING.  \n\nThey read me my Miranda rights, then said \"We need to do the Suicide questions now.  How do you feel?\"  I was silent for like a minute.  They asked again.....silent.  They said \"This would be easier if you cooperated.\" To which I replied \"Did you just tell me that I have the right to remain silent and any thing I say will be used against me in a Court of Law?\"  \"Yes\".  \"Then you asked me a question and I invoked that right, do I have to answer your questions?\"  They said they were fed up with me and I was going back in a cage....lol!  Really?  Tell me I have the right to remain silent, then force me to answer questions?????\n\nSo again, I yelled that I would comply under protest and duress....blah blah blah.  I signed some shit under protest and duress.  \n\nThen the Bail Clerk shows up....She says if I giver her $40 and sign some recognizance document I could go.  I asked what if I didn't and she said I would go to the county jail until Monday.  So I signed it \"under protest and duress VOID <autograph>.  She said I couldn't do that, I said that is my signature.  She said that \"my signature is not VOID\".  I said \"that is how I sign that document\".  She said \"I will give you one more chance to sign another one of these or you will go to county jail\", but I HAD to sign it how she told me!!!!!!  Yes, that really happened!!!!  So i did!!!  She WOULD NOT let me put the wording \"under protest and duress\"!!!!!\n\nRegardless, I was released within 90 minutes, half in the bag!  Oh, I may have left that part out and I had an open container.  I was feeling cocky last night.  \n\nThe Recog document says the PERSON would be in court on Tuesday....YUP, no problem.  It will be there with a Notice of Mistake.  \n\nNow, my question is.....how do I get my documents into the court file for Tuesday morning?  And should I lien the court file?",
+   "link": "",
+   "name": "",
+   "caption": "",
+   "description": "",
+   "source": "",
+   "type": "status",
+   "place": "None"
+ }

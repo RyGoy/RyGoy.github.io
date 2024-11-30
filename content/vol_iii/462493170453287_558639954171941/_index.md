@@ -1,0 +1,16 @@
+ {
+   "id": "462493170453287_558639954171941",
+   "created_time": "2013-09-10T20:58:03+0000",
+   "updated_time": "2013-09-20T07:27:09+0000",
+   "from_name": "Sino General",
+   "from_id": "1.015497754093E+016",
+   "to_name": "[{u'id': u'462493170453287', u'name': u'THE TENDER FOR LAW', u'privacy': u'OPEN'}]",
+   "message": "I read alot of contract books, now i wanna go get the one that is listed here on this thread, here is a post about a case that shows, you allegedly cannot get an agreement through silence, in Canada. So, time for some research, i know there has to be cases that demonstrate silence as agreement, oh wait, isnt the Supreme Court filing, Notice to Admit one of those ? If you dont reply in 14days, your in agreement, geez i think these are are half retarded, therefore untrust worthy 100%, they only seem to apply these sort things when it favors their players, as to why you dont go into their damn PRIVATE COURTS, unless by force, or by you standing on your contract, either way it can be fun if you know what you doing, here is the posting\n-------------------------------------------------------------------\nSure enough, Petrie has claimed that Black�s Law Dictionary contains a definition of �tacit consent�. Justice Ker notes that the current version does not, but perhaps he meant �implied consent�, which is defined (para. 46). The response is, in my mind, worth quoting in full:\n\n[47] That definition is of no assistance to the applicant. The basis of contractual obligations is an agreement between the parties, often referred to as consensus ad idem or agreement of the parties to the same thing. However, the jurisprudence or common law does not support the applicant's argument.\n\n[48] In Resource Realty Ltd. v. Swiftsure Developments Ltd., 2005 BCSC 229 (CanLII), 2005 BCSC 229, Mr. Justice Owen-Flood held the following at paragraphs 23 and 24:\n\n[23] Counsel for the plaintiff submitted that the plaintiff's offer was accepted through the defendant's silence. Mr. Braithwaite communicated his terms to the defendants orally and in various faxed documents. Because there is no concrete evidence that the defendants specifically rejected these offers, the plaintiff submits that their silence constituted acceptance. However, as held by the Supreme Court of Canada in Schiller v. Fisher, 1981 CanLII 49 (SCC), [1981] 1 S.C.R. 593, acceptance must be communicated to the offeror before a contract can be found to exist:\n\n[g]enerally, the fact of acceptance of an offer must be communicated to the offeror before acceptance is complete and a binding contract is created.\n[24] As stated by Professor Waddams in The Law of Contracts, Fourth Edition (Toronto: Canada Law Book, 1999) at p. 67,\n\nOrdinarily, therefore, silence will not operate as an acceptance even through the offeree should prove an intention to accept. This is not a technicality but part of the requirement of a bargain. No reasonable person, on receiving a proposal that looks for a reply, considers the bargain concluded until the manifestation of assent. Nor will a reasonable offeror ordinarily consider that silence on the part of the offeree manifests the latter's acceptance (references omitted).",
+   "link": "",
+   "name": "",
+   "caption": "",
+   "description": "",
+   "source": "",
+   "type": "status",
+   "place": "None"
+ }

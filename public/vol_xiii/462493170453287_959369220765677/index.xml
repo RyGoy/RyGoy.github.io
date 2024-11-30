@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>TheTenderForLaw.com Test Deployment</title>
+    <link>//localhost:1313/vol_xiii/462493170453287_959369220765677/</link>
+    <description>Recent content on TheTenderForLaw.com Test Deployment</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="//localhost:1313/vol_xiii/462493170453287_959369220765677/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>//localhost:1313/vol_xiii/462493170453287_959369220765677/462493170453287_959369220765677-959369680765631/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/vol_xiii/462493170453287_959369220765677/462493170453287_959369220765677-959369680765631/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title></title>
+      <link>//localhost:1313/vol_xiii/462493170453287_959369220765677/462493170453287_959369220765677-959867627382503/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/vol_xiii/462493170453287_959369220765677/462493170453287_959369220765677-959867627382503/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title></title>
+      <link>//localhost:1313/vol_xiii/462493170453287_959369220765677/462493170453287_959369220765677-960041207365145/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/vol_xiii/462493170453287_959369220765677/462493170453287_959369220765677-960041207365145/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title></title>
+      <link>//localhost:1313/vol_xiii/462493170453287_959369220765677/462493170453287_959369220765677-960333024002630/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/vol_xiii/462493170453287_959369220765677/462493170453287_959369220765677-960333024002630/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

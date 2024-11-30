@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Computer Science on TheTenderForLaw.com Test Deployment</title>
+    <link>//localhost:1313/categories/computer-science/</link>
+    <description>Recent content in Computer Science on TheTenderForLaw.com Test Deployment</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 01 Jun 2022 00:00:00 +0000</lastBuildDate>
+    <atom:link href="//localhost:1313/categories/computer-science/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The Hero&#39;s Journey</title>
+      <link>//localhost:1313/articles/various-authors/hero-journey/</link>
+      <pubDate>Wed, 01 Jun 2022 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/articles/various-authors/hero-journey/</guid>
+      <description>&lt;!-- raw HTML omitted --&gt;&#xA;&lt;hr&gt;&#xA;&lt;h4 id=&#34;every-one-lives-out-a-myth-and-you-should-know-what-your-myth-is-because-maybe-its-a-tragedy&#34;&gt;&amp;ldquo;Every one lives out a myth, and you should know what your myth is because maybe it&amp;rsquo;s a tragedy&amp;rdquo;&lt;/h4&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;Jews stole your birthright, now there’s only ritual without reflection.&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://en.m.wikipedia.org/wiki/Hero&#39;s_journey&#34;&gt;https://en.m.wikipedia.org/wiki/Hero&amp;rsquo;s_journey&lt;/a&gt;&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;The point of the Hero’s Story is to discover who One could become. One goes in[put] and comes out[put] transformed.&lt;/p&gt;&#xA;&lt;h5 id=&#34;you-dont-know-who-you-are&#34;&gt;&amp;ldquo;You don&amp;rsquo;t know who you are&amp;rdquo;&lt;/h5&gt;&#xA;&lt;p&gt;-Scott Duncan&lt;/p&gt;&#xA;&lt;p&gt;Most of us don&amp;rsquo;t even start the journey, or use a &lt;a href=&#34;https://www.investopedia.com/terms/j/journal.asp&#34;&gt;journal&lt;/a&gt;, because belief acts as a barrier that &amp;ldquo;protects&amp;rdquo; us from the unknown. Through belief we&amp;rsquo;ve damaged the mechanism that was supposed to guide us in developing our story of turning the unknown into the known; repeatedly. The mechanism is something like: “the courageous commitment to go out [look], find what&amp;rsquo;s true, and to speak it to others so they might also choose to find it&amp;quot;.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Fold.it...&#39;fold it good&#39;</title>
+      <link>//localhost:1313/articles/tara-duncan/fold-it-good/</link>
+      <pubDate>Mon, 02 May 2016 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/articles/tara-duncan/fold-it-good/</guid>
+      <description>&lt;h1 id=&#34;is-this-the-fold-i-dont-know-whos-fold-this-is&#34;&gt;Is this the fold? i don&amp;rsquo;t know who&amp;rsquo;s fold this is&lt;/h1&gt;&#xA;&lt;!-- raw HTML omitted --&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;[Originally published on Facebook, May 2, 2016 - I&amp;rsquo;m almost ready to try this game again :)]&lt;/p&gt;&#xA;&lt;p&gt;As I write this a folded protein is slowly revolving, and gracefully undulating on my computer screen, while the computer program runs a constant series of simulations on how to complete and optimize the fold. Not really, that statement was utter crap. The protein depiction is just sitting there impotently in the fold.it program, as I try seemingly endless combinations of backbone manipulating, structure changing, side chain wiggling, moving and shaking, to transform this graphic representation into the folded protein of my dreams. In case the initial reference is too vague, I should mention, equally vaguely, that I&amp;rsquo;m a huge Douglas Adams fan.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

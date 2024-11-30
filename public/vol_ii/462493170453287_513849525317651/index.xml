@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>TheTenderForLaw.com Test Deployment</title>
+    <link>//localhost:1313/vol_ii/462493170453287_513849525317651/</link>
+    <description>Recent content on TheTenderForLaw.com Test Deployment</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="//localhost:1313/vol_ii/462493170453287_513849525317651/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>//localhost:1313/vol_ii/462493170453287_513849525317651/462493170453287_513849525317651-513887215313882/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/vol_ii/462493170453287_513849525317651/462493170453287_513849525317651-513887215313882/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title></title>
+      <link>//localhost:1313/vol_ii/462493170453287_513849525317651/462493170453287_513849525317651-513901508645786/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/vol_ii/462493170453287_513849525317651/462493170453287_513849525317651-513901508645786/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title></title>
+      <link>//localhost:1313/vol_ii/462493170453287_513849525317651/462493170453287_513849525317651-513903408645596/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/vol_ii/462493170453287_513849525317651/462493170453287_513849525317651-513903408645596/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

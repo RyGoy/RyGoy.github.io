@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Volume 6 on TheTenderForLaw.com Test Deployment</title>
+    <link>//localhost:1313/vol_vi/</link>
+    <description>Recent content in Volume 6 on TheTenderForLaw.com Test Deployment</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="//localhost:1313/vol_vi/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

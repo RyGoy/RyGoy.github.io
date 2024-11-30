@@ -1,0 +1,27 @@
+{{ partial "head" . }}
+<html>
+<body>
+  {{ partial "navbar" . }}
+  <div class="p-4 sm:ml-64">
+    <div class="p-4 border-2 border-gray-200 border-dashed rounded-lg dark:border-gray-700">
+      {{ range .Pages }}<!-- THIS IS VOLUME 1 LIST PAGE TEMPLATE-->
+    
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 overflow-hidden rounded-lg bg-white shadow">
+        <div class="px-4 py-5 sm:p-6">
+           <!-- Content goes here -->
+           {{ partial "lpPosts" . }}
+        </div>
+        <div class="mx-auto max-w-3xl px-4 py-4 sm:px-6">
+          <!-- Content goes here -->
+          <!-- We use less vertical padding on card footers at all sizes than on headers or body sections -->
+          <div>
+            {{ partial "lpGo" . }}
+          </div>
+        </div>
+      </div><br><br>
+          {{ end }}
+    </div>
+ </div>
+</body>
+</html>
+

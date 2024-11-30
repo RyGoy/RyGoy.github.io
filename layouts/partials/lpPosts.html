@@ -1,0 +1,50 @@
+<div>
+  <div>
+    <h2 class="text-xl">{{.Params.from_name}}</h2>
+    {{ $t1 := .Params.created_time }}
+    {{ $t1 = time.AsTime $t1 }}
+    {{ $t1 = $t1.Format "Jan 02, 2006 3:04 PM" }}
+    {{ $t2 := .Params.created_time }}
+    {{ $t2 = time.AsTime $t2 }}
+    {{ $t2 = $t2.Format "Jan 02, 2006 3:04 PM" }}
+    
+    {{ $t1 }}
+  </div>
+  <div class="py-4">
+    {{.Params.message}}
+  </div>  
+  {{ $link1 := ""}}
+  {{ $link2 := "None"}}
+  <div>
+    {{ if or $link1 $link2 }} <!-- THEN We will not print blank space-->
+      <a href="{{.Params.link}}">
+        <div class=" bg-indigo-100 rounded-md">
+          <h1 class="font-semibold text-lg">{{.Params.name}}</h1>
+          <h2 class="font-semibold">{{.Params.caption}}</h2>
+          <p>{{.Params.description}}</p>
+        </div>
+      </a>
+    {{else}}
+      {{.Params.from_name}}
+    {{end}}
+  </div>
+
+  <br>
+  <div class="text-sm text-gray-800 opacity-50">
+    <div>
+      Unique Facebook User ID: {{.Params.from_id}}<br>
+    </div>
+    <div>
+      Last Updated: {{ $t2 }}<br>
+    </div>
+    <div>
+      {{.Params.source}}
+    </div>
+    <div>
+      Type of Post: {{.Params.type}}
+    </div>
+    <div>
+      Place of Post: {{.Params.place}}
+    </div>
+  </div>
+</div> 
