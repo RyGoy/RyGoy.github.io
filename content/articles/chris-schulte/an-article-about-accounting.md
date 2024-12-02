@@ -26,7 +26,6 @@ categories = [
 ---
 
 I was asked to write an article on Accounting. This is a VERY BROAD topic. There are also very significant differences in performing accounting for a security in receivership or a corporation or even a trust. I try to perform all the duties that I am APPOINTED to do, but this one is quite the challenge.
-
 So I have a better idea. Let's have an interactive thread on strictly ACCOUNTING. Ask your questions here and I will try to show you what the answers are and how you can verify them.
 
 Remember, these are GENERALLY ACCEPTED ACCOUNTING PRINCIPLES. Its not like they are written in stone or anything, they seem to be generally accepted.

@@ -13,7 +13,7 @@
                 <h3>{{.Params.Author}} | {{.Params.date}}</h3>
                 {{.Params.tags}}<br>
                 {{.Params.categories}}<br><br>
-            {{.Content}}
+            {{ .Content | markdownify }}
           </section>
           <div>
             <a href="{{.Permalink}}">{{.Title}}<br>{{.Params.Author}}</a><br></li>

@@ -31,23 +31,28 @@
            </button>
            {{ $contentDir := "content" }}
            {{ $folders := readDir $contentDir }}
-           <ul id="dropdown-example" class="hidden py-2 space-y-2">
-              {{ range $folders }}
-                  {{ if (or (strings.HasPrefix .Name "vol_") (strings.HasPrefix .Name "vol-")) }}
-                      {{ $indexPath := printf "%s/%s/_index.md" $contentDir .Name }}
-                      {{ if (fileExists $indexPath) }}
-                          {{ $indexFile := readFile $indexPath }}
-                          {{ $params := $indexFile | transform.Unmarshal }}
-                          <li>
-                              <a href="/{{ .Name | urlize }}/" class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">{{ $params.Title | default .Name | title }}</a>
-                          </li>
-                      {{ else }}
-                      <li>
-                        <a href="/{{ .Name | urlize }}/" class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">{{ .Name | title}}</a>
-                      </li>
-                      {{ end }}
-                  {{ end }}
+           {{ $volumes := slice }} <!-- Create an empty slice to store folder data -->
+  
+           {{ range $folders }}
+              {{ if (or (strings.HasPrefix .Name "vol_") (strings.HasPrefix .Name "vol-")) }}
+                 {{ $indexPath := printf "%s/%s/_index.md" $contentDir .Name }}
+                 {{ if (fileExists $indexPath) }}
+                       {{ $indexContent := readFile $indexPath }}
+                       {{ $params := $indexContent | transform.Unmarshal }}
+                       <!-- Add folder data to the slice -->
+                       {{ $volumes = $volumes | append (dict "Name" .Name "Title" ($params.Title | default .Name)) }}
+                 {{ end }}
               {{ end }}
+           {{ end }}
+           {{ $sortedVolumes := sort $volumes "Title" }}
+           <ul id="dropdown-example" class="hidden py-2 space-y-2">
+                 {{ range $sortedVolumes }}
+                    <li>
+                          <a href="/{{ .Name | urlize }}/" class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">
+                             {{ .Title }}
+                          </a>
+                    </li>
+                 {{ end }}
            </ul>
         </li>
         <li>
@@ -60,6 +65,7 @@
                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
                 </svg>
           </button>
+
           {{ $articlesDir := "content/articles" }}
           {{ $subfolders := readDir $articlesDir }}
           <ul id="dropdown-example1" class="hidden py-2 space-y-2">
