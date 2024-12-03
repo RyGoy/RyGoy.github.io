@@ -1,4 +1,4 @@
-{
-   "Title": "Volume 8"
-}
-
+---
+title: Volume 8
+weight: 8
+---
