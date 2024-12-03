@@ -1,4 +1,4 @@
-[
-{"Title": "Volume 11"}
-{"weight": "11"}
-]
+---
+title: Volume 11
+weight: 11
+---
