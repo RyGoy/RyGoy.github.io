@@ -1,4 +1,5 @@
-{
-   "Title": "Volume 1"
-}
+[
+{"Title": "Volume 7"}
+{"weight": "7"}
+]
 
