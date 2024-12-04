@@ -1,4 +1,4 @@
----
-title: Volume 3
-weight: 3
----
+{
+   "title": "Volume 3",
+   "weight": 3
+}
