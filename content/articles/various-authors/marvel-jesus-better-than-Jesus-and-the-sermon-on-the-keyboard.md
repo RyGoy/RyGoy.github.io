@@ -84,7 +84,7 @@ Marvel Jesus is a Metaphor for Better Than Jesus, and the Sermon on The Keyboard
 I’m a later wave, a dumber one. My brain works like a single-core processor and as I get older effort becomes something I need to manage most carefully. If you’re reading this and understand, remember that we stand on the shoulders of giants, and most of them have died. If there is no “responsible party” to become the new Trustee of the most important duties our civilization relied on, then white people will be replaced.
  
 
-I spent a lot of time “reading” without understanding anything “our Hero” was trying to show us, I wasted two years before spending the 90 days it took to learn bookkeeping, then I just applied that to everything in my life, and paid attention to the LEGSL DEFINITIONS of all the words, especially NAMES OF ACCOUNTS. I can’t tell you how much this helped, I was able to start conceptualizing the idea of “credit risk” and could contemplate the value of my own time outside of an hourly wage. I could see my own money, my own sacrifices, and the fruits of my effort. 
+I spent a lot of time “reading” without understanding anything “our Hero” was trying to show us, I wasted two years before spending the 90 days it took to learn bookkeeping, then I just applied that to everything in my life, and paid attention to the LEGAL DEFINITIONS of all the words, especially NAMES OF ACCOUNTS. I can’t tell you how much this helped, I was able to start conceptualizing the idea of “credit risk” and could contemplate the value of my own time outside of an hourly wage. I could see my own money, my own sacrifices, and the fruits of my effort. 
 
 
 Should I do “x” based on the facts I have?
