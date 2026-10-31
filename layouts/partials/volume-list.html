@@ -1,0 +1,16 @@
+<header class="page-heading">
+  <p class="eyebrow">The Tender For Law</p>
+  <h1>{{ .Title }}</h1>
+  {{ with .Content }}<div class="prose">{{ . }}</div>{{ end }}
+  {{ $groups := .Pages.GroupByParamDate "created_time" "January 2006" "asc" }}
+  {{ if $groups }}<nav class="date-index" aria-label="{{ .Title }}"><ul>{{ range $groups }}<li><a href="#{{ .Key | anchorize }}">{{ .Key }}</a></li>{{ end }}</ul></nav>{{ end }}
+</header>
+<div class="reading-column">
+{{ range .Pages.GroupByParamDate "created_time" "January 2006" "asc" }}
+  <section class="month-section" aria-labelledby="{{ .Key | anchorize }}">
+    <div class="section-heading"><h2 id="{{ .Key | anchorize }}">{{ .Key }}</h2><span class="rule" aria-hidden="true"></span></div>
+    {{ range .Pages }}{{ partial "entry.html" . }}{{ end }}
+  </section>
+{{ end }}
+</div>
+{{ partial "volume-navigation.html" . }}

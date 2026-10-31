@@ -1,0 +1,11 @@
+<nav class="volume-pagination" aria-label="Volumes">
+{{ $current := .FirstSection.RelPermalink }}
+{{ $volumes := partialCached "volumes.html" . }}
+{{ range $index, $volume := $volumes }}
+  {{ if eq .RelPermalink $current }}
+    {{ if gt $index 0 }}{{ with index $volumes (sub $index 1) }}<a href="{{ .RelPermalink }}"><span aria-hidden="true">←</span> {{ .Title }}</a>{{ end }}{{ end }}
+    <a href="{{ site.Home.RelPermalink }}#volumes">Volumes</a>
+    {{ if lt (add $index 1) (len $volumes) }}{{ with index $volumes (add $index 1) }}<a href="{{ .RelPermalink }}">{{ .Title }} <span aria-hidden="true">→</span></a>{{ end }}{{ end }}
+  {{ end }}
+{{ end }}
+</nav>

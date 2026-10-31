@@ -1,29 +1,18 @@
-{{ define "main"}}
-<html>
-<body>
-    <!--{{ partial "header" (dict "Kind" .Kind "Template" "List") }}-->
-       
-    {{ range .Pages }}<!-- THIS IS STANDARD LIST PAGE TEMPLATE-->
-    
-<div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 overflow-hidden rounded-lg bg-white shadow">
-  <div class="px-4 py-5 sm:p-6">
-    <!-- Content goes here -->
-    <div>
-      <a>{{.Params.from_name}}<br>{{.Params.created_time}}<br><br>{{.Params.message}}</a>
-    </div> 
+{{ define "main" }}
+{{ if .Params.id }}
+  <header class="page-heading thread-heading"><p class="eyebrow"><a href="{{ .FirstSection.RelPermalink }}">{{ .FirstSection.Title }}</a></p><h1>{{ with .Params.created_time }}{{ (time.AsTime .).Format "Jan 02, 2006 3:04 PM" }}{{ end }}</h1></header>
+  <div class="reading-column">
+    {{ partial "entry.html" . }}
+    <section id="comments" aria-label="Read Comments">
+      {{ if .Pages }}
+        <div class="section-heading"><h2>Read Comments</h2><span class="rule" aria-hidden="true"></span></div>
+        <div class="comment-thread">{{ range sort .Pages "Params.created_time" }}{{ partial "entry.html" . }}{{ end }}</div>
+      {{ end }}
+    </section>
   </div>
-  <div class="mx-auto max-w-3xl bg-gray-50 px-4 py-4 sm:px-6">
-    <!-- Content goes here -->
-    <!-- We use less vertical padding on card footers at all sizes than on headers or body sections -->
-    <div>
-      
-    </div> 
-  </div>
-</div><br><br>
-
-    {{ end }}
-    
-</body>
-<script src="/js/buttons.js"></script>
-</html>
-{{end}}
+{{ else if hasPrefix .Section "vol_" }}
+  {{ partial "volume-list.html" . }}
+{{ else }}
+  {{ partial "article-list.html" . }}
+{{ end }}
+{{ end }}

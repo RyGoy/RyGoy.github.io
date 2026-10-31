@@ -1,0 +1,11 @@
+{{ $volumes := slice }}
+{{ range site.Sections }}
+  {{ if hasPrefix .Section "vol_" }}
+    {{ $number := int (replaceRE "[^0-9]" "" .Title) }}
+    {{ $volumes = $volumes | append (dict "Page" . "Number" $number) }}
+  {{ end }}
+{{ end }}
+{{/* Some original weights repeat. Derive display order from the existing titles. */}}
+{{ $ordered := slice }}
+{{ range sort $volumes "Number" }}{{ $ordered = $ordered | append .Page }}{{ end }}
+{{ return $ordered }}

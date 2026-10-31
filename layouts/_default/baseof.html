@@ -1,11 +1,18 @@
-<html>
-<head>
-    {{ block "head" . }} {{end}}
-</head>    
-<body>
-    {{ block "navbar" . }} {{end}}
-    {{ block "breadcrumbs" . }} {{end}}
-    {{ block "main" . }} {{end}}
-    {{ block "footer" . }} {{end}}
+<!doctype html>
+<html lang="{{ site.LanguageCode | default "en" }}">
+<head>{{ partial "head.html" . }}</head>
+<body{{ if .IsHome }} class="home"{{ end }}>
+  <a class="skip-link" href="#main">{{ site.Home.Title | default "The Tender For Law" }}</a>
+  {{ $navigationKey := .FirstSection.RelPermalink }}
+  {{ if eq .Section "articles" }}{{ $navigationKey = .CurrentSection.RelPermalink }}{{ end }}
+  {{ partialCached "navbar.html" . $navigationKey }}
+  <div class="site-shell">
+    <header class="masthead">
+      <a href="{{ site.Home.RelPermalink }}">The Tender For Law</a>
+      {{ if not .IsHome }}{{ partial "breadcrumbs.html" . }}{{ end }}
+    </header>
+    <main id="main" tabindex="-1">{{ block "main" . }}{{ end }}</main>
+    {{ partialCached "footer.html" . }}
+  </div>
 </body>
 </html>
