@@ -18,7 +18,7 @@ weight = "90"
 <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img src="/img/show-me-the-money.jpg" class="d-block w-100" alt="...">
+      <img src="https://github.com/user-attachments/assets/3f960ae3-e269-48ef-a722-f7f99e172730" class="d-block w-100" alt="...">
     </div>
   </div>
 </div>
