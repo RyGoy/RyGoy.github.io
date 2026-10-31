@@ -1,0 +1,12 @@
+<details class="archival-metadata">
+  <summary>Unique ID: {{ .Params.id }}</summary>
+  <dl>
+    <div><dt>Unique ID:</dt><dd><a href="{{ .RelPermalink }}">{{ .Params.id }}</a></dd></div>
+    {{ with .Params.post_id }}<div><dt>Parent ID:</dt><dd><a href="{{ $.Parent.RelPermalink }}#entry-{{ . }}">{{ . }}</a></dd></div>{{ end }}
+    {{ with .Params.from_id }}<div><dt>Unique Facebook User ID:</dt><dd>{{ . }}</dd></div>{{ end }}
+    {{ with .Params.updated_time }}<div><dt>Last Updated:</dt><dd><time datetime="{{ . }}">{{ (time.AsTime .).Format "Jan 02, 2006 3:04 PM" }}</time></dd></div>{{ end }}
+    {{ with .Params.source }}<div><dd class="source-value">{{ . }}</dd></div>{{ end }}
+    {{ with .Params.type }}<div><dt>Type of Post:</dt><dd>{{ . }}</dd></div>{{ end }}
+    {{ with .Params.place }}<div><dt>Place of Post:</dt><dd>{{ . }}</dd></div>{{ end }}
+  </dl>
+</details>

@@ -1,0 +1,9 @@
+<article class="longform reading-column">
+  <header class="page-heading">
+    <h1>{{ .Title }}</h1>
+    {{ with .Params.author }}<p class="article-author">{{ . }}</p>{{ end }}
+    {{ with .Params.date }}<time datetime="{{ . }}">{{ (time.AsTime .).Format "Jan 02, 2006" }}</time>{{ end }}
+    {{ if or .Params.tags .Params.categories }}<details class="article-metadata"><summary>{{ .Params.author | default .Title }}</summary>{{ with .Params.tags }}<p>{{ delimit . " · " }}</p>{{ end }}{{ with .Params.categories }}<p>{{ delimit . " · " }}</p>{{ end }}</details>{{ end }}
+  </header>
+  <div class="prose">{{ .Content }}</div>
+</article>

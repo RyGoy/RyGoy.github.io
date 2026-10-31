@@ -1,0 +1,11 @@
+<header class="page-heading"><p class="eyebrow">The Tender For Law</p><h1>{{ .Title }}</h1>{{ with .Content }}<div class="prose">{{ . }}</div>{{ end }}</header>
+<div class="article-grid">
+{{ range .Pages.ByWeight }}
+  <article class="article-card">
+    {{ with .Params.author }}<p class="eyebrow">{{ . }}</p>{{ end }}
+    <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+    {{ with .Params.date }}<time datetime="{{ . }}">{{ (time.AsTime .).Format "Jan 02, 2006" }}</time>{{ end }}
+    {{ if .IsSection }}<ul class="article-contents">{{ range .Pages.ByWeight }}<li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>{{ end }}</ul>{{ end }}
+  </article>
+{{ end }}
+</div>

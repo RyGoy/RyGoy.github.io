@@ -1,0 +1,7 @@
+<article class="archive-entry{{ if .Params.post_id }} comment-entry{{ end }}" id="entry-{{ .Params.id }}">
+  {{ partial "lpPosts.html" . }}
+  <footer class="entry-footer">
+    {{ partial "lpGo.html" . }}
+    {{ partial "entry-metadata.html" . }}
+  </footer>
+</article>

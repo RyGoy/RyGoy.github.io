@@ -1,26 +1,8 @@
-{{ define "main"}}
-<html>
-    {{ partial "head" }}   
-<body>
-    {{ partial "header" (dict "Kind" .Kind "Template" "Single") }}
-    
-    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <!-- We've used 3xl here, but feel free to try other max-widths based on your needs -->
-        <div class="mx-auto max-w-3xl">
-          <!-- Content goes here -->
-          <section class="test">
-            <h1>{{.Title}}</h1>
-                <h3>{{.Params.Author}} | {{.Params.date}}</h3>
-                {{.Params.tags}}<br>
-                {{.Params.categories}}<br><br>
-            {{ .Content | markdownify }}
-          </section>
-          <div>
-            <a href="{{.Permalink}}">{{.Title}}<br>{{.Params.Author}}</a><br></li>
-          </div>
-       </div>
-    </div>
-</body>
-<script src="/js/buttons.js"></script>
-</html>
-{{end}}
+{{ define "main" }}
+{{ if .Params.id }}
+  <header class="page-heading"><p class="eyebrow"><a href="{{ .FirstSection.RelPermalink }}">{{ .FirstSection.Title }}</a></p><h1>{{ with .Params.created_time }}{{ (time.AsTime .).Format "Jan 02, 2006 3:04 PM" }}{{ end }}</h1></header>
+  <div class="reading-column">{{ partial "entry.html" . }}</div>
+{{ else }}
+  {{ partial "article.html" . }}
+{{ end }}
+{{ end }}

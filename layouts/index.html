@@ -1,28 +1,24 @@
-<html>
-    {{ partial "head" . }}
-<body>
-    {{ partial "navbar" . }}
-    <!--{{ partial "alert"}}
-    {{ partial "header" }}
-    { partial "body" }}-->
-
-    <h1>{{.Title}}</h1>
-    {{ partial "body" . }}
-
-
-    
-    <!--<div class="divide-y divide-gray-200 overflow-hidden rounded-lg bg-white shadow">
-        <div class="px-4 py-5 sm:p-6">
-          <!- Content goes here ->
-          <h1>{{.Title}}</h1>
-        </div>
-        <div class="px-4 py-4 sm:px-6">
-          <!- Content goes here ->
-          <img src="/images/invalidpolicy.jpg" style="border-radius:8px">
-          <!- We use less vertical padding on card footers at all sizes than on headers or body sections -->
-        <!--</div>
-    </div>-->
-
-    {{ block "footer" . }} {{end}}
-</body>
-</html>
+{{ define "main" }}
+  {{ partial "body.html" . }}
+  {{ with .Content }}<div class="prose">{{ . }}</div>{{ end }}
+  <section class="volume-library" id="volumes" aria-labelledby="volumes-heading">
+    <div class="section-heading"><h2 id="volumes-heading">Volumes</h2><span class="rule" aria-hidden="true"></span></div>
+    <div class="volume-grid">
+    {{ range partialCached "volumes.html" . }}
+      <a class="volume-card" href="{{ .RelPermalink }}">
+        <span class="book-ornament" aria-hidden="true">{{ upper (strings.TrimPrefix "vol_" .Section) }}</span>
+        <h3>{{ .Title }}</h3>
+        {{ $posts := sort .Pages "Params.created_time" }}
+        {{ if $posts }}<span class="volume-dates">{{ with (index $posts 0).Params.created_time }}{{ (time.AsTime .).Format "2006" }}{{ end }} — {{ with (index $posts (sub (len $posts) 1)).Params.created_time }}{{ (time.AsTime .).Format "2006" }}{{ end }}</span>{{ end }}
+        <span class="card-arrow" aria-hidden="true">↗</span>
+      </a>
+    {{ end }}
+    </div>
+  </section>
+  {{ with site.GetPage "/articles" }}
+  <section class="article-library" aria-labelledby="articles-heading">
+    <div class="section-heading"><h2 id="articles-heading"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2><span class="rule" aria-hidden="true"></span></div>
+    <div class="author-grid">{{ range .Sections.ByWeight }}<a class="author-card" href="{{ .RelPermalink }}"><h3>{{ .Title }}</h3><span aria-hidden="true">↗</span></a>{{ end }}</div>
+  </section>
+  {{ end }}
+{{ end }}
