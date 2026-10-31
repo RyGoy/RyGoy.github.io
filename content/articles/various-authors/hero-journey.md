@@ -32,6 +32,8 @@ Jews stole your birthright, now there’s only ritual without reflection.
 
 [https://en.m.wikipedia.org/wiki/Hero's_journey](https://en.m.wikipedia.org/wiki/Hero's_journey)
 
+<img width="500" height="503" alt="image" src="https://github.com/user-attachments/assets/933d0c7c-3a3c-4521-9653-43958974d4c3" />
+
 ---
 
 The point of the Hero’s Story is to discover who One could become. One goes in[put] and comes out[put] transformed.
@@ -41,7 +43,7 @@ The point of the Hero’s Story is to discover who One could become. One goes in
 
 Most of us don't even start the journey, or use a [journal](https://www.investopedia.com/terms/j/journal.asp), because belief acts as a barrier that "protects" us from the unknown. Through belief we've damaged the mechanism that was supposed to guide us in developing our story of turning the unknown into the known; repeatedly. The mechanism is something like: “the courageous commitment to go out [look], find what's true, and to speak it to others so they might also choose to find it".
 
-##### "You can't tell the difference between what's right and what feels good"
+##### "You can't tell the difference between what's TRUE and what feels good"
 -Scott Duncan
 
 I was a fundamentalist Catholic for more than 20 years, I found out twice in the last 6 years that I was still a Woofucker. Rather than ignoring my mistake, I looked at it deeply. The Bible is a stupid evil book, but a good metaphor can change how One sees and interacts with the world [see Jordan Peterson's work for details].
