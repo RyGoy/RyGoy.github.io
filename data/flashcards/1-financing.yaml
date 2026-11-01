@@ -1,0 +1,163 @@
+# Flash card deck. Format and rules: docs/flashcards.md
+title: Financing and Equity
+cards:
+  - prompt: "Investors buy 10,000 shares of $1 par common stock at par, paying $10,000 cash."
+    debit: Cash
+    credit: Common Stock
+    explain: "Cash comes in; stock issued at par goes entirely to Common Stock."
+  - prompt: "The company issues 5,000 shares of $1 par common stock for $25,000 cash."
+    debit: Cash
+    credit: [Common Stock, Paid-in Capital in Excess of Par]
+    explain: "Par value ($5,000) goes to Common Stock; the extra $20,000 is paid-in capital."
+  - prompt: "The company issues 2,000 shares of $5 par common stock at $12 per share."
+    debit: Cash
+    credit: [Common Stock, Paid-in Capital in Excess of Par]
+    explain: "Par $10,000 to Common Stock; $14,000 above par to Paid-in Capital in Excess of Par."
+  - prompt: "Investors pay $40,000 for no-par common stock."
+    debit: Cash
+    credit: Common Stock
+    explain: "No-par stock: the whole amount goes to Common Stock."
+  - prompt: "A founder contributes equipment worth $8,000 in exchange for no-par common stock."
+    debit: Equipment
+    credit: Common Stock
+    explain: "The company gains an asset and issues stock for it."
+  - prompt: "The company issues no-par common stock in exchange for land valued at $50,000."
+    debit: Land
+    credit: Common Stock
+    explain: "Record the land at its fair value; equity rises by the same amount."
+  - prompt: "A stockholder contributes a delivery van valued at $18,000 for no-par common stock."
+    debit: Vehicles
+    credit: Common Stock
+    explain: "A noncash asset received for stock."
+  - prompt: "The company issues no-par common stock to an inventor in exchange for a patent valued at $20,000."
+    debit: Patents
+    credit: Common Stock
+    explain: "Patents are an intangible asset acquired for stock."
+  - prompt: "A supplier agrees to accept no-par common stock to settle a $5,000 account payable."
+    debit: Accounts Payable
+    credit: Common Stock
+    explain: "The liability is removed and equity increases."
+  - prompt: "An attorney accepts no-par common stock worth $1,200 as payment for incorporation services."
+    debit: Professional Fees Expense
+    credit: Common Stock
+    explain: "Legal services are an expense; payment is made in stock instead of cash."
+  - prompt: "The company issues 1,000 shares of $100 par preferred stock at par for cash."
+    debit: Cash
+    credit: Preferred Stock
+    explain: "Preferred stock issued at par goes entirely to Preferred Stock."
+  - prompt: "The company issues 100 shares of $100 par preferred stock at $105 per share."
+    debit: Cash
+    credit: [Preferred Stock, Paid-in Capital in Excess of Par]
+    explain: "Par value to Preferred Stock; the $500 premium is paid-in capital."
+  - prompt: "The company buys back 500 shares of its own common stock for $7,500 cash."
+    debit: Treasury Stock
+    credit: Cash
+    explain: "Treasury Stock is a contra-equity account with a debit balance."
+  - prompt: "The company reissues treasury stock for cash equal to its $3,000 cost."
+    debit: Cash
+    credit: Treasury Stock
+    explain: "Reissuing at cost reverses the Treasury Stock debit."
+  - prompt: "The board declares a $2,000 cash dividend, payable next month."
+    debit: Dividends
+    credit: Dividends Payable
+    explain: "Declaration creates a liability; Dividends reduces equity when closed."
+  - prompt: "The board declares a $1 per share dividend on 10,000 outstanding common shares."
+    debit: Dividends
+    credit: Dividends Payable
+    explain: "A $10,000 obligation exists once the dividend is declared."
+  - prompt: "The company pays the $2,000 dividend declared last month."
+    debit: Dividends Payable
+    credit: Cash
+    explain: "Payment settles the liability; no new equity effect."
+  - prompt: "The company pays the preferred stock dividend declared at the last board meeting."
+    debit: Dividends Payable
+    credit: Cash
+    explain: "Paying a declared dividend clears Dividends Payable."
+  - prompt: "The company borrows $20,000 from the bank, signing a 2-year note."
+    debit: Cash
+    credit: Notes Payable
+    explain: "A written promise to repay is a note payable."
+  - prompt: "The company draws $8,000 on its bank line of credit."
+    debit: Cash
+    credit: Notes Payable
+    explain: "Borrowed money is a liability until repaid."
+  - prompt: "The company's president lends the business $3,000, and the business signs a note."
+    debit: Cash
+    credit: Notes Payable
+    explain: "A loan from an officer is still a note payable of the business."
+  - prompt: "The company repays $5,000 of the principal on its bank note."
+    debit: Notes Payable
+    credit: Cash
+    explain: "Repaying principal reduces the liability."
+  - prompt: "The company pays $600 of interest on its bank loan for the current month. No interest had been accrued."
+    debit: Interest Expense
+    credit: Cash
+    explain: "Interest is the cost of borrowing for the period."
+  - prompt: "A $10,000 note matures. The company pays the principal plus $400 interest. No interest had been accrued."
+    debit: [Notes Payable, Interest Expense]
+    credit: Cash
+    explain: "Principal clears the liability; interest is an expense."
+  - prompt: "The company repays the $8,000 drawn on its line of credit plus $90 interest for the month."
+    debit: [Notes Payable, Interest Expense]
+    credit: Cash
+    explain: "Split the payment into principal and interest."
+  - prompt: "The company pays $300 of interest that was accrued at the end of last year."
+    debit: Interest Payable
+    credit: Cash
+    explain: "The expense was recorded last year; this payment settles the liability."
+  - prompt: "The company pays the bank $1,200 interest: $1,000 was accrued last period and $200 is for the current month."
+    debit: [Interest Payable, Interest Expense]
+    credit: Cash
+    explain: "Clear the accrued part; expense only the current month."
+  - prompt: "The company converts a $6,000 overdue account payable into a 6-month note payable."
+    debit: Accounts Payable
+    credit: Notes Payable
+    explain: "One liability replaces another."
+  - prompt: "The company signs a $15,000 note payable to buy a delivery van."
+    debit: Vehicles
+    credit: Notes Payable
+    explain: "The van is an asset financed by a note."
+  - prompt: "The company buys a packaging machine by signing a $12,000 note payable."
+    debit: Equipment
+    credit: Notes Payable
+    explain: "Asset acquired with borrowed funds."
+  - prompt: "The company buys a building for $200,000, paying $40,000 cash and signing a mortgage for the rest."
+    debit: Buildings
+    credit: [Cash, Mortgage Payable]
+    explain: "Part cash, part long-term mortgage."
+  - prompt: "The company buys property for $250,000: land $50,000 and building $200,000. It pays $50,000 cash and signs a mortgage for the rest."
+    debit: [Land, Buildings]
+    credit: [Cash, Mortgage Payable]
+    explain: "Land and buildings are recorded separately because only buildings depreciate."
+  - prompt: "The company makes its monthly mortgage payment: $1,200 principal and $800 interest."
+    debit: [Mortgage Payable, Interest Expense]
+    credit: Cash
+    explain: "Principal reduces the mortgage; interest is an expense."
+  - prompt: "The company issues $100,000 of bonds at face value for cash."
+    debit: Cash
+    credit: Bonds Payable
+    explain: "Bonds are long-term borrowing."
+  - prompt: "The company pays $4,000 semiannual interest on its bonds. No interest had been accrued."
+    debit: Interest Expense
+    credit: Cash
+    explain: "Bond interest is an expense of the period."
+  - prompt: "The company retires $100,000 of bonds at maturity by paying face value."
+    debit: Bonds Payable
+    credit: Cash
+    explain: "Paying the bonds removes the liability."
+  - prompt: "The company lends $4,000 to an employee, who signs a note."
+    debit: Notes Receivable
+    credit: Cash
+    explain: "The company now holds a written promise to be repaid."
+  - prompt: "The employee repays the $4,000 note plus $120 interest. No interest had been accrued."
+    debit: Cash
+    credit: [Notes Receivable, Interest Revenue]
+    explain: "Principal clears the receivable; interest is revenue."
+  - prompt: "The company pays $9,000 of income taxes owed from last year, already recorded as a liability."
+    debit: Income Taxes Payable
+    credit: Cash
+    explain: "The expense was recorded last year; this settles the liability."
+  - prompt: "The company pays a $40 wire transfer fee to send a loan payment."
+    debit: Bank Fees Expense
+    credit: Cash
+    explain: "Bank charges are an operating expense."

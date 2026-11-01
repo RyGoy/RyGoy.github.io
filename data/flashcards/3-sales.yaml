@@ -1,0 +1,243 @@
+# Flash card deck. Format and rules: docs/flashcards.md
+title: Sales and Receivables
+cards:
+  - prompt: "A landscaping company mows a lawn and is paid $80 cash."
+    debit: Cash
+    credit: Service Revenue
+    explain: "Revenue is earned when the service is performed."
+  - prompt: "A consultant completes a project and bills the client $2,500."
+    debit: Accounts Receivable
+    credit: Service Revenue
+    explain: "Revenue is earned now; cash will come later."
+  - prompt: "A law firm bills a client $4,000 for legal work completed this month."
+    debit: Accounts Receivable
+    credit: Service Revenue
+    explain: "Earned but not yet collected."
+  - prompt: "A tutor is paid $60 through a mobile payment app right after a lesson."
+    debit: Cash
+    credit: Service Revenue
+    explain: "App payments that reach the bank are cash."
+  - prompt: "A repair shop finishes a $900 job. The customer pays $450 now and will pay the rest next month."
+    debit: [Cash, Accounts Receivable]
+    credit: Service Revenue
+    explain: "The full $900 is earned; half is collected."
+  - prompt: "A client pays $2,500 for the invoice sent last month."
+    debit: Cash
+    credit: Accounts Receivable
+    explain: "Collecting a receivable is not new revenue."
+  - prompt: "A customer pays $300 toward a $1,000 outstanding balance."
+    debit: Cash
+    credit: Accounts Receivable
+    explain: "Partial collection reduces the receivable."
+  - prompt: "A customer sends a bank transfer for last month's $1,200 invoice."
+    debit: Cash
+    credit: Accounts Receivable
+    explain: "The receivable is collected."
+  - prompt: "A customer pays $1,000 in advance for services to be performed next month."
+    debit: Cash
+    credit: Unearned Revenue
+    explain: "Cash received before it is earned is a liability."
+  - prompt: "A contractor receives a $5,000 deposit on a kitchen remodel that starts next month."
+    debit: Cash
+    credit: Unearned Revenue
+    explain: "The company owes the work, so it is a liability."
+  - prompt: "A gym sells annual memberships for $6,000 cash, covering the next 12 months."
+    debit: Cash
+    credit: Unearned Revenue
+    explain: "Revenue will be earned month by month."
+  - prompt: "A store sells $500 of gift cards for cash."
+    debit: Cash
+    credit: Unearned Revenue
+    explain: "The store owes goods to the card holders."
+  - prompt: "A customer redeems a $50 gift card for merchandise that cost the store $30."
+    debit: [Unearned Revenue, Cost of Goods Sold]
+    credit: [Sales Revenue, Inventory]
+    explain: "The liability becomes revenue; the goods' cost moves to COGS."
+  - prompt: "A contractor finishes the kitchen remodel for which a $5,000 deposit was received earlier."
+    debit: Unearned Revenue
+    credit: Service Revenue
+    explain: "Delivering the work turns the liability into revenue."
+  - prompt: "A customer cancels a job and the company refunds the $500 deposit it received earlier."
+    debit: Unearned Revenue
+    credit: Cash
+    explain: "The obligation is settled with cash instead of service."
+  - prompt: "A shop sells merchandise for $800 cash. The goods cost $500."
+    debit: [Cash, Cost of Goods Sold]
+    credit: [Sales Revenue, Inventory]
+    explain: "Perpetual system: record the sale and the cost of the goods sold."
+  - prompt: "A wholesaler sells goods on account for $3,000. The goods cost $1,800."
+    debit: [Accounts Receivable, Cost of Goods Sold]
+    credit: [Sales Revenue, Inventory]
+    explain: "Two entries: revenue at selling price, COGS at cost."
+  - prompt: "A farm stand sells $240 of produce for cash. The produce cost $150."
+    debit: [Cash, Cost of Goods Sold]
+    credit: [Sales Revenue, Inventory]
+    explain: "Revenue and cost are both recorded at the time of sale."
+  - prompt: "A furniture store sells a sofa on account for $1,400. The sofa cost $900."
+    debit: [Accounts Receivable, Cost of Goods Sold]
+    credit: [Sales Revenue, Inventory]
+    explain: "The sofa leaves inventory and its cost becomes an expense."
+  - prompt: "A store sells merchandise for a $2,000 note receivable. The goods cost $1,200."
+    debit: [Notes Receivable, Cost of Goods Sold]
+    credit: [Sales Revenue, Inventory]
+    explain: "A note is received instead of an open account."
+  - prompt: "A customer returns goods bought on account for $200. The goods cost $120 and go back on the shelf."
+    debit: [Sales Returns and Allowances, Inventory]
+    credit: [Accounts Receivable, Cost of Goods Sold]
+    explain: "Reverse the sale through the contra-revenue account and restore inventory."
+  - prompt: "A customer returns goods bought for $150 cash and gets a refund. The goods cost $90 and are restocked."
+    debit: [Sales Returns and Allowances, Inventory]
+    credit: [Cash, Cost of Goods Sold]
+    explain: "Refund cash; restore the goods to inventory at cost."
+  - prompt: "A customer returns a defective item bought for $75 cash and gets a refund. The item is thrown away."
+    debit: Sales Returns and Allowances
+    credit: Cash
+    explain: "Nothing returns to inventory, so only the refund is recorded."
+  - prompt: "The company grants a $100 allowance to a customer who keeps slightly damaged goods bought on account."
+    debit: Sales Returns and Allowances
+    credit: Accounts Receivable
+    explain: "The customer owes less; no goods come back."
+  - prompt: "The company gives a $40 cash allowance to a customer who paid cash for scratched goods."
+    debit: Sales Returns and Allowances
+    credit: Cash
+    explain: "Allowances reduce net sales."
+  - prompt: "A customer pays a $3,000 invoice within the 2/10, n/30 discount period, sending $2,940."
+    debit: [Cash, Sales Discounts]
+    credit: Accounts Receivable
+    explain: "Clear the full receivable; the discount is contra-revenue."
+  - prompt: "A customer pays a $1,000 invoice less a 1% early-payment discount."
+    debit: [Cash, Sales Discounts]
+    credit: Accounts Receivable
+    explain: "Sales Discounts reduces net sales."
+  - prompt: "A customer pays a $3,000 invoice after the discount period has expired."
+    debit: Cash
+    credit: Accounts Receivable
+    explain: "No discount applies."
+  - prompt: "A salon performs a $120 service paid by credit card. The card processor deposits $116 and keeps a $4 fee."
+    debit: [Cash, Bank Fees Expense]
+    credit: Service Revenue
+    explain: "Revenue is the full price; the processing fee is an expense."
+  - prompt: "A store sells merchandise by credit card for $500 (cost $300). The processor keeps a $15 fee."
+    debit: [Cash, Bank Fees Expense, Cost of Goods Sold]
+    credit: [Sales Revenue, Inventory]
+    explain: "Record full revenue, the fee as an expense, and the cost of goods."
+  - prompt: "A store sells merchandise for $100 plus $8 sales tax, cash. The goods cost $60."
+    debit: [Cash, Cost of Goods Sold]
+    credit: [Sales Revenue, Sales Tax Payable, Inventory]
+    explain: "Sales tax collected is owed to the government, not revenue."
+  - prompt: "A dry cleaner charges $50 plus $4 sales tax for a taxable service and is paid cash."
+    debit: Cash
+    credit: [Service Revenue, Sales Tax Payable]
+    explain: "The tax is a liability collected for the government."
+  - prompt: "The company bills a client $1,000 plus $70 sales tax for taxable services."
+    debit: Accounts Receivable
+    credit: [Service Revenue, Sales Tax Payable]
+    explain: "The client owes both the fee and the tax."
+  - prompt: "The company sends the state the $1,400 of sales tax it collected last quarter."
+    debit: Sales Tax Payable
+    credit: Cash
+    explain: "Remitting sales tax settles the liability."
+  - prompt: "The company pays $65 to ship goods to a customer (FOB destination)."
+    debit: Delivery Expense
+    credit: Cash
+    explain: "Freight-out is a selling expense, not inventory cost."
+  - prompt: "The company pays $40 freight on a shipment to a customer and adds the charge to the customer's bill."
+    debit: Accounts Receivable
+    credit: Cash
+    explain: "The customer will reimburse the freight."
+  - prompt: "Using the allowance method, the company writes off a $400 customer account as uncollectible."
+    debit: Allowance for Doubtful Accounts
+    credit: Accounts Receivable
+    explain: "The write-off uses the allowance; the expense was recorded earlier."
+  - prompt: "A customer declares bankruptcy. The company writes off the $1,200 balance using the allowance method."
+    debit: Allowance for Doubtful Accounts
+    credit: Accounts Receivable
+    explain: "No expense now: the allowance already covers it."
+  - prompt: "A customer whose $300 account was written off last year says they will pay. Reinstate the account."
+    debit: Accounts Receivable
+    credit: Allowance for Doubtful Accounts
+    explain: "Reverse the write-off first."
+  - prompt: "The company collects the $300 from the customer whose account was just reinstated."
+    debit: Cash
+    credit: Accounts Receivable
+    explain: "Now record the normal collection."
+  - prompt: "A small business using the direct write-off method writes off a $150 uncollectible account."
+    debit: Bad Debt Expense
+    credit: Accounts Receivable
+    explain: "Direct write-off: expense is recorded only when the account is written off."
+  - prompt: "A customer signs a 90-day note to replace an overdue $2,000 account receivable."
+    debit: Notes Receivable
+    credit: Accounts Receivable
+    explain: "One receivable replaces another."
+  - prompt: "A customer pays a $2,000 note receivable at maturity plus $50 interest. No interest had been accrued."
+    debit: Cash
+    credit: [Notes Receivable, Interest Revenue]
+    explain: "Principal clears the note; interest is revenue."
+  - prompt: "A customer pays a $2,000 note receivable. The interest was collected earlier."
+    debit: Cash
+    credit: Notes Receivable
+    explain: "Only principal remains to collect."
+  - prompt: "A customer fails to pay a $2,000 note plus $50 interest at maturity. The company bills the customer for the total. No interest had been accrued."
+    debit: Accounts Receivable
+    credit: [Notes Receivable, Interest Revenue]
+    explain: "A dishonored note becomes an account receivable."
+  - prompt: "The company collects $150 of interest that was accrued as a receivable at year end."
+    debit: Cash
+    credit: Interest Receivable
+    explain: "The revenue was recorded last year."
+  - prompt: "The company sublets office space and receives this month's rent of $700."
+    debit: Cash
+    credit: Rent Revenue
+    explain: "Rent earned this month is revenue."
+  - prompt: "A tenant pays the company six months of rent in advance, $4,200."
+    debit: Cash
+    credit: Unearned Revenue
+    explain: "Rent not yet earned is a liability."
+  - prompt: "The bank deposits $35 of interest earned on the company's savings account."
+    debit: Cash
+    credit: Interest Revenue
+    explain: "Interest earned is revenue."
+  - prompt: "A software company sells a 1-year support contract for $1,200 cash."
+    debit: Cash
+    credit: Unearned Revenue
+    explain: "Support will be provided over the coming year."
+  - prompt: "A catering company receives a $600 deposit for an event next month."
+    debit: Cash
+    credit: Unearned Revenue
+    explain: "The event has not happened yet."
+  - prompt: "A catering company caters the event for which it received a $600 deposit."
+    debit: Unearned Revenue
+    credit: Service Revenue
+    explain: "The service is now performed."
+  - prompt: "A veterinarian treats a pet for $220 and the owner pays by debit card."
+    debit: Cash
+    credit: Service Revenue
+    explain: "A debit card payment is cash."
+  - prompt: "A photographer shoots a wedding and bills the couple $1,800, due in 30 days."
+    debit: Accounts Receivable
+    credit: Service Revenue
+    explain: "Earned now, collected later."
+  - prompt: "A bakery sells $90 of bread for cash. The bread cost $35 to make and was carried in inventory."
+    debit: [Cash, Cost of Goods Sold]
+    credit: [Sales Revenue, Inventory]
+    explain: "Record the sale and move the cost out of inventory."
+  - prompt: "An electronics store sells a TV on account for $1,000 plus $70 sales tax. The TV cost $650."
+    debit: [Accounts Receivable, Cost of Goods Sold]
+    credit: [Sales Revenue, Sales Tax Payable, Inventory]
+    explain: "The customer owes price plus tax; tax is a liability."
+  - prompt: "A customer returns a $70 item bought on account. It is damaged and cannot be resold."
+    debit: Sales Returns and Allowances
+    credit: Accounts Receivable
+    explain: "No inventory is restored for goods that cannot be resold."
+  - prompt: "A customer's $200 check, deposited last week, is returned by the bank for insufficient funds."
+    debit: Accounts Receivable
+    credit: Cash
+    explain: "The customer owes the money again."
+  - prompt: "An accounting firm receives a $3,000 retainer for tax work it will do next quarter."
+    debit: Cash
+    credit: Unearned Revenue
+    explain: "A retainer for future work is unearned."
+  - prompt: "A car wash collects $1,350 cash for the day's washes."
+    debit: Cash
+    credit: Service Revenue
+    explain: "Daily service sales collected in cash."

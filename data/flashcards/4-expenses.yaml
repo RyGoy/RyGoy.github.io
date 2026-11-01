@@ -1,0 +1,203 @@
+# Flash card deck. Format and rules: docs/flashcards.md
+title: Operating Expenses and Payroll
+cards:
+  - prompt: "The company pays $1,500 for this month's office rent."
+    debit: Rent Expense
+    credit: Cash
+    explain: "Rent for the current period is an expense."
+  - prompt: "A restaurant pays $2,200 rent for the current month on the first of the month."
+    debit: Rent Expense
+    credit: Cash
+    explain: "This month's rent is used up this month."
+  - prompt: "The landlord bills $1,500 for this month's rent; the company will pay next week."
+    debit: Rent Expense
+    credit: Accounts Payable
+    explain: "The expense belongs to this month even though it is unpaid."
+  - prompt: "The company pays this month's $240 electric bill when it arrives."
+    debit: Utilities Expense
+    credit: Cash
+    explain: "Utilities used this month are an expense."
+  - prompt: "The company pays this month's $150 phone and internet bill."
+    debit: Utilities Expense
+    credit: Cash
+    explain: "Phone and internet are utilities."
+  - prompt: "The company pays $500 for a social media ad campaign that runs this month."
+    debit: Advertising Expense
+    credit: Cash
+    explain: "Advertising used this period is an expense."
+  - prompt: "The company pays $300 for a radio ad that aired this week."
+    debit: Advertising Expense
+    credit: Cash
+    explain: "The ad has run, so it is an expense."
+  - prompt: "The company pays part-time staff $800 for work done this week. Ignore withholdings."
+    debit: Wages Expense
+    credit: Cash
+    explain: "Wages earned and paid in the same period."
+  - prompt: "The company pays a $1,000 holiday bonus to an employee. Ignore withholdings."
+    debit: Wages Expense
+    credit: Cash
+    explain: "Bonuses are part of employee compensation."
+  - prompt: "Gross payroll is $10,000. The company withholds $1,800 of employee taxes and pays employees the rest."
+    debit: Wages Expense
+    credit: [Payroll Taxes Payable, Cash]
+    explain: "Expense the gross wages; withholdings are owed to the government."
+  - prompt: "A shop's weekly payroll is $3,000 gross. It withholds $450 of taxes and pays $2,550 by direct deposit."
+    debit: Wages Expense
+    credit: [Payroll Taxes Payable, Cash]
+    explain: "Employees receive net pay; withholdings are a liability."
+  - prompt: "The company records its employer share of Social Security and Medicare, $765."
+    debit: Payroll Tax Expense
+    credit: Payroll Taxes Payable
+    explain: "Employer payroll taxes are an expense of the company."
+  - prompt: "The company records $120 of state unemployment tax owed on this month's payroll."
+    debit: Payroll Tax Expense
+    credit: Payroll Taxes Payable
+    explain: "Unemployment taxes are employer payroll taxes."
+  - prompt: "The company sends the government $2,565 of withheld and employer payroll taxes."
+    debit: Payroll Taxes Payable
+    credit: Cash
+    explain: "Remitting settles the liability."
+  - prompt: "The company deposits employee income taxes it withheld last month."
+    debit: Payroll Taxes Payable
+    credit: Cash
+    explain: "Withholdings are owed until deposited."
+  - prompt: "The company pays $2,000 of wages that were accrued at the end of last month."
+    debit: Wages Payable
+    credit: Cash
+    explain: "The expense was recorded last month."
+  - prompt: "The company pays a $5,000 payroll. $2,000 was accrued last period and $3,000 is for days worked this period. Ignore withholdings."
+    debit: [Wages Payable, Wages Expense]
+    credit: Cash
+    explain: "Clear the accrued part; expense only the current part."
+  - prompt: "The company establishes a $200 petty cash fund."
+    debit: Petty Cash
+    credit: Cash
+    explain: "Cash moves from the bank into the petty cash box."
+  - prompt: "The company increases its petty cash fund from $200 to $300."
+    debit: Petty Cash
+    credit: Cash
+    explain: "Only changes in the fund size touch Petty Cash."
+  - prompt: "The company reduces its petty cash fund from $300 to $150 and redeposits the extra cash in the bank."
+    debit: Cash
+    credit: Petty Cash
+    explain: "The fund shrinks; the bank balance grows."
+  - prompt: "The company replenishes petty cash. Receipts show $40 of postage and $25 of courier fees."
+    debit: [Postage Expense, Delivery Expense]
+    credit: Cash
+    explain: "Replenishing records the expenses and refills the fund from the bank."
+  - prompt: "The company replenishes petty cash. Receipts show $60 of postage, and $65 is needed to restore the fund to its full balance."
+    debit: [Postage Expense, Cash Over and Short]
+    credit: Cash
+    explain: "An unexplained shortage is debited to Cash Over and Short."
+  - prompt: "The company replenishes petty cash for $35 of receipts for office snacks."
+    debit: Miscellaneous Expense
+    credit: Cash
+    explain: "Small, unusual costs can go to Miscellaneous Expense."
+  - prompt: "The bank statement shows a $15 monthly service charge."
+    debit: Bank Fees Expense
+    credit: Cash
+    explain: "Bank charges reduce the cash balance."
+  - prompt: "The company pays a $25 fee for an outgoing wire transfer."
+    debit: Bank Fees Expense
+    credit: Cash
+    explain: "Bank fees are an expense."
+  - prompt: "The company pays $70 for an oil change on its delivery van."
+    debit: Repairs and Maintenance Expense
+    credit: Cash
+    explain: "Routine maintenance is an expense."
+  - prompt: "A technician services the heating system for $400 on account."
+    debit: Repairs and Maintenance Expense
+    credit: Accounts Payable
+    explain: "Routine maintenance; the bill is unpaid."
+  - prompt: "The company pays the $400 heating service invoice."
+    debit: Accounts Payable
+    credit: Cash
+    explain: "Payment clears the payable."
+  - prompt: "The company pays $450 for an employee's airfare to a client meeting."
+    debit: Travel Expense
+    credit: Cash
+    explain: "Business travel is an expense."
+  - prompt: "The company reimburses an employee $90 for business mileage."
+    debit: Travel Expense
+    credit: Cash
+    explain: "Mileage reimbursements are travel costs."
+  - prompt: "A hotel bills the company $600 for an employee's stay at a trade show, due in 30 days."
+    debit: Travel Expense
+    credit: Accounts Payable
+    explain: "The travel cost is incurred now, paid later."
+  - prompt: "The company pays an attorney $800 for reviewing a contract this month."
+    debit: Professional Fees Expense
+    credit: Cash
+    explain: "Legal services used are an expense."
+  - prompt: "The company pays its outside bookkeeping service $350 for this month."
+    debit: Professional Fees Expense
+    credit: Cash
+    explain: "Outside professional services are an expense."
+  - prompt: "The company pays $200 for this month's insurance premium, which covers only this month."
+    debit: Insurance Expense
+    credit: Cash
+    explain: "Coverage used this month is an expense."
+  - prompt: "The company buys cleaning supplies for $45 and uses them all the same day."
+    debit: Supplies Expense
+    credit: Cash
+    explain: "Supplies used up right away are an expense."
+  - prompt: "The company buys $55 of stamps and uses them all this month."
+    debit: Postage Expense
+    credit: Cash
+    explain: "Postage used is an expense."
+  - prompt: "The company pays a courier $30 to deliver documents to a customer."
+    debit: Delivery Expense
+    credit: Cash
+    explain: "Delivering to customers is a selling expense."
+  - prompt: "The company pays a $50 donation to a local charity bake sale."
+    debit: Miscellaneous Expense
+    credit: Cash
+    explain: "A small, unusual cost."
+  - prompt: "The company makes a $3,000 quarterly estimated income tax payment and records it as expense."
+    debit: Income Tax Expense
+    credit: Cash
+    explain: "Corporate income tax is an expense."
+  - prompt: "The bank charges $45 of interest on the company's line of credit this month."
+    debit: Interest Expense
+    credit: Cash
+    explain: "Interest is the cost of borrowing."
+  - prompt: "The company pays this month's $1,100 truck lease payment. The lease is a short-term rental."
+    debit: Rent Expense
+    credit: Cash
+    explain: "A short-term rental payment is rent expense."
+  - prompt: "The company pays $250 for a booth at a local trade fair held this month."
+    debit: Advertising Expense
+    credit: Cash
+    explain: "Promotional costs are advertising."
+  - prompt: "The company pays a gardener $120 to maintain the grounds this month."
+    debit: Repairs and Maintenance Expense
+    credit: Cash
+    explain: "Upkeep of property is maintenance."
+  - prompt: "The company pays employees $6,000 of wages for the current period. Ignore withholdings."
+    debit: Wages Expense
+    credit: Cash
+    explain: "Gross wages equal net pay here."
+  - prompt: "The company pays $180 to a courier service for shipping sample products to customers."
+    debit: Delivery Expense
+    credit: Cash
+    explain: "Shipping to customers is freight-out."
+  - prompt: "The company receives a $95 invoice from the internet provider for this month, payable in 20 days."
+    debit: Utilities Expense
+    credit: Accounts Payable
+    explain: "Expense now, payment later."
+  - prompt: "The company pays the $95 internet invoice it recorded earlier."
+    debit: Accounts Payable
+    credit: Cash
+    explain: "Settles the payable."
+  - prompt: "The company pays $600 for printing flyers that were distributed this week."
+    debit: Advertising Expense
+    credit: Cash
+    explain: "The flyers have been used, so the cost is an expense."
+  - prompt: "The company pays $75 for its bank's overdraft fee."
+    debit: Bank Fees Expense
+    credit: Cash
+    explain: "Bank fees are an expense."
+  - prompt: "The company pays $2,400 of payroll taxes that were accrued last month."
+    debit: Payroll Taxes Payable
+    credit: Cash
+    explain: "The expense was recorded when accrued."

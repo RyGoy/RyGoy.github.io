@@ -262,3 +262,38 @@ main { min-height: 35vh; }
   .archive-entry { box-shadow: none; }
   a { color: black; }
 }
+/* Flash card game (layouts/_default/flashcards.html, static/js/flashcards.js) */
+.flashcards { margin-bottom: 3rem; }
+.flashcards [hidden] { display: none !important; }
+.fc-toolbar { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: .75rem 1.5rem; margin-bottom: 1.25rem; font-size: .9rem; color: var(--muted); }
+.fc-toolbar label { display: flex; align-items: center; gap: .6rem; max-width: 100%; }
+.fc-toolbar select { flex: 1 1 auto; min-width: 0; }
+.fc-score { margin: 0; font-variant-numeric: tabular-nums; }
+.fc-toolbar select, .fc-actions button { font: inherit; font-size: .9rem; color: var(--paper); background: var(--surface); border: 1px solid var(--line); padding: .45rem .9rem; max-width: 100%; }
+.fc-actions { display: flex; flex-wrap: wrap; gap: .75rem; }
+.fc-actions button { cursor: pointer; color: #e1c797; border-color: #806943; }
+.fc-actions button:hover { color: #fff5de; border-color: var(--brass); background: #b89a6314; }
+.fc-prompt { font-size: clamp(1.45rem, 3vw, 2rem); margin-bottom: 1.5rem; }
+.fc-prompt:focus { outline: none; }
+.fc-accounts { width: 100%; border-collapse: collapse; margin-bottom: 1.5rem; font-size: .95rem; }
+.fc-accounts th, .fc-accounts td { padding: .45rem .5rem; border-bottom: 1px solid var(--line); text-align: left; font-weight: 400; }
+.fc-accounts thead th { font-family: var(--display); font-size: .85rem; letter-spacing: .1em; text-transform: uppercase; color: var(--brass); }
+.fc-accounts thead th:nth-child(2), .fc-accounts thead th:nth-child(3), .fc-accounts td:nth-child(2), .fc-accounts td:nth-child(3) { width: 5.5rem; text-align: center; }
+.fc-accounts input { width: 1.15rem; height: 1.15rem; margin: 0; vertical-align: middle; accent-color: var(--brass); cursor: pointer; }
+.fc-accounts input:disabled { cursor: default; }
+.fc-mark { width: 7.5rem; font-size: .8rem; color: var(--muted); }
+.fc-accounts .is-right th, .fc-accounts .is-right .fc-mark { color: #a9c98f; }
+.fc-accounts .is-wrong th, .fc-accounts .is-wrong .fc-mark { color: #e39a8f; }
+.fc-result { margin-bottom: 1.5rem; padding: 1rem 1.25rem; border-left: 2px solid var(--brass); background: #b89a6308; }
+.fc-result p { margin-bottom: .4rem; }
+.fc-result p:last-child { margin-bottom: 0; }
+.fc-result.is-right { border-color: #6f9a5a; }
+.fc-result.is-wrong { border-color: var(--red); }
+.fc-verdict { font-family: var(--display); font-size: 1.4rem; }
+@media (max-width: 42rem) {
+  .fc-accounts { font-size: .88rem; }
+  .fc-accounts th, .fc-accounts td { padding-inline: .3rem; }
+  .fc-accounts thead th:nth-child(2), .fc-accounts thead th:nth-child(3), .fc-accounts td:nth-child(2), .fc-accounts td:nth-child(3) { width: 3.4rem; }
+  .fc-accounts thead th { font-size: .72rem; letter-spacing: .04em; }
+  .fc-mark { width: 5.5rem; }
+}
