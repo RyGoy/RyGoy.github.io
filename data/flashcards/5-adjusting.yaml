@@ -1,0 +1,223 @@
+# Flash card deck. Format and rules: docs/flashcards.md
+title: Adjusting and Correcting Entries
+cards:
+  - prompt: "Adjusting entry: a count shows $300 of the $800 of supplies on hand were used this month."
+    debit: Supplies Expense
+    credit: Supplies
+    explain: "Used supplies move from the asset to expense."
+  - prompt: "Adjusting entry: supplies on the books are $1,200, but only $450 remain at year end."
+    debit: Supplies Expense
+    credit: Supplies
+    explain: "$750 was used and becomes expense."
+  - prompt: "Adjusting entry: one month of a 12-month, $2,400 prepaid insurance policy has expired."
+    debit: Insurance Expense
+    credit: Prepaid Insurance
+    explain: "Expired coverage is an expense."
+  - prompt: "Adjusting entry: six months of a 1-year insurance policy expired by year end."
+    debit: Insurance Expense
+    credit: Prepaid Insurance
+    explain: "Move the used part of the prepaid to expense."
+  - prompt: "Adjusting entry: one of the three months of prepaid rent has been used."
+    debit: Rent Expense
+    credit: Prepaid Rent
+    explain: "Used rent becomes expense."
+  - prompt: "Adjusting entry: the company prepaid a year of warehouse rent; two months have passed."
+    debit: Rent Expense
+    credit: Prepaid Rent
+    explain: "Two months of rent are used up."
+  - prompt: "Adjusting entry: two of the six months of prepaid newspaper ads have run."
+    debit: Advertising Expense
+    credit: Prepaid Advertising
+    explain: "Ads that have run are expense."
+  - prompt: "Adjusting entry: record $500 of monthly depreciation on equipment."
+    debit: Depreciation Expense
+    credit: Accumulated Depreciation
+    explain: "Depreciation spreads asset cost over its life; credit the contra-asset."
+  - prompt: "Adjusting entry: record annual depreciation of $8,000 on the building."
+    debit: Depreciation Expense
+    credit: Accumulated Depreciation
+    explain: "The building's cost stays; Accumulated Depreciation grows."
+  - prompt: "Adjusting entry: record depreciation on the delivery trucks for the year."
+    debit: Depreciation Expense
+    credit: Accumulated Depreciation
+    explain: "Vehicles depreciate like other long-lived assets."
+  - prompt: "Adjusting entry: record depreciation on office furniture."
+    debit: Depreciation Expense
+    credit: Accumulated Depreciation
+    explain: "Furniture is depreciated over its useful life."
+  - prompt: "Adjusting entry: equipment bought on October 1 is depreciated for three months at year end."
+    debit: Depreciation Expense
+    credit: Accumulated Depreciation
+    explain: "Partial-year depreciation uses the same accounts."
+  - prompt: "Adjusting entry: record $1,000 of annual amortization on a patent. The company credits the asset directly."
+    debit: Amortization Expense
+    credit: Patents
+    explain: "Intangibles are amortized, often directly against the asset."
+  - prompt: "Adjusting entry: $400 of the $1,000 received in advance from a customer has now been earned."
+    debit: Unearned Revenue
+    credit: Service Revenue
+    explain: "Earned part moves from liability to revenue."
+  - prompt: "Adjusting entry: one month of annual gym memberships paid in advance has been earned."
+    debit: Unearned Revenue
+    credit: Service Revenue
+    explain: "Revenue is recognized as the service is provided."
+  - prompt: "Adjusting entry: a tenant prepaid six months of rent; one month has now passed."
+    debit: Unearned Revenue
+    credit: Rent Revenue
+    explain: "One month of rent is earned."
+  - prompt: "Adjusting entry: the company earned $300 of a 1-year support contract sold in advance."
+    debit: Unearned Revenue
+    credit: Service Revenue
+    explain: "Support delivered turns the liability into revenue."
+  - prompt: "Adjusting entry: $250 of gift cards have expired and will not be redeemed. The company recognizes them as revenue."
+    debit: Unearned Revenue
+    credit: Sales Revenue
+    explain: "The obligation is gone, so revenue is recognized."
+  - prompt: "Adjusting entry: employees earned $1,200 of wages in the last days of the month that will be paid next month."
+    debit: Wages Expense
+    credit: Wages Payable
+    explain: "Accrue wages earned but not yet paid."
+  - prompt: "Adjusting entry: accrue two days of unpaid wages, $900, at year end."
+    debit: Wages Expense
+    credit: Wages Payable
+    explain: "The expense belongs to this year."
+  - prompt: "Adjusting entry: accrue $150 of employer payroll taxes on the accrued wages."
+    debit: Payroll Tax Expense
+    credit: Payroll Taxes Payable
+    explain: "Employer taxes follow the wages they relate to."
+  - prompt: "Adjusting entry: $250 of interest has accrued on a bank note but will be paid next month."
+    debit: Interest Expense
+    credit: Interest Payable
+    explain: "Accrue interest incurred but not yet paid."
+  - prompt: "Adjusting entry: accrue $2,000 of interest on bonds payable at year end."
+    debit: Interest Expense
+    credit: Interest Payable
+    explain: "Bond interest is accrued like any other interest."
+  - prompt: "Adjusting entry: accrue $700 of interest on the mortgage for December, payable January 1."
+    debit: Interest Expense
+    credit: Interest Payable
+    explain: "December's interest belongs to December."
+  - prompt: "Adjusting entry: $60 of interest has accrued on a note receivable but has not been collected."
+    debit: Interest Receivable
+    credit: Interest Revenue
+    explain: "Accrue revenue earned but not yet received."
+  - prompt: "Adjusting entry: accrue $150 of interest earned on a customer's note at year end."
+    debit: Interest Receivable
+    credit: Interest Revenue
+    explain: "The interest is earned this year."
+  - prompt: "Adjusting entry: the company completed $900 of services that have not yet been billed."
+    debit: Accounts Receivable
+    credit: Service Revenue
+    explain: "Accrued revenue: earned but not recorded."
+  - prompt: "Adjusting entry: a law firm worked 10 billable hours at month end that it will bill next month."
+    debit: Accounts Receivable
+    credit: Service Revenue
+    explain: "Revenue is recognized when earned, not when billed."
+  - prompt: "Adjusting entry: a tenant owes this month's $700 rent, which has not been recorded or received."
+    debit: Accounts Receivable
+    credit: Rent Revenue
+    explain: "Accrue rent earned."
+  - prompt: "Adjusting entry: estimated income taxes for the year are $12,000, unpaid."
+    debit: Income Tax Expense
+    credit: Income Taxes Payable
+    explain: "Accrue the tax owed on this year's income."
+  - prompt: "Adjusting entry: the company estimates $1,500 of current receivables will not be collected (allowance method)."
+    debit: Bad Debt Expense
+    credit: Allowance for Doubtful Accounts
+    explain: "Estimate bad debts in the period of the sale."
+  - prompt: "Adjusting entry: an aging schedule shows the allowance needs to increase by $800."
+    debit: Bad Debt Expense
+    credit: Allowance for Doubtful Accounts
+    explain: "Raise the contra-asset; record the expense."
+  - prompt: "Adjusting entry: estimate $2,000 of future warranty repairs on products sold this year."
+    debit: Warranty Expense
+    credit: Warranty Liability
+    explain: "Match warranty cost to the period of the sale."
+  - prompt: "The company pays $150 cash to repair a product under warranty. The warranty liability was recorded earlier."
+    debit: Warranty Liability
+    credit: Cash
+    explain: "Using the liability, not a new expense."
+  - prompt: "The company uses $90 of parts from inventory to fix a product under warranty. The liability was recorded earlier."
+    debit: Warranty Liability
+    credit: Inventory
+    explain: "The repair uses up part of the estimated liability."
+  - prompt: "Adjusting entry: a physical count shows $400 less inventory than the records. The shortage is shrinkage."
+    debit: Cost of Goods Sold
+    credit: Inventory
+    explain: "Perpetual system: shrinkage is charged to COGS."
+  - prompt: "Adjusting entry: the company records all supply purchases as Supplies Expense. At year end, $200 of supplies remain."
+    debit: Supplies
+    credit: Supplies Expense
+    explain: "Move the unused amount back to the asset."
+  - prompt: "Adjusting entry: a 1-year insurance policy was recorded entirely as Insurance Expense. Nine months remain."
+    debit: Prepaid Insurance
+    credit: Insurance Expense
+    explain: "The unexpired part is still an asset."
+  - prompt: "Adjusting entry: a $1,200 customer prepayment was recorded as Service Revenue, but none has been earned yet."
+    debit: Service Revenue
+    credit: Unearned Revenue
+    explain: "Move unearned amounts out of revenue into the liability."
+  - prompt: "Correcting entry: a $500 purchase of supplies was recorded as Equipment. Supplies are recorded as an asset when purchased."
+    debit: Supplies
+    credit: Equipment
+    explain: "Move the amount to the right asset."
+  - prompt: "Correcting entry: a $300 collection on account was recorded as Service Revenue."
+    debit: Service Revenue
+    credit: Accounts Receivable
+    explain: "It was a collection, not new revenue."
+  - prompt: "Correcting entry: a $250 routine repair paid in cash was recorded as Equipment."
+    debit: Repairs and Maintenance Expense
+    credit: Equipment
+    explain: "Routine repairs are expenses, not assets."
+  - prompt: "Correcting entry: a $1,000 dividend declaration was recorded as Wages Expense."
+    debit: Dividends
+    credit: Wages Expense
+    explain: "Dividends are distributions, not expenses."
+  - prompt: "Correcting entry: a $400 utility bill was recorded as Rent Expense."
+    debit: Utilities Expense
+    credit: Rent Expense
+    explain: "Reclassify to the correct expense."
+  - prompt: "Correcting entry: a $600 payment on account to a supplier was recorded as Supplies."
+    debit: Accounts Payable
+    credit: Supplies
+    explain: "The payment should have reduced the payable."
+  - prompt: "Correcting entry: a $2,000 bank loan was recorded as Service Revenue."
+    debit: Service Revenue
+    credit: Notes Payable
+    explain: "Borrowing is a liability, not revenue."
+  - prompt: "Correcting entry: purchase of a $1,500 computer for cash was recorded as Supplies Expense."
+    debit: Equipment
+    credit: Supplies Expense
+    explain: "A long-lived asset should be capitalized."
+  - prompt: "Adjusting entry: one month of a $3,600, 1-year maintenance contract sold in advance has been earned."
+    debit: Unearned Revenue
+    credit: Service Revenue
+    explain: "$300 is earned this month."
+  - prompt: "Adjusting entry: interest of $45 has accrued on the company's line of credit."
+    debit: Interest Expense
+    credit: Interest Payable
+    explain: "Accrue the unpaid interest."
+  - prompt: "Adjusting entry: a consultant has completed half of a $4,000 prepaid engagement."
+    debit: Unearned Revenue
+    credit: Service Revenue
+    explain: "Half the advance is earned."
+  - prompt: "Adjusting entry: monthly depreciation on the bakery's ovens is $250."
+    debit: Depreciation Expense
+    credit: Accumulated Depreciation
+    explain: "Ovens are equipment and depreciate."
+  - prompt: "Adjusting entry: $1,100 of the prepaid advertising balance relates to ads that have already run."
+    debit: Advertising Expense
+    credit: Prepaid Advertising
+    explain: "Used advertising is expense."
+  - prompt: "Adjusting entry: accrue $3,200 of salaries earned by staff for the last week of the year."
+    debit: Wages Expense
+    credit: Wages Payable
+    explain: "Salaries are wages for this purpose."
+  - prompt: "Adjusting entry: accrue $40 of interest earned on a long-term bond investment."
+    debit: Interest Receivable
+    credit: Interest Revenue
+    explain: "Interest earned but not received."
+  - prompt: "Adjusting entry: a customer prepaid $900 for three months of lawn care; one month of service is done."
+    debit: Unearned Revenue
+    credit: Service Revenue
+    explain: "$300 is now earned."

@@ -1,0 +1,203 @@
+# Flash card deck. Format and rules: docs/flashcards.md
+title: Purchases and Payables
+cards:
+  - prompt: "A bike shop buys $3,000 of bicycles for resale on account."
+    debit: Inventory
+    credit: Accounts Payable
+    explain: "Perpetual system: merchandise bought for resale goes to Inventory."
+  - prompt: "A bookstore buys $1,500 of books for resale, paying cash."
+    debit: Inventory
+    credit: Cash
+    explain: "Inventory increases; cash decreases."
+  - prompt: "A hardware store receives $2,200 of tools for resale. The invoice is due in 30 days."
+    debit: Inventory
+    credit: Accounts Payable
+    explain: "An unpaid supplier invoice is an account payable."
+  - prompt: "A grocer buys produce for resale on account. The seller adds $50 freight to the invoice."
+    debit: Inventory
+    credit: Accounts Payable
+    explain: "Freight to bring goods in is part of inventory cost."
+  - prompt: "The company pays $120 cash to a trucking firm for delivering merchandise it bought (FOB shipping point)."
+    debit: Inventory
+    credit: Cash
+    explain: "Freight-in is part of the cost of inventory."
+  - prompt: "The company receives a freight bill for an inbound inventory shipment, payable in 15 days."
+    debit: Inventory
+    credit: Accounts Payable
+    explain: "Freight-in adds to inventory cost; the bill is unpaid."
+  - prompt: "The company pays $400 of customs duties on imported merchandise held for resale."
+    debit: Inventory
+    credit: Cash
+    explain: "Costs to get goods ready for sale are part of inventory."
+  - prompt: "The company returns $300 of defective merchandise that it bought on account."
+    debit: Accounts Payable
+    credit: Inventory
+    explain: "The return reduces both the amount owed and inventory."
+  - prompt: "A supplier grants a $200 allowance on damaged goods bought on account. The company keeps the goods."
+    debit: Accounts Payable
+    credit: Inventory
+    explain: "The allowance lowers the cost of the inventory and the amount owed."
+  - prompt: "The company returns merchandise it paid cash for and receives a $250 cash refund."
+    debit: Cash
+    credit: Inventory
+    explain: "Cash comes back; the goods leave inventory."
+  - prompt: "The company pays a $5,000 inventory invoice within the 2/10, n/30 discount period, paying $4,900."
+    debit: Accounts Payable
+    credit: [Cash, Inventory]
+    explain: "Clear the full payable; the $100 discount reduces inventory cost."
+  - prompt: "The company pays a $2,000 invoice less a 1% early-payment discount on merchandise it still holds."
+    debit: Accounts Payable
+    credit: [Cash, Inventory]
+    explain: "Perpetual system: purchase discounts reduce Inventory."
+  - prompt: "The company pays a $5,000 inventory invoice after the discount period has expired."
+    debit: Accounts Payable
+    credit: Cash
+    explain: "No discount: pay the full amount owed."
+  - prompt: "The company pays a supplier $750 for merchandise bought on account last month."
+    debit: Accounts Payable
+    credit: Cash
+    explain: "Payment settles the liability."
+  - prompt: "The company buys inventory by giving the supplier a $6,000, 60-day note."
+    debit: Inventory
+    credit: Notes Payable
+    explain: "A note replaces an open account."
+  - prompt: "The company pays the 60-day inventory note: $6,000 principal plus $60 interest. No interest had been accrued."
+    debit: [Notes Payable, Interest Expense]
+    credit: Cash
+    explain: "Principal clears the note; interest is an expense."
+  - prompt: "The company buys $250 of office supplies with cash. Supplies are recorded as an asset when purchased."
+    debit: Supplies
+    credit: Cash
+    explain: "Unused supplies are an asset until consumed."
+  - prompt: "A cleaning company buys $600 of cleaning supplies on account. Supplies are recorded as an asset when purchased."
+    debit: Supplies
+    credit: Accounts Payable
+    explain: "Supplies are an asset; the bill is unpaid."
+  - prompt: "The company buys printer paper and toner with its debit card for $90. Supplies are recorded as an asset when purchased."
+    debit: Supplies
+    credit: Cash
+    explain: "A debit card draws directly from the bank account."
+  - prompt: "The company pays $600 for supplies bought on account last week."
+    debit: Accounts Payable
+    credit: Cash
+    explain: "Paying the bill clears the payable."
+  - prompt: "The company returns $80 of unused supplies that were bought on account."
+    debit: Accounts Payable
+    credit: Supplies
+    explain: "Both the asset and the amount owed decrease."
+  - prompt: "The company returns supplies it bought for cash and receives a $45 refund."
+    debit: Cash
+    credit: Supplies
+    explain: "Cash is refunded and supplies decrease."
+  - prompt: "The company pays $2,400 for a 12-month insurance policy starting today."
+    debit: Prepaid Insurance
+    credit: Cash
+    explain: "Coverage for future months is a prepaid asset."
+  - prompt: "The company receives a $1,800 bill for an annual insurance policy that starts now, payable in 30 days."
+    debit: Prepaid Insurance
+    credit: Accounts Payable
+    explain: "Future coverage is an asset even though it is unpaid."
+  - prompt: "The company pays three months of rent in advance, $4,500."
+    debit: Prepaid Rent
+    credit: Cash
+    explain: "Rent for future periods is a prepaid asset."
+  - prompt: "The company pays next year's warehouse rent in advance."
+    debit: Prepaid Rent
+    credit: Cash
+    explain: "The rent is not yet used, so it is an asset."
+  - prompt: "The company pays $1,200 for newspaper ads that will run over the next six months."
+    debit: Prepaid Advertising
+    credit: Cash
+    explain: "Ads not yet run are a prepaid asset."
+  - prompt: "The company buys $3,500 of computer equipment with cash."
+    debit: Equipment
+    credit: Cash
+    explain: "Long-lived assets are recorded at cost."
+  - prompt: "A bakery buys a $9,000 oven on account."
+    debit: Equipment
+    credit: Accounts Payable
+    explain: "The oven is equipment; the amount owed is a payable."
+  - prompt: "The company pays $700 for shipping and installation of a new machine."
+    debit: Equipment
+    credit: Cash
+    explain: "Costs to get an asset ready for use are part of its cost."
+  - prompt: "The company buys equipment for $20,000, paying $5,000 down and signing a note for the rest."
+    debit: Equipment
+    credit: [Cash, Notes Payable]
+    explain: "Part cash, part note."
+  - prompt: "The company buys desks and shelving for $2,800 cash."
+    debit: Furniture and Fixtures
+    credit: Cash
+    explain: "Office furniture is a long-lived asset."
+  - prompt: "The company buys a conference table on account for $1,100."
+    debit: Furniture and Fixtures
+    credit: Accounts Payable
+    explain: "The table is an asset; the bill is unpaid."
+  - prompt: "The company pays the $1,100 invoice for the conference table."
+    debit: Accounts Payable
+    credit: Cash
+    explain: "Payment clears the payable."
+  - prompt: "A florist buys a delivery truck for $32,000 cash."
+    debit: Vehicles
+    credit: Cash
+    explain: "Vehicles are long-lived assets."
+  - prompt: "The company receives this month's $310 electric bill and will pay it next month."
+    debit: Utilities Expense
+    credit: Accounts Payable
+    explain: "The expense belongs to this month even though it is unpaid."
+  - prompt: "The company receives this month's water bill of $85, due in two weeks."
+    debit: Utilities Expense
+    credit: Accounts Payable
+    explain: "Recognize the expense when incurred."
+  - prompt: "The company pays the $310 electric bill recorded last month."
+    debit: Accounts Payable
+    credit: Cash
+    explain: "The expense was already recorded; this settles the payable."
+  - prompt: "The company receives an invoice for a radio ad that aired this month, $900."
+    debit: Advertising Expense
+    credit: Accounts Payable
+    explain: "The ad has run, so it is an expense now."
+  - prompt: "A plumber sends a $260 invoice for repairing a leak in the shop."
+    debit: Repairs and Maintenance Expense
+    credit: Accounts Payable
+    explain: "Routine repairs are expenses."
+  - prompt: "The company's accountant sends a $1,500 bill for preparing this year's tax return."
+    debit: Professional Fees Expense
+    credit: Accounts Payable
+    explain: "Accounting services used are an expense."
+  - prompt: "The company pays $180 cash to repair a broken window."
+    debit: Repairs and Maintenance Expense
+    credit: Cash
+    explain: "Ordinary repairs are expensed."
+  - prompt: "A coffee shop buys $400 of coffee beans for brewing and resale on account."
+    debit: Inventory
+    credit: Accounts Payable
+    explain: "Goods held for sale are inventory."
+  - prompt: "A pet store buys $1,250 of pet food for resale, paying by bank transfer."
+    debit: Inventory
+    credit: Cash
+    explain: "A bank transfer is a cash payment."
+  - prompt: "The company pays a supplier $1,960 for a $2,000 invoice, taking a 2% discount on inventory it still holds."
+    debit: Accounts Payable
+    credit: [Cash, Inventory]
+    explain: "The discount reduces the cost of inventory."
+  - prompt: "A clothing store returns $500 of shirts to the supplier for credit against its account."
+    debit: Accounts Payable
+    credit: Inventory
+    explain: "A purchase return reduces inventory and the payable."
+  - prompt: "The company pays $95 for supplies by company check. Supplies are recorded as an asset."
+    debit: Supplies
+    credit: Cash
+    explain: "A check is a cash payment."
+  - prompt: "The company buys a used forklift for $7,500 on account."
+    debit: Equipment
+    credit: Accounts Payable
+    explain: "The forklift is equipment."
+  - prompt: "The company pays $350 to have its company logo painted on its new delivery truck before first use."
+    debit: Vehicles
+    credit: Cash
+    explain: "Costs to prepare an asset for use are part of its cost."
+  - prompt: "The company pays $5,400 owed to a supplier for inventory, after the discount period has passed."
+    debit: Accounts Payable
+    credit: Cash
+    explain: "Full payment with no discount."

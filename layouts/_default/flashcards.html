@@ -1,0 +1,45 @@
+{{ define "main" }}
+{{/* Every file in data/flashcards/ is a deck. Format and rules: docs/flashcards.md. */}}
+{{ $decks := slice }}
+{{ range $file, $deck := site.Data.flashcards }}
+  {{ $cards := slice }}
+  {{ range $i, $c := $deck.cards }}
+    {{ $where := printf "data/flashcards/%s, card %d" $file (add $i 1) }}
+    {{ if not (and $c.prompt $c.debit $c.credit) }}{{ errorf "%s: prompt, debit and credit are all required" $where }}{{ end }}
+    {{ $debit := cond (reflect.IsSlice $c.debit) $c.debit (slice $c.debit) }}
+    {{ $credit := cond (reflect.IsSlice $c.credit) $c.credit (slice $c.credit) }}
+    {{ with intersect $debit $credit }}{{ errorf "%s: %v cannot be both a debit and a credit" $where . }}{{ end }}
+    {{ $cards = $cards | append (dict "prompt" $c.prompt "debit" $debit "credit" $credit "explain" ($c.explain | default "")) }}
+  {{ end }}
+  {{ if not $cards }}{{ errorf "data/flashcards/%s: needs a cards list" $file }}{{ end }}
+  {{ $decks = $decks | append (dict "title" ($deck.title | default $file) "cards" $cards) }}
+{{ end }}
+<header class="page-heading">
+  <p class="eyebrow"><a href="{{ .Parent.RelPermalink }}">{{ .Parent.Title }}</a></p>
+  <h1>{{ .Title }}</h1>
+  {{ with .Content }}<div class="prose">{{ . }}</div>{{ end }}
+</header>
+<div class="reading-column flashcards" id="flashcards">
+  <noscript><p>The flash card game needs JavaScript.</p></noscript>
+  <div class="fc-toolbar" hidden>
+    <label>Deck <select class="fc-deck"></select></label>
+    <p class="fc-score" aria-live="polite"></p>
+  </div>
+  <form class="archive-entry fc-card" hidden>
+    <p class="eyebrow fc-progress"></p>
+    <h2 class="fc-prompt" tabindex="-1"></h2>
+    <table class="fc-accounts">
+      <caption class="sr-only">Mark each account as a debit, a credit, or neither</caption>
+      <thead><tr><th scope="col">Account</th><th scope="col">Debit</th><th scope="col">Credit</th><th scope="col"><span class="sr-only">Result</span></th></tr></thead>
+      <tbody></tbody>
+    </table>
+    <div class="fc-result" aria-live="polite" hidden></div>
+    <div class="fc-actions">
+      <button type="submit" class="fc-check">Check answer</button>
+      <button type="button" class="fc-next" hidden>Next card</button>
+    </div>
+  </form>
+</div>
+<script type="application/json" id="fc-data">{{ $decks | jsonify | safeJS }}</script>
+<script src="{{ "js/flashcards.js" | relURL }}" defer></script>
+{{ end }}

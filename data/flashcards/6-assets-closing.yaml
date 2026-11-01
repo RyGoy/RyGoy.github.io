@@ -1,0 +1,183 @@
+# Flash card deck. Format and rules: docs/flashcards.md
+title: Long-Term Assets, Investments and Closing
+cards:
+  - prompt: "The company buys a vacant lot for $60,000 cash."
+    debit: Land
+    credit: Cash
+    explain: "Land is recorded at cost and is not depreciated."
+  - prompt: "The company pays $3,000 to demolish an old shed on land it just bought to build on."
+    debit: Land
+    credit: Cash
+    explain: "Costs to prepare land for its intended use are part of land cost."
+  - prompt: "The company pays $1,500 of title and legal fees to complete a land purchase."
+    debit: Land
+    credit: Cash
+    explain: "Closing costs on land are capitalized."
+  - prompt: "The company buys a building for $180,000 cash."
+    debit: Buildings
+    credit: Cash
+    explain: "Buildings are recorded at cost and depreciated."
+  - prompt: "The company pays $40,000 to add a new wing to its building."
+    debit: Buildings
+    credit: Cash
+    explain: "Additions extend the asset, so they are capitalized."
+  - prompt: "The company pays $300 to repaint an office wall. This is routine upkeep."
+    debit: Repairs and Maintenance Expense
+    credit: Cash
+    explain: "Routine upkeep is expensed, not capitalized."
+  - prompt: "The company buys a patent from an inventor for $25,000 cash."
+    debit: Patents
+    credit: Cash
+    explain: "A purchased patent is an intangible asset."
+  - prompt: "The company pays $5,000 of legal fees to successfully defend its patent."
+    debit: Patents
+    credit: Cash
+    explain: "Successful defense costs are added to the patent."
+  - prompt: "Record depreciation on a machine up to the date it is sold."
+    debit: Depreciation Expense
+    credit: Accumulated Depreciation
+    explain: "Bring depreciation up to date before recording the sale."
+  - prompt: "Equipment that cost $10,000 with $7,000 accumulated depreciation is sold for $4,000 cash."
+    debit: [Cash, Accumulated Depreciation]
+    credit: [Equipment, Gain on Disposal of Assets]
+    explain: "Book value $3,000; cash $4,000 gives a $1,000 gain."
+  - prompt: "Equipment that cost $10,000 with $7,000 accumulated depreciation is sold for $2,000 cash."
+    debit: [Cash, Accumulated Depreciation, Loss on Disposal of Assets]
+    credit: Equipment
+    explain: "Book value $3,000; cash $2,000 gives a $1,000 loss."
+  - prompt: "Equipment that cost $10,000 with $7,000 accumulated depreciation is sold for $3,000 cash."
+    debit: [Cash, Accumulated Depreciation]
+    credit: Equipment
+    explain: "Sold at book value: no gain or loss."
+  - prompt: "A fully depreciated machine that cost $5,000 is thrown away."
+    debit: Accumulated Depreciation
+    credit: Equipment
+    explain: "Remove both the cost and the accumulated depreciation."
+  - prompt: "A machine that cost $6,000 with $4,500 accumulated depreciation is scrapped for nothing."
+    debit: [Accumulated Depreciation, Loss on Disposal of Assets]
+    credit: Equipment
+    explain: "The remaining $1,500 book value is a loss."
+  - prompt: "A delivery van that cost $30,000 with $22,000 accumulated depreciation is sold for $10,000."
+    debit: [Cash, Accumulated Depreciation]
+    credit: [Vehicles, Gain on Disposal of Assets]
+    explain: "Book value $8,000; $2,000 gain."
+  - prompt: "A truck that cost $40,000 with $25,000 accumulated depreciation is sold for $12,000."
+    debit: [Cash, Accumulated Depreciation, Loss on Disposal of Assets]
+    credit: Vehicles
+    explain: "Book value $15,000; $3,000 loss."
+  - prompt: "Office furniture that cost $4,000 with $3,000 accumulated depreciation is sold for $1,000."
+    debit: [Cash, Accumulated Depreciation]
+    credit: Furniture and Fixtures
+    explain: "Sold at book value: no gain or loss."
+  - prompt: "The company sells land that cost $50,000 for $65,000 cash."
+    debit: Cash
+    credit: [Land, Gain on Disposal of Assets]
+    explain: "Land is not depreciated; the extra $15,000 is a gain."
+  - prompt: "The company sells land that cost $50,000 for $42,000 cash."
+    debit: [Cash, Loss on Disposal of Assets]
+    credit: Land
+    explain: "The $8,000 shortfall is a loss."
+  - prompt: "A building that cost $200,000 with $150,000 accumulated depreciation is sold for $40,000."
+    debit: [Cash, Accumulated Depreciation, Loss on Disposal of Assets]
+    credit: Buildings
+    explain: "Book value $50,000; $10,000 loss."
+  - prompt: "The company buys shares of another company for $5,000 as a short-term trading investment."
+    debit: Short-Term Investments
+    credit: Cash
+    explain: "Investments held for sale soon are current assets."
+  - prompt: "The company sells short-term investments that cost $5,000 for $6,200."
+    debit: Cash
+    credit: [Short-Term Investments, Gain on Sale of Investments]
+    explain: "Proceeds above cost are a gain."
+  - prompt: "The company sells short-term investments that cost $5,000 for $4,300."
+    debit: [Cash, Loss on Sale of Investments]
+    credit: Short-Term Investments
+    explain: "Proceeds below cost are a loss."
+  - prompt: "The company receives a $200 cash dividend on stock it holds as an investment."
+    debit: Cash
+    credit: Dividend Revenue
+    explain: "Dividends received are investment income."
+  - prompt: "The company buys $20,000 of corporate bonds to hold until they mature in five years."
+    debit: Long-Term Investments
+    credit: Cash
+    explain: "Investments held more than a year are long-term."
+  - prompt: "The company receives $800 of interest on its bond investment. No interest had been accrued."
+    debit: Cash
+    credit: Interest Revenue
+    explain: "Interest earned on investments is revenue."
+  - prompt: "The company's $20,000 bond investment matures and is repaid at face value."
+    debit: Cash
+    credit: Long-Term Investments
+    explain: "The investment turns back into cash."
+  - prompt: "The company buys a new delivery truck for $35,000, paying $10,000 cash and signing a note for the rest."
+    debit: Vehicles
+    credit: [Cash, Notes Payable]
+    explain: "Part cash, part note."
+  - prompt: "The company buys display shelving for its store for $3,600 cash."
+    debit: Furniture and Fixtures
+    credit: Cash
+    explain: "Fixtures are long-lived assets."
+  - prompt: "The company pays $900 to install the new display shelving."
+    debit: Furniture and Fixtures
+    credit: Cash
+    explain: "Installation is part of the asset's cost."
+  - prompt: "The company pays $2,000 for a new engine that extends the delivery truck's useful life by three years. The company adds the cost to the asset account."
+    debit: Vehicles
+    credit: Cash
+    explain: "Major improvements that extend life are capitalized."
+  - prompt: "Closing entry: close the $45,000 Service Revenue balance."
+    debit: Service Revenue
+    credit: Income Summary
+    explain: "Revenue accounts have credit balances, so debit them to close."
+  - prompt: "Closing entry: close Sales Revenue and Interest Revenue."
+    debit: [Sales Revenue, Interest Revenue]
+    credit: Income Summary
+    explain: "Move all revenues into Income Summary."
+  - prompt: "Closing entry: close Rent Revenue and Dividend Revenue."
+    debit: [Rent Revenue, Dividend Revenue]
+    credit: Income Summary
+    explain: "All revenue accounts are closed the same way."
+  - prompt: "Closing entry: close Wages Expense, Rent Expense and Utilities Expense."
+    debit: Income Summary
+    credit: [Wages Expense, Rent Expense, Utilities Expense]
+    explain: "Expense accounts have debit balances, so credit them to close."
+  - prompt: "Closing entry: close Depreciation Expense and Insurance Expense."
+    debit: Income Summary
+    credit: [Depreciation Expense, Insurance Expense]
+    explain: "Every expense is closed to Income Summary."
+  - prompt: "Closing entry: close Cost of Goods Sold, Sales Returns and Allowances, and Sales Discounts."
+    debit: Income Summary
+    credit: [Cost of Goods Sold, Sales Returns and Allowances, Sales Discounts]
+    explain: "These all carry debit balances and are closed like expenses."
+  - prompt: "Closing entry: close the Loss on Disposal of Assets account."
+    debit: Income Summary
+    credit: Loss on Disposal of Assets
+    explain: "Losses have debit balances and are closed like expenses."
+  - prompt: "Closing entry: close the Gain on Disposal of Assets account."
+    debit: Gain on Disposal of Assets
+    credit: Income Summary
+    explain: "Gains have credit balances and are closed like revenues."
+  - prompt: "Closing entry: Income Summary shows net income of $12,000. Close it."
+    debit: Income Summary
+    credit: Retained Earnings
+    explain: "Net income increases retained earnings."
+  - prompt: "Closing entry: Income Summary shows a net loss of $3,000. Close it."
+    debit: Retained Earnings
+    credit: Income Summary
+    explain: "A net loss decreases retained earnings."
+  - prompt: "Closing entry: close the $2,000 Dividends account."
+    debit: Retained Earnings
+    credit: Dividends
+    explain: "Dividends reduce retained earnings directly, not through Income Summary."
+  - prompt: "Closing entry: close Income Tax Expense."
+    debit: Income Summary
+    credit: Income Tax Expense
+    explain: "Income tax is an expense and is closed with the others."
+  - prompt: "Closing entry: close Interest Expense and Bad Debt Expense."
+    debit: Income Summary
+    credit: [Interest Expense, Bad Debt Expense]
+    explain: "All expenses go to Income Summary."
+  - prompt: "The company exchanges no-par common stock for a building valued at $150,000."
+    debit: Buildings
+    credit: Common Stock
+    explain: "Record the building at fair value."
