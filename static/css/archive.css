@@ -318,7 +318,11 @@ html:has(.terms-gate[open]) { overflow: hidden; }
 .terms-gate-actions button:hover, .terms-gate-actions button:focus-visible { color: #fff5de; border-color: var(--brass); background: #b89a6314; }
 .terms-gate-refusal { width: min(40rem, calc(100vw - 2rem)); border-color: var(--red); }
 .terms-gate-refusal h2 { color: #e39a8f; }
-.terms-gate-actions .terms-gate-sound { display: grid; place-items: center; width: 2.75rem; height: 2.75rem; min-width: 0; padding: 0; margin-left: auto; border-radius: 50%; color: #e1c797; }
+.terms-gate-actions .terms-gate-sound { display: inline-flex; align-items: center; gap: .65rem; min-width: 0; padding: 0 .25rem 0 0; margin-left: auto; color: #e1c797; background: none; border: 0; }
+.terms-gate-actions .terms-gate-sound:hover, .terms-gate-actions .terms-gate-sound:focus-visible { color: #fff5de; background: none; }
+.terms-gate-sound[hidden] { display: none; }
+.terms-gate-sound-icon { display: grid; place-items: center; width: 2.75rem; height: 2.75rem; border: 1px solid #806943; border-radius: 50%; background: var(--surface); }
+.terms-gate-sound:hover .terms-gate-sound-icon, .terms-gate-sound:focus-visible .terms-gate-sound-icon { border-color: var(--brass); background: #b89a6314; }
 .terms-gate-sound svg { width: 1.1rem; height: 1.1rem; fill: currentColor; }
 
 /* Site search: sidebar box (partials/navbar.html) and Pagefind results (_default/search.html) */
