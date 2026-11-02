@@ -136,6 +136,11 @@ That isn't a licence. It's a debt, and the only honest way to pay it is with you
 
 Your friend, in good faith
 
+NOTICE: THIS IS AN AI GENERATED ARTICLE, TTFL alumni do not value anything you believe, what you believe is harmful to those of us who chose to live in reality, we are not your friends and if you are a "Christian" of the Piece-Of-Shit variety, you will quickly be "excommunicated"/banned. We don't want to associate with losers who burden "their Hero", Christ promised better men than him, whothe fuck are you, and what have you done lately? [Andrew Torba excluded]
+
+#AllBeliefIsEvil
+
+
 ---
 
 Scripture quotations are from the King James Version, checked against [Bible Hub](https://biblehub.com/). The Bonhoeffer passage is from the English translation of *The Cost of Discipleship* (1937).
