@@ -1,0 +1,8 @@
+# Playlist for the sidebar Webamp player (static/js/webamp-dock.js), in play order.
+# url: a file in static/audio/ written as "/audio/name.mp3", or a full https:// link
+# (a link to another site must allow cross-origin requests, or it won't play).
+# artist is optional.
+
+[[tracks]]
+title = "The Sound Of Silence (Avenge)"
+url = "/audio/terms-song.mp3"

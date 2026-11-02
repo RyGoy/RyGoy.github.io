@@ -10,7 +10,7 @@ Hugo static site ("The Tender For Law"): an archive of old Facebook group posts 
 
 - Dev server: `hugo server`
 - Production build (mirrors CI): `hugo --minify`
-- Hugo version is pinned to **0.114.0 extended** in `.github/workflows/hugo.yml`; the local binary matches. Avoid template functions newer than 0.114.
+- Hugo version is pinned to **0.114.0 extended** in `.github/workflows/hugo.yml` (the local binary may be newer). Avoid template functions newer than 0.114.
 - No tests or linter. Verify changes by building and inspecting output. The content tree is ~126k files, so full builds are slow.
 
 ## Deployment
@@ -38,6 +38,12 @@ Templates branch on the **shape of the data**, not on content type:
 - `partials/entry.html` renders any post or comment. It composes `lpPosts.html` (body), `lpGo.html` (comments link, posts only), and `entry-metadata.html`. A comment is recognised by `.Params.post_id`.
 - `partials/volumes.html` is a **returning partial**. It sorts volume sections by the number parsed from their title, because the original `weight` values repeat. Use it (via `partialCached`) whenever volumes need ordering.
 - `baseof.html` caches the navbar with `partialCached`, keyed on `.FirstSection.RelPermalink` (or `.CurrentSection` under `articles`). Per-page state in the navbar must stay consistent with that key.
+
+## Search
+
+`/search/` (`content/search.md`, `layouts/_default/search.html`) runs the Pagefind UI. After `hugo`, the deploy workflow runs `npx pagefind@1.5.2 --site public`, which writes the index to `public/pagefind/`. `hugo` alone produces no index, so the search page shows "Search needs JavaScript and the search index". To try search locally, build into another directory and run `npx pagefind@1.5.2 --site <dir> --serve`.
+
+Only elements marked `data-pagefind-body` are indexed: post bundles (the post plus its comments, in `_default/list.html`) and pages in `articles` (`partials/article.html`). Single-comment pages and volume indexes are left out because they repeat that text. Each indexed page sets a `Section` filter (`Volumes` or `Articles`). `data-pagefind-ignore` keeps the metadata and "Read Comments" labels out of the results. The sidebar search box (`partials/navbar.html`) submits `?q=` to `/search/`.
 
 ## Styling and assets
 

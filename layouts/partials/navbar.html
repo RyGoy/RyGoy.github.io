@@ -6,6 +6,15 @@
   <details class="navigation" id="navigation">
     <summary>Open sidebar</summary>
     <nav aria-label="Sidebar">
+      <form class="site-search" action="{{ "search/" | relURL }}" role="search">
+        <label class="sr-only" for="site-search-query">Search articles and volumes</label>
+        <input id="site-search-query" type="search" name="q" placeholder="Search articles and volumes" required>
+      </form>
+      {{ with site.Data.webamp.tracks }}
+        {{ $tracks := slice }}
+        {{ range . }}{{ $tracks = $tracks | append (dict "title" .title "artist" (.artist | default "") "url" (.url | relURL)) }}{{ end }}
+        <button class="webamp-open" id="webamp-open" type="button" data-tracks="{{ $tracks | jsonify }}">Open Webamp</button>
+      {{ end }}
       <div class="nav-group">
         <a class="nav-heading" href="{{ site.Home.RelPermalink }}#volumes">Volumes</a>
         <ol class="volume-nav">

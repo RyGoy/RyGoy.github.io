@@ -1,4 +1,4 @@
-<article class="longform reading-column">
+<article class="longform reading-column"{{ if eq .Section "articles" }} data-pagefind-body data-pagefind-filter="Section:Articles"{{ end }}>
   <header class="page-heading">
     <h1>{{ .Title }}</h1>
     {{ with .Params.author }}<p class="article-author">{{ . }}</p>{{ end }}

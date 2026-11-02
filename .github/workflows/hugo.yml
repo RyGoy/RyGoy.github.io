@@ -57,6 +57,9 @@ jobs:
           hugo \
             --minify \
             --baseURL "${{ steps.pages.outputs.base_url }}/"
+      - name: Build search index
+        # Indexes pages marked data-pagefind-body into public/pagefind/ for /search/.
+        run: npx --yes pagefind@1.5.2 --site public
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:

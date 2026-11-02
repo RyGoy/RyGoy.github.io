@@ -1,11 +1,13 @@
 {{ define "main" }}
 {{ if .Params.id }}
   <header class="page-heading thread-heading"><p class="eyebrow"><a href="{{ .FirstSection.RelPermalink }}">{{ .FirstSection.Title }}</a></p><h1>{{ with .Params.created_time }}{{ (time.AsTime .).Format "Jan 02, 2006 3:04 PM" }}{{ end }}</h1></header>
-  <div class="reading-column">
+  {{ $searchTitle := printf "%s · %s" .FirstSection.Title (.Params.from_name | default "Post") }}
+  {{ with .Params.created_time }}{{ $searchTitle = printf "%s · %s" $searchTitle ((time.AsTime .).Format "2 January 2006") }}{{ end }}
+  <div class="reading-column" data-pagefind-body data-pagefind-filter="Section:Volumes" data-pagefind-meta="title:{{ replace $searchTitle "," "" }}">
     {{ partial "entry.html" . }}
     <section id="comments" aria-label="Read Comments">
       {{ if .Pages }}
-        <div class="section-heading"><h2>Read Comments</h2><span class="rule" aria-hidden="true"></span></div>
+        <div class="section-heading" data-pagefind-ignore><h2>Read Comments</h2><span class="rule" aria-hidden="true"></span></div>
         <div class="comment-thread">{{ range sort .Pages "Params.created_time" }}{{ partial "entry.html" . }}{{ end }}</div>
       {{ end }}
     </section>

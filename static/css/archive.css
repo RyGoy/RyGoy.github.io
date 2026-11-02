@@ -320,3 +320,28 @@ html:has(.terms-gate[open]) { overflow: hidden; }
 .terms-gate-refusal h2 { color: #e39a8f; }
 .terms-gate-actions .terms-gate-sound { display: grid; place-items: center; width: 2.75rem; height: 2.75rem; min-width: 0; padding: 0; margin-left: auto; border-radius: 50%; color: #e1c797; }
 .terms-gate-sound svg { width: 1.1rem; height: 1.1rem; fill: currentColor; }
+
+/* Site search: sidebar box (partials/navbar.html) and Pagefind results (_default/search.html) */
+.site-search { margin-bottom: 1.75rem; }
+.site-search input { width: 100%; font: inherit; font-size: .94rem; color: var(--paper); background: var(--ink); border: 1px solid var(--line); padding: .5rem .65rem; }
+.site-search input::placeholder { color: var(--muted); }
+.site-search input:focus-visible { outline: 1px solid var(--brass); border-color: var(--brass); }
+.site-search-results {
+  --pagefind-ui-font: var(--body);
+  --pagefind-ui-primary: var(--brass);
+  --pagefind-ui-text: var(--paper);
+  --pagefind-ui-background: var(--surface);
+  --pagefind-ui-border: var(--line);
+  --pagefind-ui-tag: #2a2920;
+  --pagefind-ui-border-radius: 0;
+}
+.site-search-results mark { color: var(--ink); background: var(--brass); }
+.search-unavailable { color: var(--muted); }
+
+/* Sidebar Webamp player (static/js/webamp-dock.js). The dock covers the viewport so the windows can
+   be dragged anywhere; only the windows take clicks, so the page underneath stays usable. */
+.webamp-open { width: 100%; margin: -1rem 0 1.75rem; font: inherit; font-size: .9rem; cursor: pointer; color: #e1c797; background: var(--surface); border: 1px solid #806943; padding: .45rem .65rem; }
+.webamp-open:hover, .webamp-open:focus-visible { color: #fff5de; border-color: var(--brass); background: #b89a6314; }
+.webamp-open:disabled { cursor: default; color: var(--muted); border-color: var(--line); background: var(--surface); }
+.webamp-dock { position: fixed; inset: 0; z-index: 40; pointer-events: none; }
+.webamp-dock #webamp > * { pointer-events: auto; }

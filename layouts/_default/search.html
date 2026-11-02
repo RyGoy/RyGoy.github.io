@@ -1,0 +1,20 @@
+{{ define "main" }}
+<header class="page-heading">
+  <p class="eyebrow">The Tender For Law</p>
+  <h1>{{ .Title }}</h1>
+</header>
+<div class="reading-column">
+  {{/* The index in /pagefind/ is generated after the Hugo build (see .github/workflows/hugo.yml). */}}
+  <div id="search" class="site-search-results"><p class="search-unavailable">Search needs JavaScript and the search index.</p></div>
+</div>
+<link rel="stylesheet" href="{{ "pagefind/pagefind-ui.css" | relURL }}">
+<script src="{{ "pagefind/pagefind-ui.js" | relURL }}"></script>
+<script>
+  if (window.PagefindUI) {
+    document.getElementById('search').replaceChildren();
+    const ui = new PagefindUI({ element: '#search', showImages: false, showSubResults: true, autofocus: true });
+    const query = new URLSearchParams(location.search).get('q');
+    if (query) ui.triggerSearch(query);
+  }
+</script>
+{{ end }}
