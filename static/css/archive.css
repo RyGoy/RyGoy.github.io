@@ -297,3 +297,25 @@ main { min-height: 35vh; }
   .fc-accounts thead th { font-size: .72rem; letter-spacing: .04em; }
   .fc-mark { width: 5.5rem; }
 }
+
+/* First-visit terms pop-up (static/js/terms-gate.js) */
+html:has(.terms-gate[open]) { overflow: hidden; }
+.terms-gate { width: min(64rem, calc(100vw - 2rem)); max-height: calc(100vh - 2rem); padding: 2rem clamp(1.25rem, 4vw, 2.5rem); color: var(--paper); background: linear-gradient(125deg, #24231c, var(--surface) 70%); border: 1px solid #806943; box-shadow: 0 1.5rem 4rem #000a; }
+.terms-gate::backdrop { background: #0b0c0bf0; }
+.terms-gate h2 { margin: 0 0 1rem; font-family: var(--display); font-size: 2rem; line-height: 1.15; color: #dfcba4; }
+.terms-gate h2:focus { outline: none; }
+.terms-gate-body { display: flex; align-items: flex-start; gap: 2rem; max-height: 62vh; overflow-y: auto; padding-right: .5rem; }
+.terms-gate-text { flex: 1 1 16rem; min-width: 0; font-size: 1.15rem; line-height: 1.8; }
+.terms-gate-body > img { flex: none; display: block; width: auto; max-width: 48%; max-height: min(55vh, 42rem); }
+@media (max-width: 48rem) {
+  .terms-gate-body { flex-direction: column; align-items: center; gap: 0; }
+  .terms-gate-text { flex-basis: auto; }
+  .terms-gate-body > img { max-width: 100%; max-height: 70vh; }
+}
+.terms-gate-question { margin: 1.25rem 0 1rem; padding-top: 1rem; border-top: 1px solid var(--line); font-family: var(--display); font-size: 1.3rem; color: var(--brass); }
+.terms-gate-actions { display: flex; flex-wrap: wrap; gap: .75rem; }
+.terms-gate-actions button { min-width: 6rem; font: inherit; font-size: .95rem; cursor: pointer; color: #e1c797; background: var(--surface); border: 1px solid #806943; padding: .5rem 1.1rem; }
+.terms-gate-actions button:hover, .terms-gate-actions button:focus-visible { color: #fff5de; border-color: var(--brass); background: #b89a6314; }
+.terms-gate-refusal { width: min(40rem, calc(100vw - 2rem)); border-color: var(--red); }
+.terms-gate-refusal h2 { color: #e39a8f; }
+.terms-gate-actions .terms-gate-sound { margin-left: auto; min-width: 0; color: var(--muted); border-color: var(--line); }

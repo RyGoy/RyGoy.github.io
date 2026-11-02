@@ -1,0 +1,4 @@
+{{/* First-visit terms pop-up. The text lives in content/terms.md; the version hash makes edits ask visitors to accept again. */}}
+{{ with site.GetPage "/terms" }}
+<script src="{{ "js/terms-gate.js" | relURL }}" data-terms="{{ .RelPermalink }}" data-version="{{ .Content | md5 }}"{{ with .Params.audio }} data-audio="{{ . | relURL }}"{{ end }} defer></script>
+{{ end }}
