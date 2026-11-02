@@ -56,7 +56,7 @@ A **cheque** is a bill drawn on a bank and payable on demand. A **promissory not
 
 ### Signing for someone else
 
-A person who signs as an agent and makes it clear on the bill ("per," "for," "on behalf of") binds the principal they represent, not themselves. Under this page's assumption, that authority exists, so the principal is bound. Someone who signs with no such words is treated as signing in their own name.
+A person who signs as an agent and makes it clear on the bill ("per:," "for:," "by:") binds the principal they represent, not themselves. Under this page's assumption, that authority exists, so the principal is bound. Someone who signs with no such words is treated as signing in their own name.
 
 ### Who is liable, and in what order
 
