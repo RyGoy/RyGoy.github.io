@@ -1,0 +1,23 @@
+{{/* COMMENTARY panel on posts, comments and articles: the notes that connect to this page.
+     Hidden until the visitor turns commentary on in the sidebar (static/js/navigation.js). */}}
+{{ $commentary := partialCached "commentary.html" . }}
+{{ $here := .RelPermalink }}
+<aside class="commentary-panel" aria-labelledby="commentary-heading" data-pagefind-ignore>
+  <div class="section-heading"><h2 id="commentary-heading">Commentary</h2><span class="rule" aria-hidden="true"></span></div>
+  {{ with index $commentary.backlinks $here }}
+  <ul class="commentary-list">
+  {{ range . }}
+    <li>
+      <a class="commentary-title" href="{{ .RelPermalink }}">{{ .Title }}</a>{{ with .Params.author }} <span class="commentary-author">· {{ . }}</span>{{ end }}
+      {{ with .Summary }}<p>{{ replaceRE `\[\[(?:[^\]|]*\|)?([^\]]+)\]\]` "$1" (plainify .) | truncate 220 }}</p>{{ end }}
+      {{ $others := slice }}
+      {{ range index $commentary.links .RelPermalink }}{{ if ne .RelPermalink $here }}{{ $others = $others | append . }}{{ end }}{{ end }}
+      {{ with $others }}<p class="commentary-connects">Also connects: {{ range $i, $page := . }}{{ if $i }} · {{ end }}<a href="{{ $page.RelPermalink }}">{{ partial "page-label.html" $page }}</a>{{ end }}</p>{{ end }}
+    </li>
+  {{ end }}
+  </ul>
+  {{ else }}
+  <p class="commentary-empty">No commentary connects to this page yet.</p>
+  {{ end }}
+  {{ partial "commentary-add-link.html" . }}
+</aside>

@@ -1,0 +1,45 @@
+{{ define "main" }}
+{{ $commentary := partialCached "commentary.html" . }}
+<header class="page-heading">
+  <p class="eyebrow">The Tender For Law</p>
+  <h1>{{ .Title }}</h1>
+  {{ with .Content }}<div class="prose">{{ . }}</div>{{ end }}
+  {{ partial "commentary-add-link.html" . }}
+</header>
+{{ with $commentary.notes }}
+  {{/* Graph data: every note and every page a note connects, with one edge per connection. */}}
+  {{ $graph := newScratch }}
+  {{ $graph.Set "edges" (slice) }}
+  {{ range . }}
+    {{ $from := .RelPermalink }}
+    {{ $graph.SetInMap "nodes" $from (dict "id" $from "label" .Title "kind" "note") }}
+    {{ range index $commentary.links $from }}
+      {{ $kind := "post" }}
+      {{ if eq .Section "commentary" }}{{ $kind = "note" }}{{ else if eq .Section "articles" }}{{ $kind = "article" }}{{ end }}
+      {{ $graph.SetInMap "nodes" .RelPermalink (dict "id" .RelPermalink "label" (partial "page-label.html" .) "kind" $kind) }}
+      {{ $graph.Add "edges" (slice (dict "source" $from "target" .RelPermalink)) }}
+    {{ end }}
+  {{ end }}
+  <section class="commentary-graph-section" aria-labelledby="graph-heading">
+    <div class="section-heading"><h2 id="graph-heading">Connections</h2><span class="rule" aria-hidden="true"></span></div>
+    <div class="commentary-graph" id="commentary-graph" role="img" aria-label="Map of the commentary notes and the posts and articles they connect. The same links are listed below the map."></div>
+    <p class="commentary-graph-key"><span class="key-note">Commentary</span> <span class="key-post">Post</span> <span class="key-article">Article</span> · Drag to move, scroll to zoom, click to open.</p>
+    <script type="application/json" id="commentary-graph-data">{{ dict "nodes" ($graph.GetSortedMapValues "nodes") "edges" ($graph.Get "edges") | jsonify | safeJS }}</script>
+  </section>
+  <section class="commentary-index" aria-labelledby="notes-heading">
+    <div class="section-heading"><h2 id="notes-heading">All commentary</h2><span class="rule" aria-hidden="true"></span></div>
+    <ul class="commentary-list">
+    {{ range . }}
+      <li>
+        <a class="commentary-title" href="{{ .RelPermalink }}">{{ .Title }}</a>{{ with .Params.author }} <span class="commentary-author">· {{ . }}</span>{{ end }}
+        {{ with index $commentary.links .RelPermalink }}<p class="commentary-connects">Connects: {{ range $i, $page := . }}{{ if $i }} · {{ end }}<a href="{{ $page.RelPermalink }}">{{ partial "page-label.html" $page }}</a>{{ end }}</p>{{ end }}
+      </li>
+    {{ end }}
+    </ul>
+  </section>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js" defer></script>
+  <script src="{{ "js/commentary-graph.js" | relURL }}" defer></script>
+{{ else }}
+  <p class="commentary-empty">No commentary has been approved yet.</p>
+{{ end }}
+{{ end }}

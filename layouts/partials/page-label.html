@@ -1,0 +1,8 @@
+{{/* Returns a short name for any page: "Volume 1 · Author · 7 January 2013" for posts and comments,
+     otherwise the title. Used for search result titles and commentary links. */}}
+{{ $label := .Title }}
+{{ if .Params.id }}
+  {{ $label = printf "%s · %s" .FirstSection.Title (.Params.from_name | default "Post") }}
+  {{ with .Params.created_time }}{{ $label = printf "%s · %s" $label ((time.AsTime .).Format "2 January 2006") }}{{ end }}
+{{ end }}
+{{ return $label }}

@@ -15,6 +15,12 @@
         {{ range . }}{{ $tracks = $tracks | append (dict "title" .title "artist" (.artist | default "") "url" (.url | relURL)) }}{{ end }}
         <button class="webamp-open" id="webamp-open" type="button" data-tracks="{{ $tracks | jsonify }}">Open Webamp</button>
       {{ end }}
+      <div class="commentary-controls">
+        <a class="nav-heading" href="{{ "commentary/" | relURL }}"{{ if eq $.Section "commentary" }} aria-current="page"{{ end }}>Commentary</a>
+        <button class="commentary-toggle" id="commentary-toggle" type="button" aria-pressed="false">
+          <span class="sr-only">Show commentary</span><span class="commentary-state" aria-hidden="true">Off</span>
+        </button>
+      </div>
       <div class="nav-group">
         <a class="nav-heading" href="{{ site.Home.RelPermalink }}#volumes">Volumes</a>
         <ol class="volume-nav">

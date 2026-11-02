@@ -6,4 +6,5 @@
     {{ if or .Params.tags .Params.categories }}<details class="article-metadata"><summary>{{ .Params.author | default .Title }}</summary>{{ with .Params.tags }}<p>{{ delimit . " · " }}</p>{{ end }}{{ with .Params.categories }}<p>{{ delimit . " · " }}</p>{{ end }}</details>{{ end }}
   </header>
   <div class="prose">{{ .Content }}</div>
+  {{ if eq .Section "articles" }}{{ partial "commentary-panel.html" . }}{{ end }}
 </article>

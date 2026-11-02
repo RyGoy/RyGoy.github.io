@@ -349,3 +349,45 @@ html:has(.terms-gate[open]) { overflow: hidden; }
 .webamp-open:disabled { cursor: default; color: var(--muted); border-color: var(--line); background: var(--surface); }
 .webamp-dock { position: fixed; inset: 0; z-index: 40; pointer-events: none; }
 .webamp-dock #webamp > * { pointer-events: auto; }
+
+/* Commentary (partials/commentary-*.html, layouts/commentary/). Panels are hidden until the
+   sidebar switch adds .commentary-on to <html> (static/js/navigation.js). */
+.commentary-controls { display: flex; align-items: center; justify-content: space-between; gap: 1rem; margin-bottom: 1.5rem; }
+.commentary-controls .nav-heading[aria-current="page"] { color: #e1c797; }
+.commentary-toggle { display: inline-flex; align-items: center; gap: .45rem; font: inherit; font-size: .8rem; letter-spacing: .08em; text-transform: uppercase; cursor: pointer; color: var(--muted); background: none; border: 0; padding: .2rem 0; }
+.commentary-toggle::before { content: ""; width: 2.1rem; height: 1.1rem; border: 1px solid var(--line); border-radius: 1rem; background: radial-gradient(circle at .55rem 50%, var(--muted) .32rem, transparent .36rem) var(--ink); }
+.commentary-toggle[aria-pressed="true"] { color: #e1c797; }
+.commentary-toggle[aria-pressed="true"]::before { border-color: var(--brass); background: radial-gradient(circle at 1.55rem 50%, var(--brass) .32rem, transparent .36rem) #b89a631f; }
+.commentary-panel { display: none; margin: 2rem 0; padding: 1.25rem 1.5rem; background: #b89a630a; border: 1px solid var(--line); border-left: 3px solid var(--brass); }
+.commentary-on .commentary-panel { display: block; }
+.commentary-panel .section-heading h2 { font-size: 1.35rem; letter-spacing: .16em; text-transform: uppercase; color: var(--brass); }
+.commentary-list { padding: 0; margin: 0 0 1rem; list-style: none; }
+.commentary-list li { padding: .75rem 0; border-bottom: 1px solid var(--line); }
+.commentary-list li:last-child { border-bottom: 0; }
+.commentary-list p { margin: .35rem 0 0; font-size: 1rem; color: var(--muted); }
+.commentary-title { font-family: var(--display); font-size: 1.3rem; color: #e1c797; }
+.commentary-author { font-size: .9rem; color: var(--muted); }
+.commentary-connects { font-size: .9rem !important; }
+.commentary-empty { color: var(--muted); }
+.commentary-add { display: inline-block; font-size: .95rem; color: #e1c797; border: 1px solid #806943; padding: .4rem .9rem; text-decoration: none; }
+.commentary-add:hover, .commentary-add:focus-visible { color: #fff5de; border-color: var(--brass); background: #b89a6314; }
+.commentary-links { margin-top: 2rem; }
+.commentary-links h2 { font-size: 1.35rem; color: var(--brass); }
+.commentary-links ul { padding-left: 1.2rem; }
+.commentary-edit { margin-top: 2rem; font-size: .95rem; }
+.commentary-graph-section, .commentary-index { margin-top: 2.5rem; }
+.commentary-graph { height: min(70vh, 40rem); background: #141512; border: 1px solid var(--line); overflow: hidden; touch-action: none; }
+.commentary-graph svg { display: block; width: 100%; height: 100%; max-width: none; cursor: grab; }
+.graph-links line { stroke: #806943; stroke-opacity: .55; stroke-width: 1.2; }
+.graph-node { cursor: pointer; }
+.graph-node circle { stroke: var(--ink); stroke-width: 1.5; }
+.graph-node text { font-family: var(--body); font-size: 12px; fill: var(--muted); paint-order: stroke; stroke: #141512; stroke-width: 3px; }
+.graph-node:hover text { fill: var(--paper); }
+.graph-note circle { fill: var(--brass); }
+.graph-post circle { fill: #8fa3a0; }
+.graph-article circle { fill: #c07a6f; }
+.commentary-graph-key { margin-top: .6rem; font-size: .9rem; color: var(--muted); }
+.commentary-graph-key span::before { content: ""; display: inline-block; width: .7rem; height: .7rem; margin-right: .35rem; border-radius: 50%; vertical-align: middle; }
+.key-note::before { background: var(--brass); }
+.key-post::before { background: #8fa3a0; }
+.key-article::before { background: #c07a6f; }

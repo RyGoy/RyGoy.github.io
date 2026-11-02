@@ -1,0 +1,38 @@
+{{ define "main" }}
+{{ $commentary := partialCached "commentary.html" . }}
+<article class="longform reading-column commentary-note" data-pagefind-body data-pagefind-filter="Section:Commentary">
+  <header class="page-heading">
+    <p class="eyebrow"><a href="{{ .CurrentSection.RelPermalink }}">Commentary</a></p>
+    <h1>{{ .Title }}</h1>
+    {{ with .Params.author }}<p class="article-author">{{ . }}</p>{{ end }}
+    {{ if not .Date.IsZero }}<time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "Jan 02, 2006" }}</time>{{ end }}
+  </header>
+  {{/* [[Note title]], [[/site/link/]] and [[target|label]] become links, as in Obsidian. Unknown targets stay as text. */}}
+  {{ $text := .RawContent }}
+  {{ range uniq (findRE `\[\[[^\]]+\]\]` $text) }}
+    {{ $match := . }}
+    {{ $parts := split (strings.TrimSuffix "]]" (strings.TrimPrefix "[[" .)) "|" }}
+    {{ $label := index $parts (sub (len $parts) 1) }}
+    {{ with partial "commentary-resolve.html" (index $parts 0) }}
+      {{ if eq (len $parts) 1 }}{{ $label = partial "page-label.html" . }}{{ end }}
+      {{ $text = replace $text $match (printf "[%s](%s)" $label .RelPermalink) }}
+    {{ else }}
+      {{ $text = replace $text $match $label }}
+    {{ end }}
+  {{ end }}
+  <div class="prose">{{ $.RenderString (dict "display" "block") $text }}</div>
+  {{ with index $commentary.links .RelPermalink }}
+  <section class="commentary-links" aria-labelledby="connects-heading" data-pagefind-ignore>
+    <h2 id="connects-heading">Connects</h2>
+    <ul>{{ range . }}<li><a href="{{ .RelPermalink }}">{{ partial "page-label.html" . }}</a></li>{{ end }}</ul>
+  </section>
+  {{ end }}
+  {{ with index $commentary.backlinks .RelPermalink }}
+  <section class="commentary-links" aria-labelledby="linked-from-heading" data-pagefind-ignore>
+    <h2 id="linked-from-heading">Linked from</h2>
+    <ul>{{ range . }}<li><a href="{{ .RelPermalink }}">{{ .Title }}</a>{{ with .Params.author }} · {{ . }}{{ end }}</li>{{ end }}</ul>
+  </section>
+  {{ end }}
+  {{ with .File }}<p class="commentary-edit" data-pagefind-ignore><a href="https://github.com/RyGoy/RyGoy.github.io/edit/main/content/{{ .Path }}">Suggest an edit <span aria-hidden="true">↗</span></a></p>{{ end }}
+</article>
+{{ end }}

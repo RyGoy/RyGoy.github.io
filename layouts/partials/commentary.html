@@ -1,0 +1,31 @@
+{{/* Returns the commentary links, computed once per build (use via partialCached):
+     notes:     every note in content/commentary/, newest first
+     links:     note RelPermalink -> pages it connects (its "connects" list plus [[...]] links in its text)
+     backlinks: page RelPermalink -> notes that connect to it */}}
+{{ $notes := (where site.RegularPages "Section" "commentary").ByDate.Reverse }}
+{{ $store := newScratch }}
+{{ $store.Set "links" dict }}
+{{ $store.Set "backlinks" dict }}
+{{ range $notes }}
+  {{ $note := . }}
+  {{ $refs := slice }}
+  {{ with .Params.connects }}{{ if reflect.IsSlice . }}{{ $refs = $refs | append . }}{{ else }}{{ $refs = $refs | append (slice .) }}{{ end }}{{ end }}
+  {{ range findRE `\[\[[^\]]+\]\]` .RawContent }}
+    {{ $refs = $refs | append (index (split (strings.TrimSuffix "]]" (strings.TrimPrefix "[[" .)) "|") 0) }}
+  {{ end }}
+  {{ $targets := slice }}
+  {{ $seen := slice $note.RelPermalink }}
+  {{ range $refs }}
+    {{ with partial "commentary-resolve.html" . }}
+      {{ if not (in $seen .RelPermalink) }}
+        {{ $seen = $seen | append .RelPermalink }}
+        {{ $targets = $targets | append . }}
+      {{ end }}
+    {{ end }}
+  {{ end }}
+  {{ $store.SetInMap "links" $note.RelPermalink $targets }}
+  {{ range $targets }}
+    {{ $store.SetInMap "backlinks" .RelPermalink ((index ($store.Get "backlinks") .RelPermalink | default (slice)) | append $note) }}
+  {{ end }}
+{{ end }}
+{{ return dict "notes" $notes "links" ($store.Get "links") "backlinks" ($store.Get "backlinks") }}

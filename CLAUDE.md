@@ -43,7 +43,17 @@ Templates branch on the **shape of the data**, not on content type:
 
 `/search/` (`content/search.md`, `layouts/_default/search.html`) runs the Pagefind UI. After `hugo`, the deploy workflow runs `npx pagefind@1.5.2 --site public`, which writes the index to `public/pagefind/`. `hugo` alone produces no index, so the search page shows "Search needs JavaScript and the search index". To try search locally, build into another directory and run `npx pagefind@1.5.2 --site <dir> --serve`.
 
-Only elements marked `data-pagefind-body` are indexed: post bundles (the post plus its comments, in `_default/list.html`) and pages in `articles` (`partials/article.html`). Single-comment pages and volume indexes are left out because they repeat that text. Each indexed page sets a `Section` filter (`Volumes` or `Articles`). `data-pagefind-ignore` keeps the metadata and "Read Comments" labels out of the results. The sidebar search box (`partials/navbar.html`) submits `?q=` to `/search/`.
+Only elements marked `data-pagefind-body` are indexed: post bundles (the post plus its comments, in `_default/list.html`) and pages in `articles` (`partials/article.html`). Single-comment pages and volume indexes are left out because they repeat that text. Each indexed page sets a `Section` filter (`Volumes`, `Articles` or `Commentary`). `data-pagefind-ignore` keeps the metadata and "Read Comments" labels out of the results. The sidebar search box (`partials/navbar.html`) submits `?q=` to `/search/`.
+
+## Commentary
+
+Older students' notes connecting posts and articles. Each note is a Markdown file in `content/commentary/` with YAML front matter: `title`, `author`, `date`, and `connects` (a list of site links, or full `https://` addresses). `[[Note title]]`, `[[/site/link/]]` and `[[target|label]]` in the text link like Obsidian, so the folder works as an Obsidian vault.
+
+- `partials/commentary.html` is a **returning partial** (use via `partialCached`). It builds `links` (note → pages it connects) and `backlinks` (page → notes) once per build. `partials/commentary-resolve.html` turns a reference into a page.
+- `partials/commentary-panel.html` is the COMMENTARY panel on posts, comments and articles. CSS hides it unless the sidebar switch puts `.commentary-on` on `<html>` (`static/js/navigation.js`, stored per browser, off by default).
+- `layouts/commentary/` holds the note page (wikilinks, Connects, Linked from) and `/commentary/` (d3 connections map from cdnjs, `static/js/commentary-graph.js`, plus the list of notes).
+- Approval is GitHub's: "Add commentary" (`partials/commentary-add-link.html`) opens GitHub's new-file editor with a prefilled note. Accounts without write access can only open a pull request, so their notes appear after approval. Accounts with write access (blanket approval) commit directly.
+- Notes are searchable with the `Commentary` filter. `partials/page-label.html` gives posts and comments their "Volume N · Author · date" name, shared by search titles and commentary links.
 
 ## Styling and assets
 

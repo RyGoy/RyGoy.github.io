@@ -1,7 +1,7 @@
 {{ define "main" }}
 {{ if .Params.id }}
   <header class="page-heading"><p class="eyebrow"><a href="{{ .FirstSection.RelPermalink }}">{{ .FirstSection.Title }}</a></p><h1>{{ with .Params.created_time }}{{ (time.AsTime .).Format "Jan 02, 2006 3:04 PM" }}{{ end }}</h1></header>
-  <div class="reading-column">{{ partial "entry.html" . }}</div>
+  <div class="reading-column">{{ partial "entry.html" . }}{{ partial "commentary-panel.html" . }}</div>
 {{ else }}
   {{ partial "article.html" . }}
 {{ end }}

@@ -1,0 +1,14 @@
+{{/* Returns the page a commentary reference points at, or false. A reference is a site link
+   ("/vol_i/123_456/", or the full https:// address) or a commentary note's title or file name. */}}
+{{ $ref := strings.TrimSpace (string .) }}
+{{ $ref = replaceRE `^https?://[^/]+` "" $ref }}
+{{ $ref = replaceRE `[#?].*$` "" $ref }}
+{{ $page := false }}
+{{ if hasPrefix $ref "/" }}
+  {{ with site.GetPage (strings.TrimSuffix "/" $ref) }}{{ $page = . }}{{ end }}
+{{ else if $ref }}
+  {{ range where site.RegularPages "Section" "commentary" }}
+    {{ if or (eq (lower .Title) (lower $ref)) (eq (lower .File.BaseFileName) (lower $ref)) }}{{ $page = . }}{{ end }}
+  {{ end }}
+{{ end }}
+{{ return $page }}
