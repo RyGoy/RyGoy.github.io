@@ -17,10 +17,12 @@ audio = "/audio/terms-song.mp3"
 
 ![An ornate illuminated-manuscript poster titled “Better-Than-Jesus”, with a crucifix in a gilded oval between two arrows reading “Surety & Accounting” and “Accounting & Surety”, and “#ScottIsAlwaysRight” along the bottom.](/images/better-than-jesus.jpg)
 
-This static site exists as a record, the war is over, you lost.
+This static site exists as a record. The war is over. You lost.
 
-You all gave up what was most important and you gave it up without a fight.
+You all gave up what was most important, and you gave it up without a fight.
 
-No raindrop ever wants to admit it contributed to the flood. If you believe in anything "supernatural", then go away, you can't be saved.
+No raindrop ever wants to admit that it contributed to the flood. If you believe in anything “supernatural,” then go away; you can’t be saved.
 
-No one owes you anything, You are not entitled to the time and effort of strangers who are better than you.
+No one owes you anything. You are not entitled to the time and effort of strangers who are better than you.
+
+**NO COMMERCE EXPECTED OR IMPLIED**
