@@ -1,11 +1,18 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>TheTenderForLaw.com Test Deployment</title>
-    <link>//localhost:1313/accounting/</link>
-    <description>Recent content on TheTenderForLaw.com Test Deployment</description>
+    <title>Accounting on TheTenderForLaw.com Test Deployment</title>
+    <link>http://localhost:1313/accounting/</link>
+    <description>Recent content in Accounting on TheTenderForLaw.com Test Deployment</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <atom:link href="//localhost:1313/accounting/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/accounting/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Debit and Credit Flash Cards</title>
+      <link>http://localhost:1313/accounting/flashcards/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/accounting/flashcards/</guid>
+      <description>&lt;p&gt;Each card describes a transaction. Mark the account or accounts to debit and to credit, then check your answer. Amounts are given for context; you only choose accounts.&lt;/p&gt;&#xA;&lt;p&gt;Unless a card says otherwise, assume a corporation, a perpetual inventory system, the allowance method for bad debts, and the gross method for discounts.&lt;/p&gt;</description>
+    </item>
   </channel>
 </rss>

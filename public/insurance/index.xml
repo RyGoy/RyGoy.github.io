@@ -1,11 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>TheTenderForLaw.com Test Deployment</title>
-    <link>//localhost:1313/insurance/</link>
-    <description>Recent content on TheTenderForLaw.com Test Deployment</description>
+    <title>Insurance on TheTenderForLaw.com Test Deployment</title>
+    <link>http://localhost:1313/insurance/</link>
+    <description>Recent content in Insurance on TheTenderForLaw.com Test Deployment</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <atom:link href="//localhost:1313/insurance/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 01 Nov 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/insurance/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>You Do the Crime, Someone Else Does the Time</title>
+      <link>http://localhost:1313/insurance/someone-else-does-the-time/</link>
+      <pubDate>Sun, 01 Nov 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/insurance/someone-else-does-the-time/</guid>
+      <description>&lt;p&gt;Dear friend,&lt;/p&gt;&#xA;&lt;p&gt;There&amp;rsquo;s an old saying: &lt;em&gt;if you can&amp;rsquo;t do the time, don&amp;rsquo;t do the crime.&lt;/em&gt; I want to write to you about the arrangement that quietly reverses it: &lt;strong&gt;you do the crime, and someone else does the time.&lt;/strong&gt; I think that arrangement is immoral. I also think your own Scripture agrees with me more than the way it is often preached.&lt;/p&gt;&#xA;&lt;h2 id=&#34;what-your-insurer-actually-is&#34;&gt;What your insurer actually is&lt;/h2&gt;&#xA;&lt;p&gt;Your insurer is a &lt;strong&gt;surety&lt;/strong&gt; for your accidents and your liability.&lt;/p&gt;</description>
+    </item>
   </channel>
 </rss>
