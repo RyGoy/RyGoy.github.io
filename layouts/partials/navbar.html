@@ -9,8 +9,8 @@
       <div class="nav-group">
         <a class="nav-heading" href="{{ site.Home.RelPermalink }}#volumes">Volumes</a>
         <ol class="volume-nav">
-        {{ range $index, $volume := partialCached "volumes.html" . }}
-          <li><a href="{{ .RelPermalink }}"{{ if eq $.FirstSection.RelPermalink .RelPermalink }} aria-current="page"{{ end }}><span class="volume-number" aria-hidden="true">{{ printf "%02d" (add $index 1) }}</span>{{ .Title }}</a></li>
+        {{ range partialCached "volumes.html" . }}
+          <li><a href="{{ .RelPermalink }}"{{ if eq $.FirstSection.RelPermalink .RelPermalink }} aria-current="page"{{ end }}><span class="volume-number" aria-hidden="true">{{ upper (strings.TrimPrefix "vol_" .Section) }}</span>{{ .Title }}</a></li>
         {{ end }}
         </ol>
       </div>

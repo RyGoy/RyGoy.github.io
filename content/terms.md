@@ -3,8 +3,8 @@ title = "Terms"
 description = "The terms every visitor accepts before entering the archive."
 # Sound played when the pop-up opens. Either a file in static/audio/
 # (written as "/audio/name.mp3") or a full link ("https://..."). Remove the
-# line for no sound. The current file is a placeholder chime.
-audio = "/audio/terms-placeholder.mp3"
+# line for no sound.
+audio = "/audio/terms-song.mp3"
 # Everything below the closing +++ is shown in the first-visit pop-up
 # (static/js/terms-gate.js) and on this page at /terms/.
 # Changing the text asks every visitor to accept again: acceptance is

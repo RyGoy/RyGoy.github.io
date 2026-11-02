@@ -9,7 +9,11 @@
         <span class="book-ornament" aria-hidden="true">{{ upper (strings.TrimPrefix "vol_" .Section) }}</span>
         <h3>{{ .Title }}</h3>
         {{ $posts := sort .Pages "Params.created_time" }}
-        {{ if $posts }}<span class="volume-dates">{{ with (index $posts 0).Params.created_time }}{{ (time.AsTime .).Format "2006" }}{{ end }} — {{ with (index $posts (sub (len $posts) 1)).Params.created_time }}{{ (time.AsTime .).Format "2006" }}{{ end }}</span>{{ end }}
+        {{ with $posts }}
+          {{ $first := (time.AsTime (index . 0).Params.created_time).Format "Jan 2006" }}
+          {{ $last := (time.AsTime (index . (sub (len .) 1)).Params.created_time).Format "Jan 2006" }}
+          <span class="volume-dates">{{ $first }}{{ if ne $first $last }} – {{ $last }}{{ end }}</span>
+        {{ end }}
         <span class="card-arrow" aria-hidden="true">↗</span>
       </a>
     {{ end }}

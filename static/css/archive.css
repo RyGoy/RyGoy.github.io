@@ -63,7 +63,7 @@ summary { cursor: pointer; }
 .sidebar li a { display: flex; align-items: baseline; gap: 1rem; padding: .33rem .65rem; font-size: .94rem; line-height: 1.6; text-decoration: none; color: var(--muted); border-left: 1px solid transparent; }
 .sidebar li a:hover { color: var(--paper); background: #b89a6309; }
 .sidebar a[aria-current="page"] { color: #e1c797; background: #b89a630e; border-color: var(--brass); }
-.volume-number { font-size: .68rem; letter-spacing: .06em; font-variant-numeric: tabular-nums; color: var(--brass); }
+.volume-number { min-width: 1.9rem; font-size: .68rem; letter-spacing: .06em; font-variant-numeric: tabular-nums; color: var(--brass); }
 .article-nav { border-block: 1px solid var(--line); padding-block: 1rem; }
 .article-nav > .nav-heading { display: block; margin-top: .75rem; font-size: .8rem; }
 .subject-nav { padding-top: .3rem !important; }
@@ -318,4 +318,5 @@ html:has(.terms-gate[open]) { overflow: hidden; }
 .terms-gate-actions button:hover, .terms-gate-actions button:focus-visible { color: #fff5de; border-color: var(--brass); background: #b89a6314; }
 .terms-gate-refusal { width: min(40rem, calc(100vw - 2rem)); border-color: var(--red); }
 .terms-gate-refusal h2 { color: #e39a8f; }
-.terms-gate-actions .terms-gate-sound { margin-left: auto; min-width: 0; color: var(--muted); border-color: var(--line); }
+.terms-gate-actions .terms-gate-sound { display: grid; place-items: center; width: 2.75rem; height: 2.75rem; min-width: 0; padding: 0; margin-left: auto; border-radius: 50%; color: #e1c797; }
+.terms-gate-sound svg { width: 1.1rem; height: 1.1rem; fill: currentColor; }

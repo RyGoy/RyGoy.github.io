@@ -27,8 +27,14 @@
     soundButtons.push(button);
     return button;
   };
+  const PLAY = '<svg viewBox="0 0 16 16" aria-hidden="true"><path d="M4 2.5v11l9-5.5z"/></svg>';
+  const PAUSE = '<svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3.5 2.5h3v11h-3zM9.5 2.5h3v11h-3z"/></svg>';
   const labelSoundButtons = () => {
-    for (const button of soundButtons) button.textContent = sound.paused ? 'Musical Recap' : 'Stop Musical Recap';
+    for (const button of soundButtons) {
+      button.innerHTML = sound.paused ? PLAY : PAUSE;
+      button.title = sound.paused ? 'Play musical recap' : 'Pause musical recap';
+      button.setAttribute('aria-label', button.title);
+    }
   };
   if (sound) {
     for (const event of ['play', 'pause', 'ended']) sound.addEventListener(event, labelSoundButtons);
@@ -86,7 +92,7 @@
     gate.showModal();
     if (sound) {
       labelSoundButtons();
-      sound.play().catch(() => {}); // blocked autoplay leaves the "Musical Recap" button for the visitor
+      sound.play().catch(() => {}); // blocked autoplay leaves the play button for the visitor
     }
   };
 
