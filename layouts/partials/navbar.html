@@ -10,11 +10,14 @@
         <label class="sr-only" for="site-search-query">Search articles and volumes</label>
         <input id="site-search-query" type="search" name="q" placeholder="Search articles and volumes" required>
       </form>
+      {{/* WEBAMP DISABLED: remove this comment wrapper to bring the "Open Webamp" button back.
+           Also re-enable the webamp-dock.js script in partials/head.html.
       {{ with site.Data.webamp.tracks }}
         {{ $tracks := slice }}
         {{ range . }}{{ $tracks = $tracks | append (dict "title" .title "artist" (.artist | default "") "url" (.url | relURL)) }}{{ end }}
         <button class="webamp-open" id="webamp-open" type="button" data-tracks="{{ $tracks | jsonify }}">Open Webamp</button>
       {{ end }}
+      */}}
       <div class="commentary-controls">
         <a class="nav-heading" href="{{ "commentary/" | relURL }}"{{ if eq $.Section "commentary" }} aria-current="page"{{ end }}>Commentary</a>
         <button class="commentary-toggle" id="commentary-toggle" type="button" aria-pressed="false">
