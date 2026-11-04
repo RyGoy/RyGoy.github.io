@@ -41,12 +41,15 @@
       {{ end }}
       {{/* Library: the subject pages listed in content/library/_index.md. */}}
       {{ with site.GetPage "/library" }}
+      {{/* A subject is current when this page is the subject page or inside it ("/agency/" is a page, "/insurance/" a section). */}}
       {{ $open := eq $.Section "library" }}
-      {{ range .Params.subjects }}{{ if eq $.Section (strings.TrimPrefix "/" .) }}{{ $open = true }}{{ end }}{{ end }}
+      {{ range .Params.subjects }}{{ with site.GetPage . }}{{ if hasPrefix $.RelPermalink .RelPermalink }}{{ $open = true }}{{ end }}{{ end }}{{ end }}
       <details class="nav-group article-nav library-nav"{{ if $open }} open{{ end }}>
         <summary>Library</summary>
-        <a class="nav-heading" href="{{ .RelPermalink }}"{{ if eq $.RelPermalink .RelPermalink }} aria-current="page"{{ end }}>{{ .Title }}</a>
-        <ul>{{ range .Params.subjects }}{{ with site.GetPage . }}<li><a href="{{ .RelPermalink }}"{{ if eq $.Section .Section }} aria-current="page"{{ end }}>{{ .Title }}</a></li>{{ end }}{{ end }}</ul>
+        <ul>
+          <li><a href="{{ .RelPermalink }}"{{ if eq $.Section "library" }} aria-current="page"{{ end }}>{{ .Title }}</a></li>
+          {{ range .Params.subjects }}{{ with site.GetPage . }}<li><a href="{{ .RelPermalink }}"{{ if hasPrefix $.RelPermalink .RelPermalink }} aria-current="page"{{ end }}>{{ .Title }}</a></li>{{ end }}{{ end }}
+        </ul>
       </details>
       {{ end }}
     </nav>

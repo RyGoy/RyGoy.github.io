@@ -38,7 +38,7 @@ Templates branch on the **shape of the data**, not on content type:
 - `_default/single.html`: `.Params.id` set means a single comment/post page. Otherwise it is an article (`partials/article.html`).
 - `partials/entry.html` renders any post or comment. It composes `lpPosts.html` (body), `lpGo.html` (comments link, posts only), and `entry-metadata.html`. A comment is recognised by `.Params.post_id`.
 - `partials/volumes.html` is a **returning partial**. It sorts volume sections by the number parsed from their title, because the original `weight` values repeat. Use it (via `partialCached`) whenever volumes need ordering.
-- `baseof.html` caches the navbar with `partialCached`, keyed on `.FirstSection.RelPermalink` (or `.CurrentSection` under `articles`). Per-page state in the navbar must stay consistent with that key.
+- `baseof.html` caches the navbar with `partialCached`, keyed on `.FirstSection.RelPermalink` (or `.CurrentSection` under `articles`, or the page's own address for top-level pages such as `/agency/`). Per-page state in the navbar must stay consistent with that key.
 
 ## Search
 

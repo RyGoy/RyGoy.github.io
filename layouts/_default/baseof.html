@@ -5,6 +5,8 @@
   <a class="skip-link" href="#main">{{ site.Home.Title | default "The Tender For Law" }}</a>
   {{ $navigationKey := .FirstSection.RelPermalink }}
   {{ if eq .Section "articles" }}{{ $navigationKey = .CurrentSection.RelPermalink }}{{ end }}
+  {{/* Pages at the top level (/agency/, /search/) have no section of their own: key them by address. */}}
+  {{ if and (eq .Section "") (not .IsHome) }}{{ $navigationKey = .RelPermalink }}{{ end }}
   {{ partialCached "navbar.html" . $navigationKey }}
   <div class="site-shell">
     <header class="masthead">
