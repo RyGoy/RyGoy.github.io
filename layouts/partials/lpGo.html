@@ -1,3 +1,8 @@
 {{ if not .Params.post_id }}
-  <a class="comments-link" data-pagefind-ignore href="{{ .RelPermalink }}#comments">Read Comments <span aria-hidden="true">↗</span></a>
+  {{ $n := len .Pages }}
+  {{ if $n }}
+    <a class="comments-link" data-pagefind-ignore href="{{ .RelPermalink }}#comments" aria-label="Read {{ $n }} {{ cond (eq $n 1) "comment" "comments" }}">Read Comments <span class="comment-count" aria-hidden="true">{{ $n }}</span></a>
+  {{ else }}
+    <a class="comments-link is-empty" data-pagefind-ignore href="{{ .RelPermalink }}">No Comments <span class="comments-arrow" aria-hidden="true">↗</span></a>
+  {{ end }}
 {{ end }}

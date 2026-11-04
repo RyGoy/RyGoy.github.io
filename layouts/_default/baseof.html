@@ -13,6 +13,7 @@
     </header>
     <main id="main" tabindex="-1">{{ block "main" . }}{{ end }}</main>
     {{ partialCached "footer.html" . }}
+    {{ if .IsNode }}<a class="back-to-top" href="#main"><span aria-hidden="true">↑</span> Back to top</a>{{ end }}
   </div>
 </body>
 </html>

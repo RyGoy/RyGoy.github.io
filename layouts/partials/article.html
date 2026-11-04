@@ -1,10 +1,13 @@
-<article class="longform reading-column"{{ if eq .Section "articles" }} data-pagefind-body data-pagefind-filter="Section:Articles"{{ end }}>
+{{/* Articles and subject-section pages (Title and Property, Insurance, ...) are searchable and take commentary.
+     Root pages such as /terms/ and /search/ have no section and are left out. */}}
+{{ $writing := ne .Section "" }}
+<article class="longform reading-column"{{ if $writing }} data-pagefind-body data-pagefind-filter="Section:Articles"{{ end }}>
   <header class="page-heading">
     <h1>{{ .Title }}</h1>
-    {{ with .Params.author }}<p class="article-author">{{ . }}</p>{{ end }}
+    {{ with .Params.author }}<p class="article-author" data-pagefind-filter="Author">{{ . }}</p>{{ end }}
     {{ with .Params.date }}<time datetime="{{ . }}">{{ (time.AsTime .).Format "Jan 02, 2006" }}</time>{{ end }}
     {{ if or .Params.tags .Params.categories }}<details class="article-metadata"><summary>{{ .Params.author | default .Title }}</summary>{{ with .Params.tags }}<p>{{ delimit . " · " }}</p>{{ end }}{{ with .Params.categories }}<p>{{ delimit . " · " }}</p>{{ end }}</details>{{ end }}
   </header>
   <div class="prose">{{ .Content }}</div>
-  {{ if eq .Section "articles" }}{{ partial "commentary-panel.html" . }}{{ end }}
+  {{ if $writing }}{{ partial "commentary-panel.html" . }}{{ end }}
 </article>

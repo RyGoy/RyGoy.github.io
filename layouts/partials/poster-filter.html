@@ -1,0 +1,24 @@
+{{/* Filter the entries matched by .target (CSS selector) by who posted them. static/js/poster-filter.js builds
+     the list of names from the entries' data-author attributes; without JavaScript the panel stays hidden. */}}
+<details class="poster-filter" data-target="{{ .target }}" data-noun="{{ .noun }}" data-pagefind-ignore="all" hidden>
+  <summary><span class="poster-filter-title">Filter by poster</span> <span class="poster-filter-status" aria-live="polite"></span></summary>
+  <div class="poster-filter-body">
+    <fieldset class="poster-filter-mode">
+      <legend>Selected people</legend>
+      <label><input type="radio" name="poster-filter-mode" value="only" checked> Show only them</label>
+      <label><input type="radio" name="poster-filter-mode" value="hide"> Hide them</label>
+    </fieldset>
+    <label class="poster-filter-search"><span>Find a name</span><input type="search" autocomplete="off" spellcheck="false"></label>
+    <ul class="poster-filter-chips" aria-label="Selected people"></ul>
+    <fieldset class="poster-filter-names">
+      <legend>People on this page, most active first</legend>
+      <ul></ul>
+      <p class="poster-filter-none" hidden>No names match.</p>
+    </fieldset>
+    <div class="poster-filter-actions">
+      <button type="button" class="poster-filter-more"></button>
+      <button type="button" class="poster-filter-clear">Clear filter</button>
+    </div>
+  </div>
+</details>
+<script src="{{ "js/poster-filter.js" | relURL }}" defer></script>

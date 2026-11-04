@@ -26,3 +26,14 @@ if (commentaryToggle) {
     try { localStorage.setItem(KEY, on ? 'on' : 'off'); } catch { /* not remembered */ }
   });
 }
+
+// Back-to-top link on list pages (_default/baseof.html). Without JavaScript it is always shown;
+// with it, the link appears once the visitor has scrolled past the first screen.
+const backToTop = document.querySelector('.back-to-top');
+if (backToTop) {
+  const updateBackToTop = () => backToTop.classList.toggle('is-hidden', window.scrollY < window.innerHeight);
+  updateBackToTop();
+  // Animate only later changes, so the link does not visibly fade out as the page loads.
+  requestAnimationFrame(() => requestAnimationFrame(() => backToTop.classList.add('is-ready')));
+  window.addEventListener('scroll', updateBackToTop, { passive: true });
+}

@@ -41,7 +41,9 @@
       {{ end }}
       <ul class="subject-nav">
       {{ range slice (dict "path" "/accounting" "label" "Accounting") (dict "path" "/agency" "label" "Agency") (dict "path" "/bills-of-exchange" "label" "Bills of Exchange") (dict "path" "/insurance" "label" "Insurance") (dict "path" "/title&property" "label" "Title and Property") }}
-        <li><a href="{{ .path | relURL }}"{{ if eq $.Section (strings.TrimPrefix "/" .path) }} aria-current="page"{{ end }}>{{ .label }}</a></li>
+        {{/* Link to the page Hugo built: "/title&property" is published at /titleproperty/. */}}
+        {{ $href := .path | relURL }}{{ with site.GetPage .path }}{{ $href = .RelPermalink }}{{ end }}
+        <li><a href="{{ $href }}"{{ if eq $.Section (strings.TrimPrefix "/" .path) }} aria-current="page"{{ end }}>{{ .label }}</a></li>
       {{ end }}
       </ul>
     </nav>

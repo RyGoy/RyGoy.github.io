@@ -1,5 +1,6 @@
 <header class="entry-header">
-  {{ with .Params.from_name }}<h2>{{ . }}</h2>{{ end }}
+  {{/* The search index (layouts/_default/search.html) offers these names as Author and Commenter filters. */}}
+  {{ with .Params.from_name }}<h2 data-pagefind-filter="{{ if $.Params.post_id }}Commenter{{ else }}Author{{ end }}">{{ . }}</h2>{{ end }}
   {{ with .Params.created_time }}<a class="entry-date" href="{{ $.RelPermalink }}"><time datetime="{{ . }}">{{ (time.AsTime .).Format "Jan 02, 2006 3:04 PM" }}</time></a>{{ end }}
 </header>
 {{ with .Params.message }}<div class="post-message">{{ range split (replace . "\r\n" "\n") "\n\n" }}<p>{{ . }}</p>{{ end }}</div>{{ end }}

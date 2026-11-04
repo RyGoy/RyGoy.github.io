@@ -6,6 +6,7 @@
   {{ if $groups }}<nav class="date-index" aria-label="{{ .Title }}"><ul>{{ range $groups }}<li><a href="#{{ .Key | anchorize }}">{{ .Key }}</a></li>{{ end }}</ul></nav>{{ end }}
 </header>
 <div class="reading-column">
+{{ partial "poster-filter.html" (dict "target" ".month-section > .archive-entry" "noun" "posts") }}
 {{ range .Pages.GroupByParamDate "created_time" "January 2006" "asc" }}
   <section class="month-section" aria-labelledby="{{ .Key | anchorize }}">
     <div class="section-heading"><h2 id="{{ .Key | anchorize }}">{{ .Key }}</h2><span class="rule" aria-hidden="true"></span></div>

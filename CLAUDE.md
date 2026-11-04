@@ -43,7 +43,13 @@ Templates branch on the **shape of the data**, not on content type:
 
 `/search/` (`content/search.md`, `layouts/_default/search.html`) runs the Pagefind UI. After `hugo`, the deploy workflow runs `npx pagefind@1.5.2 --site public`, which writes the index to `public/pagefind/`. `hugo` alone produces no index, so the search page shows "Search needs JavaScript and the search index". To try search locally, build into another directory and run `npx pagefind@1.5.2 --site <dir> --serve`.
 
-Only elements marked `data-pagefind-body` are indexed: post bundles (the post plus its comments, in `_default/list.html`) and pages in `articles` (`partials/article.html`). Single-comment pages and volume indexes are left out because they repeat that text. Each indexed page sets a `Section` filter (`Volumes`, `Articles` or `Commentary`). `data-pagefind-ignore` keeps the metadata and "Read Comments" labels out of the results. The sidebar search box (`partials/navbar.html`) submits `?q=` to `/search/`.
+Only elements marked `data-pagefind-body` are indexed: post bundles (the post plus its comments, in `_default/list.html`) and articles, meaning pages in `articles` and in the subject sections (`partials/article.html`). Single-comment pages and volume indexes are left out because they repeat that text. Each indexed page sets a `Section` filter (`Volumes`, `Articles` or `Commentary`). `data-pagefind-ignore` keeps the metadata and "Read Comments" labels out of the results. The sidebar search box (`partials/navbar.html`) submits `?q=` to `/search/`.
+
+Searches can also be filtered by `Author` (who wrote a post, article or commentary note) and `Commenter` (who commented on a post). These come from `data-pagefind-filter` on the names in `partials/lpPosts.html`, `partials/article.html` and `commentary/single.html`.
+
+## Poster filter
+
+Volume pages (the posts) and post pages (the comments) have a "Filter by poster" panel (`partials/poster-filter.html`, `static/js/poster-filter.js`). The list of names is built from each entry's `data-author` attribute. Don't name that attribute `data-poster`: Go templates treat `poster` as a URL attribute and percent-encode it. The selection is kept in the address (`?poster=Name&poster=Other&mode=hide`) and carried to the previous/next volume links. Without JavaScript, the panel stays hidden.
 
 ## Commentary
 

@@ -4,6 +4,9 @@ title = "Ownership, Control, and Dispute Resolution"
 date = "2026-11-02"
 description = "How property rights move from person to person, where each one sits on the balance sheet, and how owners keep others out, up to defending the home"
 draft = false
+weight = 1
+# The article was first published under Articles; keep that address working.
+aliases = ["/articles/various-authors/ownership-control-and-dispute-resolution/"]
 tags = [
     "#TitleAndTrust",
     "#Property",

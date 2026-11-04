@@ -7,7 +7,8 @@
     {{ partial "commentary-panel.html" . }}
     <section id="comments" aria-label="Read Comments">
       {{ if .Pages }}
-        <div class="section-heading" data-pagefind-ignore><h2>Read Comments</h2><span class="rule" aria-hidden="true"></span></div>
+        {{ partial "poster-filter.html" (dict "target" ".comment-thread > .archive-entry" "noun" "comments") }}
+        <div class="section-heading" data-pagefind-ignore><h2>Read Comments <span class="comment-count">{{ len .Pages }}</span></h2><span class="rule" aria-hidden="true"></span></div>
         <div class="comment-thread">{{ range sort .Pages "Params.created_time" }}{{ partial "entry.html" . }}{{ end }}</div>
       {{ end }}
     </section>

@@ -1,4 +1,4 @@
-<article class="archive-entry{{ if .Params.post_id }} comment-entry{{ end }}" id="entry-{{ .Params.id }}">
+<article class="archive-entry{{ if .Params.post_id }} comment-entry{{ end }}" id="entry-{{ .Params.id }}" data-author="{{ .Params.from_name }}">
   {{ partial "lpPosts.html" . }}
   <footer class="entry-footer">
     {{ partial "lpGo.html" . }}
