@@ -9,7 +9,7 @@
    "link": "http://pseudolaw.com/gurus",
    "name": "Gurus",
    "caption": "pseudolaw.com",
-   "description": "We�ve analyzed statements and claims made by these people because they�ve garnered a few followers or enjoyed some media exposure. This list is by no means exhaustive. Please note that we do not intend to embarrass, defame or harm anyone, but to honestly and respectfully critique their public assert�",
+   "description": "We’ve analyzed statements and claims made by these people because they’ve garnered a few followers or enjoyed some media exposure. This list is by no means exhaustive. Please note that we do not intend to embarrass, defame or harm anyone, but to honestly and respectfully critique their public assert”",
    "source": "",
    "type": "link",
    "place": "None"

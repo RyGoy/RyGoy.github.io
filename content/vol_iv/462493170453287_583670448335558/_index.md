@@ -9,7 +9,7 @@
    "link": "http://www.policeone.com/chiefs-sheriffs/articles/6569271-Toronto-mayors-brother-demands-police-chief-step-down/",
    "name": "Toronto mayor's brother demands police chief step down",
    "caption": "policeone.com",
-   "description": "By PoliceOne Staff Ottawa � The brother of Toronto's embattled Mayor Rob Ford demanded that Toronto�s police chief �temporarily step down� over his handling of a video allegedly showing the mayor smoking crack. Doug Ford, a Toronto city",
+   "description": "By PoliceOne Staff Ottawa — The brother of Toronto's embattled Mayor Rob Ford demanded that Toronto’s police chief “temporarily step down” over his handling of a video allegedly showing the mayor smoking crack. Doug Ford, a Toronto city",
    "source": "",
    "type": "link",
    "place": "None"

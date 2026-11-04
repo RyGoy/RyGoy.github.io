@@ -9,7 +9,7 @@
    "link": "http://filmingcops.com/2013/11/13/americans-killed-by-police/",
    "name": "Americans Killed by Police Outnumber Americans Killed in Iraq War | Filming Cops",
    "caption": "filmingcops.com",
-   "description": "Americans Killed by Police Outnumber Americans Killed in Iraq War Cops�have killed well over 5,000�Americans since 9/11. Many of these killings have occurred during no-knock raids, which have risen by�4000%.Iraqi insurgents have killed around�3,500�Americans in Iraq since 9/11 in Operation Iraqi �Fr...",
+   "description": "Americans Killed by Police Outnumber Americans Killed in Iraq War Cops—have killed well over 5,000 Americans since 9/11. Many of these killings have occurred during no-knock raids, which have risen by 4000%.Iraqi insurgents have killed around 3,500 Americans in Iraq since 9/11 in Operation Iraqi “Fr...",
    "source": "",
    "type": "link",
    "place": "None"

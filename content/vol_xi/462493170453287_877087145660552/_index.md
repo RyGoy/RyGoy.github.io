@@ -9,7 +9,7 @@
    "link": "https://tucker.liberty.me/did-donald-trump-unleash-the-neo-nazis/",
    "name": "Has Donald Trump Unleashed the Neo-Nazis? - Jeffrey Tucker - Liberty.me",
    "caption": "tucker.liberty.me",
-   "description": "It�s time libertarians get serious about realizing that there exists such a thing as Brown-shirted socialism. It masquerades as patriotism.",
+   "description": "It’s time libertarians get serious about realizing that there exists such a thing as Brown-shirted socialism. It masquerades as patriotism.",
    "source": "",
    "type": "link",
    "place": "None"

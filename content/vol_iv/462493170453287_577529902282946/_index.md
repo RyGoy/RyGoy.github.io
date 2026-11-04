@@ -9,7 +9,7 @@
    "link": "http://www.zengardner.com/secrets-money-scam-exposed/",
    "name": "The Secrets of the Money Scam Exposed - Just Wondering - Alternative News and Opinions",
    "caption": "zengardner.com",
-   "description": "Tweet Tweet Don�t miss the whole series. Remarkably well done, showing the absolute lie our entire financial system and just how they create currency out of thin air. � Zen [Hat tip: Eric & Marcela] ZenGardner.com",
+   "description": "Tweet Tweet Don’t miss the whole series. Remarkably well done, showing the absolute lie our entire financial system and just how they create currency out of thin air. — Zen [Hat tip: Eric & Marcela] ZenGardner.com",
    "source": "",
    "type": "link",
    "place": "None"

@@ -9,7 +9,7 @@
    "link": "http://www.canlii.org/en/on/laws/stat/rso-1990-c-m10/latest/rso-1990-c-m10.html",
    "name": "CanLII - Mercantile Law Amendment Act, RSO 1990, c M.10",
    "caption": "canlii.org",
-   "description": "�bill of lading� includes all receipts for goods accompanied by an undertaking to transfer them from the place where they were received to some other place by any mode of carriage whatever, whether by land or water or partly by land and partly by water; (�connaissement�)",
+   "description": "“bill of lading” includes all receipts for goods accompanied by an undertaking to transfer them from the place where they were received to some other place by any mode of carriage whatever, whether by land or water or partly by land and partly by water; (“connaissement”)",
    "source": "",
    "type": "link",
    "place": "None"

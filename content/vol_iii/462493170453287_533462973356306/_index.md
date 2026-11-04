@@ -9,7 +9,7 @@
    "link": "http://anr.apartmentj.com/?p=1694",
    "name": "Half of all Americans think the rise of the nonreligious is a bad thing - A-News Reports",
    "caption": "anr.apartmentj.com",
-   "description": "In a report released Tuesday by the Pew Forum on Religion and Public Life, it was revealed that 48% of Americans think the rise in people who are nonreligious is a bad thing, while only 11% think it is a good thing. According to Pew: The new, nationwide survey by the Pew Research Center�s Forum [......",
+   "description": "In a report released Tuesday by the Pew Forum on Religion and Public Life, it was revealed that 48% of Americans think the rise in people who are nonreligious is a bad thing, while only 11% think it is a good thing. According to Pew: The new, nationwide survey by the Pew Research Center’s Forum [......",
    "source": "",
    "type": "link",
    "place": "None"

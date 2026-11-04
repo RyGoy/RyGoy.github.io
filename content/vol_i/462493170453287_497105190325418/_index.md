@@ -9,7 +9,7 @@
    "link": "http://www.alternet.org/print/economy/think-your-money-safe-think-again-confiscation-scheme-planned-us-and-uk-depositors",
    "name": "Think Your Money is Safe? Think Again: The Confiscation Scheme Planned for US and UK Depositors",
    "caption": "alternet.org",
-   "description": "Confiscating the customer deposits in Cyprus banks, it seems, was not a one-off, desperate idea of a few Eurozone �troika� officials scrambling to salvage their balance sheets. A joint paper by the US Federal Deposit Insurance Corporation and the Bank of England dated December 10, 2012, shows that t...",
+   "description": "Confiscating the customer deposits in Cyprus banks, it seems, was not a one-off, desperate idea of a few Eurozone “troika” officials scrambling to salvage their balance sheets. A joint paper by the US Federal Deposit Insurance Corporation and the Bank of England dated December 10, 2012, shows that t...",
    "source": "",
    "type": "link",
    "place": "None"

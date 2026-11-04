@@ -9,7 +9,7 @@
    "link": "http://rt.com/usa/gold-coins-pennsylvania-family-626/",
    "name": "Feds seize gold coins worth $80 mln from Pennsylvania family",
    "caption": "rt.com",
-   "description": "A federal judge has upheld a verdict that strips a Pennsylvania family of their grandfather�s gold coins � worth an estimated $80 million � and has ordered ownership transferred to the US government.",
+   "description": "A federal judge has upheld a verdict that strips a Pennsylvania family of their grandfather’s gold coins — worth an estimated $80 million — and has ordered ownership transferred to the US government.",
    "source": "",
    "type": "link",
    "place": "None"

@@ -9,7 +9,7 @@
    "link": "https://www.facebook.com/siliusprince2/posts/637263502951235",
    "name": "Silius Prince",
    "caption": "",
-   "description": "� 1950 81st Congress Investigated the Lawyers Guild and determined that the B.A.R. Association is founded and ran by communists under definition. Thus any elected official that is a member of the B.A.R. will only be loyal to the B.A.R. and not the people.",
+   "description": "” 1950 81st Congress Investigated the Lawyers Guild and determined that the B.A.R. Association is founded and ran by communists under definition. Thus any elected official that is a member of the B.A.R. will only be loyal to the B.A.R. and not the people.",
    "source": "",
    "type": "link",
    "place": "None"

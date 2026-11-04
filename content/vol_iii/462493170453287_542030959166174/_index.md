@@ -6,10 +6,10 @@
    "from_id": "1.02035706386866E+016",
    "to_name": "[{u'id': u'462493170453287', u'name': u'THE TENDER FOR LAW', u'privacy': u'OPEN'} {u'category': u'Producer', u'name': u'\\xc9ire Bank', u'id': u'239282016218344'}]",
    "message": "https://www.facebook.com/pages/%C3%89ire-Bank/239282016218344\n\nWhat's your take on this Scott?",
-   "link": "https://www.facebook.com/�ire-Bank-239282016218344/",
-   "name": "�ire Bank",
+   "link": "https://www.facebook.com/“ire-Bank-239282016218344/",
+   "name": "“ire Bank",
    "caption": "",
-   "description": "�irebank is a new socio-economic system belonging to the Irish people, owned and run by the members. It can operate with just 2 people, or 2 million.\n",
+   "description": "“irebank is a new socio-economic system belonging to the Irish people, owned and run by the members. It can operate with just 2 people, or 2 million.\n",
    "source": "",
    "type": "link",
    "place": "None"

@@ -9,7 +9,7 @@
    "link": "http://edmontonsun.com/2013/10/04/albertas-government-never-enforced-eviction-of-freeman-on-the-land",
    "name": "Alberta's government never enforced eviction of 'Freeman on the land'",
    "caption": "edmontonsun.com",
-   "description": "Provincial officials never enforced a notice to vacate that was rejected by the �Freemen on the land� group accused of forcibly taking several trappers� cabins in Northern Alberta.",
+   "description": "Provincial officials never enforced a notice to vacate that was rejected by the “Freemen on the land” group accused of forcibly taking several trappers’ cabins in Northern Alberta.",
    "source": "",
    "type": "link",
    "place": "None"

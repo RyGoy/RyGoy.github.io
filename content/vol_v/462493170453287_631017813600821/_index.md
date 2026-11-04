@@ -7,9 +7,9 @@
    "to_name": "[{u'id': u'462493170453287', u'name': u'THE TENDER FOR LAW', u'privacy': u'OPEN'}]",
    "message": "",
    "link": "http://journalmetro.com/plus/techno/447450/un-bitcoin-made-in-quebec/",
-   "name": "Un bitcoin made in Qu�bec",
+   "name": "Un bitcoin made in Québec",
    "caption": "journalmetro.com",
-   "description": "Un geek sherbrookois, Martin Dufresne, a lanc� il y a quelques jours, ce qui est (probablement) la premi�re monnaie virtuelle qu�b�coise: l�Orobit. Les cr�ateurs de monnaies virtuelles pr�f�rant g�n�ralement rester dans l�ombre, voil� l�occasion id�ale pour en apprendre un peu plus sur le ph�nom�ne.",
+   "description": "Un geek sherbrookois, Martin Dufresne, a lancé il y a quelques jours, ce qui est (probablement) la première monnaie virtuelle québécoise: l’Orobit. Les créateurs de monnaies virtuelles préférant généralement rester dans l’ombre, voilé l’occasion idéale pour en apprendre un peu plus sur le phénomène.",
    "source": "",
    "type": "link",
    "place": "None"

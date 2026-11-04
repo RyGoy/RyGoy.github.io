@@ -9,7 +9,7 @@
    "link": "http://deanclifford.info/2014/05/21/sabotage/",
    "name": "Sabotage - Dean Clifford",
    "caption": "deanclifford.info",
-   "description": "Hey guys and gals, brothers and sisters, Hope you are a �",
+   "description": "Hey guys and gals, brothers and sisters, Hope you are a “",
    "source": "",
    "type": "link",
    "place": "None"

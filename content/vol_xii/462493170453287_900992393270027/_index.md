@@ -9,7 +9,7 @@
    "link": "https://en.wikipedia.org/wiki/Aaron_Swartz",
    "name": "Aaron Swartz - Wikipedia, the free encyclopedia",
    "caption": "en.wikipedia.org",
-   "description": "Aaron Hillel Swartz (November 8, 1986 � January 11, 2013) was an American computer programmer, entrepreneur, writer, political organizer and Internet hacktivist. He was involved in the development of the web feed format RSS[2] and the Markdown publishing format,[3] the organization Creative Commons,�",
+   "description": "Aaron Hillel Swartz (November 8, 1986 — January 11, 2013) was an American computer programmer, entrepreneur, writer, political organizer and Internet hacktivist. He was involved in the development of the web feed format RSS[2] and the Markdown publishing format,[3] the organization Creative Commons,”",
    "source": "",
    "type": "link",
    "place": "None"

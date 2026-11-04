@@ -5,7 +5,7 @@
    "from_name": "David-Paul Sip",
    "from_id": "1.01520931535474E+016",
    "to_name": "[{u'id': u'462493170453287', u'name': u'THE TENDER FOR LAW', u'privacy': u'OPEN'}]",
-   "message": "Hahahahahaha...Awesome! �I don�t think you should be able to fall back on judicial independence for demonstrated judicial incompetence� \n\nBoy these lawyers are afraid of this gag-ORDER imposed by the Judical Council to not comment on the matter.",
+   "message": "Hahahahahaha...Awesome! “I don’t think you should be able to fall back on judicial independence for demonstrated judicial incompetence” \n\nBoy these lawyers are afraid of this gag-ORDER imposed by the Judical Council to not comment on the matter.",
    "link": "http://www.thestar.com/news/canada/2014/07/22/judging_of_judges_should_be_public_opposition_critics.html",
    "name": "Judging of judges should be public: Opposition critics | Toronto Star",
    "caption": "thestar.com",

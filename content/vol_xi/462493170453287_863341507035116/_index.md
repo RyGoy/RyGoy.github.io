@@ -9,7 +9,7 @@
    "link": "https://en.m.wikipedia.org/wiki/Apostille_Convention",
    "name": "Apostille Convention - Wikipedia, the free encyclopedia",
    "caption": "en.m.wikipedia.org",
-   "description": "The Hague Convention Abolishing the Requirement of Legalisation for Foreign Public Documents, the Apostille Convention, or the Apostille Treaty is an international treaty drafted by the Hague Conference on Private International Law. It specifies the modalities through which a document issued in one�",
+   "description": "The Hague Convention Abolishing the Requirement of Legalisation for Foreign Public Documents, the Apostille Convention, or the Apostille Treaty is an international treaty drafted by the Hague Conference on Private International Law. It specifies the modalities through which a document issued in one”",
    "source": "",
    "type": "link",
    "place": "None"

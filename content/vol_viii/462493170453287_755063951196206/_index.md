@@ -9,7 +9,7 @@
    "link": "https://www.cryptocoinsnews.com/mastercard-attacks-bitcoin-australia/",
    "name": "Mastercard Attacks Bitcoin in Australian Senate",
    "caption": "www.cryptocoinsnews.com",
-   "description": "Do you hear that? The ringing bells? See the flashing lights? Feel the Earth shake just a little? Is your �Spidey Sense� tingling? If your name were Mastercard, the answer would be �Oh, hell yeah!�, because they are in the path of a train that is barreling down upon them. That train is Bitcoin, and�",
+   "description": "Do you hear that? The ringing bells? See the flashing lights? Feel the Earth shake just a little? Is your “Spidey Sense” tingling? If your name were Mastercard, the answer would be “Oh, hell yeah!”, because they are in the path of a train that is barreling down upon them. That train is Bitcoin, and”",
    "source": "",
    "type": "link",
    "place": "None"

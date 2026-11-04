@@ -9,7 +9,7 @@
    "link": "http://www.alternet.org/print/civil-liberties/gulag-nation-usa-23-million-inmates-forced-labor-rancid-food-and-its-making",
    "name": "Gulag Nation USA: 2.3 Million Inmates, Forced Labor, Rancid Food -- and It's Making the Corporate Ov",
    "caption": "alternet.org",
-   "description": "If, as Fyodor Dostoevsky wrote, �the degree of civilization in a society can be judged by entering its prisons� then we are a nation of barbarians. Our vast network of federal and state prisons, with some 2.3 million inmates, rivals the gulags of totalitarian states. Once you disappear behind prison...",
+   "description": "If, as Fyodor Dostoevsky wrote, “the degree of civilization in a society can be judged by entering its prisons” then we are a nation of barbarians. Our vast network of federal and state prisons, with some 2.3 million inmates, rivals the gulags of totalitarian states. Once you disappear behind prison...",
    "source": "",
    "type": "link",
    "place": "None"

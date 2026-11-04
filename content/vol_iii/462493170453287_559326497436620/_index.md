@@ -9,7 +9,7 @@
    "link": "http://www.democracynow.org/2013/9/11/chomsky_instead_of_illegal_threat_to",
    "name": "Chomsky: Instead of \"Illegal\" Threat to Syria, U.S. Should Back Chemical Weapons Ban in All Nations",
    "caption": "democracynow.org",
-   "description": "In a national address from the White House Tuesday night, President Obama announced he is delaying a plan to strike Syria while pursuing a diplomatic effort from Russia for international monitors to take over and destroy Syria�s arsenal of chemical weapons. However, Obama still threatened to use for...",
+   "description": "In a national address from the White House Tuesday night, President Obama announced he is delaying a plan to strike Syria while pursuing a diplomatic effort from Russia for international monitors to take over and destroy Syria’s arsenal of chemical weapons. However, Obama still threatened to use for...",
    "source": "",
    "type": "link",
    "place": "None"

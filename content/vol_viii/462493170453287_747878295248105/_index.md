@@ -9,7 +9,7 @@
    "link": "http://www.investopedia.com/terms/c/ca.asp",
    "name": "Chartered Accountant (CA) Definition | Investopedia",
    "caption": "investopedia.com",
-   "description": "An accounting designation given to accounting professionals in many countries around the world outside of the United States. A Chartered Accountant (CA) designation typically proves the holder has the qualifications to audit financial statements and business practices as well as offer advisory servi�",
+   "description": "An accounting designation given to accounting professionals in many countries around the world outside of the United States. A Chartered Accountant (CA) designation typically proves the holder has the qualifications to audit financial statements and business practices as well as offer advisory servi”",
    "source": "",
    "type": "link",
    "place": "None"

@@ -9,7 +9,7 @@
    "link": "http://bigthink.com/neurobonkers/what-happens-after-the-truth-puts-its-boots-on",
    "name": "What happens after the truth puts its boots on? | Big Think",
    "caption": "bigthink.com",
-   "description": "Researchers working on a new <a href=\"http://www.craigsilverman.ca/2014/09/02/researching-rumors-and-debunking-for-the-tow-center-at-columbia-university/\">project</a> at the <em>Tow Center for Digital Journalism</em> at <em>Columbia University</em> have begun tracking, in real time, cases of false n�",
+   "description": "Researchers working on a new <a href=\"http://www.craigsilverman.ca/2014/09/02/researching-rumors-and-debunking-for-the-tow-center-at-columbia-university/\">project</a> at the <em>Tow Center for Digital Journalism</em> at <em>Columbia University</em> have begun tracking, in real time, cases of false n”",
    "source": "",
    "type": "link",
    "place": "None"

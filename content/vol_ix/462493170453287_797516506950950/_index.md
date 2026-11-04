@@ -7,7 +7,7 @@
    "to_name": "[{u'id': u'462493170453287', u'name': u'THE TENDER FOR LAW', u'privacy': u'OPEN'} {u'name': u'Scott Duncan', u'id': u'927379467328526'}]",
    "message": "An Oath to Canada...How can you swear an oath to Canada without understanding what Canada actually is? Dare I ask what does Admiral Scott think about this?",
    "link": "http://www.thestar.com/opinion/commentary/2015/03/04/its-time-canada-scrapped-oath-to-queen-hepburn.html#",
-   "name": "It�s time Canada scrapped oath to Queen: Hepburn | Toronto Star",
+   "name": "It’s time Canada scrapped oath to Queen: Hepburn | Toronto Star",
    "caption": "thestar.com",
    "description": "Pledge of allegiance to Canada should replace relic from our colonial days.",
    "source": "",

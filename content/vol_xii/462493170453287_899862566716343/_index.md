@@ -5,7 +5,7 @@
    "from_name": "Chris Evan",
    "from_id": "1.02024820688268E+016",
    "to_name": "[{u'id': u'462493170453287', u'name': u'THE TENDER FOR LAW', u'privacy': u'OPEN'}]",
-   "message": "Dean Clifford\n4 hrs � Edited �\n\nAwwww, no Mr.Bates in court today, no jurisdiction, and no sentencing. Whoops! Shitty deal. On the bright side, bail conditions are gone.\n\nSorry to disappoint all my detractors\n\nHOW?",
+   "message": "Dean Clifford\n4 hrs · Edited —\n\nAwwww, no Mr.Bates in court today, no jurisdiction, and no sentencing. Whoops! Shitty deal. On the bright side, bail conditions are gone.\n\nSorry to disappoint all my detractors\n\nHOW?",
    "link": "",
    "name": "",
    "caption": "",

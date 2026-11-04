@@ -5,7 +5,7 @@
    "from_name": "Beverly Berta Braakschmack",
    "from_id": "1.0151988293247E+016",
    "to_name": "[{u'id': u'462493170453287', u'name': u'THE TENDER FOR LAW', u'privacy': u'OPEN'} {u'name': u'Scott Duncan', u'id': u'927379467328526'}]",
-   "message": "So Scott, as it is my understanding that when we pay a debt with a debt (cheque, online payment) it creates more debt. As they now hold our cheques and do not return them, they borrow (however many times the amount) and hold and/or sell them as securities, correct? How then would accepting a remittance coupon (as a money order) not do the same thing, being a creation of \"money\"? Is this because the \"paying account\" is not our private \"signature\" anymore and thus doesn't get borrowed from, thus \"discharge\" debt? �Additionally this also is the idea of thinking right and valuing the right things?",
+   "message": "So Scott, as it is my understanding that when we pay a debt with a debt (cheque, online payment) it creates more debt. As they now hold our cheques and do not return them, they borrow (however many times the amount) and hold and/or sell them as securities, correct? How then would accepting a remittance coupon (as a money order) not do the same thing, being a creation of \"money\"? Is this because the \"paying account\" is not our private \"signature\" anymore and thus doesn't get borrowed from, thus \"discharge\" debt? “Additionally this also is the idea of thinking right and valuing the right things?",
    "link": "",
    "name": "",
    "caption": "",

@@ -9,7 +9,7 @@
    "link": "http://mobile.slashdot.org/story/12/08/15/1054246/project-byzantium-zero-to-ad-hoc-mesh-network-in-60-seconds-video",
    "name": "Project Byzantium: Zero To Ad-Hoc Mesh Network In 60 Seconds (Video) - Slashdot",
    "caption": "mobile.slashdot.org",
-   "description": "Project Byzantium calls itself Ad-hoc wireless mesh networking for the zombie apocalypse. It's also potentially useful for less-thrilling emergencies, such as floods, earthquakes, and political uprisings (or getting everyone at the office their /. fix when the network goes down). The latest version�",
+   "description": "Project Byzantium calls itself Ad-hoc wireless mesh networking for the zombie apocalypse. It's also potentially useful for less-thrilling emergencies, such as floods, earthquakes, and political uprisings (or getting everyone at the office their /. fix when the network goes down). The latest version”",
    "source": "",
    "type": "link",
    "place": "None"

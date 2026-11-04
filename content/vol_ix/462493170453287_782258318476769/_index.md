@@ -5,7 +5,7 @@
    "from_name": "John Affidavit Fernandes",
    "from_id": "1466381186994351",
    "to_name": "[{u'id': u'462493170453287', u'name': u'THE TENDER FOR LAW', u'privacy': u'OPEN'}]",
-   "message": "Human beings do not enjoy legal personhood because they have the properties of autonomy and self-determination. Rather, these properties allow them to respond to the offer of a social contract, after which the law then extends them legal rights. It is that response to the offer � the possibility of reciprocation � which motivates the legal system�s recognition of offerees� legal rights. ",
+   "message": "Human beings do not enjoy legal personhood because they have the properties of autonomy and self-determination. Rather, these properties allow them to respond to the offer of a social contract, after which the law then extends them legal rights. It is that response to the offer — the possibility of reciprocation — which motivates the legal system’s recognition of offerees’ legal rights. ",
    "link": "http://www.thecourt.ca/2015/01/22/legal-persons-the-new-york-court-of-appeals-chimpanzees-and-habeas-corpus/",
    "name": "Legal \"Persons\"? The New York Court of Appeals, Chimpanzees, and Habeas Corpus",
    "caption": "thecourt.ca",

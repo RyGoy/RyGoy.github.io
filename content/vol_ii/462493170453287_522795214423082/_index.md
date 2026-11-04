@@ -9,7 +9,7 @@
    "link": "http://touch.dailymotion.com/video/xscq41",
    "name": "How Money is Created (Modern Money Mechanics) Creditors in Commerce",
    "caption": "touch.dailymotion.com",
-   "description": "Watch the video �How Money is Created (Modern Money Mechanics) Creditors in Commerce� uploaded by thctrust on Dailymotion.",
+   "description": "Watch the video “How Money is Created (Modern Money Mechanics) Creditors in Commerce” uploaded by thctrust on Dailymotion.",
    "source": "",
    "type": "link",
    "place": "None"

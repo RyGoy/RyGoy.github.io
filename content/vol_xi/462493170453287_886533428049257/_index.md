@@ -5,7 +5,7 @@
    "from_name": "David-Paul Sip",
    "from_id": "1.01520931535474E+016",
    "to_name": "[{u'id': u'462493170453287', u'name': u'THE TENDER FOR LAW', u'privacy': u'OPEN'}]",
-   "message": "�I understand these legal mechanisms are in place. I understand they have the need to find money for themselves � but so do we,� Tory said Monday. \n\nFile this under what eating each others tail sounds like\nhttp://www.thestar.com/news/city_hall/2015/09/28/toronto-province-spat-over-property-taxes.html",
+   "message": "“I understand these legal mechanisms are in place. I understand they have the need to find money for themselves — but so do we,” Tory said Monday. \n\nFile this under what eating each others tail sounds like\nhttp://www.thestar.com/news/city_hall/2015/09/28/toronto-province-spat-over-property-taxes.html",
    "link": "",
    "name": "",
    "caption": "",

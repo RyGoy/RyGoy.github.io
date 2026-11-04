@@ -9,7 +9,7 @@
    "link": "https://www.sec.gov/Archives/edgar/data/722803/000110465913008012/a13-4614_1fwp.htm",
    "name": "www.sec.gov",
    "caption": "sec.gov",
-   "description": "FWP   Free Writing Prospectus (FWP) Filed pursuant to Rule 433 Registration No. 333-185372 Relating to Prospectus Supplement dated February 6, 2013   QU�BEC US$1,250,000,000 2.625% GLOBAL NOTE SERIES QM due February 13, 2023   FINAL TERM SHEET   February 6, 2013     Issuer:   Qu�bec Expected Ratings�",
+   "description": "FWP   Free Writing Prospectus (FWP) Filed pursuant to Rule 433 Registration No. 333-185372 Relating to Prospectus Supplement dated February 6, 2013   QUÉBEC US$1,250,000,000 2.625% GLOBAL NOTE SERIES QM due February 13, 2023   FINAL TERM SHEET   February 6, 2013     Issuer:   Québec Expected Ratings”",
    "source": "",
    "type": "link",
    "place": "None"

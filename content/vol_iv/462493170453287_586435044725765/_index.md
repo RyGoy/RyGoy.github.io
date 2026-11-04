@@ -9,7 +9,7 @@
    "link": "http://pjcjournal.wordpress.com/common-law-vs-statutes/",
    "name": "Common Law vs Statutes",
    "caption": "pjcjournal.wordpress.com",
-   "description": "Living by the Rule of Law by Roger Hayes Few of us would disagree that the world would be a better place if we all lived by the rule-of-law � but can the same be said about living by the rule of st...",
+   "description": "Living by the Rule of Law by Roger Hayes Few of us would disagree that the world would be a better place if we all lived by the rule-of-law — but can the same be said about living by the rule of st...",
    "source": "",
    "type": "link",
    "place": "None"

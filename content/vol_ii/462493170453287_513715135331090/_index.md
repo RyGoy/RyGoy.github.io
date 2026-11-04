@@ -7,7 +7,7 @@
    "to_name": "[{u'id': u'462493170453287', u'name': u'THE TENDER FOR LAW', u'privacy': u'OPEN'}]",
    "message": "hmmm",
    "link": "http://www.sovereignman.com/important-information/important-newsflash-us-government-seizes-accounts-of-the-worlds-largest-bitcoin-exchange-11873/",
-   "name": "IMPORTANT NEWSFLASH: US Government seizes accounts of the world�s largest Bitcoin exchange",
+   "name": "IMPORTANT NEWSFLASH: US Government seizes accounts of the world’s largest Bitcoin exchange",
    "caption": "sovereignman.com",
    "description": "NEWSFLASH: In another demonstration that the United States is no longer the Land of the Free, the Department of Homeland Security has just seized the US bank accounts belonging to Mt. Gox, the world's",
    "source": "",

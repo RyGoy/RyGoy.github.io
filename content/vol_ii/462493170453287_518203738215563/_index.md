@@ -9,7 +9,7 @@
    "link": "http://beforeitsnews.com/alternative/2013/05/mom-has-son-arrested-for-stealing-her-pop-tarts-2664298.html",
    "name": "Mom Has Son Arrested For Stealing Her Pop Tarts | Alternative",
    "caption": "beforeitsnews.com",
-   "description": "(Read More:�Fully Charge Your iPhone With The Sun in 2 Hours or Less) Charlotte, NC � A woman in North Carolina had her juvenile son arrested for allegedly stealing her Pop-Tarts. According to the Charlotte Observer, the woman called...",
+   "description": "(Read More:“Fully Charge Your iPhone With The Sun in 2 Hours or Less) Charlotte, NC — A woman in North Carolina had her juvenile son arrested for allegedly stealing her Pop-Tarts. According to the Charlotte Observer, the woman called...",
    "source": "",
    "type": "link",
    "place": "None"

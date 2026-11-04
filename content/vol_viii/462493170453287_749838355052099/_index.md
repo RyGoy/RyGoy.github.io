@@ -9,7 +9,7 @@
    "link": "http://anonhq.com/take-long-pay-us-government-liabilities/",
    "name": "How Long Would It Take To Pay Of The US Government Liabilities?!",
    "caption": "anonhq.com",
-   "description": "Written by: TechAnonymous   17.9 Trillion dollars� Trillion.  That is the US national debt right now. The �unfunded liabilities�, are somewhere around 250 trillion*** (being vague of course) Got that? It seems to be a bit more than a pocket full of shells. How exactly �",
+   "description": "Written by: TechAnonymous   17.9 Trillion dollars’ Trillion.  That is the US national debt right now. The “unfunded liabilities”, are somewhere around 250 trillion*** (being vague of course) Got that? It seems to be a bit more than a pocket full of shells. How exactly “",
    "source": "",
    "type": "link",
    "place": "None"

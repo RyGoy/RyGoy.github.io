@@ -7,7 +7,7 @@
    "to_name": "[{u'id': u'462493170453287', u'name': u'THE TENDER FOR LAW', u'privacy': u'OPEN'}]",
    "message": "Check this out!",
    "link": "http://bravenewcoin.com/news/seven-years-after-satoshi-nakamoto-invented-bitcoin-the-reclusive-founder-has-finally-been-recognized-on-the-world-stage-being-nominated-for-the-2016-nobel-prize-for-economics-sciences-for-his-disruptive-invention/",
-   "name": "Satoshi Nakamoto nominated for the Nobel Memorial Prize in Economic Sciences � Brave New Coin",
+   "name": "Satoshi Nakamoto nominated for the Nobel Memorial Prize in Economic Sciences — Brave New Coin",
    "caption": "bravenewcoin.com",
    "description": "Seven years after Satoshi Nakamoto invented Bitcoin, the reclusive founder may be recognized on the world stage for his disruptive invention.",
    "source": "",

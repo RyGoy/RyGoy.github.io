@@ -7,7 +7,7 @@
    "to_name": "[{u'id': u'462493170453287', u'name': u'THE TENDER FOR LAW', u'privacy': u'OPEN'}]",
    "message": "What a surprise.  NOT!\n",
    "link": "http://benswann.com/police-officer-arresting-another-police-officer-nope-says-a-connecticut-states-attorney/",
-   "name": "Police Officer Arresting Another Police Officer? Nope, Says A Connecticut State�s Attorney",
+   "name": "Police Officer Arresting Another Police Officer? Nope, Says A Connecticut State’s Attorney",
    "caption": "benswann.com",
    "description": "Enfield, Conn. - Police officers in Enfield, Connecticut were ready to arrest one of their own. On April 1st, Officer Matthew Worden brutally assaulted a susp",
    "source": "",

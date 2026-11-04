@@ -9,7 +9,7 @@
    "link": "https://en.wikipedia.org/wiki/Public-benefit_corporation",
    "name": "Public-benefit corporation - Wikipedia, the free encyclopedia",
    "caption": "en.wikipedia.org",
-   "description": "Public-benefit corporations are a specific type of corporation that allow for public benefit to be a charter purpose in addition to the traditional corporate goal of maximizing profit for shareholders.[1][2] Depending on the country they may also be known as crown corporations, statutory corporation�",
+   "description": "Public-benefit corporations are a specific type of corporation that allow for public benefit to be a charter purpose in addition to the traditional corporate goal of maximizing profit for shareholders.[1][2] Depending on the country they may also be known as crown corporations, statutory corporation”",
    "source": "",
    "type": "link",
    "place": "None"

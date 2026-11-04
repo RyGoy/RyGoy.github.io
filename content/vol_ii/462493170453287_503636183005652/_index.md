@@ -7,7 +7,7 @@
    "to_name": "[{u'id': u'462493170453287', u'name': u'THE TENDER FOR LAW', u'privacy': u'OPEN'}]",
    "message": "I can confirm this. :D",
    "link": "http://io9.com/happiness-is-thinking-you-get-laid-more-often-than-you-473570976",
-   "name": "Happiness is� thinking you get laid more often than your friends",
+   "name": "Happiness is’ thinking you get laid more often than your friends",
    "caption": "io9.com",
    "description": "Sex makes us happy. More sex makes us happier. But a newly published study suggests that having more sex than we think other people are having makes us happiest of all.",
    "source": "",

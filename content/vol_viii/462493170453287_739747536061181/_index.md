@@ -9,7 +9,7 @@
    "link": "http://cointelegraph.com/news/112788/proof-of-knowledge-andreas-antonopoulos-teaches-free-blockchain-certified-crypto-course",
    "name": "Proof-of-Knowledge: Andreas Antonopoulos Teaches Free Blockchain-Certified Crypto Course",
    "caption": "cointelegraph.com",
-   "description": "It�s fitting that the world�s first college degree in cryptocurrencies is offered in Cyprus � one of the first geographical regions that widely embraced Bitcoin. The University of Nicosia in Cyprus has decided to offer a Master of Science in the study, and the program�s first course, Introduction to�",
+   "description": "It’s fitting that the world’s first college degree in cryptocurrencies is offered in Cyprus — one of the first geographical regions that widely embraced Bitcoin. The University of Nicosia in Cyprus has decided to offer a Master of Science in the study, and the program’s first course, Introduction to”",
    "source": "",
    "type": "link",
    "place": "None"

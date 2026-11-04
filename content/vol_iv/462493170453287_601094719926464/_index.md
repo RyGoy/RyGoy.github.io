@@ -7,7 +7,7 @@
    "to_name": "[{u'id': u'462493170453287', u'name': u'THE TENDER FOR LAW', u'privacy': u'OPEN'}]",
    "message": "",
    "link": "http://www.rawstory.com/rs/2013/12/18/texas-police-can-get-search-warrants-based-on-the-prediction-of-a-future-crime-judge-notes/",
-   "name": "Texas police can get search warrants based on the �prediction of a future crime,� judge notes",
+   "name": "Texas police can get search warrants based on the “prediction of a future crime,” judge notes",
    "caption": "rawstory.com",
    "description": "An appeals court in Texas ruled last week that police may obtain a search warrant based on the prediction of a future crime.",
    "source": "",

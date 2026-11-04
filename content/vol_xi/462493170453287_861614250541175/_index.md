@@ -5,7 +5,7 @@
    "from_name": "David-Paul Sip",
    "from_id": "1.01520931535474E+016",
    "to_name": "[{u'id': u'462493170453287', u'name': u'THE TENDER FOR LAW', u'privacy': u'OPEN'}]",
-   "message": "CAS to the rescue again :/ \n\n\"The father whose 13-month-old baby died last weekend while in the care of a convicted child abuser, said he pleaded with children�s aid not to place his son with his grandfather.\"\n\nIt's difficult to remain \"calm\" once you realize that every government agent IS A THREAT.",
+   "message": "CAS to the rescue again :/ \n\n\"The father whose 13-month-old baby died last weekend while in the care of a convicted child abuser, said he pleaded with children’s aid not to place his son with his grandfather.\"\n\nIt's difficult to remain \"calm\" once you realize that every government agent IS A THREAT.",
    "link": "http://www.thestar.com/news/gta/2015/07/31/dad-begged-son-not-be-placed-with-abusive-grandfather.html",
    "name": "Dad begged son not be placed with abusive grandfather | Toronto Star",
    "caption": "thestar.com",

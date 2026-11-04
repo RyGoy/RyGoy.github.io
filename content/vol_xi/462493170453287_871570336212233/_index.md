@@ -9,7 +9,7 @@
    "link": "http://www.thestar.com/business/2015/08/24/tsx-drops-750-points-on-chinese-instability.html",
    "name": "TSX drops 750 points on Chinese instability | Toronto Star",
    "caption": "thestar.com",
-   "description": "The massive rout was triggered with the devaluation of China�s currency and concerns that the Chinese were either unwilling or unable to stem the plunge.",
+   "description": "The massive rout was triggered with the devaluation of China’s currency and concerns that the Chinese were either unwilling or unable to stem the plunge.",
    "source": "",
    "type": "link",
    "place": "None"

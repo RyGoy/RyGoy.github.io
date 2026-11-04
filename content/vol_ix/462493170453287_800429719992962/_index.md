@@ -7,7 +7,7 @@
    "to_name": "[{u'id': u'462493170453287', u'name': u'THE TENDER FOR LAW', u'privacy': u'OPEN'}]",
    "message": "\"...CHAMPERTY and MAINTENANCE...a legal term used to describe the forbidden act of intermeddling in and benefiting from a lawsuit brought forward by someone else.\" I thought the term was BARRATRY :/ Either way isn't this precisely what every lawyer does?",
    "link": "http://www.thestar.com/life/health_wellness/2015/03/11/mds-lawsuit-against-patients-lawyers-abusive-court-told.html#",
-   "name": "MDs lawsuit against patients� lawyers �abusive,� court told | Toronto Star",
+   "name": "MDs lawsuit against patients’ lawyers “abusive,” court told | Toronto Star",
    "caption": "thestar.com",
    "description": "A defamation suit by Dr. Cathy Frank against lawyers for her patients is meant to hinder malpractice lawsuits against her, a court has heard.",
    "source": "",

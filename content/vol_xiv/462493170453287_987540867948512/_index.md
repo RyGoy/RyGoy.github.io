@@ -9,7 +9,7 @@
    "link": "http://countercurrentnews.com/2015/12/man-arrested-after-trying-to-pay-taxes-with-1-bills/",
    "name": "Man Arrested After Trying To Pay Taxes With $1 Bills",
    "caption": "countercurrentnews.com",
-   "description": "Wichita Falls, Texas � Last week, a man was arrested while he was attempting to pay his property taxes in $1 bills. According to the police report, 27-year-old Timothy Andrew Norris attempted to pay $600 worth of property taxes in intricately folded one dollar bills. The tax officials refused the pa�",
+   "description": "Wichita Falls, Texas — Last week, a man was arrested while he was attempting to pay his property taxes in $1 bills. According to the police report, 27-year-old Timothy Andrew Norris attempted to pay $600 worth of property taxes in intricately folded one dollar bills. The tax officials refused the pa”",
    "source": "",
    "type": "link",
    "place": "None"

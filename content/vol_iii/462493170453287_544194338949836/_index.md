@@ -9,7 +9,7 @@
    "link": "https://www.facebook.com/WhereAreYourBalls/photos/a.486519601438948.1073741826.375777079179868/488716931219215/?type=3",
    "name": "Right Wing Extremists",
    "caption": "",
-   "description": "FIRED FOR STANDING FOR FREEDOM: �I Got Into Law Enforcement to Serve and Protect, Not Be a...\n\nhttp://bit.ly/16dLEOb",
+   "description": "FIRED FOR STANDING FOR FREEDOM: “I Got Into Law Enforcement to Serve and Protect, Not Be a...\n\nhttp://bit.ly/16dLEOb",
    "source": "",
    "type": "photo",
    "place": "None"

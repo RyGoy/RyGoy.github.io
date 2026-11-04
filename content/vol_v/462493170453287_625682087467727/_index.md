@@ -9,7 +9,7 @@
    "link": "http://nypost.com/2014/02/15/welcome-to-21st-century-ponzi-scheme-bitcoin/",
    "name": "Welcome to 21st-century Ponzi scheme: Bitcoin",
    "caption": "nypost.com",
-   "description": "What�s the key to the perfect pump-and-dump Ponzi scheme? Plausibility and prey. Meet the new wolf of Wall Street: bitcoin, the anonymous computer �Tinkertoy crypto-currency,� as we dubbed it in�",
+   "description": "What’s the key to the perfect pump-and-dump Ponzi scheme? Plausibility and prey. Meet the new wolf of Wall Street: bitcoin, the anonymous computer “Tinkertoy crypto-currency,” as we dubbed it in”",
    "source": "",
    "type": "link",
    "place": "None"

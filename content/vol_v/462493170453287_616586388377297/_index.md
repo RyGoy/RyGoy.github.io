@@ -5,7 +5,7 @@
    "from_name": "Pete Daoust",
    "from_id": "1.02017712542701E+016",
    "to_name": "[{u'id': u'462493170453287', u'name': u'THE TENDER FOR LAW', u'privacy': u'OPEN'}]",
-   "message": "The Civil Code of Quebec is so fucking clear as \"ME\", being the Sole Aurhorized Administrator for PIERRE DAOUST, it's unreal !!!!\n\nSeriously, you should ALL move in Quebec..... :D\n\nThere is ALSO a charter, here in Quebec, that thing is crazy......it says CLEARLY that I, as the Sole Authorized Administrator of the PERSON, have the right to its SURETY, they use the word SURET� in French.....\n\nUnbelievable :-o\n\n:D",
+   "message": "The Civil Code of Quebec is so fucking clear as \"ME\", being the Sole Aurhorized Administrator for PIERRE DAOUST, it's unreal !!!!\n\nSeriously, you should ALL move in Quebec..... :D\n\nThere is ALSO a charter, here in Quebec, that thing is crazy......it says CLEARLY that I, as the Sole Authorized Administrator of the PERSON, have the right to its SURETY, they use the word SURET” in French.....\n\nUnbelievable :-o\n\n:D",
    "link": "",
    "name": "",
    "caption": "",

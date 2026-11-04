@@ -9,7 +9,7 @@
    "link": "http://www.thestar.com/news/canada/2015/03/23/rocco-galati-in-court-to-challenge-how-bank-of-canada-does-business.html",
    "name": "Rocco Galati in court to challenge how Bank of Canada does business | Toronto Star",
    "caption": "thestar.com",
-   "description": "Renowned Toronto lawyer brings unusual case to change the way Canada�s central bank operates.",
+   "description": "Renowned Toronto lawyer brings unusual case to change the way Canada’s central bank operates.",
    "source": "",
    "type": "link",
    "place": "None"

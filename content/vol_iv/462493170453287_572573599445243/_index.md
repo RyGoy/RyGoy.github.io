@@ -9,7 +9,7 @@
    "link": "http://majormindjob.com/rebellion/",
    "name": "Overthrow the Government? 4 Dudes Discuss When and How the Rebellion Should Occur [VIDEO]",
    "caption": "majormindjob.com",
-   "description": "A very controversial video of four activists getting together and discussing all things related to rebellion aka revolt, sedition, insurrection and all aspects including who,�",
+   "description": "A very controversial video of four activists getting together and discussing all things related to rebellion aka revolt, sedition, insurrection and all aspects including who,”",
    "source": "",
    "type": "link",
    "place": "None"

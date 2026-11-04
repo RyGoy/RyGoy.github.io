@@ -5,7 +5,7 @@
    "from_name": "David-Paul Sip",
    "from_id": "1.01520931535474E+016",
    "to_name": "[{u'id': u'462493170453287', u'name': u'THE TENDER FOR LAW', u'privacy': u'OPEN'}]",
-   "message": "' Under the terms of the legislation that took effect last month, banks must share all personal and joint account details of anyone DEEMED to be a �U.S. person.� ' The can't steal enough from their own CITIZENS to pay their debts so they must steal from other country's citizens lol! Just another sign that the end is near for the greenback!",
+   "message": "' Under the terms of the legislation that took effect last month, banks must share all personal and joint account details of anyone DEEMED to be a “U.S. person.” ' The can't steal enough from their own CITIZENS to pay their debts so they must steal from other country's citizens lol! Just another sign that the end is near for the greenback!",
    "link": "http://www.thestar.com/business/2014/08/13/canadians_born_in_us_sue_ottawa_over_tax_fraud_law.html",
    "name": "Canadians born in U.S. sue Ottawa over tax fraud law | Toronto Star",
    "caption": "thestar.com",

@@ -7,7 +7,7 @@
    "to_name": "[{u'id': u'462493170453287', u'name': u'THE TENDER FOR LAW', u'privacy': u'OPEN'}]",
    "message": "How the ONTARIO BAR ASSOCIATION wants members to generate income using child persons",
    "link": "http://www.thestar.com/news/gta/2014/10/15/lawyers_unaware_children_can_sue_parents_for_support.html",
-   "name": "Children�s rights include ability to sue parents for support | Toronto Star",
+   "name": "Children’s rights include ability to sue parents for support | Toronto Star",
    "caption": "thestar.com",
    "description": "Youth have rights to go to school without the help of a guardian or see siblings who live apart.",
    "source": "",

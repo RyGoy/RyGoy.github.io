@@ -9,7 +9,7 @@
    "link": "http://www.ltb.gov.on.ca/en/",
    "name": "Landlord and Tenant Board home page",
    "caption": "ltb.gov.on.ca",
-   "description": "The Landlord and Tenant Board�s role is to provide information about the Residential Tenancies Act (RTA) and to resolve disputes between most residential landlords and tenants. ",
+   "description": "The Landlord and Tenant Board’s role is to provide information about the Residential Tenancies Act (RTA) and to resolve disputes between most residential landlords and tenants. ",
    "source": "",
    "type": "link",
    "place": "None"

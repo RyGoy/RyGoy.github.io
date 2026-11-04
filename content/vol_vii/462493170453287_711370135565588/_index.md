@@ -9,7 +9,7 @@
    "link": "http://time.com/3154675/white-house-burning-war-1812/",
    "name": "Sunday Is the 200th Anniversary of the Burning of the White House",
    "caption": "time.com",
-   "description": "It�s an anniversary few seem to want to mark, except the victor",
+   "description": "It’s an anniversary few seem to want to mark, except the victor",
    "source": "",
    "type": "link",
    "place": "None"

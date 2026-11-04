@@ -7,7 +7,7 @@
    "to_name": "[{u'id': u'462493170453287', u'name': u'THE TENDER FOR LAW', u'privacy': u'OPEN'}]",
    "message": "https://www.cryptocoinsnews.com/imf-director-tells-banks-do-not-worry-about-bitcoin-blockchain/\n\nThem's fightin' words! ?",
    "link": "https://www.cryptocoinsnews.com/imf-director-tells-banks-do-not-worry-about-bitcoin-blockchain/",
-   "name": "IMF Director Tells Banks:� Do Not Worry about Bitcoin & Blockchain",
+   "name": "IMF Director Tells Banks:” Do Not Worry about Bitcoin & Blockchain",
    "caption": "www.cryptocoinsnews.com",
    "description": "The director of the IMF addressed bankers to quell their fears about bitcoin and the blockchain.",
    "source": "",

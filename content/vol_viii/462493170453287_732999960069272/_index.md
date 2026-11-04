@@ -9,7 +9,7 @@
    "link": "http://en.wikipedia.org/wiki/Shakespeare's_influence#Influence_on_the_English_language",
    "name": "Shakespeare's influence - Wikipedia, the free encyclopedia",
    "caption": "en.wikipedia.org",
-   "description": "William Shakespeare's influence extends from theatre and literature to present-day movies and the English language itself. Widely regarded as the greatest writer of the English language,[1] and the world's pre-eminent dramatist,[2][3][4] Shakespeare transformed European theatre by expanding expectat�",
+   "description": "William Shakespeare's influence extends from theatre and literature to present-day movies and the English language itself. Widely regarded as the greatest writer of the English language,[1] and the world's pre-eminent dramatist,[2][3][4] Shakespeare transformed European theatre by expanding expectat”",
    "source": "",
    "type": "link",
    "place": "None"

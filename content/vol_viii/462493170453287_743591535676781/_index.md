@@ -9,7 +9,7 @@
    "link": "http://metronews.ca/news/canada/1203069/bank-of-canada-governor-urges-jobless-young-canadians-to-work-for-free/",
    "name": "Bank of Canada governor urges jobless young Canadians to work for free",
    "caption": "metronews.ca",
-   "description": "OTTAWA - The Bank of Canada governor is recommending jobless young people burnish their CVs by working for free while they wait for the hobbled job market to pick up.Speaking to a House of Commons committee Tuesday, Stephen Poloz suggested�",
+   "description": "OTTAWA - The Bank of Canada governor is recommending jobless young people burnish their CVs by working for free while they wait for the hobbled job market to pick up.Speaking to a House of Commons committee Tuesday, Stephen Poloz suggested”",
    "source": "",
    "type": "link",
    "place": "None"

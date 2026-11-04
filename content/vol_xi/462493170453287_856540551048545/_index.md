@@ -9,7 +9,7 @@
    "link": "http://www.thestar.com/news/world/2015/07/18/british-tabloid-publishes-images-of-young-queen-elizabeth-giving-nazi-salute.html",
    "name": "British tabloid publishes images of young Queen Elizabeth giving Nazi salute | Toronto Star",
    "caption": "thestar.com",
-   "description": "The images, which show the Queen at about age 7, was apparently taken from the Royal Family�s personal archive, said Buckingham Palace.",
+   "description": "The images, which show the Queen at about age 7, was apparently taken from the Royal Family’s personal archive, said Buckingham Palace.",
    "source": "",
    "type": "link",
    "place": "None"

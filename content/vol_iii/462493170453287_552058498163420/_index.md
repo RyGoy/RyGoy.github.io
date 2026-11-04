@@ -9,7 +9,7 @@
    "link": "https://www.youtube.com/watch?feature=player_embedded&v=1G3jPybtyBo#t=15",
    "name": "Fight the New World Order with Global Non Compliance (legendado)",
    "caption": "youtube.com",
-   "description": "Desobedi�ncia Civil: eis como! Autoria de Max Igan Visitem http://thecrowhouse.com/ftnwo.html para download de alta qualidade.",
+   "description": "Desobedi—ncia Civil: eis como! Autoria de Max Igan Visitem http://thecrowhouse.com/ftnwo.html para download de alta qualidade.",
    "source": "https://www.youtube.com/embed/1G3jPybtyBo?autoplay=1",
    "type": "video",
    "place": "None"

@@ -9,7 +9,7 @@
    "link": "https://blog.openbazaar.org/bitcoin-free-trade-and-terrible-humans/",
    "name": "Bitcoin, Free Trade and Terrible Humans | OpenBazaar",
    "caption": "blog.openbazaar.org",
-   "description": "Bitcoin, Free Trade and Terrible Humans November 15, 2014November 15, 2014 Brian Hoffman There is something terrifying yet beautiful about the concept of a truly digital culture. As a father of two young boys I take a stab at guessing what life will be like in 20 years and it actually seems kind of�",
+   "description": "Bitcoin, Free Trade and Terrible Humans November 15, 2014November 15, 2014 Brian Hoffman There is something terrifying yet beautiful about the concept of a truly digital culture. As a father of two young boys I take a stab at guessing what life will be like in 20 years and it actually seems kind of”",
    "source": "",
    "type": "link",
    "place": "None"

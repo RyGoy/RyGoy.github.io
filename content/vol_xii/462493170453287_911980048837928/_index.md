@@ -9,7 +9,7 @@
    "link": "http://www.cdpdj.qc.ca/en/medias/Pages/Communique.aspx?showItem=700",
    "name": "CDPDJ - The Commission des droits de la personne et des droits de la jeunesse honours 40 human...",
    "caption": "cdpdj.qc.ca",
-   "description": "Montr�al, December 7, 2015 � To mark the 40th anniversary of the Charter of Human Rights and Freedoms, the Commission des droits de la personne et des droits de la jeunesse will honour 40 individuals committed to the daily struggle for the advancement of human rights. The 40th anniversary of the Cha�",
+   "description": "Montréal, December 7, 2015 — To mark the 40th anniversary of the Charter of Human Rights and Freedoms, the Commission des droits de la personne et des droits de la jeunesse will honour 40 individuals committed to the daily struggle for the advancement of human rights. The 40th anniversary of the Cha”",
    "source": "",
    "type": "link",
    "place": "None"

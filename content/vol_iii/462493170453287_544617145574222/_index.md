@@ -7,7 +7,7 @@
    "to_name": "[{u'id': u'462493170453287', u'name': u'THE TENDER FOR LAW', u'privacy': u'OPEN'}]",
    "message": "",
    "link": "http://www.salon.com/2013/08/02/pastafarian_wins_right_to_wear_strainer_on_government_id/",
-   "name": "�Pastafarian� wins right to wear strainer on government ID",
+   "name": "“Pastafarian” wins right to wear strainer on government ID",
    "caption": "salon.com",
    "description": "It's not the first time a government has recognized the religion's sieve-sporting practices",
    "source": "",

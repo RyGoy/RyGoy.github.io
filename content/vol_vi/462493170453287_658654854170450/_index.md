@@ -5,7 +5,7 @@
    "from_name": "Steve Lemieux",
    "from_id": "458370044339963",
    "to_name": "[{u'id': u'462493170453287', u'name': u'THE TENDER FOR LAW', u'privacy': u'OPEN'}]",
-   "message": "Some of you might find this document an interesting read from a \"public\" point of view...\n\n\"What is the �Notice of Live Birth� Form?\"",
+   "message": "Some of you might find this document an interesting read from a \"public\" point of view...\n\n\"What is the “Notice of Live Birth” Form?\"",
    "link": "",
    "name": "",
    "caption": "",

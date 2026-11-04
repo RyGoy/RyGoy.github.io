@@ -9,7 +9,7 @@
    "link": "http://www.freedomsphoenix.com/News/144469-2013-11-01-pro-pot-comment-earns-facebook-user-a-personalized-arrest-threat.htm",
    "name": "Pro-pot comment earns Facebook user a personalized arrest threat from South Carolina police chief",
    "caption": "freedomsphoenix.com",
-   "description": "Someone with login credentials for the Columbia Police Department replied saying, �(W)e have arrested all of the violent offenders in Five points. Tha",
+   "description": "Someone with login credentials for the Columbia Police Department replied saying, “(W)e have arrested all of the violent offenders in Five points. Tha",
    "source": "",
    "type": "link",
    "place": "None"

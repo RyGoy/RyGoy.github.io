@@ -7,9 +7,9 @@
    "to_name": "[{u'id': u'462493170453287', u'name': u'THE TENDER FOR LAW', u'privacy': u'OPEN'}]",
    "message": "",
    "link": "http://www.99media.org/le-peuple-vs-la-banque-du-canada/",
-   "name": "Le peuple vs la Banque du Canada - 99%M�dia",
+   "name": "Le peuple vs la Banque du Canada - 99%Média",
    "caption": "99media.org",
-   "description": "Conf�rence publique avec Ann Emmett et Rocco Galati, pr�sent� par le Collectif Co@gitation.",
+   "description": "Conférence publique avec Ann Emmett et Rocco Galati, présenté par le Collectif Co@gitation.",
    "source": "",
    "type": "link",
    "place": "None"

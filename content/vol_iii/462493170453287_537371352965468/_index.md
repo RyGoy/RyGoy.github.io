@@ -7,7 +7,7 @@
    "to_name": "[{u'id': u'462493170453287', u'name': u'THE TENDER FOR LAW', u'privacy': u'OPEN'}]",
    "message": "Attributed to \nhttp://socsci.gulfcoast.edu/rbaldwin/NobleLie.htm for educational purposes",
    "link": "http://socsci.gulfcoast.edu/rbaldwin/NobleLie.htm",
-   "name": "PLATO�S �NOBLE LIE�",
+   "name": "PLATO’S “NOBLE LIE”",
    "caption": "socsci.gulfcoast.edu",
    "description": "",
    "source": "",

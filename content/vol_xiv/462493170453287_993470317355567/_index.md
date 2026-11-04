@@ -5,7 +5,7 @@
    "from_name": "Eamonn O Brien",
    "from_id": "1.02035706386866E+016",
    "to_name": "[{u'id': u'462493170453287', u'name': u'THE TENDER FOR LAW', u'privacy': u'OPEN'}]",
-   "message": "Oh maths are a joy.... :)\n\nResponse to Facta's (Ruair� Moore's) post about nowhere accepting Bitcoin...",
+   "message": "Oh maths are a joy.... :)\n\nResponse to Facta's (Ruair” Moore's) post about nowhere accepting Bitcoin...",
    "link": "",
    "name": "",
    "caption": "",

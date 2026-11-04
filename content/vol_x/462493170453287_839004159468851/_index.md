@@ -9,7 +9,7 @@
    "link": "https://www.cryptocoinsnews.com/bankers-begin-using-block-chain-technology-without-bitcoin/",
    "name": "Bankers Begin Using Block Chain Technology Without Bitcoin - CryptoCoinsNews",
    "caption": "www.cryptocoinsnews.com",
-   "description": "Like the Internet did 25 years ago, Bitcoin and its block chain technology are bringing the next generation of technological advancement to industries around the globe. One industry that certainly needs an infusion of new technology and efficiencies is the banking industry. Major financial companies�",
+   "description": "Like the Internet did 25 years ago, Bitcoin and its block chain technology are bringing the next generation of technological advancement to industries around the globe. One industry that certainly needs an infusion of new technology and efficiencies is the banking industry. Major financial companies”",
    "source": "",
    "type": "link",
    "place": "None"

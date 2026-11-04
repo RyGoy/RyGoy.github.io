@@ -5,7 +5,7 @@
    "from_name": "David-Paul Sip",
    "from_id": "1.01520931535474E+016",
    "to_name": "[{u'id': u'462493170453287', u'name': u'THE TENDER FOR LAW', u'privacy': u'OPEN'}]",
-   "message": "�I do think blockchain is a massive opportunity,� Linda Mantia, executive vice-president of digital, payments and cards at Royal Bank, said during a panel discussion on FINANCIAL DISRUPTION in Toronto late last year.  :D",
+   "message": "“I do think blockchain is a massive opportunity,” Linda Mantia, executive vice-president of digital, payments and cards at Royal Bank, said during a panel discussion on FINANCIAL DISRUPTION in Toronto late last year.  :D",
    "link": "http://www.thestar.com/business/2016/01/27/canadian-banks-experiment-with-bitcoin-technology.html",
    "name": "How Bitcoin technology could change banking in Canada | Toronto Star",
    "caption": "thestar.com",

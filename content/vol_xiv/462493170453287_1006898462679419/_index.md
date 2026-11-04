@@ -7,9 +7,9 @@
    "to_name": "[{u'id': u'462493170453287', u'name': u'THE TENDER FOR LAW', u'privacy': u'OPEN'}]",
    "message": "Hey, City of Terrebonne, an ORDER has been written by a judge ORDERING my person to not say bad things against City of Terrebonne's public servants.\n\nMaybe you should ask that judge to ORDER the newspaper to do the same, because as per them, City of Terrebonne's cops are crooks.\n\nNot my fault :/\n\nFun Fact: He was ADMIRED by everyone :D\n\n",
    "link": "http://www.journaldemontreal.com/2016/06/01/un-policier-aurait-fraude-ses-voisins",
-   "name": "Un policier aurait fraud� ses voisins",
+   "name": "Un policier aurait fraud” ses voisins",
    "caption": "journaldemontreal.com",
-   "description": "Un lieutenant de Terrebonne aurait v�cu la belle vie sur le dos de ses copropri�taires.",
+   "description": "Un lieutenant de Terrebonne aurait vécu la belle vie sur le dos de ses copropriétaires.",
    "source": "",
    "type": "link",
    "place": "None"

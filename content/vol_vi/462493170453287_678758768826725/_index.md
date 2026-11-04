@@ -9,7 +9,7 @@
    "link": "https://www.notarycam.com/",
    "name": "Notary Public Services Online | Secure Signing Technology for Public Notaries",
    "caption": "notarycam.com",
-   "description": "The act of officially certifying a legal document by a notary public. The purpose of having a legal document notarized is to ensure the authenticity of the signatures that appear on the document. Once notarized, a document will have much more legal credibility and will stand up much better in court�",
+   "description": "The act of officially certifying a legal document by a notary public. The purpose of having a legal document notarized is to ensure the authenticity of the signatures that appear on the document. Once notarized, a document will have much more legal credibility and will stand up much better in court”",
    "source": "",
    "type": "link",
    "place": "None"

@@ -9,7 +9,7 @@
    "link": "http://www.thestar.com/news/crime/2014/11/24/toronto_police_ottawa_police_websites_remain_unavailable_after_hack_attack.html",
    "name": "Toronto police, Ottawa police websites remain unavailable after hack attack | Toronto Star",
    "caption": "thestar.com",
-   "description": "A hacker claiming ties to the group Anonymous took responsibility saying the action was �retaliation� because �police have framed an innocent youth.�",
+   "description": "A hacker claiming ties to the group Anonymous took responsibility saying the action was “retaliation” because “police have framed an innocent youth.”",
    "source": "",
    "type": "link",
    "place": "None"

@@ -9,7 +9,7 @@
    "link": "http://www.thestar.com/news/canada/2015/12/20/ontarians-urged-to-help-province-pay-off-its-debt.html",
    "name": "Ontarians urged to help province pay off its debt | Toronto Star",
    "caption": "thestar.com",
-   "description": "Would you donate your tax refund or write a cheque to defray Ontario�s $298.9 billion net debt?",
+   "description": "Would you donate your tax refund or write a cheque to defray Ontario’s $298.9 billion net debt?",
    "source": "",
    "type": "link",
    "place": "None"

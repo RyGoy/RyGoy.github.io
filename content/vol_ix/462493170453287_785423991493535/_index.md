@@ -9,7 +9,7 @@
    "link": "http://decisions.fct-cf.gc.ca/fc-cf/decisions/en/item/72554/index.do",
    "name": "Committe for Monetary and Economic Reform v. Canada - Federal Court",
    "caption": "decisions.fct-cf.gc.ca",
-   "description": "[1]               This is a motion under Rule 51 of the Federal Court Rules, SOR/98-106 [Rules], appealing the Order of Prothonotary Aalto dated 9 August 2013 [Decision], which struck the Plaintiffs� Amended Statement of Claim [Claim] without leave to amend.",
+   "description": "[1]               This is a motion under Rule 51 of the Federal Court Rules, SOR/98-106 [Rules], appealing the Order of Prothonotary Aalto dated 9 August 2013 [Decision], which struck the Plaintiffs’ Amended Statement of Claim [Claim] without leave to amend.",
    "source": "",
    "type": "link",
    "place": "None"

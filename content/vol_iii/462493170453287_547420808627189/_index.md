@@ -9,7 +9,7 @@
    "link": "http://www.theonion.com/articles/insecure-frustrated-bully-with-something-to-prove,33427/",
    "name": "Insecure, Frustrated Bully With Something To Prove Considering Career In Law Enforcement",
    "caption": "theonion.com",
-   "description": "RALEIGH, NC�Calling it his lifelong dream, local man Brendan Lockhart, an insecure and perpetually frustrated bully who believes he has something to prove to the world, told reporters Thursday that he is seriously considering a career in law enforce...",
+   "description": "RALEIGH, NC—Calling it his lifelong dream, local man Brendan Lockhart, an insecure and perpetually frustrated bully who believes he has something to prove to the world, told reporters Thursday that he is seriously considering a career in law enforce...",
    "source": "",
    "type": "link",
    "place": "None"

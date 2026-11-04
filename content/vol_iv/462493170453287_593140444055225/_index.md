@@ -9,7 +9,7 @@
    "link": "http://deanclifford.info/2013/11/27/dean-clifford-covertly-transported-to-winnipeg/",
    "name": "DEAN CLIFFORD COVERTLY TRANSPORTED TO WINNIPEG - DeanClifford",
    "caption": "deanclifford.info",
-   "description": "Further to our press release of November 26th 2013, updated information has now been made available which outlines Dean Clifford�s whereabouts for the few several days.",
+   "description": "Further to our press release of November 26th 2013, updated information has now been made available which outlines Dean Clifford’s whereabouts for the few several days.",
    "source": "",
    "type": "link",
    "place": "None"

@@ -9,7 +9,7 @@
    "link": "http://winnipegalternativemedia.com/2013/09/10/a-vote-for-senate-reform/?fb_source=pubv1",
    "name": "A Vote for Senate Reform",
    "caption": "winnipegalternativemedia.com",
-   "description": "Recently the Canadian Taxpayers Federation  sent out a news letter to it�s subscribers taking issue with fact that our Canadian Senators who serve us so well and who rightfully collect their pay cheques and pensions do so even � Continue reading ?",
+   "description": "Recently the Canadian Taxpayers Federation  sent out a news letter to it’s subscribers taking issue with fact that our Canadian Senators who serve us so well and who rightfully collect their pay cheques and pensions do so even — Continue reading ?",
    "source": "",
    "type": "link",
    "place": "None"

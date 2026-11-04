@@ -9,7 +9,7 @@
    "link": "http://www.alternet.org/news-amp-politics/13-million-americans-will-lose-unemployment-benefits-tomorrow",
    "name": "1.3 Million Americans Will Lose Unemployment Benefits Tomorrow",
    "caption": "alternet.org",
-   "description": "Which state populations will be most affected by the GOP�s decision to cut off their economic lifeline? You�d be surprised.",
+   "description": "Which state populations will be most affected by the GOP’s decision to cut off their economic lifeline? You’d be surprised.",
    "source": "",
    "type": "link",
    "place": "None"

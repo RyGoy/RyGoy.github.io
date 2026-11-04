@@ -9,7 +9,7 @@
    "link": "http://deanclifford.info/2014/08/23/breach-recognisance-charges-dismissed/",
    "name": "Breach of recognisance charges Dismissed - Dean Clifford",
    "caption": "deanclifford.info",
-   "description": "He had a trial this morning for �breach of recogn �",
+   "description": "He had a trial this morning for “breach of recogn “",
    "source": "",
    "type": "link",
    "place": "None"

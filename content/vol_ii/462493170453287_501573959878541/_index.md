@@ -5,7 +5,7 @@
    "from_name": "Cheryl Watson",
    "from_id": "1.01540680963052E+016",
    "to_name": "[{u'id': u'462493170453287', u'name': u'THE TENDER FOR LAW', u'privacy': u'OPEN'}]",
-   "message": "Did you know that you can file a UCC in Canada? Okay, so it�s technically not a UCC since the Uniform Commercial Code system is an American one, but Canada does have a system called the Personal Property Security Registration System which is analogous to and based upon our UCC system.",
+   "message": "Did you know that you can file a UCC in Canada? Okay, so it’s technically not a UCC since the Uniform Commercial Code system is an American one, but Canada does have a system called the Personal Property Security Registration System which is analogous to and based upon our UCC system.",
    "link": "",
    "name": "",
    "caption": "",

@@ -9,7 +9,7 @@
    "link": "http://www.newrepublic.com/article/113354/energy-companies-take-advantage-amish-prohibition-lawsuits",
    "name": "The Amish Are Getting Fracked",
    "caption": "newrepublic.com",
-   "description": "Their religion prohibits lawsuits�and the energy companies know it.",
+   "description": "Their religion prohibits lawsuits—and the energy companies know it.",
    "source": "",
    "type": "link",
    "place": "None"

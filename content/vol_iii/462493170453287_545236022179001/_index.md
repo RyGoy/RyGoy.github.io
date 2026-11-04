@@ -9,7 +9,7 @@
    "link": "http://freemanireland.ning.com/events/magic-spells-the-state-and-you",
    "name": "Magic, Spells, the State and You.",
    "caption": "freemanireland.ning.com",
-   "description": "I hope and plan to broadcast a live presentation entitled: Mumbo Jumbo - De-mystifying Magic and the Mind Controlled State. This presentation carefully and suc�",
+   "description": "I hope and plan to broadcast a live presentation entitled: Mumbo Jumbo - De-mystifying Magic and the Mind Controlled State. This presentation carefully and sucé",
    "source": "",
    "type": "link",
    "place": "None"

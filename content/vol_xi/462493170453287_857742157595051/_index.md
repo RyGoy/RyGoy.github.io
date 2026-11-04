@@ -9,7 +9,7 @@
    "link": "http://www.thestar.com/news/gta/2015/07/21/journalist-group-and-civil-liberties-association-start-constitutional-challenge-to-anti-terrorism-bill-c-51.html",
    "name": "Journalist group and civil liberties association start constitutional challenge to...",
    "caption": "thestar.com",
-   "description": "Toronto-based organizations file lawsuit against �the most dangerous legislation we�ve had in recent Canadian history.�",
+   "description": "Toronto-based organizations file lawsuit against “the most dangerous legislation we’ve had in recent Canadian history.”",
    "source": "",
    "type": "link",
    "place": "None"

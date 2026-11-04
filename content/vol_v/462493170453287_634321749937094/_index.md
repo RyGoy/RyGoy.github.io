@@ -9,7 +9,7 @@
    "link": "http://p2pfoundation.ning.com/forum/topics/bitcoin-open-source",
    "name": "Bitcoin open source implementation of P2P currency",
    "caption": "p2pfoundation.ning.com",
-   "description": "I've developed a new open source P2P e-cash system called Bitcoin. It's completely decentralized, with no central server or trusted parties, because everything�",
+   "description": "I've developed a new open source P2P e-cash system called Bitcoin. It's completely decentralized, with no central server or trusted parties, because everything”",
    "source": "",
    "type": "link",
    "place": "None"

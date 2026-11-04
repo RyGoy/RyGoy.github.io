@@ -9,7 +9,7 @@
    "link": "http://bitcoinmagazine.com/6939/seans-outpost-announces-satoshi-forest/",
    "name": "Sean's Outpost Announces Satoshi Forest, Nine-Acre Sanctuary for the Homeless - Bitcoin Magazine",
    "caption": "bitcoinmagazine.com",
-   "description": "Over the past five months, Sean�s Outpost has come to be perhaps the most well-known charity in the Bitcoin community. Sean�s Outpost, a homeless shelter in Pensacola, Florida run by Jason King, first started accepting Bitcoin in March 2013, carrying a simple message: �When we break down cost, it ru...",
+   "description": "Over the past five months, Sean’s Outpost has come to be perhaps the most well-known charity in the Bitcoin community. Sean’s Outpost, a homeless shelter in Pensacola, Florida run by Jason King, first started accepting Bitcoin in March 2013, carrying a simple message: “When we break down cost, it ru...",
    "source": "",
    "type": "link",
    "place": "None"

@@ -5,7 +5,7 @@
    "from_name": "David-Paul Sip",
    "from_id": "1.01520931535474E+016",
    "to_name": "[{u'id': u'462493170453287', u'name': u'THE TENDER FOR LAW', u'privacy': u'OPEN'}]",
-   "message": "\"In the post, written as a letter to their new baby, Zuckerberg and Chan also pledged to donate 99 per cent of their Facebook shares � currently valued at US$45 billion � to charity, starting the Chan Zuckerberg Initiative to MAKE THE WORLD A BETTER PLACE.\" \n\nI think Aquilae would be a worthy recipient since they are IN REALITY making the world a bette place, but that's just crazy talk :D",
+   "message": "\"In the post, written as a letter to their new baby, Zuckerberg and Chan also pledged to donate 99 per cent of their Facebook shares — currently valued at US$45 billion — to charity, starting the Chan Zuckerberg Initiative to MAKE THE WORLD A BETTER PLACE.\" \n\nI think Aquilae would be a worthy recipient since they are IN REALITY making the world a bette place, but that's just crazy talk :D",
    "link": "http://www.thestar.com/business/tech_news/2015/12/01/mark-zuckerberg-to-give-99-of-facebook-stock-to-charity.html",
    "name": "Mark Zuckerberg to give 99% of Facebook stock to charity | Toronto Star",
    "caption": "thestar.com",

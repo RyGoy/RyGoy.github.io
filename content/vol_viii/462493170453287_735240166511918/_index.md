@@ -7,7 +7,7 @@
    "to_name": "[{u'id': u'462493170453287', u'name': u'THE TENDER FOR LAW', u'privacy': u'OPEN'}]",
    "message": "WHERE IS THE SURETY ? :P\n\nDenis is still waiting for them to come back with the surety :D\n\nHAHAHAHAHAHA!!!!!\n\n",
    "link": "https://www.youtube.com/watch?v=qswaTCNKSe4",
-   "name": "La suret� de MA personne SVP",
+   "name": "La suret” de MA personne SVP",
    "caption": "youtube.com",
    "description": "",
    "source": "http://www.youtube.com/v/qswaTCNKSe4?version=3&autohide=1&autoplay=1",

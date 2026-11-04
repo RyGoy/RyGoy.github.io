@@ -9,7 +9,7 @@
    "link": "http://en.wikipedia.org/wiki/Barrett_Brown",
    "name": "Barrett Brown - Wikipedia, the free encyclopedia",
    "caption": "en.wikipedia.org",
-   "description": "Barrett Brown (born August 14, 1981) is an American journalist, essayist and satirist. He is often referred to as an unofficial spokesperson for the hacktivist collective Anonymous, a label he disputes.[1] He founded Project PM, a research collaboration and wiki, to facilitate analysis of the vast t�",
+   "description": "Barrett Brown (born August 14, 1981) is an American journalist, essayist and satirist. He is often referred to as an unofficial spokesperson for the hacktivist collective Anonymous, a label he disputes.[1] He founded Project PM, a research collaboration and wiki, to facilitate analysis of the vast t”",
    "source": "",
    "type": "link",
    "place": "None"

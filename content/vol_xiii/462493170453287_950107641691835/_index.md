@@ -5,7 +5,7 @@
    "from_name": "David-Paul Sip",
    "from_id": "1.01520931535474E+016",
    "to_name": "[{u'id': u'462493170453287', u'name': u'THE TENDER FOR LAW', u'privacy': u'OPEN'}]",
-   "message": "What was it Scott Duncan said last year? \n\n�The Plaintiffs appear to be of the view that,..., they can simply come to Court and ask the Court to declare that the Minister of Finance and the Government of Canada are required to do certain things under the Bank Act, and that they have abdicated their constitutional duties, and allowed international private entities to trump the interests of Canadians,� \n\nhttps://www.facebook.com/groups/516573461732032/permalink/1062643517125021/",
+   "message": "What was it Scott Duncan said last year? \n\n“The Plaintiffs appear to be of the view that,..., they can simply come to Court and ask the Court to declare that the Minister of Finance and the Government of Canada are required to do certain things under the Bank Act, and that they have abdicated their constitutional duties, and allowed international private entities to trump the interests of Canadians,” \n\nhttps://www.facebook.com/groups/516573461732032/permalink/1062643517125021/",
    "link": "http://pressfortruth.ca/top-stories/comer-case-against-bank-canada-reaches-its-end/",
    "name": "COMER Case Against Bank of Canada Reaches Its End",
    "caption": "pressfortruth.ca",

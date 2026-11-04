@@ -9,7 +9,7 @@
    "link": "http://www.wired.com/wiredscience/2013/09/bypassin-us-gps-limits-for-active-guided-rockets/",
    "name": "Bypassing US GPS Limits for Active Guided Rockets - Wired Science",
    "caption": "wired.com",
-   "description": "Guest blog by Thomas Scherrer of Copenhagen Suborbitals Rocket positioning and height indication using GPS is not a new thing. At Copenhagen suborbitals we have been using GPS units from the very beginning for all our flying projects. But now, �",
+   "description": "Guest blog by Thomas Scherrer of Copenhagen Suborbitals Rocket positioning and height indication using GPS is not a new thing. At Copenhagen suborbitals we have been using GPS units from the very beginning for all our flying projects. But now, “",
    "source": "",
    "type": "link",
    "place": "None"

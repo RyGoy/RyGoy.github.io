@@ -9,7 +9,7 @@
    "link": "http://www.liveleak.com/view?i=963_1396568861",
    "name": "LiveLeak.com - Vietnam is sentencing corrupt bankers to death, by firing squad",
    "caption": "liveleak.com",
-   "description": "BANGKOK � For the most part, American bankers whose rash pursuit of profit brought on the 2008 global financial collapse didn�t get indicted. They got bonuses. Odds are that scandal would have",
+   "description": "BANGKOK — For the most part, American bankers whose rash pursuit of profit brought on the 2008 global financial collapse didn’t get indicted. They got bonuses. Odds are that scandal would have",
    "source": "",
    "type": "link",
    "place": "None"

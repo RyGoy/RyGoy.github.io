@@ -9,7 +9,7 @@
    "link": "http://en.wikipedia.org/wiki/Livery_of_seisin",
    "name": "Livery of seisin - Wikipedia, the free encyclopedia",
    "caption": "en.wikipedia.org",
-   "description": "Livery of seisin is an archaic legal conveyancing ceremony, formerly practiced in feudal England and in other countries following English common law, used to convey holdings in property. The term \"livery\" is related to, if not synonymous with, the word \"delivery\" as used in modern contract law. The�",
+   "description": "Livery of seisin is an archaic legal conveyancing ceremony, formerly practiced in feudal England and in other countries following English common law, used to convey holdings in property. The term \"livery\" is related to, if not synonymous with, the word \"delivery\" as used in modern contract law. The”",
    "source": "",
    "type": "link",
    "place": "None"

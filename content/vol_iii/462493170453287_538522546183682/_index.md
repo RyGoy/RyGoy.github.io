@@ -9,7 +9,7 @@
    "link": "http://www.canada.com/mobile/iphone/story.html?id=8673660",
    "name": "Enemies of the state: The (almost) Complete List",
    "caption": "canada.com",
-   "description": "Like many of you, I was shocked to hear that a member of the Prime Minister�s Office had sent an email asking staff in other ministers� offices to compile lists of �enemy stakeholders.� This did not sound like the discreet, [�]",
+   "description": "Like many of you, I was shocked to hear that a member of the Prime Minister’s Office had sent an email asking staff in other ministers’ offices to compile lists of “enemy stakeholders.” This did not sound like the discreet, [—]",
    "source": "",
    "type": "link",
    "place": "None"

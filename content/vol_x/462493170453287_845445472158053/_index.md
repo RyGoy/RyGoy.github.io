@@ -9,7 +9,7 @@
    "link": "https://www.facebook.com/BigThinkdotcom/photos/a.10150154426698527.286045.46126453526/10152976611383527/?type=3",
    "name": "Big Think",
    "caption": "",
-   "description": "George Smith Patton, Jr. (1885 � 1945) was a United States Army general who commanded the Seventh United States Army in the Mediterranean and European Theaters of World War II, but is best known for his leadership of the Third United States Army in France and Germany following the Allied invasion of Normandy. Patton's colorful image, hard-driving personality and success as a commander were at times overshadowed by his controversial public statements.",
+   "description": "George Smith Patton, Jr. (1885 — 1945) was a United States Army general who commanded the Seventh United States Army in the Mediterranean and European Theaters of World War II, but is best known for his leadership of the Third United States Army in France and Germany following the Allied invasion of Normandy. Patton's colorful image, hard-driving personality and success as a commander were at times overshadowed by his controversial public statements.",
    "source": "",
    "type": "photo",
    "place": "None"

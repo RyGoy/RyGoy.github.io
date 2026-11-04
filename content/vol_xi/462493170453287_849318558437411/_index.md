@@ -9,7 +9,7 @@
    "link": "https://www.cryptocoinsnews.com/london-mayoral-candidate-george-galloway-calls-city-government-use-block-chain-public-accountability",
    "name": "London Mayoral Candidate George Galloway Calls for City Government to use Block Chain for Public...",
    "caption": "www.cryptocoinsnews.com",
-   "description": "George Galloway, London, U.K. mayoral candidate who is using block chain technology in running his 2016 campaign, has called for the city to adopt block chain technology to provide full public accountability of government business. Galloway was scheduled to present his outline for London�s future to�",
+   "description": "George Galloway, London, U.K. mayoral candidate who is using block chain technology in running his 2016 campaign, has called for the city to adopt block chain technology to provide full public accountability of government business. Galloway was scheduled to present his outline for London’s future to”",
    "source": "",
    "type": "link",
    "place": "None"

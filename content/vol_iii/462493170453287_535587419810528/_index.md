@@ -9,7 +9,7 @@
    "link": "http://news.nationalpost.com/2013/07/10/man-jailed-for-refusing-audit-tries-to-pay-taxes-with-sin-he-believes-is-linked-to-secret-bank-account/",
    "name": "Man jailed for refusing audit tries to pay taxes with SIN he says is linked to secret bank account",
    "caption": "news.nationalpost.com",
-   "description": "His philosophy holds that secret bank accounts are created for everyone at birth and that someone�s Social Insurance Number or birth certificate number is really their account�s number",
+   "description": "His philosophy holds that secret bank accounts are created for everyone at birth and that someone’s Social Insurance Number or birth certificate number is really their account’s number",
    "source": "",
    "type": "link",
    "place": "None"

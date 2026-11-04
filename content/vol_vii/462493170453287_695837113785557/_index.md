@@ -9,7 +9,7 @@
    "link": "http://deanclifford.info/2014/07/19/update-14/",
    "name": "Update 14 - Dean Clifford",
    "caption": "deanclifford.info",
-   "description": "Dean has been in solitary for 3 weeks. His phone pin wa �",
+   "description": "Dean has been in solitary for 3 weeks. His phone pin wa “",
    "source": "",
    "type": "link",
    "place": "None"

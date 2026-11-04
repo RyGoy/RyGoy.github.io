@@ -9,7 +9,7 @@
    "link": "http://en.wikipedia.org/wiki/The_Law_(1850_book)",
    "name": "The Law (1850 book) - Wikipedia, the free encyclopedia",
    "caption": "en.wikipedia.org",
-   "description": "The Law, original French title La Loi, is a 1850 book by Fr�d�ric Bastiat. It was written at Mugron two years after the third French Revolution and a few months before his death of tuberculosis at age 49. The essay was influenced by John Locke's Second Treatise on Government and in turn influenced H...",
+   "description": "The Law, original French title La Loi, is a 1850 book by Frédéric Bastiat. It was written at Mugron two years after the third French Revolution and a few months before his death of tuberculosis at age 49. The essay was influenced by John Locke's Second Treatise on Government and in turn influenced H...",
    "source": "",
    "type": "link",
    "place": "None"

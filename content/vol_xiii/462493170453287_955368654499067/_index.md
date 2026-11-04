@@ -9,7 +9,7 @@
    "link": "http://www.independent.co.uk/news/world/americas/ontario-to-pilot-a-universal-basic-income-experiment-a6916571.html",
    "name": "Canada is planning to give people free money",
    "caption": "independent.co.uk",
-   "description": "Ontario has announced it could soon be sending a monthly cheque to its residents as it plans to launch an experiment testing the basic income concept.\n \n While officials in the Canadian province are yet to release any specific details of the project � including how much will be given to resi�",
+   "description": "Ontario has announced it could soon be sending a monthly cheque to its residents as it plans to launch an experiment testing the basic income concept.\n \n While officials in the Canadian province are yet to release any specific details of the project — including how much will be given to resi”",
    "source": "",
    "type": "link",
    "place": "None"

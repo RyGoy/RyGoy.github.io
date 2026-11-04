@@ -9,7 +9,7 @@
    "link": "http://www.punkrocklibertarians.com/scotus-gay-marriage-decision-just-legalize-concealed-carry-across-50-states/",
    "name": "Did SCOTUS Gay Marriage Decision Just Legalize Concealed Carry Across All 50 States?! | Punk...",
    "caption": "punkrocklibertarians.com",
-   "description": "The Supreme Court�s historic decision to recognize gay marriage in all 50 states may in fact  set a precedent to recognize concealed carry permits in all 50 States. The legal argument for recognizing gay marriage in all 50 States was basically that since gay marriage is already legal in a majority o�",
+   "description": "The Supreme Court’s historic decision to recognize gay marriage in all 50 states may in fact  set a precedent to recognize concealed carry permits in all 50 States. The legal argument for recognizing gay marriage in all 50 States was basically that since gay marriage is already legal in a majority o”",
    "source": "",
    "type": "link",
    "place": "None"

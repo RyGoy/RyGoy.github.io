@@ -9,7 +9,7 @@
    "link": "http://www.rogerstv.com/page.aspx?lid=237&rid=16&sid=3431&gid=123452",
    "name": "Mon, November 18 2013 - Toronto Police Services - Toronto - Rogers TV",
    "caption": "rogerstv.com",
-   "description": "<p>In recent months, the Toronto Police Services Board has been reviewing the issue of �street checks� conducted by the police (also referred to as �carding� or the provision of contact cards) and has heard concerns raised by the community about racial profiling related to t�",
+   "description": "<p>In recent months, the Toronto Police Services Board has been reviewing the issue of “street checks” conducted by the police (also referred to as “carding” or the provision of contact cards) and has heard concerns raised by the community about racial profiling related to t”",
    "source": "",
    "type": "link",
    "place": "None"

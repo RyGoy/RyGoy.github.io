@@ -9,7 +9,7 @@
    "link": "http://www.montrealgazette.com/business/money/Bitcoin+opens+business+Montreal/9469099/story.html",
    "name": "Bitcoin ATM opens for business in Montreal",
    "caption": "montrealgazette.com",
-   "description": "Fadi Azouz has some pretty big dreams about what Montreal�s first bitcoin dispenser will mean for the bitcoin community, and at least one of those dreams forecasts the end of physical currency as we know it. He may be onto something.",
+   "description": "Fadi Azouz has some pretty big dreams about what Montreal’s first bitcoin dispenser will mean for the bitcoin community, and at least one of those dreams forecasts the end of physical currency as we know it. He may be onto something.",
    "source": "",
    "type": "link",
    "place": "None"

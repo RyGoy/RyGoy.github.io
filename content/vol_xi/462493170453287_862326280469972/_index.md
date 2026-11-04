@@ -9,7 +9,7 @@
    "link": "http://www.oas.org/en/",
    "name": "OAS - Organization of American States: Democracy for peace, security, and development",
    "caption": "oas.org",
-   "description": "The Organization of American States is the premier regional forum for political discussion, policy analysis and decision-making in Western Hemisphere affairs. The OAS brings together leaders from nations across the Americas to address hemispheric issues and opportunities. Together, they seek to buil�",
+   "description": "The Organization of American States is the premier regional forum for political discussion, policy analysis and decision-making in Western Hemisphere affairs. The OAS brings together leaders from nations across the Americas to address hemispheric issues and opportunities. Together, they seek to buil”",
    "source": "",
    "type": "link",
    "place": "None"

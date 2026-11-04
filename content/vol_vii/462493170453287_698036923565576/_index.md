@@ -9,7 +9,7 @@
    "link": "http://rt.com/business/175000-bitcoin-airbaltic-accept-bitpay/",
    "name": "Sky not the limit: AirBaltic first airline to accept bitcoin",
    "caption": "rt.com",
-   "description": "Bitcoin�s latest expansion is into commercial airspace after Latvian airline airBaltic announced customers can start using bitcoins to pay for tickets. AirBaltic is the first airline to offer a bitcoin payment option.",
+   "description": "Bitcoin’s latest expansion is into commercial airspace after Latvian airline airBaltic announced customers can start using bitcoins to pay for tickets. AirBaltic is the first airline to offer a bitcoin payment option.",
    "source": "",
    "type": "link",
    "place": "None"

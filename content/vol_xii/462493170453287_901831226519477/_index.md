@@ -9,7 +9,7 @@
    "link": "http://www.canlii.org/en/ab/abqb/doc/2015/2015abqb700/2015abqb700.html",
    "name": "CanLII - 2015 ABQB 700 (CanLII)",
    "caption": "www.canlii.org",
-   "description": "[1]               This is a case where all of the participants have become victims of a pseudo legal scam. This judgment explains my refusal to interfere with a court-ordered foreclosure of property formerly owned by Alfred and Clara Parlee. As a direct result of the scam the foreclosure process was�",
+   "description": "[1]               This is a case where all of the participants have become victims of a pseudo legal scam. This judgment explains my refusal to interfere with a court-ordered foreclosure of property formerly owned by Alfred and Clara Parlee. As a direct result of the scam the foreclosure process was”",
    "source": "",
    "type": "link",
    "place": "None"

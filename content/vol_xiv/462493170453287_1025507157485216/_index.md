@@ -5,7 +5,7 @@
    "from_name": "Scott Duncan",
    "from_id": "927379467328526",
    "to_name": "[{u'id': u'462493170453287', u'name': u'THE TENDER FOR LAW', u'privacy': u'CLOSED'} {u'name': u'Me\\xf1o Zac', u'id': u'2041978196026333'}]",
-   "message": "Me�o Zac!\n\nHow did you find this group?",
+   "message": "Meéo Zac!\n\nHow did you find this group?",
    "link": "",
    "name": "",
    "caption": "",

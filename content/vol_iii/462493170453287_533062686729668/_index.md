@@ -9,7 +9,7 @@
    "link": "http://www.scribd.com/doc/150454057/Report-to-Crown-Counsel-REDACTED-pdf",
    "name": "Report to Crown Counsel - REDACTED.pdf",
    "caption": "scribd.com",
-   "description": "These are the charges I received on June 26th 2013. It was contained in a DVD. I looked up the DVD they gave me. I thought the DVD was going to be some MK ULTRA ready to manipulate my mind with subliminals. In the DVD there was a PDF file called \"Report to Crown Counsel - REDACTED.pdf\" and that was�",
+   "description": "These are the charges I received on June 26th 2013. It was contained in a DVD. I looked up the DVD they gave me. I thought the DVD was going to be some MK ULTRA ready to manipulate my mind with subliminals. In the DVD there was a PDF file called \"Report to Crown Counsel - REDACTED.pdf\" and that was”",
    "source": "",
    "type": "link",
    "place": "None"

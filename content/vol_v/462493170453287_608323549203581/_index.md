@@ -7,9 +7,9 @@
    "to_name": "[{u'id': u'462493170453287', u'name': u'THE TENDER FOR LAW', u'privacy': u'OPEN'} {u'name': u'Scott Duncan', u'id': u'927379467328526'}]",
    "message": "For Scott Duncan's review:\n\nI am not endorsing buying anything from this site.  Just an interesting video on Bitcoin.\n\n",
    "link": "http://keepyourassets.net/2014/01/04/trace-mayer-the-crypto-wars-freedom-of-speech-and-freedom-of-transaction/",
-   "name": "Trace Mayer : The Crypto-Wars � Freedom of Speech and Freedom of Transaction | Keep Your Assets",
+   "name": "Trace Mayer : The Crypto-Wars — Freedom of Speech and Freedom of Transaction | Keep Your Assets",
    "caption": "keepyourassets.net",
-   "description": "Posted in Asset Protection � PrivacyTrace Mayer : The Crypto-Wars � Freedom of Speech and Freedom of TransactionJanuary 4, 2014Comments:Permalink",
+   "description": "Posted in Asset Protection — PrivacyTrace Mayer : The Crypto-Wars — Freedom of Speech and Freedom of TransactionJanuary 4, 2014Comments:Permalink",
    "source": "",
    "type": "link",
    "place": "None"

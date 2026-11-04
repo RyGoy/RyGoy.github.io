@@ -9,7 +9,7 @@
    "link": "https://www.cryptocoinsnews.com/assembly-uses-bitcoin-block-chain-monetize-development/",
    "name": "Assembly Uses the Bitcoin Block Chain to Monetize Development - CryptoCoinsNews",
    "caption": "cryptocoinsnews.com",
-   "description": "In a recent interview with John Light�s podcast, P2P Connects Us; Matthew Dieters said of the project he helped start, Assembly.com: Assembly is a platform that allows people all over the world � designers, developers, community people, people that want to do marketing � to collaborate together on b�",
+   "description": "In a recent interview with John Light’s podcast, P2P Connects Us; Matthew Dieters said of the project he helped start, Assembly.com: Assembly is a platform that allows people all over the world — designers, developers, community people, people that want to do marketing — to collaborate together on b”",
    "source": "",
    "type": "link",
    "place": "None"

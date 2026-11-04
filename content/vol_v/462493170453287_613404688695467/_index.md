@@ -5,7 +5,7 @@
    "from_name": "August le Blanc",
    "from_id": "1.01530787868601E+016",
    "to_name": "[{u'id': u'462493170453287', u'name': u'THE TENDER FOR LAW', u'privacy': u'OPEN'}]",
-   "message": "Key information to help see profiles for who they really are.\nWe are watching the watchers now�\n\n",
+   "message": "Key information to help see profiles for who they really are.\nWe are watching the watchers now”\n\n",
    "link": "http://theaccidentalacnarchist.wordpress.com/2014/01/14/spies-in-your-forum-a-guide-to-forum-spies-spooks-feds-etc/",
    "name": "Spies in your Forum? A Guide To Forum Spies (spooks, feds, etc.)",
    "caption": "theaccidentalacnarchist.wordpress.com",

@@ -9,7 +9,7 @@
    "link": "https://www.youtube.com/watch?v=xUNGFZDO8mM&feature=youtu.be",
    "name": "Andreas M. Antonopoulos educates Senate of Canada about Bitcoin (Oct 8, ENG)",
    "caption": "youtube.com",
-   "description": "October 8th 2014, Committee on Banking, Trade and Commerce �Study on the use of digital currency�, 11th session Background on the �Study on the use of digita...",
+   "description": "October 8th 2014, Committee on Banking, Trade and Commerce “Study on the use of digital currency”, 11th session Background on the “Study on the use of digita...",
    "source": "https://www.youtube.com/embed/xUNGFZDO8mM?autoplay=1",
    "type": "video",
    "place": "None"

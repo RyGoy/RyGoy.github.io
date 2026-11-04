@@ -9,7 +9,7 @@
    "link": "https://www.youtube.com/watch?v=v-MyFH6EfAc#t=1238",
    "name": "Is HPD doing the best it can to respect Constitutional rights?",
    "caption": "youtube.com",
-   "description": "� 2015 Valente Gonzalez All rights reserved. February 22, 2015 Video brought to you thanks to the 1st Amendment of the United States Constitution. A person a...",
+   "description": "” 2015 Valente Gonzalez All rights reserved. February 22, 2015 Video brought to you thanks to the 1st Amendment of the United States Constitution. A person a...",
    "source": "https://www.youtube.com/embed/v-MyFH6EfAc?autoplay=1",
    "type": "video",
    "place": "None"

@@ -9,7 +9,7 @@
    "link": "https://knpuniversity.com/screencast/oauth/intro#play",
    "name": "Introduction",
    "caption": "knpuniversity.com",
-   "description": "OAuth2: that mystical beast that you kind of understand and occasionally wrestle to integrate with some social media site. Time to master OAuth2... and why not do it by building a real app with farmers, chickens and real-life providers like Facebook and Google Plus. We'll show you how OAuth really w�",
+   "description": "OAuth2: that mystical beast that you kind of understand and occasionally wrestle to integrate with some social media site. Time to master OAuth2... and why not do it by building a real app with farmers, chickens and real-life providers like Facebook and Google Plus. We'll show you how OAuth really w”",
    "source": "",
    "type": "link",
    "place": "None"

@@ -9,7 +9,7 @@
    "link": "https://secure.vimeo.com/63999879",
    "name": "Bankster trying very hard to gain control of my equity",
    "caption": "vimeo.com",
-   "description": "This time the Bankster does what he is told. The bankster thinks the bank owns the money in the till. The Bankster thinks he can force me to deposit the fruits of�",
+   "description": "This time the Bankster does what he is told. The bankster thinks the bank owns the money in the till. The Bankster thinks he can force me to deposit the fruits of”",
    "source": "http://vimeo.com/moogaloop.swf?clip_id=63999879&autoplay=1",
    "type": "video",
    "place": "None"

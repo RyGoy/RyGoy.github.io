@@ -9,7 +9,7 @@
    "link": "http://www.thegenesisblock.com/bitcoin-trading-are-we-primed-for-a-major-move-higher/",
    "name": "Bitcoin Trading: Are We Primed For A Major Move Higher? - The Genesis Block",
    "caption": "thegenesisblock.com",
-   "description": "Bitcoin Trading: Are We Primed For A Major Move Higher? May 23, 2013 Posted by phil In News, TradingTaggedcharts, Mid March, priceComments 0Yesterday we wrote about the low volatility after Mt. Gox�s accounts were seized. The following graph from that article illustrates how we haven�t seen volatili...",
+   "description": "Bitcoin Trading: Are We Primed For A Major Move Higher? May 23, 2013 Posted by phil In News, TradingTaggedcharts, Mid March, priceComments 0Yesterday we wrote about the low volatility after Mt. Gox’s accounts were seized. The following graph from that article illustrates how we haven’t seen volatili...",
    "source": "",
    "type": "link",
    "place": "None"

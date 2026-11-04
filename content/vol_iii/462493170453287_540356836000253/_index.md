@@ -9,7 +9,7 @@
    "link": "http://www.bankofcanada.ca/about/what-we-do/funds-management/",
    "name": "Bank of Canada",
    "caption": "bankofcanada.ca",
-   "description": "The Bank of Canada is the nation's central bank. We are not a commercial bank and do not offer banking services to the public. Rather, we have responsibilities for Canada's monetary policy, bank notes, financial system, and funds management. Our principal role, as defined in the Bank of Canada Act,�",
+   "description": "The Bank of Canada is the nation's central bank. We are not a commercial bank and do not offer banking services to the public. Rather, we have responsibilities for Canada's monetary policy, bank notes, financial system, and funds management. Our principal role, as defined in the Bank of Canada Act,”",
    "source": "",
    "type": "link",
    "place": "None"

@@ -9,7 +9,7 @@
    "link": "https://vimeo.com/ondemand/bitcoin",
    "name": "Bitcoin: The End of Money (as we know it)",
    "caption": "vimeo.com",
-   "description": "Bitcoin is � �Evil (Paul Krugman) �a Joke �",
+   "description": "Bitcoin is — “Evil (Paul Krugman) “a Joke “",
    "source": "https://player.vimeo.com/video/126668685?autoplay=1",
    "type": "video",
    "place": "None"

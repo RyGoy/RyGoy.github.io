@@ -7,7 +7,7 @@
    "to_name": "[{u'id': u'462493170453287', u'name': u'THE TENDER FOR LAW', u'privacy': u'OPEN'}]",
    "message": "\"A local official has said their behaviour was disrespectful and caused an earthquake a few days later that killed 18 climbers.\" Fucking BELIEF!",
    "link": "http://www.thestar.com/news/canada/2015/06/17/saskatchewan-siblings-deeply-sorry-for-stripping-naked-on-mountain-in-malaysia.html",
-   "name": "Saskatchewan siblings �deeply sorry� for stripping naked on mountain in Malaysia | Toronto Star",
+   "name": "Saskatchewan siblings “deeply sorry” for stripping naked on mountain in Malaysia | Toronto Star",
    "caption": "thestar.com",
    "description": "Lindsey and Danielle Petersen have released a statement saying they did not mean to offend anyone and were not aware of the spiritual significance of Mount Kinabalu.",
    "source": "",

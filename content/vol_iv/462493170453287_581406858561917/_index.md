@@ -9,7 +9,7 @@
    "link": "http://rt.com/op-edge/us-bitcoin-technology-economist-978/",
    "name": "US to lose out if it keeps stiffening Bitcoin regulations",
    "caption": "rt.com",
-   "description": "Bitcoin is an indiscriminate and pure technology, with which you can be anywhere and be anybody and still be able to spend - that�s why it�s very popular in the developing world, economist Jeffrey Tucker told RT.",
+   "description": "Bitcoin is an indiscriminate and pure technology, with which you can be anywhere and be anybody and still be able to spend - that’s why it’s very popular in the developing world, economist Jeffrey Tucker told RT.",
    "source": "",
    "type": "link",
    "place": "None"

@@ -9,7 +9,7 @@
    "link": "http://rt.com/usa/iowa-police-deadly-force-400/",
    "name": "Dad calls cops on son for taking truck, teen shot dead during chase",
    "caption": "rt.com",
-   "description": "The pursuit began on Monday morning, as Ames, Iowa Police Officer Adam McPherson trailed Tyler through red stoplights and flying debris from the truck�s lawn-equipment trailer onto the 33,000-student campus of Iowa State University.",
+   "description": "The pursuit began on Monday morning, as Ames, Iowa Police Officer Adam McPherson trailed Tyler through red stoplights and flying debris from the truck’s lawn-equipment trailer onto the 33,000-student campus of Iowa State University.",
    "source": "",
    "type": "link",
    "place": "None"

@@ -9,7 +9,7 @@
    "link": "http://en.wikipedia.org/wiki/Habeas_Corpus_Act_1679#Parliamentary_history",
    "name": "Habeas Corpus Act 1679 - Wikipedia, the free encyclopedia",
    "caption": "en.wikipedia.org",
-   "description": "The Habeas Corpus Act 1679 is an Act of the Parliament of England (31 Cha. 2 c. 2)[2] passed during the reign of King Charles II by what became known as the Habeas Corpus Parliament to define and strengthen the ancient prerogative writ of habeas corpus, a procedural device to force the courts to exa�",
+   "description": "The Habeas Corpus Act 1679 is an Act of the Parliament of England (31 Cha. 2 c. 2)[2] passed during the reign of King Charles II by what became known as the Habeas Corpus Parliament to define and strengthen the ancient prerogative writ of habeas corpus, a procedural device to force the courts to exa”",
    "source": "",
    "type": "link",
    "place": "None"

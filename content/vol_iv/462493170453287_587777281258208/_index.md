@@ -9,7 +9,7 @@
    "link": "http://rt.com/business/russian-lawmaker-dollar-ban-663/",
    "name": "Russian lawmaker seeks to ban US dollar, predicts 2017 collapse",
    "caption": "rt.com",
-   "description": "To protect Russians against the �collapsing US debt pyramid�, a Russian legislator has filed a draft bill to ban circulation of the currency in Russia.",
+   "description": "To protect Russians against the “collapsing US debt pyramid”, a Russian legislator has filed a draft bill to ban circulation of the currency in Russia.",
    "source": "",
    "type": "link",
    "place": "None"

@@ -9,7 +9,7 @@
    "link": "http://link.springer.com/article/10.1007/s10940-016-9283-z",
    "name": "Conditional Race Disparities in Criminal Sentencing: A Test of the Liberation Hypothesis From a...",
    "caption": "link.springer.com",
-   "description": "We examined cross-sectional sentencing data (n = 17,671) using a hurdle count model, which combines a binary (logistic regression) model to predict zero counts and a zero-truncated negative binomial model to predict positive counts. We also conducted a series of Monte Carlo simulations to demonstrat�",
+   "description": "We examined cross-sectional sentencing data (n = 17,671) using a hurdle count model, which combines a binary (logistic regression) model to predict zero counts and a zero-truncated negative binomial model to predict positive counts. We also conducted a series of Monte Carlo simulations to demonstrat”",
    "source": "",
    "type": "link",
    "place": "None"

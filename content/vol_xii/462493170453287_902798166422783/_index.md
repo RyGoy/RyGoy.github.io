@@ -9,7 +9,7 @@
    "link": "http://pamelageller.com/2015/11/muslims-slaughter-118-inside-paris-concert-hall-multiple-coordinated-attacks-death-toll-climbs-to-160.html/",
    "name": "Muslims slaughter 118 Inside Paris Concert Hall, Multiple Coordinated Attacks, Death Toll Climbs...",
    "caption": "pamelageller.com",
-   "description": "Muslims slaughter 118 Inside Paris Concert Hall, Multiple Coordinated Attacks, Death Toll Climbs to 160 ByPamela Geller on November 13, 2015 Current Affairs 00 Comments One of the jihadists apprehended stated, �I am from the Islamic State.� Millions of these savages have invaded the continent. �Terr�",
+   "description": "Muslims slaughter 118 Inside Paris Concert Hall, Multiple Coordinated Attacks, Death Toll Climbs to 160 ByPamela Geller on November 13, 2015 Current Affairs 00 Comments One of the jihadists apprehended stated, “I am from the Islamic State.” Millions of these savages have invaded the continent. “Terr”",
    "source": "",
    "type": "link",
    "place": "None"

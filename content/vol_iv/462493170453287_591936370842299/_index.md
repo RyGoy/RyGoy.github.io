@@ -9,7 +9,7 @@
    "link": "http://www.opp.ca/ecms/index.php?id=60",
    "name": "Ontario Provincial Police | What We Do",
    "caption": "opp.ca",
-   "description": "The Provincial Repeat Offender Parole Enforcement (ROPE) Squad is responsible for locating and apprehending provincial and federal escapees, parole violators, and dangerous offenders � those who are most likely to re-offend.",
+   "description": "The Provincial Repeat Offender Parole Enforcement (ROPE) Squad is responsible for locating and apprehending provincial and federal escapees, parole violators, and dangerous offenders — those who are most likely to re-offend.",
    "source": "",
    "type": "link",
    "place": "None"

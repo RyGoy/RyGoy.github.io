@@ -7,7 +7,7 @@
    "to_name": "[{u'id': u'462493170453287', u'name': u'THE TENDER FOR LAW', u'privacy': u'CLOSED'}]",
    "message": "",
    "link": "https://www.reddit.com/r/Bitcoin/comments/4qt061/the_economic_disconnect_still_astonishes_me/",
-   "name": "The economic disconnect still astonishes me sometimes. � /r/Bitcoin",
+   "name": "The economic disconnect still astonishes me sometimes. — /r/Bitcoin",
    "caption": "reddit.com",
    "description": "If you get the average person all hot and bothered about political problems you will almost certainly hear a few repeated and common complaints. ...",
    "source": "",

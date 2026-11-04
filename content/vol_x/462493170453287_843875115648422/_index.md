@@ -9,7 +9,7 @@
    "link": "http://www.gofundme.com/godsland",
    "name": "Click here to support Support Minister Goodbaudy! by Trent Goodbaudy",
    "caption": "www.gofundme.com",
-   "description": "Allow me to introduce myself; I am Trent Goodbaudy, the minister of travel for a very small (but growing) congregation.� I was born and raised in the Mormon religion. As a teenager I fell away from the church and spent many years trying to figure out my place in this life. I grew in knowledge, ex...",
+   "description": "Allow me to introduce myself; I am Trent Goodbaudy, the minister of travel for a very small (but growing) congregation.” I was born and raised in the Mormon religion. As a teenager I fell away from the church and spent many years trying to figure out my place in this life. I grew in knowledge, ex...",
    "source": "",
    "type": "link",
    "place": "None"

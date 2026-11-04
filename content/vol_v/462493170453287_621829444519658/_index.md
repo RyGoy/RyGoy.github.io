@@ -5,7 +5,7 @@
    "from_name": "Colin Stephen Tonks",
    "from_id": "1.01523951670811E+016",
    "to_name": "[{u'id': u'462493170453287', u'name': u'THE TENDER FOR LAW', u'privacy': u'OPEN'}]",
-   "message": "�Those who are able to see beyond the shadows and lies of their culture will never be understood, let alone believed, by the masses.� -Plato (427�347 BC)",
+   "message": "“Those who are able to see beyond the shadows and lies of their culture will never be understood, let alone believed, by the masses.” -Plato (427×347 BC)",
    "link": "",
    "name": "",
    "caption": "",

@@ -5,7 +5,7 @@
    "from_name": "Scott Duncan",
    "from_id": "927379467328526",
    "to_name": "[{u'id': u'462493170453287', u'name': u'THE TENDER FOR LAW', u'privacy': u'OPEN'} {u'name': u'Alain B\\xe9langer', u'id': u'1647745352161581'}]",
-   "message": "DaFuq?\n\nMORE Quebecois!\n\nAlain B�langer, how did you find this group?",
+   "message": "DaFuq?\n\nMORE Quebecois!\n\nAlain Bélanger, how did you find this group?",
    "link": "",
    "name": "",
    "caption": "",

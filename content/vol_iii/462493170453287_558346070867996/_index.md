@@ -5,7 +5,7 @@
    "from_name": "",
    "from_id": "",
    "to_name": "[{u'id': u'462493170453287', u'name': u'THE TENDER FOR LAW', u'privacy': u'OPEN'}]",
-   "message": "Does anyone have any suggestions on ways to find the name and policy number for Directors� and Officers� Liability Insurance for a corporate executive? I can't imagine they would just freely offer it to me?",
+   "message": "Does anyone have any suggestions on ways to find the name and policy number for Directors’ and Officers’ Liability Insurance for a corporate executive? I can't imagine they would just freely offer it to me?",
    "link": "",
    "name": "",
    "caption": "",

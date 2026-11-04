@@ -9,7 +9,7 @@
    "link": "https://www.canlii.org/en/on/laws/stat/rso-1990-c-c43/latest/",
    "name": "CanLII - Courts of Justice Act, RSO 1990, c C.43",
    "caption": "canlii.org",
-   "description": "�application� means a civil proceeding that is commenced by notice of application or by application; (�requ�te�)",
+   "description": "“application” means a civil proceeding that is commenced by notice of application or by application; (“requête”)",
    "source": "",
    "type": "link",
    "place": "None"

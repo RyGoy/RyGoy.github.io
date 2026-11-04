@@ -9,7 +9,7 @@
    "link": "http://on.rt.com/r06r24",
    "name": "Cop cleared of wrongdoing after shooting kittens in front of screaming kids",
    "caption": "rt.com",
-   "description": "An Ohio policeman shot to death a litter of kittens on Wednesday, telling a group of screaming children that the animals would be going to �kitty heaven�. But instead of firing the officer, the local police department cleared him of any wrongdoing.",
+   "description": "An Ohio policeman shot to death a litter of kittens on Wednesday, telling a group of screaming children that the animals would be going to “kitty heaven”. But instead of firing the officer, the local police department cleared him of any wrongdoing.",
    "source": "",
    "type": "link",
    "place": "None"

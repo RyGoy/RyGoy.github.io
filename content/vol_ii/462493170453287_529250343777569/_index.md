@@ -9,7 +9,7 @@
    "link": "http://www.educationcenter2000.com/legal/doctrine_of_acquiescence.htm",
    "name": "Doctrine of Acquisience",
    "caption": "educationcenter2000.com",
-   "description": "Under the Doctrine of Acquiescence as well as the Maxim in Law which states that �silence shows consent� 6 Barb. [N.Y.] 2B, 35. Qui non negat, fatetur and �He who does not deny, agrees,� (Trayner, Maxim 503), the Appellee�s silence constituted their agreement with the Appellants� arbitration proposa...",
+   "description": "Under the Doctrine of Acquiescence as well as the Maxim in Law which states that “silence shows consent” 6 Barb. [N.Y.] 2B, 35. Qui non negat, fatetur and “He who does not deny, agrees,” (Trayner, Maxim 503), the Appellee’s silence constituted their agreement with the Appellants’ arbitration proposa...",
    "source": "",
    "type": "link",
    "place": "None"

@@ -7,9 +7,9 @@
    "to_name": "[{u'id': u'462493170453287', u'name': u'THE TENDER FOR LAW', u'privacy': u'OPEN'}]",
    "message": "FREEEeeee-dumb! :D\n\nWhy you NEVER go to court.\nWhy you never give a name.\n\n...and BREACHING PROBATION? PROBATION?\n\nSeriously. It's NOTICE OF MISTAKE. and \"By what authority do YOU attach ANY name derived from a PUBLIC document, to ME\"?\n\nAlso Acceptable: Fuck YOU! YOU'RE a YOU. I'm a ME! :D",
    "link": "http://ntv.ca/woman-in-st-johns-court-claims-to-be-freeman-on-the-land/",
-   "name": "Woman in St. John�s Court Claims to be Freeman on the Land",
+   "name": "Woman in St. John’s Court Claims to be Freeman on the Land",
    "caption": "ntv.ca",
-   "description": "A 36-year-old woman was found guilty Friday of obstructing a police officer and breaching probation. She tried to claim the court had no �",
+   "description": "A 36-year-old woman was found guilty Friday of obstructing a police officer and breaching probation. She tried to claim the court had no “",
    "source": "",
    "type": "link",
    "place": "None"

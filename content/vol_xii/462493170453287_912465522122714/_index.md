@@ -9,7 +9,7 @@
    "link": "http://gizmodo.com/this-australian-says-he-and-his-dead-friend-invented-bi-1746958692",
    "name": "Bitcoin's Creator \"Satoshi Nakamoto\" Finally Unmasked",
    "caption": "gizmodo.com",
-   "description": "A monthlong Gizmodo investigation has uncovered compelling and perplexing new evidence in the search for Satoshi Nakamoto, the pseudonymous creator of Bitcoin. According to a cache of documents provided to Gizmodo which were corroborated interviews, Craig Steven Wright, an Australian businessman bas�",
+   "description": "A monthlong Gizmodo investigation has uncovered compelling and perplexing new evidence in the search for Satoshi Nakamoto, the pseudonymous creator of Bitcoin. According to a cache of documents provided to Gizmodo which were corroborated interviews, Craig Steven Wright, an Australian businessman basé",
    "source": "",
    "type": "link",
    "place": "None"

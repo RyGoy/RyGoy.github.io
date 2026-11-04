@@ -7,9 +7,9 @@
    "to_name": "[{u'id': u'462493170453287', u'name': u'THE TENDER FOR LAW', u'privacy': u'OPEN'}]",
    "message": "",
    "link": "http://www.lewrockwell.com/2014/09/ryan-mcmaken/global-elites-are-terrified/",
-   "name": "Global Elites Are Terrified � LewRockwell.com",
+   "name": "Global Elites Are Terrified — LewRockwell.com",
    "caption": "lewrockwell.com",
-   "description": "Government authorities in the UK have declared that the �Yes� campaign for secession has failed by a margin of approximately 55 percent to 45 percent. Yet, even without a majority vote for secession, the campaign for separation from the United Kingdom has already provided numerous insights into the�",
+   "description": "Government authorities in the UK have declared that the “Yes” campaign for secession has failed by a margin of approximately 55 percent to 45 percent. Yet, even without a majority vote for secession, the campaign for separation from the United Kingdom has already provided numerous insights into the”",
    "source": "",
    "type": "link",
    "place": "None"

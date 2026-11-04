@@ -5,7 +5,7 @@
    "from_name": "David-Paul Sip",
    "from_id": "1.01520931535474E+016",
    "to_name": "[{u'id': u'462493170453287', u'name': u'THE TENDER FOR LAW', u'privacy': u'OPEN'}]",
-   "message": "�These findings are both staggering and sobering. Over many years hundreds of children have fallen victim to child predators wrapped in the AUTHORITY and INTEGRITY of an HONORABLE faith,� the grand jury wrote. \n\nIs it a coincidence that the same words are often used to describe the \"good\" courts?",
+   "message": "“These findings are both staggering and sobering. Over many years hundreds of children have fallen victim to child predators wrapped in the AUTHORITY and INTEGRITY of an HONORABLE faith,” the grand jury wrote. \n\nIs it a coincidence that the same words are often used to describe the \"good\" courts?",
    "link": "http://www.thestar.com/news/world/2016/03/04/secret-archive-reveals-catholic-church-misdeeds-including-payout-chart-for-sex-acts.html",
    "name": "Secret archive reveals Catholic church misdeeds, including payout chart for sex acts | Toronto Star",
    "caption": "thestar.com",

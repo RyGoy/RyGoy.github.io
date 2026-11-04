@@ -9,7 +9,7 @@
    "link": "http://www.vice.com/en_ca/read/you-can-now-make-two-tenners-by-cutting-a-20-bill-in-half-in-this-quebec-town-vgtrn?utm_source=vicefbca",
    "name": "People Are Literally Cutting $20 Bills in Half to Make Two Tens In This Quebec Town | VICE | Canada",
    "caption": "vice.com",
-   "description": "You do you, Gasp�. You do you.",
+   "description": "You do you, Gasp”. You do you.",
    "source": "",
    "type": "link",
    "place": "None"

@@ -9,7 +9,7 @@
    "link": "http://www.opposingviews.com/i/society/guns/houston-pd-clears-officer-who-shot-wheelchair-bound-amputee",
    "name": "Houston PD Clears Officer who Shot Wheelchair-Bound Amputee",
    "caption": "opposingviews.com",
-   "description": "The Houston Police Department has cleared the officer who shot and killed a double amputee at his group home last September, claiming that the officer was not at fault.After an internal and external investigation, Police Chief Charles McClelland defended the officer�s actions, telling local channel�",
+   "description": "The Houston Police Department has cleared the officer who shot and killed a double amputee at his group home last September, claiming that the officer was not at fault.After an internal and external investigation, Police Chief Charles McClelland defended the officer’s actions, telling local channel”",
    "source": "",
    "type": "link",
    "place": "None"

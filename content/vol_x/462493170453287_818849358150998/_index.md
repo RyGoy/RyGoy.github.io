@@ -9,7 +9,7 @@
    "link": "http://www.zerohedge.com/news/2015-04-16/dutch-central-banker-fired-being-nazi-cross-dressing-nymphomaniac-dominatrix-prostit",
    "name": "Dutch Central Banker Fired For Being A \"Nazi Cross-Dressing, Nymphomaniac, Dominatrix\"...",
    "caption": "zerohedge.com",
-   "description": "They say don't let money printing get to your head, but for one now former central banker it is far too late. The identity of the former employee of the Dutch Central Bank in question is unknown, what is known is that the money authority of the Netherlands has fired a 46-year-old female employee who�",
+   "description": "They say don't let money printing get to your head, but for one now former central banker it is far too late. The identity of the former employee of the Dutch Central Bank in question is unknown, what is known is that the money authority of the Netherlands has fired a 46-year-old female employee who”",
    "source": "",
    "type": "link",
    "place": "None"

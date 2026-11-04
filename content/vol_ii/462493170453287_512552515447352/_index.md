@@ -9,7 +9,7 @@
    "link": "http://www.globalresearch.ca/the-basel-committee-and-the-global-banking-mafia/5334459",
    "name": "The Basel Committee and the Global Banking Mafia | Global Research",
    "caption": "globalresearch.ca",
-   "description": "The Basel Committee on Banking Supervision (hereinafter � the Committee) is closely associated with supranational organisations like the Bank for International Settlements in Basel (BIS), which is often called the �club�, the �headquarters� of central banks or the �Central Bank of Last Resort�. The�",
+   "description": "The Basel Committee on Banking Supervision (hereinafter — the Committee) is closely associated with supranational organisations like the Bank for International Settlements in Basel (BIS), which is often called the “club”, the “headquarters” of central banks or the “Central Bank of Last Resort”. The”",
    "source": "",
    "type": "link",
    "place": "None"

@@ -9,7 +9,7 @@
    "link": "http://freakoutnation.com/2013/07/24/police-chief-uploads-video-on-self-defense-while-displaying-how-to-shoot-nancy-pelosi-in-the-face/",
    "name": "Police Chief uploads video on self defense, while displaying how to shoot Nancy Pelosi in the...",
    "caption": "freakoutnation.com",
-   "description": "Gilberton, Pennsylvania Police Chief Mark Kessler uploaded a video of him firing restricted weapons and saying �fuck yourself� and he really, really doesn�t like liberals. Kessler has several videos uploaded on YouTube and in one he bemoans �libtards� and warns of an armed rebellion against the gove...",
+   "description": "Gilberton, Pennsylvania Police Chief Mark Kessler uploaded a video of him firing restricted weapons and saying “fuck yourself” and he really, really doesn’t like liberals. Kessler has several videos uploaded on YouTube and in one he bemoans “libtards” and warns of an armed rebellion against the gove...",
    "source": "",
    "type": "link",
    "place": "None"

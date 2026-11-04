@@ -9,7 +9,7 @@
    "link": "http://www.whiteoutpress.com/timeless/courts-quietly-confirm-mmr-vaccine-causes-autism/",
    "name": "Courts quietly confirm MMR Vaccine causes Autism",
    "caption": "whiteoutpress.com",
-   "description": "July 27, 2013. Austin. After decades of passionate debate, parents probably missed the repeated admissions by drug companies and governments alike that vaccines do in fact cause autism. For concerned parents seeking the truth, it�s worth remembering that the exact same people who own the world�s dru�",
+   "description": "July 27, 2013. Austin. After decades of passionate debate, parents probably missed the repeated admissions by drug companies and governments alike that vaccines do in fact cause autism. For concerned parents seeking the truth, it’s worth remembering that the exact same people who own the world’s dru”",
    "source": "",
    "type": "link",
    "place": "None"

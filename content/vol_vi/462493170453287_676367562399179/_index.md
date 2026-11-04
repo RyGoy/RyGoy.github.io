@@ -7,9 +7,9 @@
    "to_name": "[{u'id': u'462493170453287', u'name': u'THE TENDER FOR LAW', u'privacy': u'OPEN'}]",
    "message": "Anybody heard of Quickcoin yet?\n\nhttp://virtualmining.com/bitcoin-start-up-lets-people-send-bitcoin-to-facebook-friends/\n\nThey have a Facebook page too. Looks good.",
    "link": "http://virtualmining.com/bitcoin-start-up-lets-people-send-bitcoin-to-facebook-friends/",
-   "name": "Virtual Mining Bitcoin News � Bitcoin start-up lets people send bitcoin to Facebook friends",
+   "name": "Virtual Mining Bitcoin News — Bitcoin start-up lets people send bitcoin to Facebook friends",
    "caption": "virtualmining.com",
-   "description": "QuickCoin, a startup based in San Francisco, is betting that sending bitcoins through Facebook will help spur broader adoption. The company has rolled out a social wallet for bitcoins built on Facebook�s API that allows users to send bitcoins or fractions of bitcoins to their Facebook friends, autom�",
+   "description": "QuickCoin, a startup based in San Francisco, is betting that sending bitcoins through Facebook will help spur broader adoption. The company has rolled out a social wallet for bitcoins built on Facebook’s API that allows users to send bitcoins or fractions of bitcoins to their Facebook friends, autom”",
    "source": "",
    "type": "link",
    "place": "None"

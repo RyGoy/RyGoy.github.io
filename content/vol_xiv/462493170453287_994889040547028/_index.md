@@ -9,7 +9,7 @@
    "link": "http://www.journaldemontreal.com/2016/05/05/plus-besoin-de-permis-de-conduire-international-pour-se-rendre-en-floride",
    "name": "Plus besoin de permis international",
    "caption": "journaldemontreal.com",
-   "description": "Il suffira [aux Qu�b�cois] de pr�senter leur passeport et leur permis de conduire du Qu�bec en cas de besoin�.",
+   "description": "Il suffira [aux Québécois] de présenter leur passeport et leur permis de conduire du Québec en cas de besoin”.",
    "source": "",
    "type": "link",
    "place": "None"

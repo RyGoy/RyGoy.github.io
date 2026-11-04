@@ -9,7 +9,7 @@
    "link": "http://rt.com/usa/facebook-police-social-lipp-743/",
    "name": "Partnership between Facebook and police could make planning protests impossible",
    "caption": "rt.com",
-   "description": "A partnership between police departments and social media sites discussed at a convention in Philadelphia this week could allow law enforcement to keep anything deemed criminal off the Internet�and even stop people from organizing protests.",
+   "description": "A partnership between police departments and social media sites discussed at a convention in Philadelphia this week could allow law enforcement to keep anything deemed criminal off the Internet—and even stop people from organizing protests.",
    "source": "",
    "type": "link",
    "place": "None"

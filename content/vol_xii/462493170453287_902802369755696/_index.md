@@ -9,7 +9,7 @@
    "link": "https://www.youtube.com/watch?v=fv2ZMN3T18E",
    "name": "South Park - Safe Space - \"Reality Crashes The Party\"",
    "caption": "youtube.com",
-   "description": "The Shameless America Charity Event is crashed by Reality. Watch the new episode �Safe Space� for free (and totally uncensored) right here: http://cart.mn/Sa...",
+   "description": "The Shameless America Charity Event is crashed by Reality. Watch the new episode “Safe Space” for free (and totally uncensored) right here: http://cart.mn/Sa...",
    "source": "https://www.youtube.com/embed/fv2ZMN3T18E?autoplay=1",
    "type": "video",
    "place": "None"

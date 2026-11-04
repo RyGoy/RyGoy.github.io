@@ -9,7 +9,7 @@
    "link": "https://youtu.be/OljQtssHsQI",
    "name": "The Blockchain Could Disrupt Everything: Goldman Sachs' Jim Schneider",
    "caption": "youtube.com",
-   "description": "The Blockchain � the technology that underpins Bitcoin transactions � has applications far beyond just digital currency. Jim Schneider, a research analyst in...",
+   "description": "The Blockchain — the technology that underpins Bitcoin transactions — has applications far beyond just digital currency. Jim Schneider, a research analyst in...",
    "source": "https://www.youtube.com/embed/OljQtssHsQI?autoplay=1",
    "type": "video",
    "place": "None"

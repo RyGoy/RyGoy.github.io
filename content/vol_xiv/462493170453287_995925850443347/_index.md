@@ -9,7 +9,7 @@
    "link": "http://legalinnovationzone.ca/a2jchallenge/",
    "name": "Ontario Access to Justice Challenge",
    "caption": "legalinnovationzone.ca",
-   "description": "Technology has the power to transform the legal system in Canada. Access to justice and legal services is out of reach for many Canadians and businesses alike, often because the process is too slow, too expensive or too complex. The Legal Innovation Zone is committed to changing that and is looking�",
+   "description": "Technology has the power to transform the legal system in Canada. Access to justice and legal services is out of reach for many Canadians and businesses alike, often because the process is too slow, too expensive or too complex. The Legal Innovation Zone is committed to changing that and is looking”",
    "source": "",
    "type": "link",
    "place": "None"

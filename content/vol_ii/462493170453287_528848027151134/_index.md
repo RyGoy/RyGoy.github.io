@@ -9,7 +9,7 @@
    "link": "http://freemanireland.ning.com/video/ancient-ireland-s-success-with-the-free-market-and-a-stateless-so",
    "name": "Ancient Ireland's Success with the Free Market and a Stateless Society",
    "caption": "freemanireland.ning.com",
-   "description": "Ancient Ireland's success with the free market and a stateless society. General/Introductions to Anarcho-Capitalism http://www.ronpaulforums.com/entry.php?35..�",
+   "description": "Ancient Ireland's success with the free market and a stateless society. General/Introductions to Anarcho-Capitalism http://www.ronpaulforums.com/entry.php?35..”",
    "source": "http://www.youtube.com/e/su9OqvBbSD0",
    "type": "video",
    "place": "None"

@@ -7,7 +7,7 @@
    "to_name": "[{u'id': u'462493170453287', u'name': u'THE TENDER FOR LAW', u'privacy': u'OPEN'}]",
    "message": "Hookers Teach themselves about currency... \n\n...Let that sink in, ladies. HOOKERS know more about monetary theory than you.\n\n:D",
    "link": "https://ihb.io/2015-07-02/news/bitcoin-for-backpage-19558",
-   "name": "Bitcoin for Backpage � IHB News�",
+   "name": "Bitcoin for Backpage — IHB News”",
    "caption": "ihb.io",
    "description": "Bitcoin for Backpage is a realistic alternative after getting snubbed by Visa and MasterCard, A high end escort teaches other escorts about Bitcoin.",
    "source": "",

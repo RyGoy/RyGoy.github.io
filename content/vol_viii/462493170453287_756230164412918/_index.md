@@ -9,7 +9,7 @@
    "link": "http://www.thestar.com/news/city_hall/2014/12/05/city_sees_loss_of_296_million_in_declining_number_of_traffic_tickets.html",
    "name": "Toronto sees loss of $29.6 million in declining traffic tickets | Toronto Star",
    "caption": "thestar.com",
-   "description": "The city has yet to receive an explanation for a decline in tickets handed out by police between 2012 and 2014. This year�s loss totals a projected $29.6 million.",
+   "description": "The city has yet to receive an explanation for a decline in tickets handed out by police between 2012 and 2014. This year’s loss totals a projected $29.6 million.",
    "source": "",
    "type": "link",
    "place": "None"

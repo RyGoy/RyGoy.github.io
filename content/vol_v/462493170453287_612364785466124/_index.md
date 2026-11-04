@@ -9,7 +9,7 @@
    "link": "http://gigaom.com/2014/01/14/what-you-need-to-know-about-the-court-decision-that-just-struck-down-net-neutrality/",
    "name": "What you need to know about the court decision that just struck down net neutrality",
    "caption": "gigaom.com",
-   "description": "On Tuesday, an appeals court in Washington, D.C. struck down the FCC�s rules regarding net neutrality, which are designed to prevent ISPs from giving preferential treatment to certain kinds of data. Here�s what you need to know about the decision.",
+   "description": "On Tuesday, an appeals court in Washington, D.C. struck down the FCC’s rules regarding net neutrality, which are designed to prevent ISPs from giving preferential treatment to certain kinds of data. Here’s what you need to know about the decision.",
    "source": "",
    "type": "link",
    "place": "None"

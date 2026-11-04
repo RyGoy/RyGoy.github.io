@@ -7,9 +7,9 @@
    "to_name": "[{u'id': u'462493170453287', u'name': u'THE TENDER FOR LAW', u'privacy': u'OPEN'}]",
    "message": ":P ..... HAHAHAHA!!!!\n\n",
    "link": "http://fr.canoe.ca/techno/internet/archives/2014/04/20140417-165349.html",
-   "name": "- Qu�becoin: une monnaie virtuelle propre au Qu�bec",
+   "name": "- Québecoin: une monnaie virtuelle propre au Québec",
    "caption": "fr.canoe.ca",
-   "description": "Votre portail d'informations sur l'actualit� internationale, au Canada et au Qu�bec. M�t�o, circulation, forums et dossiers.",
+   "description": "Votre portail d'informations sur l'actualité internationale, au Canada et au Québec. Météo, circulation, forums et dossiers.",
    "source": "",
    "type": "link",
    "place": "None"

@@ -9,7 +9,7 @@
    "link": "http://peteslawdictionary.simplesite.com/",
    "name": "Pete's Law Dictionary",
    "caption": "peteslawdictionary.simplesite.com",
-   "description": "Pete�s Law Dictionary First Edition �   Accounting., Definition: To account, to be accountable for, as in WHO accounts for being surety.   Act of Birth. Definition: A �DEAL� made between a Mother and/or a Father and The Government, that has a COMMERCIAL purpose, and leads to a ...",
+   "description": "Pete’s Law Dictionary First Edition —   Accounting., Definition: To account, to be accountable for, as in WHO accounts for being surety.   Act of Birth. Definition: A “DEAL” made between a Mother and/or a Father and The Government, that has a COMMERCIAL purpose, and leads to a ...",
    "source": "",
    "type": "link",
    "place": "None"

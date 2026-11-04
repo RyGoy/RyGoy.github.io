@@ -9,7 +9,7 @@
    "link": "http://forklog.net/the-dao-in-depth-interview-with-stephan-tual-slock-it-cto/?utm_content=bufferb2cab&utm_medium=social&utm_source=facebook.com&utm_campaign=buffer",
    "name": "The DAO in-depth: Interview with Stephan Tual, Slock.it CTO | ForkLog",
    "caption": "forklog.net",
-   "description": "Interview 18.03.2016 The DAO in-depth: Interview with Stephan Tual, Slock.it CTO The Ethereum company Slock.it prepares to launch a decentralized autonomous organization (DAO) as a new type of corporate funding and management. The Germany-based company develops Ethereum-based software for smart lock�",
+   "description": "Interview 18.03.2016 The DAO in-depth: Interview with Stephan Tual, Slock.it CTO The Ethereum company Slock.it prepares to launch a decentralized autonomous organization (DAO) as a new type of corporate funding and management. The Germany-based company develops Ethereum-based software for smart lock”",
    "source": "",
    "type": "link",
    "place": "None"

@@ -7,7 +7,7 @@
    "to_name": "[{u'id': u'462493170453287', u'name': u'THE TENDER FOR LAW', u'privacy': u'OPEN'}]",
    "message": "",
    "link": "http://www.alternet.org/civil-liberties/virginia-gubernatorial-candidate-wants-outlaw-oral-sex",
-   "name": "Virginia Gubernatorial Candidate Wants to Outlaw Oral Sex�Yup, That Includes Between Married Couples",
+   "name": "Virginia Gubernatorial Candidate Wants to Outlaw Oral Sex—Yup, That Includes Between Married Couples",
    "caption": "alternet.org",
    "description": "Republican Ken Cuccinelli seeks to reinstate unconstitutional 'Crimes Against Nature' law.",
    "source": "",

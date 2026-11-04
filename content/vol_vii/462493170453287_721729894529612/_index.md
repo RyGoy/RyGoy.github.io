@@ -9,7 +9,7 @@
    "link": "http://youtu.be/tdvGLdb0iNo",
    "name": "The LaNi Black Song.",
    "caption": "youtube.com",
-   "description": "a trav�s de YouTube Capture",
+   "description": "a trav’s de YouTube Capture",
    "source": "",
    "type": "link",
    "place": "None"

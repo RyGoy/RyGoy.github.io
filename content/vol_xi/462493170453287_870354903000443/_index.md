@@ -9,7 +9,7 @@
    "link": "https://en.wikipedia.org/wiki/Outlaw#Legal_history",
    "name": "Outlaw - Wikipedia, the free encyclopedia",
    "caption": "en.wikipedia.org",
-   "description": "In historical legal systems, an outlaw is declared as outside the protection of the law. In pre-modern societies, the criminal is withdrawn all legal protection, so that anyone is legally empowered to persecute or kill them. Outlawry was thus one of the harshest penalties in the legal system. In ear�",
+   "description": "In historical legal systems, an outlaw is declared as outside the protection of the law. In pre-modern societies, the criminal is withdrawn all legal protection, so that anyone is legally empowered to persecute or kill them. Outlawry was thus one of the harshest penalties in the legal system. In ear”",
    "source": "",
    "type": "link",
    "place": "None"

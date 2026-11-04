@@ -5,7 +5,7 @@
    "from_name": "Pete Daoust",
    "from_id": "1.02017712542701E+016",
    "to_name": "[{u'id': u'462493170453287', u'name': u'THE TENDER FOR LAW', u'privacy': u'OPEN'}]",
-   "message": "Today, April the 16th 2013, Prime Minister Pauline Marois went out publicly asking Stephen Harper to pull out the 1982 Constitution Archieves and give a FULL DISCLOSURE of what REALLY happened, what�s had been hidden�..????....apparently there is some sneeky dirty things behind closed doors about this 1982 constitution rapatriment�..ANY HINTS you guys could add to this ???",
+   "message": "Today, April the 16th 2013, Prime Minister Pauline Marois went out publicly asking Stephen Harper to pull out the 1982 Constitution Archieves and give a FULL DISCLOSURE of what REALLY happened, what’s had been hidden…..????....apparently there is some sneeky dirty things behind closed doors about this 1982 constitution rapatriment…..ANY HINTS you guys could add to this ???",
    "link": "",
    "name": "",
    "caption": "",

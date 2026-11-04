@@ -7,7 +7,7 @@
    "to_name": "[{u'id': u'462493170453287', u'name': u'THE TENDER FOR LAW', u'privacy': u'OPEN'}]",
    "message": "So... someone else besides us sees something wrong.",
    "link": "http://www.salon.com/2013/05/01/poll_3_in_10_voters_say_armed_revolution_might_be_necessary/",
-   "name": "Poll: 3 in 10 voters say �armed revolution might be necessary�",
+   "name": "Poll: 3 in 10 voters say “armed revolution might be necessary”",
    "caption": "salon.com",
    "description": "29 percent say they believe they'll have to act \"in order to protect our liberties\" in the next few years",
    "source": "",

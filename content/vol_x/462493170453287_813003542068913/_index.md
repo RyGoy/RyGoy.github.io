@@ -9,7 +9,7 @@
    "link": "http://en.wikipedia.org/wiki/Executive_Order_6102",
    "name": "Executive Order 6102 - Wikipedia, the free encyclopedia",
    "caption": "en.wikipedia.org",
-   "description": "Executive Order 6102 is a United States presidential executive order signed on April 5, 1933, by President Franklin D. Roosevelt \"forbidding the Hoarding of gold coin, gold bullion, and gold certificates within the continental United States\". The order criminalized the possession of monetary gold by�",
+   "description": "Executive Order 6102 is a United States presidential executive order signed on April 5, 1933, by President Franklin D. Roosevelt \"forbidding the Hoarding of gold coin, gold bullion, and gold certificates within the continental United States\". The order criminalized the possession of monetary gold by”",
    "source": "",
    "type": "link",
    "place": "None"

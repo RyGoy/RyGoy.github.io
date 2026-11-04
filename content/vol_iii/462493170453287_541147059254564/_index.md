@@ -9,7 +9,7 @@
    "link": "http://tech.slashdot.org/story/13/07/25/1732257/hackers-reveal-nasty-new-car-attacks",
    "name": "Hackers Reveal Nasty New Car Attacks - Slashdot",
    "caption": "tech.slashdot.org",
-   "description": "schwit1 writes \"Stomping on the brakes of a 3,500-pound Ford Escape that refuses to stop�or even slow down�produces a unique feeling of anxiety. In this case it also produces a deep groaning sound, like an angry water buffalo bellowing somewhere under the SUV's chassis. The more I pound�",
+   "description": "schwit1 writes \"Stomping on the brakes of a 3,500-pound Ford Escape that refuses to stop—or even slow down—produces a unique feeling of anxiety. In this case it also produces a deep groaning sound, like an angry water buffalo bellowing somewhere under the SUV's chassis. The more I pound”",
    "source": "",
    "type": "link",
    "place": "None"

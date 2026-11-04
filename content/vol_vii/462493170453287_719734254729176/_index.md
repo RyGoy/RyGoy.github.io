@@ -9,7 +9,7 @@
    "link": "http://dailycaller.com/2014/09/12/there-are-now-52-explanations-for-the-pause-in-global-warming/",
    "name": "There Are Now 52 Explanations For The Pause In Global Warming",
    "caption": "dailycaller.com",
-   "description": "It�s been a busy year for climate scientists, who have been trying to explain why there has been no global warming for nearly two decades. The Daily Caller News Foundation reported in February th",
+   "description": "It’s been a busy year for climate scientists, who have been trying to explain why there has been no global warming for nearly two decades. The Daily Caller News Foundation reported in February th",
    "source": "",
    "type": "link",
    "place": "None"

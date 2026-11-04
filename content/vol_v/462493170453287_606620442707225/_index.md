@@ -9,7 +9,7 @@
    "link": "http://web.law.duke.edu/cspd/publicdomainday/2014/pre-1976",
    "name": "What Could Have Entered the Public Domain on January 1, 2014?",
    "caption": "web.law.duke.edu",
-   "description": "Current US law extends copyright for 70 years after the date of the author�s death, and corporate �works-for-hire� are copyrighted for 95 years after publication. But prior to the 1976 Copyright Act (which became effective in 1978), the maximum copyright term was 56 years � an initial term of 28 yea...",
+   "description": "Current US law extends copyright for 70 years after the date of the author’s death, and corporate “works-for-hire” are copyrighted for 95 years after publication. But prior to the 1976 Copyright Act (which became effective in 1978), the maximum copyright term was 56 years — an initial term of 28 yea...",
    "source": "",
    "type": "link",
    "place": "None"

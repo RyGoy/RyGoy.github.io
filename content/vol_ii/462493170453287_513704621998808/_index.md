@@ -9,7 +9,7 @@
    "link": "http://removingtheshackles.blogspot.ca/2013/05/judge-dale-how-to-defeat-admiralty.html",
    "name": "Removing The Shackles: Judge Dale: How to Defeat Admiralty Courts",
    "caption": "removingtheshackles.blogspot.com",
-   "description": "�Sirius� is a feature length documentary that follows Dr. Steven Greer � an Emergency Medicine doctor turned UFO/ New Energy researcher � as he struggles to disclose top secret information about classified energy & propulsion techniques. Along the way, Dr. Greer investigates new technology and sheds...",
+   "description": "“Sirius” is a feature length documentary that follows Dr. Steven Greer — an Emergency Medicine doctor turned UFO/ New Energy researcher — as he struggles to disclose top secret information about classified energy & propulsion techniques. Along the way, Dr. Greer investigates new technology and sheds...",
    "source": "",
    "type": "link",
    "place": "None"

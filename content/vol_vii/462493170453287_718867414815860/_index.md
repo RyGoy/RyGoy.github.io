@@ -9,7 +9,7 @@
    "link": "http://www.cbc.ca/news/world/american-shakedown-police-won-t-charge-you-but-they-ll-grab-your-money-1.2760736",
    "name": "American shakedown: Police won't charge you, but they'll grab your money",
    "caption": "cbc.ca",
-   "description": "Across America, law enforcement officers - from federal agents to state troopers right down to sheriffs in one-street backwaters - are operating a vast, co-ordinated scheme to grab as much of the public�s cash as they can, writes Neil Macdonald.",
+   "description": "Across America, law enforcement officers - from federal agents to state troopers right down to sheriffs in one-street backwaters - are operating a vast, co-ordinated scheme to grab as much of the public’s cash as they can, writes Neil Macdonald.",
    "source": "",
    "type": "link",
    "place": "None"

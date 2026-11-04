@@ -9,7 +9,7 @@
    "link": "https://www.facebook.com/FilmingCops/photos/a.134288416606262.13410.133646306670473/588073171227782/?type=3",
    "name": "Filming Cops",
    "caption": "",
-   "description": "COLUMBUS, OH - An 11-yr-old girl whose mother was shot and killed before her eyes in 2008 by a cop was arrested three years later for directing obscene hand gestures in the direction of cops. They charged the 11-yr-old girl with \"persistent disorderly conduct.\"\n\nOn Jan. 4, 2008, police shot and killed the girl�s peaceful mother, Tarika Wilson, 26, as she huddled with her children. They also shot and killed two dogs belonging to the family. Also shot was the girl�s 1-year-old brother. He survived.\n\nhttp://www.toledoblade.com/Courts/2013/10/11/Lawsuit-can-proceed-against-Lima-police.html#ixXUEOqe7xehEJm8.99",
+   "description": "COLUMBUS, OH - An 11-yr-old girl whose mother was shot and killed before her eyes in 2008 by a cop was arrested three years later for directing obscene hand gestures in the direction of cops. They charged the 11-yr-old girl with \"persistent disorderly conduct.\"\n\nOn Jan. 4, 2008, police shot and killed the girl’s peaceful mother, Tarika Wilson, 26, as she huddled with her children. They also shot and killed two dogs belonging to the family. Also shot was the girl’s 1-year-old brother. He survived.\n\nhttp://www.toledoblade.com/Courts/2013/10/11/Lawsuit-can-proceed-against-Lima-police.html#ixXUEOqe7xehEJm8.99",
    "source": "",
    "type": "photo",
    "place": "None"

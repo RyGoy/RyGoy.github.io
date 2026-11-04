@@ -9,7 +9,7 @@
    "link": "http://www.onedollarbill.org/decoding.html",
    "name": "Decoding a United States One Dollar Bill",
    "caption": "onedollarbill.org",
-   "description": "Did you ever wonder about all the codes and symbols on U.S. paper money. This page from the website The One Dollar Bill Collector walks you through all of the features including the Federal Reserve Bank Number, serial number, and even teaches you how to know what position on the printing plate a par�",
+   "description": "Did you ever wonder about all the codes and symbols on U.S. paper money. This page from the website The One Dollar Bill Collector walks you through all of the features including the Federal Reserve Bank Number, serial number, and even teaches you how to know what position on the printing plate a par”",
    "source": "",
    "type": "link",
    "place": "None"

@@ -9,7 +9,7 @@
    "link": "http://rinf.com/alt-news/breaking-news/video-dallas-cop-shoots-mentally-ill-man-who-stood-perfectly-still/84302/",
    "name": "Video: Dallas Cop Shoots Mentally Ill Man Who Stood Perfectly Still",
    "caption": "rinf.com",
-   "description": "Footage contradicts officers� claims that man approached officers in aggressive manner Adan SalazarInfowars.comOct. 18, 2013 An officer with the Dallas Police Department is facing major criticism after a home surveillance camera captured him opening fire on a mentally ill man without any provocation...",
+   "description": "Footage contradicts officers’ claims that man approached officers in aggressive manner Adan SalazarInfowars.comOct. 18, 2013 An officer with the Dallas Police Department is facing major criticism after a home surveillance camera captured him opening fire on a mentally ill man without any provocation...",
    "source": "",
    "type": "link",
    "place": "None"

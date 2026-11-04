@@ -9,7 +9,7 @@
    "link": "http://vimeo.com/98654624",
    "name": "London Technology Week interview: Stephan Tual",
    "caption": "vimeo.com",
-   "description": "Ethereum CCO Tual doesn�t like the fact that when you use Facebook, you ask for permission to log into your own account on a remote server which you don�t own to�",
+   "description": "Ethereum CCO Tual doesn’t like the fact that when you use Facebook, you ask for permission to log into your own account on a remote server which you don’t own to”",
    "source": "https://player.vimeo.com/video/98654624?autoplay=1",
    "type": "video",
    "place": "None"

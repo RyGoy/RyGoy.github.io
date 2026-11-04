@@ -5,7 +5,7 @@
    "from_name": "Pete Daoust",
    "from_id": "1.02017712542701E+016",
    "to_name": "[{u'id': u'462493170453287', u'name': u'THE TENDER FOR LAW', u'privacy': u'OPEN'}]",
-   "message": "Just started a French facebook group called \"La s�ret� de SA personne\"\n\nFor those who understand French...but The Tender for Law is my preferred group :P",
+   "message": "Just started a French facebook group called \"La sûreté de SA personne\"\n\nFor those who understand French...but The Tender for Law is my preferred group :P",
    "link": "",
    "name": "",
    "caption": "",

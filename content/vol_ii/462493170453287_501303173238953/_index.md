@@ -9,7 +9,7 @@
    "link": "http://www.buildfreedom.com/tl/comliens.shtml",
    "name": "Practical Freedom - Commercial Lienns: A Most Potent Weapon",
    "caption": "buildfreedom.com",
-   "description": "Faced with corrupt lawyers and judges, no litigant can expect to win in court by simply playing defense. To beat them, you must be able to scare them. You must be able to make them respect you, and that means you must be able to take the offense � attack them personally.",
+   "description": "Faced with corrupt lawyers and judges, no litigant can expect to win in court by simply playing defense. To beat them, you must be able to scare them. You must be able to make them respect you, and that means you must be able to take the offense — attack them personally.",
    "source": "",
    "type": "link",
    "place": "None"

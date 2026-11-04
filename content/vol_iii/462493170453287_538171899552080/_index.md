@@ -9,7 +9,7 @@
    "link": "http://www.montrealgazette.com/news/Edmonton+charged+allegedly+posting+Magnotta+slaying/8672195/story.html",
    "name": "Edmonton gore-site operator charged with posting alleged Magnotta slaying video",
    "caption": "montrealgazette.com",
-   "description": "The owner and operator of a well-known �real gore� website is charged with corrupting morals for posting a video allegedly depicting the murder of student Jun Lin by Luka Magnotta.",
+   "description": "The owner and operator of a well-known “real gore” website is charged with corrupting morals for posting a video allegedly depicting the murder of student Jun Lin by Luka Magnotta.",
    "source": "",
    "type": "link",
    "place": "None"

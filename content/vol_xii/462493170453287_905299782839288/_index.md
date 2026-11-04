@@ -9,7 +9,7 @@
    "link": "http://www.cbc.ca/news/toronto-man-sues-police-1.3324361",
    "name": "Toronto man sues police for $5M after violent arrest caught on camera",
    "caption": "cbc.ca",
-   "description": "Police say a video of officers punching and kicking a 21-year-old man during an arrest \"doesn�t tell the whole story.\"",
+   "description": "Police say a video of officers punching and kicking a 21-year-old man during an arrest \"doesn’t tell the whole story.\"",
    "source": "",
    "type": "link",
    "place": "None"

@@ -9,7 +9,7 @@
    "link": "http://www.teamsteverhyner.com/meet-the-dad-who-registered-his-daughters-birth-on-the-blockchain/",
    "name": "Meet the Dad Who Registered His Daughter's Birth on the Blockchain",
    "caption": "teamsteverhyner.com",
-   "description": "San Francisco-based entrepreneur Santiago Siri celebrated the arrival of his baby daughter Roma in a rather different way this week � by registering her birth on the bitcoin blockchain.",
+   "description": "San Francisco-based entrepreneur Santiago Siri celebrated the arrival of his baby daughter Roma in a rather different way this week — by registering her birth on the bitcoin blockchain.",
    "source": "",
    "type": "link",
    "place": "None"

@@ -9,7 +9,7 @@
    "link": "http://www.cbc.ca/news/politics/justice-lawyers-payroll-vacation-1.3446060",
    "name": "Justice Canada payroll screw-up benefited more than 3,700 lawyers",
    "caption": "cbc.ca",
-   "description": "CBC News has learned that the federal Justice Department has never publicly reported a payroll glitch that may have benefited its employees by up to $50 million, going back to 2007. A source says embarrassed officials tried to sweep the problem under the rug, but the department officials say it's ju�",
+   "description": "CBC News has learned that the federal Justice Department has never publicly reported a payroll glitch that may have benefited its employees by up to $50 million, going back to 2007. A source says embarrassed officials tried to sweep the problem under the rug, but the department officials say it's ju”",
    "source": "",
    "type": "link",
    "place": "None"

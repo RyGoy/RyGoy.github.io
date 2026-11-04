@@ -5,7 +5,7 @@
    "from_name": "Sirwade Firsbey",
    "from_id": "4593312846627",
    "to_name": "[{u'id': u'462493170453287', u'name': u'THE TENDER FOR LAW', u'privacy': u'OPEN'}]",
-   "message": "Ayn Rand\n\"There is no such thing as duty. If you know that a thing is right, you want to do it. If you don't want to do it�it isn't right. If it's right and you don't want to do it�you don't know what right is and you're not a man.\" | We The Living",
+   "message": "Ayn Rand\n\"There is no such thing as duty. If you know that a thing is right, you want to do it. If you don't want to do it—it isn't right. If it's right and you don't want to do it—you don't know what right is and you're not a man.\" | We The Living",
    "link": "",
    "name": "",
    "caption": "",

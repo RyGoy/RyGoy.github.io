@@ -9,7 +9,7 @@
    "link": "http://phoenixtears.ca/",
    "name": "Phoenix Tears",
    "caption": "phoenixtears.ca",
-   "description": "On August 11th, 2013, Dr. Sanjay Gupta�s �Weed� documentary premiered on CNN. A large part of the film focuses on Charlotte Figi, a patient who used high-CBD cannabis oil to almost completely control Dravet Syndrome, one of the most severe forms of epilepsy. With the oil, Charlotte�s seizures droppe...",
+   "description": "On August 11th, 2013, Dr. Sanjay Gupta’s “Weed” documentary premiered on CNN. A large part of the film focuses on Charlotte Figi, a patient who used high-CBD cannabis oil to almost completely control Dravet Syndrome, one of the most severe forms of epilepsy. With the oil, Charlotte’s seizures droppe...",
    "source": "",
    "type": "link",
    "place": "None"

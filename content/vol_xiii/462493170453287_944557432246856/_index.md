@@ -7,9 +7,9 @@
    "to_name": "[{u'id': u'462493170453287', u'name': u'THE TENDER FOR LAW', u'privacy': u'OPEN'}]",
    "message": "http://forklog.net/bitnation-to-launch-the-worlds-first-virtual-constitution-on-ethereum-next-wednesday/\n\nThis is big, right?",
    "link": "http://forklog.net/bitnation-to-launch-the-worlds-first-virtual-constitution-on-ethereum-next-wednesday/",
-   "name": "BitNation to Launch the World�s First Virtual Constitution on Ethereum Next Wednesday | ForkLog",
+   "name": "BitNation to Launch the World’s First Virtual Constitution on Ethereum Next Wednesday | ForkLog",
    "caption": "forklog.net",
-   "description": "Interview 15.02.2016 BitNation to Launch the World�s First Virtual Constitution on Ethereum Next Wednesday In 2015, Estonia made the cryptocurrency press headlines when it announced a cooperation between its e-residency platform and blockchain initiative BitNation. While the program is mainly focuse�",
+   "description": "Interview 15.02.2016 BitNation to Launch the World’s First Virtual Constitution on Ethereum Next Wednesday In 2015, Estonia made the cryptocurrency press headlines when it announced a cooperation between its e-residency platform and blockchain initiative BitNation. While the program is mainly focuse”",
    "source": "",
    "type": "link",
    "place": "None"

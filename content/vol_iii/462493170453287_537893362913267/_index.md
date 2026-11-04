@@ -9,7 +9,7 @@
    "link": "http://www.forbiddenknowledgetv.com/videos/money/drive-the-surprising-truth-about-what-motivates-us.html",
    "name": "Money Drive: The Surprising Truth About What Motivates Us",
    "caption": "forbiddenknowledgetv.com",
-   "description": "<meta name=�p.domain_verify� content=�9d541a6e8bb6377",
+   "description": "<meta name=“p.domain_verify” content=“9d541a6e8bb6377",
    "source": "",
    "type": "link",
    "place": "None"

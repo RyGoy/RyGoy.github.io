@@ -9,7 +9,7 @@
    "link": "http://wikileaks.org/tpp",
    "name": "Secret Trans-Pacific Partnership Agreement (TPP)",
    "caption": "wikileaks.org",
-   "description": "Today, 13 November 2013, WikiLeaks released the secret negotiated draft text for the entire TPP (Trans-Pacific Partnership) Intellectual Property Rights Chapter. The TPP is the largest-ever economic treaty, encompassing nations representing more than 40 per cent of the world�s GDP. The WikiLeaks rel...",
+   "description": "Today, 13 November 2013, WikiLeaks released the secret negotiated draft text for the entire TPP (Trans-Pacific Partnership) Intellectual Property Rights Chapter. The TPP is the largest-ever economic treaty, encompassing nations representing more than 40 per cent of the world’s GDP. The WikiLeaks rel...",
    "source": "",
    "type": "link",
    "place": "None"

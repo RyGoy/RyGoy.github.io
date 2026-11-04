@@ -9,7 +9,7 @@
    "link": "http://www.thestar.com/news/canada/2014/09/02/new_head_of_ontario_bar_association_speaks_out_about_depression.html",
    "name": "New head of Ontario Bar Association speaks out about depression | Toronto Star",
    "caption": "thestar.com",
-   "description": "Crown counsel Orlando da Silva knows what it's like to be in a \"dark place� from which he almost didn�t return. Before starting his presidency of the lawyers� association, he decided to share his story.",
+   "description": "Crown counsel Orlando da Silva knows what it's like to be in a \"dark place” from which he almost didn’t return. Before starting his presidency of the lawyers’ association, he decided to share his story.",
    "source": "",
    "type": "link",
    "place": "None"

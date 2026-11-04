@@ -9,7 +9,7 @@
    "link": "http://anonhq.com/first-water-powered-generator-can-buy/",
    "name": "Water Powered Generator",
    "caption": "anonhq.com",
-   "description": "Written by: Tiobe   A Toronto, Canada company, GDS Technologies Ltd., says it has developed a portable generator that runs solely on tap water. The GDS portable water generator comes in three models: 5,000 watts, 10,000 watts and 15,000 watts. According to inventor Gregory Potter, �",
+   "description": "Written by: Tiobe   A Toronto, Canada company, GDS Technologies Ltd., says it has developed a portable generator that runs solely on tap water. The GDS portable water generator comes in three models: 5,000 watts, 10,000 watts and 15,000 watts. According to inventor Gregory Potter, “",
    "source": "",
    "type": "link",
    "place": "None"

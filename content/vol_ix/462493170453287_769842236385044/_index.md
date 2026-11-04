@@ -9,7 +9,7 @@
    "link": "http://www.bloomberg.com/news/2014-12-24/spy-agency-to-release-reports-documenting-surveillance-errors.html",
    "name": "U.S. Spy Agency Reports Improper Surveillance of Americans",
    "caption": "bloomberg.com",
-   "description": "The National Security Agency today released reports on intelligence collection that may have violated the law or U.S. policy over more than a decade, including unauthorized surveillance of Americans� overseas communications.",
+   "description": "The National Security Agency today released reports on intelligence collection that may have violated the law or U.S. policy over more than a decade, including unauthorized surveillance of Americans’ overseas communications.",
    "source": "",
    "type": "link",
    "place": "None"

@@ -9,7 +9,7 @@
    "link": "http://www.michaelgeist.ca/2015/06/how-the-budget-bill-quietly-reshapes-canadian-privacy-law/",
    "name": "How the Budget Bill Quietly Reshapes Canadian Privacy Law",
    "caption": "www.michaelgeist.ca",
-   "description": "A budget implementation bill is an unlikely - and many would say inappropriate - place to make major changes to Canadian privacy law. Yet Bill C-59, the government�s 158-page bill that is set to sweep through the House of Commons, does just that. The omnibus budget bill touches on a wide range of is�",
+   "description": "A budget implementation bill is an unlikely - and many would say inappropriate - place to make major changes to Canadian privacy law. Yet Bill C-59, the government’s 158-page bill that is set to sweep through the House of Commons, does just that. The omnibus budget bill touches on a wide range of is”",
    "source": "",
    "type": "link",
    "place": "None"

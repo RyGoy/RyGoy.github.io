@@ -9,7 +9,7 @@
    "link": "http://youtu.be/5xCB2b_-ioc",
    "name": "INEQUALITY FOR ALL - Clip",
    "caption": "youtube.com",
-   "description": "NOW IN THEATERS! A passionate argument on behalf of the middle class, INEQUALITY FOR ALL features Robert Reich�professor, best-selling author, and Clinton ca...",
+   "description": "NOW IN THEATERS! A passionate argument on behalf of the middle class, INEQUALITY FOR ALL features Robert Reich—professor, best-selling author, and Clinton ca...",
    "source": "http://www.youtube.com/v/5xCB2b_-ioc?autohide=1&version=3&autoplay=1",
    "type": "video",
    "place": "None"

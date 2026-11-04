@@ -7,9 +7,9 @@
    "to_name": "[{u'id': u'462493170453287', u'name': u'THE TENDER FOR LAW', u'privacy': u'OPEN'}]",
    "message": "WWEEEE !!!!!!!!! :D\n\n",
    "link": "http://www.lapresse.ca/actualites/justice-et-affaires-criminelles/201410/17/01-4809979-offensive-du-fisc-contre-les-citoyens-souverains.php",
-   "name": "Offensive du fisc contre les �citoyens souverains� | Vincent Larouche | Justice et affaires...",
+   "name": "Offensive du fisc contre les “citoyens souverains” | Vincent Larouche | Justice et affaires...",
    "caption": "lapresse.ca",
-   "description": "Le fisc f�d�ral et la S�ret� du Qu�bec ont frapp� hier les adeptes qu�b�cois d'une id�ologie extr�miste antigouvernement, qui fait de plus en plus d'adeptes au Canada...",
+   "description": "Le fisc fédéral et la Sûreté du Québec ont frappé hier les adeptes québécois d'une idéologie extrémiste antigouvernement, qui fait de plus en plus d'adeptes au Canada...",
    "source": "",
    "type": "link",
    "place": "None"

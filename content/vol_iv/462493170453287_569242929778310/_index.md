@@ -9,7 +9,7 @@
    "link": "http://www.calgarysun.com/2013/10/07/okotoks-dealing-with-own-freeman-on-the-land-saga-that-includes-alleged-assault-on-rcmp-officer",
    "name": "Okotoks dealing with own Freeman on the Land saga that includes alleged assault on RCMP officer",
    "caption": "calgarysun.com",
-   "description": "Just weeks after a self-proclaimed Freeman on the Land came to light in Calgary, the saga of another man who says he�s part of the same movement continues south of the city.",
+   "description": "Just weeks after a self-proclaimed Freeman on the Land came to light in Calgary, the saga of another man who says he’s part of the same movement continues south of the city.",
    "source": "",
    "type": "link",
    "place": "None"

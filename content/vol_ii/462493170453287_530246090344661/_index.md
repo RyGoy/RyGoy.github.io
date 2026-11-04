@@ -9,7 +9,7 @@
    "link": "http://gizmodo.com/drug-enforcement-agency-seizes-first-bitcoins-from-silk-595189571",
    "name": "Drug Enforcement Agency Seizes First Bitcoins From Silk Road Dealer",
    "caption": "gizmodo.com",
-   "description": "The Drug Enforcement Agency has seized 11.02 Bitcoins�about $800�from a drug dealer in South Carolina who had been using Silk Road. It's the first (known) time the government has taken control of the virtual currency like it were property or real-world cash.",
+   "description": "The Drug Enforcement Agency has seized 11.02 Bitcoins—about $800 from a drug dealer in South Carolina who had been using Silk Road. It's the first (known) time the government has taken control of the virtual currency like it were property or real-world cash.",
    "source": "",
    "type": "link",
    "place": "None"

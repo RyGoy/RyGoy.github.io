@@ -9,7 +9,7 @@
    "link": "http://simple.wikipedia.org/wiki/Main_Page",
    "name": "Wikipedia",
    "caption": "simple.wikipedia.org",
-   "description": "How to write Simple English pages � Useful pages � Simple talk � Categories � HelpSchools Gateway (for users who want to make changes from a school)",
+   "description": "How to write Simple English pages — Useful pages — Simple talk — Categories — HelpSchools Gateway (for users who want to make changes from a school)",
    "source": "",
    "type": "link",
    "place": "None"

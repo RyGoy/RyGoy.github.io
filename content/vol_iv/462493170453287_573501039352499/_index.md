@@ -7,9 +7,9 @@
    "to_name": "[{u'id': u'462493170453287', u'name': u'THE TENDER FOR LAW', u'privacy': u'OPEN'}]",
    "message": "",
    "link": "http://rt.com/news/china-baidu-accept-bitcoin-276/",
-   "name": "�China�s Google� begins accepting Bitcoin",
+   "name": "“China’s Google” begins accepting Bitcoin",
    "caption": "rt.com",
-   "description": "China�s largest search engine Baidu - also known as the �Google of China� � has become the first service of its kind to accept the crypto-currency Bitcoin.",
+   "description": "China’s largest search engine Baidu - also known as the “Google of China” — has become the first service of its kind to accept the crypto-currency Bitcoin.",
    "source": "",
    "type": "link",
    "place": "None"

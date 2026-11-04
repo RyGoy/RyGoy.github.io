@@ -7,9 +7,9 @@
    "to_name": "[{u'id': u'462493170453287', u'name': u'THE TENDER FOR LAW', u'privacy': u'OPEN'}]",
    "message": "Of note...",
    "link": "https://medium.com/money-banking/2b5ef79482cb",
-   "name": "The Bitcoin Bubble and the Future of Currency � Money &amp; Banking",
+   "name": "The Bitcoin Bubble and the Future of Currency — Money &amp; Banking",
    "caption": "medium.com",
-   "description": "A few days ago, the value of all the bitcoins in the world blew past $1 billion for the first time ever. That�s an impressive achievement, f�",
+   "description": "A few days ago, the value of all the bitcoins in the world blew past $1 billion for the first time ever. That’s an impressive achievement, f”",
    "source": "",
    "type": "link",
    "place": "None"

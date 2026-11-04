@@ -9,7 +9,7 @@
    "link": "http://t.co/cvYUNanXxq",
    "name": "The U.S. Government Should Pay Anonymous in Bitcoin to Fight ISIS",
    "caption": "foreignpolicy.com",
-   "description": "�We are Muslims, Christians, Jews,� the wire-frame Guy Fawkes mask announces in an eerie robot voice. �We are hackers, crackers, hacktivists, phishers, agents, spies, or�",
+   "description": "“We are Muslims, Christians, Jews,” the wire-frame Guy Fawkes mask announces in an eerie robot voice. “We are hackers, crackers, hacktivists, phishers, agents, spies, or”",
    "source": "",
    "type": "link",
    "place": "None"

@@ -9,7 +9,7 @@
    "link": "http://www.scribd.com/doc/174185447/Lawyer-s-Official-Oath-and-Office",
    "name": "Lawyer's Official Oath and Office",
    "caption": "scribd.com",
-   "description": "There is today some question about the value of an oath of office. No one, it seems, wants to be held to their oath, least of all lawyers. This 1909 document discusses the oath, and why it is so important to impose on people in the legal profession. �Why is any oath required for admission to the pra...",
+   "description": "There is today some question about the value of an oath of office. No one, it seems, wants to be held to their oath, least of all lawyers. This 1909 document discusses the oath, and why it is so important to impose on people in the legal profession. “Why is any oath required for admission to the pra...",
    "source": "",
    "type": "link",
    "place": "None"

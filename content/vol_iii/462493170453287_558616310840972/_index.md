@@ -9,7 +9,7 @@
    "link": "http://www.huffingtonpost.ca/2013/09/09/bitcoin-kiosks-canada_n_3889143.html",
    "name": "Bitcoin Kiosks Coming To Canada",
    "caption": "huffingtonpost.ca",
-   "description": "The first time Ryan Johnson bought Bitcoins � an emerging digital currency that isn't controlled by any authority such as a central bank � was with a pocket full of cash from a stranger he had met online.",
+   "description": "The first time Ryan Johnson bought Bitcoins — an emerging digital currency that isn't controlled by any authority such as a central bank — was with a pocket full of cash from a stranger he had met online.",
    "source": "",
    "type": "link",
    "place": "None"

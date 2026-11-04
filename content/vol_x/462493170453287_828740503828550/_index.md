@@ -9,7 +9,7 @@
    "link": "http://www.thestar.com/news/world/2015/05/12/verbal-sexual-assault-on-women-reporters-must-stop-porter.html",
    "name": "Verbal sexual assault on women reporters must stop: Porter | Toronto Star",
    "caption": "thestar.com",
-   "description": "�Disgusting phrase� hurled yet again at CityNews reporter Shauna Hunt outside Sunday�s Toronto FC game is not just a �stupid trend.�",
+   "description": "“Disgusting phrase” hurled yet again at CityNews reporter Shauna Hunt outside Sunday’s Toronto FC game is not just a “stupid trend.”",
    "source": "",
    "type": "link",
    "place": "None"

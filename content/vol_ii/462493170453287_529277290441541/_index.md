@@ -9,7 +9,7 @@
    "link": "http://www.patheos.com/blogs/friendlyatheist/2013/01/25/arizona-republicans-propose-bill-that-would-not-allow-atheists-to-graduate-high-school/",
    "name": "Arizona Republicans Propose Bill That Would Not Allow Atheists To Graduate High School",
    "caption": "patheos.com",
-   "description": "A group of Arizona politicians � all Republicans, of course � have proposed a law (House Bill 2467) requiring public high school students to recite the following oath in order to graduate:",
+   "description": "A group of Arizona politicians — all Republicans, of course — have proposed a law (House Bill 2467) requiring public high school students to recite the following oath in order to graduate:",
    "source": "",
    "type": "link",
    "place": "None"

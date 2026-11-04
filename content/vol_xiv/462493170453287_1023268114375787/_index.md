@@ -7,9 +7,9 @@
    "to_name": "[{u'id': u'462493170453287', u'name': u'THE TENDER FOR LAW', u'privacy': u'CLOSED'}]",
    "message": "Posting this for Scott.",
    "link": "https://jennifermayers.wordpress.com/2016/06/27/americas-martyr-no-race-mixing/",
-   "name": "America�s Martyr: NO Race Mixing",
+   "name": "America’s Martyr: NO Race Mixing",
    "caption": "jennifermayers.wordpress.com",
-   "description": "Friends, I invite you to ponder the image above. �The beautiful woman is Christy Sheats. �The Texas wife and mother who is being vilified in the media for shooting and killing her teenage daughters�",
+   "description": "Friends, I invite you to ponder the image above. “The beautiful woman is Christy Sheats. “The Texas wife and mother who is being vilified in the media for shooting and killing her teenage daughters”",
    "source": "",
    "type": "link",
    "place": "None"

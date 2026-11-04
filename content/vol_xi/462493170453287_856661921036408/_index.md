@@ -7,7 +7,7 @@
    "to_name": "[{u'id': u'462493170453287', u'name': u'THE TENDER FOR LAW', u'privacy': u'OPEN'}]",
    "message": "The tender for law that money provides? WTF?",
    "link": "http://goo.gl/Gv9g40",
-   "name": "General Wesley Clark Calls For Sending �Radical� U.S. Citizens To �Internment Camps�",
+   "name": "General Wesley Clark Calls For Sending “Radical” U.S. Citizens To “Internment Camps”",
    "caption": "countercurrentnews.com",
    "description": "Former U.S. General Wesley Clark recently talked about bringing back WWII-style U.S. internment camps. But this time, instead of rounding up Japanese-Americans,",
    "source": "",

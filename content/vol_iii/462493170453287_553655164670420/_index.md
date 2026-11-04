@@ -7,9 +7,9 @@
    "to_name": "[{u'id': u'462493170453287', u'name': u'THE TENDER FOR LAW', u'privacy': u'OPEN'}]",
    "message": "",
    "link": "http://rt.com/usa/ohio-facial-recognition-database-031/",
-   "name": "Ohio admits facial recognition used to scour state driver�s license database without public...",
+   "name": "Ohio admits facial recognition used to scour state driver’s license database without public...",
    "caption": "rt.com",
-   "description": "For nearly three months, law enforcement in Ohio have had access to an unregulated facial recognition database that includes all statewide driver�s license photos and mug shots, The Cincinnati Enquirer reported Monday.",
+   "description": "For nearly three months, law enforcement in Ohio have had access to an unregulated facial recognition database that includes all statewide driver’s license photos and mug shots, The Cincinnati Enquirer reported Monday.",
    "source": "",
    "type": "link",
    "place": "None"

@@ -9,7 +9,7 @@
    "link": "http://teapartyorg.ning.com/forum/topic/show?id=4301673%3ATopic%3A1648864&xgs=1&xg_source=msg_share_topic",
    "name": "Obama Appointee Claims Sharia Law Is Superior to American Law - Claims Founding Fathers Were...",
    "caption": "teapartyorg.ning.com",
-   "description": "Daniel Greenfield for Arutz ShevaObama has announced the appointment of Azizah al-Hibri to the United States Commission on International Religious Freedom. Al-�",
+   "description": "Daniel Greenfield for Arutz ShevaObama has announced the appointment of Azizah al-Hibri to the United States Commission on International Religious Freedom. Al-”",
    "source": "",
    "type": "link",
    "place": "None"

@@ -9,7 +9,7 @@
    "link": "http://www.adamsdrafting.com/know-all-men-by-these-presents/",
    "name": "\"Know All Men by These Presents\" - Adams on Contract Drafting",
    "caption": "adamsdrafting.com",
-   "description": "Sometimes you just have to laugh. Or cry. In my current guise as soon-to-be-globetrotting contract nerd, I was looking at a contract from the Philippines. The first thing I saw below the title and above the introductory clause was this: KNOW ALL MEN BY THESE PRESENTS: �WTF!,� says I. I immediately t�",
+   "description": "Sometimes you just have to laugh. Or cry. In my current guise as soon-to-be-globetrotting contract nerd, I was looking at a contract from the Philippines. The first thing I saw below the title and above the introductory clause was this: KNOW ALL MEN BY THESE PRESENTS: “WTF!,” says I. I immediately t”",
    "source": "",
    "type": "link",
    "place": "None"

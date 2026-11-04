@@ -9,7 +9,7 @@
    "link": "http://www.torontosun.com/2015/03/10/ontario-unveils-new-birth-certificates",
    "name": "Ontario unveils new birth certificates",
    "caption": "torontosun.com",
-   "description": "Ontario�s new birth certificate will have a number of security features to discourage fraud.",
+   "description": "Ontario’s new birth certificate will have a number of security features to discourage fraud.",
    "source": "",
    "type": "link",
    "place": "None"

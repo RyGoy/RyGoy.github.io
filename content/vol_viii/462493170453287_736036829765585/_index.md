@@ -9,7 +9,7 @@
    "link": "http://www.truthdig.com/report/item/the_imperative_of_revolt_20141019",
    "name": "The Imperative of Revolt: Chris Hedges",
    "caption": "truthdig.com",
-   "description": "Two leading political philosophers, Sheldon Wolin and John Ralston Saul, explore the corporations� slow-motion coup d��tat and the prospects of financial collapse and revolt.� - 2014/10/19",
+   "description": "Two leading political philosophers, Sheldon Wolin and John Ralston Saul, explore the corporations’ slow-motion coup d’état and the prospects of financial collapse and revolt.” - 2014/10/19",
    "source": "",
    "type": "link",
    "place": "None"

@@ -9,7 +9,7 @@
    "link": "https://youtu.be/h9wXq6oRBnI?list=PLiq_fDYFoqMoL452Jvcb7Ip9gFe813Jqz",
    "name": "Defcon 21 - Unexpected Stories - From a Hacker Who Made It Inside the Government",
    "caption": "youtube.com",
-   "description": "Peiter \"Mudge\" Zatko August 1st--4th, 2013 Rio Hotel & Casino � Las Vegas, Nevada",
+   "description": "Peiter \"Mudge\" Zatko August 1st--4th, 2013 Rio Hotel & Casino — Las Vegas, Nevada",
    "source": "http://www.youtube.com/v/h9wXq6oRBnI?version=3&list=PLiq_fDYFoqMoL452Jvcb7Ip9gFe813Jqz&autoplay=1",
    "type": "video",
    "place": "None"

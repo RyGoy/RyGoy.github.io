@@ -9,7 +9,7 @@
    "link": "http://www.kentlaw.edu/perritt/courses/civpro/berger-limited-special.htm",
    "name": "Limited v. Special Appearance",
    "caption": "kentlaw.edu",
-   "description": "�The Advisory Committee Note indicates that even though special appearances were abolished in Minnesota, limited appearances by which a defendant in a quasi in *633 rem action could defend to the extent of the property involved, without submitting personally to the jurisdiction of the court, were pr...",
+   "description": "“The Advisory Committee Note indicates that even though special appearances were abolished in Minnesota, limited appearances by which a defendant in a quasi in *633 rem action could defend to the extent of the property involved, without submitting personally to the jurisdiction of the court, were pr...",
    "source": "",
    "type": "link",
    "place": "None"

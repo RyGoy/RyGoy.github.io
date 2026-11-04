@@ -9,7 +9,7 @@
    "link": "https://docs.google.com/document/d/1pfwCTsY08HMrwijOhDRlgraGewoS_g3nQsdnE4LjopQ/edit#",
    "name": "Tell me who you are - digital identity",
    "caption": "docs.google.com",
-   "description": "Tell me who you are? FIRST DRAFT of first 5k words: please leave feedback. Thank you. Identity, institutional memory, and the persistent illusion of the self �The soul, if it can be said to exist at all, is certainly without attributes� - Shivanath More than a couple of times a year, I meet te...",
+   "description": "Tell me who you are? FIRST DRAFT of first 5k words: please leave feedback. Thank you. Identity, institutional memory, and the persistent illusion of the self “The soul, if it can be said to exist at all, is certainly without attributes” - Shivanath More than a couple of times a year, I meet te...",
    "source": "",
    "type": "link",
    "place": "None"

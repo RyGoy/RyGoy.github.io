@@ -5,7 +5,7 @@
    "from_name": "Pete Daoust",
    "from_id": "1.02017712542701E+016",
    "to_name": "[{u'id': u'462493170453287', u'name': u'THE TENDER FOR LAW', u'privacy': u'OPEN'}]",
-   "message": "If ever one of these \"special\" CRA agents tells you that the fucking SIN is not an ACCOUNT NUMBER, tell them to go fuck themselves....\n\nNum�ro de Compte / Account Number.\n\nAn ACCOUNT is a fucking ACCOUNT.....there's no confusion in this.....",
+   "message": "If ever one of these \"special\" CRA agents tells you that the fucking SIN is not an ACCOUNT NUMBER, tell them to go fuck themselves....\n\nNuméro de Compte / Account Number.\n\nAn ACCOUNT is a fucking ACCOUNT.....there's no confusion in this.....",
    "link": "",
    "name": "",
    "caption": "",

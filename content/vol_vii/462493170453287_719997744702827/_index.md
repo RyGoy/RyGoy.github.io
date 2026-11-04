@@ -9,7 +9,7 @@
    "link": "http://private-person.com/blog/2014/05/us-supreme-court-rules-government-officers-liable/",
    "name": "US Supreme Court Rules Government Officers Liable | private person",
    "caption": "private-person.com",
-   "description": "US Supreme Court Rules Government Officers Liable May 12, 2014Case Law, Court Process, In the News, Trainingcourt process, court ruling, Defending Your Rights, In the News, know your rightsadmin One of the legal fantasies promoted by governments and officials is the idea of �sovereign immunity�� whe�",
+   "description": "US Supreme Court Rules Government Officers Liable May 12, 2014Case Law, Court Process, In the News, Trainingcourt process, court ruling, Defending Your Rights, In the News, know your rightsadmin One of the legal fantasies promoted by governments and officials is the idea of “sovereign immunity” whe”",
    "source": "",
    "type": "link",
    "place": "None"

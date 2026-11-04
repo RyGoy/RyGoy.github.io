@@ -9,7 +9,7 @@
    "link": "http://altcoinpress.com/2014/09/fbi-reveals-exactly-how-they-hacked-silk-road/",
    "name": "FBI Reveals Exactly How They Hacked Silk Road",
    "caption": "altcoinpress.com",
-   "description": "The defense in Ross Ulbricht�s case has accused the government of conducting illegal searches, and questioned exactly how law enforcement officials could have pinpointed the location of the Silk Road data center, considering it was hidden inside the TOR network. The answer came just a hours...",
+   "description": "The defense in Ross Ulbricht’s case has accused the government of conducting illegal searches, and questioned exactly how law enforcement officials could have pinpointed the location of the Silk Road data center, considering it was hidden inside the TOR network. The answer came just a hours...",
    "source": "",
    "type": "link",
    "place": "None"

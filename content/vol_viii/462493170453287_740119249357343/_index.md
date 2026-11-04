@@ -9,7 +9,7 @@
    "link": "http://www.thestar.com/news/crime/2014/10/30/excitizenship_judge_jailed_for_illegally_revealing_citizenship_exams.html",
    "name": "Ex-citizenship judge jailed for illegally revealing citizenship exams | Toronto Star",
    "caption": "thestar.com",
-   "description": "Philip Gaynor, 71, was sentenced to three years for the �reprehensible� act of providing copies to an immigration consultant to make extra money.",
+   "description": "Philip Gaynor, 71, was sentenced to three years for the “reprehensible” act of providing copies to an immigration consultant to make extra money.",
    "source": "",
    "type": "link",
    "place": "None"

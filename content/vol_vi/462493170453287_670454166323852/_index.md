@@ -7,9 +7,9 @@
    "to_name": "[{u'id': u'462493170453287', u'name': u'THE TENDER FOR LAW', u'privacy': u'OPEN'}]",
    "message": "60 days of jail for this fucking theist for having KILLED his 13 years old daughter by slapping her in the face, because he was not happy with how she washed the kitchen floor..... he broke her neck ....\n\nThe sweetest of my children, \"he said, weeping in court, now, if she was the \"sweetest\" one, what about the others ??....\n\nWHAT THE FUCK IS WRONG ????\n\n",
    "link": "http://tvanouvelles.ca/lcn/judiciaire/archives/2014/05/20140521-104647.html",
-   "name": "Nout�n� Sidim� - 60 jours de prison pour avoir gifl� � mort sa fille",
+   "name": "Nout’n” Sidim” - 60 jours de prison pour avoir giflé — mort sa fille",
    "caption": "tvanouvelles.ca",
-   "description": "Les derniers faits divers � survenir au Qu�bec, Accidents, Collision, Meurtre, Enl�vement, Noyade, Incendie, Agressions, Vol, Cambriolage, Arrestation, Proc�s, Comparution, Mort, D�c�s.",
+   "description": "Les derniers faits divers à survenir au Québec, Accidents, Collision, Meurtre, Enlèvement, Noyade, Incendie, Agressions, Vol, Cambriolage, Arrestation, Procès, Comparution, Mort, Décès.",
    "source": "",
    "type": "link",
    "place": "None"

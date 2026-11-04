@@ -9,7 +9,7 @@
    "link": "http://cointelegraph.com/news/111905/canada-signs-first-ever-official-law-regulating-bitcoin?utm_source=dlvr.it&utm_medium=facebook",
    "name": "Canada Signs First Ever Official Law Regulating Bitcoin",
    "caption": "cointelegraph.com",
-   "description": "The gloves are off for Bitcoin legality � Canada has implemented what is the first official national law on Bitcoin use.",
+   "description": "The gloves are off for Bitcoin legality — Canada has implemented what is the first official national law on Bitcoin use.",
    "source": "",
    "type": "link",
    "place": "None"

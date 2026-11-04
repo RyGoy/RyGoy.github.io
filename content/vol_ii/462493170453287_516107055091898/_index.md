@@ -9,7 +9,7 @@
    "link": "http://www.thehealthyhomeeconomist.com/baby-breastfed-by-vegan-mother-dies/",
    "name": "Baby Breastfed By Vegan Mother Dies",
    "caption": "thehealthyhomeeconomist.com",
-   "description": "An 11 month old baby exclusively breastfed by a vegan mother has died and the parents are charged with neglect after an autopsy indicated the baby suffered from deficiencies in vitamin B12 and Vitamin A � both known to be",
+   "description": "An 11 month old baby exclusively breastfed by a vegan mother has died and the parents are charged with neglect after an autopsy indicated the baby suffered from deficiencies in vitamin B12 and Vitamin A — both known to be",
    "source": "",
    "type": "link",
    "place": "None"

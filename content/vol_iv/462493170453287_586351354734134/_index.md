@@ -7,7 +7,7 @@
    "to_name": "[{u'id': u'462493170453287', u'name': u'THE TENDER FOR LAW', u'privacy': u'OPEN'}]",
    "message": "It's Starting!\n\n",
    "link": "http://www.redicecreations.com/article.php?id=27661",
-   "name": "FEMA Camps: City to Exile the Homeless; It�s not a Conspiracy Theory Anymore",
+   "name": "FEMA Camps: City to Exile the Homeless; It’s not a Conspiracy Theory Anymore",
    "caption": "redicecreations.com",
    "description": "Red Ice Creations",
    "source": "",

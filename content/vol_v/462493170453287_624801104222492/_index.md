@@ -7,7 +7,7 @@
    "to_name": "[{u'id': u'462493170453287', u'name': u'THE TENDER FOR LAW', u'privacy': u'OPEN'}]",
    "message": "",
    "link": "https://openmedia.ca/blog/guard-dog-or-watchdog-it%E2%80%99s-time-set-story-straight-about-csec-spying",
-   "name": "Guard dog or watchdog? It�s time to set the story the straight about CSEC spying",
+   "name": "Guard dog or watchdog? It’s time to set the story the straight about CSEC spying",
    "caption": "openmedia.ca",
    "description": "CSEC spying on our private, sensitive information is wrong - and the fight back has just begun. ",
    "source": "",

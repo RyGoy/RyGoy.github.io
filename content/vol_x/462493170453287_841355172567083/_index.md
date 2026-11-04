@@ -9,7 +9,7 @@
    "link": "http://www.michaelgeist.ca/2015/06/b-c-court-of-appeal-upholds-global-deletion-order-against-google/",
    "name": "B.C. Court of Appeal Upholds Global Deletion Order Against Google",
    "caption": "www.michaelgeist.ca",
-   "description": "The B.C. Court of Appeal has released its decision in Equustek Solutions Inc. v. Jack, a closely watched case involving a court order requiring Google to remove websites from its global index. As I noted in a post on the lower court decision, rather than ordering the company to remove certain links�",
+   "description": "The B.C. Court of Appeal has released its decision in Equustek Solutions Inc. v. Jack, a closely watched case involving a court order requiring Google to remove websites from its global index. As I noted in a post on the lower court decision, rather than ordering the company to remove certain links”",
    "source": "",
    "type": "link",
    "place": "None"

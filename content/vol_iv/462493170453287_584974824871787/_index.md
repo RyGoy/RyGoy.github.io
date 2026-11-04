@@ -7,9 +7,9 @@
    "to_name": "[{u'id': u'462493170453287', u'name': u'THE TENDER FOR LAW', u'privacy': u'OPEN'}]",
    "message": "",
    "link": "http://t.co/md1zvhmKqI",
-   "name": "Police need judge�s specific permission to search computers, Supreme Court rules",
+   "name": "Police need judge’s specific permission to search computers, Supreme Court rules",
    "caption": "theglobeandmail.com",
-   "description": "The traditional rule of authorized searches � that it is fair game to look inside cupboards and filing cabinets � needs updating for the Internet age, court says",
+   "description": "The traditional rule of authorized searches — that it is fair game to look inside cupboards and filing cabinets — needs updating for the Internet age, court says",
    "source": "",
    "type": "link",
    "place": "None"

@@ -9,7 +9,7 @@
    "link": "https://youtu.be/USkEzLuzmZ4",
    "name": "Last Week Tonight with John Oliver: Public Defenders (HBO)",
    "caption": "youtube.com",
-   "description": "The Miranda warning includes the right to a public defender. It doesn�t include the fact that public defenders are highly overworked and grossly underpaid. C...",
+   "description": "The Miranda warning includes the right to a public defender. It doesn’t include the fact that public defenders are highly overworked and grossly underpaid. C...",
    "source": "https://www.youtube.com/embed/USkEzLuzmZ4?autoplay=1",
    "type": "video",
    "place": "None"

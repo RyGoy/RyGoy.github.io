@@ -9,7 +9,7 @@
    "link": "http://www.tworowtimes.com/news/national/six-nations-man-faces-jail-time-for-notarizing-documents-without-canadian-permission/",
    "name": "Six Nations man faces jail time for notarizing documents without Canadian permission",
    "caption": "tworowtimes.com",
-   "description": "Six Nations man faces jail time for notarizing documents without Canadian permission Posted by Jim Windle Date: February 28, 2015 in: National 4 Views VANCOUVER, COAST SALISH TERRITORY � It may appear to be a Hail Mary pass to some, but others see it as a potentially ground breaking legal face-off b�",
+   "description": "Six Nations man faces jail time for notarizing documents without Canadian permission Posted by Jim Windle Date: February 28, 2015 in: National 4 Views VANCOUVER, COAST SALISH TERRITORY — It may appear to be a Hail Mary pass to some, but others see it as a potentially ground breaking legal face-off b”",
    "source": "",
    "type": "link",
    "place": "None"
