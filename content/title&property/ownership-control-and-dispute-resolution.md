@@ -18,6 +18,8 @@ categories = [
 ]
 +++
 
+> **DISCLAIMER: This is an AI written article.**
+
 ## Most disputes are property disputes
 
 Nearly every dispute comes down to one question: **who holds the better claim to this thing, and what may they do with it?** Courts settle contracts, debts, boundaries, inheritances and injuries by first deciding who owns what. A party that can prove ownership and control starts the dispute ahead. A party that cannot is arguing from someone else's ground.
