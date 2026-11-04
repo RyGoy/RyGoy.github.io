@@ -27,7 +27,8 @@ Content is machine-exported Facebook data. Front matter is **JSON** (or TOML `++
 - `content/vol_*/<post_id>/_index.md` — a **post**, as a branch bundle. Fields include `id`, `created_time`, `from_name`, `from_id`, `message`, `link`, `name`, `caption`, `description`, `source`, `type`, `place`.
 - `content/vol_*/<post_id>/<post_id>-<comment_id>.md` — **comments** on that post. Fields: `id`, `post_id`, `from_name`, `message`, `created_time`.
 - `content/articles/<author>/*.md` — articles, TOML front matter (`author`, `title`, `date`, `weight`, `tags`, `categories`). Author dirs are sections, ordered `ByWeight`.
-- `content/{accounting,agency,bills-of-exchange,insurance,title&property}/_index.html` — subject pages. Currently empty; linked from a hardcoded list in `layouts/partials/navbar.html`.
+- `content/{accounting,agency,bills-of-exchange,insurance,title&property}/` — subject pages, grouped as the **Library**. `content/library/_index.md` lists them in its `subjects` front matter; the sidebar Library group, the home page Library section and `/library/` (`layouts/library/list.html`) all read that list. `title&property` is published at `/titleproperty/`, with an alias from `/title&property/`.
+- `content/library/*.md` — library books (`layouts/library/single.html`). Front matter: `author`, `edition` (not `published`, which Hugo reads as a date), `description`, `pdf` and `source` (+ optional `source_label`). A `pdf` starting with `/` is a copy in `static/library/` (public-domain works only); a full address opens someone else's copy.
 
 ## Template architecture
 

@@ -25,4 +25,10 @@
     <div class="author-grid">{{ range .Sections.ByWeight }}<a class="author-card" href="{{ .RelPermalink }}"><h3>{{ .Title }}</h3><span aria-hidden="true">↗</span></a>{{ end }}</div>
   </section>
   {{ end }}
+  {{ with site.GetPage "/library" }}
+  <section class="article-library" aria-labelledby="library-heading">
+    <div class="section-heading"><h2 id="library-heading"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2><span class="rule" aria-hidden="true"></span></div>
+    <div class="author-grid">{{ range .Params.subjects }}{{ with site.GetPage . }}<a class="author-card" href="{{ .RelPermalink }}"><h3>{{ .Title }}</h3><span aria-hidden="true">↗</span></a>{{ end }}{{ end }}</div>
+  </section>
+  {{ end }}
 {{ end }}

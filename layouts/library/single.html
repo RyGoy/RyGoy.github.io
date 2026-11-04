@@ -1,0 +1,18 @@
+{{ define "main" }}
+<article class="longform reading-column library-book" data-pagefind-body data-pagefind-filter="Section:Library">
+  <header class="page-heading">
+    <p class="eyebrow"><a href="{{ .CurrentSection.RelPermalink }}">{{ .CurrentSection.Title }}</a></p>
+    <h1>{{ .Title }}</h1>
+    {{ with .Params.author }}<p class="article-author" data-pagefind-filter="Author">{{ . }}</p>{{ end }}
+    {{ with .Params.edition }}<p class="book-edition">{{ . }}</p>{{ end }}
+  </header>
+  {{ with .Description }}<p class="book-summary">{{ . }}</p>{{ end }}
+  <div class="book-actions" data-pagefind-ignore>
+    {{/* A pdf starting with "/" is a copy in static/library/; a full address is someone else's copy, opened in place. */}}
+    {{ with .Params.pdf }}<a class="book-button" href="{{ . | relURL }}"{{ if not (hasPrefix . "/") }} rel="noopener noreferrer"{{ end }}>Read the PDF <span aria-hidden="true">↗</span></a>{{ if hasPrefix . "/" }}<a class="book-link" href="{{ . | relURL }}" download>Download</a>{{ end }}{{ end }}
+    {{ with .Params.source }}<a class="book-link" href="{{ . }}" rel="noopener noreferrer">{{ $.Params.source_label | default "Source" }} <span aria-hidden="true">↗</span></a>{{ end }}
+  </div>
+  <div class="prose">{{ .Content }}</div>
+  {{ partial "commentary-panel.html" . }}
+</article>
+{{ end }}

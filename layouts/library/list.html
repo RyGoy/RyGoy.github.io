@@ -1,0 +1,30 @@
+{{ define "main" }}
+<header class="page-heading"><p class="eyebrow">The Tender For Law</p><h1>{{ .Title }}</h1>{{ with .Description }}<div class="prose"><p>{{ . }}</p></div>{{ end }}</header>
+{{ with .Pages.ByWeight }}
+<section class="article-library" aria-labelledby="books-heading">
+  <div class="section-heading"><h2 id="books-heading">Books</h2><span class="rule" aria-hidden="true"></span></div>
+  <div class="article-grid">
+  {{ range . }}
+    <article class="article-card">
+      {{ with .Params.author }}<p class="eyebrow">{{ . }}</p>{{ end }}
+      <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+      {{ with .Params.edition }}<p class="book-edition">{{ . }}</p>{{ end }}
+      {{ with .Params.pdf }}<p><a class="book-link" href="{{ . | relURL }}">PDF <span aria-hidden="true">↗</span></a></p>{{ end }}
+    </article>
+  {{ end }}
+  </div>
+</section>
+{{ end }}
+<section class="article-library" aria-labelledby="subjects-heading">
+  <div class="section-heading"><h2 id="subjects-heading">Subjects</h2><span class="rule" aria-hidden="true"></span></div>
+  <div class="article-grid">
+  {{ range .Params.subjects }}{{ with site.GetPage . }}
+    <article class="article-card">
+      <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+      {{ with .Description }}<p>{{ . }}</p>{{ end }}
+      {{ if .IsSection }}{{ with .Pages.ByWeight }}<ul class="article-contents">{{ range . }}<li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>{{ end }}</ul>{{ end }}{{ end }}
+    </article>
+  {{ end }}{{ end }}
+  </div>
+</section>
+{{ end }}

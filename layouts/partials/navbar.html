@@ -39,13 +39,16 @@
         <ul>{{ range .Sections.ByWeight }}<li><a href="{{ .RelPermalink }}"{{ if eq $.CurrentSection.RelPermalink .RelPermalink }} aria-current="page"{{ end }}>{{ .Title }}</a></li>{{ end }}</ul>
       </details>
       {{ end }}
-      <ul class="subject-nav">
-      {{ range slice (dict "path" "/accounting" "label" "Accounting") (dict "path" "/agency" "label" "Agency") (dict "path" "/bills-of-exchange" "label" "Bills of Exchange") (dict "path" "/insurance" "label" "Insurance") (dict "path" "/title&property" "label" "Title and Property") }}
-        {{/* Link to the page Hugo built: "/title&property" is published at /titleproperty/. */}}
-        {{ $href := .path | relURL }}{{ with site.GetPage .path }}{{ $href = .RelPermalink }}{{ end }}
-        <li><a href="{{ $href }}"{{ if eq $.Section (strings.TrimPrefix "/" .path) }} aria-current="page"{{ end }}>{{ .label }}</a></li>
+      {{/* Library: the subject pages listed in content/library/_index.md. */}}
+      {{ with site.GetPage "/library" }}
+      {{ $open := eq $.Section "library" }}
+      {{ range .Params.subjects }}{{ if eq $.Section (strings.TrimPrefix "/" .) }}{{ $open = true }}{{ end }}{{ end }}
+      <details class="nav-group article-nav library-nav"{{ if $open }} open{{ end }}>
+        <summary>Library</summary>
+        <a class="nav-heading" href="{{ .RelPermalink }}"{{ if eq $.RelPermalink .RelPermalink }} aria-current="page"{{ end }}>{{ .Title }}</a>
+        <ul>{{ range .Params.subjects }}{{ with site.GetPage . }}<li><a href="{{ .RelPermalink }}"{{ if eq $.Section .Section }} aria-current="page"{{ end }}>{{ .Title }}</a></li>{{ end }}{{ end }}</ul>
+      </details>
       {{ end }}
-      </ul>
     </nav>
   </details>
 </aside>
