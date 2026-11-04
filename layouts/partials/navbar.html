@@ -35,8 +35,10 @@
       {{ with site.GetPage "/articles" }}
       <details class="nav-group article-nav"{{ if eq $.Section "articles" }} open{{ end }}>
         <summary>Articles</summary>
-        <a class="nav-heading" href="{{ .RelPermalink }}">{{ .Title }}</a>
-        <ul>{{ range .Sections.ByWeight }}<li><a href="{{ .RelPermalink }}"{{ if eq $.CurrentSection.RelPermalink .RelPermalink }} aria-current="page"{{ end }}>{{ .Title }}</a></li>{{ end }}</ul>
+        <ul>
+          <li><a href="{{ .RelPermalink }}"{{ if eq $.RelPermalink .RelPermalink }} aria-current="page"{{ end }}>{{ .Title }}</a></li>
+          {{ range .Sections.ByWeight }}<li><a href="{{ .RelPermalink }}"{{ if eq $.CurrentSection.RelPermalink .RelPermalink }} aria-current="page"{{ end }}>{{ .Title }}</a></li>{{ end }}
+        </ul>
       </details>
       {{ end }}
       {{/* Library: the subject pages listed in content/library/_index.md. */}}
@@ -52,6 +54,7 @@
         </ul>
       </details>
       {{ end }}
+      <div class="nav-group article-nav"><a class="nav-heading" href="https://cdd.com" target="_blank" rel="noopener noreferrer">SPNBFS <span aria-hidden="true">↗</span></a></div>
     </nav>
   </details>
 </aside>

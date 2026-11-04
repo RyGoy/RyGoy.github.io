@@ -70,7 +70,6 @@ summary { cursor: pointer; }
 .sidebar a[aria-current="page"] { color: #e1c797; background: #b89a630e; border-color: var(--brass); }
 .volume-number { min-width: 1.9rem; font-size: .68rem; letter-spacing: .06em; font-variant-numeric: tabular-nums; color: var(--brass); }
 .article-nav { border-block: 1px solid var(--line); padding-block: 1rem; }
-.article-nav > .nav-heading { display: block; margin-top: .75rem; font-size: .8rem; }
 .site-shell { margin-left: 16rem; padding: 0 clamp(1.5rem, 4vw, 5rem); max-width: 100rem; }
 .masthead { min-height: 6.5rem; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: .5rem 2rem; border-bottom: 1px solid var(--line); padding-block: 1.5rem; }
 .masthead > a { font-family: var(--display); font-size: 1.15rem; letter-spacing: .09em; text-decoration: none; color: var(--brass); }
@@ -465,6 +464,7 @@ body::after { content: ""; position: fixed; z-index: -1; right: -6rem; bottom: -
 @media print { .hero-copy::before, .sidebar::after, .site-footer::before, .site-footer::after, .archive-entry::after, .volume-card::after { display: none; } }
 /* Library books (layouts/library/) */
 .book-edition { color: var(--muted); font-size: .9rem; margin: .25rem 0 0; }
+.book-author { color: var(--muted); font-size: .85rem; margin-left: .35rem; }
 .book-summary { font-size: 1.2rem; color: #d9cdb4; max-width: 44rem; }
 .book-actions { display: flex; flex-wrap: wrap; align-items: center; gap: .9rem 1.4rem; margin: 1.5rem 0 2.5rem; }
 .book-button { padding-right: 1.15rem; }
