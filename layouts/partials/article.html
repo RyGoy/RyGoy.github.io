@@ -7,6 +7,7 @@
     {{ with .Params.author }}<p class="article-author" data-pagefind-filter="Author">{{ . }}</p>{{ end }}
     {{ with .Params.date }}<time datetime="{{ . }}">{{ (time.AsTime .).Format "Jan 02, 2006" }}</time>{{ end }}
     {{ if or .Params.tags .Params.categories }}<details class="article-metadata"><summary>{{ .Params.author | default .Title }}</summary>{{ with .Params.tags }}<p>{{ delimit . " · " }}</p>{{ end }}{{ with .Params.categories }}<p>{{ delimit . " · " }}</p>{{ end }}</details>{{ end }}
+    {{ if $writing }}<div class="article-share" data-pagefind-ignore><button type="button" class="share-button" aria-live="polite">Share</button></div>{{ end }}
   </header>
   <div class="prose">{{ .Content }}</div>
   {{ if $writing }}{{ partial "commentary-panel.html" . }}{{ end }}

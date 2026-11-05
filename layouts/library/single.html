@@ -12,9 +12,8 @@
     {{ with .Params.pdf }}<a class="book-button" href="{{ . | relURL }}"{{ if not (hasPrefix . "/") }} rel="noopener noreferrer"{{ end }}>Read the PDF <span aria-hidden="true">↗</span></a>{{ if hasPrefix . "/" }}<a class="book-link" href="{{ . | relURL }}" download>Download</a>{{ end }}{{ end }}
     {{ with .Params.source }}<a class="book-link" href="{{ . }}" rel="noopener noreferrer">{{ $.Params.source_label | default "Source" }} <span aria-hidden="true">↗</span></a>{{ end }}
   </div>
-  <div class="prose">{{ .Content }}</div>
-  {{ partial "commentary-panel.html" . }}
-  {{/* Previous and next book, in the order /library/ lists them (layouts/library/list.html). */}}
+  {{/* Previous and next book, in the order /library/ lists them (layouts/library/list.html).
+       It sits above the preface so readers can flip through the books without scrolling. */}}
   <nav class="volume-pagination" aria-label="Books" data-pagefind-ignore>
   {{ $books := .CurrentSection.Pages.ByWeight }}
   {{ range $index, $book := $books }}{{ if eq $book $ }}
@@ -23,5 +22,7 @@
     {{ if lt (add $index 1) (len $books) }}{{ with index $books (add $index 1) }}<a href="{{ .RelPermalink }}" rel="next">{{ .Title }} <span aria-hidden="true">→</span></a>{{ end }}{{ end }}
   {{ end }}{{ end }}
   </nav>
+  <div class="prose">{{ .Content }}</div>
+  {{ partial "commentary-panel.html" . }}
 </article>
 {{ end }}
