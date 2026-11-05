@@ -37,6 +37,15 @@
   };
   const sameAccounts = (a, b) => a.length === b.length && a.every(name => b.includes(name));
   const element = (tag, props) => Object.assign(document.createElement(tag), props);
+  const reducedMotion = matchMedia('(prefers-reduced-motion: reduce)');
+  // Slide each new card in, as if dealt from the deck.
+  const deal = () => {
+    if (reducedMotion.matches || !form.animate) return;
+    form.animate(
+      [{ opacity: 0, transform: 'translate(1.5rem, -.5rem) rotate(1.5deg)' }, { opacity: 1, transform: 'none' }],
+      { duration: 280, easing: 'cubic-bezier(.2, .7, .3, 1)' },
+    );
+  };
 
   function start() {
     const deck = decks[deckSelect.value];
@@ -59,6 +68,7 @@
     result.hidden = true;
     checkButton.hidden = false;
     nextButton.hidden = true;
+    deal();
   }
 
   function accountRow(name) {
@@ -130,6 +140,7 @@
     nextButton.textContent = 'Play again';
     nextButton.hidden = false;
     nextButton.focus();
+    deal();
   }
 
   // An account sits on one side of an entry, so checking one side clears the other.

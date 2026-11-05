@@ -293,27 +293,44 @@ main { min-height: 35vh; }
 .fc-toolbar select { flex: 1 1 auto; min-width: 0; }
 .fc-score { margin: 0; font-variant-numeric: tabular-nums; }
 .fc-toolbar select, .fc-actions button { font: inherit; font-size: .9rem; color: var(--paper); background: var(--surface); border: 1px solid var(--line); padding: .45rem .9rem; max-width: 100%; }
+/* The card is a cream index card on a small stack, so the game stands apart from the dark archive
+   panels: a red rule under the column headings, blue ruled lines between the accounts. */
+.fc-card {
+  --card: #ece2c9; --card-ink: #2a2419; --card-muted: #6b604c; --card-rule: #a8383d; --card-line: #8ea4b866;
+  --card-right: #3d6b2b; --card-wrong: #a02e2e;
+  color-scheme: light; position: relative; margin: 0 .9rem 1.5rem 0; padding: 2rem clamp(1.25rem, 3.5vw, 3rem) 1.75rem;
+  color: var(--card-ink); background: linear-gradient(160deg, #f3ead3, var(--card) 60%); border-radius: 6px;
+  box-shadow: .45rem .45rem 0 -1px #d2c6aa, .9rem .9rem 0 -2px #b3a688, 0 1.5rem 3rem #000b;
+  overflow-wrap: anywhere;
+}
+.fc-card ::selection { color: var(--card); background: var(--card-ink); }
+.fc-card :focus-visible { outline-color: var(--card-rule); outline-offset: 3px; }
+.fc-progress { font-family: var(--display); font-weight: 600; letter-spacing: .14em; text-transform: uppercase; color: var(--card-rule); }
 .fc-actions { display: flex; flex-wrap: wrap; gap: .75rem; }
-.fc-actions button { cursor: pointer; color: #e1c797; border-color: #806943; }
-.fc-actions button:hover { color: #fff5de; border-color: var(--brass); background: #b89a6314; }
-.fc-prompt { font-size: clamp(1.45rem, 3vw, 2rem); margin-bottom: 1.5rem; }
+.fc-actions button { cursor: pointer; color: var(--card); background: var(--card-ink); border: 0; border-radius: 3px; padding: .55rem 1.2rem; }
+.fc-actions button:hover { background: #4a3f2c; }
+.fc-prompt { font-size: clamp(1.45rem, 3vw, 2rem); font-weight: 600; margin-bottom: 1.5rem; }
 .fc-prompt:focus { outline: none; }
 .fc-accounts { width: 100%; border-collapse: collapse; margin-bottom: 1.5rem; font-size: .95rem; }
-.fc-accounts th, .fc-accounts td { padding: .45rem .5rem; border-bottom: 1px solid var(--line); text-align: left; font-weight: 400; }
-.fc-accounts thead th { font-family: var(--display); font-size: .85rem; letter-spacing: .1em; text-transform: uppercase; color: var(--brass); }
+.fc-accounts th, .fc-accounts td { padding: .45rem .5rem; border-bottom: 1px solid var(--card-line); text-align: left; font-weight: 400; }
+.fc-accounts thead th { font-family: var(--display); font-size: .85rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: var(--card-muted); border-bottom: 2px solid var(--card-rule); }
 .fc-accounts thead th:nth-child(2), .fc-accounts thead th:nth-child(3), .fc-accounts td:nth-child(2), .fc-accounts td:nth-child(3) { width: 5.5rem; text-align: center; }
-.fc-accounts input { width: 1.15rem; height: 1.15rem; margin: 0; vertical-align: middle; accent-color: var(--brass); cursor: pointer; }
+.fc-accounts input { width: 1.15rem; height: 1.15rem; margin: 0; vertical-align: middle; accent-color: var(--card-ink); cursor: pointer; }
 .fc-accounts input:disabled { cursor: default; }
-.fc-mark { width: 7.5rem; font-size: .8rem; color: var(--muted); }
-.fc-accounts .is-right th, .fc-accounts .is-right .fc-mark { color: #a9c98f; }
-.fc-accounts .is-wrong th, .fc-accounts .is-wrong .fc-mark { color: #e39a8f; }
-.fc-result { margin-bottom: 1.5rem; padding: 1rem 1.25rem; border-left: 2px solid var(--brass); background: #b89a6308; }
+.fc-mark { width: 7.5rem; font-size: .8rem; color: var(--card-muted); }
+.fc-accounts .is-right th, .fc-accounts .is-right .fc-mark { color: var(--card-right); }
+.fc-accounts .is-wrong th, .fc-accounts .is-wrong .fc-mark { color: var(--card-wrong); }
+.fc-accounts .is-right .fc-mark, .fc-accounts .is-wrong .fc-mark { font-weight: 600; }
+.fc-result { margin-bottom: 1.5rem; padding: 1rem 1.25rem; border-left: 3px solid var(--card-muted); background: #2a24190d; }
 .fc-result p { margin-bottom: .4rem; }
 .fc-result p:last-child { margin-bottom: 0; }
-.fc-result.is-right { border-color: #6f9a5a; }
-.fc-result.is-wrong { border-color: var(--red); }
-.fc-verdict { font-family: var(--display); font-size: 1.4rem; }
+.fc-result.is-right { border-color: var(--card-right); }
+.fc-result.is-wrong { border-color: var(--card-wrong); }
+.fc-verdict { font-family: var(--display); font-size: 1.4rem; font-weight: 700; }
+.is-right > .fc-verdict { color: var(--card-right); }
+.is-wrong > .fc-verdict { color: var(--card-wrong); }
 @media (max-width: 42rem) {
+  .fc-card { margin-right: .6rem; box-shadow: .3rem .3rem 0 -1px #d2c6aa, .6rem .6rem 0 -2px #b3a688, 0 1rem 2rem #000b; }
   .fc-accounts { font-size: .88rem; }
   .fc-accounts th, .fc-accounts td { padding-inline: .3rem; }
   .fc-accounts thead th:nth-child(2), .fc-accounts thead th:nth-child(3), .fc-accounts td:nth-child(2), .fc-accounts td:nth-child(3) { width: 3.4rem; }
