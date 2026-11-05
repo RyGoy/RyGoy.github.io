@@ -22,13 +22,20 @@
   const sound = script.dataset.audio ? new Audio(script.dataset.audio) : null;
   const soundButtons = [];
   const soundButton = () => {
-    const button = element('button', { type: 'button', className: 'terms-gate-sound', hidden: !sound });
+    const button = element('button', { type: 'button', className: 'terms-gate-sound', hidden: !sound },
+      element('span', { className: 'terms-gate-sound-icon' }), 'Musical Recap');
     button.addEventListener('click', () => (sound.paused ? sound.play().catch(() => {}) : sound.pause()));
     soundButtons.push(button);
     return button;
   };
+  const PLAY = '<svg viewBox="0 0 16 16" aria-hidden="true"><path d="M4 2.5v11l9-5.5z"/></svg>';
+  const PAUSE = '<svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3.5 2.5h3v11h-3zM9.5 2.5h3v11h-3z"/></svg>';
   const labelSoundButtons = () => {
-    for (const button of soundButtons) button.textContent = sound.paused ? 'Musical Recap' : 'Stop Musical Recap';
+    for (const button of soundButtons) {
+      button.firstChild.innerHTML = sound.paused ? PLAY : PAUSE;
+      button.title = sound.paused ? 'Play musical recap' : 'Pause musical recap';
+      button.setAttribute('aria-label', button.title);
+    }
   };
   if (sound) {
     for (const event of ['play', 'pause', 'ended']) sound.addEventListener(event, labelSoundButtons);
@@ -46,7 +53,7 @@
       if (holder !== terms && !holder.textContent.trim() && !holder.children.length) holder.remove();
     }
 
-    const yes = element('button', { type: 'button', textContent: 'Yes' });
+    const yes = element('button', { type: 'button', className: 'terms-gate-yes', textContent: 'Yes' });
     const no = element('button', { type: 'button', textContent: 'No' });
     const gate = element('dialog', { className: 'terms-gate' },
       element('h2', { id: 'terms-gate-title', textContent: title, tabIndex: -1, autofocus: true }),
@@ -71,7 +78,11 @@
       gate.remove();
       refusal.remove();
     });
-    no.addEventListener('click', () => { gate.close(); refusal.showModal(); });
+    no.addEventListener('click', () => {
+      gate.close();
+      refusal.showModal();
+      sound?.play().catch(() => {}); // the click allows sound, so the refusal always has music
+    });
     back.addEventListener('click', () => { refusal.close(); gate.showModal(); });
 
     // There is no way past without answering: Escape is ignored, and a dialog the browser closes anyway reopens.
@@ -86,7 +97,15 @@
     gate.showModal();
     if (sound) {
       labelSoundButtons();
-      sound.play().catch(() => {}); // blocked autoplay leaves the "Musical Recap" button for the visitor
+      // Browsers usually block sound until the visitor interacts with the page. If this is blocked, start
+      // on the first click or key press instead, unless that is Yes or the play/pause button itself.
+      const playOnFirstInteraction = event => {
+        for (const type of ['pointerdown', 'keydown']) document.removeEventListener(type, playOnFirstInteraction, true);
+        if (!event.target.closest?.('.terms-gate-sound, .terms-gate-yes')) sound.play().catch(() => {});
+      };
+      sound.play().catch(() => {
+        for (const type of ['pointerdown', 'keydown']) document.addEventListener(type, playOnFirstInteraction, true);
+      });
     }
   };
 

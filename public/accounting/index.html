@@ -10,12 +10,15 @@
 <script src="/js/navigation.js" defer></script>
 
 
-<script src="/js/terms-gate.js" data-terms="/terms/" data-version="ee0683442b4d8549a0a17759aae1e9fc" data-audio="/audio/terms-placeholder.mp3" defer></script>
+
+<script src="/js/terms-gate.js" data-terms="/terms/" data-version="fa099fc6548cc4aecdf7eea032022ae4" defer></script>
 
 
 </head>
 <body>
   <a class="skip-link" href="#main">The Tender For Law</a>
+  
+  
   
   
   <aside class="sidebar">
@@ -26,60 +29,74 @@
   <details class="navigation" id="navigation">
     <summary>Open sidebar</summary>
     <nav aria-label="Sidebar">
+      <form class="site-search" action="/search/" role="search">
+        <label class="sr-only" for="site-search-query">Search articles and volumes</label>
+        <input id="site-search-query" type="search" name="q" placeholder="Search articles and volumes" required>
+      </form>
+      
+      <div class="commentary-controls">
+        <a class="nav-heading" href="/commentary/">Commentary</a>
+        <button class="commentary-toggle" id="commentary-toggle" type="button" aria-pressed="false">
+          <span class="sr-only">Show commentary</span><span class="commentary-state" aria-hidden="true">Off</span>
+        </button>
+      </div>
       <div class="nav-group">
         <a class="nav-heading" href="/#volumes">Volumes</a>
         <ol class="volume-nav">
         
-          <li><a href="/vol_i/"><span class="volume-number" aria-hidden="true">01</span>Volume 1</a></li>
+          <li><a href="/vol_i/"><span class="volume-number" aria-hidden="true">I</span>Volume 1</a></li>
         
-          <li><a href="/vol_ii/"><span class="volume-number" aria-hidden="true">02</span>Volume 2</a></li>
+          <li><a href="/vol_ii/"><span class="volume-number" aria-hidden="true">II</span>Volume 2</a></li>
         
-          <li><a href="/vol_iii/"><span class="volume-number" aria-hidden="true">03</span>Volume 3</a></li>
+          <li><a href="/vol_iii/"><span class="volume-number" aria-hidden="true">III</span>Volume 3</a></li>
         
-          <li><a href="/vol_iv/"><span class="volume-number" aria-hidden="true">04</span>Volume 4</a></li>
+          <li><a href="/vol_iv/"><span class="volume-number" aria-hidden="true">IV</span>Volume 4</a></li>
         
-          <li><a href="/vol_v/"><span class="volume-number" aria-hidden="true">05</span>Volume 5</a></li>
+          <li><a href="/vol_v/"><span class="volume-number" aria-hidden="true">V</span>Volume 5</a></li>
         
-          <li><a href="/vol_vi/"><span class="volume-number" aria-hidden="true">06</span>Volume 6</a></li>
+          <li><a href="/vol_vi/"><span class="volume-number" aria-hidden="true">VI</span>Volume 6</a></li>
         
-          <li><a href="/vol_vii/"><span class="volume-number" aria-hidden="true">07</span>Volume 7</a></li>
+          <li><a href="/vol_vii/"><span class="volume-number" aria-hidden="true">VII</span>Volume 7</a></li>
         
-          <li><a href="/vol_viii/"><span class="volume-number" aria-hidden="true">08</span>Volume 8</a></li>
+          <li><a href="/vol_viii/"><span class="volume-number" aria-hidden="true">VIII</span>Volume 8</a></li>
         
-          <li><a href="/vol_ix/"><span class="volume-number" aria-hidden="true">09</span>Volume 9</a></li>
+          <li><a href="/vol_ix/"><span class="volume-number" aria-hidden="true">IX</span>Volume 9</a></li>
         
-          <li><a href="/vol_x/"><span class="volume-number" aria-hidden="true">10</span>Volume 10</a></li>
+          <li><a href="/vol_x/"><span class="volume-number" aria-hidden="true">X</span>Volume 10</a></li>
         
-          <li><a href="/vol_xi/"><span class="volume-number" aria-hidden="true">11</span>Volume 11</a></li>
+          <li><a href="/vol_xi/"><span class="volume-number" aria-hidden="true">XI</span>Volume 11</a></li>
         
-          <li><a href="/vol_xii/"><span class="volume-number" aria-hidden="true">12</span>Volume 12</a></li>
+          <li><a href="/vol_xii/"><span class="volume-number" aria-hidden="true">XII</span>Volume 12</a></li>
         
-          <li><a href="/vol_xiii/"><span class="volume-number" aria-hidden="true">13</span>Volume 13</a></li>
+          <li><a href="/vol_xiii/"><span class="volume-number" aria-hidden="true">XIII</span>Volume 13</a></li>
         
-          <li><a href="/vol_xiv/"><span class="volume-number" aria-hidden="true">14</span>Volume 14</a></li>
+          <li><a href="/vol_xiv/"><span class="volume-number" aria-hidden="true">XIV</span>Volume 14</a></li>
         
         </ol>
       </div>
       
       <details class="nav-group article-nav">
         <summary>Articles</summary>
-        <a class="nav-heading" href="/articles/">Articles</a>
-        <ul><li><a href="/articles/scott-duncan/">Scott Duncan</a></li><li><a href="/articles/tara-duncan/">Tara Duncan</a></li><li><a href="/articles/chris-schulte/">Chris Schulte</a></li><li><a href="/articles/various-authors/">Various Authors</a></li></ul>
+        <ul>
+          <li><a href="/articles/">Articles</a></li>
+          <li><a href="/articles/scott-duncan/">Scott Duncan</a></li><li><a href="/articles/tara-duncan/">Tara Duncan</a></li><li><a href="/articles/chris-schulte/">Chris Schulte</a></li><li><a href="/articles/various-authors/">Various Authors</a></li>
+        </ul>
       </details>
       
-      <ul class="subject-nav">
       
-        <li><a href="/accounting" aria-current="page">Accounting</a></li>
       
-        <li><a href="/agency">Agency</a></li>
       
-        <li><a href="/bills-of-exchange">Bills of Exchange</a></li>
       
-        <li><a href="/insurance">Insurance</a></li>
       
-        <li><a href="/title&amp;property">Title and Property</a></li>
+      <details class="nav-group article-nav library-nav" open>
+        <summary>Library</summary>
+        <ul>
+          <li><a href="/library/">Library</a></li>
+          <li><a href="/accounting/" aria-current="page">Accounting</a></li><li><a href="/agency/">Agency</a></li><li><a href="/bills-of-exchange/">Bills of Exchange</a></li><li><a href="/insurance/">Insurance</a></li><li><a href="/titleproperty/">Title and Property</a></li>
+        </ul>
+      </details>
       
-      </ul>
+      <div class="nav-group article-nav"><a class="nav-heading" href="https://cdd.com" target="_blank" rel="noopener noreferrer">SPNBFS <span aria-hidden="true">↗</span></a></div>
     </nav>
   </details>
 </aside>
@@ -136,11 +153,8 @@
 <li><a href="https://archive.org/details/adolf-hitler-the-greatest-story-never-told" target="_blank" rel="noopener noreferrer">The Greatest Story Never Told</a></li>
 </ul></section>
 <section><h3>Required Reading</h3><ul>
-<li><a href="https://www.community-exchange.org/docs/Riegel/private_enterprise_money.pdf" target="_blank" rel="noopener noreferrer">Private Enterprise Money</a></li>
-<li><a href="https://uncitral.un.org/sites/uncitral.un.org/files/media-documents/uncitral/en/hamburg_rules_e.pdf" target="_blank" rel="noopener noreferrer">Goods Carried By Sea</a></li>
-<li><a href="https://uncitral.un.org/sites/uncitral.un.org/files/media-documents/uncitral/en/x_12_e.pdf" target="_blank" rel="noopener noreferrer">UNCITRAL Negoitable Instruments</a></li>
-<li><a href="https://www.google.com/url?sa=t&amp;rct=j&amp;q=&amp;esrc=s&amp;source=web&amp;cd=&amp;ved=2ahUKEwjPyKaL49WCAxUqODQIHYnwBPwQFnoECAwQAQ&amp;url=https%3A%2F%2Fa2533-17319523.cluster45.canvas-user-content.com%2Fcourses%2F2533~41886%2Ffiles%2F2533~17319523%2Fcourse%2520files%2FACC101week1_sco_3%2F9781402219757.pdf&amp;usg=AOvVaw1XUf-fdtPYAGTMOQ5eanf2&amp;opi=89978449" target="_blank" rel="noopener noreferrer">Lemonade Stand Accounting E-book (download)</a></li>
 <li><a href="https://bitcoin.org/bitcoin.pdf" target="_blank" rel="noopener noreferrer">Satoshi White Paper</a></li>
+<li><a href="https://minds.com/taraduncan" target="_blank" rel="noopener noreferrer">Tara&rsquo;s Minds Feed</a></li>
 </ul></section>
 <section><h3>Legal Definitions</h3><ul>
 <li><a href="https://www.law.cornell.edu/wex" target="_blank" rel="noopener noreferrer">Cornell Wex</a></li>
@@ -151,6 +165,7 @@
 </div><p class="copyright">&copy; Creative Commons 3.0 Unported License - NO COMMERCE EXPECTED OR IMPLIED</p>
 </footer>
 
+    <a class="back-to-top" href="#main"><span aria-hidden="true">↑</span> Back to top</a>
   </div>
 </body>
 </html>

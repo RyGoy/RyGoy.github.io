@@ -6,13 +6,20 @@
     <description>Recent content in Categories on TheTenderForLaw.com Test Deployment</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 23 Nov 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 02 Nov 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Accounting</title>
       <link>http://localhost:1313/categories/accounting/</link>
-      <pubDate>Sat, 23 Nov 2024 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 02 Nov 2026 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/categories/accounting/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Title and Property</title>
+      <link>http://localhost:1313/categories/title-and-property/</link>
+      <pubDate>Mon, 02 Nov 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/categories/title-and-property/</guid>
       <description></description>
     </item>
     <item>
@@ -149,6 +156,13 @@
       <description></description>
     </item>
     <item>
+      <title>Debt</title>
+      <link>http://localhost:1313/categories/debt/</link>
+      <pubDate>Mon, 07 Mar 2016 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/categories/debt/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>AGENCY -</title>
       <link>http://localhost:1313/categories/agency--/</link>
       <pubDate>Mon, 05 May 2014 00:00:00 +0000</pubDate>
@@ -216,6 +230,20 @@
       <link>http://localhost:1313/categories/trusts/</link>
       <pubDate>Mon, 05 May 2014 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/categories/trusts/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Court</title>
+      <link>http://localhost:1313/categories/court/</link>
+      <pubDate>Thu, 30 May 2013 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/categories/court/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Freedumb</title>
+      <link>http://localhost:1313/categories/freedumb/</link>
+      <pubDate>Thu, 30 May 2013 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/categories/freedumb/</guid>
       <description></description>
     </item>
     <item>

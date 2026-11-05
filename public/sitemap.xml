@@ -2,6 +2,9 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://localhost:1313/titleproperty/ownership-control-and-dispute-resolution/</loc>
+    <lastmod>2026-11-02T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/insurance/someone-else-does-the-time/</loc>
     <lastmod>2026-11-01T00:00:00+00:00</lastmod>
   </url><url>
@@ -15,6 +18,8 @@
     <lastmod>2014-05-05T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/accounting/flashcards/</loc>
+  </url><url>
+    <loc>http://localhost:1313/library/the-english-constitution/</loc>
   </url><url>
     <loc>http://localhost:1313/articles/various-authors/those-who-mis-trust/</loc>
   </url><url>
@@ -36,6 +41,8 @@
     <loc>http://localhost:1313/articles/various-authors/trustees-in-commerce/</loc>
     <lastmod>2014-05-05T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>http://localhost:1313/library/the-accounting-game/</loc>
+  </url><url>
     <loc>http://localhost:1313/vol_ii/</loc>
   </url><url>
     <loc>http://localhost:1313/articles/chris-schulte/</loc>
@@ -44,30 +51,44 @@
     <loc>http://localhost:1313/articles/chris-schulte/as-dumbed-down-as-i-can-make-it/</loc>
     <lastmod>2017-01-14T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>http://localhost:1313/library/ho-canada/</loc>
+  </url><url>
     <loc>http://localhost:1313/vol_iii/</loc>
   </url><url>
     <loc>http://localhost:1313/articles/chris-schulte/an-article-about-accounting/</loc>
     <lastmod>2017-10-29T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>http://localhost:1313/library/uncitral-bills-of-exchange-convention/</loc>
+  </url><url>
     <loc>http://localhost:1313/articles/chris-schulte/how-to-be-a-plumber/</loc>
     <lastmod>2017-09-23T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/library/hamburg-rules/</loc>
   </url><url>
     <loc>http://localhost:1313/vol_v/</loc>
   </url><url>
     <loc>http://localhost:1313/articles/chris-schulte/lets-say-that-you-are-18/</loc>
     <lastmod>2017-10-29T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>http://localhost:1313/library/private-enterprise-money/</loc>
+  </url><url>
     <loc>http://localhost:1313/vol_vi/</loc>
   </url><url>
     <loc>http://localhost:1313/articles/chris-schulte/robbing-a-bank/</loc>
     <lastmod>2017-10-29T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>http://localhost:1313/library/newton-system-of-the-world/</loc>
+  </url><url>
     <loc>http://localhost:1313/vol_vii/</loc>
+  </url><url>
+    <loc>http://localhost:1313/library/bastiat-the-law/</loc>
   </url><url>
     <loc>http://localhost:1313/vol_viii/</loc>
   </url><url>
     <loc>http://localhost:1313/articles/scott-duncan/lien-your-name/</loc>
     <lastmod>2014-05-05T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/library/hobbes-leviathan/</loc>
   </url><url>
     <loc>http://localhost:1313/vol_ix/</loc>
   </url><url>
@@ -77,6 +98,8 @@
     <loc>http://localhost:1313/articles/various-authors/attorney-general-money/</loc>
     <lastmod>2014-05-05T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>http://localhost:1313/library/paine-the-age-of-reason/</loc>
+  </url><url>
     <loc>http://localhost:1313/vol_x/</loc>
   </url><url>
     <loc>http://localhost:1313/articles/scott-duncan/persons-for-idiots/</loc>
@@ -84,6 +107,8 @@
   </url><url>
     <loc>http://localhost:1313/articles/various-authors/whos-on-first-for-idiots/</loc>
     <lastmod>2014-05-05T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/library/solzhenitsyn-the-gulag-archipelago/</loc>
   </url><url>
     <loc>http://localhost:1313/vol_xi/</loc>
   </url><url>
@@ -96,15 +121,21 @@
     <loc>http://localhost:1313/articles/scott-duncan/proper-notice-for-idiots/</loc>
     <lastmod>2014-05-05T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>http://localhost:1313/library/hitchens-god-is-not-great/</loc>
+  </url><url>
     <loc>http://localhost:1313/vol_xii/</loc>
   </url><url>
     <loc>http://localhost:1313/articles/scott-duncan/surety-for-idiots/</loc>
     <lastmod>2014-05-05T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>http://localhost:1313/library/asimov-foundation/</loc>
+  </url><url>
     <loc>http://localhost:1313/vol_xiii/</loc>
   </url><url>
     <loc>http://localhost:1313/articles/scott-duncan/agency-for-idiots/</loc>
     <lastmod>2014-05-05T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/library/locke-two-treatises-of-government/</loc>
   </url><url>
     <loc>http://localhost:1313/vol_xiv/</loc>
   </url><url>
@@ -135,7 +166,31 @@
     <lastmod>2022-06-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/</loc>
-    <lastmod>2026-11-01T00:00:00+00:00</lastmod>
+    <lastmod>2026-11-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/%23property/</loc>
+    <lastmod>2026-11-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/%23titleandtrust/</loc>
+    <lastmod>2026-11-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/%23transactions/</loc>
+    <lastmod>2026-11-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/categories/accounting/</loc>
+    <lastmod>2026-11-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/categories/</loc>
+    <lastmod>2026-11-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/</loc>
+    <lastmod>2026-11-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/categories/title-and-property/</loc>
+    <lastmod>2026-11-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/titleproperty/</loc>
+    <lastmod>2026-11-02T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/%23accounting/</loc>
     <lastmod>2026-11-01T00:00:00+00:00</lastmod>
@@ -149,9 +204,6 @@
     <loc>http://localhost:1313/insurance/</loc>
     <lastmod>2026-11-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/</loc>
-    <lastmod>2026-11-01T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/tags/%23actors/</loc>
     <lastmod>2024-11-23T00:00:00+00:00</lastmod>
   </url><url>
@@ -161,16 +213,10 @@
     <loc>http://localhost:1313/tags/%23whoami/</loc>
     <lastmod>2024-11-23T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/accounting/</loc>
-    <lastmod>2024-11-23T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/categories/agency/</loc>
     <lastmod>2024-11-23T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/articles/</loc>
-    <lastmod>2024-11-23T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/categories/</loc>
     <lastmod>2024-11-23T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/categories/surety/</loc>
@@ -221,9 +267,6 @@
     <loc>http://localhost:1313/tags/%23registeredagentsactascurrencyexchanges/</loc>
     <lastmod>2020-10-18T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/%23transactions/</loc>
-    <lastmod>2020-10-18T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/categories/corporations/</loc>
     <lastmod>2020-10-18T00:00:00+00:00</lastmod>
   </url><url>
@@ -244,9 +287,6 @@
   </url><url>
     <loc>http://localhost:1313/articles/tara-duncan/somebody-called-me-a-cunt/</loc>
     <lastmod>2019-01-19T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/%23titleandtrust/</loc>
-    <lastmod>2017-10-29T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/%23trustbutverify/</loc>
     <lastmod>2017-10-29T00:00:00+00:00</lastmod>
@@ -316,6 +356,18 @@
   </url><url>
     <loc>http://localhost:1313/articles/tara-duncan/fold-it-good/</loc>
     <lastmod>2016-05-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/%23everybodyknows/</loc>
+    <lastmod>2016-03-07T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/%23youthinkwrong/</loc>
+    <lastmod>2016-03-07T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/articles/scott-duncan/a-few-words-on-gratitude/</loc>
+    <lastmod>2016-03-07T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/categories/debt/</loc>
+    <lastmod>2016-03-07T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/articles/tara-duncan/just-do-it/</loc>
     <lastmod>2016-01-20T03:45:00+00:00</lastmod>
@@ -425,6 +477,18 @@
     <loc>http://localhost:1313/articles/scott-duncan/freedumb-the-truth-and-robert-menard/</loc>
     <lastmod>2014-01-01T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>http://localhost:1313/tags/%23noticeofmistake/</loc>
+    <lastmod>2013-05-30T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/articles/scott-duncan/all-the-shit-that-dean-kory-is-doing-wrong/</loc>
+    <lastmod>2013-05-30T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/categories/court/</loc>
+    <lastmod>2013-05-30T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/categories/freedumb/</loc>
+    <lastmod>2013-05-30T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/categories/claims/</loc>
     <lastmod>2013-02-24T00:00:00+00:00</lastmod>
   </url><url>
@@ -433,8 +497,6 @@
   </url><url>
     <loc>http://localhost:1313/articles/scott-duncan/oppf-p1/</loc>
     <lastmod>2013-02-23T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/titleproperty/</loc>
   </url><url>
     <loc>http://localhost:1313/vol_i/462493170453287_462493173786620/462493170453287_462493173786620-1017407544961844/</loc>
   </url><url>
@@ -253125,6 +253187,12 @@
     <loc>http://localhost:1313/agency/</loc>
   </url><url>
     <loc>http://localhost:1313/bills-of-exchange/</loc>
+  </url><url>
+    <loc>http://localhost:1313/commentary/</loc>
+  </url><url>
+    <loc>http://localhost:1313/library/</loc>
+  </url><url>
+    <loc>http://localhost:1313/search/</loc>
   </url><url>
     <loc>http://localhost:1313/tags/tag1/</loc>
   </url><url>

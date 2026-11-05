@@ -2,17 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>#Accounting on TheTenderForLaw.com Test Deployment</title>
-    <link>//localhost:1313/tags/%23accounting/</link>
+    <link>http://localhost:1313/tags/%23accounting/</link>
     <description>Recent content in #Accounting on TheTenderForLaw.com Test Deployment</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 01 Jan 2016 00:00:00 +0000</lastBuildDate>
-    <atom:link href="//localhost:1313/tags/%23accounting/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 01 Nov 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/%23accounting/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>You Do the Crime, Someone Else Does the Time</title>
+      <link>http://localhost:1313/insurance/someone-else-does-the-time/</link>
+      <pubDate>Sun, 01 Nov 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/insurance/someone-else-does-the-time/</guid>
+      <description>&lt;p&gt;Dear friend,&lt;/p&gt;&#xA;&lt;p&gt;There&amp;rsquo;s an old saying: &lt;em&gt;if you can&amp;rsquo;t do the time, don&amp;rsquo;t do the crime.&lt;/em&gt; I want to write to you about the arrangement that quietly reverses it: &lt;strong&gt;you do the crime, and someone else does the time.&lt;/strong&gt; I think that arrangement is immoral. I also think your own Scripture agrees with me more than the way it is often preached.&lt;/p&gt;&#xA;&lt;h2 id=&#34;what-your-insurer-actually-is&#34;&gt;What your insurer actually is&lt;/h2&gt;&#xA;&lt;p&gt;Your insurer is a &lt;strong&gt;surety&lt;/strong&gt; for your accidents and your liability.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Channeling Nancy (Or; Why Lying Is Really Bad…)</title>
-      <link>//localhost:1313/articles/various-authors/channeling-nancy/</link>
+      <link>http://localhost:1313/articles/various-authors/channeling-nancy/</link>
       <pubDate>Fri, 01 Jan 2016 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/articles/various-authors/channeling-nancy/</guid>
+      <guid>http://localhost:1313/articles/various-authors/channeling-nancy/</guid>
       <description>&lt;!-- raw HTML omitted --&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;A Tender For Law Article by Ceit Butler(c), under a Creative Commons Attribution-NonCommercial-NoDerivs 3.0 Unported License.&lt;/p&gt;&#xA;&lt;p&gt;I am what you would describe as “an avid reader”. I started young; my grandmother had taught me to read chapter books by the time I turned 3, and in doing so she forever instilled in me a love of reading. I spent the majority of my formative years with my nose buried in a book. I read everything that I could get my hands on; comic books, encyclopedias, scientific guides, and novels. I spent days at a time exploring other worlds, as familiar with the landscapes of Narnia, Middle Earth, Olympus, and Xanth as I was with my own backyard. Visions of the future – some glorious, others terrifying – awaited me each month in the pages of Issac Asimov’s Science Fiction Magazine. I spent my nights, hiding under my blanket with flashlight in hand, wandering the dark hallways that sprang from the imagination of Lovecraft and Poe. And last, but not least, I solved mysteries alongside the likes of Sherlock Holmes, Miss Marple, and Hercule Poirot.&lt;/p&gt;</description>
     </item>
   </channel>

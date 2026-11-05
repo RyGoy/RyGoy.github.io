@@ -2,30 +2,30 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>TheTenderForLaw.com Test Deployment</title>
-    <link>//localhost:1313/vol_iv/462493170453287_578748388827764/</link>
+    <link>http://localhost:1313/vol_iv/462493170453287_578748388827764/</link>
     <description>Recent content on TheTenderForLaw.com Test Deployment</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <atom:link href="//localhost:1313/vol_iv/462493170453287_578748388827764/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/vol_iv/462493170453287_578748388827764/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title></title>
-      <link>//localhost:1313/vol_iv/462493170453287_578748388827764/462493170453287_578748388827764-579131678789435/</link>
+      <link>http://localhost:1313/vol_iv/462493170453287_578748388827764/462493170453287_578748388827764-579131678789435/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/vol_iv/462493170453287_578748388827764/462493170453287_578748388827764-579131678789435/</guid>
+      <guid>http://localhost:1313/vol_iv/462493170453287_578748388827764/462493170453287_578748388827764-579131678789435/</guid>
       <description></description>
     </item>
     <item>
       <title></title>
-      <link>//localhost:1313/vol_iv/462493170453287_578748388827764/462493170453287_578748388827764-579150052120931/</link>
+      <link>http://localhost:1313/vol_iv/462493170453287_578748388827764/462493170453287_578748388827764-579150052120931/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/vol_iv/462493170453287_578748388827764/462493170453287_578748388827764-579150052120931/</guid>
+      <guid>http://localhost:1313/vol_iv/462493170453287_578748388827764/462493170453287_578748388827764-579150052120931/</guid>
       <description></description>
     </item>
     <item>
       <title></title>
-      <link>//localhost:1313/vol_iv/462493170453287_578748388827764/462493170453287_578748388827764-579155508787052/</link>
+      <link>http://localhost:1313/vol_iv/462493170453287_578748388827764/462493170453287_578748388827764-579155508787052/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/vol_iv/462493170453287_578748388827764/462493170453287_578748388827764-579155508787052/</guid>
+      <guid>http://localhost:1313/vol_iv/462493170453287_578748388827764/462493170453287_578748388827764-579155508787052/</guid>
       <description></description>
     </item>
   </channel>

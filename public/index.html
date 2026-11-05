@@ -11,12 +11,15 @@
 <script src="/js/navigation.js" defer></script>
 
 
-<script src="/js/terms-gate.js" data-terms="/terms/" data-version="ee0683442b4d8549a0a17759aae1e9fc" data-audio="/audio/terms-placeholder.mp3" defer></script>
+
+<script src="/js/terms-gate.js" data-terms="/terms/" data-version="fa099fc6548cc4aecdf7eea032022ae4" defer></script>
 
 
 </head>
 <body class="home">
   <a class="skip-link" href="#main">The Tender For Law</a>
+  
+  
   
   
   <aside class="sidebar">
@@ -27,60 +30,74 @@
   <details class="navigation" id="navigation">
     <summary>Open sidebar</summary>
     <nav aria-label="Sidebar">
+      <form class="site-search" action="/search/" role="search">
+        <label class="sr-only" for="site-search-query">Search articles and volumes</label>
+        <input id="site-search-query" type="search" name="q" placeholder="Search articles and volumes" required>
+      </form>
+      
+      <div class="commentary-controls">
+        <a class="nav-heading" href="/commentary/">Commentary</a>
+        <button class="commentary-toggle" id="commentary-toggle" type="button" aria-pressed="false">
+          <span class="sr-only">Show commentary</span><span class="commentary-state" aria-hidden="true">Off</span>
+        </button>
+      </div>
       <div class="nav-group">
         <a class="nav-heading" href="/#volumes">Volumes</a>
         <ol class="volume-nav">
         
-          <li><a href="/vol_i/"><span class="volume-number" aria-hidden="true">01</span>Volume 1</a></li>
+          <li><a href="/vol_i/"><span class="volume-number" aria-hidden="true">I</span>Volume 1</a></li>
         
-          <li><a href="/vol_ii/"><span class="volume-number" aria-hidden="true">02</span>Volume 2</a></li>
+          <li><a href="/vol_ii/"><span class="volume-number" aria-hidden="true">II</span>Volume 2</a></li>
         
-          <li><a href="/vol_iii/"><span class="volume-number" aria-hidden="true">03</span>Volume 3</a></li>
+          <li><a href="/vol_iii/"><span class="volume-number" aria-hidden="true">III</span>Volume 3</a></li>
         
-          <li><a href="/vol_iv/"><span class="volume-number" aria-hidden="true">04</span>Volume 4</a></li>
+          <li><a href="/vol_iv/"><span class="volume-number" aria-hidden="true">IV</span>Volume 4</a></li>
         
-          <li><a href="/vol_v/"><span class="volume-number" aria-hidden="true">05</span>Volume 5</a></li>
+          <li><a href="/vol_v/"><span class="volume-number" aria-hidden="true">V</span>Volume 5</a></li>
         
-          <li><a href="/vol_vi/"><span class="volume-number" aria-hidden="true">06</span>Volume 6</a></li>
+          <li><a href="/vol_vi/"><span class="volume-number" aria-hidden="true">VI</span>Volume 6</a></li>
         
-          <li><a href="/vol_vii/"><span class="volume-number" aria-hidden="true">07</span>Volume 7</a></li>
+          <li><a href="/vol_vii/"><span class="volume-number" aria-hidden="true">VII</span>Volume 7</a></li>
         
-          <li><a href="/vol_viii/"><span class="volume-number" aria-hidden="true">08</span>Volume 8</a></li>
+          <li><a href="/vol_viii/"><span class="volume-number" aria-hidden="true">VIII</span>Volume 8</a></li>
         
-          <li><a href="/vol_ix/"><span class="volume-number" aria-hidden="true">09</span>Volume 9</a></li>
+          <li><a href="/vol_ix/"><span class="volume-number" aria-hidden="true">IX</span>Volume 9</a></li>
         
-          <li><a href="/vol_x/"><span class="volume-number" aria-hidden="true">10</span>Volume 10</a></li>
+          <li><a href="/vol_x/"><span class="volume-number" aria-hidden="true">X</span>Volume 10</a></li>
         
-          <li><a href="/vol_xi/"><span class="volume-number" aria-hidden="true">11</span>Volume 11</a></li>
+          <li><a href="/vol_xi/"><span class="volume-number" aria-hidden="true">XI</span>Volume 11</a></li>
         
-          <li><a href="/vol_xii/"><span class="volume-number" aria-hidden="true">12</span>Volume 12</a></li>
+          <li><a href="/vol_xii/"><span class="volume-number" aria-hidden="true">XII</span>Volume 12</a></li>
         
-          <li><a href="/vol_xiii/"><span class="volume-number" aria-hidden="true">13</span>Volume 13</a></li>
+          <li><a href="/vol_xiii/"><span class="volume-number" aria-hidden="true">XIII</span>Volume 13</a></li>
         
-          <li><a href="/vol_xiv/"><span class="volume-number" aria-hidden="true">14</span>Volume 14</a></li>
+          <li><a href="/vol_xiv/"><span class="volume-number" aria-hidden="true">XIV</span>Volume 14</a></li>
         
         </ol>
       </div>
       
       <details class="nav-group article-nav">
         <summary>Articles</summary>
-        <a class="nav-heading" href="/articles/">Articles</a>
-        <ul><li><a href="/articles/scott-duncan/">Scott Duncan</a></li><li><a href="/articles/tara-duncan/">Tara Duncan</a></li><li><a href="/articles/chris-schulte/">Chris Schulte</a></li><li><a href="/articles/various-authors/">Various Authors</a></li></ul>
+        <ul>
+          <li><a href="/articles/">Articles</a></li>
+          <li><a href="/articles/scott-duncan/">Scott Duncan</a></li><li><a href="/articles/tara-duncan/">Tara Duncan</a></li><li><a href="/articles/chris-schulte/">Chris Schulte</a></li><li><a href="/articles/various-authors/">Various Authors</a></li>
+        </ul>
       </details>
       
-      <ul class="subject-nav">
       
-        <li><a href="/accounting">Accounting</a></li>
       
-        <li><a href="/agency">Agency</a></li>
       
-        <li><a href="/bills-of-exchange">Bills of Exchange</a></li>
       
-        <li><a href="/insurance">Insurance</a></li>
       
-        <li><a href="/title&amp;property">Title and Property</a></li>
+      <details class="nav-group article-nav library-nav">
+        <summary>Library</summary>
+        <ul>
+          <li><a href="/library/">Library</a></li>
+          <li><a href="/accounting/">Accounting</a></li><li><a href="/agency/">Agency</a></li><li><a href="/bills-of-exchange/">Bills of Exchange</a></li><li><a href="/insurance/">Insurance</a></li><li><a href="/titleproperty/">Title and Property</a></li>
+        </ul>
+      </details>
       
-      </ul>
+      <div class="nav-group article-nav"><a class="nav-heading" href="https://cdd.com" target="_blank" rel="noopener noreferrer">SPNBFS <span aria-hidden="true">↗</span></a></div>
     </nav>
   </details>
 </aside>
@@ -92,12 +109,15 @@
     </header>
     <main id="main" tabindex="-1">
   <section class="hero" aria-labelledby="site-title">
-  <div class="hero-seal" aria-hidden="true"><img src="/images/seal.svg" width="180" height="180" alt=""></div>
+  <figure class="hero-plate">
+    <img src="/images/better-than-jesus-600.jpg" width="600" height="800" alt="An ornate illuminated-manuscript poster titled “Better-Than-Jesus”, with a crucifix in a gilded oval between two arrows reading “Surety &amp; Accounting” and “Accounting &amp; Surety”, and “#ScottIsAlwaysRight” along the bottom." fetchpriority="high">
+  </figure>
   <div class="hero-copy">
+    <div class="hero-seal" aria-hidden="true"><img src="/images/seal.svg" width="180" height="180" alt=""></div>
     <div class="hero-rule" aria-hidden="true"><span></span>✧<span></span></div>
     <h1 id="site-title">The Tender For Law</h1>
     <p>An archive of old Facebook posts from 2013 - 2016 + Articles for Various Authors.</p>
-    <div class="hero-links"><a href="#volumes">Volumes <span aria-hidden="true">↓</span></a><a href="/articles/">Articles <span aria-hidden="true">↗</span></a></div>
+    <div class="hero-links"><a href="#volumes">Volumes <span aria-hidden="true">↓</span></a><a href="/articles/">Articles <span aria-hidden="true">↗</span></a><a href="https://cdd.com" target="_blank" rel="noopener noreferrer">SPNBFS <span aria-hidden="true">↗</span></a></div>
   </div>
 </section>
 
@@ -110,7 +130,11 @@
         <span class="book-ornament" aria-hidden="true">I</span>
         <h3>Volume 1</h3>
         
-        <span class="volume-dates">2013 — 2013</span>
+        
+          
+          
+          <span class="volume-dates">Jan 2013 – Mar 2013</span>
+        
         <span class="card-arrow" aria-hidden="true">↗</span>
       </a>
     
@@ -118,7 +142,11 @@
         <span class="book-ornament" aria-hidden="true">II</span>
         <h3>Volume 2</h3>
         
-        <span class="volume-dates">2013 — 2013</span>
+        
+          
+          
+          <span class="volume-dates">Apr 2013 – Jun 2013</span>
+        
         <span class="card-arrow" aria-hidden="true">↗</span>
       </a>
     
@@ -126,7 +154,11 @@
         <span class="book-ornament" aria-hidden="true">III</span>
         <h3>Volume 3</h3>
         
-        <span class="volume-dates">2013 — 2013</span>
+        
+          
+          
+          <span class="volume-dates">Jul 2013 – Sep 2013</span>
+        
         <span class="card-arrow" aria-hidden="true">↗</span>
       </a>
     
@@ -134,7 +166,11 @@
         <span class="book-ornament" aria-hidden="true">IV</span>
         <h3>Volume 4</h3>
         
-        <span class="volume-dates">2013 — 2014</span>
+        
+          
+          
+          <span class="volume-dates">Oct 2013 – Jan 2014</span>
+        
         <span class="card-arrow" aria-hidden="true">↗</span>
       </a>
     
@@ -142,7 +178,11 @@
         <span class="book-ornament" aria-hidden="true">V</span>
         <h3>Volume 5</h3>
         
-        <span class="volume-dates">2014 — 2014</span>
+        
+          
+          
+          <span class="volume-dates">Jan 2014 – Mar 2014</span>
+        
         <span class="card-arrow" aria-hidden="true">↗</span>
       </a>
     
@@ -150,7 +190,11 @@
         <span class="book-ornament" aria-hidden="true">VI</span>
         <h3>Volume 6</h3>
         
-        <span class="volume-dates">2014 — 2014</span>
+        
+          
+          
+          <span class="volume-dates">Apr 2014 – Jun 2014</span>
+        
         <span class="card-arrow" aria-hidden="true">↗</span>
       </a>
     
@@ -158,7 +202,11 @@
         <span class="book-ornament" aria-hidden="true">VII</span>
         <h3>Volume 7</h3>
         
-        <span class="volume-dates">2014 — 2014</span>
+        
+          
+          
+          <span class="volume-dates">Jul 2014 – Sep 2014</span>
+        
         <span class="card-arrow" aria-hidden="true">↗</span>
       </a>
     
@@ -166,7 +214,11 @@
         <span class="book-ornament" aria-hidden="true">VIII</span>
         <h3>Volume 8</h3>
         
-        <span class="volume-dates">2014 — 2014</span>
+        
+          
+          
+          <span class="volume-dates">Oct 2014 – Dec 2014</span>
+        
         <span class="card-arrow" aria-hidden="true">↗</span>
       </a>
     
@@ -174,7 +226,11 @@
         <span class="book-ornament" aria-hidden="true">IX</span>
         <h3>Volume 9</h3>
         
-        <span class="volume-dates">2015 — 2015</span>
+        
+          
+          
+          <span class="volume-dates">Jan 2015 – Mar 2015</span>
+        
         <span class="card-arrow" aria-hidden="true">↗</span>
       </a>
     
@@ -182,7 +238,11 @@
         <span class="book-ornament" aria-hidden="true">X</span>
         <h3>Volume 10</h3>
         
-        <span class="volume-dates">2015 — 2015</span>
+        
+          
+          
+          <span class="volume-dates">Apr 2015 – Jun 2015</span>
+        
         <span class="card-arrow" aria-hidden="true">↗</span>
       </a>
     
@@ -190,7 +250,11 @@
         <span class="book-ornament" aria-hidden="true">XI</span>
         <h3>Volume 11</h3>
         
-        <span class="volume-dates">2015 — 2015</span>
+        
+          
+          
+          <span class="volume-dates">Jul 2015 – Sep 2015</span>
+        
         <span class="card-arrow" aria-hidden="true">↗</span>
       </a>
     
@@ -198,7 +262,11 @@
         <span class="book-ornament" aria-hidden="true">XII</span>
         <h3>Volume 12</h3>
         
-        <span class="volume-dates">2015 — 2015</span>
+        
+          
+          
+          <span class="volume-dates">Oct 2015 – Dec 2015</span>
+        
         <span class="card-arrow" aria-hidden="true">↗</span>
       </a>
     
@@ -206,7 +274,11 @@
         <span class="book-ornament" aria-hidden="true">XIII</span>
         <h3>Volume 13</h3>
         
-        <span class="volume-dates">2016 — 2016</span>
+        
+          
+          
+          <span class="volume-dates">Jan 2016 – Mar 2016</span>
+        
         <span class="card-arrow" aria-hidden="true">↗</span>
       </a>
     
@@ -214,7 +286,11 @@
         <span class="book-ornament" aria-hidden="true">XIV</span>
         <h3>Volume 14</h3>
         
-        <span class="volume-dates">2016 — 2016</span>
+        
+          
+          
+          <span class="volume-dates">Apr 2016 – Jul 2016</span>
+        
         <span class="card-arrow" aria-hidden="true">↗</span>
       </a>
     
@@ -224,6 +300,12 @@
   <section class="article-library" aria-labelledby="articles-heading">
     <div class="section-heading"><h2 id="articles-heading"><a href="/articles/">Articles</a></h2><span class="rule" aria-hidden="true"></span></div>
     <div class="author-grid"><a class="author-card" href="/articles/scott-duncan/"><h3>Scott Duncan</h3><span aria-hidden="true">↗</span></a><a class="author-card" href="/articles/tara-duncan/"><h3>Tara Duncan</h3><span aria-hidden="true">↗</span></a><a class="author-card" href="/articles/chris-schulte/"><h3>Chris Schulte</h3><span aria-hidden="true">↗</span></a><a class="author-card" href="/articles/various-authors/"><h3>Various Authors</h3><span aria-hidden="true">↗</span></a></div>
+  </section>
+  
+  
+  <section class="article-library" aria-labelledby="library-heading">
+    <div class="section-heading"><h2 id="library-heading"><a href="/library/">Library</a></h2><span class="rule" aria-hidden="true"></span></div>
+    <div class="author-grid"><a class="author-card" href="/accounting/"><h3>Accounting</h3><span aria-hidden="true">↗</span></a><a class="author-card" href="/agency/"><h3>Agency</h3><span aria-hidden="true">↗</span></a><a class="author-card" href="/bills-of-exchange/"><h3>Bills of Exchange</h3><span aria-hidden="true">↗</span></a><a class="author-card" href="/insurance/"><h3>Insurance</h3><span aria-hidden="true">↗</span></a><a class="author-card" href="/titleproperty/"><h3>Title and Property</h3><span aria-hidden="true">↗</span></a></div>
   </section>
   
 </main>
@@ -252,11 +334,8 @@
 <li><a href="https://archive.org/details/adolf-hitler-the-greatest-story-never-told" target="_blank" rel="noopener noreferrer">The Greatest Story Never Told</a></li>
 </ul></section>
 <section><h3>Required Reading</h3><ul>
-<li><a href="https://www.community-exchange.org/docs/Riegel/private_enterprise_money.pdf" target="_blank" rel="noopener noreferrer">Private Enterprise Money</a></li>
-<li><a href="https://uncitral.un.org/sites/uncitral.un.org/files/media-documents/uncitral/en/hamburg_rules_e.pdf" target="_blank" rel="noopener noreferrer">Goods Carried By Sea</a></li>
-<li><a href="https://uncitral.un.org/sites/uncitral.un.org/files/media-documents/uncitral/en/x_12_e.pdf" target="_blank" rel="noopener noreferrer">UNCITRAL Negoitable Instruments</a></li>
-<li><a href="https://www.google.com/url?sa=t&amp;rct=j&amp;q=&amp;esrc=s&amp;source=web&amp;cd=&amp;ved=2ahUKEwjPyKaL49WCAxUqODQIHYnwBPwQFnoECAwQAQ&amp;url=https%3A%2F%2Fa2533-17319523.cluster45.canvas-user-content.com%2Fcourses%2F2533~41886%2Ffiles%2F2533~17319523%2Fcourse%2520files%2FACC101week1_sco_3%2F9781402219757.pdf&amp;usg=AOvVaw1XUf-fdtPYAGTMOQ5eanf2&amp;opi=89978449" target="_blank" rel="noopener noreferrer">Lemonade Stand Accounting E-book (download)</a></li>
 <li><a href="https://bitcoin.org/bitcoin.pdf" target="_blank" rel="noopener noreferrer">Satoshi White Paper</a></li>
+<li><a href="https://minds.com/taraduncan" target="_blank" rel="noopener noreferrer">Tara&rsquo;s Minds Feed</a></li>
 </ul></section>
 <section><h3>Legal Definitions</h3><ul>
 <li><a href="https://www.law.cornell.edu/wex" target="_blank" rel="noopener noreferrer">Cornell Wex</a></li>
@@ -267,6 +346,7 @@
 </div><p class="copyright">&copy; Creative Commons 3.0 Unported License - NO COMMERCE EXPECTED OR IMPLIED</p>
 </footer>
 
+    <a class="back-to-top" href="#main"><span aria-hidden="true">↑</span> Back to top</a>
   </div>
 </body>
 </html>
