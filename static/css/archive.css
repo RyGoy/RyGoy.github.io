@@ -20,6 +20,10 @@
   --emblem-templar: url("../images/emblems/templar.svg");
   --emblem-horus: url("../images/emblems/horus.svg");
   --emblem-ankh: url("../images/emblems/ankh.svg");
+  --emblem-rose: url("../images/emblems/rose.svg");
+  /* Gothic masonry (static/images/gothic/): ashlar stonework tile and a blind-arcade frieze. */
+  --stone: url("../images/gothic/ashlar.svg") 0 0 / 240px 96px;
+  --arcade: url("../images/gothic/arcade.svg");
   --display: "Cormorant Garamond", "Palatino Linotype", Palatino, Georgia, serif;
   --body: "Iowan Old Style", "Palatino Linotype", "Book Antiqua", Palatino, Georgia, serif;
 }
@@ -33,7 +37,7 @@ body {
   font-size: 1.125rem;
   line-height: 1.75;
   -webkit-font-smoothing: antialiased;
-  background-image: radial-gradient(ellipse at 80% 0, #28201955, transparent 45rem);
+  background: radial-gradient(ellipse at 80% 0, #28201955, transparent 45rem), var(--stone), var(--ink);
 }
 ::selection { color: #fff5de; background: #7b3438; }
 a { color: inherit; text-underline-offset: .22em; text-decoration-thickness: 1px; }
@@ -51,7 +55,9 @@ summary { cursor: pointer; }
 .skip-link:focus { top: 1rem; }
 .sidebar {
   position: fixed; inset: 0 auto 0 0; width: 16rem; overflow-y: auto;
-  background: #141512; border-right: 1px solid var(--line); padding: 2rem 1.6rem;
+  /* A stone pier: the ashlar texture, with a second line inside the edge like a column shaft. */
+  background: linear-gradient(#39382e88, #39382e88) right 5px top 0 / 1px 100% no-repeat, var(--stone), #141512;
+  border-right: 1px solid var(--line); padding: 2rem 1.6rem;
   scrollbar-width: thin; scrollbar-color: #514a39 #141512;
 }
 .brand { display: flex; align-items: center; gap: 1rem; text-decoration: none; margin-bottom: 2.25rem; }
@@ -71,7 +77,7 @@ summary { cursor: pointer; }
 .volume-number { min-width: 1.9rem; font-size: .68rem; letter-spacing: .06em; font-variant-numeric: tabular-nums; color: var(--brass); }
 .article-nav { border-block: 1px solid var(--line); padding-block: 1rem; }
 .site-shell { margin-left: 16rem; padding: 0 clamp(1.5rem, 4vw, 5rem); max-width: 100rem; }
-.masthead { min-height: 6.5rem; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: .5rem 2rem; border-bottom: 1px solid var(--line); padding-block: 1.5rem; }
+.masthead { min-height: 6.5rem; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: .5rem 2rem; border-bottom: 1px solid var(--line); padding-block: 1.5rem; background: var(--arcade) 0 100% / 1.1rem 1.1rem repeat-x; }
 .masthead > a { font-family: var(--display); font-size: 1.15rem; letter-spacing: .09em; text-decoration: none; color: var(--brass); }
 .breadcrumbs { min-width: 0; color: var(--muted); font-size: .77rem; }
 .breadcrumbs ol { display: flex; flex-wrap: wrap; list-style: none; gap: .5rem; margin: 0; padding: 0; overflow-wrap: anywhere; }
@@ -195,7 +201,7 @@ main { min-height: 35vh; }
 .prose table { display: block; max-width: 100%; overflow-x: auto; border-collapse: collapse; font-size: .95rem; }
 .prose td, .prose th { border: 1px solid var(--line); padding: .6rem .9rem; text-align: left; }
 .prose hr { border: 0; border-top: 1px solid var(--line); margin-block: 2.5rem; }
-.site-footer { margin-top: 5rem; border-top: 1px solid #665239; padding: 2.5rem 0 1.5rem; color: var(--muted); }
+.site-footer { margin-top: 5rem; border-top: 1px solid #665239; padding: 2.5rem 0 1.5rem; color: var(--muted); background: var(--arcade) 0 0 / 1.2rem 1.2rem repeat-x; }
 .footer-intro { display: flex; align-items: center; flex-wrap: wrap; gap: 1.3rem; padding-bottom: 2rem; margin-bottom: 2rem; border-bottom: 1px solid var(--line); }
 .footer-intro img { opacity: .65; }
 .footer-intro > p { max-width: 23rem; margin: 0; font-size: .85rem; line-height: 1.7; }
@@ -455,13 +461,26 @@ body::after { content: ""; position: fixed; z-index: -1; right: -6rem; bottom: -
 .archive-entry:not(.comment-entry)::after { content: ""; position: absolute; z-index: -1; top: 1rem; right: 1rem; width: 6rem; aspect-ratio: 1; background: var(--brass); opacity: .045; pointer-events: none; -webkit-mask: var(--emblem-templar) center / contain no-repeat; mask: var(--emblem-templar) center / contain no-repeat; }
 .volume-card { isolation: isolate; overflow: hidden; }
 .volume-card::after { content: ""; position: absolute; z-index: -1; right: -1rem; bottom: -1rem; width: 7.5rem; aspect-ratio: 1; background: var(--brass); opacity: .06; pointer-events: none; -webkit-mask: var(--emblem) center / contain no-repeat; mask: var(--emblem) center / contain no-repeat; }
-.volume-card:nth-child(5n+1) { --emblem: var(--emblem-eye); }
-.volume-card:nth-child(5n+2) { --emblem: var(--emblem-compass); }
-.volume-card:nth-child(5n+3) { --emblem: var(--emblem-templar); }
-.volume-card:nth-child(5n+4) { --emblem: var(--emblem-horus); }
-.volume-card:nth-child(5n) { --emblem: var(--emblem-ankh); }
-@media (max-width: 67.999rem) { .sidebar::after { display: none; } }
-@media print { .hero-copy::before, .sidebar::after, .site-footer::before, .site-footer::after, .archive-entry::after, .volume-card::after { display: none; } }
+.volume-card:nth-child(6n+1) { --emblem: var(--emblem-eye); }
+.volume-card:nth-child(6n+2) { --emblem: var(--emblem-compass); }
+.volume-card:nth-child(6n+3) { --emblem: var(--emblem-rose); }
+.volume-card:nth-child(6n+4) { --emblem: var(--emblem-templar); }
+.volume-card:nth-child(6n+5) { --emblem: var(--emblem-horus); }
+.volume-card:nth-child(6n) { --emblem: var(--emblem-ankh); }
+/* Gothic touches: a rose window behind page titles, and titles cut into the stone. */
+.page-heading { position: relative; isolation: isolate; }
+.page-heading::after { content: ""; position: absolute; z-index: -1; right: 0; top: 50%; width: 12rem; aspect-ratio: 1; transform: translateY(-50%); background: var(--brass); opacity: .05; pointer-events: none; -webkit-mask: var(--emblem-rose) center / contain no-repeat; mask: var(--emblem-rose) center / contain no-repeat; }
+.hero h1, .page-heading h1 { text-shadow: 0 -1px 0 #000000b0, 0 1px 0 #e5dcc812; }
+@media (max-width: 67.999rem) {
+  .sidebar::after { display: none; }
+  .sidebar { background: var(--stone), #141512; }
+}
+@media (max-width: 42rem) { .page-heading::after { width: 8rem; } }
+@media print {
+  .hero-copy::before, .sidebar::after, .site-footer::before, .site-footer::after, .archive-entry::after, .volume-card::after, .page-heading::after { display: none; }
+  .masthead, .site-footer { background: none; }
+  .hero h1, .page-heading h1 { text-shadow: none; }
+}
 /* Library books (layouts/library/) */
 .book-edition { color: var(--muted); font-size: .9rem; margin: .25rem 0 0; }
 .book-author { color: var(--muted); font-size: .85rem; margin-left: .35rem; }
