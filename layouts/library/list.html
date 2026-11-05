@@ -1,6 +1,6 @@
 {{ define "main" }}
 {{/* Laid out like /articles/ (partials/article-list.html): one card per group, each listing its pages. */}}
-<header class="page-heading"><p class="eyebrow">The Tender For Law</p><h1>{{ .Title }}</h1>{{ with .Description }}<div class="prose"><p>{{ . }}</p></div>{{ end }}</header>
+<header class="page-heading"><p class="eyebrow">The Tender For Law</p><h1>{{ .Title }}</h1>{{ with .Description }}<div class="prose"><p>{{ . }}</p></div>{{ end }}{{ if and .Content .Params.guide_title }}<p class="guide-jump"><a href="#guide">{{ .Params.guide_title }} <span aria-hidden="true">↓</span></a></p>{{ end }}</header>
 <div class="article-grid">
   {{ with .Pages.ByWeight }}
   <article class="article-card">
@@ -15,6 +15,12 @@
   </article>
   {{ end }}{{ end }}
 </div>
-{{/* The body of content/library/_index.md (the "Which Bible?" guide) reads below the cards. */}}
-{{ with .Content }}<div class="prose library-guide">{{ . }}</div>{{ end }}
+{{/* The body of content/library/_index.md is a guide below the cards, titled by guide_title. Its cards and
+     panels come from the cards, card and callout shortcodes (layouts/shortcodes/). */}}
+{{ with .Content }}
+<section class="library-guide" aria-labelledby="guide">
+  <div class="section-heading"><h2 id="guide">{{ $.Params.guide_title | default "Guide" }}</h2><span class="rule" aria-hidden="true"></span></div>
+  {{ . }}
+</section>
+{{ end }}
 {{ end }}
