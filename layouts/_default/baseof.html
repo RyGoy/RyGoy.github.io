@@ -12,7 +12,6 @@
     <header class="masthead">
       <a href="{{ site.Home.RelPermalink }}">The Tender For Law</a>
       {{ if not .IsHome }}{{ partial "breadcrumbs.html" . }}{{ end }}
-      <button type="button" class="share-button" aria-live="polite">Share</button>
     </header>
     <main id="main" tabindex="-1">{{ block "main" . }}{{ end }}</main>
     {{ partialCached "footer.html" . }}

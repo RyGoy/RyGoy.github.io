@@ -1,5 +1,5 @@
-// Share buttons in the masthead (_default/baseof.html), on each article (partials/article.html) and on
-// each post and comment (partials/entry.html). They open the browser's share sheet, or copy the link
+// Share buttons on each article (partials/article.html) and on each post and comment
+// (partials/entry.html). They open the browser's share sheet, or copy the link
 // where there is none. They stay hidden without JavaScript, or when the browser can do neither (the
 // clipboard needs https or localhost).
 const canShare = typeof navigator.share === 'function';
