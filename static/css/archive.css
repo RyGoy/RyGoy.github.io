@@ -151,8 +151,7 @@ main { min-height: 35vh; }
 .comments-link.is-empty { padding-inline: .9rem; font-weight: 500; color: var(--muted); background: transparent; border-color: var(--line); box-shadow: none; }
 .comments-link.is-empty:hover { color: var(--paper); border-color: #685333; }
 .comments-arrow { color: #b78072; }
-/* Share (masthead, article header, entry footer), js/share.js. Shown only when the browser can share or copy. */
-.article-share { margin-top: 1rem; }
+/* Share (masthead, article byline, entry footer), js/share.js. Shown only when the browser can share or copy. */
 .share-button { display: none; padding: .4rem .9rem; font-family: var(--display); font-size: .95rem; font-weight: 600; letter-spacing: .14em; text-transform: uppercase; cursor: pointer; color: var(--muted); background: transparent; border: 1px solid var(--line); border-radius: 3px; }
 .share-button:hover, .share-button:focus-visible { color: var(--paper); border-color: #685333; }
 .can-share .share-button { display: inline-block; }
@@ -187,6 +186,9 @@ main { min-height: 35vh; }
 .longform .page-heading { border-bottom: 1px solid var(--line); margin-bottom: 2.5rem; }
 .longform .page-heading h1 { font-size: clamp(2.5rem, 4.3vw, 4rem); }
 .article-author { color: #c7b68f; margin-bottom: .5rem; }
+.article-byline { display: flex; flex-wrap: wrap; align-items: center; gap: .5rem 1rem; margin-bottom: .5rem; }
+.article-byline .article-author { margin: 0; }
+.article-byline .share-button { margin-left: auto; }
 .article-metadata { font-size: .8rem; color: var(--muted); margin-top: 1.25rem; overflow-wrap: anywhere; }
 .article-metadata p { margin: .75rem 0 0; }
 .prose { font-size: 1.15rem; line-height: 1.9; overflow-wrap: anywhere; }
