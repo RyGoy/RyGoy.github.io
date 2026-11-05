@@ -1,6 +1,6 @@
-// Share button in the masthead (_default/baseof.html) and Copy button on each post and comment
-// (partials/entry.html). Both stay hidden without JavaScript, or when the browser can do neither
-// (the clipboard needs https or localhost).
+// Share buttons in the masthead (_default/baseof.html), on each article (partials/article.html) and on
+// each post and comment (partials/entry.html), plus a Copy button on each post and comment. All stay
+// hidden without JavaScript, or when the browser can do neither (the clipboard needs https or localhost).
 const canShare = typeof navigator.share === 'function';
 const canCopy = Boolean(navigator.clipboard && navigator.clipboard.writeText);
 
@@ -29,6 +29,15 @@ const entryText = (entry) => {
   return [[author, date].filter(Boolean).join(' · '), ...body, link].filter(Boolean).join('\n\n');
 };
 
+// The page being visited; a Share button on a post or comment adds that entry's anchor (#entry-…),
+// so the link opens the current page at that entry.
+const shareUrl = (button) => {
+  const url = new URL(location.href);
+  const entry = button.closest('.archive-entry');
+  if (entry) url.hash = entry.id;
+  return url.href;
+};
+
 if (canShare || canCopy) {
   if (canCopy) document.documentElement.classList.add('can-copy');
   document.documentElement.classList.add('can-share');
@@ -38,11 +47,12 @@ if (canShare || canCopy) {
     if (!button) return;
 
     if (button.classList.contains('share-button')) {
+      const url = shareUrl(button);
       if (canShare) {
         // Rejects when the visitor closes the share sheet; nothing to report then.
-        navigator.share({ title: document.title, url: location.href }).catch(() => {});
+        navigator.share({ title: document.title, url }).catch(() => {});
       } else {
-        copy(button, location.href, 'Link copied');
+        copy(button, url, 'Link copied');
       }
     } else {
       const entry = button.closest('.archive-entry');
