@@ -18,4 +18,4 @@ A few places to start, all on Bible Hub:
 
 Bible Hub follows the 66 books of the Protestant canon. For the books only some churches keep, such as Tobit, Sirach and the Maccabees in Catholic and Orthodox Bibles, or 1 Enoch, Jubilees and Meqabyan in the Ethiopian Bible, you will need other translations.
 
-For how the Ethiopian Bible, the Latin Vulgate and the King James Bible differ, and a list of other Bibles to compare, see [Which Bible?](/library/#which-bible) on the Library page.
+For how the Ethiopian Bible, the Latin Vulgate and the King James Bible differ, why history and tradition both matter, and a list of other Bibles to compare, see [Reading the Bible](/library/#guide) on the Library page.

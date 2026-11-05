@@ -3,31 +3,64 @@ title = "Library"
 description = "Books and documents to read, and the subject pages: accounting, agency, bills of exchange, insurance, and title and property."
 # The subjects, in order. The sidebar, the home page and this page all read this list.
 subjects = ["/accounting", "/agency", "/bills-of-exchange", "/insurance", "/title&property"]
+# Heading of the guide below the cards (the body of this file); layouts/library/list.html links to it from the top.
+guide_title = "Reading the Bible"
 +++
 
-## Which Bible?
+The Bible did not arrive bound in leather with a table of contents. It was written, copied, collected, argued over and translated across fifteen centuries, by a Church that was reading it aloud in its worship long before anyone settled which books it held. To read it well, learn two things: its **history** and its **tradition**. They are not the same thing, and you need both.
 
-There is no single "the Bible". Churches disagree about which books belong in it, and every edition is a translation made by particular people, at a particular time, from particular manuscripts. Three Bibles show how far apart they can be. Read the [Bible Hub](/library/bible-hub/) entry for a place to compare them side by side.
+### History and tradition
 
-### The Ethiopian Bible
+{{< cards cols="2" >}}
+{{< card kicker="The record" title="History" >}}
+What happened, and when: who wrote each book, which manuscripts survive, when the councils met, who translated what, from which text, and for whom. History is evidence. It can be checked, dated and argued from.
 
-The Bible of the Ethiopian Orthodox Tewahedo Church, and the largest canon in use today, usually counted as **81 books**. It was translated into **Ge'ez**, the classical language of Ethiopia, mostly from the Greek Septuagint, after the kingdom of Aksum became Christian in the 4th century.
+In legal terms, history is **the record of the case**.
+{{< /card >}}
+{{< card kicker="What was handed down" title="Tradition" >}}
+From the Latin *tradere*, to hand over: the creeds, the liturgy, the way the Church has always read a passage, and the teaching passed from bishop to bishop. Tradition is how the text has been lived and understood.
 
-Alongside the books found in other Bibles, it keeps books that almost every other church left out: **1 Enoch**, **Jubilees**, and the three books of **Meqabyan** (not the same as the Maccabees). 1 Enoch survives complete only in Ge'ez, so the Ethiopian Bible is the reason we can read it at all.
+In legal terms, tradition is **the body of precedent**.
+{{< /card >}}
+{{< /cards >}}
 
-### The Latin Vulgate
+A reader who knows only the history can recite dates and still miss what the words meant to the people who kept them. A reader who knows only a tradition can repeat its teaching without knowing where it came from. Learn both, and notice where they meet.
 
-The Bible of the Western church for more than a thousand years. **Jerome** began it in 382 at the request of Pope Damasus, revising the Old Latin Gospels and then translating most of the Old Testament **directly from Hebrew**, finishing around 405. "Vulgate" means the common, popular version.
+### The original Church: a question of title
 
-It contains the **73 books** of the Catholic canon, including Tobit, Judith, Wisdom, Sirach, Baruch, 1 and 2 Maccabees and the longer Esther and Daniel. The Council of Trent declared it the Church's authentic text in 1546. The Clementine edition of 1592 was the standard Latin text until the Nova Vulgata of 1979.
+{{< callout >}}
+A property lawyer proves ownership with a **chain of title**: an unbroken series of transfers running from the original grant to the present holder. Whoever can show the chain holds the title. Whoever cannot holds, at best, a copy of the deed.
 
-### The King James Bible
+**The grant.** Christ gave his commission to Peter and the apostles. The apostles ordained bishops to succeed them, and those bishops ordained their own successors. That unbroken line is **apostolic succession**. Around the year 180, Irenaeus of Lyon wrote out the succession of the bishops of Rome from Peter to his own day: a chain of title, recorded in its own century. Writing around 107, Ignatius of Antioch is the first we know of to call it *the Catholic Church*.
 
-The **Authorised Version**, commissioned by King James I at the Hampton Court Conference in 1604 and published in **1611** for the Church of England. About fifty scholars in six companies translated the Old Testament from the **Hebrew Masoretic Text** and the New Testament from the Greek **Textus Receptus**, borrowing heavily from William Tyndale's earlier English translation.
+**The documents.** Every book of the New Testament was written inside that Church, and it was that Church, in councils at Rome, Hippo and Carthage at the end of the 4th century, that settled which books belonged in the Bible at all. The Church came first. It wrote the documents, kept them and certified them.
 
-The 1611 printing included the Apocrypha between the Testaments, but most copies today have only the **66 books** of the Protestant canon. The text most people read is the 1769 Oxford revision, not the original 1611 wording.
+**The law.** Scripture is the statute. Tradition is the precedent that interprets it. The Church's teaching office is the court that rules on both. They were never meant to work apart, any more than a statute can apply itself.
 
-### Side by side
+**The break.** The Protestant Reformation, beginning with Martin Luther in 1517, kept a copy of the statute book but rejected the court and the precedent: *sola scriptura*, Scripture alone, with every reader his own judge. The reformers also set aside seven books of the Old Testament that the Church had read for over a thousand years. The Lutheran, Reformed, Anglican, Baptist and Methodist churches, and the many non-denominational churches that simply call themselves "Christian", all descend from that break. They hold copies of the deed, not the chain of title. None of them existed before the 16th century.
+
+The Eastern Orthodox churches, and the Oriental churches such as the Ethiopian, trace the same chain through other apostolic sees. Their separations from Rome, after the Council of Chalcedon in 451 and in 1054, are disputes between heirs of the same estate over the senior title, not new foundations. That dispute is worth studying in its own right.
+{{< /callout >}}
+
+### Three Bibles, three traditions
+
+{{< cards cols="3" >}}
+{{< card kicker="Ge'ez · about 81 books" title="The Ethiopian Bible" >}}
+The Bible of the Ethiopian Orthodox Tewahedo Church and the largest canon in use. Translated into Ge'ez, mostly from the Greek Septuagint, after the kingdom of Aksum became Christian in the 4th century.
+
+It keeps books almost every other church set aside: **1 Enoch**, **Jubilees** and the three books of **Meqabyan** (not the Maccabees). 1 Enoch survives complete only in Ge'ez.
+{{< /card >}}
+{{< card kicker="Latin · 73 books" title="The Latin Vulgate" >}}
+The Church's Bible in the West for more than a thousand years. **Jerome** began it in 382 at the request of Pope Damasus and translated most of the Old Testament directly from Hebrew, finishing around 405.
+
+It holds the full Catholic canon, including Tobit, Judith, Wisdom, Sirach, Baruch and 1 and 2 Maccabees. The Council of Trent confirmed it as the authentic text in 1546; the Clementine edition of 1592 stood until the Nova Vulgata of 1979.
+{{< /card >}}
+{{< card kicker="English · 66 books" title="The King James Bible" >}}
+The **Authorised Version** of the Church of England, commissioned by King James I in 1604 and published in **1611**, a Bible of the break. About fifty scholars translated it from the Hebrew Masoretic Text and the Greek Textus Receptus, leaning heavily on Tyndale.
+
+The 1611 printing carried the Apocrypha between the Testaments; most copies today have 66 books. What most people read is the 1769 Oxford revision.
+{{< /card >}}
+{{< /cards >}}
 
 | | Ethiopian Bible | Latin Vulgate | King James Bible |
 |---|---|---|---|
@@ -37,41 +70,48 @@ The 1611 printing included the Apocrypha between the Testaments, but most copies
 | Books | About 81 | 73 | 66 (80 with the 1611 Apocrypha) |
 | Kept by | Ethiopian and Eritrean Orthodox churches | The Catholic Church | Anglican and Protestant churches |
 
-### Other Bibles and translations
+### Other Bibles to compare
 
-**Ancient texts and early translations**
+{{< cards cols="3" >}}
+{{< card title="Ancient texts and translations" >}}
+- **Hebrew Masoretic Text**, in the Aleppo (c. 930) and Leningrad (1008) codices
+- **Dead Sea Scrolls**, about 250 BC to AD 68
+- **Samaritan Pentateuch**
+- **Septuagint**, the Greek Old Testament of the early Church and the Orthodox
+- **Targums**, Aramaic paraphrases read in the synagogue
+- **Old Latin**, the texts Jerome revised
+- **Peshitta**, the Syriac Bible
+- **Coptic, Gothic, Armenian, Georgian** and **Old Church Slavonic** translations
+- **Codex Sinaiticus** and **Codex Vaticanus**, the oldest nearly complete Greek Bibles (4th century)
+{{< /card >}}
+{{< card title="English Bibles" >}}
+- **Wycliffe** (1380s), from the Vulgate
+- **Tyndale** New Testament (1526)
+- **Coverdale** (1535), **Matthew's** (1537), **Great Bible** (1539)
+- **Geneva** (1560) and **Bishops'** (1568)
+- **Douay–Rheims** (1582–1610), the Catholic English Bible, from the Vulgate
+- **King James** (1611)
+- **Young's Literal** (1862), **English Revised** (1881–85), **American Standard** (1901)
+- **JPS Tanakh** (1917, 1985), Jewish translations
+- **RSV** (1952), **Jerusalem Bible** (1966), **NASB** (1971), **NIV** (1978), **NKJV** (1982), **NRSV** (1989), **ESV** (2001)
+- **Orthodox Study Bible** (2008)
+- **World English** and **Berean Standard**, free online
+{{< /card >}}
+{{< card title="Other languages" >}}
+- **Luther Bible**, German (1534)
+- **Reina–Valera**, Spanish (1569, 1602)
+- **Kralice Bible**, Czech (1579–1593)
+- **Statenvertaling**, Dutch (1637)
+- **Synodal Bible**, Russian (1876)
 
-- **Hebrew Masoretic Text**: the standard Hebrew text of the Jewish Bible (Tanakh), preserved in the Aleppo Codex (c. 930) and the Leningrad Codex (1008).
-- **Dead Sea Scrolls**: Hebrew and Aramaic manuscripts from about 250 BC to AD 68, a thousand years older than the Masoretic codices.
-- **Samaritan Pentateuch**: the five books of Moses as kept by the Samaritans.
-- **Septuagint**: the Greek translation of the Hebrew scriptures, made from the 3rd century BC, and the Old Testament of the early church and the Eastern Orthodox churches.
-- **Targums**: Aramaic translations and paraphrases read in the synagogue.
-- **Old Latin (Vetus Latina)**: the Latin translations Jerome revised.
-- **Peshitta**: the Syriac Bible of the Assyrian and Syriac churches.
-- **Coptic**, **Gothic** (Wulfila, 4th century), **Armenian** (5th century), **Georgian** and **Old Church Slavonic** (Cyril and Methodius, 9th century) translations.
-- **Codex Sinaiticus** and **Codex Vaticanus**: the two oldest nearly complete Greek Bibles, from the 4th century.
-
-**English Bibles, in order**
-
-- **Wycliffe Bible** (1380s), from the Latin Vulgate.
-- **Tyndale** (New Testament 1526), the first English New Testament translated from Greek.
-- **Coverdale Bible** (1535), **Matthew's Bible** (1537) and the **Great Bible** (1539).
-- **Geneva Bible** (1560), with study notes, the Bible of Shakespeare and the Pilgrims.
-- **Bishops' Bible** (1568), the base text the King James translators revised.
-- **Douay–Rheims** (1582–1610), the Catholic English Bible, from the Vulgate.
-- **King James Version** (1611).
-- **Young's Literal Translation** (1862), the **English Revised Version** (1881–1885) and the **American Standard Version** (1901).
-- **JPS Tanakh** (1917, new translation 1985), Jewish translations of the Hebrew Bible.
-- **Revised Standard Version** (1952), **Jerusalem Bible** (1966), **New American Standard Bible** (1971), **New International Version** (1978), **New King James Version** (1982), **New Revised Standard Version** (1989) and **English Standard Version** (2001).
-- **Orthodox Study Bible** (2008), with an Old Testament translated from the Septuagint.
-- **World English Bible** and **Berean Standard Bible**, modern translations free to read online.
-
-**Other languages**
-
-- **Luther Bible** (German, 1534), **Reina–Valera** (Spanish, 1569 and 1602), **Kralice Bible** (Czech, 1579–1593), **Statenvertaling** (Dutch, 1637) and the **Synodal Bible** (Russian, 1876).
-
-**How many books?** The Hebrew Bible counts **24** books, the same writings as the Protestant Old Testament grouped differently. Protestant Bibles have **66**, Catholic Bibles **73**, Eastern Orthodox Bibles about **76 to 79**, and the Ethiopian Bible about **81**.
+**How many books?** The Hebrew Bible counts 24, the same writings as the Protestant Old Testament grouped differently. Protestant Bibles have 66, Catholic 73, Eastern Orthodox about 76 to 79, and Ethiopian about 81.
+{{< /card >}}
+{{< /cards >}}
 
 ### Do your own research
 
-Don't take any one translation's word for it, this page included. Ask of any Bible: who translated it, when, for whom, and from which manuscripts? Which books did they keep, and which did they leave out, and why? Read the same passage in several translations, look up the Hebrew and Greek behind the words, and read what the people who made each edition said about their own work. Then make up your own mind.
+{{< callout >}}
+Don't take this page's word for it. Go to the sources. Read the earliest Christian writers after the apostles, **Clement of Rome**, **Ignatius of Antioch** and **Irenaeus**, and see what Church they describe. Read the councils that fixed the canon. Read Luther's own *Ninety-five Theses* and what Rome answered at Trent. Put the same passage side by side in several translations on [Bible Hub](/library/bible-hub/), and look up the Hebrew and Greek behind the words.
+
+Ask of any Bible: who made it, when, for whom, from which manuscripts, and on whose authority? Learn the history, learn the tradition, and then make up your own mind.
+{{< /callout >}}

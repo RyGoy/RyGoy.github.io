@@ -1,0 +1,2 @@
+{{- /* A row of cards: {{< cards cols="3" >}} {{< card title="…" >}}…{{< /card >}} … {{< /cards >}}. Two or three columns; one on phones. */ -}}
+<div class="guide-cards guide-cards-{{ .Get "cols" | default "3" }}">{{ .Inner }}</div>

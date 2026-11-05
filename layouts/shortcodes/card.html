@@ -1,0 +1,6 @@
+{{- /* One card in a {{< cards >}} row, styled like the Library's own cards. The body is Markdown. */ -}}
+<article class="article-card guide-card">
+  {{- with .Get "kicker" }}<p class="guide-kicker">{{ . }}</p>{{ end }}
+  {{- with .Get "title" }}<h4>{{ . }}</h4>{{ end }}
+  {{ .Inner | .Page.RenderString (dict "display" "block") }}
+</article>

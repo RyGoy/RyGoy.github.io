@@ -176,7 +176,38 @@ main { min-height: 35vh; }
 .volume-pagination { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 1rem; padding: 1.5rem 0; border-block: 1px solid var(--line); font-size: .95rem; }
 .volume-pagination a { text-decoration: none; color: #d3bf98; }
 .article-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.5rem; }
-.library-guide { max-width: 51rem; margin-top: 3.5rem; padding-top: 1rem; border-top: 1px solid var(--line); }
+/* Library guide (layouts/library/list.html, body of content/library/_index.md) and its shortcodes (layouts/shortcodes/). */
+.guide-jump { margin: 1.25rem 0 0; }
+.guide-jump a { font-family: var(--display); font-size: .85rem; letter-spacing: .14em; text-transform: uppercase; text-decoration: none; color: var(--brass); border-bottom: 1px solid #b89a6366; padding-bottom: .15rem; }
+.library-guide { margin-top: 4.5rem; }
+.library-guide > p { max-width: 52rem; margin: 0 0 1.25em; font-size: 1.12rem; line-height: 1.85; color: #d9cfba; }
+.library-guide > .section-heading + p { font-size: 1.3rem; line-height: 1.75; color: var(--paper); }
+.library-guide > h3 { margin: 3.5rem 0 1.25rem; font-size: 1.75rem; letter-spacing: .01em; color: #dfcba4; }
+.library-guide a { color: #d7bc87; }
+.guide-cards { display: grid; gap: 1.5rem; margin: 0 0 1.75rem; }
+.guide-cards-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.guide-cards-3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.guide-kicker { margin: 0 0 .5rem; font-size: .75rem; letter-spacing: .14em; text-transform: uppercase; color: var(--brass); }
+.guide-card h4 { margin: 0 0 1rem; font-size: 1.45rem; color: #dfcba4; }
+.guide-card p { margin: 0 0 1em; font-size: 1rem; line-height: 1.75; color: #d1c5ae; }
+.guide-card p:last-child { margin-bottom: 0; }
+.guide-card ul { margin: 0 0 1em; padding-left: 1.1em; }
+.guide-card ul:last-child { margin-bottom: 0; }
+.guide-card li { margin-bottom: .5em; font-size: .95rem; line-height: 1.6; color: #d1c5ae; }
+.guide-callout { margin: 0 0 1.75rem; padding: 2rem 2.25rem; border: 1px solid #b89a6355; border-left: 3px solid var(--red); background: linear-gradient(#1d1c18, #161613); }
+.guide-callout p { max-width: 56rem; margin: 0 0 1.1em; font-size: 1.08rem; line-height: 1.85; color: #ddd2bb; }
+.guide-callout p:last-child { margin-bottom: 0; }
+.guide-callout strong { color: #e5d3a8; }
+.library-guide table { width: 100%; margin: 0 0 1.75rem; border-collapse: collapse; font-size: .95rem; }
+.library-guide th, .library-guide td { padding: .75rem 1rem; text-align: left; vertical-align: top; border: 1px solid var(--line); line-height: 1.55; }
+.library-guide th { font-weight: 600; color: #dfcba4; background: var(--surface); }
+.library-guide td:first-child { white-space: nowrap; color: var(--brass); }
+@media (max-width: 60rem) { .guide-cards-2, .guide-cards-3 { grid-template-columns: minmax(0, 1fr); } }
+@media (max-width: 42rem) {
+  .library-guide table { display: block; overflow-x: auto; }
+  .guide-callout { padding: 1.5rem 1.25rem; }
+  .library-guide > .section-heading + p { font-size: 1.15rem; }
+}
 .article-card { padding: 1.75rem; border: 1px solid var(--line); background: var(--surface); }
 .article-card h2 { font-size: 2rem; overflow-wrap: anywhere; }
 .article-card h2 a { text-decoration: none; }
