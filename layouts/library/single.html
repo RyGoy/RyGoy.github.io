@@ -14,5 +14,14 @@
   </div>
   <div class="prose">{{ .Content }}</div>
   {{ partial "commentary-panel.html" . }}
+  {{/* Previous and next book, in the order /library/ lists them (layouts/library/list.html). */}}
+  <nav class="volume-pagination" aria-label="Books" data-pagefind-ignore>
+  {{ $books := .CurrentSection.Pages.ByWeight }}
+  {{ range $index, $book := $books }}{{ if eq $book $ }}
+    {{ if gt $index 0 }}{{ with index $books (sub $index 1) }}<a href="{{ .RelPermalink }}" rel="prev"><span aria-hidden="true">←</span> {{ .Title }}</a>{{ end }}{{ end }}
+    <a href="{{ $.CurrentSection.RelPermalink }}">{{ $.CurrentSection.Title }}</a>
+    {{ if lt (add $index 1) (len $books) }}{{ with index $books (add $index 1) }}<a href="{{ .RelPermalink }}" rel="next">{{ .Title }} <span aria-hidden="true">→</span></a>{{ end }}{{ end }}
+  {{ end }}{{ end }}
+  </nav>
 </article>
 {{ end }}
