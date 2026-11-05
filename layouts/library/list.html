@@ -15,4 +15,6 @@
   </article>
   {{ end }}{{ end }}
 </div>
+{{/* The body of content/library/_index.md (the "Which Bible?" guide) reads below the cards. */}}
+{{ with .Content }}<div class="prose library-guide">{{ . }}</div>{{ end }}
 {{ end }}
