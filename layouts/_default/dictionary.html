@@ -1,73 +1,120 @@
 {{ define "main" }}
 {{/* The TTFL Dictionary (content/dictionary.md). Entries come from data/dictionary.json: each has term, id (anchor),
-     letter, tfd (TheFreeDictionary legal entry or null) and definitions [{text, cites, kind, where, date, url}]. */}}
+     letter, tfd (TheFreeDictionary legal entry or null) and definitions [{text, cites, kind, where, date, url}].
+     Long entries show their first two definitions and fold the rest. */}}
 {{ $entries := site.Data.dictionary }}
-{{ $count := 0 }}{{ range $entries }}{{ $count = add $count (len .definitions) }}{{ end }}
-{{ $letters := slice }}{{ range $entries }}{{ if not (in $letters .letter) }}{{ $letters = $letters | append .letter }}{{ end }}{{ end }}
+{{ $defs := 0 }}{{ $linked := 0 }}{{ $ranked := slice }}{{ $letters := slice }}
+{{ range $entries }}
+  {{ $defs = add $defs (len .definitions) }}
+  {{ if .tfd }}{{ $linked = add $linked 1 }}{{ end }}
+  {{ $ranked = $ranked | append (dict "term" .term "id" .id "count" (len .definitions)) }}
+  {{ if not (in $letters .letter) }}{{ $letters = $letters | append .letter }}{{ end }}
+{{ end }}
+{{ $kinds := dict "article" "Article" "post" "Post" "comment" "Comment" }}
 <article class="dictionary" data-pagefind-body data-pagefind-filter="Section:Dictionary">
-  <header class="page-heading">
+  <header class="page-heading dictionary-heading">
     <p class="eyebrow">The Tender For Law</p>
     <h1>{{ .Title }}</h1>
     {{ with .Content }}<div class="prose dictionary-intro">{{ . }}</div>{{ end }}
-    <p class="dictionary-count" data-pagefind-ignore>{{ len $entries }} terms · {{ $count }} definitions</p>
+    <dl class="dictionary-stats" data-pagefind-ignore>
+      <div><dt>Terms</dt><dd>{{ len $entries }}</dd></div>
+      <div><dt>Definitions</dt><dd>{{ $defs }}</dd></div>
+      <div><dt>In the legal dictionary</dt><dd>{{ $linked }}</dd></div>
+    </dl>
   </header>
+
+  <section class="dictionary-popular" aria-labelledby="dictionary-popular-title" data-pagefind-ignore>
+    <h2 id="dictionary-popular-title">Most defined</h2>
+    <ul>{{ range first 12 (sort $ranked "count" "desc") }}<li><a href="#{{ .id }}">{{ .term }}<span>{{ .count }}</span></a></li>{{ end }}</ul>
+  </section>
 
   <div class="dictionary-tools" data-pagefind-ignore>
     <nav class="dictionary-letters" aria-label="Jump to a letter">
-      {{ range split "ABCDEFGHIJKLMNOPQRSTUVWXYZ" "" }}{{ if in $letters . }}<a href="#letter-{{ lower . }}">{{ . }}</a>{{ else }}<span aria-hidden="true">{{ . }}</span>{{ end }}{{ end }}
+      {{ range split "ABCDEFGHIJKLMNOPQRSTUVWXYZ" "" }}{{ if in $letters . }}<a href="#letter-{{ lower . }}" data-letter="{{ lower . }}">{{ . }}</a>{{ else }}<span aria-hidden="true">{{ . }}</span>{{ end }}{{ end }}
+      <a class="dictionary-top" href="#main" aria-label="Back to the top"><span aria-hidden="true">↑</span></a>
     </nav>
     <div class="dictionary-filter" hidden>
-      <label class="sr-only" for="dictionary-filter">Find a term</label>
-      <input type="search" id="dictionary-filter" placeholder="Find a term…" autocomplete="off">
-      <p class="dictionary-empty" hidden>No term matches.</p>
+      <label class="sr-only" for="dictionary-filter">Search terms and definitions</label>
+      <input type="search" id="dictionary-filter" placeholder="Search terms and definitions…" autocomplete="off">
+      <p class="dictionary-result" aria-live="polite"></p>
     </div>
   </div>
 
   {{ range $letter := $letters }}
   <section class="dictionary-section" id="letter-{{ lower $letter }}" aria-labelledby="letter-{{ lower $letter }}-heading">
-    <h2 class="dictionary-letter" id="letter-{{ lower $letter }}-heading">{{ $letter }}</h2>
+    <h2 class="dictionary-letter" id="letter-{{ lower $letter }}-heading"><span>{{ $letter }}</span></h2>
     {{ range where $entries "letter" $letter }}
-    <div class="dictionary-entry" id="{{ .id }}" data-term="{{ lower .term }}">
-      <div class="dictionary-term">
+    {{ $n := len .definitions }}
+    <article class="dictionary-entry" id="{{ .id }}" data-term="{{ lower .term }}">
+      <header class="dictionary-term">
         <h3><a href="#{{ .id }}">{{ .term }}</a></h3>
+        <span class="dictionary-count" data-pagefind-ignore>{{ $n }} {{ cond (eq $n 1) "definition" "definitions" }}</span>
         {{ with .tfd }}<a class="dictionary-tfd" href="{{ . }}" target="_blank" rel="noopener noreferrer" data-pagefind-ignore>Legal dictionary <span aria-hidden="true">↗</span></a>{{ end }}
-      </div>
-      <div class="dictionary-definitions">
-      {{ range .definitions }}
-      <figure class="dictionary-definition">
-        <blockquote>{{ .text }}</blockquote>
-        <figcaption data-pagefind-ignore>{{ with .cites }}<span class="dictionary-cites">Quoting {{ . }}</span>{{ end }}<a href="{{ .url | relURL }}">{{ .where }}</a><span class="dictionary-date">{{ .date }}</span></figcaption>
-      </figure>
+      </header>
+      <ol class="dictionary-definitions">
+        {{ range first 2 .definitions }}{{ partial "dictionary-definition.html" (dict "d" . "kinds" $kinds) }}{{ end }}
+      </ol>
+      {{ if gt $n 2 }}
+      <details class="dictionary-more">
+        <summary data-pagefind-ignore>Show {{ sub $n 2 }} more</summary>
+        <ol class="dictionary-definitions" start="3">
+          {{ range after 2 .definitions }}{{ partial "dictionary-definition.html" (dict "d" . "kinds" $kinds) }}{{ end }}
+        </ol>
+      </details>
       {{ end }}
-      </div>
-    </div>
+    </article>
     {{ end }}
   </section>
   {{ end }}
 </article>
 <script>
   {
-    // Filter entries by term as you type; letters with no match are hidden.
     const box = document.querySelector('.dictionary-filter');
     const input = document.getElementById('dictionary-filter');
-    const empty = box.querySelector('.dictionary-empty');
+    const result = box.querySelector('.dictionary-result');
     const sections = [...document.querySelectorAll('.dictionary-section')];
+    const entries = [...document.querySelectorAll('.dictionary-entry')].map((el) => ({
+      el, term: el.dataset.term, text: el.textContent.toLowerCase(), more: el.querySelector('.dictionary-more'),
+    }));
     box.hidden = false;
+
+    // Search terms first, then the text of every definition; open folded definitions when the match is inside them.
     input.addEventListener('input', () => {
       const q = input.value.trim().toLowerCase();
       let shown = 0;
-      for (const section of sections) {
-        let any = false;
-        for (const entry of section.querySelectorAll('.dictionary-entry')) {
-          const match = !q || entry.dataset.term.includes(q);
-          entry.hidden = !match;
-          any ||= match;
-          shown += match;
-        }
-        section.hidden = !any;
+      for (const e of entries) {
+        const match = !q || e.term.includes(q) || e.text.includes(q);
+        e.el.hidden = !match;
+        if (e.more) e.more.open = Boolean(q) && match && !e.term.includes(q);
+        shown += match;
       }
-      empty.hidden = shown > 0;
+      for (const s of sections) s.hidden = !s.querySelector('.dictionary-entry:not([hidden])');
+      result.textContent = q ? (shown ? `${shown} ${shown === 1 ? 'term' : 'terms'}` : 'No match') : '';
     });
+
+    // Highlight the letter being read in the letter bar.
+    // The current section is the last visible one whose top has passed a line a third of the way down the window.
+    const links = new Map([...document.querySelectorAll('.dictionary-letters [data-letter]')].map((a) => [a.dataset.letter, a]));
+    let current = null, queued = false;
+    const update = () => {
+      queued = false;
+      const line = innerHeight / 3;
+      let found = null;
+      for (const s of sections) {
+        if (s.hidden) continue;
+        if (s.getBoundingClientRect().top <= line) found = s; else break;
+      }
+      const link = found && links.get(found.id.replace('letter-', ''));
+      if (link === current) return;
+      current?.removeAttribute('aria-current');
+      link?.setAttribute('aria-current', 'true');
+      current = link;
+    };
+    const queue = () => { if (!queued) { queued = true; requestAnimationFrame(update); } };
+    addEventListener('scroll', queue, { passive: true });
+    addEventListener('resize', queue);
+    input.addEventListener('input', queue);
+    update();
   }
 </script>
 {{ end }}
