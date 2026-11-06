@@ -1,0 +1,73 @@
+{{ define "main" }}
+{{/* The TTFL Dictionary (content/dictionary.md). Entries come from data/dictionary.json: each has term, id (anchor),
+     letter, tfd (TheFreeDictionary legal entry or null) and definitions [{text, cites, kind, where, date, url}]. */}}
+{{ $entries := site.Data.dictionary }}
+{{ $count := 0 }}{{ range $entries }}{{ $count = add $count (len .definitions) }}{{ end }}
+{{ $letters := slice }}{{ range $entries }}{{ if not (in $letters .letter) }}{{ $letters = $letters | append .letter }}{{ end }}{{ end }}
+<article class="dictionary" data-pagefind-body data-pagefind-filter="Section:Dictionary">
+  <header class="page-heading">
+    <p class="eyebrow">The Tender For Law</p>
+    <h1>{{ .Title }}</h1>
+    {{ with .Content }}<div class="prose dictionary-intro">{{ . }}</div>{{ end }}
+    <p class="dictionary-count" data-pagefind-ignore>{{ len $entries }} terms · {{ $count }} definitions</p>
+  </header>
+
+  <div class="dictionary-tools" data-pagefind-ignore>
+    <nav class="dictionary-letters" aria-label="Jump to a letter">
+      {{ range split "ABCDEFGHIJKLMNOPQRSTUVWXYZ" "" }}{{ if in $letters . }}<a href="#letter-{{ lower . }}">{{ . }}</a>{{ else }}<span aria-hidden="true">{{ . }}</span>{{ end }}{{ end }}
+    </nav>
+    <div class="dictionary-filter" hidden>
+      <label class="sr-only" for="dictionary-filter">Find a term</label>
+      <input type="search" id="dictionary-filter" placeholder="Find a term…" autocomplete="off">
+      <p class="dictionary-empty" hidden>No term matches.</p>
+    </div>
+  </div>
+
+  {{ range $letter := $letters }}
+  <section class="dictionary-section" id="letter-{{ lower $letter }}" aria-labelledby="letter-{{ lower $letter }}-heading">
+    <h2 class="dictionary-letter" id="letter-{{ lower $letter }}-heading">{{ $letter }}</h2>
+    {{ range where $entries "letter" $letter }}
+    <div class="dictionary-entry" id="{{ .id }}" data-term="{{ lower .term }}">
+      <div class="dictionary-term">
+        <h3><a href="#{{ .id }}">{{ .term }}</a></h3>
+        {{ with .tfd }}<a class="dictionary-tfd" href="{{ . }}" target="_blank" rel="noopener noreferrer" data-pagefind-ignore>Legal dictionary <span aria-hidden="true">↗</span></a>{{ end }}
+      </div>
+      <div class="dictionary-definitions">
+      {{ range .definitions }}
+      <figure class="dictionary-definition">
+        <blockquote>{{ .text }}</blockquote>
+        <figcaption data-pagefind-ignore>{{ with .cites }}<span class="dictionary-cites">Quoting {{ . }}</span>{{ end }}<a href="{{ .url | relURL }}">{{ .where }}</a><span class="dictionary-date">{{ .date }}</span></figcaption>
+      </figure>
+      {{ end }}
+      </div>
+    </div>
+    {{ end }}
+  </section>
+  {{ end }}
+</article>
+<script>
+  {
+    // Filter entries by term as you type; letters with no match are hidden.
+    const box = document.querySelector('.dictionary-filter');
+    const input = document.getElementById('dictionary-filter');
+    const empty = box.querySelector('.dictionary-empty');
+    const sections = [...document.querySelectorAll('.dictionary-section')];
+    box.hidden = false;
+    input.addEventListener('input', () => {
+      const q = input.value.trim().toLowerCase();
+      let shown = 0;
+      for (const section of sections) {
+        let any = false;
+        for (const entry of section.querySelectorAll('.dictionary-entry')) {
+          const match = !q || entry.dataset.term.includes(q);
+          entry.hidden = !match;
+          any ||= match;
+          shown += match;
+        }
+        section.hidden = !any;
+      }
+      empty.hidden = shown > 0;
+    });
+  }
+</script>
+{{ end }}
