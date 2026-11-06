@@ -1,0 +1,11 @@
+{{- /* One numbered definition in the TTFL Dictionary (_default/dictionary.html). Context: dict "d" (definition), "kinds" (labels). */ -}}
+{{- $d := .d -}}
+<li class="dictionary-definition">
+  <blockquote>{{ $d.text }}</blockquote>
+  <p class="dictionary-source" data-pagefind-ignore>
+    <span class="dictionary-kind dictionary-kind-{{ $d.kind }}">{{ index .kinds $d.kind | default $d.kind }}</span>
+    <a href="{{ $d.url | relURL }}">{{ $d.where }}</a>
+    <span class="dictionary-date">{{ $d.date }}</span>
+    {{- with $d.cites }}<span class="dictionary-cites">Quoting {{ . }}</span>{{ end }}
+  </p>
+</li>
