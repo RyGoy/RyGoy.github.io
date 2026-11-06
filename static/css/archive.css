@@ -413,6 +413,13 @@ html:has(.terms-gate[open]) { overflow: hidden; }
 .terms-gate-actions button { min-width: 6rem; font: inherit; font-size: .95rem; cursor: pointer; color: #e1c797; background: var(--surface); border: 1px solid #806943; padding: .5rem 1.1rem; }
 .terms-gate-actions button:hover, .terms-gate-actions button:focus-visible { color: #fff5de; border-color: var(--brass); background: #b89a6314; }
 .terms-gate-refusal { width: min(40rem, calc(100vw - 2rem)); border-color: var(--red); }
+/* Grand Fluff Auto launch notice (partials/footer.html), the terms pop-up's look at a smaller size. */
+.game-launch { width: min(44rem, calc(100vw - 2rem)); }
+.game-launch .terms-gate-body { margin-bottom: 1.5rem; }
+.game-launch .terms-gate-text { margin: 0; }
+.game-launch .terms-gate-body > img { width: 13rem; max-width: 40%; height: auto; border: 1px solid #806943; }
+@media (max-width: 48rem) { .game-launch .terms-gate-body > img { width: 11rem; max-width: 60%; margin-top: 1.25rem; } }
+.game-launch a { color: #d7bc87; }
 .terms-gate-refusal h2 { color: #e39a8f; }
 .terms-gate-actions .terms-gate-sound { display: inline-flex; align-items: center; gap: .65rem; min-width: 0; padding: 0 .25rem 0 0; margin-left: auto; color: #e1c797; background: none; border: 0; }
 .terms-gate-actions .terms-gate-sound:hover, .terms-gate-actions .terms-gate-sound:focus-visible { color: #fff5de; background: none; }
