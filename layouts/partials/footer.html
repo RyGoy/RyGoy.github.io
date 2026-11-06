@@ -11,7 +11,7 @@
 </div></div><div class="footer-grid">
 <section><h3>Required Playing</h3><ul>
 <li><a href="#" target="_blank" rel="noopener noreferrer">Bf2142</a></li>
-<li><a href="#" target="_blank" rel="noopener noreferrer">Grand Fluff Auto (altV)</a></li>
+<li><a href="fivem://connect/gfa.cdd.com:30120" class="game-launch-link" aria-haspopup="dialog">Grand Fluff Auto (FiveM)</a></li>
 <li><a href="#" target="_blank" rel="noopener noreferrer">FoldIt</a></li>
 </ul></section>
 <section><h3>Required Veiwing</h3><ul>
@@ -33,4 +33,25 @@
 <li><a href="#" target="_blank" rel="noopener noreferrer">TTFL Dictionary (coming soon)</a></li>
 </ul></section>
 </div><p class="copyright">&copy; Creative Commons 3.0 Unported License - NO COMMERCE EXPECTED OR IMPLIED</p>
+{{/* Grand Fluff Auto: the footer link opens this notice first; Continue follows the link's fivem:// address.
+     Without JavaScript the link opens FiveM directly. Styled like the terms pop-up (.terms-gate). */}}
+<dialog class="terms-gate game-launch" id="game-launch" aria-labelledby="game-launch-title">
+  <h2 id="game-launch-title">Grand Fluff Auto</h2>
+  <p class="terms-gate-text">You will need the FiveM client installed along with a licensed copy of GTAV from the Steam store. If you have all of these, this button should load the game and drop you into the server, for questions about Grand Fluff Auto, visit <a href="https://cdd.com" target="_blank" rel="noopener noreferrer">CDD.com</a>.</p>
+  <div class="terms-gate-actions">
+    <button type="button" class="game-launch-continue" autofocus>Continue</button>
+    <button type="button" class="game-launch-back">Go back</button>
+  </div>
+</dialog>
+<script>
+  {
+    const dialog = document.getElementById('game-launch');
+    const link = document.querySelector('.game-launch-link');
+    if (link && typeof dialog.showModal === 'function') {
+      link.addEventListener('click', (event) => { event.preventDefault(); dialog.showModal(); });
+      dialog.querySelector('.game-launch-continue').addEventListener('click', () => { dialog.close(); location.href = link.href; });
+      dialog.querySelector('.game-launch-back').addEventListener('click', () => dialog.close());
+    }
+  }
+</script>
 </footer>
