@@ -3,16 +3,8 @@ author = "Scott Duncan"
 title = "ALL THE SHIT THAT DEAN KORY IS DOING WRONG!"
 date = "2013-05-30"
 description = "...AND NAZIS!"
-tags = [
-    "#NoticeOfMistake",
-    "#AllBeliefIsEvil",
-    "#ScottIsAlwaysRight",
-]
-categories = [
-    "Court",
-    "Surety",
-    "Freedumb",
-]
+tags = ["TRUSTS", "SURETY"]
+categories = ["COURT", "FREEDUMB"]
 +++
 *First posted to THE TENDER FOR LAW on 2013-05-30. [Read the original post and its comments in Volume 2](/vol_ii/462493170453287_518715888164348/).*
 

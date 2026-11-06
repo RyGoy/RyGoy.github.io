@@ -3,17 +3,8 @@ author = "Ryan Wallace"
 title = "The Hero's Journey"
 date = "2022-06-01"
 description = "Consumer or Producer"
-tags = [
-    "#AllBeliefIsEvil",
-    "#WhoAmI",
-    "#ScottIsAlwaysRight",
-]
-categories = [
-    "Responsibility",
-    "Narrative",
-    "Accounting",
-    "Computer Science",
-]
+tags = ["NARRATIVE", "ACCOUNTING"]
+categories = ["RESPONSIBILITY", "COMPUTER SCIENCE"]
 weight = "99"
 +++
 <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">

@@ -3,16 +3,7 @@ author = "Tara Duncan"
 title = "Just Do It"
 date = "2016-01-20 03:45:00"
 description = ""
-tags = [
-    "1",
-    "2",
-    "#TaraKnows",
-]
-categories = [
-    "A",
-    "B",
-    "C",
-]
+tags = ["NARRATIVE"]
 +++
 <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
   <div class="carousel-inner">

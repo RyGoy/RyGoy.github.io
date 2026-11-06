@@ -3,16 +3,7 @@ author = "ROGUESUPPORT INC"
 title = "THE TENDER FOR LAW – CHILDREN’S AID SOCIETY [C.A.S] FOR IDIOTS"
 date = "2014-05-05"
 description = ""
-tags = [
-    "1",
-    "2",
-    "#ScottIsAlwaysRight",
-]
-categories = [
-    "A",
-    "B",
-    "C",
-]
+tags = ["TRUSTS"]
 +++
 
 

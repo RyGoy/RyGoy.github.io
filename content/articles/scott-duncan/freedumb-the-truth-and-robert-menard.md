@@ -3,16 +3,7 @@ author = "ROGUESUPPORT INC"
 title = "FREE-DUMB – THE TRUTH & ROBERT MENARD"
 date = "2014-01-01"
 description = "the “Lamborghini” I’m tossing you the keys to, is actually your birth right"
-tags = [
-    "1",
-    "2",
-    "#ScottIsAlwaysRight",
-]
-categories = [
-    "A",
-    "B",
-    "C",
-]
+tags = ["TITLE", "NARRATIVE"]
 +++
 
 <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">

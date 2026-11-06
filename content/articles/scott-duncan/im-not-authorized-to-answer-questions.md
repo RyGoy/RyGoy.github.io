@@ -3,16 +3,7 @@ author = " Scott Duncan "
 title = "I'm Not Authorized To Answer Questions"
 date = "2022-05-02"
 description = "I'M NOT AUTHORIZED TO ANSWER QUESTIONS"
-tags = [
-    "#ItsTheJews",
-    "#Police",
-    "#ScottIsAlwaysRight",
-]
-categories = [
-    "A",
-    "B",
-    "C",
-]
+tags = ["SURETY", "ACCOUNTING"]
 +++
 <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
   <div class="carousel-inner">

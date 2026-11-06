@@ -3,11 +3,7 @@ title = "You Do the Crime, Someone Else Does the Time"
 description = "A letter to a Christian friend: an insurer is a surety for your accidents and your liability. Treating Jesus the same way, with faith as the premium and prayer in place of restitution, is immoral, and it leaves the injured party unpaid."
 date = "2026-11-01"
 weight = 1
-tags = [
-    "#Insurance",
-    "#Surety",
-    "#Accounting",
-]
+tags = ["SURETY", "ACCOUNTING"]
 +++
 
 Dear friend,

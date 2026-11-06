@@ -3,16 +3,7 @@ author = "Unknown Author"
 title = "UNDERSTANDING JURISDICTION"
 date = ""
 description = "Oaths, Income Tax, & Jesus Christ"
-tags = [
-    "tag1",
-    "",
-    "",
-]
-categories = [
-    "A",
-    "B",
-    "C",
-]
+tags = ["TAXATION"]
 weight = "1"
 +++
 In all of history there has been but one successful protest against an income tax. It is little understood in that light, primarily because the remnants of protest groups still exist, but no longer wish to appear to be "anti-government." They don’t talk much about these roots. Few even know them. We need to go back in time about 400 years to find this success. It succeeded only because the term "jurisdiction" was still well understood at that time as meaning "oath spoken." "Juris," in the original Latin meaning, is "oath." "Diction" as everyone knows, means "spoken." The protest obviously didn’t happen here. It occurred in England. Given that the origins of our law are traced there, most of the relevant facts in this matter are still applicable in this nation. Here’s what happened.

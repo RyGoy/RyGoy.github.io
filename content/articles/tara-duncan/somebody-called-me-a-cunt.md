@@ -3,16 +3,7 @@ author = "Tara Duncan"
 title = "Somebody Called Me A Cunt"
 date = "2019-01-19"
 description = ""
-tags = [
-    "1",
-    "2",
-    "#TaraKnows",
-]
-categories = [
-    "A",
-    "B",
-    "C",
-]
+tags = ["NARRATIVE"]
 +++
 
 Somebody called me a "cunt" once on social media. Actually to be fair more than a few people have called me this or something similar at intervals over the years; sometimes variations on this theme with greater or fewer adjectives, perhaps according to their whims, creative abilities or the occasion. This seemed dependent on their perception of how much I had offended their delicate sensibilities by simply disagreeing with whatever idea or belief they held.

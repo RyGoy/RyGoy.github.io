@@ -2,16 +2,7 @@
 author = "Ryan"
 title = "Marvel Jesus, Better Than Jesus, & The Sermon on The Keyboard"
 date = "2024-11-23"
-tags = [
-    "#WhoAmI",
-    "#Actors",
-    "#ScottIsAlwaysRight",
-]
-categories = [
-    "Surety",
-    "Agency",
-    "Accounting",
-]
+tags = ["ACCOUNTING", "NARRATIVE", "SURETY", "AGENCY"]
 weight = "12"
 +++
 

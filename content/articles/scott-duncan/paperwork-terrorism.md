@@ -3,16 +3,8 @@ author = "Scott Duncan"
 title = "Paperwork Terroism!"
 date = "2014-05-05"
 description = "ATTENTION-SEEKING FAGGOT: The Trials and Tribulations of the Gender-Fluid"
-tags = [
-    "#ItsTheJews",
-    "#Nazis",
-    "#ScottIsAlwaysRight",
-]
-categories = [
-    "Accounting",
-    "Crime",
-    "Narrative",
-]
+tags = ["NARRATIVE", "ACCOUNTING"]
+categories = ["CRIME"]
 +++
 <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
   <div class="carousel-inner">

@@ -3,16 +3,8 @@ author = "ROGUESUPPORT INC"
 title = "AGENCY (ARTIFICIAL PERSONS) FOR IDIOTS"
 date = "2014-05-05"
 description = "You are him or his agent"
-tags = [
-    "#RegisteredAgentsActAsCurrencyExchanges",
-    "#Jurisdiction",
-    "#ScottIsAlwaysRight",
-]
-categories = [
-    "HER MAJESTY AND AN ORGANIZATION -",
-    "AGENCY -",
-    "JOINDER",
-]
+tags = ["AGENCY", "SURETY", "TRUSTS"]
+categories = ["HER MAJESTY AND AN ORGANIZATION", "JOINDER"]
 weight = "14"
 +++
 

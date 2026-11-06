@@ -3,16 +3,7 @@ author = "Scott Duncan"
 title = "Irish Rocco"
 date = "2020-04-16"
 description = "There are no good lawyers"
-tags = [
-    "1",
-    "2",
-    "#ScottIsAlwaysRight",
-]
-categories = [
-    "A",
-    "B",
-    "C",
-]
+tags = ["TRUSTS"]
 +++
 # IRISH ROCCO!
 

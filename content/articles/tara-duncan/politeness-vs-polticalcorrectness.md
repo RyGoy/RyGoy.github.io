@@ -3,16 +3,7 @@ author = "Tara Duncan"
 title = "Politeness vs. Political Correctness"
 date = "2016-08-27"
 description = ""
-tags = [
-    "1",
-    "2",
-    "#TaraKnows",
-]
-categories = [
-    "A",
-    "B",
-    "C",
-]
+tags = ["NARRATIVE"]
 +++
 
 

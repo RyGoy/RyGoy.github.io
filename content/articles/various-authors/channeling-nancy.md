@@ -3,16 +3,7 @@ author = "Ceit Butler"
 title = "Channeling Nancy (Or; Why Lying Is Really Bad…)"
 date = "2016-01-01"
 description = ""
-tags = [
-    "#Accounting",
-    "#TheRecord",
-    "#ScottIsAlwaysRight",
-]
-categories = [
-    "A",
-    "B",
-    "C",
-]
+tags = ["ACCOUNTING", "NARRATIVE"]
 weight = "12"
 +++
 <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">

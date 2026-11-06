@@ -3,16 +3,7 @@ author = "Carlton Weiss"
 title = "Trustees In Commerce: A Way of Life"
 date = "2014-05-05"
 description = "Title & Trust"
-tags = [
-    "#TitleAndTrust",
-    "#Jurisdiction",
-    "#ScottIsAlwaysRight",
-]
-categories = [
-    "TRUSTS",
-    "AGENCY",
-    "PROPERTY",
-]
+tags = ["TRUSTS", "PROPERTY", "AGENCY"]
 weight = "2"
 +++
 <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">

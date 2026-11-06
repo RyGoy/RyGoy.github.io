@@ -4,15 +4,7 @@ title = "How To Be a Plumber"
 date = "2017-09-23"
 description = "----"
 weight = "5"
-tags = [
-    "Corporate Accounting",
-    "Business Transactions",
-    "#ScottIsAlwaysRight",
-]
-categories = [
-    "Bean Counting",
-    "Story Telling",
-]
+tags = ["ACCOUNTING", "NARRATIVE"]
 +++
 
 By: Chris Schulte

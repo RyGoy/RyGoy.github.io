@@ -10,7 +10,7 @@
       {{ if $writing }}<button type="button" class="share-button" data-pagefind-ignore aria-live="polite">Share</button>{{ end }}
     </div>{{ end }}
     {{ with .Params.date }}<time datetime="{{ . }}">{{ (time.AsTime .).Format "Jan 02, 2006" }}</time>{{ end }}
-    {{ if or .Params.tags .Params.categories }}<details class="article-metadata"><summary>{{ .Params.author | default .Title }}</summary>{{ with .Params.tags }}<p>{{ delimit . " · " }}</p>{{ end }}{{ with .Params.categories }}<p>{{ delimit . " · " }}</p>{{ end }}</details>{{ end }}
+    {{ if or .Params.tags .Params.categories }}<details class="article-metadata"><summary>{{ .Params.author | default .Title }}</summary>{{ range slice "tags" "categories" }}{{ with $.GetTerms . }}<p>{{ range $i, $term := . }}{{ if $i }} · {{ end }}<a href="{{ $term.RelPermalink }}">{{ upper $term.LinkTitle }}</a>{{ end }}</p>{{ end }}{{ end }}</details>{{ end }}
   </header>
   <div class="prose">{{ .Content }}</div>
   {{ if $writing }}{{ partial "commentary-panel.html" . }}{{ end }}

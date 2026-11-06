@@ -4,16 +4,8 @@ title = "Let's Say That You Are 18"
 date = "2017-10-29"
 description = "Teach your kids basic bookkeeping"
 weight = "6"
-tags = [
-    "#RegisteredAgentsActAsCurrencyExchanges",
-    "#Transactions",
-    "#ScottIsAlwaysRight",
-]
-categories = [
-    "CORPORATIONS",
-    "Narrative",
-    "Accounting",
-]
+tags = ["ACCOUNTING", "NARRATIVE"]
+categories = ["CORPORATIONS"]
 +++
 <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
   <div class="carousel-inner">

@@ -3,16 +3,7 @@ author = "ROGUESUPPORT INC"
 title = "LIES AND THE LYING LIARS WHO LIE ABOUT THE LIES THEY TELL"
 date = "2016-01-01"
 description = "An Objective and Fair Analysis of the LAW SOCIETY"
-tags = [
-    "1",
-    "2",
-    "#ScottIsAlwaysRight",
-]
-categories = [
-    "A",
-    "B",
-    "C",
-]
+tags = ["SURETY", "NARRATIVE"]
 weight = "20"
 +++
 

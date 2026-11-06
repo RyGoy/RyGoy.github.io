@@ -3,16 +3,7 @@ author = "ROGUESUPPORT INC"
 title = "Attorney General Money"
 date = "2014-05-05"
 description = "questions before the court"
-tags = [
-    "1",
-    "2",
-    "#ScottIsAlwaysRight",
-]
-categories = [
-    "A",
-    "B",
-    "C",
-]
+tags = ["TRUSTS", "ACCOUNTING"]
 weight = "10"
 +++
 

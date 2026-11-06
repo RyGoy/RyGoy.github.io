@@ -7,15 +7,7 @@ draft = false
 weight = 1
 # The article was first published under Articles; keep that address working.
 aliases = ["/articles/various-authors/ownership-control-and-dispute-resolution/"]
-tags = [
-    "#TitleAndTrust",
-    "#Property",
-    "#Transactions",
-]
-categories = [
-    "Title and Property",
-    "Accounting",
-]
+tags = ["TITLE", "PROPERTY", "TRUSTS", "ACCOUNTING"]
 +++
 
 > **DISCLAIMER: This is an AI written article.**

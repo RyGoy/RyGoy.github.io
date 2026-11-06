@@ -3,16 +3,7 @@ author = "ROGUESUPPORT INC"
 title = "INSURANCE FOR THE INEPT"
 date = "2014-05-05"
 description = ""
-tags = [
-    "1",
-    "2",
-    "#ScottIsAlwaysRight",
-]
-categories = [
-    "A",
-    "B",
-    "C",
-]
+tags = ["SURETY", "ACCOUNTING"]
 weight = "17"
 +++
 

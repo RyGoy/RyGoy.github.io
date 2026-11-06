@@ -3,16 +3,7 @@ author = "ROGUESUPPORT INC"
 title = "The Truth About The Illuminati Or Why Piece-Of-Shit Christians Are Such Pieces-Of-Shit"
 date = "2015-10-15"
 description = "This might lead you to believe that I harbour a profound hostility and resentment for Piece-of-Shit Christians, and you would be right."
-tags = [
-    "#WhoAmI",
-    "#AllBeliefIsEvil",
-    "#ScottIsAlwaysRight",
-]
-categories = [
-    "A",
-    "B",
-    "C",
-]
+tags = ["NARRATIVE", "SURETY", "PROPERTY"]
 +++
 <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
   <div class="carousel-inner">

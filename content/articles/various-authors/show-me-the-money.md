@@ -3,16 +3,8 @@ author = "Ryan Wallace"
 title = "Show Me The Money"
 date = "2020-10-18"
 description = "Consumer or Producer"
-tags = [
-    "#Transactions",
-    "#RegisteredAgentsActAsCurrencyExchanges",
-    "#ScottIsAlwaysRight",
-]
-categories = [
-    "AGENCY",
-    "Accounting",
-    "CORPORATIONS",
-]
+tags = ["ACCOUNTING", "AGENCY"]
+categories = ["CORPORATIONS"]
 weight = "90"
 +++
 <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">

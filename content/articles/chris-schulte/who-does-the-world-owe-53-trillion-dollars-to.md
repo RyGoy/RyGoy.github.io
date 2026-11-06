@@ -4,16 +4,8 @@ title = "Who Does The World Owe 53 Trillion Dollars To?"
 date = "2017-10-29"
 description = "What is taxation?"
 weight = "1"
-tags = [
-    "#ItsTheJews",
-    "Business Transactions",
-    "#ScottIsAlwaysRight",
-]
-categories = [
-    "citizenSHIP",
-    "Story Telling",
-    "Admiralty/Maratime",
-]
+tags = ["TAXATION", "ACCOUNTING", "NARRATIVE"]
+categories = ["CITIZENSHIP", "ADMIRALTY"]
 +++
 <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
   <div class="carousel-inner">

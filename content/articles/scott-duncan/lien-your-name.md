@@ -3,16 +3,8 @@ author = "ROGUESUPPORT INC"
 title = "LIEN YOUR NAME"
 date = "2014-05-05"
 description = "Dan Lien-Your-Name Wilson"
-tags = [
-    "LEGAL NAME",
-    "Security",
-    "#ScottIsAlwaysRight",
-]
-categories = [
-    "Rights",
-    "Debits",
-    "Dan Lien-Your-Name Wilson",
-]
+tags = ["TRUSTS", "ACCOUNTING", "PROPERTY"]
+categories = ["RIGHTS", "DAN LIEN-YOUR-NAME WILSON"]
 weight = "9"
 +++
 	 						

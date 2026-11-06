@@ -4,16 +4,8 @@ title = "An Article About Accounting"
 date = "2017-10-29"
 description = "The mechanism by which the story of the transfer of surety, is told"
 weight = "4"
-tags = [
-    "#Transactions",
-    "#TitleAndTrust",
-    "#WhoAmI",
-]
-categories = [
-    "Responsibility",
-    "Narrative",
-    "Accounting",
-]
+tags = ["ACCOUNTING", "SURETY", "NARRATIVE"]
+categories = ["RESPONSIBILITY"]
 +++
 <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
   <div class="carousel-inner">

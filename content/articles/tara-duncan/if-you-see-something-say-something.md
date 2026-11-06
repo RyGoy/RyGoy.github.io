@@ -3,16 +3,8 @@ author = "Tara Duncan"
 title = "If you see something, say something!"
 date = "2016-05-03"
 description = ""
-tags = [
-    "#Communism",
-    "#Nazis",
-    "#TaraKnows",
-]
-categories = [
-    "Parasites",
-    "citizenSHIP",
-    "Responsibility",
-]
+tags = ["NARRATIVE"]
+categories = ["PARASITES", "CITIZENSHIP", "RESPONSIBILITY"]
 +++
 <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
   <div class="carousel-inner">

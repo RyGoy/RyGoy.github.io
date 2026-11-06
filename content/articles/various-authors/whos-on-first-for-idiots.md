@@ -3,16 +3,7 @@ author = "ROGUESUPPORT INC"
 title = "Who’s On First: FOR IDIOTS"
 date = "2014-05-05"
 description = "---"
-tags = [
-    "#WhoAmI",
-    "#Actors",
-    "#ScottIsAlwaysRight",
-]
-categories = [
-    "A",
-    "B",
-    "C",
-]
+tags = ["AGENCY", "NARRATIVE"]
 weight = "11"
 +++
 

@@ -3,16 +3,8 @@ author = "ROGUESUPPORT INC"
 title = "THE TENDER FOR LAW: The Looming Threat Of FreeDumb – ADDENDUM"
 date = "2014-05-05"
 description = "I think my anger and despair is justified.  Don’t you?"
-tags = [
-    "#TitleAndTrust",
-    "#AllBeliefIsEvil",
-    "#ScottIsAlwaysRight",
-]
-categories = [
-    "Authority",
-    "TRUSTS",
-    "Narrative",
-]
+tags = ["TRUSTS", "TITLE", "NARRATIVE"]
+categories = ["AUTHORITY"]
 +++
 <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
   <div class="carousel-inner">

@@ -3,16 +3,7 @@ author = "ROGUESUPPORT INC"
 title = "CORPUS DELICTI"
 date = "2014-05-05"
 description = "FOR THERE TO BE A FUCKING CRIME, THERE MUST BE A FUCKING INJURED PARTY!"
-tags = [
-    "1",
-    "2",
-    "#ScottIsAlwaysRight",
-]
-categories = [
-    "A",
-    "B",
-    "C",
-]
+tags = ["NARRATIVE"]
 +++
 
 ![CORPUS DELICTI](/img/murder.jpg)

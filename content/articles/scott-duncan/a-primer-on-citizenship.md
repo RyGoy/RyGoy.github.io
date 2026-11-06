@@ -3,16 +3,7 @@ author = "ROGUESUPPORT INC"
 title = "Oh Say Can't You See?"
 date = "2014-05-05"
 description = "A Primer On Citizenship"
-tags = [
-    "1",
-    "2",
-    "#ScottIsAlwaysRight",
-]
-categories = [
-    "A",
-    "B",
-    "C",
-]
+tags = ["AGENCY", "SURETY", "ACCOUNTING"]
 +++
 
 # OH, SAY CAN’T YOU SEE? – A Primer On Citizenship
