@@ -12,6 +12,7 @@
     <header class="masthead">
       <a href="{{ site.Home.RelPermalink }}">The Tender For Law</a>
       {{ if not .IsHome }}{{ partial "breadcrumbs.html" . }}{{ end }}
+      {{ partialCached "language-switch.html" . }}
     </header>
     <main id="main" tabindex="-1">{{ block "main" . }}{{ end }}</main>
     {{ partialCached "footer.html" . }}

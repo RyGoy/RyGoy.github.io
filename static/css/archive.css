@@ -441,6 +441,16 @@ html:has(.terms-gate[open]) { overflow: hidden; }
 .game-launch .terms-gate-body > img { width: 13rem; max-width: 40%; height: auto; border: 1px solid #806943; }
 @media (max-width: 48rem) { .game-launch .terms-gate-body > img { width: 11rem; max-width: 60%; margin-top: 1.25rem; } }
 .game-launch a { color: #d7bc87; }
+/* Language switch in the masthead and its notice (partials/language-switch.html) */
+.language-switch { display: inline-flex; border: 1px solid #806943; }
+.language-switch[hidden] { display: none; }
+.language-switch button { padding: .4rem .85rem; font-family: var(--display); font-size: .78rem; font-weight: 600; letter-spacing: .14em; text-transform: uppercase; cursor: pointer; color: var(--muted); background: transparent; border: 0; }
+.language-switch button + button { border-left: 1px solid #806943; }
+.language-switch button:hover, .language-switch button:focus-visible { color: #fff5de; background: #b89a6314; }
+.language-switch button[aria-pressed="true"] { color: #1d170c; background: linear-gradient(#d9bd84, #a8884f); }
+.language-switch button:focus-visible { outline: 2px solid #e3c991; outline-offset: 2px; }
+.language-notice { width: min(38rem, calc(100vw - 2rem)); }
+.language-notice .terms-gate-text { margin: 0 0 1.5rem; }
 /* TTFL Dictionary (layouts/_default/dictionary.html, data/dictionary.json) */
 .dictionary-intro { max-width: 52rem; }
 .dictionary-count { margin: 1rem 0 0; font-family: var(--display); font-size: .85rem; letter-spacing: .14em; text-transform: uppercase; color: var(--brass); }
