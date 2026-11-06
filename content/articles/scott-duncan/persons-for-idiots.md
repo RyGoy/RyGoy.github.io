@@ -3,17 +3,8 @@ author = "ROGUESUPPORT INC"
 title = "PERSONS FOR IDIOTS"
 date = "2014-05-05"
 description = "You are him or his agent"
-tags = [
-    "#WhoAmI",
-    "#RegisteredAgentsActAsCurrencyExchanges",
-    "#ScottIsAlwaysRight",
-]
-categories = [
-    "JOINDER",
-    "AGENCY",
-    "Man =/= Person",
-    "HER MAJESTY AND AN ORGANIZATION",
-]
+tags = ["AGENCY", "SURETY"]
+categories = ["JOINDER", "MAN ≠ PERSON", "HER MAJESTY AND AN ORGANIZATION"]
 weight = "11"
 +++
 <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">

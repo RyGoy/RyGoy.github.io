@@ -3,16 +3,8 @@ author = "ROGUESUPPORT INC."
 title = "Piece-of-Shit-Christians are Pieces of shit: Why Rational Discourse is Futile"
 date = "2016-10-11"
 description = "Praise Bob!"
-tags = [
-    "#AllBeliefIsEvil",
-    "#TrustButVerify",
-    "#ScottIsAlwaysRight",
-]
-categories = [
-    "Parasites",
-    "Responsibility",
-    "'Everybody Knows'",
-]
+tags = ["NARRATIVE"]
+categories = ["PARASITES", "RESPONSIBILITY", "EVERYBODY KNOWS"]
 +++
 <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
   <div class="carousel-inner">

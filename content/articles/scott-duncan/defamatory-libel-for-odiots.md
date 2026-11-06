@@ -3,16 +3,7 @@ author = "ROGUESUPPORT INC"
 title = "DEFAMATORY LIBEL FOR IDIOTS"
 date = "2015-01-01"
 description = "You are him or his agent"
-tags = [
-    "1",
-    "2",
-    "#ScottIsAlwaysRight",
-]
-categories = [
-    "A",
-    "B",
-    "C",
-]
+tags = ["TRUSTS", "NARRATIVE"]
 +++
 
 # THE TENDER FOR LAW: DEFAMATORY LIBEL FOR IDIOTS; A Serendipitously, Happily-Coincidental Article (c) 1982-2015 ROGUESUPPORT INC. under a Creative Commons Attribution-NonCommercial-NoDerivs 3.0 Unported License.  

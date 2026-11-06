@@ -3,16 +3,8 @@ author = " Scott Duncan "
 title = "Hate Speech"
 date = "2017-02-08"
 description = ""
-tags = [
-    "#ItsTheJews",
-    "#Niggers",
-    "#ScottIsAlwaysRight",
-]
-categories = [
-    "Accounting",
-    "Parasites",
-    "Crime",
-]
+tags = ["ACCOUNTING", "NARRATIVE"]
+categories = ["PARASITES", "CRIME"]
 +++
 
 The title of this article is not just a title, it's intent.  By intent, I mean that I intend to make this article qualify as "hate speech" according to every Western Law on the books.  That's right, I intend to commit the "crime" of "hate speech".  

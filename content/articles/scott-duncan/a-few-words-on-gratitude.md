@@ -3,16 +3,8 @@ author = "Scott Duncan"
 title = "A Few Words on Gratitude"
 date = "2016-03-07"
 description = "Do shit."
-tags = [
-    "#YouThinkWrong",
-    "#EverybodyKnows",
-    "#ScottIsAlwaysRight",
-]
-categories = [
-    "Debt",
-    "Responsibility",
-    "'Everybody Knows'",
-]
+tags = ["NARRATIVE"]
+categories = ["DEBT", "RESPONSIBILITY", "EVERYBODY KNOWS"]
 +++
 *First posted to THE TENDER FOR LAW on 2016-03-07. [Read the original post and its comments in Volume 13](/vol_xiii/462493170453287_955376827831583/).*
 

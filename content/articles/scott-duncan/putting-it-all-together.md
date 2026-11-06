@@ -3,16 +3,7 @@ author = "ROGUESUPPORT INC"
 title = "Putting It All Together"
 date = "2014-05-05"
 description = "You are him or his agent"
-tags = [
-    "1",
-    "2",
-    "#ScottIsAlwaysRight",
-]
-categories = [
-    "A",
-    "B",
-    "C",
-]
+tags = ["TRUSTS", "ACCOUNTING", "SURETY"]
 +++
 <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
   <div class="carousel-inner">

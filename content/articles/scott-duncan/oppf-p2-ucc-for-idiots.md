@@ -3,16 +3,8 @@ author = "ROGUESUPPORT INC"
 title = "ONE PEOPLE’S PUBLIC FRAUD (OPPF) Part TWO: The UCC For Idiots"
 date = "2013-02-24"
 description = "A TRUST is NOT a PERSON"
-tags = [
-    "#RegisteredAgentsActAsCurrencyExchanges",
-    "#TitleAndTrust",
-    "#ScottIsAlwaysRight",
-]
-categories = [
-    "CLAIMS",
-    "PROPERTY",
-    "TRUSTS",
-]
+tags = ["TRUSTS", "PROPERTY", "TITLE"]
+categories = ["CLAIMS"]
 +++
 
 # ONE PEOPLE’S PUBLIC FRAUD (OPPF) Part TWO: The UCC For Idiots

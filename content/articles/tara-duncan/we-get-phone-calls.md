@@ -3,16 +3,7 @@ author = "Tara Duncan"
 title = "We Get Phone Calls"
 date = "2016-09-24"
 description = ""
-tags = [
-    "1",
-    "2",
-    "#TaraKnows",
-]
-categories = [
-    "A",
-    "B",
-    "C",
-]
+tags = ["NARRATIVE"]
 +++
 <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
   <div class="carousel-inner">

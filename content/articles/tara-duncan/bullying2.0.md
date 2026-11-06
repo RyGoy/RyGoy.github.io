@@ -3,16 +3,8 @@ author = "Tara Duncan"
 title = "Bullying 2.0"
 date = "2015-12-29"
 description = ""
-tags = [
-    "#TrustButVerify",
-    "#Transactions",
-    "#TaraKnows",
-]
-categories = [
-    "AGENCY",
-    "Responsibility",
-    "Crime",
-]
+tags = ["AGENCY", "NARRATIVE"]
+categories = ["RESPONSIBILITY", "CRIME"]
 +++
 <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
   <div class="carousel-inner">

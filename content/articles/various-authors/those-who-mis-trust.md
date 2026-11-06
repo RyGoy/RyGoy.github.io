@@ -2,16 +2,8 @@
 author = "Carlton Weiss"
 title = "Those Who Mistrust"
 description = "Title & Trust"
-tags = [
-    "#Jurisdiction",
-    "#Mistake",
-    "#TitleAndTrust",
-]
-categories = [
-    "TRUSTS",
-    "PROPERTY",
-    "CLAIMS",
-]
+tags = ["TRUSTS", "TITLE", "PROPERTY"]
+categories = ["CLAIMS"]
 weight = "1"
 +++
 

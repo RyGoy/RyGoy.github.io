@@ -3,16 +3,7 @@ author = "Tara Duncan"
 title = "YOU THINK WRONG, AND VALUE THE WRONG THINGS"
 date = "2014-05-05"
 description = ""
-tags = [
-    "1",
-    "2",
-    "#ScottIsAlwaysRight",
-]
-categories = [
-    "A",
-    "B",
-    "C",
-]
+tags = ["NARRATIVE"]
 weight = "1"
 +++
 

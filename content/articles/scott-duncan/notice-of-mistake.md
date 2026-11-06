@@ -3,16 +3,7 @@ author = "ROGUESUPPORT INC"
 title = "NOTICE OF MISTAKE"
 date = "2015-05-30"
 description = "questions before the court"
-tags = [
-    "1",
-    "2",
-    "#ScottIsAlwaysRight",
-]
-categories = [
-    "A",
-    "B",
-    "C",
-]
+tags = ["SURETY", "TRUSTS", "AGENCY"]
 weight = "10"
 +++
 (c) 2014 ROGUESUPPORT INC. under a Creative Commons Attribution-NonCommercial-NoDerivs 3.0 Unported License. 

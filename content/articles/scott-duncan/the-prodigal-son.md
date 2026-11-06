@@ -3,16 +3,8 @@ author = "Scott Duncan"
 title = "The Prodigal Son"
 date = "2017-04-11"
 description = "Adults with imaginary friends"
-tags = [
-    "#ItsTheJews",
-    "#AllBeliefIsEvil",
-    "#ScottIsAlwaysRight",
-]
-categories = [
-    "Responsibility",
-    "'Everybody Knows'",
-    "Narrative",
-]
+tags = ["NARRATIVE"]
+categories = ["RESPONSIBILITY", "EVERYBODY KNOWS"]
 +++
 <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
   <div class="carousel-inner">

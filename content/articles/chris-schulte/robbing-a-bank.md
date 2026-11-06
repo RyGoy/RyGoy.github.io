@@ -4,16 +4,8 @@ title = "'Robbing a bank'"
 date = "2017-10-29"
 description = "It's just accounting and surety"
 weight = "7"
-tags = [
-    "#TitleAndTrust",
-    "#TrustButVerify",
-    "#ScottIsAlwaysRight",
-]
-categories = [
-    "JOINDER",
-    "CORPORATIONS",
-    "Narrative",
-]
+tags = ["ACCOUNTING", "SURETY", "NARRATIVE"]
+categories = ["JOINDER", "CORPORATIONS"]
 +++
 <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
   <div class="carousel-inner">

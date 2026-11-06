@@ -3,16 +3,7 @@ author = "ROGUESUPPORT INC"
 title = "IT’S ALL NATURAL!"
 date = "2014-05-05"
 description = "You are him or his agent"
-tags = [
-    "1",
-    "2",
-    "#ScottIsAlwaysRight",
-]
-categories = [
-    "A",
-    "B",
-    "C",
-]
+tags = ["NARRATIVE"]
 +++
 
 

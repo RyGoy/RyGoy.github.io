@@ -3,16 +3,7 @@ author = "ROGUESUPPORT INC"
 title = "JOINDER FOR IDIOTS"
 date = "2014-05-05"
 description = ""
-tags = [
-    "1",
-    "2",
-    "#ScottIsAlwaysRight",
-]
-categories = [
-    "A",
-    "B",
-    "C",
-]
+tags = ["AGENCY", "TRUSTS"]
 weight = "15"
 +++
 

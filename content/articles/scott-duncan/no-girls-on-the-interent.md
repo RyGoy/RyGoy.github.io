@@ -3,16 +3,7 @@ author = "Scott Duncan"
 title = "THERE ARE NO GIRLS ON THE INTERNET"
 date = "2021-03-03"
 description = "Only Tara knows for sure"
-tags = [
-    "1",
-    "2",
-    "#ScottIsAlwaysRight",
-]
-categories = [
-    "A",
-    "B",
-    "C",
-]
+tags = ["NARRATIVE"]
 +++
 
 

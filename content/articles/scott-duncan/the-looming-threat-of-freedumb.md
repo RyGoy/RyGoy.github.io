@@ -3,16 +3,8 @@ author = "ROGUESUPPORT INC"
 title = "THE TENDER FOR LAW: The Looming Threat Of FreeDumb"
 date = "2014-05-05"
 description = "Scream Freee-Dumb!"
-tags = [
-    "#TitleAndTrust",
-    "#Constitution",
-    "#ScottIsAlwaysRight",
-]
-categories = [
-    "HER MAJESTY AND AN ORGANIZATION",
-    "Parasites",
-    "Admiralty",
-]
+tags = ["TITLE", "TRUSTS"]
+categories = ["HER MAJESTY AND AN ORGANIZATION", "PARASITES", "ADMIRALTY"]
 +++
 <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
   <div class="carousel-inner">

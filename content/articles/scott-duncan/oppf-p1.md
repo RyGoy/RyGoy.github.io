@@ -3,16 +3,7 @@ author = "ROGUESUPPORT INC"
 title = "ONE PEOPLE’S PUBLIC FRAUD (OPPF) Part ONE"
 date = "2013-02-23"
 description = "You are him or his agent"
-tags = [
-    "1",
-    "2",
-    "#ScottIsAlwaysRight",
-]
-categories = [
-    "A",
-    "B",
-    "C",
-]
+tags = ["TRUSTS"]
 +++
 <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
   <div class="carousel-inner">

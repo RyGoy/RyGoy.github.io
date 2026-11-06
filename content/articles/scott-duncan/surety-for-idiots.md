@@ -3,16 +3,8 @@ author = "ROGUESUPPORT INC"
 title = "SURETY FOR IDIOTS"
 date = "2014-05-05"
 description = "You are him or his agent"
-tags = [
-    "#Transactions",
-    "#Mistake",
-    "#ScottIsAlwaysRight",
-]
-categories = [
-    "PROPERTY",
-    "Responsibility",
-    "Accounting",
-]
+tags = ["SURETY", "PROPERTY", "ACCOUNTING"]
+categories = ["RESPONSIBILITY"]
 weight = "13"
 +++
 <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">

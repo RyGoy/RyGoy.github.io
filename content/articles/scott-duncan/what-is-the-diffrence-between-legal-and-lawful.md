@@ -3,16 +3,8 @@ author = "ROGUESUPPORT INC"
 title = "What Is The Difference Between LEGAL And LAWFUL?"
 date = "2014-05-05"
 description = "All that is “legal” relies on belief.  Legal has nothing to do with right and wrong.  It always has to do with money."
-tags = [
-    "#WhoAmI",
-    "#Jurisprudence",
-    "#ScottIsAlwaysRight",
-]
-categories = [
-    "Accounting",
-    "Crime",
-    "Money",
-]
+tags = ["ACCOUNTING", "SURETY"]
+categories = ["CRIME", "MONEY"]
 weight = "19"
 +++
 <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">

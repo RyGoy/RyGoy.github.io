@@ -4,16 +4,8 @@ title = "Trust But Verify"
 date = "2017-10-29"
 description = "You have to want to not be a useless sack of shit anymore before you can not be a useless sack of shit"
 weight = "2"
-tags = [
-    "#TrustButVerify",
-    "#AllBeliefIsEvil",
-    "#ScottIsAlwaysRight",
-]
-categories = [
-    "Man =/= Person",
-    "AGENCY",
-    "Responsibility",
-]
+tags = ["AGENCY", "NARRATIVE"]
+categories = ["MAN ≠ PERSON", "RESPONSIBILITY"]
 +++
 <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
   <div class="carousel-inner">

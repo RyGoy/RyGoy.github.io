@@ -3,16 +3,8 @@ author = "ROGUESUPPORT INC"
 title = "PROPER NOTICE FOR IDIOTS"
 date = "2014-05-05"
 description = "You MUST give notice"
-tags = [
-    "#WhoAmI",
-    "#YouMustGiveNotice",
-    "#ScottIsAlwaysRight",
-]
-categories = [
-    "TRUSTS",
-    "citizenSHIP",
-    "Admiralty",
-]
+tags = ["TRUSTS"]
+categories = ["CITIZENSHIP", "ADMIRALTY"]
 weight = "12"
 +++
 <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">

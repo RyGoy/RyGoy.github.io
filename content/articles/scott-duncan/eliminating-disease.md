@@ -3,16 +3,7 @@ author = "ROGUESUPPORT INC"
 title = "Eliminating Disease"
 date = "2020-06-04"
 description = "People In Government"
-tags = [
-    "COVID-19",
-    "Parasites",
-    "#ScottIsAlwaysRight",
-]
-categories = [
-    "A",
-    "B",
-    "C",
-]
+tags = ["NARRATIVE"]
 +++
 
 Scott Duncan - Vice President; Rogue Support Inc.

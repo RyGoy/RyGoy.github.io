@@ -3,16 +3,8 @@ author = "Tara Duncan"
 title = "Fold.it...'fold it good'"
 date = "2016-05-02"
 description = "Fold.it for science"
-tags = [
-    "",
-    "",
-    "#TaraKnows",
-]
-categories = [
-    "",
-    "",
-    "Computer Science",
-]
+tags = ["NARRATIVE"]
+categories = ["COMPUTER SCIENCE"]
 +++
 # Is this the fold? i don't know who's fold this is
 <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">

@@ -3,16 +3,7 @@ author = "Tara Duncan"
 title = "Our Thoughts and Prayers are With You"
 date = "2016-10-11"
 description = ""
-tags = [
-    "1",
-    "2",
-    "#TaraKnows",
-]
-categories = [
-    "A",
-    "B",
-    "C",
-]
+tags = ["NARRATIVE"]
 weight = "2"
 +++
 <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">

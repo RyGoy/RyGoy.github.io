@@ -3,16 +3,7 @@ author = "ROGUESUPPORT INC"
 title = "My Belief Is My Conviction"
 date = "2014-05-05"
 description = ""
-tags = [
-    "1",
-    "2",
-    "#ScottIsAlwaysRight",
-]
-categories = [
-    "A",
-    "B",
-    "C",
-]
+tags = ["ACCOUNTING", "TAXATION"]
 +++
 
 THE TENDER FOR LAW: “MY BELIEF, IS MY CONVICTION”

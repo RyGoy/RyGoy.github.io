@@ -3,16 +3,7 @@ author = "ROGUESUPPORT INC"
 title = "LEGALESE FOR IDIOTS"
 date = "2013-01-01"
 description = "You are him or his agent"
-tags = [
-    "1",
-    "2",
-    "#ScottIsAlwaysRight",
-]
-categories = [
-    "A",
-    "B",
-    "C",
-]
+tags = ["SURETY", "TRUSTS"]
 weight = "16"
 +++
 

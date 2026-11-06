@@ -2,16 +2,7 @@
 author = "ROGUESUPPORT INC"
 title = "DUSTIN MYHEAD"
 description = "You are him or his agent"
-tags = [
-    "",
-    "",
-    "#ScottIsAlwaysRight",
-]
-categories = [
-    "",
-    "",
-    "",
-]
+tags = ["ACCOUNTING", "NARRATIVE"]
 weight = "75"
 +++
 
