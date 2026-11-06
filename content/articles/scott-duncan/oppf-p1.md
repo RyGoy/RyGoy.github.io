@@ -5,6 +5,8 @@ date = "2013-02-23"
 description = "You are him or his agent"
 tags = ["TRUSTS"]
 +++
+*First posted to THE TENDER FOR LAW on 2013-02-24. [Read the original post and its comments in Volume 1](/vol_i/462493170453287_484380801597857/).*
+
 <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
   <div class="carousel-inner">
     <div class="carousel-item active">

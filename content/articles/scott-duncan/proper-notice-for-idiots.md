@@ -7,6 +7,8 @@ tags = ["TRUSTS"]
 categories = ["CITIZENSHIP", "ADMIRALTY"]
 weight = "12"
 +++
+*First posted to THE TENDER FOR LAW on 2013-02-19. [Read the original post and its comments in Volume 1](/vol_i/462493170453287_482690341766903/).*
+
 <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
   <div class="carousel-inner">
     <div class="carousel-item active">

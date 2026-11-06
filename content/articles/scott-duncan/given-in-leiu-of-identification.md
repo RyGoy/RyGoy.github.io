@@ -5,6 +5,8 @@ date = "2014-05-05"
 description = "You are him or his agent"
 tags = ["AGENCY", "TRUSTS"]
 +++
+*First appeared on THE TENDER FOR LAW as a comment by Pete Daoust on 2013-07-27. [Read it in Volume 3](/vol_iii/462493170453287_541616302540973/#entry-541708009198469).*
+
 
 # Give In Lieu Of “Identification”
 

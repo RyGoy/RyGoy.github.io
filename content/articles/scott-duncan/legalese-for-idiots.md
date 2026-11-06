@@ -6,6 +6,8 @@ description = "You are him or his agent"
 tags = ["SURETY", "TRUSTS"]
 weight = "16"
 +++
+*First posted to THE TENDER FOR LAW on 2013-03-11. [Read the original post and its comments in Volume 1](/vol_i/462493170453287_490962517606352/).*
+
 
 # LEGALESE FOR IDIOTS
 

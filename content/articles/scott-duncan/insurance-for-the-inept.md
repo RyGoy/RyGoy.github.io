@@ -6,6 +6,8 @@ description = ""
 tags = ["SURETY", "ACCOUNTING"]
 weight = "17"
 +++
+*First posted to THE TENDER FOR LAW on 2013-07-11. [Read the original post and its comments in Volume 3](/vol_iii/462493170453287_535384496497487/).*
+
 
 
 

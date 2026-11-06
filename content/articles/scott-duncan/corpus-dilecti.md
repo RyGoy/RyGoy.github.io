@@ -5,6 +5,8 @@ date = "2014-05-05"
 description = "FOR THERE TO BE A FUCKING CRIME, THERE MUST BE A FUCKING INJURED PARTY!"
 tags = ["NARRATIVE"]
 +++
+*First posted to THE TENDER FOR LAW on 2015-06-21. [Read the original post and its comments in Volume 10](/vol_x/462493170453287_844734415562492/).*
+
 
 ![CORPUS DELICTI](/img/murder.jpg)
 

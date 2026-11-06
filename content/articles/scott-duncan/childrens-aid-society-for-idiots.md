@@ -5,6 +5,8 @@ date = "2014-05-05"
 description = ""
 tags = ["TRUSTS"]
 +++
+*First posted to THE TENDER FOR LAW on 2013-03-13. [Read the original post and its comments in Volume 1](/vol_i/462493170453287_491707400865197/).*
+
 
 
 (c) 2013 ROGUESUPPORT INC. under a Creative Commons Attribution-NonCommercial-NoDerivs 3.0 Unported License.
