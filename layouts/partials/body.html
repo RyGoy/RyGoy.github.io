@@ -1,7 +1,27 @@
 <section class="hero" aria-labelledby="site-title">
+  {{ $alt := "An ornate illuminated-manuscript poster titled “Better-Than-Jesus”, with a crucifix in a gilded oval between two arrows reading “Surety & Accounting” and “Accounting & Surety”, and “#ScottIsAlwaysRight” along the bottom." }}
+  {{/* Clicking the plate opens the full-size poster in #hero-viewer; without JavaScript the link opens the image itself. */}}
   <figure class="hero-plate">
-    <img src="{{ "images/better-than-jesus-600.jpg" | relURL }}" width="600" height="800" alt="An ornate illuminated-manuscript poster titled “Better-Than-Jesus”, with a crucifix in a gilded oval between two arrows reading “Surety &amp; Accounting” and “Accounting &amp; Surety”, and “#ScottIsAlwaysRight” along the bottom." fetchpriority="high">
+    <a class="hero-zoom" href="{{ "images/better-than-jesus.jpg" | relURL }}" aria-haspopup="dialog">
+      <img src="{{ "images/better-than-jesus-600.jpg" | relURL }}" width="600" height="800" alt="{{ $alt }}" fetchpriority="high">
+      <span class="hero-zoom-hint" aria-hidden="true">Click to enlarge</span>
+    </a>
   </figure>
+  <dialog class="image-viewer" id="hero-viewer" aria-label="Better-Than-Jesus poster, full size">
+    <img src="{{ "images/better-than-jesus.jpg" | relURL }}" width="864" height="1152" alt="{{ $alt }}" loading="lazy">
+    <form method="dialog"><button class="image-viewer-close">Close</button></form>
+  </dialog>
+  <script>
+    {
+      const link = document.querySelector('.hero-zoom');
+      const viewer = document.getElementById('hero-viewer');
+      if (typeof viewer.showModal === 'function') {
+        link.addEventListener('click', (event) => { event.preventDefault(); viewer.showModal(); });
+        // A click on the backdrop lands on the dialog itself; clicks on the poster or Close do not.
+        viewer.addEventListener('click', (event) => { if (event.target === viewer) viewer.close(); });
+      }
+    }
+  </script>
   <div class="hero-copy">
     <div class="hero-seal" aria-hidden="true"><img src="{{ "images/seal.svg" | relURL }}" width="180" height="180" alt=""></div>
     <div class="hero-rule" aria-hidden="true"><span></span>✧<span></span></div>

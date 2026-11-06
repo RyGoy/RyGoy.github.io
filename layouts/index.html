@@ -31,4 +31,11 @@
     <div class="author-grid">{{ range .Params.subjects }}{{ with site.GetPage . }}<a class="author-card" href="{{ .RelPermalink }}"><h3>{{ .Title }}</h3><span aria-hidden="true">↗</span></a>{{ end }}{{ end }}</div>
   </section>
   {{ end }}
+  {{/* Telegram comments (comments.app), keyed to the home page's address. Visitors log in with Telegram. */}}
+  {{ with site.Params.comments_app_website }}
+  <section class="article-library" aria-labelledby="comments-heading">
+    <div class="section-heading"><h2 id="comments-heading">Comments</h2><span class="rule" aria-hidden="true"></span></div>
+    <script async src="https://comments.app/js/widget.js?3" data-comments-app-website="{{ . }}" data-page-url="{{ site.Home.Permalink }}" data-limit="5" data-color="B89A63" data-dark="1" data-outlined="1"></script>
+  </section>
+  {{ end }}
 {{ end }}
