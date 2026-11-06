@@ -6,6 +6,8 @@ description = "A TRUST is NOT a PERSON"
 tags = ["TRUSTS", "PROPERTY", "TITLE"]
 categories = ["CLAIMS"]
 +++
+*First posted to THE TENDER FOR LAW on 2013-02-25. [Read the original post and its comments in Volume 1](/vol_i/462493170453287_484745448228059/).*
+
 
 # ONE PEOPLE’S PUBLIC FRAUD (OPPF) Part TWO: The UCC For Idiots
 

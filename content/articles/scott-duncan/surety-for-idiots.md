@@ -7,6 +7,8 @@ tags = ["SURETY", "PROPERTY", "ACCOUNTING"]
 categories = ["RESPONSIBILITY"]
 weight = "13"
 +++
+*First posted to THE TENDER FOR LAW on 2013-03-10. [Read the original post and its comments in Volume 1](/vol_i/462493170453287_490608044308466/).*
+
 <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
   <div class="carousel-inner">
     <div class="carousel-item active">

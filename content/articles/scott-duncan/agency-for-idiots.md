@@ -7,6 +7,8 @@ tags = ["AGENCY", "SURETY", "TRUSTS"]
 categories = ["HER MAJESTY AND AN ORGANIZATION", "JOINDER"]
 weight = "14"
 +++
+*Posted to THE TENDER FOR LAW by Pete Daoust on 2014-10-26. [Read the post and its comments in Volume 8](/vol_viii/462493170453287_738361576199777/).*
+
 
 THE TENDER FOR LAW: AGENCY (ARTIFICIAL PERSONS) FOR IDIOTS (c) 2014 ROGUESUPPORT INC. under a Creative Commons Attribution-NonCommercial-NoDerivs 3.0 Unported License. 
 

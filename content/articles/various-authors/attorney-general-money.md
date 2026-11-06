@@ -6,6 +6,8 @@ description = "questions before the court"
 tags = ["TRUSTS", "ACCOUNTING"]
 weight = "10"
 +++
+*Posted to THE TENDER FOR LAW by Lou Manotti on 2016-03-03. [Read the post and its comments in Volume 13](/vol_xiii/462493170453287_953462428023023/).*
+
 
 It was mentioned by a member, that the concept of ATTORNEY GENERAL MONEY was not well known; so this is to clean up any misconceptions and to make a few things clear.
 
