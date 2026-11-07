@@ -1,5 +1,6 @@
 {{/* Language switch in the masthead (_default/baseof.html). There is no translation: English stays selected, and
-     choosing French only opens the notice below. Hidden without JavaScript, where it would do nothing. */}}
+     choosing French only opens the notice below, whose French button opens the Quebec notice. Hidden without
+     JavaScript, where it would do nothing. */}}
 <div class="language-switch" role="group" aria-label="Language" hidden>
   <button type="button" aria-pressed="true">English</button>
   <button type="button" aria-pressed="false" aria-haspopup="dialog" class="language-french">French</button>
@@ -7,16 +8,31 @@
 <dialog class="terms-gate language-notice" id="language-notice" aria-labelledby="language-notice-title">
   <h2 id="language-notice-title">English Only</h2>
   <p class="terms-gate-text">ENGLISH is the international language of law and commerce. Knowing FRENCH is useful for understanding LEGAL ENGLISH, but FRENCH is not the international language of law and commerce, so we will ignore French speakers who speak to us in the language of a conquered people.</p>
+  <div class="terms-gate-actions">
+    <button type="button" class="language-notice-close" autofocus>Continue in English</button>
+    <button type="button" class="language-quebec-open" lang="fr" aria-haspopup="dialog">Je veux du français</button>
+  </div>
+</dialog>
+<dialog class="terms-gate terms-gate-refusal language-notice" id="quebec-notice" aria-labelledby="quebec-notice-title">
+  <h2 id="quebec-notice-title" lang="fr">Non.</h2>
+  <p class="terms-gate-text">I understand that you are a proud Québécois, but the people here have nothing but contempt for you because of decades of transfer payments and NONE OF YOU understanding what Quebec sovereignty means. None of you know who Russell Rogers Smith is, and you're too proud and arrogant to teach. Just go away and be Retardier somewhere else.</p>
   <div class="terms-gate-actions"><button type="button" class="language-notice-close" autofocus>Continue in English</button></div>
 </dialog>
 <script>
   {
     const group = document.querySelector('.language-switch');
     const notice = document.getElementById('language-notice');
+    const quebec = document.getElementById('quebec-notice');
     if (typeof notice.showModal === 'function') {
       group.hidden = false;
       group.querySelector('.language-french').addEventListener('click', () => notice.showModal());
-      notice.querySelector('.language-notice-close').addEventListener('click', () => notice.close());
+      for (const dialog of [notice, quebec]) {
+        dialog.querySelector('.language-notice-close').addEventListener('click', () => dialog.close());
+      }
+      notice.querySelector('.language-quebec-open').addEventListener('click', () => {
+        notice.close();
+        quebec.showModal();
+      });
     }
   }
 </script>
