@@ -615,11 +615,19 @@ html:has(.terms-gate[open]) { overflow: hidden; }
 /* Inline definitions (static/js/dictionary-terms.js) */
 .term-link { color: inherit; text-decoration: underline dotted #b89a63b3; text-decoration-thickness: 1px; text-underline-offset: .2em; }
 .term-link:hover, .term-link:focus-visible { color: #fff5de; text-decoration-color: var(--brass); }
-.term-card { position: absolute; z-index: 50; width: min(22rem, calc(100vw - 16px)); padding: .9rem 1rem; pointer-events: none; font-size: .92rem; line-height: 1.6; color: var(--paper); background: linear-gradient(125deg, #24231c, var(--surface) 70%); border: 1px solid #806943; box-shadow: 0 .8rem 2rem #000a; }
+.term-card { position: absolute; z-index: 50; width: min(27rem, calc(100vw - 16px)); padding: 1rem 1.15rem; pointer-events: none; font-size: 1rem; line-height: 1.55; color: var(--paper); background: linear-gradient(125deg, #24231c, var(--surface) 70%); border: 1px solid #806943; box-shadow: 0 .8rem 2rem #000a; }
 .term-card[hidden] { display: none; }
-.term-card strong { display: block; margin-bottom: .35rem; font-family: var(--display); font-size: 1.05rem; color: #e6d2a8; }
-.term-card p { margin: 0 0 .5rem; color: #ddd2bb; }
-.term-card span { font-family: var(--display); font-size: .7rem; letter-spacing: .12em; text-transform: uppercase; color: var(--brass); }
+.term-card-head { display: flex; align-items: baseline; justify-content: space-between; gap: 1rem; margin: 0 0 .6rem; padding-bottom: .5rem; border-bottom: 1px solid var(--line); }
+.term-card-head strong { font-family: var(--display); font-size: 1.2rem; color: #e6d2a8; }
+.term-card-count { flex: none; font-size: .85rem; color: var(--muted); font-variant-numeric: lining-nums; }
+.term-card-defs { margin: 0; padding: 0; list-style: none; counter-reset: term-def; }
+.term-card-defs > li { position: relative; padding-left: 1.6rem; counter-increment: term-def; }
+.term-card-defs > li::before { content: counter(term-def); position: absolute; left: 0; top: 0; font-family: var(--display); font-size: 1.1rem; color: var(--brass); font-variant-numeric: lining-nums; }
+.term-card-defs > li + li { margin-top: .7rem; padding-top: .7rem; border-top: 1px solid #ffffff12; }
+.term-card-defs > li + li::before { top: .7rem; }
+.term-card-defs p { margin: 0; color: #e4dac5; }
+.term-card-source { display: block; margin-top: .25rem; font-size: .8rem; line-height: 1.4; color: var(--muted); }
+.term-card-more { margin: .75rem 0 0; padding-top: .55rem; border-top: 1px solid var(--line); font-size: .85rem; color: #d7bc87; }
 
 /* Most Discussed (layouts/most-discussed/list.html) */
 .discussed-section h2 { font-variant-numeric: lining-nums; }
