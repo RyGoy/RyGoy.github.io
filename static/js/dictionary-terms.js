@@ -1,5 +1,5 @@
 // Inline definitions: link TTFL Dictionary terms in posts, comments and articles to their dictionary entry, with
-// the first definition in a card on hover or focus. The terms come from /dictionary-terms.json
+// its first definitions (up to three, with their sources) in a card on hover or focus. The terms come from /dictionary-terms.json
 // (layouts/partials/dictionary-terms.html); this script's data-terms attribute holds its address.
 // Only terms written in capitals are linked, the way the archive marks a legal term, and only the first use of
 // each term in each post, comment or article. Without JavaScript the text is left as it is.
@@ -56,18 +56,32 @@
     let current = null;
     const show = (a) => {
       const t = byId.get(a.dataset.term);
-      const title = document.createElement('strong');
-      title.textContent = t.term;
-      const text = document.createElement('p');
-      text.textContent = t.text;
-      const more = document.createElement('span');
-      more.textContent = `${t.n} ${t.n === 1 ? 'definition' : 'definitions'} in the TTFL Dictionary`;
-      card.replaceChildren(title, text, more);
+      const el = (tag, className, text) => Object.assign(document.createElement(tag), { className, textContent: text });
+      const head = el('p', 'term-card-head');
+      head.append(el('strong', '', t.term));
+      if (t.n > 1) head.append(el('span', 'term-card-count', `${t.n} definitions`));
+      const fill = (count) => {
+        const list = el(t.n > 1 ? 'ol' : 'div', 'term-card-defs');
+        for (const d of t.defs.slice(0, count)) {
+          const item = el(t.n > 1 ? 'li' : 'div', '');
+          item.append(el('p', '', d.text), el('span', 'term-card-source', d.src));
+          list.append(item);
+        }
+        card.replaceChildren(head, list);
+        const rest = t.n - count;
+        if (rest > 0) card.append(el('p', 'term-card-more', `${rest} more ${rest === 1 ? 'definition' : 'definitions'} in the TTFL Dictionary`));
+      };
       card.hidden = false;
       const r = a.getBoundingClientRect();
+      // Show as many of the definitions as fit beside the word, at least one.
+      const room = Math.max(innerHeight - r.bottom, r.top) - 14;
+      let count = t.defs.length;
+      fill(count);
+      while (count > 1 && card.offsetHeight > room) fill(--count);
       const width = card.offsetWidth;
       card.style.left = `${Math.max(8, Math.min(r.left, innerWidth - width - 8)) + scrollX}px`;
-      const below = r.bottom + card.offsetHeight + 8 < innerHeight;
+      // Below the word if it fits there or there is more room below than above; otherwise above it.
+      const below = r.bottom + card.offsetHeight + 8 < innerHeight || innerHeight - r.bottom >= r.top;
       card.style.top = `${(below ? r.bottom + 6 : r.top - card.offsetHeight - 6) + scrollY}px`;
       a.setAttribute('aria-describedby', card.id);
       current = a;
