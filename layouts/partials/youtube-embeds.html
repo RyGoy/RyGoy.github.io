@@ -1,0 +1,14 @@
+{{- /* YouTube videos linked in a comment's message (partials/lpPosts.html), each shown in the comment as its thumbnail.
+     static/js/youtube-embed.js swaps a thumbnail for the YouTube player when it is clicked; without JavaScript the
+     thumbnail links to the video. Context: the message text. Each video is shown once, in the order linked. */ -}}
+{{- $ids := slice -}}
+{{- range findRESubmatch `(?i)(?:youtube\.com/(?:\S*?[?&#/]v=|embed/|v/|shorts/)|youtu\.be/)([A-Za-z0-9_-]{11})` . -}}
+  {{- $id := index . 1 -}}{{- if not (in $ids $id) }}{{ $ids = $ids | append $id }}{{ end -}}
+{{- end -}}
+{{- with $ids -}}
+<div class="video-embeds" data-pagefind-ignore="all">
+  {{- range . }}
+  <a class="video-embed" href="https://www.youtube.com/watch?v={{ . }}" data-video="{{ . }}"><img src="https://i.ytimg.com/vi/{{ . }}/hqdefault.jpg" alt="" width="480" height="360" loading="lazy" decoding="async"><span class="video-play">Play video</span></a>
+  {{- end }}
+</div>
+{{- end -}}

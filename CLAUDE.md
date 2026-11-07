@@ -59,6 +59,10 @@ Searches can also be filtered by `Author` (who wrote a post, article or commenta
 - **Concordance**: `scripts/concordance.py` (standard library Python) finds every use of each term in posts, comments and articles (whole word, any case) and writes `public/concordance/index.json` and `<id>/<n>.json` chunks of 500. The deploy workflow runs it after Pagefind; a plain `hugo` build has no concordance, and `/concordance/` (`layouts/_default/concordance.html`) says so. To try it locally, run the script with a build directory's `concordance/` as the argument. The output is about 55 MB, so don't write it into the committed `public/`.
 - **Inline definitions**: `static/js/dictionary-terms.js` links the first use of each term written in capitals in each post, comment and article to its entry, with the first definition in a card on hover or focus. Its terms come from `/dictionary-terms.json`, built by `partials/dictionary-terms.html`.
 
+## YouTube videos in comments
+
+A comment whose message links a YouTube video (`youtube.com/watch?v=`, `youtu.be/`, `embed/`, `shorts/`, mobile links) shows each video under its text (`partials/youtube-embeds.html`, called from `partials/lpPosts.html` for comments only). Message text is front matter, where shortcodes don't run, so the template finds the links itself. Each video is a thumbnail until clicked; `static/js/youtube-embed.js` then swaps in the youtube-nocookie player, so pages with dozens of videos load none up front. Without JavaScript the thumbnail links to YouTube. Removed videos show YouTube's grey placeholder.
+
 ## Poster filter
 
 Volume pages (the posts) and post pages (the comments) have a "Filter by poster" panel (`partials/poster-filter.html`, `static/js/poster-filter.js`). The list of names is built from each entry's `data-author` attribute. Don't name that attribute `data-poster`: Go templates treat `poster` as a URL attribute and percent-encode it. The selection is kept in the address (`?poster=Name&poster=Other&mode=hide`) and carried to the previous/next volume links. Without JavaScript, the panel stays hidden.
