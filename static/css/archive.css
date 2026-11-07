@@ -611,11 +611,20 @@ html:has(.terms-gate[open]) { overflow: hidden; }
 .term-card span { font-family: var(--display); font-size: .7rem; letter-spacing: .12em; text-transform: uppercase; color: var(--brass); }
 
 /* Most Discussed (layouts/most-discussed/list.html) */
-.discussed-item { margin-top: 2.25rem; }
-.discussed-rank { display: flex; flex-wrap: wrap; align-items: baseline; gap: .35rem .9rem; margin: 0 0 .7rem; font-family: var(--display); font-size: .74rem; letter-spacing: .14em; text-transform: uppercase; color: var(--muted); }
-.discussed-place { font-size: 1.5rem; letter-spacing: 0; color: var(--brass); }
-.discussed-rank a { color: #d7bc87; text-decoration: none; }
-.discussed-rank a:hover, .discussed-rank a:focus-visible { color: #fff5de; }
+.discussed-list { margin: 0; padding: 0; list-style: none; border-top: 1px solid var(--line); }
+.discussed-item { display: grid; grid-template-columns: 3.5rem minmax(0, 1fr); gap: 1.25rem; padding: 1.5rem 0; border-bottom: 1px solid var(--line); }
+.discussed-item[hidden] { display: none; }
+.discussed-place { font-family: var(--display); font-size: 2rem; line-height: 1.1; text-align: right; font-variant-numeric: lining-nums tabular-nums; color: var(--brass); }
+.discussed-meta { display: flex; flex-wrap: wrap; align-items: baseline; gap: .2rem .9rem; margin: 0 0 .45rem; font-size: .85rem; color: var(--muted); }
+.discussed-author { font-size: .95rem; color: #cbbd9f; }
+.discussed-meta a { color: #d7bc87; text-decoration: none; }
+.discussed-meta a:hover, .discussed-meta a:focus-visible { color: #fff5de; }
+.discussed-opening { margin: 0 0 .75rem; line-height: 1.7; overflow-wrap: anywhere; }
+.discussed-opening a { color: var(--paper); text-decoration: none; }
+.discussed-opening a:hover, .discussed-opening a:focus-visible { color: #fff5de; text-decoration: underline; }
+.discussed-comments { font-family: var(--display); font-size: .78rem; font-weight: 600; letter-spacing: .14em; text-transform: uppercase; text-decoration: none; color: var(--brass); }
+.discussed-comments:hover, .discussed-comments:focus-visible { color: #fff5de; }
+@media (max-width: 48rem) { .discussed-item { grid-template-columns: 2.25rem minmax(0, 1fr); gap: .85rem; } .discussed-place { font-size: 1.5rem; } }
 .terms-gate-refusal h2 { color: #e39a8f; }
 .terms-gate-actions .terms-gate-sound { display: inline-flex; align-items: center; gap: .65rem; min-width: 0; padding: 0 .25rem 0 0; margin-left: auto; color: #e1c797; background: none; border: 0; }
 .terms-gate-actions .terms-gate-sound:hover, .terms-gate-actions .terms-gate-sound:focus-visible { color: #fff5de; background: none; }
