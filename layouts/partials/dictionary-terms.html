@@ -1,12 +1,12 @@
 {{- /* Returning partial (use via partialCached): the address of /dictionary-terms.json, which static/js/dictionary-terms.js
-       reads to link dictionary terms in posts, comments and articles. Each item: id, term, the words to look for
+       reads to link dictionary terms in posts, comments and articles (terms with no definition yet are left out). Each item: id, term, the words to look for
        (the entry's match list, or its term), how many definitions it has (n), and its first three definitions (defs:
        text shortened, and src: who wrote it when not Scott Duncan, where, and when). */ -}}
 {{- $terms := slice -}}
 {{- range site.Data.dictionary -}}
   {{- $words := .match -}}
   {{- if not (isset . "match") }}{{ $words = slice .term }}{{ end -}}
-  {{- if $words -}}
+  {{- if and $words .definitions -}}
     {{- $defs := slice -}}
     {{- range first 3 .definitions -}}
       {{- $src := slice -}}{{- with .by }}{{ $src = $src | append . }}{{ end -}}

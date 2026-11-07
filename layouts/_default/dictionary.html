@@ -4,7 +4,8 @@
      by (optional) names the writer when it is not Scott Duncan; it is shown before the source.
      Definitions are in the archive's own words: ones that quote another source are left out of the data.
      An optional match list gives the words the concordance (/concordance/) and inline definitions look for when the
-     term itself is not one; an empty list leaves the term out of both. */}}
+     term itself is not one; an empty list leaves the term out of both. A term can have no definitions yet: it is
+     listed (and in the concordance) as "No definition yet", and left out of inline definitions. */}}
 {{ $entries := site.Data.dictionary }}
 {{ $defs := 0 }}{{ $linked := 0 }}{{ $ranked := slice }}{{ $letters := slice }}
 {{ range $entries }}
@@ -52,13 +53,13 @@
     <article class="dictionary-entry" id="{{ .id }}" data-term="{{ lower .term }}">
       <header class="dictionary-term">
         <h3><a href="#{{ .id }}">{{ .term }}</a></h3>
-        <span class="dictionary-count" data-pagefind-ignore>{{ $n }} {{ cond (eq $n 1) "definition" "definitions" }}</span>
+        <span class="dictionary-count" data-pagefind-ignore>{{ if $n }}{{ $n }} {{ cond (eq $n 1) "definition" "definitions" }}{{ else }}No definition yet{{ end }}</span>
         {{ if or (not (isset . "match")) .match }}<a class="dictionary-uses" href="{{ "concordance/" | relURL }}?term={{ .id }}" data-uses="{{ .id }}" data-pagefind-ignore>Every use</a>{{ end }}
         {{ with .tfd }}<a class="dictionary-tfd" href="{{ . }}" target="_blank" rel="noopener noreferrer" data-pagefind-ignore>Legal dictionary <span aria-hidden="true">↗</span></a>{{ end }}
       </header>
-      <ol class="dictionary-definitions">
-        {{ range .definitions }}{{ partial "dictionary-definition.html" (dict "d" . "kinds" $kinds) }}{{ end }}
-      </ol>
+      {{ with .definitions }}<ol class="dictionary-definitions">
+        {{ range . }}{{ partial "dictionary-definition.html" (dict "d" . "kinds" $kinds) }}{{ end }}
+      </ol>{{ end }}
     </article>
     {{ end }}
   </section>

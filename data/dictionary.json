@@ -1,5 +1,20 @@
 [
  {
+  "term": "Acceptance",
+  "id": "acceptance",
+  "letter": "A",
+  "tfd": null,
+  "definitions": [
+   {
+    "text": "RECEIVED and ACCEPTED = ENDORSED",
+    "kind": "comment",
+    "where": "Scott Duncan, Volume 1",
+    "date": "Jun 25, 2013",
+    "url": "/vol_i/462493170453287_480688621967075/#entry-529416627094274"
+   }
+  ]
+ },
+ {
   "term": "Accident",
   "id": "accident",
   "letter": "A",
@@ -13,6 +28,20 @@
     "url": "/articles/scott-duncan/insurance-for-the-inept/"
    }
   ]
+ },
+ {
+  "term": "Account",
+  "id": "account",
+  "letter": "A",
+  "tfd": null,
+  "definitions": []
+ },
+ {
+  "term": "Accountable",
+  "id": "accountable",
+  "letter": "A",
+  "tfd": null,
+  "definitions": []
  },
  {
   "term": "Accounting",
@@ -61,6 +90,129 @@
   ]
  },
  {
+  "term": "Admiral",
+  "id": "admiral",
+  "letter": "A",
+  "tfd": null,
+  "definitions": []
+ },
+ {
+  "term": "Admiralty",
+  "id": "admiralty",
+  "letter": "A",
+  "tfd": null,
+  "definitions": [
+   {
+    "text": "ADMIRALTY is ROMAN law, which is based on PRESUMPTION.",
+    "kind": "comment",
+    "where": "Scott Duncan, Volume 2",
+    "date": "May 22, 2013",
+    "url": "/vol_ii/462493170453287_515596301809640/#entry-515656028470334"
+   },
+   {
+    "text": "ALL of Admiralty IS \"legal matters\" on LAND.",
+    "kind": "comment",
+    "where": "Scott Duncan, Volume 6",
+    "date": "Jun 29, 2014",
+    "url": "/vol_vi/462493170453287_687488881287047/#entry-687604327942169"
+   },
+   {
+    "text": "There is NO ACCOUNTING IN ADMIRALTY, which is why they need a JUDGE ADVOCATE GENERAL (Judge who is an advocate for accounting (GENERAL, as in GENERAL LEDGER)).",
+    "kind": "comment",
+    "where": "Scott Duncan, Volume 1",
+    "date": "Feb 14, 2013",
+    "url": "/vol_i/462493170453287_480677688634835/#entry-480818368620767"
+   }
+  ]
+ },
+ {
+  "term": "Admiralty Maritime Law",
+  "id": "admiralty-maritime-law",
+  "letter": "A",
+  "tfd": null,
+  "definitions": [
+   {
+    "text": "Admiralty Maritime law is the FOUNDATION AUTHORITY for all ACTS AND STATUTES in LEGAL Jurisdiction.",
+    "kind": "comment",
+    "where": "Scott Duncan, Volume 6",
+    "date": "Jun 11, 2014",
+    "url": "/vol_vi/462493170453287_679159442119991/#entry-679635165405752"
+   }
+  ]
+ },
+ {
+  "term": "Advocate",
+  "id": "advocate",
+  "letter": "A",
+  "tfd": null,
+  "definitions": []
+ },
+ {
+  "term": "Affidavit",
+  "id": "affidavit",
+  "letter": "A",
+  "tfd": null,
+  "definitions": [
+   {
+    "text": "An AFFIDAVIT IS a SWORN AFFIRMATION, if that's how you AUTHENTICATED it.",
+    "kind": "comment",
+    "where": "Scott Duncan, Volume 1",
+    "date": "Jul 6, 2013",
+    "url": "/vol_i/462493170453287_483058458396758/#entry-533435820025688"
+   },
+   {
+    "text": "Affirmation or Swearing are HOW the affidavit is AUTHENTICATED.",
+    "kind": "comment",
+    "where": "Scott Duncan, Volume 1",
+    "date": "Jul 6, 2013",
+    "url": "/vol_i/462493170453287_483058458396758/#entry-533434500025820"
+   },
+   {
+    "text": "SWEARING and affidavit, is simply a \"SWORN AFFIDAVIT\"",
+    "kind": "comment",
+    "where": "Scott Duncan, Volume 1",
+    "date": "Jul 6, 2013",
+    "url": "/vol_i/462493170453287_483058458396758/#entry-533435820025688"
+   }
+  ]
+ },
+ {
+  "term": "Agency",
+  "id": "agency",
+  "letter": "A",
+  "tfd": null,
+  "definitions": []
+ },
+ {
+  "term": "Agent",
+  "id": "agent",
+  "letter": "A",
+  "tfd": null,
+  "definitions": [
+   {
+    "text": "AN AGENT IS ALWAYS A TRUSTEE!",
+    "kind": "comment",
+    "where": "Scott Duncan, Volume 8",
+    "date": "Dec 12, 2014",
+    "url": "/vol_viii/462493170453287_756770651025536/#entry-759182050784396"
+   },
+   {
+    "text": "being AGENT is BILLABLE...",
+    "kind": "comment",
+    "where": "Scott Duncan, Volume 12",
+    "date": "Dec 9, 2015",
+    "url": "/vol_xii/462493170453287_910900115612588/#entry-912816995420900"
+   }
+  ]
+ },
+ {
+  "term": "Agreement",
+  "id": "agreement",
+  "letter": "A",
+  "tfd": null,
+  "definitions": []
+ },
+ {
   "term": "And",
   "id": "and",
   "letter": "A",
@@ -91,6 +243,42 @@
   ]
  },
  {
+  "term": "Appeal",
+  "id": "appeal",
+  "letter": "A",
+  "tfd": null,
+  "definitions": []
+ },
+ {
+  "term": "Appointment",
+  "id": "appointment",
+  "letter": "A",
+  "tfd": null,
+  "definitions": []
+ },
+ {
+  "term": "Aquilae Trust",
+  "id": "aquilae-trust",
+  "letter": "A",
+  "tfd": null,
+  "definitions": [
+   {
+    "text": "If you're even looking at the AQUILAE TRUST, you're a fucking TRUSTEE",
+    "kind": "post",
+    "where": "Scott Duncan, Volume 1",
+    "date": "Mar 11, 2013",
+    "url": "/vol_i/462493170453287_490962517606352/"
+   }
+  ]
+ },
+ {
+  "term": "Artificial Person",
+  "id": "artificial-person",
+  "letter": "A",
+  "tfd": null,
+  "definitions": []
+ },
+ {
   "term": "Attorn",
   "id": "attorn",
   "letter": "A",
@@ -104,6 +292,43 @@
     "url": "/vol_iii/462493170453287_534408763261727/#entry-534951213207482"
    }
   ]
+ },
+ {
+  "term": "Attorney",
+  "id": "attorney",
+  "letter": "A",
+  "tfd": null,
+  "definitions": [
+   {
+    "text": "THE ATTORNEY is ALWAYS the beneficiary.",
+    "kind": "comment",
+    "where": "Scott Duncan, Volume 7",
+    "date": "Jul 6, 2014",
+    "url": "/vol_vii/462493170453287_690266951009240/#entry-690395704329698"
+   }
+  ]
+ },
+ {
+  "term": "Attorney General",
+  "id": "attorney-general",
+  "letter": "A",
+  "tfd": null,
+  "definitions": [
+   {
+    "text": "The \"Attorney General\" is just some schmuck who was popular in his district.",
+    "kind": "comment",
+    "where": "Scott Duncan, Volume 3",
+    "date": "Jul 13, 2013",
+    "url": "/vol_iii/462493170453287_536381629731107/#entry-536396246396312"
+   }
+  ]
+ },
+ {
+  "term": "Attorney General Money",
+  "id": "attorney-general-money",
+  "letter": "A",
+  "tfd": null,
+  "definitions": []
  },
  {
   "term": "Authority",
@@ -126,6 +351,20 @@
     "url": "/vol_iv/462493170453287_568596366509633/#entry-568917203144216"
    }
   ]
+ },
+ {
+  "term": "Authorized",
+  "id": "authorized",
+  "letter": "A",
+  "tfd": null,
+  "definitions": []
+ },
+ {
+  "term": "Axiom",
+  "id": "axiom",
+  "letter": "A",
+  "tfd": null,
+  "definitions": []
  },
  {
   "term": "Bank",
@@ -157,6 +396,21 @@
   ]
  },
  {
+  "term": "Bar",
+  "id": "bar",
+  "letter": "B",
+  "tfd": null,
+  "definitions": [
+   {
+    "text": "Being \"called to the Bar\" is \"HOTEL CALIFORNIA\".",
+    "kind": "comment",
+    "where": "Scott Duncan, Volume 1",
+    "date": "Mar 14, 2013",
+    "url": "/vol_i/462493170453287_492057720830165/#entry-492228694146401"
+   }
+  ]
+ },
+ {
   "term": "Barring Any Objection from the Court",
   "id": "barring-any-objection-from-the-court",
   "letter": "B",
@@ -168,6 +422,64 @@
     "where": "Scott Duncan, Volume 1",
     "date": "Nov 5, 2013",
     "url": "/vol_i/462493170453287_485010274868243/#entry-583579285011341"
+   }
+  ]
+ },
+ {
+  "term": "Barrister",
+  "id": "barrister",
+  "letter": "B",
+  "tfd": null,
+  "definitions": []
+ },
+ {
+  "term": "Belief",
+  "id": "belief",
+  "letter": "B",
+  "tfd": null,
+  "definitions": [
+   {
+    "text": "If you rely on BELIEF instead of KNOWLEDGE then you are EVIL, as ALL BELIEF IS EVIL.",
+    "kind": "comment",
+    "where": "Scott Duncan, Volume 14",
+    "date": "Apr 30, 2016",
+    "url": "/vol_xiv/462493170453287_988711097831489/#entry-989123507790248"
+   },
+   {
+    "text": "You are stopped by the FIRST TRUTH: ALL BELIEF IS EVIL <---study those 4 words in order.",
+    "kind": "comment",
+    "where": "Scott Duncan, Volume 13",
+    "date": "Mar 16, 2016",
+    "url": "/vol_xiii/462493170453287_959849147384351/#entry-960060294029903"
+   },
+   {
+    "text": "Adults with imaginary friends are evil, because ALL BELIEF is evil, and the thing about evil people is that they never think they are evil.",
+    "kind": "comment",
+    "where": "Scott Duncan, Volume 6",
+    "date": "Jun 2, 2014",
+    "url": "/vol_vi/462493170453287_675209115848357/#entry-675216729180929"
+   }
+  ]
+ },
+ {
+  "term": "Beneficiary",
+  "id": "beneficiary",
+  "letter": "B",
+  "tfd": null,
+  "definitions": []
+ },
+ {
+  "term": "Benefit",
+  "id": "benefit",
+  "letter": "B",
+  "tfd": null,
+  "definitions": [
+   {
+    "text": "With FIAT currency, the benefit is given at the expense of somebody else.",
+    "kind": "comment",
+    "where": "Scott Duncan, Volume 2",
+    "date": "Jun 14, 2013",
+    "url": "/vol_ii/462493170453287_524864560882814/#entry-525016197534317"
    }
   ]
  },
@@ -185,6 +497,13 @@
     "url": "/vol_x/462493170453287_842656495770284/#entry-842659002436700"
    }
   ]
+ },
+ {
+  "term": "Bilateral",
+  "id": "bilateral",
+  "letter": "B",
+  "tfd": null,
+  "definitions": []
  },
  {
   "term": "Bill",
@@ -207,6 +526,20 @@
     "url": "/vol_i/462493170453287_482690341766903/"
    }
   ]
+ },
+ {
+  "term": "Bill of Lading",
+  "id": "bill-of-lading",
+  "letter": "B",
+  "tfd": null,
+  "definitions": []
+ },
+ {
+  "term": "Binding",
+  "id": "binding",
+  "letter": "B",
+  "tfd": null,
+  "definitions": []
  },
  {
   "term": "Birth Certificate",
@@ -266,6 +599,13 @@
   ]
  },
  {
+  "term": "Birth Right",
+  "id": "birth-right",
+  "letter": "B",
+  "tfd": null,
+  "definitions": []
+ },
+ {
   "term": "Bitcoin",
   "id": "bitcoin",
   "letter": "B",
@@ -277,6 +617,21 @@
     "where": "Scott Duncan, Volume 1",
     "date": "Mar 31, 2013",
     "url": "/vol_i/462493170453287_498054010230536/#entry-498225526880051"
+   }
+  ]
+ },
+ {
+  "term": "Bond",
+  "id": "bond",
+  "letter": "B",
+  "tfd": null,
+  "definitions": [
+   {
+    "text": "the BOND is attached to the Consolidated Revenue Fund to account for, and PAY that debt.",
+    "kind": "comment",
+    "where": "Scott Duncan, Volume 2",
+    "date": "Sep 30, 2013",
+    "url": "/vol_ii/462493170453287_524698220899448/#entry-566073803428556"
    }
   ]
  },
@@ -294,6 +649,13 @@
     "url": "/articles/scott-duncan/joinder-for-idiots/"
    }
   ]
+ },
+ {
+  "term": "Breach",
+  "id": "breach",
+  "letter": "B",
+  "tfd": null,
+  "definitions": []
  },
  {
   "term": "By-Law",
@@ -341,6 +703,21 @@
   ]
  },
  {
+  "term": "Canadian Bill of Rights",
+  "id": "canadian-bill-of-rights",
+  "letter": "C",
+  "tfd": null,
+  "definitions": [
+   {
+    "text": "The 1960 Bill of rights is the ONLY LAWFUL bill regarding rights in Canada.",
+    "kind": "comment",
+    "where": "Scott Duncan, Volume 3",
+    "date": "Aug 17, 2013",
+    "url": "/vol_iii/462493170453287_546073232095280/#entry-549380571764546"
+   }
+  ]
+ },
+ {
   "term": "Canon Law",
   "id": "canon-law",
   "letter": "C",
@@ -352,6 +729,152 @@
     "where": "My Belief Is My Conviction",
     "date": "May 5, 2014",
     "url": "/articles/scott-duncan/my-belief-is-my-conviction/"
+   }
+  ]
+ },
+ {
+  "term": "Capacity",
+  "id": "capacity",
+  "letter": "C",
+  "tfd": null,
+  "definitions": []
+ },
+ {
+  "term": "Captain",
+  "id": "captain",
+  "letter": "C",
+  "tfd": null,
+  "definitions": [
+   {
+    "text": "Captain is the closest to freedom a man can have in the 21st century.",
+    "kind": "comment",
+    "where": "Scott Duncan, Volume 4",
+    "date": "Dec 27, 2013",
+    "url": "/vol_iv/462493170453287_604456696256933/#entry-604570872912182"
+   },
+   {
+    "text": "the CAPTAIN is the SOUL in question.",
+    "kind": "post",
+    "where": "Scott Duncan, Volume 1",
+    "date": "Feb 19, 2013",
+    "url": "/vol_i/462493170453287_482690341766903/"
+   }
+  ]
+ },
+ {
+  "term": "Case Law",
+  "id": "case-law",
+  "letter": "C",
+  "tfd": null,
+  "definitions": []
+ },
+ {
+  "term": "Cash",
+  "id": "cash",
+  "letter": "C",
+  "tfd": null,
+  "definitions": []
+ },
+ {
+  "term": "Cede",
+  "id": "cede",
+  "letter": "C",
+  "tfd": null,
+  "definitions": []
+ },
+ {
+  "term": "Certificate",
+  "id": "certificate",
+  "letter": "C",
+  "tfd": null,
+  "definitions": []
+ },
+ {
+  "term": "Certified",
+  "id": "certified",
+  "letter": "C",
+  "tfd": null,
+  "definitions": [
+   {
+    "text": "Certification is the INSURANCE for a BILL OF EXCHANGE (IT\"S ALL ACCOUNTING AND SURETY)",
+    "kind": "comment",
+    "where": "Scott Duncan, Volume 6",
+    "date": "May 5, 2014",
+    "url": "/vol_vi/462493170453287_662464663789469/#entry-662486657120603"
+   }
+  ]
+ },
+ {
+  "term": "Charge",
+  "id": "charge",
+  "letter": "C",
+  "tfd": null,
+  "definitions": [
+   {
+    "text": "EVERY GOVERNMENT CHARGE is a NEW PERSON with SURETY ATTACHED TO YOU!",
+    "kind": "post",
+    "where": "Scott Duncan, Volume 2",
+    "date": "May 29, 2013",
+    "url": "/vol_ii/462493170453287_518597458176191/"
+   }
+  ]
+ },
+ {
+  "term": "Charter",
+  "id": "charter",
+  "letter": "C",
+  "tfd": null,
+  "definitions": [
+   {
+    "text": "A CHARTER is what forms a country.",
+    "kind": "comment",
+    "where": "Scott Duncan, Volume 2",
+    "date": "Jun 29, 2013",
+    "url": "/vol_ii/462493170453287_530835726952364/#entry-531149800254290"
+   }
+  ]
+ },
+ {
+  "term": "Cheque",
+  "id": "cheque",
+  "letter": "C",
+  "tfd": null,
+  "definitions": [
+   {
+    "text": "You write the cheque, and the bank CERTIFIES that the cheque is ALREADY HONOURED, and they did it by SECURING THE FUNDS.",
+    "kind": "comment",
+    "where": "Scott Duncan, Volume 6",
+    "date": "May 5, 2014",
+    "url": "/vol_vi/462493170453287_662464663789469/#entry-662493883786547"
+   },
+   {
+    "text": "A CHEQUE IS NOT A CORPORATION!",
+    "kind": "comment",
+    "where": "Scott Duncan, Volume 2",
+    "date": "Apr 17, 2013",
+    "url": "/vol_ii/462493170453287_503918079644129/#entry-503955546307049"
+   }
+  ]
+ },
+ {
+  "term": "Child",
+  "id": "child",
+  "letter": "C",
+  "tfd": null,
+  "definitions": [
+   {
+    "text": "ALL CHILDREN ARE SOVEREIGN.",
+    "kind": "comment",
+    "where": "Scott Duncan, Volume 9",
+    "date": "Jan 28, 2015",
+    "url": "/vol_ix/462493170453287_781669981868936/#entry-782175681818366"
+   },
+   {
+    "text": "It's why CHILDREN are referred to as MASTER.",
+    "kind": "comment",
+    "where": "Scott Duncan, Volume 10",
+    "date": "Jun 16, 2015",
+    "url": "/vol_x/462493170453287_842656495770284/#entry-842853902417210"
    }
   ]
  },
@@ -378,6 +901,42 @@
   ]
  },
  {
+  "term": "Citizenship",
+  "id": "citizenship",
+  "letter": "C",
+  "tfd": null,
+  "definitions": []
+ },
+ {
+  "term": "Civil",
+  "id": "civil",
+  "letter": "C",
+  "tfd": null,
+  "definitions": []
+ },
+ {
+  "term": "Claim",
+  "id": "claim",
+  "letter": "C",
+  "tfd": null,
+  "definitions": [
+   {
+    "text": "Such a claim is a claim of OWNERSHIP.",
+    "kind": "comment",
+    "where": "Scott Duncan, Volume 13",
+    "date": "Feb 24, 2016",
+    "url": "/vol_xiii/462493170453287_948042318565034/#entry-949103248458941"
+   },
+   {
+    "text": "That CLAIM means you have first right of refusal for discharging of the debtor's accounts.",
+    "kind": "comment",
+    "where": "Scott Duncan, Volume 2",
+    "date": "May 26, 2013",
+    "url": "/vol_ii/462493170453287_516706368365300/#entry-517335624969041"
+   }
+  ]
+ },
+ {
   "term": "Code",
   "id": "code",
   "letter": "C",
@@ -393,6 +952,50 @@
   ]
  },
  {
+  "term": "Commerce",
+  "id": "commerce",
+  "letter": "C",
+  "tfd": null,
+  "definitions": [
+   {
+    "text": "Only in COMMERCE is there value (Monetary).",
+    "kind": "comment",
+    "where": "Scott Duncan, Volume 2",
+    "date": "May 7, 2013",
+    "url": "/vol_ii/462493170453287_510618945640709/#entry-510632702306000"
+   }
+  ]
+ },
+ {
+  "term": "Commercial",
+  "id": "commercial",
+  "letter": "C",
+  "tfd": null,
+  "definitions": []
+ },
+ {
+  "term": "Common Law",
+  "id": "common-law",
+  "letter": "C",
+  "tfd": null,
+  "definitions": [
+   {
+    "text": "Common Law is LEGALLY how injury is calculated (It's all surety and accounting).",
+    "kind": "comment",
+    "where": "Scott Duncan, Volume 11",
+    "date": "Sep 26, 2015",
+    "url": "/vol_xi/462493170453287_885379598164640/#entry-885600831475850"
+   }
+  ]
+ },
+ {
+  "term": "Commonwealth",
+  "id": "commonwealth",
+  "letter": "C",
+  "tfd": null,
+  "definitions": []
+ },
+ {
   "term": "Complaint",
   "id": "complaint",
   "letter": "C",
@@ -404,6 +1007,79 @@
     "where": "Scott Duncan, Volume 7",
     "date": "Jul 2, 2014",
     "url": "/vol_vii/462493170453287_688702591165676/#entry-688842344485034"
+   }
+  ]
+ },
+ {
+  "term": "Consent",
+  "id": "consent",
+  "letter": "C",
+  "tfd": null,
+  "definitions": []
+ },
+ {
+  "term": "Consideration",
+  "id": "consideration",
+  "letter": "C",
+  "tfd": null,
+  "definitions": [
+   {
+    "text": "If you partake in any financial transaction, LEGALLY the only consideration is who must pay.",
+    "kind": "post",
+    "where": "Scott Duncan, Volume 5",
+    "date": "Jan 1, 2014",
+    "url": "/vol_v/462493170453287_606995862669683/"
+   }
+  ]
+ },
+ {
+  "term": "Constitution",
+  "id": "constitution",
+  "letter": "C",
+  "tfd": null,
+  "definitions": []
+ },
+ {
+  "term": "Contract",
+  "id": "contract",
+  "letter": "C",
+  "tfd": null,
+  "definitions": [
+   {
+    "text": "legally sanctioned contract = CONDITIONAL CONSTRUCTED TRUST, or even better, A BILL OF LADING.",
+    "kind": "comment",
+    "where": "Scott Duncan, Volume 2",
+    "date": "May 9, 2013",
+    "url": "/vol_ii/462493170453287_511356868900250/#entry-511359452233325"
+   },
+   {
+    "text": "I know contracts are LAW, and I obey the law.",
+    "kind": "comment",
+    "where": "Scott Duncan, Volume 4",
+    "date": "Dec 26, 2013",
+    "url": "/vol_iv/462493170453287_603734939662442/#entry-604458229590113"
+   }
+  ]
+ },
+ {
+  "term": "Conviction",
+  "id": "conviction",
+  "letter": "C",
+  "tfd": null,
+  "definitions": []
+ },
+ {
+  "term": "Copyright",
+  "id": "copyright",
+  "letter": "C",
+  "tfd": null,
+  "definitions": [
+   {
+    "text": "copyright is one of the \"LEGAL PROVING GROUNDS\" in an arena were nobody really cares about the issue.",
+    "kind": "comment",
+    "where": "Scott Duncan, Volume 1",
+    "date": "Feb 26, 2013",
+    "url": "/vol_i/462493170453287_484967208205883/#entry-485269471508990"
    }
   ]
  },
@@ -459,6 +1135,35 @@
   ]
  },
  {
+  "term": "Costs",
+  "id": "costs",
+  "letter": "C",
+  "tfd": null,
+  "definitions": []
+ },
+ {
+  "term": "Court",
+  "id": "court",
+  "letter": "C",
+  "tfd": null,
+  "definitions": [
+   {
+    "text": "COURTS ARE A STATUTORY BODY!",
+    "kind": "comment",
+    "where": "Scott Duncan, Volume 13",
+    "date": "Feb 10, 2016",
+    "url": "/vol_xiii/462493170453287_941988332503766/#entry-941998195836113"
+   },
+   {
+    "text": "The COURT is not a PERSON.",
+    "kind": "post",
+    "where": "Scott Duncan, Volume 1",
+    "date": "Feb 19, 2013",
+    "url": "/vol_i/462493170453287_482690341766903/"
+   }
+  ]
+ },
+ {
   "term": "Court System",
   "id": "court-system",
   "letter": "C",
@@ -470,6 +1175,21 @@
     "where": "Scott Duncan, Volume 11",
     "date": "Oct 9, 2015",
     "url": "/vol_xi/462493170453287_886597744709492/#entry-890020277700572"
+   }
+  ]
+ },
+ {
+  "term": "Courtesy",
+  "id": "courtesy",
+  "letter": "C",
+  "tfd": null,
+  "definitions": [
+   {
+    "text": "a courtesy is one of the oldest tenders for LAW, because it governs the oldest profession.",
+    "kind": "post",
+    "where": "Scott Duncan, Volume 1",
+    "date": "Feb 19, 2013",
+    "url": "/vol_i/462493170453287_482690341766903/"
    }
   ]
  },
@@ -489,6 +1209,70 @@
   ]
  },
  {
+  "term": "Covenant",
+  "id": "covenant",
+  "letter": "C",
+  "tfd": null,
+  "definitions": []
+ },
+ {
+  "term": "Credit",
+  "id": "credit",
+  "letter": "C",
+  "tfd": null,
+  "definitions": []
+ },
+ {
+  "term": "Crime",
+  "id": "crime",
+  "letter": "C",
+  "tfd": null,
+  "definitions": []
+ },
+ {
+  "term": "Criminal",
+  "id": "criminal",
+  "letter": "C",
+  "tfd": null,
+  "definitions": []
+ },
+ {
+  "term": "Criminal Code",
+  "id": "criminal-code",
+  "letter": "C",
+  "tfd": null,
+  "definitions": []
+ },
+ {
+  "term": "Crown Organization",
+  "id": "crown-organization",
+  "letter": "C",
+  "tfd": null,
+  "definitions": []
+ },
+ {
+  "term": "Currency",
+  "id": "currency",
+  "letter": "C",
+  "tfd": null,
+  "definitions": [
+   {
+    "text": "Currency is no good unless other people accept it.",
+    "kind": "post",
+    "where": "Scott Duncan, Volume 10",
+    "date": "Jun 21, 2015",
+    "url": "/vol_x/462493170453287_845066405529293/"
+   }
+  ]
+ },
+ {
+  "term": "Custody",
+  "id": "custody",
+  "letter": "C",
+  "tfd": null,
+  "definitions": []
+ },
+ {
   "term": "Debt",
   "id": "debt",
   "letter": "D",
@@ -502,6 +1286,13 @@
     "url": "/vol_vi/462493170453287_683006771735258/#entry-826140964088504"
    }
   ]
+ },
+ {
+  "term": "Declaration",
+  "id": "declaration",
+  "letter": "D",
+  "tfd": null,
+  "definitions": []
  },
  {
   "term": "Deemed",
@@ -519,6 +1310,78 @@
   ]
  },
  {
+  "term": "Defamatory Libel",
+  "id": "defamatory-libel",
+  "letter": "D",
+  "tfd": null,
+  "definitions": []
+ },
+ {
+  "term": "Default",
+  "id": "default",
+  "letter": "D",
+  "tfd": null,
+  "definitions": []
+ },
+ {
+  "term": "Definition",
+  "id": "definition",
+  "letter": "D",
+  "tfd": null,
+  "definitions": [
+   {
+    "text": "...and when it comes to GOVERNMENT, MONEY or LAW, the LEGAL definition is the ONLY definition that matters.",
+    "kind": "comment",
+    "where": "Scott Duncan, Volume 14",
+    "date": "May 5, 2016",
+    "url": "/vol_xiv/462493170453287_992044577498141/#entry-992053704163895"
+   },
+   {
+    "text": "ONLY LEGAL DEFINITIONS ARE USED WHEN IT COMES TO GOVERNMENT.",
+    "kind": "comment",
+    "where": "Scott Duncan, Volume 13",
+    "date": "Feb 23, 2016",
+    "url": "/vol_xiii/462493170453287_948042318565034/#entry-948532891849310"
+   },
+   {
+    "text": "Since the LEGAL DEFINITION is the ONLY DEFINITION THAT COUNTS, IN COURT",
+    "kind": "comment",
+    "where": "Scott Duncan, Volume 14",
+    "date": "Jun 14, 2016",
+    "url": "/vol_xiv/462493170453287_1013606882008577/#entry-1014015141967751"
+   }
+  ]
+ },
+ {
+  "term": "Delusion",
+  "id": "delusion",
+  "letter": "D",
+  "tfd": null,
+  "definitions": []
+ },
+ {
+  "term": "Demand",
+  "id": "demand",
+  "letter": "D",
+  "tfd": null,
+  "definitions": []
+ },
+ {
+  "term": "Discharge",
+  "id": "discharge",
+  "letter": "D",
+  "tfd": null,
+  "definitions": [
+   {
+    "text": "DISCHARGE - to \"zero-out\" a balance of an item on an account.",
+    "kind": "comment",
+    "where": "Scott Duncan, Volume 3",
+    "date": "Jul 4, 2013",
+    "url": "/vol_iii/462493170453287_532937380075532/#entry-532943700074900"
+   }
+  ]
+ },
+ {
   "term": "Discussing Law",
   "id": "discussing-law",
   "letter": "D",
@@ -530,6 +1393,57 @@
     "where": "Scott Duncan, Volume 6",
     "date": "May 25, 2014",
     "url": "/vol_vi/462493170453287_671761712859764/#entry-672172196152049"
+   }
+  ]
+ },
+ {
+  "term": "Dishonour",
+  "id": "dishonour",
+  "letter": "D",
+  "tfd": null,
+  "definitions": []
+ },
+ {
+  "term": "Divorce",
+  "id": "divorce",
+  "letter": "D",
+  "tfd": null,
+  "definitions": []
+ },
+ {
+  "term": "Document",
+  "id": "document",
+  "letter": "D",
+  "tfd": null,
+  "definitions": [
+   {
+    "text": "The primary goal of a LEGAL document is to remove all possible variables to accomplish its goal.",
+    "kind": "post",
+    "where": "Scott Duncan, Volume 1",
+    "date": "Feb 19, 2013",
+    "url": "/vol_i/462493170453287_482690341766903/"
+   },
+   {
+    "text": "every single word in a legal document is designed specifically for the purpose of trapping you.",
+    "kind": "post",
+    "where": "Scott Duncan, Volume 1",
+    "date": "Mar 11, 2013",
+    "url": "/vol_i/462493170453287_490962517606352/"
+   }
+  ]
+ },
+ {
+  "term": "Dollar",
+  "id": "dollar",
+  "letter": "D",
+  "tfd": null,
+  "definitions": [
+   {
+    "text": "The US Dollar is DEBT currency, remember.",
+    "kind": "comment",
+    "where": "Scott Duncan, Volume 4",
+    "date": "Nov 11, 2013",
+    "url": "/vol_iv/462493170453287_585510018151601/#entry-586288064740463"
    }
   ]
  },
@@ -586,6 +1500,20 @@
   ]
  },
  {
+  "term": "Duress",
+  "id": "duress",
+  "letter": "D",
+  "tfd": null,
+  "definitions": []
+ },
+ {
+  "term": "Duty",
+  "id": "duty",
+  "letter": "D",
+  "tfd": null,
+  "definitions": []
+ },
+ {
   "term": "Employee",
   "id": "employee",
   "letter": "E",
@@ -599,6 +1527,13 @@
     "url": "/vol_ii/462493170453287_500081790027758/#entry-500091910026746"
    }
   ]
+ },
+ {
+  "term": "Employment",
+  "id": "employment",
+  "letter": "E",
+  "tfd": null,
+  "definitions": []
  },
  {
   "term": "Endorsed",
@@ -631,6 +1566,20 @@
   ]
  },
  {
+  "term": "Entity",
+  "id": "entity",
+  "letter": "E",
+  "tfd": null,
+  "definitions": []
+ },
+ {
+  "term": "Estate",
+  "id": "estate",
+  "letter": "E",
+  "tfd": null,
+  "definitions": []
+ },
+ {
   "term": "Ethereum",
   "id": "ethereum",
   "letter": "E",
@@ -644,6 +1593,56 @@
     "url": "/vol_vi/462493170453287_650884488280820/#entry-656134887755780"
    }
   ]
+ },
+ {
+  "term": "Evidence",
+  "id": "evidence",
+  "letter": "E",
+  "tfd": null,
+  "definitions": []
+ },
+ {
+  "term": "Evil",
+  "id": "evil",
+  "letter": "E",
+  "tfd": null,
+  "definitions": [
+   {
+    "text": "EVIL is simply a lack of empathy.",
+    "kind": "comment",
+    "where": "Scott Duncan, Volume 5",
+    "date": "Feb 16, 2014",
+    "url": "/vol_v/462493170453287_625682087467727/#entry-625688974133705"
+   },
+   {
+    "text": "Evil is a lack of empathy.",
+    "kind": "comment",
+    "where": "Scott Duncan, Volume 4",
+    "date": "Nov 21, 2013",
+    "url": "/vol_iv/462493170453287_589928301043106/#entry-590515397651063"
+   },
+   {
+    "text": "Religious cults are just a symptom, of the ACTUAL EVIL: BELIEF",
+    "kind": "comment",
+    "where": "Scott Duncan, Volume 7",
+    "date": "Jul 16, 2014",
+    "url": "/vol_vii/462493170453287_693050800730855/#entry-694631253906143"
+   }
+  ]
+ },
+ {
+  "term": "Exchange",
+  "id": "exchange",
+  "letter": "E",
+  "tfd": null,
+  "definitions": []
+ },
+ {
+  "term": "Executor",
+  "id": "executor",
+  "letter": "E",
+  "tfd": null,
+  "definitions": []
  },
  {
   "term": "Extortion",
@@ -661,6 +1660,56 @@
   ]
  },
  {
+  "term": "Fact",
+  "id": "fact",
+  "letter": "F",
+  "tfd": null,
+  "definitions": []
+ },
+ {
+  "term": "Fact in Law",
+  "id": "fact-in-law",
+  "letter": "F",
+  "tfd": null,
+  "definitions": []
+ },
+ {
+  "term": "Faith",
+  "id": "faith",
+  "letter": "F",
+  "tfd": null,
+  "definitions": [
+   {
+    "text": "Faith is NOT equal to TRUST",
+    "kind": "comment",
+    "where": "Scott Duncan, Volume 6",
+    "date": "May 17, 2014",
+    "url": "/vol_vi/462493170453287_668554529847149/#entry-668766179825984"
+   },
+   {
+    "text": "One of the biggest lies you were sold is that FAITH is the same as TRUST.",
+    "kind": "comment",
+    "where": "Scott Duncan, Volume 14",
+    "date": "Jun 20, 2016",
+    "url": "/vol_xiv/462493170453287_1017416324960966/#entry-1017465508289381"
+   }
+  ]
+ },
+ {
+  "term": "Fiat",
+  "id": "fiat",
+  "letter": "F",
+  "tfd": null,
+  "definitions": []
+ },
+ {
+  "term": "Fiction",
+  "id": "fiction",
+  "letter": "F",
+  "tfd": null,
+  "definitions": []
+ },
+ {
   "term": "First Name",
   "id": "first-name",
   "letter": "F",
@@ -676,6 +1725,13 @@
   ]
  },
  {
+  "term": "Force",
+  "id": "force",
+  "letter": "F",
+  "tfd": null,
+  "definitions": []
+ },
+ {
   "term": "Foreclosure",
   "id": "foreclosure",
   "letter": "F",
@@ -689,6 +1745,99 @@
     "url": "/vol_i/462493170453287_492074400828497/#entry-504530446249559"
    }
   ]
+ },
+ {
+  "term": "Forfeit",
+  "id": "forfeit",
+  "letter": "F",
+  "tfd": null,
+  "definitions": []
+ },
+ {
+  "term": "Foundation Document",
+  "id": "foundation-document",
+  "letter": "F",
+  "tfd": null,
+  "definitions": []
+ },
+ {
+  "term": "Fraud",
+  "id": "fraud",
+  "letter": "F",
+  "tfd": null,
+  "definitions": []
+ },
+ {
+  "term": "Free-Dumb",
+  "id": "free-dumb",
+  "letter": "F",
+  "tfd": null,
+  "definitions": [
+   {
+    "text": "Free-Dumb is when Christianity or such crap touches it and \"magic documents\" or \"magic phrases\" come into play.",
+    "kind": "comment",
+    "where": "Scott Duncan, Volume 5",
+    "date": "Jan 1, 2014",
+    "url": "/vol_v/462493170453287_606640892705180/#entry-606662939369642"
+   },
+   {
+    "text": "Free-Dumb is a TENDER FOR LAW Classic meme!",
+    "kind": "comment",
+    "where": "Scott Duncan, Volume 2",
+    "date": "May 22, 2013",
+    "url": "/vol_ii/462493170453287_515596301809640/#entry-515605678475369"
+   }
+  ]
+ },
+ {
+  "term": "Free-Dumber",
+  "id": "free-dumber",
+  "letter": "F",
+  "tfd": null,
+  "definitions": []
+ },
+ {
+  "term": "Freedom",
+  "id": "freedom",
+  "letter": "F",
+  "tfd": null,
+  "definitions": []
+ },
+ {
+  "term": "Freeman-on-the-Land",
+  "id": "freeman-on-the-land",
+  "letter": "F",
+  "tfd": null,
+  "definitions": [
+   {
+    "text": "FREEMAN is a LEGAL TITLE.",
+    "kind": "comment",
+    "where": "Scott Duncan, Volume 10",
+    "date": "Jun 16, 2015",
+    "url": "/vol_x/462493170453287_842656495770284/#entry-842802262422374"
+   },
+   {
+    "text": "FREEMEN are SPECIFICALLY CITED in the 1960 CANADIAN BILL OF RIGHTS.",
+    "kind": "comment",
+    "where": "Scott Duncan, Volume 6",
+    "date": "Jul 16, 2014",
+    "url": "/vol_vi/462493170453287_674188432617092/#entry-694901613879107"
+   }
+  ]
+ },
+ {
+  "term": "Fund",
+  "id": "fund",
+  "letter": "F",
+  "tfd": null,
+  "definitions": []
+ },
+ {
+  "term": "Gift",
+  "id": "gift",
+  "letter": "G",
+  "tfd": null,
+  "definitions": []
  },
  {
   "term": "God",
@@ -736,6 +1885,20 @@
   ]
  },
  {
+  "term": "Government Agent",
+  "id": "government-agent",
+  "letter": "G",
+  "tfd": null,
+  "definitions": []
+ },
+ {
+  "term": "Government Service",
+  "id": "government-service",
+  "letter": "G",
+  "tfd": null,
+  "definitions": []
+ },
+ {
   "term": "Governor",
   "id": "governor",
   "letter": "G",
@@ -751,6 +1914,57 @@
   ]
  },
  {
+  "term": "Governor General",
+  "id": "governor-general",
+  "letter": "G",
+  "tfd": null,
+  "definitions": [
+   {
+    "text": "The GOVERNOR GENERAL is a BANK OFFICER and doesn't even know it.",
+    "kind": "comment",
+    "where": "Scott Duncan, Volume 11",
+    "date": "Jul 22, 2015",
+    "url": "/vol_xi/462493170453287_857820300920570/#entry-858048780897722"
+   },
+   {
+    "text": "This is why the GOVERNOR GENERAL is always a chosen CITIZEN, and not an elected official.",
+    "kind": "post",
+    "where": "Scott Duncan, Volume 1",
+    "date": "Mar 11, 2013",
+    "url": "/vol_i/462493170453287_490962517606352/"
+   }
+  ]
+ },
+ {
+  "term": "Grant",
+  "id": "grant",
+  "letter": "G",
+  "tfd": null,
+  "definitions": []
+ },
+ {
+  "term": "Grantor",
+  "id": "grantor",
+  "letter": "G",
+  "tfd": null,
+  "definitions": [
+   {
+    "text": "When you create a LIMITED LIABILITY CORPORATION, you and the Governmaent are acting as GRANTORS - This ends upon creation and the GRANTORS have no further say.",
+    "kind": "comment",
+    "where": "Scott Duncan, Volume 1",
+    "date": "Mar 9, 2013",
+    "url": "/vol_i/462493170453287_485784274790843/#entry-490499764319294"
+   }
+  ]
+ },
+ {
+  "term": "Guilty",
+  "id": "guilty",
+  "letter": "G",
+  "tfd": null,
+  "definitions": []
+ },
+ {
   "term": "Hanging Judge",
   "id": "hanging-judge",
   "letter": "H",
@@ -764,6 +1978,63 @@
     "url": "/vol_ii/462493170453287_518715888164348/"
    }
   ]
+ },
+ {
+  "term": "Hearing",
+  "id": "hearing",
+  "letter": "H",
+  "tfd": null,
+  "definitions": []
+ },
+ {
+  "term": "Her Majesty",
+  "id": "her-majesty",
+  "letter": "H",
+  "tfd": null,
+  "definitions": [
+   {
+    "text": "HER MAJESTY is Sovereign in commerce (the jurisdiction where you are encountering these thugs.) That POST is held by Elizabeth Windsor.",
+    "kind": "comment",
+    "where": "Scott Duncan, Volume 12",
+    "date": "Dec 20, 2015",
+    "url": "/vol_xii/462493170453287_915970201772246/#entry-917097264992873"
+   }
+  ]
+ },
+ {
+  "term": "Higher Authority",
+  "id": "higher-authority",
+  "letter": "H",
+  "tfd": null,
+  "definitions": []
+ },
+ {
+  "term": "Highest Law",
+  "id": "highest-law",
+  "letter": "H",
+  "tfd": null,
+  "definitions": []
+ },
+ {
+  "term": "Holder",
+  "id": "holder",
+  "letter": "H",
+  "tfd": null,
+  "definitions": []
+ },
+ {
+  "term": "Holy Prefix",
+  "id": "holy-prefix",
+  "letter": "H",
+  "tfd": null,
+  "definitions": []
+ },
+ {
+  "term": "Homeland Security",
+  "id": "homeland-security",
+  "letter": "H",
+  "tfd": null,
+  "definitions": []
  },
  {
   "term": "Honour",
@@ -794,6 +2065,63 @@
     "url": "/vol_viii/462493170453287_742587035777231/#entry-742869722415629"
    }
   ]
+ },
+ {
+  "term": "Human",
+  "id": "human",
+  "letter": "H",
+  "tfd": null,
+  "definitions": []
+ },
+ {
+  "term": "Identification",
+  "id": "identification",
+  "letter": "I",
+  "tfd": null,
+  "definitions": []
+ },
+ {
+  "term": "Ignorance",
+  "id": "ignorance",
+  "letter": "I",
+  "tfd": null,
+  "definitions": [
+   {
+    "text": "Ignorance is NEVER the equal of knowledge",
+    "kind": "comment",
+    "where": "Scott Duncan, Volume 8",
+    "date": "Jan 31, 2015",
+    "url": "/vol_viii/462493170453287_761715383864396/#entry-783337908368810"
+   },
+   {
+    "text": "KNOWLEDGE AND IGNORANCE ARE NOT EQUAL!",
+    "kind": "comment",
+    "where": "Scott Duncan, Volume 6",
+    "date": "Jun 18, 2014",
+    "url": "/vol_vi/462493170453287_682279411807994/#entry-682689545100314"
+   }
+  ]
+ },
+ {
+  "term": "Illegal",
+  "id": "illegal",
+  "letter": "I",
+  "tfd": null,
+  "definitions": []
+ },
+ {
+  "term": "Immunity",
+  "id": "immunity",
+  "letter": "I",
+  "tfd": null,
+  "definitions": []
+ },
+ {
+  "term": "Implied",
+  "id": "implied",
+  "letter": "I",
+  "tfd": null,
+  "definitions": []
  },
  {
   "term": "Inalienable Right",
@@ -903,6 +2231,49 @@
   ]
  },
  {
+  "term": "Injured Party",
+  "id": "injured-party",
+  "letter": "I",
+  "tfd": null,
+  "definitions": []
+ },
+ {
+  "term": "Instrument",
+  "id": "instrument",
+  "letter": "I",
+  "tfd": null,
+  "definitions": []
+ },
+ {
+  "term": "Insurance",
+  "id": "insurance",
+  "letter": "I",
+  "tfd": null,
+  "definitions": [
+   {
+    "text": "My INSURANCE is my life plan.",
+    "kind": "post",
+    "where": "Scott Duncan, Volume 3",
+    "date": "Jul 11, 2013",
+    "url": "/vol_iii/462493170453287_535384496497487/"
+   }
+  ]
+ },
+ {
+  "term": "Intent",
+  "id": "intent",
+  "letter": "I",
+  "tfd": null,
+  "definitions": []
+ },
+ {
+  "term": "Interest",
+  "id": "interest",
+  "letter": "I",
+  "tfd": null,
+  "definitions": []
+ },
+ {
   "term": "Joinder",
   "id": "joinder",
   "letter": "J",
@@ -933,6 +2304,28 @@
   ]
  },
  {
+  "term": "Judicial",
+  "id": "judicial",
+  "letter": "J",
+  "tfd": null,
+  "definitions": []
+ },
+ {
+  "term": "Judiciary",
+  "id": "judiciary",
+  "letter": "J",
+  "tfd": null,
+  "definitions": [
+   {
+    "text": "A JUDICIARY IS NOT A PERSON.",
+    "kind": "post",
+    "where": "Scott Duncan, Volume 1",
+    "date": "Feb 25, 2013",
+    "url": "/vol_i/462493170453287_484745448228059/"
+   }
+  ]
+ },
+ {
   "term": "Juridical Person",
   "id": "juridical-person",
   "letter": "J",
@@ -946,6 +2339,42 @@
     "url": "/articles/scott-duncan/persons-for-idiots/"
    }
   ]
+ },
+ {
+  "term": "Jurisdiction",
+  "id": "jurisdiction",
+  "letter": "J",
+  "tfd": null,
+  "definitions": [
+   {
+    "text": "Every jurisdiction is different and decides its own laws and definitions.",
+    "kind": "comment",
+    "where": "Scott Duncan, Volume 13",
+    "date": "Mar 22, 2016",
+    "url": "/vol_xiii/462493170453287_964533816915884/#entry-964563910246208"
+   },
+   {
+    "text": "No jurisdiction is bound by any particular dictionary or whatever.",
+    "kind": "comment",
+    "where": "Scott Duncan, Volume 13",
+    "date": "Mar 22, 2016",
+    "url": "/vol_xiii/462493170453287_964533816915884/#entry-964563910246208"
+   },
+   {
+    "text": "The ADMIRAL'S jurisdiction is the COMMON RULES shared among ALL the Captains.",
+    "kind": "comment",
+    "where": "Scott Duncan, Volume 4",
+    "date": "Nov 20, 2013",
+    "url": "/vol_iv/462493170453287_589928301043106/#entry-589953007707302"
+   }
+  ]
+ },
+ {
+  "term": "Jurisprudence",
+  "id": "jurisprudence",
+  "letter": "J",
+  "tfd": null,
+  "definitions": []
  },
  {
   "term": "Justice",
@@ -970,6 +2399,50 @@
   ]
  },
  {
+  "term": "Justice of the Peace",
+  "id": "justice-of-the-peace",
+  "letter": "J",
+  "tfd": null,
+  "definitions": [
+   {
+    "text": "A Justice of the Peace is there to ENDORSE ATTORNMENT, and NOTHING ELSE.",
+    "kind": "comment",
+    "where": "Scott Duncan, Volume 10",
+    "date": "May 21, 2015",
+    "url": "/vol_x/462493170453287_831091613593439/#entry-831936423508958"
+   },
+   {
+    "text": "Justice of the Peace is NOT the same as JUSTICE.",
+    "kind": "comment",
+    "where": "Scott Duncan, Volume 10",
+    "date": "May 21, 2015",
+    "url": "/vol_x/462493170453287_831091613593439/#entry-831936423508958"
+   }
+  ]
+ },
+ {
+  "term": "Keeper",
+  "id": "keeper",
+  "letter": "K",
+  "tfd": null,
+  "definitions": []
+ },
+ {
+  "term": "King",
+  "id": "king",
+  "letter": "K",
+  "tfd": null,
+  "definitions": [
+   {
+    "text": "A KING is beholden to an imaginary sky-daddy named Yaheweh.",
+    "kind": "comment",
+    "where": "Scott Duncan, Volume 2",
+    "date": "May 17, 2013",
+    "url": "/vol_ii/462493170453287_513971788638758/#entry-513982941970976"
+   }
+  ]
+ },
+ {
   "term": "Law",
   "id": "law",
   "letter": "L",
@@ -988,6 +2461,28 @@
     "where": "Scott Duncan, Volume 13",
     "date": "Mar 7, 2016",
     "url": "/vol_xiii/462493170453287_955376827831583/"
+   }
+  ]
+ },
+ {
+  "term": "Law Society",
+  "id": "law-society",
+  "letter": "L",
+  "tfd": null,
+  "definitions": []
+ },
+ {
+  "term": "Lawful",
+  "id": "lawful",
+  "letter": "L",
+  "tfd": null,
+  "definitions": [
+   {
+    "text": "LEGAL + LAWFUL = FICTION.",
+    "kind": "comment",
+    "where": "Scott Duncan, Volume 8",
+    "date": "Nov 10, 2014",
+    "url": "/vol_viii/462493170453287_744779435557991/#entry-745438732158728"
    }
   ]
  },
@@ -1162,6 +2657,13 @@
   ]
  },
  {
+  "term": "Legal Advice",
+  "id": "legal-advice",
+  "letter": "L",
+  "tfd": null,
+  "definitions": []
+ },
+ {
   "term": "Legal Matrix",
   "id": "legal-matrix",
   "letter": "L",
@@ -1207,6 +2709,21 @@
   ]
  },
  {
+  "term": "Legal Person",
+  "id": "legal-person",
+  "letter": "L",
+  "tfd": null,
+  "definitions": [
+   {
+    "text": "The Legal Person = A CROWN ORGANIZATION",
+    "kind": "post",
+    "where": "Scott Duncan, Volume 8",
+    "date": "Oct 31, 2014",
+    "url": "/vol_viii/462493170453287_740369072665694/"
+   }
+  ]
+ },
+ {
   "term": "Legal Proof",
   "id": "legal-proof",
   "letter": "L",
@@ -1220,6 +2737,13 @@
     "url": "/vol_vi/462493170453287_685294971506438/#entry-685443411491594"
    }
   ]
+ },
+ {
+  "term": "Legal Rights",
+  "id": "legal-rights",
+  "letter": "L",
+  "tfd": null,
+  "definitions": []
  },
  {
   "term": "Legal Tender",
@@ -1300,6 +2824,13 @@
   ]
  },
  {
+  "term": "Legal Title",
+  "id": "legal-title",
+  "letter": "L",
+  "tfd": null,
+  "definitions": []
+ },
+ {
   "term": "Legalese",
   "id": "legalese",
   "letter": "L",
@@ -1344,6 +2875,35 @@
   ]
  },
  {
+  "term": "Legislation",
+  "id": "legislation",
+  "letter": "L",
+  "tfd": null,
+  "definitions": []
+ },
+ {
+  "term": "Levy",
+  "id": "levy",
+  "letter": "L",
+  "tfd": null,
+  "definitions": []
+ },
+ {
+  "term": "Liability",
+  "id": "liability",
+  "letter": "L",
+  "tfd": null,
+  "definitions": [
+   {
+    "text": "Liability is PASSED in BUSINESS channels.",
+    "kind": "comment",
+    "where": "Scott Duncan, Volume 6",
+    "date": "Jun 20, 2014",
+    "url": "/vol_vi/462493170453287_682875428415059/#entry-683430905026178"
+   }
+  ]
+ },
+ {
   "term": "Liable",
   "id": "liable",
   "letter": "L",
@@ -1357,6 +2917,13 @@
     "url": "/vol_i/462493170453287_480688621967075/#entry-480692338633370"
    }
   ]
+ },
+ {
+  "term": "Libel",
+  "id": "libel",
+  "letter": "L",
+  "tfd": null,
+  "definitions": []
  },
  {
   "term": "Liberty",
@@ -1401,6 +2968,13 @@
     "url": "/articles/scott-duncan/lies-and-lying-liars-who-lie-about-the-liaes-they-tell/"
    }
   ]
+ },
+ {
+  "term": "Lie",
+  "id": "lie",
+  "letter": "L",
+  "tfd": null,
+  "definitions": []
  },
  {
   "term": "Lien",
@@ -1537,6 +3111,72 @@
   ]
  },
  {
+  "term": "Magna Carta",
+  "id": "magna-carta",
+  "letter": "M",
+  "tfd": null,
+  "definitions": [
+   {
+    "text": "the Magna Carta is the foundation of law.",
+    "kind": "comment",
+    "where": "Scott Duncan, Volume 11",
+    "date": "Sep 10, 2015",
+    "url": "/vol_xi/462493170453287_879077275461539/#entry-879118395457427"
+   }
+  ]
+ },
+ {
+  "term": "Malice",
+  "id": "malice",
+  "letter": "M",
+  "tfd": null,
+  "definitions": []
+ },
+ {
+  "term": "Man",
+  "id": "man",
+  "letter": "M",
+  "tfd": null,
+  "definitions": [
+   {
+    "text": "it just means that MAN is \"the creator\".",
+    "kind": "comment",
+    "where": "Scott Duncan, Volume 2",
+    "date": "Jun 29, 2013",
+    "url": "/vol_ii/462493170453287_530835726952364/#entry-531146916921245"
+   },
+   {
+    "text": "FREE MAN is two words, where the first describes the second.",
+    "kind": "comment",
+    "where": "Scott Duncan, Volume 10",
+    "date": "Jun 16, 2015",
+    "url": "/vol_x/462493170453287_842656495770284/#entry-842802512422349"
+   }
+  ]
+ },
+ {
+  "term": "Mandate",
+  "id": "mandate",
+  "letter": "M",
+  "tfd": null,
+  "definitions": []
+ },
+ {
+  "term": "Maritime",
+  "id": "maritime",
+  "letter": "M",
+  "tfd": null,
+  "definitions": [
+   {
+    "text": "\"Maritime is ALL U.C.C.\", that is what I am saying.",
+    "kind": "comment",
+    "where": "Scott Duncan, Volume 2",
+    "date": "Jun 14, 2013",
+    "url": "/vol_ii/462493170453287_524698220899448/#entry-524861157549821"
+   }
+  ]
+ },
+ {
   "term": "Marriage",
   "id": "marriage",
   "letter": "M",
@@ -1581,6 +3221,27 @@
   ]
  },
  {
+  "term": "Master",
+  "id": "master",
+  "letter": "M",
+  "tfd": null,
+  "definitions": []
+ },
+ {
+  "term": "Maxim",
+  "id": "maxim",
+  "letter": "M",
+  "tfd": null,
+  "definitions": []
+ },
+ {
+  "term": "Mega-Person",
+  "id": "mega-person",
+  "letter": "M",
+  "tfd": null,
+  "definitions": []
+ },
+ {
   "term": "Middle Name",
   "id": "middle-name",
   "letter": "M",
@@ -1594,6 +3255,28 @@
     "url": "/vol_vi/462493170453287_683216591714276/#entry-685248898177712"
    }
   ]
+ },
+ {
+  "term": "Mistake",
+  "id": "mistake",
+  "letter": "M",
+  "tfd": null,
+  "definitions": [
+   {
+    "text": "the legal definition of \"MISTAKE\" ends with \", or error\".",
+    "kind": "post",
+    "where": "Scott Duncan, Volume 1",
+    "date": "Mar 11, 2013",
+    "url": "/vol_i/462493170453287_490962517606352/"
+   }
+  ]
+ },
+ {
+  "term": "Monetary",
+  "id": "monetary",
+  "letter": "M",
+  "tfd": null,
+  "definitions": []
  },
  {
   "term": "Money",
@@ -1614,6 +3297,86 @@
     "where": "Scott Duncan, Volume 13",
     "date": "Feb 22, 2016",
     "url": "/vol_xiii/462493170453287_948042318565034/#entry-948089958560270"
+   }
+  ]
+ },
+ {
+  "term": "Money of Account",
+  "id": "money-of-account",
+  "letter": "M",
+  "tfd": null,
+  "definitions": [
+   {
+    "text": "one dollar in MONEY OF ACCOUNT is only capable of buying and/or cancelling another dollar in MONEY OF ACCOUNT.",
+    "kind": "post",
+    "where": "Scott Duncan, Volume 3",
+    "date": "Jul 11, 2013",
+    "url": "/vol_iii/462493170453287_535384496497487/"
+   },
+   {
+    "text": "Money of account is not physical.",
+    "kind": "comment",
+    "where": "Scott Duncan, Volume 8",
+    "date": "Oct 23, 2014",
+    "url": "/vol_viii/462493170453287_736283879740880/#entry-737007556335179"
+   },
+   {
+    "text": "Money of ACCOUNT is taxed as EARNINGS",
+    "kind": "comment",
+    "where": "Scott Duncan, Volume 1",
+    "date": "Feb 17, 2013",
+    "url": "/vol_i/462493170453287_482026878499916/#entry-482032901832647"
+   }
+  ]
+ },
+ {
+  "term": "Money of Exchange",
+  "id": "money-of-exchange",
+  "letter": "M",
+  "tfd": null,
+  "definitions": [
+   {
+    "text": "Money of EXCHANGE is just DEBT IN TRANSIT.",
+    "kind": "comment",
+    "where": "Scott Duncan, Volume 1",
+    "date": "Feb 14, 2013",
+    "url": "/vol_i/462493170453287_480677688634835/#entry-480819888620615"
+   },
+   {
+    "text": "MONEY OF EXCHANGE IS able to purchase consumables.",
+    "kind": "comment",
+    "where": "Scott Duncan, Volume 1",
+    "date": "Feb 19, 2013",
+    "url": "/vol_i/462493170453287_462528253783112/#entry-482730195096251"
+   },
+   {
+    "text": "MONEY OF EXCHANGE is YOUR JURISDICTION.",
+    "kind": "comment",
+    "where": "Scott Duncan, Volume 1",
+    "date": "Mar 5, 2013",
+    "url": "/vol_i/462493170453287_486919824677288/#entry-488416887860915"
+   },
+   {
+    "text": "Money of EXCHANGE is taxed as INCOME",
+    "kind": "comment",
+    "where": "Scott Duncan, Volume 1",
+    "date": "Feb 17, 2013",
+    "url": "/vol_i/462493170453287_482026878499916/#entry-482032901832647"
+   }
+  ]
+ },
+ {
+  "term": "Mortgage",
+  "id": "mortgage",
+  "letter": "M",
+  "tfd": null,
+  "definitions": [
+   {
+    "text": "having a mortgage is where you PROMISE TO PAY PROPERTY TAXES, and gives municipalities authority.",
+    "kind": "comment",
+    "where": "Scott Duncan, Volume 11",
+    "date": "Jul 11, 2015",
+    "url": "/vol_xi/462493170453287_853204271382173/#entry-853206864715247"
    }
   ]
  },
@@ -1685,6 +3448,28 @@
   ]
  },
  {
+  "term": "Nation",
+  "id": "nation",
+  "letter": "N",
+  "tfd": null,
+  "definitions": [
+   {
+    "text": "NATION is PEOPLE, humans with a collective ideology (\"Christian Nation\", \"Nation of Islam\", etc), whereas a COUNTRY is just an incorporated/surveyed region.",
+    "kind": "comment",
+    "where": "Scott Duncan, Volume 2",
+    "date": "Apr 6, 2013",
+    "url": "/vol_ii/462493170453287_500081790027758/#entry-500280100007927"
+   }
+  ]
+ },
+ {
+  "term": "Natural",
+  "id": "natural",
+  "letter": "N",
+  "tfd": null,
+  "definitions": []
+ },
+ {
   "term": "Natural Person",
   "id": "natural-person",
   "letter": "N",
@@ -1707,6 +3492,21 @@
   ]
  },
  {
+  "term": "Navy",
+  "id": "navy",
+  "letter": "N",
+  "tfd": null,
+  "definitions": [
+   {
+    "text": "A navy is the only way to act in commerce, without an address.",
+    "kind": "comment",
+    "where": "Scott Duncan, Volume 2",
+    "date": "May 19, 2013",
+    "url": "/vol_ii/462493170453287_514470681922202/#entry-514608261908444"
+   }
+  ]
+ },
+ {
   "term": "Negotiate",
   "id": "negotiate",
   "letter": "N",
@@ -1718,6 +3518,35 @@
     "where": "THE TENDER FOR LAW – CHILDREN’S AID SOCIETY [C.A.S] FOR IDIOTS",
     "date": "May 5, 2014",
     "url": "/articles/scott-duncan/childrens-aid-society-for-idiots/"
+   }
+  ]
+ },
+ {
+  "term": "Nobility",
+  "id": "nobility",
+  "letter": "N",
+  "tfd": null,
+  "definitions": [
+   {
+    "text": "Nobility are TRUSTEES of ORGANIZATIONS",
+    "kind": "comment",
+    "where": "Scott Duncan, Volume 8",
+    "date": "Dec 7, 2014",
+    "url": "/vol_viii/462493170453287_756661624369772/#entry-756845927684675"
+   },
+   {
+    "text": "The nobility is called \"privileged\" and has higher standing because the people are supposed to TRUST them.",
+    "kind": "post",
+    "where": "Scott Duncan, Volume 5",
+    "date": "Jan 29, 2014",
+    "url": "/vol_v/462493170453287_618004378235498/"
+   },
+   {
+    "text": "Everything in the nobility is executed by APPOINTMENT",
+    "kind": "post",
+    "where": "Scott Duncan, Volume 3",
+    "date": "Jul 11, 2013",
+    "url": "/vol_iii/462493170453287_535384496497487/"
    }
   ]
  },
@@ -1744,6 +3573,13 @@
   ]
  },
  {
+  "term": "Non-Person",
+  "id": "non-person",
+  "letter": "N",
+  "tfd": null,
+  "definitions": []
+ },
+ {
   "term": "Notary",
   "id": "notary",
   "letter": "N",
@@ -1757,6 +3593,78 @@
     "url": "/vol_ii/462493170453287_515874461781824/#entry-549441695091767"
    }
   ]
+ },
+ {
+  "term": "Notice",
+  "id": "notice",
+  "letter": "N",
+  "tfd": null,
+  "definitions": [
+   {
+    "text": "NOTICE IS IN RESPONSE NOT AN INITIAL CONTACT!",
+    "kind": "comment",
+    "where": "Scott Duncan, Volume 2",
+    "date": "Apr 25, 2013",
+    "url": "/vol_ii/462493170453287_506444576058146/#entry-506450976057506"
+   }
+  ]
+ },
+ {
+  "term": "Notice of Mistake",
+  "id": "notice-of-mistake",
+  "letter": "N",
+  "tfd": null,
+  "definitions": [
+   {
+    "text": "NOTICE OF MISTAKE is a DOCTRINE not a DOCUMENT.",
+    "kind": "comment",
+    "where": "Scott Duncan, Volume 8",
+    "date": "Nov 12, 2014",
+    "url": "/vol_viii/462493170453287_744787422223859/#entry-746483925387542"
+   },
+   {
+    "text": "NOTICE OF MISTAKE is designed to GET YOU OUT OF SURETY, not \"seek justice\".",
+    "kind": "comment",
+    "where": "Scott Duncan, Volume 7",
+    "date": "Jul 1, 2014",
+    "url": "/vol_vii/462493170453287_688094117893190/#entry-688097394559529"
+   },
+   {
+    "text": "NOTICE OF MISTAKE is a passive resistance to the psychopaths in 'Thunder Dome'",
+    "kind": "post",
+    "where": "Scott Duncan, Volume 11",
+    "date": "Jul 8, 2015",
+    "url": "/vol_xi/462493170453287_851891474846786/"
+   },
+   {
+    "text": "NOTICE OF MISTAKE is NOT declaring a STATUS.",
+    "kind": "comment",
+    "where": "Scott Duncan, Volume 3",
+    "date": "Jul 24, 2013",
+    "url": "/vol_iii/462493170453287_540708935965043/#entry-540722062630397"
+   }
+  ]
+ },
+ {
+  "term": "Null",
+  "id": "null",
+  "letter": "N",
+  "tfd": null,
+  "definitions": []
+ },
+ {
+  "term": "Oath",
+  "id": "oath",
+  "letter": "O",
+  "tfd": null,
+  "definitions": []
+ },
+ {
+  "term": "Obligation",
+  "id": "obligation",
+  "letter": "O",
+  "tfd": null,
+  "definitions": []
  },
  {
   "term": "Off Ship",
@@ -1774,6 +3682,42 @@
   ]
  },
  {
+  "term": "Offence",
+  "id": "offence",
+  "letter": "O",
+  "tfd": null,
+  "definitions": []
+ },
+ {
+  "term": "Offer",
+  "id": "offer",
+  "letter": "O",
+  "tfd": null,
+  "definitions": []
+ },
+ {
+  "term": "Officer",
+  "id": "officer",
+  "letter": "O",
+  "tfd": null,
+  "definitions": [
+   {
+    "text": "Officers are not \"souls\" and neither is the Captain.",
+    "kind": "comment",
+    "where": "Scott Duncan, Volume 8",
+    "date": "Dec 12, 2014",
+    "url": "/vol_viii/462493170453287_756770651025536/#entry-759188034117131"
+   }
+  ]
+ },
+ {
+  "term": "Official",
+  "id": "official",
+  "letter": "O",
+  "tfd": null,
+  "definitions": []
+ },
+ {
   "term": "Official Language",
   "id": "official-language",
   "letter": "O",
@@ -1789,6 +3733,42 @@
   ]
  },
  {
+  "term": "Omission",
+  "id": "omission",
+  "letter": "O",
+  "tfd": null,
+  "definitions": []
+ },
+ {
+  "term": "One People’s Public Fraud",
+  "id": "one-peoples-public-fraud",
+  "letter": "O",
+  "tfd": null,
+  "definitions": [
+   {
+    "text": "One People's Public Fraud is a SCAM, pure and simple.",
+    "kind": "comment",
+    "where": "Scott Duncan, Volume 2",
+    "date": "May 20, 2013",
+    "url": "/vol_ii/462493170453287_515017328534204/#entry-515019765200627"
+   },
+   {
+    "text": "ONE PEOPLE'S PUBLIC FRAUD is FRAUD at the outset.",
+    "kind": "post",
+    "where": "Scott Duncan, Volume 1",
+    "date": "Feb 24, 2013",
+    "url": "/vol_i/462493170453287_484380801597857/"
+   }
+  ]
+ },
+ {
+  "term": "OPCA",
+  "id": "opca",
+  "letter": "O",
+  "tfd": null,
+  "definitions": []
+ },
+ {
   "term": "Or",
   "id": "or",
   "letter": "O",
@@ -1800,6 +3780,21 @@
     "where": "LEGALESE FOR IDIOTS",
     "date": "Jan 1, 2013",
     "url": "/articles/scott-duncan/legalese-for-idiots/"
+   }
+  ]
+ },
+ {
+  "term": "Order",
+  "id": "order",
+  "letter": "O",
+  "tfd": null,
+  "definitions": [
+   {
+    "text": "The \"Order\" is asking for \"honour\".",
+    "kind": "comment",
+    "where": "Scott Duncan, Volume 6",
+    "date": "May 4, 2014",
+    "url": "/vol_vi/462493170453287_661595987209670/#entry-662302280472374"
    }
   ]
  },
@@ -1849,6 +3844,42 @@
   ]
  },
  {
+  "term": "Owner",
+  "id": "owner",
+  "letter": "O",
+  "tfd": null,
+  "definitions": []
+ },
+ {
+  "term": "Ownership",
+  "id": "ownership",
+  "letter": "O",
+  "tfd": null,
+  "definitions": []
+ },
+ {
+  "term": "Parliament",
+  "id": "parliament",
+  "letter": "P",
+  "tfd": null,
+  "definitions": []
+ },
+ {
+  "term": "Party",
+  "id": "party",
+  "letter": "P",
+  "tfd": null,
+  "definitions": [
+   {
+    "text": "The only reason ANY PARTY is before the court, is to INFLUENCE it.",
+    "kind": "comment",
+    "where": "Scott Duncan, Volume 14",
+    "date": "Jun 14, 2016",
+    "url": "/vol_xiv/462493170453287_1013606882008577/#entry-1014015141967751"
+   }
+  ]
+ },
+ {
   "term": "Pawn Shop",
   "id": "pawn-shop",
   "letter": "P",
@@ -1860,6 +3891,21 @@
     "where": "Scott Duncan, Volume 1",
     "date": "Feb 21, 2013",
     "url": "/vol_i/462493170453287_480688621967075/#entry-483618271674110"
+   }
+  ]
+ },
+ {
+  "term": "Pay",
+  "id": "pay",
+  "letter": "P",
+  "tfd": null,
+  "definitions": [
+   {
+    "text": "PAYMENT is actually ILLEGAL.",
+    "kind": "comment",
+    "where": "Scott Duncan, Volume 3",
+    "date": "Jul 4, 2013",
+    "url": "/vol_iii/462493170453287_532937380075532/#entry-532943700074900"
    }
   ]
  },
@@ -1877,6 +3923,28 @@
     "url": "/vol_iii/462493170453287_548223475213589/#entry-548291748540095"
    }
   ]
+ },
+ {
+  "term": "Peace",
+  "id": "peace",
+  "letter": "P",
+  "tfd": null,
+  "definitions": [
+   {
+    "text": "The use of the word \"peace\" is much like \"Big Beautiful Women\" - It's a lie, because it was said.",
+    "kind": "comment",
+    "where": "Scott Duncan, Volume 11",
+    "date": "Jul 11, 2015",
+    "url": "/vol_xi/462493170453287_852704614765472/#entry-853336458035621"
+   }
+  ]
+ },
+ {
+  "term": "Permission",
+  "id": "permission",
+  "letter": "P",
+  "tfd": null,
+  "definitions": []
  },
  {
   "term": "Person",
@@ -1908,6 +3976,13 @@
   ]
  },
  {
+  "term": "Personhood",
+  "id": "personhood",
+  "letter": "P",
+  "tfd": null,
+  "definitions": []
+ },
+ {
   "term": "Petition",
   "id": "petition",
   "letter": "P",
@@ -1923,6 +3998,13 @@
   ]
  },
  {
+  "term": "Pirate",
+  "id": "pirate",
+  "letter": "P",
+  "tfd": null,
+  "definitions": []
+ },
+ {
   "term": "Police Officer",
   "id": "police-officer",
   "letter": "P",
@@ -1936,6 +4018,13 @@
     "url": "/vol_ii/462493170453287_510928158943121/#entry-513971765305427"
    }
   ]
+ },
+ {
+  "term": "Policy",
+  "id": "policy",
+  "letter": "P",
+  "tfd": null,
+  "definitions": []
  },
  {
   "term": "Post",
@@ -1968,6 +4057,21 @@
   ]
  },
  {
+  "term": "Power",
+  "id": "power",
+  "letter": "P",
+  "tfd": null,
+  "definitions": [
+   {
+    "text": "He who holds the MOST power, is the LEAST free.",
+    "kind": "comment",
+    "where": "Scott Duncan, Volume 7",
+    "date": "Jul 5, 2014",
+    "url": "/vol_vii/462493170453287_689592594410009/#entry-689740791061856"
+   }
+  ]
+ },
+ {
   "term": "Practicing Law",
   "id": "practicing-law",
   "letter": "P",
@@ -1981,6 +4085,20 @@
     "url": "/vol_vi/462493170453287_671761712859764/#entry-672172196152049"
    }
   ]
+ },
+ {
+  "term": "Prejudice",
+  "id": "prejudice",
+  "letter": "P",
+  "tfd": null,
+  "definitions": []
+ },
+ {
+  "term": "Presumption",
+  "id": "presumption",
+  "letter": "P",
+  "tfd": null,
+  "definitions": []
  },
  {
   "term": "Private Citizen",
@@ -2013,6 +4131,13 @@
   ]
  },
  {
+  "term": "Private Person",
+  "id": "private-person",
+  "letter": "P",
+  "tfd": null,
+  "definitions": []
+ },
+ {
   "term": "Privateer",
   "id": "privateer",
   "letter": "P",
@@ -2026,6 +4151,20 @@
     "url": "/vol_i/462493170453287_486467371389200/#entry-486481591387778"
    }
   ]
+ },
+ {
+  "term": "Privilege",
+  "id": "privilege",
+  "letter": "P",
+  "tfd": null,
+  "definitions": []
+ },
+ {
+  "term": "Pro Bono",
+  "id": "pro-bono",
+  "letter": "P",
+  "tfd": null,
+  "definitions": []
  },
  {
   "term": "Pro Se",
@@ -2061,6 +4200,21 @@
     "where": "Scott Duncan, Volume 3",
     "date": "Jul 9, 2013",
     "url": "/vol_iii/462493170453287_533869176649019/#entry-534788476557089"
+   }
+  ]
+ },
+ {
+  "term": "Proceedings",
+  "id": "proceedings",
+  "letter": "P",
+  "tfd": null,
+  "definitions": [
+   {
+    "text": "all CRIMINAL PROCEEDINGS are simply administrative processes for that \"ORGANIZATION\".",
+    "kind": "post",
+    "where": "Scott Duncan, Volume 1",
+    "date": "Mar 11, 2013",
+    "url": "/vol_i/462493170453287_490962517606352/"
    }
   ]
  },
@@ -2161,6 +4315,13 @@
   ]
  },
  {
+  "term": "Prosecution",
+  "id": "prosecution",
+  "letter": "P",
+  "tfd": null,
+  "definitions": []
+ },
+ {
   "term": "Province",
   "id": "province",
   "letter": "P",
@@ -2183,6 +4344,77 @@
   ]
  },
  {
+  "term": "Proxy",
+  "id": "proxy",
+  "letter": "P",
+  "tfd": null,
+  "definitions": []
+ },
+ {
+  "term": "Public",
+  "id": "public",
+  "letter": "P",
+  "tfd": null,
+  "definitions": [
+   {
+    "text": "PUBLIC = GOVERNMENT PROPERTY",
+    "kind": "comment",
+    "where": "Scott Duncan, Volume 9",
+    "date": "Mar 21, 2015",
+    "url": "/vol_ix/462493170453287_806611696041431/#entry-806617302707537"
+   }
+  ]
+ },
+ {
+  "term": "Public Benefit Corporation",
+  "id": "public-benefit-corporation",
+  "letter": "P",
+  "tfd": null,
+  "definitions": []
+ },
+ {
+  "term": "Public Debt",
+  "id": "public-debt",
+  "letter": "P",
+  "tfd": null,
+  "definitions": []
+ },
+ {
+  "term": "Public Notice",
+  "id": "public-notice",
+  "letter": "P",
+  "tfd": null,
+  "definitions": []
+ },
+ {
+  "term": "Public Policy",
+  "id": "public-policy",
+  "letter": "P",
+  "tfd": null,
+  "definitions": []
+ },
+ {
+  "term": "Public Record",
+  "id": "public-record",
+  "letter": "P",
+  "tfd": null,
+  "definitions": []
+ },
+ {
+  "term": "Public Servant",
+  "id": "public-servant",
+  "letter": "P",
+  "tfd": null,
+  "definitions": []
+ },
+ {
+  "term": "Public Trust",
+  "id": "public-trust",
+  "letter": "P",
+  "tfd": null,
+  "definitions": []
+ },
+ {
   "term": "Publicly Traded",
   "id": "publicly-traded",
   "letter": "P",
@@ -2194,6 +4426,21 @@
     "where": "Scott Duncan, Volume 14",
     "date": "Apr 23, 2016",
     "url": "/vol_xiv/462493170453287_981483405220925/#entry-985194398183159"
+   }
+  ]
+ },
+ {
+  "term": "Queen",
+  "id": "queen",
+  "letter": "Q",
+  "tfd": null,
+  "definitions": [
+   {
+    "text": "The QUEEN is liable for any debt created by the subject.",
+    "kind": "comment",
+    "where": "Scott Duncan, Volume 3",
+    "date": "Aug 17, 2013",
+    "url": "/vol_iii/462493170453287_546073232095280/#entry-549450201757583"
    }
   ]
  },
@@ -2213,6 +4460,28 @@
   ]
  },
  {
+  "term": "Reality",
+  "id": "reality",
+  "letter": "R",
+  "tfd": null,
+  "definitions": [
+   {
+    "text": "LEGALLY and REALITY are two very different things...",
+    "kind": "comment",
+    "where": "Scott Duncan, Volume 12",
+    "date": "Jan 17, 2016",
+    "url": "/vol_xii/462493170453287_903921442977122/#entry-930388833663716"
+   }
+  ]
+ },
+ {
+  "term": "Receipt",
+  "id": "receipt",
+  "letter": "R",
+  "tfd": null,
+  "definitions": []
+ },
+ {
   "term": "Received",
   "id": "received",
   "letter": "R",
@@ -2226,6 +4495,27 @@
     "url": "/articles/various-authors/attorney-general-money/"
    }
   ]
+ },
+ {
+  "term": "Receiver",
+  "id": "receiver",
+  "letter": "R",
+  "tfd": null,
+  "definitions": []
+ },
+ {
+  "term": "Receivership",
+  "id": "receivership",
+  "letter": "R",
+  "tfd": null,
+  "definitions": []
+ },
+ {
+  "term": "Record",
+  "id": "record",
+  "letter": "R",
+  "tfd": null,
+  "definitions": []
  },
  {
   "term": "Red Ink",
@@ -2246,6 +4536,85 @@
     "where": "Scott Duncan, Volume 8",
     "date": "Oct 1, 2014",
     "url": "/vol_viii/462493170453287_726731204029481/#entry-726837180685550"
+   }
+  ]
+ },
+ {
+  "term": "Redeem",
+  "id": "redeem",
+  "letter": "R",
+  "tfd": null,
+  "definitions": []
+ },
+ {
+  "term": "Refusal",
+  "id": "refusal",
+  "letter": "R",
+  "tfd": null,
+  "definitions": []
+ },
+ {
+  "term": "Registered",
+  "id": "registered",
+  "letter": "R",
+  "tfd": null,
+  "definitions": [
+   {
+    "text": "REGISTER = JOINDER.",
+    "kind": "comment",
+    "where": "Scott Duncan, Volume 1",
+    "date": "Mar 30, 2013",
+    "url": "/vol_i/462493170453287_496287723740498/#entry-497692786933325"
+   },
+   {
+    "text": "NOTHING you \"register\" is owned by you.",
+    "kind": "comment",
+    "where": "Scott Duncan, Volume 1",
+    "date": "Mar 8, 2013",
+    "url": "/vol_i/462493170453287_488326607869943/#entry-489908367711767"
+   }
+  ]
+ },
+ {
+  "term": "Registrar",
+  "id": "registrar",
+  "letter": "R",
+  "tfd": null,
+  "definitions": []
+ },
+ {
+  "term": "Regulation",
+  "id": "regulation",
+  "letter": "R",
+  "tfd": null,
+  "definitions": []
+ },
+ {
+  "term": "Remand",
+  "id": "remand",
+  "letter": "R",
+  "tfd": null,
+  "definitions": []
+ },
+ {
+  "term": "Remedy",
+  "id": "remedy",
+  "letter": "R",
+  "tfd": null,
+  "definitions": [
+   {
+    "text": "Remedy is THEIRS, not yours.",
+    "kind": "post",
+    "where": "Scott Duncan, Volume 9",
+    "date": "Mar 7, 2015",
+    "url": "/vol_ix/462493170453287_798424320193502/"
+   },
+   {
+    "text": "\"I am still searching for a remedy\" = \"Still invested in the past\".",
+    "kind": "comment",
+    "where": "Scott Duncan, Volume 3",
+    "date": "Aug 25, 2013",
+    "url": "/vol_iii/462493170453287_551058164930120/#entry-552863718082898"
    }
   ]
  },
@@ -2286,6 +4655,41 @@
   ]
  },
  {
+  "term": "Republic",
+  "id": "republic",
+  "letter": "R",
+  "tfd": null,
+  "definitions": []
+ },
+ {
+  "term": "Reservation",
+  "id": "reservation",
+  "letter": "R",
+  "tfd": null,
+  "definitions": []
+ },
+ {
+  "term": "Reserve",
+  "id": "reserve",
+  "letter": "R",
+  "tfd": null,
+  "definitions": []
+ },
+ {
+  "term": "Resignation",
+  "id": "resignation",
+  "letter": "R",
+  "tfd": null,
+  "definitions": []
+ },
+ {
+  "term": "Revenue",
+  "id": "revenue",
+  "letter": "R",
+  "tfd": null,
+  "definitions": []
+ },
+ {
   "term": "Revolution",
   "id": "revolution",
   "letter": "R",
@@ -2299,6 +4703,91 @@
     "url": "/vol_xii/462493170453287_900633013305965/#entry-900635756639024"
    }
   ]
+ },
+ {
+  "term": "Right",
+  "id": "right",
+  "letter": "R",
+  "tfd": null,
+  "definitions": []
+ },
+ {
+  "term": "Rights",
+  "id": "rights",
+  "letter": "R",
+  "tfd": null,
+  "definitions": [
+   {
+    "text": "The rest of your rights, are INALIENABLE rights; Meaning they are LEGALLY PRESUMED unless you have implicitly surrendered them.",
+    "kind": "comment",
+    "where": "Scott Duncan, Volume 2",
+    "date": "May 22, 2013",
+    "url": "/vol_ii/462493170453287_515596301809640/#entry-515656028470334"
+   },
+   {
+    "text": "RiGHTS are given to those who respect and acknowledge and respect the rights of others.",
+    "kind": "comment",
+    "where": "Scott Duncan, Volume 2",
+    "date": "Jun 5, 2013",
+    "url": "/vol_ii/462493170453287_521264297909507/#entry-521303191238951"
+   }
+  ]
+ },
+ {
+  "term": "Rule",
+  "id": "rule",
+  "letter": "R",
+  "tfd": null,
+  "definitions": []
+ },
+ {
+  "term": "Ruling",
+  "id": "ruling",
+  "letter": "R",
+  "tfd": null,
+  "definitions": []
+ },
+ {
+  "term": "Salvage",
+  "id": "salvage",
+  "letter": "S",
+  "tfd": null,
+  "definitions": []
+ },
+ {
+  "term": "Seal",
+  "id": "seal",
+  "letter": "S",
+  "tfd": null,
+  "definitions": []
+ },
+ {
+  "term": "Second Class Citizen",
+  "id": "second-class-citizen",
+  "letter": "S",
+  "tfd": null,
+  "definitions": []
+ },
+ {
+  "term": "Secured",
+  "id": "secured",
+  "letter": "S",
+  "tfd": null,
+  "definitions": []
+ },
+ {
+  "term": "Securities",
+  "id": "securities",
+  "letter": "S",
+  "tfd": null,
+  "definitions": []
+ },
+ {
+  "term": "Securitization",
+  "id": "securitization",
+  "letter": "S",
+  "tfd": null,
+  "definitions": []
  },
  {
   "term": "Security",
@@ -2360,6 +4849,85 @@
   ]
  },
  {
+  "term": "Servant",
+  "id": "servant",
+  "letter": "S",
+  "tfd": null,
+  "definitions": []
+ },
+ {
+  "term": "Service",
+  "id": "service",
+  "letter": "S",
+  "tfd": null,
+  "definitions": []
+ },
+ {
+  "term": "Shareholder",
+  "id": "shareholder",
+  "letter": "S",
+  "tfd": null,
+  "definitions": [
+   {
+    "text": "The SHAREHOLDERS are just beneficiaries.",
+    "kind": "comment",
+    "where": "Scott Duncan, Volume 2",
+    "date": "Apr 2, 2013",
+    "url": "/vol_ii/462493170453287_498809460154991/#entry-498811440154793"
+   },
+   {
+    "text": "sole shareholder is not OWNERSHIP.",
+    "kind": "comment",
+    "where": "Scott Duncan, Volume 1",
+    "date": "Mar 26, 2013",
+    "url": "/vol_i/462493170453287_496287723740498/#entry-496489753720295"
+   },
+   {
+    "text": "SHAREHOLDER is the ONLY good LEGAL position to be in.",
+    "kind": "comment",
+    "where": "Scott Duncan, Volume 7",
+    "date": "Jul 20, 2014",
+    "url": "/vol_vii/462493170453287_695326923836576/#entry-696438670392068"
+   }
+  ]
+ },
+ {
+  "term": "Signatory",
+  "id": "signatory",
+  "letter": "S",
+  "tfd": null,
+  "definitions": []
+ },
+ {
+  "term": "Signature",
+  "id": "signature",
+  "letter": "S",
+  "tfd": null,
+  "definitions": [
+   {
+    "text": "a SIGNATURE IS PROOF OF SURETY!",
+    "kind": "comment",
+    "where": "Scott Duncan, Volume 11",
+    "date": "Sep 29, 2015",
+    "url": "/vol_xi/462493170453287_885379598164640/#entry-886615781374355"
+   },
+   {
+    "text": "Your SIGNATURE is your seal.",
+    "kind": "comment",
+    "where": "Scott Duncan, Volume 2",
+    "date": "May 14, 2013",
+    "url": "/vol_ii/462493170453287_512788882090382/#entry-512790888756848"
+   }
+  ]
+ },
+ {
+  "term": "Slave",
+  "id": "slave",
+  "letter": "S",
+  "tfd": null,
+  "definitions": []
+ },
+ {
   "term": "Social Assistance",
   "id": "social-assistance",
   "letter": "S",
@@ -2373,6 +4941,34 @@
     "url": "/vol_i/462493170453287_491707400865197/#entry-492442487458355"
    }
   ]
+ },
+ {
+  "term": "Social Insurance Number",
+  "id": "social-insurance-number",
+  "letter": "S",
+  "tfd": null,
+  "definitions": []
+ },
+ {
+  "term": "Society",
+  "id": "society",
+  "letter": "S",
+  "tfd": null,
+  "definitions": []
+ },
+ {
+  "term": "Solicitor",
+  "id": "solicitor",
+  "letter": "S",
+  "tfd": null,
+  "definitions": []
+ },
+ {
+  "term": "Soul",
+  "id": "soul",
+  "letter": "S",
+  "tfd": null,
+  "definitions": []
  },
  {
   "term": "Sovereign",
@@ -2412,6 +5008,13 @@
   ]
  },
  {
+  "term": "Sovereignty",
+  "id": "sovereignty",
+  "letter": "S",
+  "tfd": null,
+  "definitions": []
+ },
+ {
   "term": "Special Appearance",
   "id": "special-appearance",
   "letter": "S",
@@ -2425,6 +5028,35 @@
     "url": "/vol_i/462493170453287_492057720830165/"
    }
   ]
+ },
+ {
+  "term": "Standing",
+  "id": "standing",
+  "letter": "S",
+  "tfd": null,
+  "definitions": []
+ },
+ {
+  "term": "State",
+  "id": "state",
+  "letter": "S",
+  "tfd": null,
+  "definitions": [
+   {
+    "text": "The Crown/State is the principal.",
+    "kind": "comment",
+    "where": "Scott Duncan, Volume 8",
+    "date": "Nov 3, 2014",
+    "url": "/vol_viii/462493170453287_740369072665694/#entry-742437155792219"
+   }
+  ]
+ },
+ {
+  "term": "Statement",
+  "id": "statement",
+  "letter": "S",
+  "tfd": null,
+  "definitions": []
  },
  {
   "term": "Statement of Live Birth",
@@ -2449,6 +5081,13 @@
   ]
  },
  {
+  "term": "Status",
+  "id": "status",
+  "letter": "S",
+  "tfd": null,
+  "definitions": []
+ },
+ {
   "term": "Statute",
   "id": "statute",
   "letter": "S",
@@ -2462,6 +5101,20 @@
     "url": "/vol_iii/462493170453287_532494196786517/#entry-532664850102785"
    }
   ]
+ },
+ {
+  "term": "Statutory",
+  "id": "statutory",
+  "letter": "S",
+  "tfd": null,
+  "definitions": []
+ },
+ {
+  "term": "Statutory Body",
+  "id": "statutory-body",
+  "letter": "S",
+  "tfd": null,
+  "definitions": []
  },
  {
   "term": "Stay of Proceedings",
@@ -2509,6 +5162,21 @@
   ]
  },
  {
+  "term": "Subject",
+  "id": "subject",
+  "letter": "S",
+  "tfd": null,
+  "definitions": [
+   {
+    "text": "In the Commonwealth, there is ONE SOVEREIGN so SUBJECTS are ALREADY attorned.",
+    "kind": "comment",
+    "where": "Scott Duncan, Volume 3",
+    "date": "Jul 19, 2013",
+    "url": "/vol_iii/462493170453287_538791249490145/#entry-538901596145777"
+   }
+  ]
+ },
+ {
   "term": "Summons",
   "id": "summons",
   "letter": "S",
@@ -2522,6 +5190,13 @@
     "url": "/vol_vii/462493170453287_688702591165676/#entry-688842344485034"
    }
   ]
+ },
+ {
+  "term": "Supernumerary",
+  "id": "supernumerary",
+  "letter": "S",
+  "tfd": null,
+  "definitions": []
  },
  {
   "term": "Surety",
@@ -2546,6 +5221,13 @@
   ]
  },
  {
+  "term": "Surety Bond",
+  "id": "surety-bond",
+  "letter": "S",
+  "tfd": null,
+  "definitions": []
+ },
+ {
   "term": "Surname",
   "id": "surname",
   "letter": "S",
@@ -2557,6 +5239,35 @@
     "where": "Scott Duncan, Volume 6",
     "date": "Jun 24, 2014",
     "url": "/vol_vi/462493170453287_683216591714276/#entry-685248898177712"
+   }
+  ]
+ },
+ {
+  "term": "Sworn",
+  "id": "sworn",
+  "letter": "S",
+  "tfd": null,
+  "definitions": []
+ },
+ {
+  "term": "System",
+  "id": "system",
+  "letter": "S",
+  "tfd": null,
+  "definitions": [
+   {
+    "text": "The system is THE NOBLE LIE.",
+    "kind": "comment",
+    "where": "Scott Duncan, Volume 2",
+    "date": "May 23, 2013",
+    "url": "/vol_ii/462493170453287_516156828420254/#entry-516216631747607"
+   },
+   {
+    "text": "The system is constructed so the pretend shit they make up, is an ECHO or REFLECTION of something real.",
+    "kind": "comment",
+    "where": "Scott Duncan, Volume 5",
+    "date": "Feb 14, 2014",
+    "url": "/vol_v/462493170453287_608802645822338/#entry-624805140888755"
    }
   ]
  },
@@ -2574,6 +5285,13 @@
     "url": "/vol_iii/462493170453287_553143728054897/#entry-553329061369697"
    }
   ]
+ },
+ {
+  "term": "Tax",
+  "id": "tax",
+  "letter": "T",
+  "tfd": null,
+  "definitions": []
  },
  {
   "term": "Taxpayer",
@@ -2638,6 +5356,21 @@
     "where": "Scott Duncan, Volume 14",
     "date": "Apr 13, 2016",
     "url": "/vol_xiv/462493170453287_979441628758436/#entry-979886868713912"
+   }
+  ]
+ },
+ {
+  "term": "Testimony",
+  "id": "testimony",
+  "letter": "T",
+  "tfd": null,
+  "definitions": [
+   {
+    "text": "Autobiographical testimony is PRESUMED to be the property of the author.",
+    "kind": "comment",
+    "where": "Scott Duncan, Volume 12",
+    "date": "Oct 13, 2015",
+    "url": "/vol_xii/462493170453287_891440257558574/#entry-891448870891046"
    }
   ]
  },
@@ -2723,6 +5456,35 @@
   ]
  },
  {
+  "term": "Title",
+  "id": "title",
+  "letter": "T",
+  "tfd": null,
+  "definitions": [
+   {
+    "text": "Title is all that is sold.",
+    "kind": "comment",
+    "where": "Scott Duncan, Volume 1",
+    "date": "Feb 15, 2013",
+    "url": "/vol_i/462493170453287_481479325221338/#entry-481489625220308"
+   },
+   {
+    "text": "When addressed as the title, then the title is acknowledged when there is a response.",
+    "kind": "comment",
+    "where": "Scott Duncan, Volume 12",
+    "date": "Nov 6, 2015",
+    "url": "/vol_xii/462493170453287_900068173362449/#entry-900111560024777"
+   }
+  ]
+ },
+ {
+  "term": "Trading",
+  "id": "trading",
+  "letter": "T",
+  "tfd": null,
+  "definitions": []
+ },
+ {
   "term": "Treason",
   "id": "treason",
   "letter": "T",
@@ -2753,6 +5515,20 @@
   ]
  },
  {
+  "term": "Trial",
+  "id": "trial",
+  "letter": "T",
+  "tfd": null,
+  "definitions": []
+ },
+ {
+  "term": "Tribunal",
+  "id": "tribunal",
+  "letter": "T",
+  "tfd": null,
+  "definitions": []
+ },
+ {
   "term": "Trust",
   "id": "trust",
   "letter": "T",
@@ -2764,6 +5540,36 @@
     "where": "Obiter Dictum: MEADS V. MEADS FOR IDIOTS",
     "date": "May 5, 2014",
     "url": "/articles/scott-duncan/obiter-dictum-meades-v-meads-for-idiots/"
+   }
+  ]
+ },
+ {
+  "term": "Trustee",
+  "id": "trustee",
+  "letter": "T",
+  "tfd": null,
+  "definitions": [
+   {
+    "text": "The TRUSTEE is the corporation you got the BILL from.",
+    "kind": "comment",
+    "where": "Scott Duncan, Volume 13",
+    "date": "Feb 4, 2016",
+    "url": "/vol_xiii/462493170453287_938965852806014/#entry-938974076138525"
+   }
+  ]
+ },
+ {
+  "term": "Truth",
+  "id": "truth",
+  "letter": "T",
+  "tfd": null,
+  "definitions": [
+   {
+    "text": "TRUTH is NOT a commodity.",
+    "kind": "comment",
+    "where": "Scott Duncan, Volume 3",
+    "date": "Jul 9, 2013",
+    "url": "/vol_iii/462493170453287_533869176649019/#entry-534800529889217"
    }
   ]
  },
@@ -2798,6 +5604,13 @@
   ]
  },
  {
+  "term": "Unconditional",
+  "id": "unconditional",
+  "letter": "U",
+  "tfd": null,
+  "definitions": []
+ },
+ {
   "term": "Understanding (Meeting of the Minds)",
   "id": "understanding-meeting-of-the-minds",
   "match": [
@@ -2817,6 +5630,20 @@
   ]
  },
  {
+  "term": "Undertaking",
+  "id": "undertaking",
+  "letter": "U",
+  "tfd": null,
+  "definitions": []
+ },
+ {
+  "term": "Underwrite",
+  "id": "underwrite",
+  "letter": "U",
+  "tfd": null,
+  "definitions": []
+ },
+ {
   "term": "Uniform Commercial Code (UCC)",
   "id": "uniform-commercial-code-ucc",
   "match": [
@@ -2834,6 +5661,107 @@
     "url": "/vol_i/462493170453287_484745448228059/"
    }
   ]
+ },
+ {
+  "term": "Unlawful",
+  "id": "unlawful",
+  "letter": "U",
+  "tfd": null,
+  "definitions": []
+ },
+ {
+  "term": "Unlawful Act",
+  "id": "unlawful-act",
+  "letter": "U",
+  "tfd": null,
+  "definitions": []
+ },
+ {
+  "term": "Value",
+  "id": "value",
+  "letter": "V",
+  "tfd": null,
+  "definitions": [
+   {
+    "text": "The only thing of VALUE is TIME.",
+    "kind": "comment",
+    "where": "Scott Duncan, Volume 2",
+    "date": "Jun 1, 2013",
+    "url": "/vol_ii/462493170453287_519683578067579/#entry-519722781396992"
+   }
+  ]
+ },
+ {
+  "term": "Vessel",
+  "id": "vessel",
+  "letter": "V",
+  "tfd": null,
+  "definitions": []
+ },
+ {
+  "term": "Veto",
+  "id": "veto",
+  "letter": "V",
+  "tfd": null,
+  "definitions": []
+ },
+ {
+  "term": "Void",
+  "id": "void",
+  "letter": "V",
+  "tfd": null,
+  "definitions": []
+ },
+ {
+  "term": "Waive",
+  "id": "waive",
+  "letter": "W",
+  "tfd": null,
+  "definitions": []
+ },
+ {
+  "term": "War",
+  "id": "war",
+  "letter": "W",
+  "tfd": null,
+  "definitions": [
+   {
+    "text": "When a WAR is WAGED, the TRUSTEES are NOT accountable.",
+    "kind": "comment",
+    "where": "Scott Duncan, Volume 1",
+    "date": "Apr 25, 2013",
+    "url": "/vol_i/462493170453287_481209285248342/#entry-506282279407709"
+   }
+  ]
+ },
+ {
+  "term": "Ward",
+  "id": "ward",
+  "letter": "W",
+  "tfd": null,
+  "definitions": []
+ },
+ {
+  "term": "Warrant",
+  "id": "warrant",
+  "letter": "W",
+  "tfd": null,
+  "definitions": [
+   {
+    "text": "Arrest warrants are PROCESS.",
+    "kind": "comment",
+    "where": "Scott Duncan, Volume 3",
+    "date": "Jul 9, 2013",
+    "url": "/vol_iii/462493170453287_534408763261727/#entry-534861006549836"
+   }
+  ]
+ },
+ {
+  "term": "Weapon",
+  "id": "weapon",
+  "letter": "W",
+  "tfd": null,
+  "definitions": []
  },
  {
   "term": "Willful Ignorance",
@@ -2862,6 +5790,21 @@
     "where": "Scott Duncan, Volume 4",
     "date": "Dec 24, 2013",
     "url": "/vol_iv/462493170453287_603582623011007/#entry-603601639675772"
+   }
+  ]
+ },
+ {
+  "term": "Witness",
+  "id": "witness",
+  "letter": "W",
+  "tfd": null,
+  "definitions": [
+   {
+    "text": "A WITNESS IS NEVER THE JUDGE, in BOTH LAW AND SCIENCE.",
+    "kind": "comment",
+    "where": "Scott Duncan, Volume 8",
+    "date": "Dec 20, 2014",
+    "url": "/vol_viii/462493170453287_761396463896288/#entry-762659537103314"
    }
   ]
  },
