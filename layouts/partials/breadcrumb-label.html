@@ -1,0 +1,6 @@
+{{- /* Breadcrumb text for a page (partials/breadcrumbs.html): the title, or for a post or comment its poster and date. */ -}}
+{{- if .Params.id -}}
+  {{- .Params.from_name | default "Post" -}}{{- with .Params.created_time }} · {{ (time.AsTime .).Format "2 Jan 2006" }}{{ end -}}
+{{- else -}}
+  {{- .Title -}}
+{{- end -}}

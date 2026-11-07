@@ -1,0 +1,7 @@
+{{ define "main" }}
+{{/* The list of all terms in a taxonomy (/tags/, /categories/): compact chips with how many pages carry each. */}}
+<header class="page-heading">{{ partial "eyebrow.html" . }}<h1>{{ .Title }}</h1>{{ with .Content }}<div class="prose">{{ . }}</div>{{ end }}</header>
+<ul class="term-chips">
+  {{ range .Data.Terms.Alphabetical }}<li><a href="{{ .Page.RelPermalink }}">{{ upper .Page.LinkTitle }}<span>{{ .Count }}</span></a></li>{{ end }}
+</ul>
+{{ end }}

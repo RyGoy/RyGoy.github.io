@@ -14,7 +14,7 @@
   {{ if not $cards }}{{ errorf "data/flashcards/%s: needs a cards list" $file }}{{ end }}
   {{ $decks = $decks | append (dict "title" ($deck.title | default $file) "cards" $cards) }}
 {{ end }}
-<header class="page-heading">
+<header class="page-heading reading-column">
   <p class="eyebrow"><a href="{{ .Parent.RelPermalink }}">{{ .Parent.Title }}</a></p>
   <h1>{{ .Title }}</h1>
   {{ with .Content }}<div class="prose">{{ . }}</div>{{ end }}

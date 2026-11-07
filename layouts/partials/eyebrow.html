@@ -1,0 +1,11 @@
+{{- /* The small label above a page title: "Library" for the subject pages listed in content/library/_index.md,
+       otherwise the parent section (linked), otherwise the site name. Used by article.html, article-list.html
+       and _default/taxonomy.html. */ -}}
+{{- $page := . -}}
+{{- $label := "" -}}{{- $url := "" -}}
+{{- with site.GetPage "/library" -}}
+  {{- $library := . -}}
+  {{- range .Params.subjects -}}{{- with site.GetPage . -}}{{- if eq .RelPermalink $page.RelPermalink -}}{{- $label = $library.Title -}}{{- $url = $library.RelPermalink -}}{{- end -}}{{- end -}}{{- end -}}
+{{- end -}}
+{{- if not $label -}}{{- with .Parent -}}{{- if not .IsHome -}}{{- $label = .Title -}}{{- $url = .RelPermalink -}}{{- end -}}{{- end -}}{{- end -}}
+<p class="eyebrow">{{ if $url }}<a href="{{ $url }}">{{ $label }}</a>{{ else }}The Tender For Law{{ end }}</p>

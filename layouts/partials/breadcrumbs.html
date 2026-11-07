@@ -1,8 +1,9 @@
+{{- /* Posts and comments have no title, only Facebook ids: name them by poster and date ("Scott Duncan · 7 Jan 2013"). */ -}}
 <nav class="breadcrumbs" aria-label="Breadcrumb">
   <ol>
   {{ range .Ancestors.Reverse }}{{ if not .IsHome }}
-    <li><a href="{{ .RelPermalink }}">{{ .Title | default .Params.id }}</a></li>
+    <li><a href="{{ .RelPermalink }}">{{ partial "breadcrumb-label.html" . }}</a></li>
   {{ end }}{{ end }}
-    <li aria-current="page">{{ .Title | default .Params.id }}</li>
+    <li aria-current="page">{{ partial "breadcrumb-label.html" . }}</li>
   </ol>
 </nav>

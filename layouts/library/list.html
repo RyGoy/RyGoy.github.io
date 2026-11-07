@@ -11,7 +11,7 @@
   {{ range .Params.subjects }}{{ with site.GetPage . }}
   <article class="article-card">
     <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
-    {{ if .IsSection }}<ul class="article-contents">{{ range .Pages.ByWeight }}<li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>{{ end }}</ul>{{ else }}{{ with .Description }}<p>{{ . }}</p>{{ end }}{{ end }}
+    {{ if .IsSection }}<ul class="article-contents">{{ range .Pages.ByWeight }}<li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>{{ end }}</ul>{{ else }}{{ with .Description }}<p>{{ . }}</p>{{ end }}<ul class="article-contents"><li><a href="{{ .RelPermalink }}">Read {{ .Title }} <span aria-hidden="true">→</span></a></li></ul>{{ end }}
   </article>
   {{ end }}{{ end }}
 </div>
@@ -22,5 +22,16 @@
   <div class="section-heading"><h2 id="guide">{{ $.Params.guide_title | default "Guide" }}</h2><span class="rule" aria-hidden="true"></span></div>
   {{ . }}
 </section>
+<script>
+  // Label each cell with its column heading, so on phones the comparison table can restack into one block per row
+  // (CSS: .library-guide table.stacks). Without JavaScript the table keeps its sideways scroll.
+  for (const table of document.querySelectorAll('.library-guide table')) {
+    const heads = [...table.querySelectorAll('thead th')].map((th) => th.textContent.trim());
+    for (const row of table.querySelectorAll('tbody tr')) {
+      [...row.children].forEach((cell, i) => { if (heads[i]) cell.dataset.label = heads[i]; });
+    }
+    table.classList.add('stacks');
+  }
+</script>
 {{ end }}
 {{ end }}

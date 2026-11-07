@@ -1,4 +1,4 @@
-{{ if not .Params.post_id }}
+{{ if and (not .Params.post_id) (ne page.RelPermalink .RelPermalink) }}
   {{ $n := len .Pages }}
   {{ if $n }}
     <a class="comments-link" data-pagefind-ignore href="{{ .RelPermalink }}#comments" aria-label="Read {{ $n }} {{ cond (eq $n 1) "comment" "comments" }}">Read Comments <span class="comment-count" aria-hidden="true">{{ $n }}</span></a>

@@ -1,5 +1,5 @@
-<header class="page-heading">
-  <p class="eyebrow">The Tender For Law</p>
+<header class="page-heading reading-column">
+  <p class="eyebrow"><a href="{{ site.Home.RelPermalink }}#volumes">Volumes</a></p>
   <h1>{{ .Title }}</h1>
   {{ with .Content }}<div class="prose">{{ . }}</div>{{ end }}
   {{ $groups := .Pages.GroupByParamDate "created_time" "January 2006" "asc" }}
