@@ -7,6 +7,9 @@ tags = ["NARRATIVE", "ACCOUNTING"]
 categories = ["RESPONSIBILITY", "COMPUTER SCIENCE"]
 weight = "99"
 +++
+Shared under a Creative Commons Attribution-NonCommercial-NoDerivs 3.0 Unported License.
+
+
 <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
   <div class="carousel-inner">
     <div class="carousel-item active">
