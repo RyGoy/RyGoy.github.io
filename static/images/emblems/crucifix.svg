@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none" stroke="#000" stroke-linejoin="miter"><!-- Crucifix (Latin cross), outlined with an inner line and a roundel at the crossing; used on Most Discussed -->
+  <path d="M27 3H37V16H52V26H37V61H27V26H12V16H27Z" stroke-width="2.4"/>
+  <path d="M30 6H34V19H49V23H34V58H30V23H15V19H30Z" stroke-width="1.2"/>
+  <circle cx="32" cy="21" r="3.2" stroke-width="1.6"/>
+</svg>

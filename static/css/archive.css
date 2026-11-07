@@ -21,6 +21,7 @@
   --emblem-horus: url("../images/emblems/horus.svg");
   --emblem-ankh: url("../images/emblems/ankh.svg");
   --emblem-rose: url("../images/emblems/rose.svg");
+  --emblem-crucifix: url("../images/emblems/crucifix.svg");
   /* Gothic masonry (static/images/gothic/): ashlar stonework tile and a blind-arcade frieze. */
   --stone: url("../images/gothic/ashlar.svg") 0 0 / 240px 96px;
   --arcade: url("../images/gothic/arcade.svg");
@@ -611,6 +612,7 @@ html:has(.terms-gate[open]) { overflow: hidden; }
 .term-card span { font-family: var(--display); font-size: .7rem; letter-spacing: .12em; text-transform: uppercase; color: var(--brass); }
 
 /* Most Discussed (layouts/most-discussed/list.html) */
+.discussed-section h2 { font-variant-numeric: lining-nums; }
 .discussed-list { margin: 0; padding: 0; list-style: none; border-top: 1px solid var(--line); }
 .discussed-item { display: grid; grid-template-columns: 3.5rem minmax(0, 1fr); gap: 1.25rem; padding: 1.5rem 0; border-bottom: 1px solid var(--line); }
 .discussed-item[hidden] { display: none; }
@@ -749,6 +751,7 @@ body::after { content: ""; position: fixed; z-index: -1; right: -6rem; bottom: -
 /* Gothic touches: a rose window behind page titles, and titles cut into the stone. */
 .page-heading { position: relative; isolation: isolate; }
 .page-heading::after { content: ""; position: absolute; z-index: -1; right: 0; top: 50%; width: 12rem; aspect-ratio: 1; transform: translateY(-50%); background: var(--brass); opacity: .05; pointer-events: none; -webkit-mask: var(--emblem-rose) center / contain no-repeat; mask: var(--emblem-rose) center / contain no-repeat; }
+.discussed-heading::after { -webkit-mask-image: var(--emblem-crucifix); mask-image: var(--emblem-crucifix); }
 .hero h1, .page-heading h1 { text-shadow: 0 -1px 0 #000000b0, 0 1px 0 #e5dcc812; }
 @media (max-width: 67.999rem) {
   .sidebar::after { display: none; }
