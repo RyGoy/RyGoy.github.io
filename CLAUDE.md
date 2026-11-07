@@ -80,6 +80,7 @@ Older students' notes connecting posts and articles. Each note is a Markdown fil
 ## Styling and assets
 
 - Live stylesheet: `static/css/archive.css` (hand-written, dark "occult codex" design), loaded from `partials/head.html`. JS: `static/js/navigation.js`.
+- Volume pages and the posts and comments in them show their volume's roman numeral (`data-numeral` on the heading) where other pages show the faint rose window.
 - Faint emblems (`static/images/emblems/`) and gothic stonework (`static/images/gothic/`: ashlar texture on the page and sidebar, blind-arcade frieze under the masthead and atop the footer) are CSS-only decoration. Keep them faint.
 - Tailwind (`package.json`, `tailwind.config.js`, `static/css/input.css` → `output.css`) and `static/js/buttons.js` are leftovers from the previous design and are not referenced by current layouts. The same goes for the `alert.html`, `banner.html`, and `header.html` partials.
 - Font: Cormorant Garamond (`static/fonts/`, OFL license alongside).
