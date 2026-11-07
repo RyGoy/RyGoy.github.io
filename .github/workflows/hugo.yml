@@ -60,6 +60,9 @@ jobs:
       - name: Build search index
         # Indexes pages marked data-pagefind-body into public/pagefind/ for /search/.
         run: npx --yes pagefind@1.5.2 --site public
+      - name: Build concordance
+        # Every use of each dictionary term, as JSON in public/concordance/ for /concordance/.
+        run: python3 scripts/concordance.py public/concordance
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:

@@ -1,0 +1,12 @@
+{{- /* Returning partial (use via partialCached): the address of /dictionary-terms.json, which static/js/dictionary-terms.js
+       reads to link dictionary terms in posts, comments and articles. Each item: id, term, the words to look for
+       (the entry's match list, or its term), its first definition shortened, and how many definitions it has. */ -}}
+{{- $terms := slice -}}
+{{- range site.Data.dictionary -}}
+  {{- $words := .match -}}
+  {{- if not (isset . "match") }}{{ $words = slice .term }}{{ end -}}
+  {{- if $words -}}
+    {{- $terms = $terms | append (dict "id" .id "term" .term "words" $words "text" (truncate 240 (index .definitions 0).text) "n" (len .definitions)) -}}
+  {{- end -}}
+{{- end -}}
+{{- return (resources.FromString "dictionary-terms.json" (jsonify $terms)).RelPermalink -}}

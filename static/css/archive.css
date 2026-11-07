@@ -573,14 +573,6 @@ html:has(.terms-gate[open]) { overflow: hidden; }
 .dictionary-kind { padding: .1rem .45rem; font-family: var(--display); font-size: .66rem; letter-spacing: .14em; text-transform: uppercase; border: 1px solid #80694399; color: #c9b07a; }
 .dictionary-kind-article { color: #1d170c; background: #c9ab70; border-color: #c9ab70; }
 .dictionary-kind-comment { color: #b9ad96; border-color: #5d5540; }
-.dictionary-cites { flex-basis: 100%; font-style: italic; color: #b5a789; }
-.dictionary-more { margin-top: 1.1rem; }
-.dictionary-more > summary { display: inline-flex; align-items: center; gap: .5rem; padding: .35rem .8rem; cursor: pointer; list-style: none; font-family: var(--display); font-size: .75rem; letter-spacing: .14em; text-transform: uppercase; color: var(--brass); border: 1px dashed #806943; }
-.dictionary-more > summary::-webkit-details-marker { display: none; }
-.dictionary-more > summary::before { content: "+"; font-size: 1rem; line-height: 1; }
-.dictionary-more[open] > summary { margin-bottom: 1.1rem; }
-.dictionary-more[open] > summary::before { content: "−"; }
-.dictionary-more > summary:hover, .dictionary-more > summary:focus-visible { color: #fff5de; border-style: solid; }
 
 @media (max-width: 48rem) {
   .dictionary-entry { padding: 1.1rem 1.1rem 1.2rem; }
@@ -590,7 +582,40 @@ html:has(.terms-gate[open]) { overflow: hidden; }
   .dictionary-tfd { margin-left: 0; }
   .dictionary-stats > div { flex: 1 1 8rem; min-width: 0; }
 }
-@media print { .dictionary-tools, .dictionary-popular { display: none; } .dictionary-more > * { display: block; } }
+@media print { .dictionary-tools, .dictionary-popular { display: none; } }
+.dictionary-uses { margin-left: auto; font-family: var(--display); font-size: .72rem; letter-spacing: .12em; text-transform: uppercase; color: var(--brass); }
+.dictionary-uses + .dictionary-tfd { margin-left: 0; }
+.dictionary-uses:hover, .dictionary-uses:focus-visible { color: #fff5de; }
+@media (max-width: 48rem) { .dictionary-uses { margin-left: 0; } }
+
+/* Concordance (layouts/_default/concordance.html) */
+.concordance-note { color: var(--muted); font-style: italic; }
+.concordance-count:empty { display: none; }
+.concordance-summary { margin: 0 0 1.5rem; font-family: var(--display); font-size: .78rem; letter-spacing: .12em; text-transform: uppercase; color: var(--muted); }
+.concordance-list { margin: 0 0 1.5rem; padding-left: 2.6rem; }
+.concordance-list li { padding: .85rem 0; border-bottom: 1px solid var(--line); }
+.concordance-list li::marker { font-family: var(--display); font-size: .8rem; color: #806943; }
+.concordance-source { font-size: .85rem; color: #d7bc87; }
+.concordance-list p { margin: .3rem 0 0; line-height: 1.7; color: #ddd2bb; overflow-wrap: anywhere; }
+.concordance-list mark { padding: 0 .15rem; color: #1d170c; background: #c9ab70; }
+.concordance-more { padding: .6rem 1.2rem; font-family: var(--display); font-size: .78rem; letter-spacing: .14em; text-transform: uppercase; cursor: pointer; color: #e1c797; background: #b89a630a; border: 1px solid #806943; }
+.concordance-more:hover, .concordance-more:focus-visible { color: #fff5de; border-color: var(--brass); background: #b89a631c; }
+
+/* Inline definitions (static/js/dictionary-terms.js) */
+.term-link { color: inherit; text-decoration: underline dotted #b89a63b3; text-decoration-thickness: 1px; text-underline-offset: .2em; }
+.term-link:hover, .term-link:focus-visible { color: #fff5de; text-decoration-color: var(--brass); }
+.term-card { position: absolute; z-index: 50; width: min(22rem, calc(100vw - 16px)); padding: .9rem 1rem; pointer-events: none; font-size: .92rem; line-height: 1.6; color: var(--paper); background: linear-gradient(125deg, #24231c, var(--surface) 70%); border: 1px solid #806943; box-shadow: 0 .8rem 2rem #000a; }
+.term-card[hidden] { display: none; }
+.term-card strong { display: block; margin-bottom: .35rem; font-family: var(--display); font-size: 1.05rem; color: #e6d2a8; }
+.term-card p { margin: 0 0 .5rem; color: #ddd2bb; }
+.term-card span { font-family: var(--display); font-size: .7rem; letter-spacing: .12em; text-transform: uppercase; color: var(--brass); }
+
+/* Most Discussed (layouts/most-discussed/list.html) */
+.discussed-item { margin-top: 2.25rem; }
+.discussed-rank { display: flex; flex-wrap: wrap; align-items: baseline; gap: .35rem .9rem; margin: 0 0 .7rem; font-family: var(--display); font-size: .74rem; letter-spacing: .14em; text-transform: uppercase; color: var(--muted); }
+.discussed-place { font-size: 1.5rem; letter-spacing: 0; color: var(--brass); }
+.discussed-rank a { color: #d7bc87; text-decoration: none; }
+.discussed-rank a:hover, .discussed-rank a:focus-visible { color: #fff5de; }
 .terms-gate-refusal h2 { color: #e39a8f; }
 .terms-gate-actions .terms-gate-sound { display: inline-flex; align-items: center; gap: .65rem; min-width: 0; padding: 0 .25rem 0 0; margin-left: auto; color: #e1c797; background: none; border: 0; }
 .terms-gate-actions .terms-gate-sound:hover, .terms-gate-actions .terms-gate-sound:focus-visible { color: #fff5de; background: none; }

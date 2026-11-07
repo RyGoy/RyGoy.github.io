@@ -3,6 +3,7 @@
 {{ $writing := ne .Section "" }}
 <article class="longform reading-column"{{ if $writing }} data-pagefind-body data-pagefind-filter="Section:Articles"{{ end }}>
   <header class="page-heading">
+    {{ if $writing }}{{ partial "search-filters.html" (dict "date" .Params.date) }}{{ end }}
     {{ partial "eyebrow.html" . }}
     <h1>{{ .Title }}</h1>
     {{/* Author and date on the left, Share on the right of the same row. */}}

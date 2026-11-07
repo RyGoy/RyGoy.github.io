@@ -46,7 +46,18 @@ Templates branch on the **shape of the data**, not on content type:
 
 Only elements marked `data-pagefind-body` are indexed: post bundles (the post plus its comments, in `_default/list.html`) and articles, meaning pages in `articles` and in the subject sections (`partials/article.html`). Single-comment pages and volume indexes are left out because they repeat that text. Each indexed page sets a `Section` filter (`Volumes`, `Articles` or `Commentary`). `data-pagefind-ignore` keeps the metadata and "Read Comments" labels out of the results. The sidebar search box (`partials/navbar.html`) submits `?q=` to `/search/`.
 
-Searches can also be filtered by `Author` (who wrote a post, article or commentary note) and `Commenter` (who commented on a post). These come from `data-pagefind-filter` on the names in `partials/lpPosts.html`, `partials/article.html` and `commentary/single.html`.
+Searches can also be filtered by `Author` (who wrote a post, article or commentary note) and `Commenter` (who commented on a post). These come from `data-pagefind-filter` on the names in `partials/lpPosts.html`, `partials/article.html` and `commentary/single.html`. `Year` (posts, articles, notes) and `Volume` (posts) come from empty elements written by `partials/search-filters.html`: one `data-pagefind-filter` attribute holds only one filter, and the values are plain numbers so the search page lists them in numeric order.
+
+## Most Discussed
+
+`/most-discussed/` (`content/most-discussed/_index.md`, `layouts/most-discussed/list.html`) shows the 100 posts with the most comments, from all volumes. `partials/volumes.html` appends it after the last volume, so the sidebar, the home page and the previous/next links treat it as a volume. Its `symbol` (✝) and `number` (∞) front matter stand in for the roman numeral and the volume number.
+
+## Dictionary, concordance and inline definitions
+
+`/dictionary/` (`content/dictionary.md`, `layouts/_default/dictionary.html`) lists the terms in `data/dictionary.json`, every definition shown. Definitions are in the archive's own words; ones that quote a statute, dictionary or other writer are left out. An entry's optional `match` list gives the words to look for when the term is not itself one (`Include, Including`); an empty list leaves it out of the next two features.
+
+- **Concordance**: `scripts/concordance.py` (standard library Python) finds every use of each term in posts, comments and articles (whole word, any case) and writes `public/concordance/index.json` and `<id>/<n>.json` chunks of 500. The deploy workflow runs it after Pagefind; a plain `hugo` build has no concordance, and `/concordance/` (`layouts/_default/concordance.html`) says so. To try it locally, run the script with a build directory's `concordance/` as the argument. The output is about 55 MB, so don't write it into the committed `public/`.
+- **Inline definitions**: `static/js/dictionary-terms.js` links the first use of each term written in capitals in each post, comment and article to its entry, with the first definition in a card on hover or focus. Its terms come from `/dictionary-terms.json`, built by `partials/dictionary-terms.html`.
 
 ## Poster filter
 
