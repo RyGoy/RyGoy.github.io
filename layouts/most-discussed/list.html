@@ -1,0 +1,29 @@
+{{ define "main" }}
+{{/* Most Discussed (content/most-discussed/_index.md): the posts with the most comments across all volumes, shown
+     like a volume. It is listed after the last volume by partials/volumes.html. Ties go to the earlier post.
+     Not indexed for search: every post here is already indexed in its own volume. */}}
+{{ $posts := slice }}
+{{ range site.Sections }}
+  {{ if hasPrefix .Section "vol_" }}
+    {{ range .Pages }}{{ if .Params.id }}{{ $posts = $posts | append (dict "page" . "count" (len .Pages) "time" .Params.created_time) }}{{ end }}{{ end }}
+  {{ end }}
+{{ end }}
+{{ $ranked := first 100 (sort (sort $posts "time" "asc") "count" "desc") }}
+<header class="page-heading">
+  <p class="eyebrow">Volume {{ .Params.number }}</p>
+  <h1>{{ .Title }}</h1>
+  {{ with .Content }}<div class="prose">{{ . }}</div>{{ end }}
+</header>
+<div class="reading-column">
+{{ partial "poster-filter.html" (dict "target" ".discussed-item > .archive-entry" "noun" "posts") }}
+{{ range $i, $item := $ranked }}
+  {{ with $item.page }}
+  <section class="month-section discussed-item" aria-label="Number {{ add $i 1 }}">
+    <p class="discussed-rank"><span class="discussed-place">{{ add $i 1 }}</span><a href="{{ .FirstSection.RelPermalink }}">{{ .FirstSection.Title }}</a><span>{{ $item.count }} comments</span></p>
+    {{ partial "entry.html" . }}
+  </section>
+  {{ end }}
+{{ end }}
+</div>
+{{ partial "volume-navigation.html" . }}
+{{ end }}

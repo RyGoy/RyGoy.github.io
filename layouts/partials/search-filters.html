@@ -1,0 +1,6 @@
+{{- /* Year and Volume filters for the search index (layouts/_default/search.html), as empty elements whose value
+       Pagefind reads from data-value: one data-pagefind-filter attribute holds only one filter. Values are plain
+       numbers so the search page lists them in numeric order. Context: dict "date" (a date or empty) and "volume"
+       (a volume section page or nil). */ -}}
+{{- with .date }}<span data-pagefind-filter="Year[data-value]" data-value="{{ (time.AsTime .).Year }}"></span>{{ end -}}
+{{- with .volume }}<span data-pagefind-filter="Volume[data-value]" data-value="{{ int (replaceRE "[^0-9]" "" .Title) }}"></span>{{ end -}}

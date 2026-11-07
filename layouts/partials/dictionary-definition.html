@@ -6,6 +6,5 @@
     <span class="dictionary-kind dictionary-kind-{{ $d.kind }}">{{ index .kinds $d.kind | default $d.kind }}</span>
     <a href="{{ $d.url | relURL }}">{{ $d.where }}</a>
     <span class="dictionary-date">{{ $d.date }}</span>
-    {{- with $d.cites }}<span class="dictionary-cites">Quoting {{ . }}</span>{{ end }}
   </p>
 </li>

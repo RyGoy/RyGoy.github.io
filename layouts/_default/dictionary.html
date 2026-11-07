@@ -1,7 +1,9 @@
 {{ define "main" }}
 {{/* The TTFL Dictionary (content/dictionary.md). Entries come from data/dictionary.json: each has term, id (anchor),
-     letter, tfd (TheFreeDictionary legal entry or null) and definitions [{text, cites, kind, where, date, url}].
-     Long entries show their first two definitions and fold the rest. */}}
+     letter, tfd (TheFreeDictionary legal entry or null) and definitions [{text, kind, where, date, url}], all listed.
+     Definitions are in the archive's own words: ones that quote another source are left out of the data.
+     An optional match list gives the words the concordance (/concordance/) and inline definitions look for when the
+     term itself is not one; an empty list leaves the term out of both. */}}
 {{ $entries := site.Data.dictionary }}
 {{ $defs := 0 }}{{ $linked := 0 }}{{ $ranked := slice }}{{ $letters := slice }}
 {{ range $entries }}
@@ -20,6 +22,7 @@
       <div><dt>Terms</dt><dd>{{ len $entries }}</dd></div>
       <div><dt>Definitions</dt><dd>{{ $defs }}</dd></div>
       <div><dt>In the legal dictionary</dt><dd>{{ $linked }}</dd></div>
+      <div><dt>Uses in the archive</dt><dd><a href="{{ "concordance/" | relURL }}" data-uses-total>Concordance</a></dd></div>
     </dl>
   </header>
 
@@ -49,19 +52,12 @@
       <header class="dictionary-term">
         <h3><a href="#{{ .id }}">{{ .term }}</a></h3>
         <span class="dictionary-count" data-pagefind-ignore>{{ $n }} {{ cond (eq $n 1) "definition" "definitions" }}</span>
+        {{ if or (not (isset . "match")) .match }}<a class="dictionary-uses" href="{{ "concordance/" | relURL }}?term={{ .id }}" data-uses="{{ .id }}" data-pagefind-ignore>Every use</a>{{ end }}
         {{ with .tfd }}<a class="dictionary-tfd" href="{{ . }}" target="_blank" rel="noopener noreferrer" data-pagefind-ignore>Legal dictionary <span aria-hidden="true">↗</span></a>{{ end }}
       </header>
       <ol class="dictionary-definitions">
-        {{ range first 2 .definitions }}{{ partial "dictionary-definition.html" (dict "d" . "kinds" $kinds) }}{{ end }}
+        {{ range .definitions }}{{ partial "dictionary-definition.html" (dict "d" . "kinds" $kinds) }}{{ end }}
       </ol>
-      {{ if gt $n 2 }}
-      <details class="dictionary-more">
-        <summary data-pagefind-ignore>Show {{ sub $n 2 }} more</summary>
-        <ol class="dictionary-definitions" start="3">
-          {{ range after 2 .definitions }}{{ partial "dictionary-definition.html" (dict "d" . "kinds" $kinds) }}{{ end }}
-        </ol>
-      </details>
-      {{ end }}
     </article>
     {{ end }}
   </section>
@@ -74,18 +70,17 @@
     const result = box.querySelector('.dictionary-result');
     const sections = [...document.querySelectorAll('.dictionary-section')];
     const entries = [...document.querySelectorAll('.dictionary-entry')].map((el) => ({
-      el, term: el.dataset.term, text: el.textContent.toLowerCase(), more: el.querySelector('.dictionary-more'),
+      el, term: el.dataset.term, text: el.textContent.toLowerCase(),
     }));
     box.hidden = false;
 
-    // Search terms first, then the text of every definition; open folded definitions when the match is inside them.
+    // Search terms first, then the text of every definition.
     input.addEventListener('input', () => {
       const q = input.value.trim().toLowerCase();
       let shown = 0;
       for (const e of entries) {
         const match = !q || e.term.includes(q) || e.text.includes(q);
         e.el.hidden = !match;
-        if (e.more) e.more.open = Boolean(q) && match && !e.term.includes(q);
         shown += match;
       }
       for (const s of sections) s.hidden = !s.querySelector('.dictionary-entry:not([hidden])');
@@ -115,6 +110,19 @@
     addEventListener('resize', queue);
     input.addEventListener('input', queue);
     update();
+
+    // Concordance counts (scripts/concordance.py, written at deploy). Without them the links keep their plain text.
+    fetch('{{ "concordance/index.json" | relURL }}').then((r) => (r.ok ? r.json() : null)).then((counts) => {
+      if (!counts) return;
+      const format = (n) => n.toLocaleString('en');
+      let total = 0;
+      for (const a of document.querySelectorAll('[data-uses]')) {
+        const n = counts[a.dataset.uses] || 0;
+        total += n;
+        a.textContent = `${format(n)} ${n === 1 ? 'use' : 'uses'}`;
+      }
+      document.querySelector('[data-uses-total]').textContent = format(total);
+    }).catch(() => {});
   }
 </script>
 {{ end }}

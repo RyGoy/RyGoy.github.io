@@ -8,4 +8,7 @@
 {{/* Some original weights repeat. Derive display order from the existing titles. */}}
 {{ $ordered := slice }}
 {{ range sort $volumes "Number" }}{{ $ordered = $ordered | append .Page }}{{ end }}
+{{/* Most Discussed (layouts/most-discussed/list.html) comes last, as a volume drawn from all the others.
+     Its symbol and number come from its front matter in place of the roman numeral and the volume number. */}}
+{{ with site.GetPage "/most-discussed" }}{{ $ordered = $ordered | append . }}{{ end }}
 {{ return $ordered }}

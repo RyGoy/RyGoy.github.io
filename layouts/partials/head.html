@@ -7,6 +7,7 @@
 <link rel="stylesheet" href="{{ "css/archive.css" | relURL }}">
 <script src="{{ "js/navigation.js" | relURL }}" defer></script>
 <script src="{{ "js/share.js" | relURL }}" defer></script>
+<script src="{{ "js/dictionary-terms.js" | relURL }}" data-terms="{{ partialCached "dictionary-terms.html" . }}" data-dictionary="{{ "dictionary/" | relURL }}" defer></script>
 {{/* WEBAMP DISABLED: remove this comment wrapper to bring the Webamp player back.
      Also re-enable the "Open Webamp" button in partials/navbar.html.
 <script src="{{ "js/webamp-dock.js" | relURL }}" defer></script>

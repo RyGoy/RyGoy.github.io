@@ -1,0 +1,82 @@
+{{ define "main" }}
+{{/* The concordance (content/concordance.md): every use of each TTFL Dictionary term in the archive. The files in
+     /concordance/ are written at deploy by scripts/concordance.py (see .github/workflows/hugo.yml), so a plain
+     `hugo` build lists the terms but has no uses to show. /concordance/?term=<id> shows one term, CHUNK uses at a time. */}}
+<header class="page-heading">
+  <p class="eyebrow"><a href="{{ "dictionary/" | relURL }}">TTFL Dictionary</a></p>
+  <h1>{{ .Title }}</h1>
+  {{ with .Content }}<div class="prose">{{ . }}</div>{{ end }}
+</header>
+<div class="concordance reading-column" data-base="{{ "concordance/" | relURL }}" data-root="{{ "" | relURL }}" data-dictionary="{{ "dictionary/" | relURL }}" data-chunk="500">
+  <noscript><p class="concordance-note">The concordance needs JavaScript.</p></noscript>
+  <p class="concordance-note" hidden data-unavailable>The concordance is built when the site is deployed, so it is not available here.</p>
+  <nav class="concordance-terms dictionary-popular" aria-label="Terms">
+    <ul>{{ range site.Data.dictionary }}{{ if or (not (isset . "match")) .match }}<li><a href="?term={{ .id }}" data-term="{{ .id }}" data-name="{{ .term }}">{{ .term }}<span class="concordance-count"></span></a></li>{{ end }}{{ end }}</ul>
+  </nav>
+  <section class="concordance-results" aria-labelledby="concordance-term" hidden>
+    <div class="section-heading"><h2 id="concordance-term"></h2><span class="rule" aria-hidden="true"></span></div>
+    <p class="concordance-summary"><span class="concordance-total"></span> · <a class="concordance-definitions" href="">Definitions</a> · <a href="?">All terms</a></p>
+    <ol class="concordance-list"></ol>
+    <button type="button" class="concordance-more" hidden></button>
+  </section>
+</div>
+<script>
+  {
+    const root = document.querySelector('.concordance');
+    const { base, dictionary } = root.dataset;
+    const site = root.dataset.root;
+    const CHUNK = Number(root.dataset.chunk);
+    const links = [...root.querySelectorAll('[data-term]')];
+    const names = new Map(links.map((a) => [a.dataset.term, a.dataset.name]));
+    const id = new URLSearchParams(location.search).get('term');
+    const format = (n) => n.toLocaleString('en');
+    const uses = (n) => `${format(n)} ${n === 1 ? 'use' : 'uses'}`;
+
+    // One use: where it was written (linked), then the words around the term with the term marked.
+    const item = (row) => {
+      const li = document.createElement('li');
+      const source = document.createElement('a');
+      source.className = 'concordance-source';
+      source.href = site + row.u.replace(/^\//, '');
+      source.textContent = row.l;
+      const line = document.createElement('p');
+      const mark = document.createElement('mark');
+      mark.textContent = row.m;
+      line.append(row.b, mark, row.a);
+      li.append(source, line);
+      return li;
+    };
+
+    const show = (total) => {
+      root.querySelector('.concordance-terms').hidden = true;
+      const results = root.querySelector('.concordance-results');
+      results.hidden = false;
+      results.querySelector('#concordance-term').textContent = `“${names.get(id)}”`;
+      results.querySelector('.concordance-total').textContent = uses(total);
+      results.querySelector('.concordance-definitions').href = `${dictionary}#${id}`;
+      document.title = `${names.get(id)} · ${document.title}`;
+      const list = results.querySelector('.concordance-list');
+      const more = results.querySelector('.concordance-more');
+      let next = 0;
+      const load = () => {
+        more.disabled = true;
+        fetch(`${base}${id}/${next}.json`).then((r) => r.json()).then((rows) => {
+          list.append(...rows.map(item));
+          next += 1;
+          const left = total - next * CHUNK;
+          more.hidden = left <= 0;
+          more.textContent = `Show ${format(Math.min(CHUNK, left))} more`;
+          more.disabled = false;
+        });
+      };
+      more.addEventListener('click', load);
+      if (total) load();
+    };
+
+    fetch(`${base}index.json`).then((r) => (r.ok ? r.json() : Promise.reject())).then((counts) => {
+      for (const a of links) a.querySelector('.concordance-count').textContent = format(counts[a.dataset.term] || 0);
+      if (names.has(id)) show(counts[id] || 0);
+    }).catch(() => { root.querySelector('[data-unavailable]').hidden = false; });
+  }
+</script>
+{{ end }}

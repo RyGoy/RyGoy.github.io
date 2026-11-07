@@ -6,8 +6,9 @@
     <div class="volume-grid">
     {{ range partialCached "volumes.html" . }}
       <a class="volume-card" href="{{ .RelPermalink }}">
-        <span class="book-ornament" aria-hidden="true">{{ upper (strings.TrimPrefix "vol_" .Section) }}</span>
+        <span class="book-ornament" aria-hidden="true">{{ .Params.symbol | default (upper (strings.TrimPrefix "vol_" .Section)) }}</span>
         <h3>{{ .Title }}</h3>
+        {{ with .Params.number }}<span class="volume-dates">Volume {{ . }}</span>{{ end }}
         {{ $posts := sort .Pages "Params.created_time" }}
         {{ with $posts }}
           {{ $first := (time.AsTime (index . 0).Params.created_time).Format "Jan 2006" }}
