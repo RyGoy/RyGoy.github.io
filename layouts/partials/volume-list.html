@@ -1,4 +1,4 @@
-<header class="page-heading reading-column">
+<header class="page-heading reading-column" data-numeral="{{ upper (strings.TrimPrefix "vol_" .FirstSection.Section) }}">
   <p class="eyebrow"><a href="{{ site.Home.RelPermalink }}#volumes">Volumes</a></p>
   <h1>{{ .Title }}</h1>
   {{ with .Content }}<div class="prose">{{ . }}</div>{{ end }}

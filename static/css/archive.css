@@ -769,13 +769,15 @@ body::after { content: ""; position: fixed; z-index: -1; right: -6rem; bottom: -
 /* Gothic touches: a rose window behind page titles, and titles cut into the stone. */
 .page-heading { position: relative; isolation: isolate; }
 .page-heading::after { content: ""; position: absolute; z-index: -1; right: 0; top: 50%; width: 12rem; aspect-ratio: 1; transform: translateY(-50%); background: var(--brass); opacity: .05; pointer-events: none; -webkit-mask: var(--emblem-rose) center / contain no-repeat; mask: var(--emblem-rose) center / contain no-repeat; }
+/* Volume pages and the posts and comments in them show the volume's numeral (data-numeral) in place of the rose. */
+.page-heading[data-numeral]::after { content: attr(data-numeral); width: auto; aspect-ratio: auto; font-family: var(--display); font-size: 10rem; font-weight: 500; line-height: 1; letter-spacing: .02em; color: var(--brass); background: none; opacity: .08; -webkit-mask: none; mask: none; }
 .discussed-heading::after { -webkit-mask-image: var(--emblem-crucifix); mask-image: var(--emblem-crucifix); }
 .hero h1, .page-heading h1 { text-shadow: 0 -1px 0 #000000b0, 0 1px 0 #e5dcc812; }
 @media (max-width: 67.999rem) {
   .sidebar::after { display: none; }
   .sidebar { background: var(--stone), #141512; }
 }
-@media (max-width: 42rem) { .page-heading::after { width: 8rem; } }
+@media (max-width: 42rem) { .page-heading::after { width: 8rem; } .page-heading[data-numeral]::after { width: auto; font-size: 6.5rem; } }
 @media print {
   .hero-copy::before, .sidebar::after, .site-footer::before, .site-footer::after, .archive-entry::after, .volume-card::after, .page-heading::after { display: none; }
   .masthead, .site-footer { background: none; }
