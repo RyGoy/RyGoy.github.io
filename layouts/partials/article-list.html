@@ -1,7 +1,8 @@
-<header class="page-heading"><p class="eyebrow">The Tender For Law</p><h1>{{ .Title }}</h1>{{ with .Content }}<div class="prose">{{ . }}</div>{{ end }}</header>
+<header class="page-heading">{{ partial "eyebrow.html" . }}<h1>{{ .Title }}</h1>{{ with .Content }}<div class="prose">{{ . }}</div>{{ end }}</header>
+{{/* A card without a contents list is a single link: the whole card is clickable (.article-card.is-link). */}}
 <div class="article-grid">
 {{ range .Pages.ByWeight }}
-  <article class="article-card">
+  <article class="article-card{{ if not .IsSection }} is-link{{ end }}">
     {{ with .Params.author }}<p class="eyebrow">{{ . }}</p>{{ end }}
     <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
     {{ with .Params.date }}<time datetime="{{ . }}">{{ (time.AsTime .).Format "Jan 02, 2006" }}</time>{{ end }}
