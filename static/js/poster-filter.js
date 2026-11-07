@@ -40,9 +40,9 @@
       entry.hidden = !visible(entry.dataset.author);
       if (!entry.hidden) shown += 1;
     }
-    // Volume pages: hide months left empty, and their links in the month index.
+    // Volume pages and Most Discussed: hide sections (months, places) left empty, and their links in the index.
     for (const section of document.querySelectorAll('.month-section')) {
-      section.hidden = !section.querySelector('.archive-entry:not([hidden])');
+      section.hidden = !entries.some((entry) => !entry.hidden && section.contains(entry));
       const heading = section.querySelector('h2[id]');
       const link = heading && document.querySelector(`.date-index a[href="#${CSS.escape(heading.id)}"]`);
       if (link) link.parentElement.hidden = section.hidden;

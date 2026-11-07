@@ -50,7 +50,7 @@ Searches can also be filtered by `Author` (who wrote a post, article or commenta
 
 ## Most Discussed
 
-`/most-discussed/` (`content/most-discussed/_index.md`, `layouts/most-discussed/list.html`) shows the 100 posts with the most comments, from all volumes. `partials/volumes.html` appends it after the last volume, so the sidebar, the home page and the previous/next links treat it as a volume. Its `symbol` (✝) and `number` (∞) front matter stand in for the roman numeral and the volume number.
+`/most-discussed/` (`content/most-discussed/_index.md`, `layouts/most-discussed/list.html`) shows the 100 posts with the most comments, from all volumes. `partials/volumes.html` appends it after the last volume, so the sidebar, the home page and the previous/next links treat it as a volume. Its `symbol` (✝) and `number` (∞) front matter stand in for the roman numeral and the volume number. The page is laid out like a volume page: the same header, with places in tens (Places 1–10 …) for months, and the poster filter hides empty sections. Its heading emblem is a crucifix (`static/images/emblems/crucifix.svg`, `.discussed-heading`) in place of the rose window used on every other page.
 
 ## Dictionary, concordance and inline definitions
 

@@ -2,6 +2,7 @@
 {{/* Most Discussed (content/most-discussed/_index.md): the posts with the most comments across all volumes, shown
      like a volume. It is listed after the last volume by partials/volumes.html. Ties go to the earlier post.
      Each post is a short ranked item (who, when, where, the opening words) linking to the full post and its comments.
+     The header and the sections of ten places match a volume page (partials/volume-list.html), with places for months.
      Not indexed for search: every post here is already indexed in its own volume. */}}
 {{ $posts := slice }}
 {{ range site.Sections }}
@@ -10,28 +11,38 @@
   {{ end }}
 {{ end }}
 {{ $ranked := first 100 (sort (sort $posts "time" "asc") "count" "desc") }}
-<header class="page-heading">
-  <p class="eyebrow">Volume {{ .Params.number }}</p>
+{{ $bands := slice }}
+{{ range $b := seq 0 9 }}{{ $from := mul $b 10 }}{{ with first 10 (after $from $ranked) }}
+  {{ $bands = $bands | append (dict "from" $from "items" . "label" (printf "%d–%d" (add $from 1) (add $from (len .)))) }}
+{{ end }}{{ end }}
+<header class="page-heading reading-column discussed-heading">
+  <p class="eyebrow"><a href="{{ site.Home.RelPermalink }}#volumes">Volumes</a></p>
   <h1>{{ .Title }}</h1>
   {{ with .Content }}<div class="prose">{{ . }}</div>{{ end }}
+  {{ if $bands }}<nav class="date-index" aria-label="{{ .Title }}"><ul>{{ range $bands }}<li><a href="#places-{{ add .from 1 }}">{{ .label }}</a></li>{{ end }}</ul></nav>{{ end }}
 </header>
 <div class="reading-column">
 {{ partial "poster-filter.html" (dict "target" ".discussed-list > .discussed-item" "noun" "posts") }}
-<ol class="discussed-list">
-{{ range $i, $item := $ranked }}
-  {{ with $item.page }}
-  {{ $opening := .Params.message | default .Params.name | default .Params.description | default (cond (eq .Params.type "photo") "Shared a photo." "Shared a link.") }}
-  <li class="discussed-item" data-author="{{ .Params.from_name }}">
-    <span class="discussed-place" aria-hidden="true">{{ add $i 1 }}</span>
-    <div class="discussed-body">
-      <p class="discussed-meta"><span class="discussed-author">{{ .Params.from_name | default "Post" }}</span>{{ with .Params.created_time }}<time datetime="{{ . }}">{{ (time.AsTime .).Format "Jan 2, 2006" }}</time>{{ end }}<a href="{{ .FirstSection.RelPermalink }}">{{ .FirstSection.Title }}</a></p>
-      <p class="discussed-opening"><a href="{{ .RelPermalink }}">{{ $opening | plainify | htmlUnescape | truncate 240 }}</a></p>
-      <a class="discussed-comments" href="{{ .RelPermalink }}#comments">Read {{ lang.FormatNumber 0 $item.count }} comments <span aria-hidden="true">→</span></a>
-    </div>
-  </li>
+{{ range $bands }}{{ $from := .from }}
+<section class="month-section discussed-section" aria-labelledby="places-{{ add $from 1 }}">
+  <div class="section-heading"><h2 id="places-{{ add $from 1 }}">Places {{ .label }}</h2><span class="rule" aria-hidden="true"></span></div>
+  <ol class="discussed-list" start="{{ add $from 1 }}">
+  {{ range $i, $item := .items }}
+    {{ with $item.page }}
+    {{ $opening := .Params.message | default .Params.name | default .Params.description | default (cond (eq .Params.type "photo") "Shared a photo." "Shared a link.") }}
+    <li class="discussed-item" data-author="{{ .Params.from_name }}">
+      <span class="discussed-place" aria-hidden="true">{{ add $from $i 1 }}</span>
+      <div class="discussed-body">
+        <p class="discussed-meta"><span class="discussed-author">{{ .Params.from_name | default "Post" }}</span>{{ with .Params.created_time }}<time datetime="{{ . }}">{{ (time.AsTime .).Format "Jan 2, 2006" }}</time>{{ end }}<a href="{{ .FirstSection.RelPermalink }}">{{ .FirstSection.Title }}</a></p>
+        <p class="discussed-opening"><a href="{{ .RelPermalink }}">{{ $opening | plainify | htmlUnescape | truncate 240 }}</a></p>
+        <a class="discussed-comments" href="{{ .RelPermalink }}#comments">Read {{ lang.FormatNumber 0 $item.count }} comments <span aria-hidden="true">→</span></a>
+      </div>
+    </li>
+    {{ end }}
   {{ end }}
+  </ol>
+</section>
 {{ end }}
-</ol>
 </div>
 {{ partial "volume-navigation.html" . }}
 {{ end }}
