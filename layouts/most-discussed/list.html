@@ -1,6 +1,7 @@
 {{ define "main" }}
 {{/* Most Discussed (content/most-discussed/_index.md): the posts with the most comments across all volumes, shown
      like a volume. It is listed after the last volume by partials/volumes.html. Ties go to the earlier post.
+     Each post is a short ranked item (who, when, where, the opening words) linking to the full post and its comments.
      Not indexed for search: every post here is already indexed in its own volume. */}}
 {{ $posts := slice }}
 {{ range site.Sections }}
@@ -15,15 +16,22 @@
   {{ with .Content }}<div class="prose">{{ . }}</div>{{ end }}
 </header>
 <div class="reading-column">
-{{ partial "poster-filter.html" (dict "target" ".discussed-item > .archive-entry" "noun" "posts") }}
+{{ partial "poster-filter.html" (dict "target" ".discussed-list > .discussed-item" "noun" "posts") }}
+<ol class="discussed-list">
 {{ range $i, $item := $ranked }}
   {{ with $item.page }}
-  <section class="month-section discussed-item" aria-label="Number {{ add $i 1 }}">
-    <p class="discussed-rank"><span class="discussed-place">{{ add $i 1 }}</span><a href="{{ .FirstSection.RelPermalink }}">{{ .FirstSection.Title }}</a><span>{{ $item.count }} comments</span></p>
-    {{ partial "entry.html" . }}
-  </section>
+  {{ $opening := .Params.message | default .Params.name | default .Params.description | default (cond (eq .Params.type "photo") "Shared a photo." "Shared a link.") }}
+  <li class="discussed-item" data-author="{{ .Params.from_name }}">
+    <span class="discussed-place" aria-hidden="true">{{ add $i 1 }}</span>
+    <div class="discussed-body">
+      <p class="discussed-meta"><span class="discussed-author">{{ .Params.from_name | default "Post" }}</span>{{ with .Params.created_time }}<time datetime="{{ . }}">{{ (time.AsTime .).Format "Jan 2, 2006" }}</time>{{ end }}<a href="{{ .FirstSection.RelPermalink }}">{{ .FirstSection.Title }}</a></p>
+      <p class="discussed-opening"><a href="{{ .RelPermalink }}">{{ $opening | plainify | htmlUnescape | truncate 240 }}</a></p>
+      <a class="discussed-comments" href="{{ .RelPermalink }}#comments">Read {{ lang.FormatNumber 0 $item.count }} comments <span aria-hidden="true">→</span></a>
+    </div>
+  </li>
   {{ end }}
 {{ end }}
+</ol>
 </div>
 {{ partial "volume-navigation.html" . }}
 {{ end }}
