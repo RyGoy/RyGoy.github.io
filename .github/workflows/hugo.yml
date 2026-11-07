@@ -79,6 +79,3 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
-        with:
-          # The site is large (~126k files); GitHub Pages' file sync can pass the 10-minute default.
-          timeout: 1800000
