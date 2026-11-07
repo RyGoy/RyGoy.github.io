@@ -570,6 +570,7 @@ html:has(.terms-gate[open]) { overflow: hidden; }
 .dictionary-definition blockquote { margin: 0 0 .45rem; font-size: 1.07rem; line-height: 1.75; color: #ddd2bb; overflow-wrap: anywhere; }
 .dictionary-source { display: flex; flex-wrap: wrap; align-items: center; gap: .3rem .75rem; margin: 0; font-size: .85rem; color: var(--muted); }
 .dictionary-source a { color: #d7bc87; }
+.dictionary-by { color: #e4d3ad; font-style: italic; }
 .dictionary-kind { padding: .1rem .45rem; font-family: var(--display); font-size: .66rem; letter-spacing: .14em; text-transform: uppercase; border: 1px solid #80694399; color: #c9b07a; }
 .dictionary-kind-article { color: #1d170c; background: #c9ab70; border-color: #c9ab70; }
 .dictionary-kind-comment { color: #b9ad96; border-color: #5d5540; }

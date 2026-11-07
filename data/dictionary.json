@@ -15,6 +15,22 @@
   ]
  },
  {
+  "term": "Accounting",
+  "id": "accounting",
+  "letter": "A",
+  "tfd": "https://legal-dictionary.thefreedictionary.com/Accounting",
+  "definitions": [
+   {
+    "text": "ACCOUNTING is the MECHANISM by which the story of the transferance of SURETY, is told.",
+    "kind": "article",
+    "where": "An Article About Accounting",
+    "date": "Oct 29, 2017",
+    "url": "/articles/chris-schulte/an-article-about-accounting/",
+    "by": "Chris Schulte"
+   }
+  ]
+ },
+ {
   "term": "Act",
   "id": "act",
   "letter": "A",
@@ -671,6 +687,22 @@
     "where": "Scott Duncan, Volume 1",
     "date": "Apr 19, 2013",
     "url": "/vol_i/462493170453287_492074400828497/#entry-504530446249559"
+   }
+  ]
+ },
+ {
+  "term": "God",
+  "id": "god",
+  "letter": "G",
+  "tfd": null,
+  "definitions": [
+   {
+    "text": "God is the ONE who does the ACCOUNTING",
+    "kind": "article",
+    "where": "The Hero’s Journey",
+    "date": "Jun 1, 2022",
+    "url": "/articles/various-authors/hero-journey/",
+    "by": "Ryan Wallace"
    }
   ]
  },

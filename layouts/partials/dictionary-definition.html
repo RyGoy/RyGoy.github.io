@@ -4,6 +4,7 @@
   <blockquote>{{ $d.text }}</blockquote>
   <p class="dictionary-source" data-pagefind-ignore>
     <span class="dictionary-kind dictionary-kind-{{ $d.kind }}">{{ index .kinds $d.kind | default $d.kind }}</span>
+    {{ with $d.by }}<span class="dictionary-by">{{ . }}</span>{{ end }}
     <a href="{{ $d.url | relURL }}">{{ $d.where }}</a>
     <span class="dictionary-date">{{ $d.date }}</span>
   </p>
