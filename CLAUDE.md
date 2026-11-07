@@ -15,7 +15,7 @@ Hugo static site ("The Tender For Law"): an archive of old Facebook group posts 
 
 ## Deployment
 
-`.github/workflows/hugo.yml` builds on push to `main` (or manual dispatch) and deploys `./public` via `actions/upload-pages-artifact` / `actions/deploy-pages`. CI rebuilds `public/` from scratch. The deploy step's `timeout` is raised to 30 minutes: with ~126k files, GitHub Pages' file sync sometimes passes the 10-minute default. If a deploy still fails with "Timeout reached", re-run its failed job.
+`.github/workflows/hugo.yml` builds on push to `main` (or manual dispatch) and deploys `./public` via `actions/upload-pages-artifact` / `actions/deploy-pages`. CI rebuilds `public/` from scratch. With ~126k files, GitHub Pages' file sync (usually ~2 minutes) sometimes passes the deploy step's 10-minute limit and fails with "Timeout reached"; `actions/deploy-pages` caps its `timeout` input at 10 minutes, so raising it has no effect. Don't re-run a timed-out deploy: the Pages deployment is named after the commit, and retries of a cancelled one never start (the log shows an empty "Current status"). Deploy a new commit instead (merge or push the next change).
 
 There is no `.gitignore`: `public/`, `node_modules/`, and `resources/` are committed. The committed `public/` is a stale build artifact, not the source of truth. Don't edit it by hand, and keep regenerated `public/` churn out of unrelated commits.
 
