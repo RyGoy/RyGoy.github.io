@@ -84,4 +84,6 @@ Older students' notes connecting posts and articles. Each note is a Markdown fil
 - Faint emblems (`static/images/emblems/`) and gothic stonework (`static/images/gothic/`: ashlar texture on the page and sidebar, blind-arcade frieze under the masthead and atop the footer) are CSS-only decoration. Keep them faint.
 - Tailwind (`package.json`, `tailwind.config.js`, `static/css/input.css` → `output.css`) and `static/js/buttons.js` are leftovers from the previous design and are not referenced by current layouts. The same goes for the `alert.html`, `banner.html`, and `header.html` partials.
 - Font: Cormorant Garamond (`static/fonts/`, OFL license alongside).
+- Favicon: a brass cross (`static/images/favicon-crucifix.svg`, with `favicon-32.png` and `apple-touch-icon.png` for browsers and phones that want a PNG), linked in `partials/head.html`.
+- Link previews: `partials/head.html` writes Open Graph and Twitter tags on every page: its title, its description or else the Grand Fluff Auto pop-up's text, and the pop-up's picture. Both come from `[params.preview]` in `config.toml`, which the pop-up in `partials/footer.html` also uses for its picture.
 - The footer licence is CC BY-NC-ND 3.0 Unported, with Creative Commons' official 88×31 button (`static/images/cc/by-nc-nd.svg`, from their press kit with a `viewBox` added so it scales) linking to the licence deed.

@@ -6,3 +6,12 @@ title = "TheTenderForLaw.com Test Deployment"
 # Telegram comments at the bottom of the home page (layouts/index.html). Get the ID by connecting
 # https://rygoy.github.io at https://comments.app (log in with Telegram). Empty hides the section.
 comments_app_website = ""
+
+# Link previews (Open Graph / Twitter tags in partials/head.html) for pages with nothing of their own: the Grand
+# Fluff Auto pop-up's picture and text. partials/footer.html shows the same picture in the pop-up.
+[params.preview]
+image = "images/grand-fluff-auto.jpg"
+image_width = 768
+image_height = 1360
+image_alt = "Grand Fluff Auto cover art: a girl with long dark hair in a school uniform stands between two men under the Grand Fluff Auto Five logo."
+description = "Grand Fluff Auto: you will need the FiveM client installed along with a licensed copy of GTAV from the Steam store. If you have all of these, the link loads the game and drops you into the server."
