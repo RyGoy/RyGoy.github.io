@@ -1,0 +1,33 @@
+{{- /* Archived links for a post or comment (partials/lpPosts.html): confirmed copies of its outside links in the Wayback
+       Machine and archive.today, from data/archives.json. scripts/archive_links.py writes that file after asking both
+       archives, so an address with no confirmed copy is not in it and shows nothing. The record is unchanged: these
+       are labelled as added by this site. Context: dict "page" (the post or comment) and "field": "link" (under a
+       post's link card) or "message" (a list under the message). */ -}}
+{{- $page := .page -}}
+{{- $field := .field -}}
+{{- $items := slice -}}
+{{- with site.Data.archives }}{{ with index .entries $page.Params.id }}{{ range . }}{{ if eq .field $field }}{{ $items = $items | append . }}{{ end }}{{ end }}{{ end }}{{ end -}}
+{{- $original := cond (isset $page.Params "post_id") "comment" "post" -}}
+{{- if eq $field "link" -}}
+  {{- range first 1 $items }}
+    <p class="source-archive" data-pagefind-ignore>{{ partial "inline/archive-copies.html" . }} <span class="archive-note">Added by this site, not part of the original post.</span></p>
+  {{- end -}}
+{{- else -}}
+  {{- with $items }}
+<div class="archive-links" data-pagefind-ignore="all">
+  <p class="archive-note">Archived links, added by this site. Not part of the original {{ $original }}.</p>
+  <ul>
+    {{- range . }}
+    <li><span class="archive-address">{{ .address }}</span> {{ partial "inline/archive-copies.html" . }}</li>
+    {{- end }}
+  </ul>
+</div>
+  {{- end -}}
+{{- end -}}
+
+{{- define "partials/inline/archive-copies.html" -}}
+  {{- $copies := slice -}}
+  {{- with .wayback }}{{ $copies = $copies | append (dict "archive" "Wayback Machine" "url" .url "date" .date) }}{{ end -}}
+  {{- with .archive_today }}{{ $copies = $copies | append (dict "archive" "archive.today" "url" .url "date" .date) }}{{ end -}}
+  {{- range $i, $copy := $copies }}{{ if $i }} · {{ end }}<a class="archive-link" href="{{ $copy.url }}">Archived link ({{ $copy.archive }}, saved {{ (time.AsTime $copy.date).Format "2 Jan 2006" }})</a>{{ end -}}
+{{- end -}}
