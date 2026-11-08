@@ -586,6 +586,13 @@ html:has(.terms-gate[open]) { overflow: hidden; }
 .dictionary-kind { padding: .1rem .45rem; font-family: var(--display); font-size: .66rem; letter-spacing: .14em; text-transform: uppercase; border: 1px solid #80694399; color: #c9b07a; }
 .dictionary-kind-article { color: #1d170c; background: #c9ab70; border-color: #c9ab70; }
 .dictionary-kind-comment { color: #b9ad96; border-color: #5d5540; }
+/* Definitions from Cornell LII's Wex, for terms Scott Duncan did not define, are light blue. */
+.dictionary-definition-wex blockquote, .term-card-def-wex p { color: #9ccbee; }
+.dictionary-kind-wex { color: #9ccbee; border-color: #9ccbee66; }
+.dictionary-license { color: var(--muted); }
+.dictionary-legend { max-width: 52rem; margin: 1rem 0 0; font-size: .9rem; line-height: 1.6; color: var(--muted); }
+.dictionary-legend a { color: #d7bc87; }
+.dictionary-legend-swatch { display: inline-block; width: .75rem; height: .75rem; margin-right: .5rem; border-radius: 50%; background: #9ccbee; vertical-align: -.05rem; }
 
 @media (max-width: 48rem) {
   .dictionary-entry { padding: 1.1rem 1.1rem 1.2rem; }

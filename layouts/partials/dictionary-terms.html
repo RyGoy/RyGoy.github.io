@@ -11,7 +11,7 @@
     {{- range first 3 .definitions -}}
       {{- $src := slice -}}{{- with .by }}{{ $src = $src | append . }}{{ end -}}
       {{- $src = $src | append .where | append .date -}}
-      {{- $defs = $defs | append (dict "text" (truncate 220 .text | htmlUnescape) "src" (delimit $src " · ")) -}}
+      {{- $defs = $defs | append (dict "text" (truncate 220 .text | htmlUnescape) "src" (delimit $src " · ") "kind" .kind) -}}
     {{- end -}}
     {{- $terms = $terms | append (dict "id" .id "term" .term "words" $words "n" (len .definitions) "defs" $defs) -}}
   {{- end -}}

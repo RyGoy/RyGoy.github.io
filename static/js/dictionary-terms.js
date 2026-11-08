@@ -63,7 +63,7 @@
       const fill = (count) => {
         const list = el(t.n > 1 ? 'ol' : 'div', 'term-card-defs');
         for (const d of t.defs.slice(0, count)) {
-          const item = el(t.n > 1 ? 'li' : 'div', '');
+          const item = el(t.n > 1 ? 'li' : 'div', `term-card-def-${d.kind}`);
           item.append(el('p', '', d.text), el('span', 'term-card-source', d.src));
           list.append(item);
         }
