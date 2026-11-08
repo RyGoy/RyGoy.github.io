@@ -637,6 +637,7 @@ html:has(.terms-gate[open]) { overflow: hidden; }
 .term-card-defs p { margin: 0; color: #e4dac5; }
 .term-card-source { display: block; margin-top: .25rem; font-size: .8rem; line-height: 1.4; color: var(--muted); }
 .term-card-more { margin: .75rem 0 0; padding-top: .55rem; border-top: 1px solid var(--line); font-size: .85rem; color: #d7bc87; }
+.term-card-empty { margin: 0; padding-top: 0; border-top: 0; color: var(--muted); }
 
 /* Most Discussed (layouts/most-discussed/list.html) */
 .discussed-section h2 { font-variant-numeric: lining-nums; }

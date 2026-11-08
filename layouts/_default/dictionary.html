@@ -6,7 +6,8 @@
      of Cornell LII's Wex entry, in light blue, credited and with its licence (license {name, url}).
      An optional match list gives the words the concordance (/concordance/) and inline definitions look for when the
      term itself is not one; an empty list leaves the term out of both. A term can have no definitions yet: it is
-     listed (and in the concordance) as "No definition yet", and left out of inline definitions. */}}
+     listed (and in the concordance) as "No definition yet", and linked inline with a card that says so. An optional forms
+     list gives other written forms of the term (ACCEPTED for Acceptance) that inline definitions link too. */}}
 {{ $entries := site.Data.dictionary }}
 {{ $defs := 0 }}{{ $linked := 0 }}{{ $ranked := slice }}{{ $letters := slice }}
 {{ range $entries }}

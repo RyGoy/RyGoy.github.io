@@ -12,6 +12,12 @@
     "date": "Jun 25, 2013",
     "url": "/vol_i/462493170453287_480688621967075/#entry-529416627094274"
    }
+  ],
+  "forms": [
+   "ACCEPT",
+   "ACCEPTED",
+   "ACCEPTING",
+   "ACCEPTS"
   ]
  },
  {
@@ -46,6 +52,9 @@
      "url": "https://creativecommons.org/licenses/by-nc-sa/2.5/"
     }
    }
+  ],
+  "forms": [
+   "ACCOUNTED"
   ]
  },
  {
@@ -53,7 +62,10 @@
   "id": "accountable",
   "letter": "A",
   "tfd": null,
-  "definitions": []
+  "definitions": [],
+  "forms": [
+   "ACCOUNTABILITY"
+  ]
  },
  {
   "term": "Accounting",
@@ -150,6 +162,10 @@
     "date": "Jun 11, 2014",
     "url": "/vol_vi/462493170453287_679159442119991/#entry-679635165405752"
    }
+  ],
+  "forms": [
+   "ADMIRALTY LAW",
+   "MARITIME LAW"
   ]
  },
  {
@@ -314,7 +330,10 @@
   "id": "appointment",
   "letter": "A",
   "tfd": null,
-  "definitions": []
+  "definitions": [],
+  "forms": [
+   "APPOINTED"
+  ]
  },
  {
   "term": "Aquilae Trust",
@@ -329,6 +348,9 @@
     "date": "Mar 11, 2013",
     "url": "/vol_i/462493170453287_490962517606352/"
    }
+  ],
+  "forms": [
+   "AQUILAE"
   ]
  },
  {
@@ -363,6 +385,11 @@
     "date": "Jul 10, 2013",
     "url": "/vol_iii/462493170453287_534408763261727/#entry-534951213207482"
    }
+  ],
+  "forms": [
+   "ATTORNED",
+   "ATTORNING",
+   "ATTORNMENT"
   ]
  },
  {
@@ -429,7 +456,11 @@
   "id": "authorized",
   "letter": "A",
   "tfd": null,
-  "definitions": []
+  "definitions": [],
+  "forms": [
+   "AUTHORISED",
+   "AUTHORIZATION"
+  ]
  },
  {
   "term": "Axiom",
@@ -465,6 +496,9 @@
     "date": "Oct 9, 2015",
     "url": "/vol_xi/462493170453287_886597744709492/#entry-890020277700572"
    }
+  ],
+  "forms": [
+   "BANKING"
   ]
  },
  {
@@ -659,7 +693,11 @@
   "id": "binding",
   "letter": "B",
   "tfd": null,
-  "definitions": []
+  "definitions": [],
+  "forms": [
+   "BIND",
+   "BOUND"
+  ]
  },
  {
   "term": "Birth Certificate",
@@ -723,7 +761,10 @@
   "id": "birth-right",
   "letter": "B",
   "tfd": null,
-  "definitions": []
+  "definitions": [],
+  "forms": [
+   "BIRTHRIGHT"
+  ]
  },
  {
   "term": "Bitcoin",
@@ -753,6 +794,9 @@
     "date": "Sep 30, 2013",
     "url": "/vol_ii/462493170453287_524698220899448/#entry-566073803428556"
    }
+  ],
+  "forms": [
+   "BONDED"
   ]
  },
  {
@@ -768,6 +812,9 @@
     "date": "May 5, 2014",
     "url": "/articles/scott-duncan/joinder-for-idiots/"
    }
+  ],
+  "forms": [
+   "BRANDED"
   ]
  },
  {
@@ -787,6 +834,10 @@
      "url": "https://creativecommons.org/licenses/by-nc-sa/2.5/"
     }
    }
+  ],
+  "forms": [
+   "BREACHED",
+   "BREACHING"
   ]
  },
  {
@@ -847,6 +898,9 @@
     "date": "Aug 17, 2013",
     "url": "/vol_iii/462493170453287_546073232095280/#entry-549380571764546"
    }
+  ],
+  "forms": [
+   "BILL OF RIGHTS"
   ]
  },
  {
@@ -936,7 +990,10 @@
   "id": "cede",
   "letter": "C",
   "tfd": null,
-  "definitions": []
+  "definitions": [],
+  "forms": [
+   "CEDED"
+  ]
  },
  {
   "term": "Certificate",
@@ -958,6 +1015,10 @@
     "date": "May 5, 2014",
     "url": "/vol_vi/462493170453287_662464663789469/#entry-662486657120603"
    }
+  ],
+  "forms": [
+   "CERTIFY",
+   "CERTIFICATION"
   ]
  },
  {
@@ -973,6 +1034,9 @@
     "date": "May 29, 2013",
     "url": "/vol_ii/462493170453287_518597458176191/"
    }
+  ],
+  "forms": [
+   "CHARGED"
   ]
  },
  {
@@ -1032,6 +1096,9 @@
     "date": "Jun 16, 2015",
     "url": "/vol_x/462493170453287_842656495770284/#entry-842853902417210"
    }
+  ],
+  "forms": [
+   "CHILDREN"
   ]
  },
  {
@@ -1102,6 +1169,10 @@
     "date": "May 26, 2013",
     "url": "/vol_ii/462493170453287_516706368365300/#entry-517335624969041"
    }
+  ],
+  "forms": [
+   "CLAIMING",
+   "CLAIMED"
   ]
  },
  {
@@ -1195,6 +1266,9 @@
      "url": "https://creativecommons.org/licenses/by-nc-sa/2.5/"
     }
    }
+  ],
+  "forms": [
+   "CONSENTED"
   ]
  },
  {
@@ -1229,6 +1303,9 @@
      "url": "https://creativecommons.org/licenses/by-nc-sa/2.5/"
     }
    }
+  ],
+  "forms": [
+   "CONSTITUTIONAL"
   ]
  },
  {
@@ -1270,6 +1347,9 @@
      "url": "https://creativecommons.org/licenses/by-nc-sa/2.5/"
     }
    }
+  ],
+  "forms": [
+   "CONVICTED"
   ]
  },
  {
@@ -1285,6 +1365,9 @@
     "date": "Feb 26, 2013",
     "url": "/vol_i/462493170453287_484967208205883/#entry-485269471508990"
    }
+  ],
+  "forms": [
+   "COPYRIGHTED"
   ]
  },
  {
@@ -1321,6 +1404,9 @@
     "date": "Mar 28, 2013",
     "url": "/vol_i/462493170453287_497054310330506/#entry-497104073658863"
    }
+  ],
+  "forms": [
+   "CORPORATE"
   ]
  },
  {
@@ -1486,6 +1572,9 @@
      "url": "https://creativecommons.org/licenses/by-nc-sa/2.5/"
     }
    }
+  ],
+  "forms": [
+   "CRIMINALLY"
   ]
  },
  {
@@ -1494,6 +1583,28 @@
   "letter": "C",
   "tfd": null,
   "definitions": []
+ },
+ {
+  "term": "Crown",
+  "id": "crown",
+  "letter": "C",
+  "tfd": null,
+  "definitions": [
+   {
+    "text": "\"The CROWN\" is merely a corporate facilitator.",
+    "kind": "comment",
+    "where": "Scott Duncan, Volume 1",
+    "date": "Apr 8, 2014",
+    "url": "/vol_i/462493170453287_490962517606352/#entry-650240175011918"
+   },
+   {
+    "text": "The CROWN IS NOT AND CAN NOT BE A PARTY.",
+    "kind": "comment",
+    "where": "Scott Duncan, Volume 3",
+    "date": "Jul 9, 2013",
+    "url": "/vol_iii/462493170453287_533869176649019/#entry-534791416556795"
+   }
+  ]
  },
  {
   "term": "Crown Organization",
@@ -1568,6 +1679,12 @@
      "url": "https://creativecommons.org/licenses/by-nc-sa/2.5/"
     }
    }
+  ],
+  "forms": [
+   "DECLARE",
+   "DECLARED",
+   "DECLARES",
+   "DECLARING"
   ]
  },
  {
@@ -1645,7 +1762,10 @@
   "id": "delusion",
   "letter": "D",
   "tfd": null,
-  "definitions": []
+  "definitions": [],
+  "forms": [
+   "DELUSIONAL"
+  ]
  },
  {
   "term": "Demand",
@@ -1653,6 +1773,21 @@
   "letter": "D",
   "tfd": null,
   "definitions": []
+ },
+ {
+  "term": "Deposit",
+  "id": "deposit",
+  "letter": "D",
+  "tfd": null,
+  "definitions": [
+   {
+    "text": "You seem to think DEPOSITS are \"in\" an account, and forget that it is JUST accounting.",
+    "kind": "comment",
+    "where": "Scott Duncan, Volume 3",
+    "date": "Jul 5, 2013",
+    "url": "/vol_iii/462493170453287_532494196786517/#entry-533315953371008"
+   }
+  ]
  },
  {
   "term": "Discharge",
@@ -1689,7 +1824,10 @@
   "id": "dishonour",
   "letter": "D",
   "tfd": null,
-  "definitions": []
+  "definitions": [],
+  "forms": [
+   "DISHONOR"
+  ]
  },
  {
   "term": "Divorce",
@@ -1730,6 +1868,9 @@
     "date": "Mar 11, 2013",
     "url": "/vol_i/462493170453287_490962517606352/"
    }
+  ],
+  "forms": [
+   "DOCUMENTED"
   ]
  },
  {
@@ -1869,6 +2010,9 @@
      "url": "https://creativecommons.org/licenses/by-nc-sa/2.5/"
     }
    }
+  ],
+  "forms": [
+   "EMPLOYED"
   ]
  },
  {
@@ -2115,7 +2259,10 @@
   "id": "fiction",
   "letter": "F",
   "tfd": null,
-  "definitions": []
+  "definitions": [],
+  "forms": [
+   "LEGAL FICTION"
+  ]
  },
  {
   "term": "First Name",
@@ -2197,6 +2344,9 @@
      "url": "https://creativecommons.org/licenses/by-nc-sa/2.5/"
     }
    }
+  ],
+  "forms": [
+   "FRAUDULENT"
   ]
  },
  {
@@ -2219,6 +2369,9 @@
     "date": "May 22, 2013",
     "url": "/vol_ii/462493170453287_515596301809640/#entry-515605678475369"
    }
+  ],
+  "forms": [
+   "FREEDUMB"
   ]
  },
  {
@@ -2255,6 +2408,10 @@
     "date": "Jul 16, 2014",
     "url": "/vol_vi/462493170453287_674188432617092/#entry-694901613879107"
    }
+  ],
+  "forms": [
+   "FREEMAN",
+   "FREEMEN"
   ]
  },
  {
@@ -2263,6 +2420,16 @@
   "letter": "F",
   "tfd": null,
   "definitions": []
+ },
+ {
+  "term": "Generally Accepted Principles",
+  "id": "generally-accepted-principles",
+  "letter": "G",
+  "tfd": null,
+  "definitions": [],
+  "forms": [
+   "GENERALLY ACCEPTED ACCOUNTING PRINCIPLES"
+  ]
  },
  {
   "term": "Gift",
@@ -2396,6 +2563,9 @@
      "url": "https://creativecommons.org/licenses/by-nc-sa/2.5/"
     }
    }
+  ],
+  "forms": [
+   "GRANTED"
   ]
  },
  {
@@ -2444,6 +2614,25 @@
     "where": "Scott Duncan, Volume 2",
     "date": "May 30, 2013",
     "url": "/vol_ii/462493170453287_518715888164348/"
+   }
+  ]
+ },
+ {
+  "term": "Harm",
+  "id": "harm",
+  "letter": "H",
+  "tfd": null,
+  "definitions": [
+   {
+    "text": "Harm is a legal concept that describes a loss, damage, or injury to another. Harm includes any negative effect or hindrance of legal rights, property, physical health, mental health, and more. Harm can be tangible or intangible. Examples of physical harm include injury to a person’s body or damage to property, like land or a car. Examples of intangible harm can be seen as material damage to a company or business such as negatively impacting economic well-being, lost sales, damaged reputation, overall welfare, etc. Courts can order a harm be remedied through damages.",
+    "kind": "wex",
+    "where": "Wex, Legal Information Institute, Cornell Law School",
+    "date": "Reviewed Mar 2026",
+    "url": "https://www.law.cornell.edu/wex/harm",
+    "license": {
+     "name": "CC BY-NC-SA 2.5",
+     "url": "https://creativecommons.org/licenses/by-nc-sa/2.5/"
+    }
    }
   ]
  },
@@ -2570,7 +2759,11 @@
   "id": "identification",
   "letter": "I",
   "tfd": null,
-  "definitions": []
+  "definitions": [],
+  "forms": [
+   "IDENTIFY",
+   "IDENTIFIED"
+  ]
  },
  {
   "term": "Ignorance",
@@ -2611,6 +2804,9 @@
      "url": "https://creativecommons.org/licenses/by-nc-sa/2.5/"
     }
    }
+  ],
+  "forms": [
+   "ILLEGALLY"
   ]
  },
  {
@@ -2682,6 +2878,21 @@
     "where": "THE TENDER FOR LAW – CHILDREN’S AID SOCIETY [C.A.S] FOR IDIOTS",
     "date": "May 5, 2014",
     "url": "/articles/scott-duncan/childrens-aid-society-for-idiots/"
+   }
+  ]
+ },
+ {
+  "term": "Income",
+  "id": "income",
+  "letter": "I",
+  "tfd": null,
+  "definitions": [
+   {
+    "text": "INCOME is pay from \"Employment\" or gains through Money of Account.",
+    "kind": "comment",
+    "where": "Scott Duncan, Volume 2",
+    "date": "Apr 4, 2013",
+    "url": "/vol_ii/462493170453287_499503200085617/#entry-499535006749103"
    }
   ]
  },
@@ -3072,6 +3283,9 @@
     "date": "Nov 10, 2014",
     "url": "/vol_viii/462493170453287_744779435557991/#entry-745438732158728"
    }
+  ],
+  "forms": [
+   "LAWFULLY"
   ]
  },
  {
@@ -3242,6 +3456,10 @@
     "date": "Jun 11, 2016",
     "url": "/vol_xiv/462493170453287_1012311205471478/#entry-1012358015466797"
    }
+  ],
+  "forms": [
+   "LEGALLY",
+   "LEGALITY"
   ]
  },
  {
@@ -3591,6 +3809,10 @@
     "date": "Jan 1, 2016",
     "url": "/articles/scott-duncan/lies-and-lying-liars-who-lie-about-the-liaes-they-tell/"
    }
+  ],
+  "forms": [
+   "LICENSE",
+   "LICENSED"
   ]
  },
  {
@@ -3598,7 +3820,10 @@
   "id": "lie",
   "letter": "L",
   "tfd": null,
-  "definitions": []
+  "definitions": [],
+  "forms": [
+   "LYING"
+  ]
  },
  {
   "term": "Lien",
@@ -3620,6 +3845,9 @@
     "date": "May 22, 2013",
     "url": "/vol_ii/462493170453287_515596301809640/#entry-515627471806523"
    }
+  ],
+  "forms": [
+   "LIENING"
   ]
  },
  {
@@ -4152,6 +4380,13 @@
   ]
  },
  {
+  "term": "Nature and Cause",
+  "id": "nature-and-cause",
+  "letter": "N",
+  "tfd": null,
+  "definitions": []
+ },
+ {
   "term": "Navy",
   "id": "navy",
   "letter": "N",
@@ -4163,6 +4398,25 @@
     "where": "Scott Duncan, Volume 2",
     "date": "May 19, 2013",
     "url": "/vol_ii/462493170453287_514470681922202/#entry-514608261908444"
+   }
+  ]
+ },
+ {
+  "term": "Negotiable Instrument",
+  "id": "negotiable-instrument",
+  "letter": "N",
+  "tfd": null,
+  "definitions": [
+   {
+    "text": "A negotiable instrument, sometimes called an instrument, is any financial document that directs payment to its holder or a named party. More specifically, a negotiable instrument must be written, signed by the maker, include an unconditional promise or order to pay a sum of money to the holder or specific party, and be payable any time or on a specific date.",
+    "kind": "wex",
+    "where": "Wex, Legal Information Institute, Cornell Law School",
+    "date": "Reviewed Jul 2023",
+    "url": "https://www.law.cornell.edu/wex/negotiable_instrument",
+    "license": {
+     "name": "CC BY-NC-SA 2.5",
+     "url": "https://creativecommons.org/licenses/by-nc-sa/2.5/"
+    }
    }
   ]
  },
@@ -4179,6 +4433,9 @@
     "date": "May 5, 2014",
     "url": "/articles/scott-duncan/childrens-aid-society-for-idiots/"
    }
+  ],
+  "forms": [
+   "NEGOTIATION"
   ]
  },
  {
@@ -4208,6 +4465,9 @@
     "date": "Jul 11, 2013",
     "url": "/vol_iii/462493170453287_535384496497487/"
    }
+  ],
+  "forms": [
+   "NOBLE"
   ]
  },
  {
@@ -4267,6 +4527,9 @@
     "date": "Apr 25, 2013",
     "url": "/vol_ii/462493170453287_506444576058146/#entry-506450976057506"
    }
+  ],
+  "forms": [
+   "NOTIFIED"
   ]
  },
  {
@@ -4310,7 +4573,10 @@
   "id": "null",
   "letter": "N",
   "tfd": null,
-  "definitions": []
+  "definitions": [],
+  "forms": [
+   "NULL AND VOID"
+  ]
  },
  {
   "term": "Oath",
@@ -4348,6 +4614,9 @@
      "url": "https://creativecommons.org/licenses/by-nc-sa/2.5/"
     }
    }
+  ],
+  "forms": [
+   "OBLIGATED"
   ]
  },
  {
@@ -4370,7 +4639,10 @@
   "id": "offence",
   "letter": "O",
   "tfd": null,
-  "definitions": []
+  "definitions": [],
+  "forms": [
+   "OFFENSE"
+  ]
  },
  {
   "term": "Offer",
@@ -4479,6 +4751,9 @@
     "date": "Feb 24, 2013",
     "url": "/vol_i/462493170453287_484380801597857/"
    }
+  ],
+  "forms": [
+   "OPPF"
   ]
  },
  {
@@ -4516,6 +4791,9 @@
     "date": "May 4, 2014",
     "url": "/vol_vi/462493170453287_661595987209670/#entry-662302280472374"
    }
+  ],
+  "forms": [
+   "ORDERED"
   ]
  },
  {
@@ -4651,6 +4929,10 @@
     "date": "Jul 4, 2013",
     "url": "/vol_iii/462493170453287_532937380075532/#entry-532943700074900"
    }
+  ],
+  "forms": [
+   "PAYMENT",
+   "PAID"
   ]
  },
  {
@@ -4749,6 +5031,21 @@
   "definitions": []
  },
  {
+  "term": "Police",
+  "id": "police",
+  "letter": "P",
+  "tfd": null,
+  "definitions": [
+   {
+    "text": "POLICE are just a goon squad.",
+    "kind": "comment",
+    "where": "Scott Duncan, Volume 4",
+    "date": "Mar 16, 2016",
+    "url": "/vol_iv/462493170453287_573236309378972/#entry-960416453994287"
+   }
+  ]
+ },
+ {
   "term": "Police Officer",
   "id": "police-officer",
   "letter": "P",
@@ -4795,6 +5092,9 @@
     "date": "Jun 16, 2016",
     "url": "/vol_vii/462493170453287_696492750386660/#entry-1015221805180418"
    }
+  ],
+  "forms": [
+   "POSTING"
   ]
  },
  {
@@ -4878,6 +5178,10 @@
      "url": "https://creativecommons.org/licenses/by-nc-sa/2.5/"
     }
    }
+  ],
+  "forms": [
+   "PRESUME",
+   "PRESUMED"
   ]
  },
  {
@@ -5020,6 +5324,9 @@
     "date": "Mar 11, 2013",
     "url": "/vol_i/462493170453287_490962517606352/"
    }
+  ],
+  "forms": [
+   "PROCEEDING"
   ]
  },
  {
@@ -5123,7 +5430,10 @@
   "id": "prosecution",
   "letter": "P",
   "tfd": null,
-  "definitions": []
+  "definitions": [],
+  "forms": [
+   "PROSECUTED"
+  ]
  },
  {
   "term": "Province",
@@ -5456,6 +5766,9 @@
      "url": "https://creativecommons.org/licenses/by-nc-sa/2.5/"
     }
    }
+  ],
+  "forms": [
+   "REDEMPTION"
   ]
  },
  {
@@ -5463,7 +5776,10 @@
   "id": "refusal",
   "letter": "R",
   "tfd": null,
-  "definitions": []
+  "definitions": [],
+  "forms": [
+   "REFUSE"
+  ]
  },
  {
   "term": "Registered",
@@ -5485,6 +5801,9 @@
     "date": "Mar 8, 2013",
     "url": "/vol_i/462493170453287_488326607869943/#entry-489908367711767"
    }
+  ],
+  "forms": [
+   "REGISTRATION"
   ]
  },
  {
@@ -5628,7 +5947,11 @@
   "id": "resignation",
   "letter": "R",
   "tfd": null,
-  "definitions": []
+  "definitions": [],
+  "forms": [
+   "RESIGN",
+   "RESIGNED"
+  ]
  },
  {
   "term": "Revenue",
@@ -5807,7 +6130,10 @@
   "id": "securitization",
   "letter": "S",
   "tfd": null,
-  "definitions": []
+  "definitions": [],
+  "forms": [
+   "SECURITIZED"
+  ]
  },
  {
   "term": "Security",
@@ -5969,7 +6295,10 @@
   "id": "slave",
   "letter": "S",
   "tfd": null,
-  "definitions": []
+  "definitions": [],
+  "forms": [
+   "SLAVERY"
+  ]
  },
  {
   "term": "Social Assistance",
@@ -5991,7 +6320,10 @@
   "id": "social-insurance-number",
   "letter": "S",
   "tfd": null,
-  "definitions": []
+  "definitions": [],
+  "forms": [
+   "SIN NUMBER"
+  ]
  },
  {
   "term": "Society",
@@ -6351,7 +6683,10 @@
   "id": "sworn",
   "letter": "S",
   "tfd": null,
-  "definitions": []
+  "definitions": [],
+  "forms": [
+   "SWEAR"
+  ]
  },
  {
   "term": "System",
@@ -6458,6 +6793,10 @@
     "date": "Feb 9, 2014",
     "url": "/vol_v/462493170453287_622715734431029/#entry-622716431097626"
    }
+  ],
+  "forms": [
+   "TENDERING",
+   "TENDERED"
   ]
  },
  {
@@ -6488,6 +6827,10 @@
     "date": "Oct 13, 2015",
     "url": "/vol_xii/462493170453287_891440257558574/#entry-891448870891046"
    }
+  ],
+  "forms": [
+   "TESTIFY",
+   "TESTIFYING"
   ]
  },
  {
@@ -6598,7 +6941,10 @@
   "id": "trading",
   "letter": "T",
   "tfd": null,
-  "definitions": []
+  "definitions": [],
+  "forms": [
+   "TRADE"
+  ]
  },
  {
   "term": "Treason",
@@ -6793,6 +7139,9 @@
      "url": "https://creativecommons.org/licenses/by-nc-sa/2.5/"
     }
    }
+  ],
+  "forms": [
+   "UNDERWRITER"
   ]
  },
  {
@@ -6898,6 +7247,10 @@
      "url": "https://creativecommons.org/licenses/by-nc-sa/2.5/"
     }
    }
+  ],
+  "forms": [
+   "VOIDED",
+   "VOIDING"
   ]
  },
  {
@@ -6917,6 +7270,9 @@
      "url": "https://creativecommons.org/licenses/by-nc-sa/2.5/"
     }
    }
+  ],
+  "forms": [
+   "WAIVER"
   ]
  },
  {
@@ -6951,6 +7307,9 @@
      "url": "https://creativecommons.org/licenses/by-nc-sa/2.5/"
     }
    }
+  ],
+  "forms": [
+   "WARD OF THE COURT"
   ]
  },
  {
