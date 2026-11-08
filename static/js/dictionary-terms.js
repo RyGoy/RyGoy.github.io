@@ -1,8 +1,8 @@
 // Inline definitions: link TTFL Dictionary terms in posts, comments and articles to their dictionary entry, with
 // its first definitions (up to three, with their sources) in a card on hover or focus. The terms come from /dictionary-terms.json
 // (layouts/partials/dictionary-terms.html); this script's data-terms attribute holds its address.
-// Only terms written in capitals are linked, the way the archive marks a legal term, and only the first use of
-// each term in each post, comment or article. Without JavaScript the text is left as it is.
+// Only terms written in capitals are linked, the way the archive marks a legal term (a term's plural counts as the
+// term), and only the first use of each term in each post, comment or article. Without JavaScript the text is left as it is.
 (() => {
   const script = document.currentScript;
   const blocks = [...document.querySelectorAll('.post-message, .longform > .prose')].filter((el) => !el.closest('.source-card'));
@@ -12,6 +12,9 @@
   fetch(script.dataset.terms).then((r) => r.json()).then((terms) => {
     const byWord = new Map();
     for (const t of terms) for (const w of t.words) byWord.set(w.toUpperCase().replace(/\s+/g, ' '), t);
+    // A term also matches its plural (RIGHT, RIGHTS; PARTY, PARTIES; PUBLIC RECORD, PUBLIC RECORDS) unless that is a term of its own.
+    const plural = (w) => (/[^AEIOU]Y$/.test(w) ? `${w.slice(0, -1)}IES` : /(S|X|Z|CH|SH)$/.test(w) ? `${w}ES` : `${w}S`);
+    for (const [w, t] of [...byWord]) if (!byWord.has(plural(w))) byWord.set(plural(w), t);
     const escape = (s) => s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&').replace(/ /g, '\\s+');
     const words = [...byWord.keys()].sort((a, b) => b.length - a.length).map(escape);
     const pattern = new RegExp(`(?<![\\p{L}\\p{N}])(?:${words.join('|')})(?![\\p{L}\\p{N}])`, 'gu');
