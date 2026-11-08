@@ -63,10 +63,6 @@ Searches can also be filtered by `Author` (who wrote a post, article or commenta
 
 A comment whose message links a YouTube video (`youtube.com/watch?v=`, `youtu.be/`, `embed/`, `shorts/`, mobile links) shows each video under its text (`partials/youtube-embeds.html`, called from `partials/lpPosts.html` for comments only). Message text is front matter, where shortcodes don't run, so the template finds the links itself. Each video is a thumbnail until clicked; `static/js/youtube-embed.js` then swaps in the youtube-nocookie player, so pages with dozens of videos load none up front. Without JavaScript the thumbnail links to YouTube. Removed videos show YouTube's grey placeholder.
 
-## Archived links
-
-Outside links get a link to their Wayback Machine copy from near the date they were posted (`partials/archive-url.html`, a returning partial: `web.archive.org/web/<created_time>/<url>`, which redirects to the nearest capture). A post's link card shows "Archived link" under the original link (`partials/lpPosts.html`); addresses written in a post's or comment's message are listed under the message (`partials/archive-links.html`), each as "Archived link: <address>". The record is never changed: the message text and the original links render exactly as exported, and the archived links are labelled as added by this site, not part of the original. They are kept out of the search index (`data-pagefind-ignore`).
-
 ## Poster filter
 
 Volume pages (the posts) and post pages (the comments) have a "Filter by poster" panel (`partials/poster-filter.html`, `static/js/poster-filter.js`). The list of names is built from each entry's `data-author` attribute. Don't name that attribute `data-poster`: Go templates treat `poster` as a URL attribute and percent-encode it. The selection is kept in the address (`?poster=Name&poster=Other&mode=hide`) and carried to the previous/next volume links. Without JavaScript, the panel stays hidden.
