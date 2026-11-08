@@ -6,6 +6,11 @@ description = "----"
 weight = "3"
 tags = ["ACCOUNTING", "NARRATIVE"]
 +++
+Shared under a Creative Commons Attribution-NonCommercial-NoDerivs 3.0 Unported License.
+
+
+CC BY-ND-NC 3.0 UNPORTED LICENSE
+
 
 This isn't easy to write because you are all begging me to come down to your level. Well, I am not at your level. I have never been an "employee", well, as an adult, and I've never not had tens of thousands in Accounts Receivable in case I got into a jam. I am trying really hard to dumb it down and it's proving to be not an easy task. You are going to have to meet me halfway. ....I digress
 

@@ -7,6 +7,12 @@ weight = "7"
 tags = ["ACCOUNTING", "SURETY", "NARRATIVE"]
 categories = ["JOINDER", "CORPORATIONS"]
 +++
+Shared under a Creative Commons Attribution-NonCommercial-NoDerivs 3.0 Unported License.
+
+
+CC BY-ND-NC 3.0 UNPORTED LICENSE
+
+
 <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
   <div class="carousel-inner">
     <div class="carousel-item active">
