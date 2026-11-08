@@ -1,8 +1,9 @@
 // Inline definitions: link TTFL Dictionary terms in posts, comments and articles to their dictionary entry, with
 // its first definitions (up to three, with their sources) in a card on hover or focus. The terms come from /dictionary-terms.json
 // (layouts/partials/dictionary-terms.html); this script's data-terms attribute holds its address.
-// Only terms written in capitals are linked, the way the archive marks a legal term (a term's plural counts as the
-// term), and only the first use of each term in each post, comment or article. Without JavaScript the text is left as it is.
+// Only terms written in capitals are linked, the way the archive marks a legal term (a term's plural and its other
+// written forms count as the term), and only the first use of each term in each post, comment or article. A term with
+// no definition yet is linked too; its card says so. Without JavaScript the text is left as it is.
 (() => {
   const script = document.currentScript;
   const blocks = [...document.querySelectorAll('.post-message, .longform > .prose')].filter((el) => !el.closest('.source-card'));
@@ -64,6 +65,10 @@
       head.append(el('strong', '', t.term));
       if (t.n > 1) head.append(el('span', 'term-card-count', `${t.n} definitions`));
       const fill = (count) => {
+        if (!t.n) {
+          card.replaceChildren(head, el('p', 'term-card-more term-card-empty', 'No definition yet. The link opens its entry in the TTFL Dictionary, with every use in the archive.'));
+          return;
+        }
         const list = el(t.n > 1 ? 'ol' : 'div', 'term-card-defs');
         for (const d of t.defs.slice(0, count)) {
           const item = el(t.n > 1 ? 'li' : 'div', `term-card-def-${d.kind}`);
