@@ -1,0 +1,7 @@
+{{- /* Returning partial: the Wayback Machine address for a link, as saved around the date it was posted. The Wayback
+       Machine redirects a timestamp to its nearest capture, so the reader sees the page as it was when shared, even
+       when the original is gone. Context: dict "url" and "date" (the post's or comment's created_time, or empty for
+       the latest capture). Used by partials/lpPosts.html (link cards) and partials/archive-links.html. */ -}}
+{{- $stamp := "" -}}
+{{- with .date }}{{ $stamp = printf "%s/" ((time.AsTime .).Format "20060102150405") }}{{ end -}}
+{{- return printf "https://web.archive.org/web/%s%s" $stamp .url -}}
