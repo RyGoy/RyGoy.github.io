@@ -63,6 +63,16 @@ Searches can also be filtered by `Author` (who wrote a post, article or commenta
 
 A comment whose message links a YouTube video (`youtube.com/watch?v=`, `youtu.be/`, `embed/`, `shorts/`, mobile links) shows each video under its text (`partials/youtube-embeds.html`, called from `partials/lpPosts.html` for comments only). Message text is front matter, where shortcodes don't run, so the template finds the links itself. Each video is a thumbnail until clicked; `static/js/youtube-embed.js` then swaps in the youtube-nocookie player, so pages with dozens of videos load none up front. Without JavaScript the thumbnail links to YouTube. Removed videos show YouTube's grey placeholder.
 
+## Archived links
+
+Posts and comments show archived copies of their outside links: under a post's link card, and in a list under a message, each labelled "Archived link (<archive>, saved <date>)" with a note that it was added by this site and is not part of the original. The record is never changed: messages and original links render exactly as exported (apart from the added elements, a build is byte-identical to one without this feature).
+
+- `scripts/archive_links.py` (standard library Python) reads the addresses from `content/vol_*/` and asks the Wayback Machine (CDX search, captures saved with status 200 only) and archive.today (Memento TimeMap at archive.ph) for the copy closest to the post's or comment's date. It writes every answer to `scripts/archive-checks.json` (so a run can be stopped and continued) and the confirmed copies to `data/archives.json`, keyed by post or comment ID. It is run by hand, not at deploy: it asks slowly and takes hours, and archive.today refuses many automated clients. Failed checks (errors, refusals, CAPTCHAs) are asked again on the next run and show nothing meanwhile.
+- `partials/archive-links.html` (called from `partials/lpPosts.html`) shows only what `data/archives.json` lists; it finds no addresses itself. An address with no confirmed copy shows nothing.
+- Left out of the check: Facebook (the Wayback Machine's copies are its log-in or security check page, saved with status 200), YouTube links in comments (shown as video thumbnails), addresses that are already archive copies, and addresses written with "..." or "…" (possibly shortened for display, so the address may name a different page). Of an address written with a final full stop, the reading with the stop is tried first, then the one without.
+- The Wayback Machine refuses to search some sites (such as Dropbox, "excluded from the Wayback Machine"); the script records those as having no copy after checking that the Wayback Machine answers other searches.
+- Archived links are kept out of the search index (`data-pagefind-ignore`).
+
 ## Poster filter
 
 Volume pages (the posts) and post pages (the comments) have a "Filter by poster" panel (`partials/poster-filter.html`, `static/js/poster-filter.js`). The list of names is built from each entry's `data-author` attribute. Don't name that attribute `data-poster`: Go templates treat `poster` as a URL attribute and percent-encode it. The selection is kept in the address (`?poster=Name&poster=Other&mode=hide`) and carried to the previous/next volume links. Without JavaScript, the panel stays hidden.
