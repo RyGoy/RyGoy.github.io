@@ -2,7 +2,8 @@
 {{/* The TTFL Dictionary (content/dictionary.md). Entries come from data/dictionary.json: each has term, id (anchor),
      letter, tfd (TheFreeDictionary legal entry or null) and definitions [{text, kind, where, date, url, by}], all listed.
      by (optional) names the writer when it is not Scott Duncan; it is shown before the source.
-     Definitions are in the archive's own words: ones that quote another source are left out of the data.
+     Definitions are in the archive's own words, except kind "wex": for terms the archive does not define, the opening
+     of Cornell LII's Wex entry, in light blue, credited and with its licence (license {name, url}).
      An optional match list gives the words the concordance (/concordance/) and inline definitions look for when the
      term itself is not one; an empty list leaves the term out of both. A term can have no definitions yet: it is
      listed (and in the concordance) as "No definition yet", and left out of inline definitions. */}}
@@ -14,7 +15,7 @@
   {{ $ranked = $ranked | append (dict "term" .term "id" .id "count" (len .definitions)) }}
   {{ if not (in $letters .letter) }}{{ $letters = $letters | append .letter }}{{ end }}
 {{ end }}
-{{ $kinds := dict "article" "Article" "post" "Post" "comment" "Comment" }}
+{{ $kinds := dict "article" "Article" "post" "Post" "comment" "Comment" "wex" "Wex" }}
 <article class="dictionary" data-pagefind-body data-pagefind-filter="Section:Dictionary">
   <header class="page-heading dictionary-heading">
     <p class="eyebrow">The Tender For Law</p>
@@ -26,6 +27,7 @@
       <div><dt>In the legal dictionary</dt><dd>{{ $linked }}</dd></div>
       <div><dt>Uses in the archive</dt><dd><a href="{{ "concordance/" | relURL }}" data-uses-total>Concordance</a></dd></div>
     </dl>
+    <p class="dictionary-legend" data-pagefind-ignore><span class="dictionary-legend-swatch" aria-hidden="true"></span>Definitions in light blue are from <a href="https://www.law.cornell.edu/wex">Wex</a>, the legal dictionary of the Legal Information Institute at Cornell Law School, shared under a <a href="https://creativecommons.org/licenses/by-nc-sa/2.5/" rel="license">Creative Commons Attribution-NonCommercial-ShareAlike 2.5 License</a>, for terms Scott Duncan has not defined.</p>
   </header>
 
   <section class="dictionary-popular" aria-labelledby="dictionary-popular-title" data-pagefind-ignore>

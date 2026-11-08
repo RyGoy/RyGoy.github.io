@@ -34,7 +34,19 @@
   "id": "account",
   "letter": "A",
   "tfd": null,
-  "definitions": []
+  "definitions": [
+   {
+    "text": "Generally, an account is a record, history, or report of something.",
+    "kind": "wex",
+    "where": "Wex, Legal Information Institute, Cornell Law School",
+    "date": "Reviewed Oct 2024",
+    "url": "https://www.law.cornell.edu/wex/account",
+    "license": {
+     "name": "CC BY-NC-SA 2.5",
+     "url": "https://creativecommons.org/licenses/by-nc-sa/2.5/"
+    }
+   }
+  ]
  },
  {
   "term": "Accountable",
@@ -145,7 +157,19 @@
   "id": "advocate",
   "letter": "A",
   "tfd": null,
-  "definitions": []
+  "definitions": [
+   {
+    "text": "The term advocate functions as a noun and a verb. As a noun, an advocate (pronounced \"ad-vuh-kit\") is an individual who actively supports and promotes the interests of another person or enterprise. As a verb, to advocate (pronounced \"ad-vuh-kate”) is the act of promoting the interest of another person or group.",
+    "kind": "wex",
+    "where": "Wex, Legal Information Institute, Cornell Law School",
+    "date": "Reviewed Jun 2022",
+    "url": "https://www.law.cornell.edu/wex/advocate",
+    "license": {
+     "name": "CC BY-NC-SA 2.5",
+     "url": "https://creativecommons.org/licenses/by-nc-sa/2.5/"
+    }
+   }
+  ]
  },
  {
   "term": "Affidavit",
@@ -181,7 +205,19 @@
   "id": "agency",
   "letter": "A",
   "tfd": null,
-  "definitions": []
+  "definitions": [
+   {
+    "text": "Agency law is a common law doctrine controlling relationships between agents and principals. A principal-agent relationship is created when the agent is given authority to act on behalf of the principal. An agreement made by an agent is binding on the principal so long as the agreement was within the authority actually granted to the agent or reasonably perceived by a third party.",
+    "kind": "wex",
+    "where": "Wex, Legal Information Institute, Cornell Law School",
+    "date": "Reviewed Oct 2024",
+    "url": "https://www.law.cornell.edu/wex/agency",
+    "license": {
+     "name": "CC BY-NC-SA 2.5",
+     "url": "https://creativecommons.org/licenses/by-nc-sa/2.5/"
+    }
+   }
+  ]
  },
  {
   "term": "Agent",
@@ -210,7 +246,19 @@
   "id": "agreement",
   "letter": "A",
   "tfd": null,
-  "definitions": []
+  "definitions": [
+   {
+    "text": "An agreement is a manifestation of mutual assent by two or more persons to one another. It is a meeting of the minds with a common intention made through offer and acceptance. An agreement can be shown from words, conduct and in some cases, even silence.",
+    "kind": "wex",
+    "where": "Wex, Legal Information Institute, Cornell Law School",
+    "date": "Reviewed Nov 2024",
+    "url": "https://www.law.cornell.edu/wex/agreement",
+    "license": {
+     "name": "CC BY-NC-SA 2.5",
+     "url": "https://creativecommons.org/licenses/by-nc-sa/2.5/"
+    }
+   }
+  ]
  },
  {
   "term": "And",
@@ -247,7 +295,19 @@
   "id": "appeal",
   "letter": "A",
   "tfd": null,
-  "definitions": []
+  "definitions": [
+   {
+    "text": "An appeal is a challenge to a previous legal determination. An appeal is directed towards a legal power higher than the power making the challenged determination. In most states and the federal system, trial court determinations can be appealed in an appellate court. The rulings of those appellate courts may be reviewed by a \"court of last resort.\" In the federal court system, that is the United States Supreme Court.",
+    "kind": "wex",
+    "where": "Wex, Legal Information Institute, Cornell Law School",
+    "date": "Reviewed Jun 2022",
+    "url": "https://www.law.cornell.edu/wex/appeal",
+    "license": {
+     "name": "CC BY-NC-SA 2.5",
+     "url": "https://creativecommons.org/licenses/by-nc-sa/2.5/"
+    }
+   }
+  ]
  },
  {
   "term": "Appointment",
@@ -276,7 +336,19 @@
   "id": "artificial-person",
   "letter": "A",
   "tfd": null,
-  "definitions": []
+  "definitions": [
+   {
+    "text": "An artificial person is also known as a juridical person; it has a legal name and has certain rights, protections, privileges, responsibilities, and liabilities in law, similar to those of a natural person. In other words, an artificial person is a non-human legal entity that is not a single natural person but an organization recognized by law as a fictitious person.",
+    "kind": "wex",
+    "where": "Wex, Legal Information Institute, Cornell Law School",
+    "date": "Reviewed Jan 2025",
+    "url": "https://www.law.cornell.edu/wex/artificial_person",
+    "license": {
+     "name": "CC BY-NC-SA 2.5",
+     "url": "https://creativecommons.org/licenses/by-nc-sa/2.5/"
+    }
+   }
+  ]
  },
  {
   "term": "Attorn",
@@ -430,7 +502,19 @@
   "id": "barrister",
   "letter": "B",
   "tfd": null,
-  "definitions": []
+  "definitions": [
+   {
+    "text": "Barrister refers to a lawyer in the United Kingdom and other common law countries whose role is court advocacy and to provide counsel to their clients in specialized areas of law. Barristers are involved in and litigation, similar to “trial lawyers” or “litigators” in the United States, except such lawyers in America may perform tasks beyond courtroom advocacy, unlike barristers. Barristers are typically hired by solicitors to represent a party in a lawsuit that will be taken to trial. Once a case is presented in court, the barrister pleads on behalf of the client and/or the client’s solicitor and advocates for their client.",
+    "kind": "wex",
+    "where": "Wex, Legal Information Institute, Cornell Law School",
+    "date": "Reviewed Oct 2024",
+    "url": "https://www.law.cornell.edu/wex/barrister",
+    "license": {
+     "name": "CC BY-NC-SA 2.5",
+     "url": "https://creativecommons.org/licenses/by-nc-sa/2.5/"
+    }
+   }
+  ]
  },
  {
   "term": "Belief",
@@ -466,7 +550,19 @@
   "id": "beneficiary",
   "letter": "B",
   "tfd": null,
-  "definitions": []
+  "definitions": [
+   {
+    "text": "A beneficiary is an individual or entity designated to receive benefits. Beneficiaries arise under different legal arrangements, including wills and trusts (distributions of property) and contracts (such as life insurance policies). Beneficiaries may be natural persons, corporations, or organizations such as charities. A trust cannot exist if the same person is both sole trustee and sole beneficiary.",
+    "kind": "wex",
+    "where": "Wex, Legal Information Institute, Cornell Law School",
+    "date": "Reviewed Aug 2025",
+    "url": "https://www.law.cornell.edu/wex/beneficiary",
+    "license": {
+     "name": "CC BY-NC-SA 2.5",
+     "url": "https://creativecommons.org/licenses/by-nc-sa/2.5/"
+    }
+   }
+  ]
  },
  {
   "term": "Benefit",
@@ -503,7 +599,19 @@
   "id": "bilateral",
   "letter": "B",
   "tfd": null,
-  "definitions": []
+  "definitions": [
+   {
+    "text": "Bilateral means two-sided and is frequently used to refer to agreements between two countries. For example, the United States and Australia have a Bilateral trade agreement limiting tariffs or other protectionist policies between the two nations.",
+    "kind": "wex",
+    "where": "Wex, Legal Information Institute, Cornell Law School",
+    "date": "Reviewed Jul 2022",
+    "url": "https://www.law.cornell.edu/wex/bilateral",
+    "license": {
+     "name": "CC BY-NC-SA 2.5",
+     "url": "https://creativecommons.org/licenses/by-nc-sa/2.5/"
+    }
+   }
+  ]
  },
  {
   "term": "Bill",
@@ -532,7 +640,19 @@
   "id": "bill-of-lading",
   "letter": "B",
   "tfd": null,
-  "definitions": []
+  "definitions": [
+   {
+    "text": "A bill of lading is a legal instrument used in the transportation and shipping industries which lists the goods being shipped and the terms under which they will be delivered. If the goods as delivered do not match the terms of the bill of lading, the transportation company can be liable for damages.",
+    "kind": "wex",
+    "where": "Wex, Legal Information Institute, Cornell Law School",
+    "date": "Reviewed Jul 2022",
+    "url": "https://www.law.cornell.edu/wex/bill_of_lading",
+    "license": {
+     "name": "CC BY-NC-SA 2.5",
+     "url": "https://creativecommons.org/licenses/by-nc-sa/2.5/"
+    }
+   }
+  ]
  },
  {
   "term": "Binding",
@@ -655,7 +775,19 @@
   "id": "breach",
   "letter": "B",
   "tfd": null,
-  "definitions": []
+  "definitions": [
+   {
+    "text": "A breach is a violation of law or when a party fails to perform their part of a contractual agreement. For more information, see breach of contract.",
+    "kind": "wex",
+    "where": "Wex, Legal Information Institute, Cornell Law School",
+    "date": "Reviewed Jun 2022",
+    "url": "https://www.law.cornell.edu/wex/breach",
+    "license": {
+     "name": "CC BY-NC-SA 2.5",
+     "url": "https://creativecommons.org/licenses/by-nc-sa/2.5/"
+    }
+   }
+  ]
  },
  {
   "term": "By-Law",
@@ -737,7 +869,19 @@
   "id": "capacity",
   "letter": "C",
   "tfd": null,
-  "definitions": []
+  "definitions": [
+   {
+    "text": "Capacity refers to the ability to make a rational decision based upon all relevant facts and considerations. Some common usages of the term “capacity” in a legal sense include: Keywords",
+    "kind": "wex",
+    "where": "Wex, Legal Information Institute, Cornell Law School",
+    "date": "Reviewed Mar 2022",
+    "url": "https://www.law.cornell.edu/wex/capacity",
+    "license": {
+     "name": "CC BY-NC-SA 2.5",
+     "url": "https://creativecommons.org/licenses/by-nc-sa/2.5/"
+    }
+   }
+  ]
  },
  {
   "term": "Captain",
@@ -766,7 +910,19 @@
   "id": "case-law",
   "letter": "C",
   "tfd": null,
-  "definitions": []
+  "definitions": [
+   {
+    "text": "Case law is law that is based on judicial decisions rather than law based on constitutions, statutes, or regulations. Case law concerns unique disputes resolved by courts using the concrete facts of a case. By contrast, statutes and regulations are written abstractly.",
+    "kind": "wex",
+    "where": "Wex, Legal Information Institute, Cornell Law School",
+    "date": "Reviewed May 2020",
+    "url": "https://www.law.cornell.edu/wex/case_law",
+    "license": {
+     "name": "CC BY-NC-SA 2.5",
+     "url": "https://creativecommons.org/licenses/by-nc-sa/2.5/"
+    }
+   }
+  ]
  },
  {
   "term": "Cash",
@@ -912,7 +1068,19 @@
   "id": "civil",
   "letter": "C",
   "tfd": null,
-  "definitions": []
+  "definitions": [
+   {
+    "text": "In reference to law, “civil” is used primarily as a descriptive term to denote conflicts between private individuals. Where in a civil case two or more individuals or private entities (such as corporations) dispute their rights relative to each other (such as in a contract or a tort), a criminal case involves the government attempting on behalf of its citizens to punish a person for violating its criminal law.",
+    "kind": "wex",
+    "where": "Wex, Legal Information Institute, Cornell Law School",
+    "date": "Reviewed Jul 2022",
+    "url": "https://www.law.cornell.edu/wex/civil",
+    "license": {
+     "name": "CC BY-NC-SA 2.5",
+     "url": "https://creativecommons.org/licenses/by-nc-sa/2.5/"
+    }
+   }
+  ]
  },
  {
   "term": "Claim",
@@ -1015,7 +1183,19 @@
   "id": "consent",
   "letter": "C",
   "tfd": null,
-  "definitions": []
+  "definitions": [
+   {
+    "text": "Consent means that a person voluntarily and willfully agrees in response to another person's proposition. The person who consents must possess sufficient mental capacity. Consent also requires the absence of coercion, fraud or error. Consent is an essential constituent of a contract and a defense to a tort. However, consent is generally not a defense to criminal charges, with the possible exceptions of rape and sexual assault.",
+    "kind": "wex",
+    "where": "Wex, Legal Information Institute, Cornell Law School",
+    "date": "Reviewed Aug 2022",
+    "url": "https://www.law.cornell.edu/wex/consent",
+    "license": {
+     "name": "CC BY-NC-SA 2.5",
+     "url": "https://creativecommons.org/licenses/by-nc-sa/2.5/"
+    }
+   }
+  ]
  },
  {
   "term": "Consideration",
@@ -1037,7 +1217,19 @@
   "id": "constitution",
   "letter": "C",
   "tfd": null,
-  "definitions": []
+  "definitions": [
+   {
+    "text": "A constitution is the most fundamental law of a sovereign body. The term is capitalized only when referring to a specific constitution (e.g., U.S. Constitution, Texas Constitution, etc.).",
+    "kind": "wex",
+    "where": "Wex, Legal Information Institute, Cornell Law School",
+    "date": "Reviewed May 2026",
+    "url": "https://www.law.cornell.edu/wex/constitution",
+    "license": {
+     "name": "CC BY-NC-SA 2.5",
+     "url": "https://creativecommons.org/licenses/by-nc-sa/2.5/"
+    }
+   }
+  ]
  },
  {
   "term": "Contract",
@@ -1066,7 +1258,19 @@
   "id": "conviction",
   "letter": "C",
   "tfd": null,
-  "definitions": []
+  "definitions": [
+   {
+    "text": "A conviction is an adjudication of a criminal defendant’s guilt; specifically, it is the act or judicial process of finding a criminal defendant guilty of a charged offense.",
+    "kind": "wex",
+    "where": "Wex, Legal Information Institute, Cornell Law School",
+    "date": "Reviewed Jun 2021",
+    "url": "https://www.law.cornell.edu/wex/conviction",
+    "license": {
+     "name": "CC BY-NC-SA 2.5",
+     "url": "https://creativecommons.org/licenses/by-nc-sa/2.5/"
+    }
+   }
+  ]
  },
  {
   "term": "Copyright",
@@ -1139,7 +1343,19 @@
   "id": "costs",
   "letter": "C",
   "tfd": null,
-  "definitions": []
+  "definitions": [
+   {
+    "text": "Costs are the fees incurred for the use of a court and are seen in civil and criminal courts of all levels. Court costs usually include the initial filing fee, fees for serving the summons, complaint, and subpoenas, and fees to pay for the transcription by a court reporter of depositions or in-court testimony. Additionally, the cost of photocopying court papers and exhibits, providing daily small stipends to jurors, and paying the court clerk and the court marshal are often also included as applicable to the case.",
+    "kind": "wex",
+    "where": "Wex, Legal Information Institute, Cornell Law School",
+    "date": "Reviewed Jul 2022",
+    "url": "https://www.law.cornell.edu/wex/costs",
+    "license": {
+     "name": "CC BY-NC-SA 2.5",
+     "url": "https://creativecommons.org/licenses/by-nc-sa/2.5/"
+    }
+   }
+  ]
  },
  {
   "term": "Court",
@@ -1213,7 +1429,19 @@
   "id": "covenant",
   "letter": "C",
   "tfd": null,
-  "definitions": []
+  "definitions": [
+   {
+    "text": "A covenant is a formal agreement or promise, usually included in a contract or deed, to do or not do a particular act. Covenants are particularly relevant in the fields of contract law and property law.",
+    "kind": "wex",
+    "where": "Wex, Legal Information Institute, Cornell Law School",
+    "date": "Reviewed Jul 2022",
+    "url": "https://www.law.cornell.edu/wex/covenant",
+    "license": {
+     "name": "CC BY-NC-SA 2.5",
+     "url": "https://creativecommons.org/licenses/by-nc-sa/2.5/"
+    }
+   }
+  ]
  },
  {
   "term": "Credit",
@@ -1227,14 +1455,38 @@
   "id": "crime",
   "letter": "C",
   "tfd": null,
-  "definitions": []
+  "definitions": [
+   {
+    "text": "A crime is behavior that is punishable as a public offense. The elements of a crime generally come from statutes, but may also be supplied by the common law in states where the criminal common law still carries force.",
+    "kind": "wex",
+    "where": "Wex, Legal Information Institute, Cornell Law School",
+    "date": "Reviewed Apr 2025",
+    "url": "https://www.law.cornell.edu/wex/crime",
+    "license": {
+     "name": "CC BY-NC-SA 2.5",
+     "url": "https://creativecommons.org/licenses/by-nc-sa/2.5/"
+    }
+   }
+  ]
  },
  {
   "term": "Criminal",
   "id": "criminal",
   "letter": "C",
   "tfd": null,
-  "definitions": []
+  "definitions": [
+   {
+    "text": "Criminal is a term used for a person who has committed a crime or has been legally convicted of a crime.",
+    "kind": "wex",
+    "where": "Wex, Legal Information Institute, Cornell Law School",
+    "date": "Reviewed Nov 2022",
+    "url": "https://www.law.cornell.edu/wex/criminal",
+    "license": {
+     "name": "CC BY-NC-SA 2.5",
+     "url": "https://creativecommons.org/licenses/by-nc-sa/2.5/"
+    }
+   }
+  ]
  },
  {
   "term": "Criminal Code",
@@ -1270,7 +1522,19 @@
   "id": "custody",
   "letter": "C",
   "tfd": null,
-  "definitions": []
+  "definitions": [
+   {
+    "text": "Custody refers to the condition of having physical control over, or the legal right to control, a person or property. Possession of custody generally carries corresponding duties to safeguard and care for the person or property in one’s charge. The term is primarily used in criminal law and family law.",
+    "kind": "wex",
+    "where": "Wex, Legal Information Institute, Cornell Law School",
+    "date": "Reviewed Oct 2025",
+    "url": "https://www.law.cornell.edu/wex/custody",
+    "license": {
+     "name": "CC BY-NC-SA 2.5",
+     "url": "https://creativecommons.org/licenses/by-nc-sa/2.5/"
+    }
+   }
+  ]
  },
  {
   "term": "Debt",
@@ -1292,7 +1556,19 @@
   "id": "declaration",
   "letter": "D",
   "tfd": null,
-  "definitions": []
+  "definitions": [
+   {
+    "text": "A declaration is an official statement, or proclamation, such as an affidavit. If the person making the declaration (called the declarant) lies in it, the declarant may be guilty of perjury.",
+    "kind": "wex",
+    "where": "Wex, Legal Information Institute, Cornell Law School",
+    "date": "Reviewed Sep 2022",
+    "url": "https://www.law.cornell.edu/wex/declaration",
+    "license": {
+     "name": "CC BY-NC-SA 2.5",
+     "url": "https://creativecommons.org/licenses/by-nc-sa/2.5/"
+    }
+   }
+  ]
  },
  {
   "term": "Deemed",
@@ -1321,7 +1597,19 @@
   "id": "default",
   "letter": "D",
   "tfd": null,
-  "definitions": []
+  "definitions": [
+   {
+    "text": "A default is a failure to fulfill an obligation. Defaulting is most common in regards to debtor-creditor law and contract law. Typically, a default leads to judicial proceedings or triggers the application of a separate contract provision.",
+    "kind": "wex",
+    "where": "Wex, Legal Information Institute, Cornell Law School",
+    "date": "Reviewed Sep 2022",
+    "url": "https://www.law.cornell.edu/wex/default",
+    "license": {
+     "name": "CC BY-NC-SA 2.5",
+     "url": "https://creativecommons.org/licenses/by-nc-sa/2.5/"
+    }
+   }
+  ]
  },
  {
   "term": "Definition",
@@ -1408,7 +1696,19 @@
   "id": "divorce",
   "letter": "D",
   "tfd": null,
-  "definitions": []
+  "definitions": [
+   {
+    "text": "A divorce formally dissolves a legal marriage. While married couples do not possess a constitutional or legal right to divorce, states permit divorces because doing so serves public policy. To ensure that a particular divorce serves public policy interests, some states require a \"cooling-off period,\" which requires spouses seeking to initiate divorce proceedings to wait a specified time period, typically 60 days, after legally separating before a divorce is granted. In the event of a fault divorce, however, this “cooling-off period” may not be required. Issues related to divorce are typically resolved in family court.",
+    "kind": "wex",
+    "where": "Wex, Legal Information Institute, Cornell Law School",
+    "date": "Reviewed Sep 2022",
+    "url": "https://www.law.cornell.edu/wex/divorce",
+    "license": {
+     "name": "CC BY-NC-SA 2.5",
+     "url": "https://creativecommons.org/licenses/by-nc-sa/2.5/"
+    }
+   }
+  ]
  },
  {
   "term": "Document",
@@ -1504,14 +1804,38 @@
   "id": "duress",
   "letter": "D",
   "tfd": null,
-  "definitions": []
+  "definitions": [
+   {
+    "text": "Duress refers to a situation where one person makes unlawful threats or otherwise engages in coercive behavior that causes another person to commit acts that they would otherwise not commit.",
+    "kind": "wex",
+    "where": "Wex, Legal Information Institute, Cornell Law School",
+    "date": "Reviewed Nov 2025",
+    "url": "https://www.law.cornell.edu/wex/duress",
+    "license": {
+     "name": "CC BY-NC-SA 2.5",
+     "url": "https://creativecommons.org/licenses/by-nc-sa/2.5/"
+    }
+   }
+  ]
  },
  {
   "term": "Duty",
   "id": "duty",
   "letter": "D",
   "tfd": null,
-  "definitions": []
+  "definitions": [
+   {
+    "text": "A duty is an obligation to act based on law, custom, ethics, or personal commitment. Breaching a legal duty may give rise to a claim if it violates another person’s rights. Some examples are: fiduciary duty, duty of good faith, duty of care, and duty of loyalty. Some duties, like those held by public officials, may not create enforceable rights.",
+    "kind": "wex",
+    "where": "Wex, Legal Information Institute, Cornell Law School",
+    "date": "Reviewed Jul 2025",
+    "url": "https://www.law.cornell.edu/wex/duty",
+    "license": {
+     "name": "CC BY-NC-SA 2.5",
+     "url": "https://creativecommons.org/licenses/by-nc-sa/2.5/"
+    }
+   }
+  ]
  },
  {
   "term": "Employee",
@@ -1533,7 +1857,19 @@
   "id": "employment",
   "letter": "E",
   "tfd": null,
-  "definitions": []
+  "definitions": [
+   {
+    "text": "Employment is the condition of labor provided by an employee in exchange for payment by an employer. Employment law is a broad area encompassing the rights and responsibilities of the employer/employee relationship. Employment law consists of federal and state statutes, administrative regulations, and judicial decisions. Many employment laws were enacted as protective labor legislation intended for the fairness of both employers and employees, like employment discrimination or OSHA regulations. Other employment laws act as public benefits, such as unemployment compensation. Additionally, post-employment retirement benefits, like pensions, are regulated by employment legislation.",
+    "kind": "wex",
+    "where": "Wex, Legal Information Institute, Cornell Law School",
+    "date": "Reviewed Mar 2025",
+    "url": "https://www.law.cornell.edu/wex/employment",
+    "license": {
+     "name": "CC BY-NC-SA 2.5",
+     "url": "https://creativecommons.org/licenses/by-nc-sa/2.5/"
+    }
+   }
+  ]
  },
  {
   "term": "Endorsed",
@@ -1570,14 +1906,38 @@
   "id": "entity",
   "letter": "E",
   "tfd": null,
-  "definitions": []
+  "definitions": [
+   {
+    "text": "An entity refers to a person or organization possessing separate and distinct legal rights, such as an individual, partnership, or corporation. An entity can, among other things, own property, engage in business, enter into contracts, pay taxes, sue and be sued. An entity is capable of operating legally, suing and making decisions through agents, e.g. a corporation, a state, or an association.",
+    "kind": "wex",
+    "where": "Wex, Legal Information Institute, Cornell Law School",
+    "date": "Reviewed Feb 2022",
+    "url": "https://www.law.cornell.edu/wex/entity",
+    "license": {
+     "name": "CC BY-NC-SA 2.5",
+     "url": "https://creativecommons.org/licenses/by-nc-sa/2.5/"
+    }
+   }
+  ]
  },
  {
   "term": "Estate",
   "id": "estate",
   "letter": "E",
   "tfd": null,
-  "definitions": []
+  "definitions": [
+   {
+    "text": "An estate is the total property; real and personal, owned by an individual prior to distribution through a trust or will.",
+    "kind": "wex",
+    "where": "Wex, Legal Information Institute, Cornell Law School",
+    "date": "Reviewed Sep 2022",
+    "url": "https://www.law.cornell.edu/wex/estate",
+    "license": {
+     "name": "CC BY-NC-SA 2.5",
+     "url": "https://creativecommons.org/licenses/by-nc-sa/2.5/"
+    }
+   }
+  ]
  },
  {
   "term": "Ethereum",
@@ -1599,7 +1959,19 @@
   "id": "evidence",
   "letter": "E",
   "tfd": null,
-  "definitions": []
+  "definitions": [
+   {
+    "text": "Evidence an item or information proffered to make the existence of a fact more or less probable. Evidence can take the form of testimony, documents, photographs, videos, voice recordings, DNA testing, or other tangible objects. Courts cannot admit all evidence, as evidence must be admissible under that jurisdiction’s rules of evidence (see below) in order to be presented to court. In federal court, evidence is governed by the Federal Rules of Evidence. A court may exclude evidence because it is not relevant, hearsay, or otherwise inadmissible.",
+    "kind": "wex",
+    "where": "Wex, Legal Information Institute, Cornell Law School",
+    "date": "Reviewed Nov 2022",
+    "url": "https://www.law.cornell.edu/wex/evidence",
+    "license": {
+     "name": "CC BY-NC-SA 2.5",
+     "url": "https://creativecommons.org/licenses/by-nc-sa/2.5/"
+    }
+   }
+  ]
  },
  {
   "term": "Evil",
@@ -1635,14 +2007,38 @@
   "id": "exchange",
   "letter": "E",
   "tfd": null,
-  "definitions": []
+  "definitions": [
+   {
+    "text": "Exchange refers both to the action of transferring goods and chattels for other goods and chattels of like value and to the transfer itself.",
+    "kind": "wex",
+    "where": "Wex, Legal Information Institute, Cornell Law School",
+    "date": "Reviewed Jul 2021",
+    "url": "https://www.law.cornell.edu/wex/exchange",
+    "license": {
+     "name": "CC BY-NC-SA 2.5",
+     "url": "https://creativecommons.org/licenses/by-nc-sa/2.5/"
+    }
+   }
+  ]
  },
  {
   "term": "Executor",
   "id": "executor",
   "letter": "E",
   "tfd": null,
-  "definitions": []
+  "definitions": [
+   {
+    "text": "An executor is someone named in a will as the person who will carry out the testator's formal wishes. Typical duties of an executor include paying outstanding taxes/debt and distributing any remaining assets among the testator’s heirs.",
+    "kind": "wex",
+    "where": "Wex, Legal Information Institute, Cornell Law School",
+    "date": "Reviewed Oct 2022",
+    "url": "https://www.law.cornell.edu/wex/executor",
+    "license": {
+     "name": "CC BY-NC-SA 2.5",
+     "url": "https://creativecommons.org/licenses/by-nc-sa/2.5/"
+    }
+   }
+  ]
  },
  {
   "term": "Extortion",
@@ -1664,7 +2060,19 @@
   "id": "fact",
   "letter": "F",
   "tfd": null,
-  "definitions": []
+  "definitions": [
+   {
+    "text": "A fact is something that actually occurred or a statement presented as objectively true. Determining facts is a primary role of trial courts.",
+    "kind": "wex",
+    "where": "Wex, Legal Information Institute, Cornell Law School",
+    "date": "Reviewed Jul 2025",
+    "url": "https://www.law.cornell.edu/wex/fact",
+    "license": {
+     "name": "CC BY-NC-SA 2.5",
+     "url": "https://creativecommons.org/licenses/by-nc-sa/2.5/"
+    }
+   }
+  ]
  },
  {
   "term": "Fact in Law",
@@ -1751,7 +2159,19 @@
   "id": "forfeit",
   "letter": "F",
   "tfd": null,
-  "definitions": []
+  "definitions": [
+   {
+    "text": "Forfeit or forfeiture means losing a right, privilege, or property without compensation as a consequence of violating the law, breaching a legal obligation, failing to perform a contractual obligation or condition, or neglecting a legal duty. Under federal law, there are civil, criminal, and administrative forfeitures.",
+    "kind": "wex",
+    "where": "Wex, Legal Information Institute, Cornell Law School",
+    "date": "Reviewed Aug 2021",
+    "url": "https://www.law.cornell.edu/wex/forfeit",
+    "license": {
+     "name": "CC BY-NC-SA 2.5",
+     "url": "https://creativecommons.org/licenses/by-nc-sa/2.5/"
+    }
+   }
+  ]
  },
  {
   "term": "Foundation Document",
@@ -1765,7 +2185,19 @@
   "id": "fraud",
   "letter": "F",
   "tfd": null,
-  "definitions": []
+  "definitions": [
+   {
+    "text": "Fraud can be both a civil tort and a criminal offense. The elements of fraud differ depending on whether the claim is brought in civil or criminal court and the applicable jurisdiction.",
+    "kind": "wex",
+    "where": "Wex, Legal Information Institute, Cornell Law School",
+    "date": "Reviewed Sep 2026",
+    "url": "https://www.law.cornell.edu/wex/fraud",
+    "license": {
+     "name": "CC BY-NC-SA 2.5",
+     "url": "https://creativecommons.org/licenses/by-nc-sa/2.5/"
+    }
+   }
+  ]
  },
  {
   "term": "Free-Dumb",
@@ -1837,7 +2269,19 @@
   "id": "gift",
   "letter": "G",
   "tfd": null,
-  "definitions": []
+  "definitions": [
+   {
+    "text": "In property law, a gift refers to a voluntary transfer of a benefit without the need for any compensation and consideration. Three elements must be met for a gift to be legally valid:",
+    "kind": "wex",
+    "where": "Wex, Legal Information Institute, Cornell Law School",
+    "date": "Reviewed Jan 2023",
+    "url": "https://www.law.cornell.edu/wex/gift",
+    "license": {
+     "name": "CC BY-NC-SA 2.5",
+     "url": "https://creativecommons.org/licenses/by-nc-sa/2.5/"
+    }
+   }
+  ]
  },
  {
   "term": "God",
@@ -1940,7 +2384,19 @@
   "id": "grant",
   "letter": "G",
   "tfd": null,
-  "definitions": []
+  "definitions": [
+   {
+    "text": "Grant means to give or to transfer something to someone, with or without payment. In real estate transactions, the recipient of property is called “grantee”, the person who transfers the ownership of the property to someone else called “grantor”. The term grant also can be used in a deed to convey land; for example, in California “a transfer in writing is called a grant or conveyance, or bill of sale.” The deed is an official written document declaring the legitimate owner of the property, according to CIV 1092; the title is the concept of the ownership. In California, grant deeds are very common.",
+    "kind": "wex",
+    "where": "Wex, Legal Information Institute, Cornell Law School",
+    "date": "Reviewed Feb 2022",
+    "url": "https://www.law.cornell.edu/wex/grant",
+    "license": {
+     "name": "CC BY-NC-SA 2.5",
+     "url": "https://creativecommons.org/licenses/by-nc-sa/2.5/"
+    }
+   }
+  ]
  },
  {
   "term": "Grantor",
@@ -1962,7 +2418,19 @@
   "id": "guilty",
   "letter": "G",
   "tfd": null,
-  "definitions": []
+  "definitions": [
+   {
+    "text": "Guilty generally means being responsible for committing a crime or offense. In criminal law, a defendant may be found guilty either by admitting to the crime through a plea, or by a judge or jury determining after trial that the prosecution has proven the defendant’s guilt beyond a reasonable doubt.",
+    "kind": "wex",
+    "where": "Wex, Legal Information Institute, Cornell Law School",
+    "date": "Reviewed Aug 2025",
+    "url": "https://www.law.cornell.edu/wex/guilty",
+    "license": {
+     "name": "CC BY-NC-SA 2.5",
+     "url": "https://creativecommons.org/licenses/by-nc-sa/2.5/"
+    }
+   }
+  ]
  },
  {
   "term": "Hanging Judge",
@@ -1984,7 +2452,19 @@
   "id": "hearing",
   "letter": "H",
   "tfd": null,
-  "definitions": []
+  "definitions": [
+   {
+    "text": "A hearing refers to any formal proceeding before a court. The term usually refers to a brief court session that resolves a specific question before a full court trial takes place, or to such specialized proceedings as administrative hearings. In a hearing, evidence and arguments will be presented to determine some issue of fact or both issues of fact and law. In criminal law, a preliminary hearing is held before a judge and without a jury to determine whether the prosecutor has presented sufficient evidence to justify proceeding with the case.",
+    "kind": "wex",
+    "where": "Wex, Legal Information Institute, Cornell Law School",
+    "date": "Reviewed Feb 2022",
+    "url": "https://www.law.cornell.edu/wex/hearing",
+    "license": {
+     "name": "CC BY-NC-SA 2.5",
+     "url": "https://creativecommons.org/licenses/by-nc-sa/2.5/"
+    }
+   }
+  ]
  },
  {
   "term": "Her Majesty",
@@ -2020,7 +2500,19 @@
   "id": "holder",
   "letter": "H",
   "tfd": null,
-  "definitions": []
+  "definitions": [
+   {
+    "text": "A holder is a general term for the individual who has lawfully received possession of property. For example, anyone holding a promissory note, check, bond or other paper.",
+    "kind": "wex",
+    "where": "Wex, Legal Information Institute, Cornell Law School",
+    "date": "Reviewed Mar 2022",
+    "url": "https://www.law.cornell.edu/wex/holder",
+    "license": {
+     "name": "CC BY-NC-SA 2.5",
+     "url": "https://creativecommons.org/licenses/by-nc-sa/2.5/"
+    }
+   }
+  ]
  },
  {
   "term": "Holy Prefix",
@@ -2107,21 +2599,57 @@
   "id": "illegal",
   "letter": "I",
   "tfd": null,
-  "definitions": []
+  "definitions": [
+   {
+    "text": "The term illegal means any action which is against or not authorized by the law or statute. Also called illicit or unlawful.",
+    "kind": "wex",
+    "where": "Wex, Legal Information Institute, Cornell Law School",
+    "date": "Reviewed Mar 2022",
+    "url": "https://www.law.cornell.edu/wex/illegal",
+    "license": {
+     "name": "CC BY-NC-SA 2.5",
+     "url": "https://creativecommons.org/licenses/by-nc-sa/2.5/"
+    }
+   }
+  ]
  },
  {
   "term": "Immunity",
   "id": "immunity",
   "letter": "I",
   "tfd": null,
-  "definitions": []
+  "definitions": [
+   {
+    "text": "Immunity refers to legal protection that exempts a person from liability, punishment, or legal action that would otherwise apply. Immunity can be granted in various contexts, including criminal and civil cases, administrative proceedings, and legislative inquiries. For example, see \"immunity from prosecution\"",
+    "kind": "wex",
+    "where": "Wex, Legal Information Institute, Cornell Law School",
+    "date": "Reviewed Jul 2024",
+    "url": "https://www.law.cornell.edu/wex/immunity",
+    "license": {
+     "name": "CC BY-NC-SA 2.5",
+     "url": "https://creativecommons.org/licenses/by-nc-sa/2.5/"
+    }
+   }
+  ]
  },
  {
   "term": "Implied",
   "id": "implied",
   "letter": "I",
   "tfd": null,
-  "definitions": []
+  "definitions": [
+   {
+    "text": "Circumstances, conduct, or statements which suggest the authority to act, warranty, promise, or consent, among other things (rather than stating directly) are considered to be implied.",
+    "kind": "wex",
+    "where": "Wex, Legal Information Institute, Cornell Law School",
+    "date": "Reviewed Mar 2022",
+    "url": "https://www.law.cornell.edu/wex/implied",
+    "license": {
+     "name": "CC BY-NC-SA 2.5",
+     "url": "https://creativecommons.org/licenses/by-nc-sa/2.5/"
+    }
+   }
+  ]
  },
  {
   "term": "Inalienable Right",
@@ -2242,7 +2770,19 @@
   "id": "instrument",
   "letter": "I",
   "tfd": null,
-  "definitions": []
+  "definitions": [
+   {
+    "text": "An instrument is a written legal document that records the formal execution of legally enforceable acts or agreements, and secures their associated legal rights, obligations, and duties. Contracts, wills, promissory notes, deeds, and statutes passed by competent legislatures are examples of legal instruments. Typically, legal instruments must be read as a whole, with every part interpreted in accordance with the whole.",
+    "kind": "wex",
+    "where": "Wex, Legal Information Institute, Cornell Law School",
+    "date": "Reviewed Jun 2020",
+    "url": "https://www.law.cornell.edu/wex/instrument",
+    "license": {
+     "name": "CC BY-NC-SA 2.5",
+     "url": "https://creativecommons.org/licenses/by-nc-sa/2.5/"
+    }
+   }
+  ]
  },
  {
   "term": "Insurance",
@@ -2264,14 +2804,38 @@
   "id": "intent",
   "letter": "I",
   "tfd": null,
-  "definitions": []
+  "definitions": [
+   {
+    "text": "Intent generally refers to the mental objective behind an action. In a legal context, intent is central to determining responsibility and is often established through circumstantial evidence such as a defendant’s actions or knowledge.",
+    "kind": "wex",
+    "where": "Wex, Legal Information Institute, Cornell Law School",
+    "date": "Reviewed Aug 2025",
+    "url": "https://www.law.cornell.edu/wex/intent",
+    "license": {
+     "name": "CC BY-NC-SA 2.5",
+     "url": "https://creativecommons.org/licenses/by-nc-sa/2.5/"
+    }
+   }
+  ]
  },
  {
   "term": "Interest",
   "id": "interest",
   "letter": "I",
   "tfd": null,
-  "definitions": []
+  "definitions": [
+   {
+    "text": "Interest is a payment associated with borrowing or lending money. Generally, one party will lend another party a sum of money, called a loan. The receiving party is expected to repay that initial sum, (called the principal amount) as well as an additional sum. This additional sum is the interest. Generally, the amount of interest a person must pay is determined by an interest rate, which is a percentage of the principal amount. As stated by the U.S. Securities and Exchange Commission, interest rates may be fixed, which means the rate is set and does not change.",
+    "kind": "wex",
+    "where": "Wex, Legal Information Institute, Cornell Law School",
+    "date": "Reviewed Jun 2023",
+    "url": "https://www.law.cornell.edu/wex/interest",
+    "license": {
+     "name": "CC BY-NC-SA 2.5",
+     "url": "https://creativecommons.org/licenses/by-nc-sa/2.5/"
+    }
+   }
+  ]
  },
  {
   "term": "Joinder",
@@ -2308,7 +2872,19 @@
   "id": "judicial",
   "letter": "J",
   "tfd": null,
-  "definitions": []
+  "definitions": [
+   {
+    "text": "“Judicial” is a descriptive term used to indicate that an action refers, relates, was made by or pertains to a judge or court. For example:",
+    "kind": "wex",
+    "where": "Wex, Legal Information Institute, Cornell Law School",
+    "date": "Reviewed Mar 2025",
+    "url": "https://www.law.cornell.edu/wex/judicial",
+    "license": {
+     "name": "CC BY-NC-SA 2.5",
+     "url": "https://creativecommons.org/licenses/by-nc-sa/2.5/"
+    }
+   }
+  ]
  },
  {
   "term": "Judiciary",
@@ -2374,7 +2950,19 @@
   "id": "jurisprudence",
   "letter": "J",
   "tfd": null,
-  "definitions": []
+  "definitions": [
+   {
+    "text": "The word jurisprudence derives from the Latin term juris prudentia, which means \"the study, knowledge, or science of law.\" In the United States, jurisprudence commonly means the philosophy of law. Legal philosophy has many aspects, but four of them are the most common: Apart from different types of jurisprudence, different schools of jurisprudence exist. Formalism, or conceptualism, treats law like math or science. Formalists believe that a judge identifies the relevant legal principles, applies them to the facts of a case, and logically deduces a rule that will govern the outcome of the dispute.",
+    "kind": "wex",
+    "where": "Wex, Legal Information Institute, Cornell Law School",
+    "date": "Reviewed Jun 2023",
+    "url": "https://www.law.cornell.edu/wex/jurisprudence",
+    "license": {
+     "name": "CC BY-NC-SA 2.5",
+     "url": "https://creativecommons.org/licenses/by-nc-sa/2.5/"
+    }
+   }
+  ]
  },
  {
   "term": "Justice",
@@ -2879,14 +3467,38 @@
   "id": "legislation",
   "letter": "L",
   "tfd": null,
-  "definitions": []
+  "definitions": [
+   {
+    "text": "Legislation refers to the preparation, drafting, and enactment of laws by a legislative body through its formal lawmaking process. The process includes evaluating, amending, and voting on proposed bills, with attention to the language used to express the policy objectives of the proposal. An idea becomes legislative business once it is written as a bill. A bill is a draft version of a proposed law, and once enacted it becomes an act or statute.",
+    "kind": "wex",
+    "where": "Wex, Legal Information Institute, Cornell Law School",
+    "date": "Reviewed Sep 2025",
+    "url": "https://www.law.cornell.edu/wex/legislation",
+    "license": {
+     "name": "CC BY-NC-SA 2.5",
+     "url": "https://creativecommons.org/licenses/by-nc-sa/2.5/"
+    }
+   }
+  ]
  },
  {
   "term": "Levy",
   "id": "levy",
   "letter": "L",
   "tfd": null,
-  "definitions": []
+  "definitions": [
+   {
+    "text": "A levy may be a fine or tax imposed by a government authority. In this case, levy can also be used as a verb, as in “to levy taxes” which means to impose a tax.",
+    "kind": "wex",
+    "where": "Wex, Legal Information Institute, Cornell Law School",
+    "date": "Reviewed Jun 2023",
+    "url": "https://www.law.cornell.edu/wex/levy",
+    "license": {
+     "name": "CC BY-NC-SA 2.5",
+     "url": "https://creativecommons.org/licenses/by-nc-sa/2.5/"
+    }
+   }
+  ]
  },
  {
   "term": "Liability",
@@ -2923,7 +3535,19 @@
   "id": "libel",
   "letter": "L",
   "tfd": null,
-  "definitions": []
+  "definitions": [
+   {
+    "text": "Libel is a method of defamation expressed by print, writing, pictures, signs, effigies, or any communication embodied in physical form that is injurious to a person's reputation; exposes a person to public hatred, contempt or ridicule; or injures a person in their business or profession.",
+    "kind": "wex",
+    "where": "Wex, Legal Information Institute, Cornell Law School",
+    "date": "Reviewed Jun 2023",
+    "url": "https://www.law.cornell.edu/wex/libel",
+    "license": {
+     "name": "CC BY-NC-SA 2.5",
+     "url": "https://creativecommons.org/licenses/by-nc-sa/2.5/"
+    }
+   }
+  ]
  },
  {
   "term": "Liberty",
@@ -3130,7 +3754,19 @@
   "id": "malice",
   "letter": "M",
   "tfd": null,
-  "definitions": []
+  "definitions": [
+   {
+    "text": "In criminal law, malice indicates the intention, without justification or excuse, to commit an act that is unlawful. Evidence of malice is a prerequisite in some jurisdictions to prove first-degree murder. Malice is also relevant in criminal law for a charge of Implied Malice Murder, also known as Depraved Heart Murder, where a defendant may be found guilty of murder even though they did not possess an intent to kill another, so long as the defendant recognized that their actions created a substantial and unjustified risk of death but engaged in those actions nonetheless (see malice aforethought). Such malice is also characterized as that which displays “extreme indifference to human life.”",
+    "kind": "wex",
+    "where": "Wex, Legal Information Institute, Cornell Law School",
+    "date": "Reviewed Jun 2023",
+    "url": "https://www.law.cornell.edu/wex/malice",
+    "license": {
+     "name": "CC BY-NC-SA 2.5",
+     "url": "https://creativecommons.org/licenses/by-nc-sa/2.5/"
+    }
+   }
+  ]
  },
  {
   "term": "Man",
@@ -3159,7 +3795,19 @@
   "id": "mandate",
   "letter": "M",
   "tfd": null,
-  "definitions": []
+  "definitions": [
+   {
+    "text": "A mandate is an official order.",
+    "kind": "wex",
+    "where": "Wex, Legal Information Institute, Cornell Law School",
+    "date": "Reviewed Jul 2023",
+    "url": "https://www.law.cornell.edu/wex/mandate",
+    "license": {
+     "name": "CC BY-NC-SA 2.5",
+     "url": "https://creativecommons.org/licenses/by-nc-sa/2.5/"
+    }
+   }
+  ]
  },
  {
   "term": "Maritime",
@@ -3225,7 +3873,19 @@
   "id": "master",
   "letter": "M",
   "tfd": null,
-  "definitions": []
+  "definitions": [
+   {
+    "text": "A master is an antiquated term which referred to an employer and has since been supplanted by the latter term. A master is also a party in a relationship between a master and servant, which is now primarily referred to as the employment relationship. This relationship can exist, for example, between an employer and an employee or an employer and an independent contractor.",
+    "kind": "wex",
+    "where": "Wex, Legal Information Institute, Cornell Law School",
+    "date": "Reviewed Jun 2020",
+    "url": "https://www.law.cornell.edu/wex/master",
+    "license": {
+     "name": "CC BY-NC-SA 2.5",
+     "url": "https://creativecommons.org/licenses/by-nc-sa/2.5/"
+    }
+   }
+  ]
  },
  {
   "term": "Maxim",
@@ -3657,14 +4317,38 @@
   "id": "oath",
   "letter": "O",
   "tfd": null,
-  "definitions": []
+  "definitions": [
+   {
+    "text": "An oath is a public pledge that a person will perform some action or duty, generally with the promise of doing so truthfully. An oath can also be used as a way of promising oneself to support a cause or an entity. Oaths are often done in the name of a deity–like swearing “under God”–though this is not always the case.",
+    "kind": "wex",
+    "where": "Wex, Legal Information Institute, Cornell Law School",
+    "date": "Reviewed Jul 2020",
+    "url": "https://www.law.cornell.edu/wex/oath",
+    "license": {
+     "name": "CC BY-NC-SA 2.5",
+     "url": "https://creativecommons.org/licenses/by-nc-sa/2.5/"
+    }
+   }
+  ]
  },
  {
   "term": "Obligation",
   "id": "obligation",
   "letter": "O",
   "tfd": null,
-  "definitions": []
+  "definitions": [
+   {
+    "text": "An obligation is a duty to do or not to do something. In a legal context, an obligation is a civil law concept. An obligation can be created voluntarily, such as one arising from a contract, quasi-contract, or unilateral promise. An obligation can also be created involuntarily, such as an obligation arising from torts or a statute.",
+    "kind": "wex",
+    "where": "Wex, Legal Information Institute, Cornell Law School",
+    "date": "Reviewed Aug 2026",
+    "url": "https://www.law.cornell.edu/wex/obligation",
+    "license": {
+     "name": "CC BY-NC-SA 2.5",
+     "url": "https://creativecommons.org/licenses/by-nc-sa/2.5/"
+    }
+   }
+  ]
  },
  {
   "term": "Off Ship",
@@ -3693,7 +4377,19 @@
   "id": "offer",
   "letter": "O",
   "tfd": null,
-  "definitions": []
+  "definitions": [
+   {
+    "text": "Offer is part of contract negotiations where a party agrees to do or not do something in exchange for consideration. An offer must be stated and delivered in a way that would lead a reasonable person to expect a binding contract to arise from its acceptance. An offer gives the offeree the ability to accept and form an enforceable contract.",
+    "kind": "wex",
+    "where": "Wex, Legal Information Institute, Cornell Law School",
+    "date": "Reviewed Aug 2023",
+    "url": "https://www.law.cornell.edu/wex/offer",
+    "license": {
+     "name": "CC BY-NC-SA 2.5",
+     "url": "https://creativecommons.org/licenses/by-nc-sa/2.5/"
+    }
+   }
+  ]
  },
  {
   "term": "Officer",
@@ -3715,7 +4411,19 @@
   "id": "official",
   "letter": "O",
   "tfd": null,
-  "definitions": []
+  "definitions": [
+   {
+    "text": "An act, document, product, process or anything else sanctioned with legal efficacy through authorization by a qualified officer. A public official is an individual elected or appointed to carry out a subset of the powers of the government. One salient area where the lines around what is an“official act\" is in anti-bribery laws. Federal Anti-Bribery Law defines “official” as “any decision or action on any question, matter, cause, suit, proceeding or controversy, which may at any time be pending, or which may by law be brought before any public official, in such official’s official capacity, or in such official’s place of trust or profit.” For federal purposes, 18 U.S.C.",
+    "kind": "wex",
+    "where": "Wex, Legal Information Institute, Cornell Law School",
+    "date": "Reviewed Sep 2020",
+    "url": "https://www.law.cornell.edu/wex/official",
+    "license": {
+     "name": "CC BY-NC-SA 2.5",
+     "url": "https://creativecommons.org/licenses/by-nc-sa/2.5/"
+    }
+   }
+  ]
  },
  {
   "term": "Official Language",
@@ -3737,7 +4445,19 @@
   "id": "omission",
   "letter": "O",
   "tfd": null,
-  "definitions": []
+  "definitions": [
+   {
+    "text": "Omission is the failure to act or to disclose information when there is a responsibility to do so. See Brown v. Standard Casket Mfg. Co., 234 Ala. 512, 175 So. 358 (1937).",
+    "kind": "wex",
+    "where": "Wex, Legal Information Institute, Cornell Law School",
+    "date": "Reviewed Jan 2026",
+    "url": "https://www.law.cornell.edu/wex/omission",
+    "license": {
+     "name": "CC BY-NC-SA 2.5",
+     "url": "https://creativecommons.org/licenses/by-nc-sa/2.5/"
+    }
+   }
+  ]
  },
  {
   "term": "One People’s Public Fraud",
@@ -3848,14 +4568,38 @@
   "id": "owner",
   "letter": "O",
   "tfd": null,
-  "definitions": []
+  "definitions": [
+   {
+    "text": "An owner is an individual who has the right to use, possess, and transfer something. An individual can be an owner of real property, personal property, or intellectual property. Proof of ownership is often vested in a title.",
+    "kind": "wex",
+    "where": "Wex, Legal Information Institute, Cornell Law School",
+    "date": "Reviewed Aug 2020",
+    "url": "https://www.law.cornell.edu/wex/owner",
+    "license": {
+     "name": "CC BY-NC-SA 2.5",
+     "url": "https://creativecommons.org/licenses/by-nc-sa/2.5/"
+    }
+   }
+  ]
  },
  {
   "term": "Ownership",
   "id": "ownership",
   "letter": "O",
   "tfd": null,
-  "definitions": []
+  "definitions": [
+   {
+    "text": "Ownership is the legal right to use, possess, and give away a thing. Ownership can be tangible such as personal property and land, or it can be of intangible things such as intellectual property rights.",
+    "kind": "wex",
+    "where": "Wex, Legal Information Institute, Cornell Law School",
+    "date": "Reviewed Jul 2021",
+    "url": "https://www.law.cornell.edu/wex/ownership",
+    "license": {
+     "name": "CC BY-NC-SA 2.5",
+     "url": "https://creativecommons.org/licenses/by-nc-sa/2.5/"
+    }
+   }
+  ]
  },
  {
   "term": "Parliament",
@@ -4024,7 +4768,19 @@
   "id": "policy",
   "letter": "P",
   "tfd": null,
-  "definitions": []
+  "definitions": [
+   {
+    "text": "A policy is a guiding principle that leads a government or agency to make laws or to govern effectively. From a narrow angle, policy also refers to the rules and regulations made by an administrative department. Administrative regulations or administrative laws provide direct instruction for carrying out policy and provide rules for how a body is governed. In the United States, administrative regulations are one of the sources of law but the policy is not. However, in some countries, like China or Japan, a policy could be one of the sources of law.",
+    "kind": "wex",
+    "where": "Wex, Legal Information Institute, Cornell Law School",
+    "date": "Reviewed May 2022",
+    "url": "https://www.law.cornell.edu/wex/policy",
+    "license": {
+     "name": "CC BY-NC-SA 2.5",
+     "url": "https://creativecommons.org/licenses/by-nc-sa/2.5/"
+    }
+   }
+  ]
  },
  {
   "term": "Post",
@@ -4091,14 +4847,38 @@
   "id": "prejudice",
   "letter": "P",
   "tfd": null,
-  "definitions": []
+  "definitions": [
+   {
+    "text": "In civil procedure, when a court dismisses a case “with prejudice,” it means that the court intends for that dismissal to be final in all courts, and that res judicata should bar that claim from being reasserted in another court. A dismissal “without prejudice” means the plaintiff is free to refile the claim in a different court.",
+    "kind": "wex",
+    "where": "Wex, Legal Information Institute, Cornell Law School",
+    "date": "Reviewed Jul 2025",
+    "url": "https://www.law.cornell.edu/wex/prejudice",
+    "license": {
+     "name": "CC BY-NC-SA 2.5",
+     "url": "https://creativecommons.org/licenses/by-nc-sa/2.5/"
+    }
+   }
+  ]
  },
  {
   "term": "Presumption",
   "id": "presumption",
   "letter": "P",
   "tfd": null,
-  "definitions": []
+  "definitions": [
+   {
+    "text": "A presumption is an inference the law requires when certain facts are present. Most presumptions are rebuttable, meaning they can be overturned if the opposing evidence is strong enough. Others are conclusive and must be accepted as true, even if contrary evidence exists.",
+    "kind": "wex",
+    "where": "Wex, Legal Information Institute, Cornell Law School",
+    "date": "Reviewed Jul 2025",
+    "url": "https://www.law.cornell.edu/wex/presumption",
+    "license": {
+     "name": "CC BY-NC-SA 2.5",
+     "url": "https://creativecommons.org/licenses/by-nc-sa/2.5/"
+    }
+   }
+  ]
  },
  {
   "term": "Private Citizen",
@@ -4157,14 +4937,38 @@
   "id": "privilege",
   "letter": "P",
   "tfd": null,
-  "definitions": []
+  "definitions": [
+   {
+    "text": "In the law of evidence, privilege is a rule that protects certain communications from disclosure in legal proceedings. When a communication is privileged, it is generally exempt from discovery and cannot be introduced as testimony, even if it is relevant to the dispute. Evidentiary privileges are based on public policy considerations. The law recognizes that some relationships and constitutional interests function best when participants can communicate freely, without fear that their statements will later be compelled in court.",
+    "kind": "wex",
+    "where": "Wex, Legal Information Institute, Cornell Law School",
+    "date": "Reviewed Feb 2026",
+    "url": "https://www.law.cornell.edu/wex/privilege",
+    "license": {
+     "name": "CC BY-NC-SA 2.5",
+     "url": "https://creativecommons.org/licenses/by-nc-sa/2.5/"
+    }
+   }
+  ]
  },
  {
   "term": "Pro Bono",
   "id": "pro-bono",
   "letter": "P",
   "tfd": null,
-  "definitions": []
+  "definitions": [
+   {
+    "text": "Pro bono is derived from the Latin term pro bon publico, which means for the public good. Pro Bono refers to legal service provided voluntarily by law firms, law schools and attorneys without monetary compensation. Rule 6.1 of the ABA’s Model Rules for Professional Conduct states that lawyers have a responsibility to voluntarily work at least 50 hours of pro bono, or uncompensated, legal services each year. Pro bono work allows attorneys to provide access to the legal system to low-income people and to serve public interest and/or social justice.",
+    "kind": "wex",
+    "where": "Wex, Legal Information Institute, Cornell Law School",
+    "date": "Reviewed May 2025",
+    "url": "https://www.law.cornell.edu/wex/pro_bono",
+    "license": {
+     "name": "CC BY-NC-SA 2.5",
+     "url": "https://creativecommons.org/licenses/by-nc-sa/2.5/"
+    }
+   }
+  ]
  },
  {
   "term": "Pro Se",
@@ -4348,7 +5152,19 @@
   "id": "proxy",
   "letter": "P",
   "tfd": null,
-  "definitions": []
+  "definitions": [
+   {
+    "text": "A proxy is a person who represents a member in the shareholders’ meeting of a company, with a legal document that could prove their authority. According to the Delaware General Corporation Law (DGCL) Title 8, Chapter 1, Section 211, the corporation shall implement reasonable measures to make sure the proxy holder has the same rights as the shareholder, to participate in the meeting, to vote, and to hear proceedings of the meeting; no matter the meeting is held remotely or in person. Each proxy also has the same rights as a stockholder to vote or to express consent or dissent in writing without a meeting, according to DGCL Title 8, Chapter 1, Section 212 (b).",
+    "kind": "wex",
+    "where": "Wex, Legal Information Institute, Cornell Law School",
+    "date": "Reviewed Mar 2022",
+    "url": "https://www.law.cornell.edu/wex/proxy",
+    "license": {
+     "name": "CC BY-NC-SA 2.5",
+     "url": "https://creativecommons.org/licenses/by-nc-sa/2.5/"
+    }
+   }
+  ]
  },
  {
   "term": "Public",
@@ -4370,7 +5186,19 @@
   "id": "public-benefit-corporation",
   "letter": "P",
   "tfd": null,
-  "definitions": []
+  "definitions": [
+   {
+    "text": "A public benefit corporation (PBC) is a for-profit corporation created to operate in a responsible and sustainable manner while also pursuing one or more specified public benefits, in addition to generating profit for shareholders. Unlike traditional C corporations, which are primarily obligated to maximize shareholder value, PBCs are permitted, and required, to balance three considerations: Many states, including Delaware, authorize the formation of PBCs and require periodic public benefit reports assessing the corporation’s progress towards its stated public purpose.",
+    "kind": "wex",
+    "where": "Wex, Legal Information Institute, Cornell Law School",
+    "date": "Reviewed Dec 2025",
+    "url": "https://www.law.cornell.edu/wex/public_benefit_corporation",
+    "license": {
+     "name": "CC BY-NC-SA 2.5",
+     "url": "https://creativecommons.org/licenses/by-nc-sa/2.5/"
+    }
+   }
+  ]
  },
  {
   "term": "Public Debt",
@@ -4391,14 +5219,38 @@
   "id": "public-policy",
   "letter": "P",
   "tfd": null,
-  "definitions": []
+  "definitions": [
+   {
+    "text": "In general, public policy refers to the concepts that underlie social rules, which are frequently unwritten and implemented through programs as a course of action established and/or legislated, generally by a government or non-profit organization, in response to social challenges.",
+    "kind": "wex",
+    "where": "Wex, Legal Information Institute, Cornell Law School",
+    "date": "Reviewed May 2022",
+    "url": "https://www.law.cornell.edu/wex/public_policy",
+    "license": {
+     "name": "CC BY-NC-SA 2.5",
+     "url": "https://creativecommons.org/licenses/by-nc-sa/2.5/"
+    }
+   }
+  ]
  },
  {
   "term": "Public Record",
   "id": "public-record",
   "letter": "P",
   "tfd": null,
-  "definitions": []
+  "definitions": [
+   {
+    "text": "Public records contain information, minutes, files, accounts, or any other documents that a governmental body is required to maintain, and must be accessible to the public. The Freedom of Information Act (FOIA) was adopted in the United States in 1967 with the purpose of keeping citizens in the know about their government, and the public record is the result of the FOIA. Each state in the United States handles public records with its own set of laws and regulations. Public records aren't always free, collecting a fee for obtaining a public record is standard practice that varies by state.",
+    "kind": "wex",
+    "where": "Wex, Legal Information Institute, Cornell Law School",
+    "date": "Reviewed Apr 2022",
+    "url": "https://www.law.cornell.edu/wex/public_record",
+    "license": {
+     "name": "CC BY-NC-SA 2.5",
+     "url": "https://creativecommons.org/licenses/by-nc-sa/2.5/"
+    }
+   }
+  ]
  },
  {
   "term": "Public Servant",
@@ -4479,7 +5331,19 @@
   "id": "receipt",
   "letter": "R",
   "tfd": null,
-  "definitions": []
+  "definitions": [
+   {
+    "text": "Receipt has two legal definitions: (1) A legal document evidencing a buyer has purchased and taken possession of the goods. A receipt can range from a small paper itemization of goods purchased in a retail setting to a document that a person storing an item has to prove another’s ownership (i.e. a warehouse receipt). (2) The act of receiving something. To illustrate, New York Tax Law § 1147 states that “[t]he mailing of such notice [as is required to be issued by the government under New York tax laws] shall be presumptive evidence of the receipt of the same by the person to whom addressed.”",
+    "kind": "wex",
+    "where": "Wex, Legal Information Institute, Cornell Law School",
+    "date": "Reviewed Dec 2020",
+    "url": "https://www.law.cornell.edu/wex/receipt",
+    "license": {
+     "name": "CC BY-NC-SA 2.5",
+     "url": "https://creativecommons.org/licenses/by-nc-sa/2.5/"
+    }
+   }
+  ]
  },
  {
   "term": "Received",
@@ -4501,21 +5365,57 @@
   "id": "receiver",
   "letter": "R",
   "tfd": null,
-  "definitions": []
+  "definitions": [
+   {
+    "text": "The term receiver has two distinct legal meanings depending on context: In civil law, a receiver is a neutral person, often a professional fiduciary or trustee, appointed by a court to take custody of, manage, or preserve property that is the subject of litigation. The receiver acts as an officer of the court, not as an agent of any party, and exercises authority under the court’s supervision to prevent waste, fraud, or loss of the property in dispute. As stated by the U.S. District Court for the Middle District of North Carolina in SEC v. Elfindepan, S.A., 169 F. Supp. 2d 420, 426 (M.D.N.C.",
+    "kind": "wex",
+    "where": "Wex, Legal Information Institute, Cornell Law School",
+    "date": "Reviewed Nov 2025",
+    "url": "https://www.law.cornell.edu/wex/receiver",
+    "license": {
+     "name": "CC BY-NC-SA 2.5",
+     "url": "https://creativecommons.org/licenses/by-nc-sa/2.5/"
+    }
+   }
+  ]
  },
  {
   "term": "Receivership",
   "id": "receivership",
   "letter": "R",
   "tfd": null,
-  "definitions": []
+  "definitions": [
+   {
+    "text": "Receivership is a court-ordered remedy in which a neutral third party, called a receiver, is appointed to take possession of, manage, or preserve property that is the subject of ongoing litigation. The purpose of a receivership is to protect the property from neglect, waste, mismanagement, or dissipation while the legal dispute is pending or until final resolution. For example, in a lawsuit involving ownership or control of a shopping center, a court may appoint a receiver to collect rents, maintain operations, and safeguard the property until judgment is entered or a settlement is reached.",
+    "kind": "wex",
+    "where": "Wex, Legal Information Institute, Cornell Law School",
+    "date": "Reviewed Nov 2025",
+    "url": "https://www.law.cornell.edu/wex/receivership",
+    "license": {
+     "name": "CC BY-NC-SA 2.5",
+     "url": "https://creativecommons.org/licenses/by-nc-sa/2.5/"
+    }
+   }
+  ]
  },
  {
   "term": "Record",
   "id": "record",
   "letter": "R",
   "tfd": null,
-  "definitions": []
+  "definitions": [
+   {
+    "text": "Record has multiple legal definitions: 1) To file a copy of a real estate instrument which affects a parcel of real property’s title, such as a deed, with the land records office (often called the county recorder, registry of deeds, or something similar) for the county in which the real property is located. For reference, California Civil Code §§ 27279–27297.6 lays out the process for recording deeds and real estate documents.",
+    "kind": "wex",
+    "where": "Wex, Legal Information Institute, Cornell Law School",
+    "date": "Reviewed Dec 2020",
+    "url": "https://www.law.cornell.edu/wex/record",
+    "license": {
+     "name": "CC BY-NC-SA 2.5",
+     "url": "https://creativecommons.org/licenses/by-nc-sa/2.5/"
+    }
+   }
+  ]
  },
  {
   "term": "Red Ink",
@@ -4544,7 +5444,19 @@
   "id": "redeem",
   "letter": "R",
   "tfd": null,
-  "definitions": []
+  "definitions": [
+   {
+    "text": "Redeem has multiple definitions:",
+    "kind": "wex",
+    "where": "Wex, Legal Information Institute, Cornell Law School",
+    "date": "Reviewed Dec 2020",
+    "url": "https://www.law.cornell.edu/wex/redeem",
+    "license": {
+     "name": "CC BY-NC-SA 2.5",
+     "url": "https://creativecommons.org/licenses/by-nc-sa/2.5/"
+    }
+   }
+  ]
  },
  {
   "term": "Refusal",
@@ -4587,14 +5499,38 @@
   "id": "regulation",
   "letter": "R",
   "tfd": null,
-  "definitions": []
+  "definitions": [
+   {
+    "text": "A regulation is a rule made and maintained by an authority, typically a governmental agency, to control or govern conduct within its jurisdiction.",
+    "kind": "wex",
+    "where": "Wex, Legal Information Institute, Cornell Law School",
+    "date": "Reviewed Jun 2024",
+    "url": "https://www.law.cornell.edu/wex/regulation",
+    "license": {
+     "name": "CC BY-NC-SA 2.5",
+     "url": "https://creativecommons.org/licenses/by-nc-sa/2.5/"
+    }
+   }
+  ]
  },
  {
   "term": "Remand",
   "id": "remand",
   "letter": "R",
   "tfd": null,
-  "definitions": []
+  "definitions": [
+   {
+    "text": "To remand something means to send it back, or to return. The usual contexts in which this word are encountered are in the reversal of a lower court, or regarding the custody of a prisoner.",
+    "kind": "wex",
+    "where": "Wex, Legal Information Institute, Cornell Law School",
+    "date": "Reviewed Jun 2024",
+    "url": "https://www.law.cornell.edu/wex/remand",
+    "license": {
+     "name": "CC BY-NC-SA 2.5",
+     "url": "https://creativecommons.org/licenses/by-nc-sa/2.5/"
+    }
+   }
+  ]
  },
  {
   "term": "Remedy",
@@ -4666,7 +5602,19 @@
   "id": "reservation",
   "letter": "R",
   "tfd": null,
-  "definitions": []
+  "definitions": [
+   {
+    "text": "1) A provision in a deed which creates a new right or interest for the grantor in the conveyed real property. For example, if a grantor is selling lots that have a private road traversing it, which the grantor wants to maintain access to, the deed might contain a reservation similar to the following: \"grantor reserves to himself an easement of access to lots.\"",
+    "kind": "wex",
+    "where": "Wex, Legal Information Institute, Cornell Law School",
+    "date": "Reviewed Apr 2025",
+    "url": "https://www.law.cornell.edu/wex/reservation",
+    "license": {
+     "name": "CC BY-NC-SA 2.5",
+     "url": "https://creativecommons.org/licenses/by-nc-sa/2.5/"
+    }
+   }
+  ]
  },
  {
   "term": "Reserve",
@@ -4709,7 +5657,19 @@
   "id": "right",
   "letter": "R",
   "tfd": null,
-  "definitions": []
+  "definitions": [
+   {
+    "text": "A right is a power or privilege held by individuals, groups, and entities, usually as the result of a constitution, statute, regulation, or judicial precedent. Legal rights are enforceable by legal institutions and can be invoked in courts of law.",
+    "kind": "wex",
+    "where": "Wex, Legal Information Institute, Cornell Law School",
+    "date": "Reviewed Jun 2024",
+    "url": "https://www.law.cornell.edu/wex/right",
+    "license": {
+     "name": "CC BY-NC-SA 2.5",
+     "url": "https://creativecommons.org/licenses/by-nc-sa/2.5/"
+    }
+   }
+  ]
  },
  {
   "term": "Rights",
@@ -4738,28 +5698,76 @@
   "id": "rule",
   "letter": "R",
   "tfd": null,
-  "definitions": []
+  "definitions": [
+   {
+    "text": "A rule is a standard, principle, or directive used to govern conduct, procedure, or decision-making. Its source and legal effect depend on context. A rule may come from a constitution, statute, court decision, court rule, administrative agency, contract, or institution, and the term does not on its own indicate whether a rule is legally binding.",
+    "kind": "wex",
+    "where": "Wex, Legal Information Institute, Cornell Law School",
+    "date": "Reviewed Aug 2026",
+    "url": "https://www.law.cornell.edu/wex/rule",
+    "license": {
+     "name": "CC BY-NC-SA 2.5",
+     "url": "https://creativecommons.org/licenses/by-nc-sa/2.5/"
+    }
+   }
+  ]
  },
  {
   "term": "Ruling",
   "id": "ruling",
   "letter": "R",
   "tfd": null,
-  "definitions": []
+  "definitions": [
+   {
+    "text": "A ruling is a court’s decision on a matter presented in a lawsuit. A ruling could refer to a judgment, which can be final or non-final. A ruling could also refer to a court’s decision on a party’s motion or application for a writ.",
+    "kind": "wex",
+    "where": "Wex, Legal Information Institute, Cornell Law School",
+    "date": "Reviewed Apr 2021",
+    "url": "https://www.law.cornell.edu/wex/ruling",
+    "license": {
+     "name": "CC BY-NC-SA 2.5",
+     "url": "https://creativecommons.org/licenses/by-nc-sa/2.5/"
+    }
+   }
+  ]
  },
  {
   "term": "Salvage",
   "id": "salvage",
   "letter": "S",
   "tfd": null,
-  "definitions": []
+  "definitions": [
+   {
+    "text": "Salvage means the act of rescuing or saving endangered property or goods. For example, the act of saving a building from loss or unnecessary damage due to a fire. Salvage may also be used to refer to a salvage award, a monetary compensation given to a person who helps to save the lives of the crew, the cargo, or the ship from fire, capture, or otherwise, without having the legal duty to do it.",
+    "kind": "wex",
+    "where": "Wex, Legal Information Institute, Cornell Law School",
+    "date": "Reviewed Jul 2021",
+    "url": "https://www.law.cornell.edu/wex/salvage",
+    "license": {
+     "name": "CC BY-NC-SA 2.5",
+     "url": "https://creativecommons.org/licenses/by-nc-sa/2.5/"
+    }
+   }
+  ]
  },
  {
   "term": "Seal",
   "id": "seal",
   "letter": "S",
   "tfd": null,
-  "definitions": []
+  "definitions": [
+   {
+    "text": "A seal is a device used to create an impression or imprint on paper utilizing wax or a stamp. The seal is used to execute a legal document or guarantee the document's authenticity.",
+    "kind": "wex",
+    "where": "Wex, Legal Information Institute, Cornell Law School",
+    "date": "Reviewed Jun 2022",
+    "url": "https://www.law.cornell.edu/wex/seal",
+    "license": {
+     "name": "CC BY-NC-SA 2.5",
+     "url": "https://creativecommons.org/licenses/by-nc-sa/2.5/"
+    }
+   }
+  ]
  },
  {
   "term": "Second Class Citizen",
@@ -4780,7 +5788,19 @@
   "id": "securities",
   "letter": "S",
   "tfd": null,
-  "definitions": []
+  "definitions": [
+   {
+    "text": "Securities law addresses the unique informational needs of investors. Securities are not inherently valuable; their worth derives from the rights they provide in the assets, earnings, or governance of the issuer. The value of securities depends on the issuer’s financial condition, products, markets, management, and regulatory environment. Securities laws exist to ensure that investors receive accurate and sufficient information to make informed decisions.",
+    "kind": "wex",
+    "where": "Wex, Legal Information Institute, Cornell Law School",
+    "date": "Reviewed Aug 2025",
+    "url": "https://www.law.cornell.edu/wex/securities",
+    "license": {
+     "name": "CC BY-NC-SA 2.5",
+     "url": "https://creativecommons.org/licenses/by-nc-sa/2.5/"
+    }
+   }
+  ]
  },
  {
   "term": "Securitization",
@@ -4853,14 +5873,38 @@
   "id": "servant",
   "letter": "S",
   "tfd": null,
-  "definitions": []
+  "definitions": [
+   {
+    "text": "Servant is an antiquated term used to refer to an employee—and not an independent contractor. Employees are distinct from independent contractors in that employees do not retain control over how they do their work. Under the “master-servant” rule, an employer (master) is vicariously liable for the negligence of an employee (servant) when the employee is acting in an employment capacity under the doctrine of respondeat superior. Under this doctrine, the employer need not be aware of the employee’s activity in order to be held liable for their actions.",
+    "kind": "wex",
+    "where": "Wex, Legal Information Institute, Cornell Law School",
+    "date": "Reviewed Aug 2021",
+    "url": "https://www.law.cornell.edu/wex/servant",
+    "license": {
+     "name": "CC BY-NC-SA 2.5",
+     "url": "https://creativecommons.org/licenses/by-nc-sa/2.5/"
+    }
+   }
+  ]
  },
  {
   "term": "Service",
   "id": "service",
   "letter": "S",
   "tfd": null,
-  "definitions": []
+  "definitions": [
+   {
+    "text": "Service is the formal delivery of litigation documents to give the opposing litigant notice of the suit against them. The concept requiring proper service before individuals may be brought to court is also often referred to as service of process. In addition to federal statutes and rules, the Fifth Amendment of the Constitution requires procedural due process protections in the form of adequate service.",
+    "kind": "wex",
+    "where": "Wex, Legal Information Institute, Cornell Law School",
+    "date": "Reviewed Apr 2025",
+    "url": "https://www.law.cornell.edu/wex/service",
+    "license": {
+     "name": "CC BY-NC-SA 2.5",
+     "url": "https://creativecommons.org/licenses/by-nc-sa/2.5/"
+    }
+   }
+  ]
  },
  {
   "term": "Shareholder",
@@ -4961,7 +6005,19 @@
   "id": "solicitor",
   "letter": "S",
   "tfd": null,
-  "definitions": []
+  "definitions": [
+   {
+    "text": "In the United Kingdom and certain other common law countries, a solicitor is a lawyer who provides legal advice and prepares legal documents, but generally does not engage in oral argument in higher level courts. Alternatively, in the U.K., barristers specialize in courtroom advocacy and are often contracted by solicitors when their expertise becomes necessary in a particular case.",
+    "kind": "wex",
+    "where": "Wex, Legal Information Institute, Cornell Law School",
+    "date": "Reviewed Aug 2021",
+    "url": "https://www.law.cornell.edu/wex/solicitor",
+    "license": {
+     "name": "CC BY-NC-SA 2.5",
+     "url": "https://creativecommons.org/licenses/by-nc-sa/2.5/"
+    }
+   }
+  ]
  },
  {
   "term": "Soul",
@@ -5012,7 +6068,19 @@
   "id": "sovereignty",
   "letter": "S",
   "tfd": null,
-  "definitions": []
+  "definitions": [
+   {
+    "text": "Sovereignty is a political concept that refers to a dominant power or supreme authority. In a monarchy, supreme power resides in the sovereign, such as a king or queen. In modern democracies, sovereign power rests with the people and is exercised through representative bodies such as Congress or Parliament. The sovereign is the entity that exercises power without limitation.",
+    "kind": "wex",
+    "where": "Wex, Legal Information Institute, Cornell Law School",
+    "date": "Reviewed Jun 2024",
+    "url": "https://www.law.cornell.edu/wex/sovereignty",
+    "license": {
+     "name": "CC BY-NC-SA 2.5",
+     "url": "https://creativecommons.org/licenses/by-nc-sa/2.5/"
+    }
+   }
+  ]
  },
  {
   "term": "Special Appearance",
@@ -5034,7 +6102,19 @@
   "id": "standing",
   "letter": "S",
   "tfd": null,
-  "definitions": []
+  "definitions": [
+   {
+    "text": "Standing, or locus standi, is the capacity of a party to bring a lawsuit in court. To have standing, a party must demonstrate a sufficient connection to and harm from the law or action being challenged.",
+    "kind": "wex",
+    "where": "Wex, Legal Information Institute, Cornell Law School",
+    "date": "Reviewed Jun 2024",
+    "url": "https://www.law.cornell.edu/wex/standing",
+    "license": {
+     "name": "CC BY-NC-SA 2.5",
+     "url": "https://creativecommons.org/licenses/by-nc-sa/2.5/"
+    }
+   }
+  ]
  },
  {
   "term": "State",
@@ -5085,7 +6165,19 @@
   "id": "status",
   "letter": "S",
   "tfd": null,
-  "definitions": []
+  "definitions": [
+   {
+    "text": "Status means a person’s legal condition, whether personal or proprietary.",
+    "kind": "wex",
+    "where": "Wex, Legal Information Institute, Cornell Law School",
+    "date": "Reviewed Apr 2025",
+    "url": "https://www.law.cornell.edu/wex/status",
+    "license": {
+     "name": "CC BY-NC-SA 2.5",
+     "url": "https://creativecommons.org/licenses/by-nc-sa/2.5/"
+    }
+   }
+  ]
  },
  {
   "term": "Statute",
@@ -5225,7 +6317,19 @@
   "id": "surety-bond",
   "letter": "S",
   "tfd": null,
-  "definitions": []
+  "definitions": [
+   {
+    "text": "A surety bond is a three-party bond agreement involving the principal (the one who needs the bond), the obligee (the one who requires it), and the surety (the one who guarantees the principal's performance). It acts like a security deposit, ensuring that legal or contractual duties are fulfilled. If the principal fails to perform, the obligee is compensated. Surety bonds are common in fiduciary roles and in large or international transactions. For example, many jurisdictions require guardians to post a surety bond before formally taking responsibility for their wards. Similarly, a company making a large purchase from a foreign supplier might require the supplier to post a surety bond.",
+    "kind": "wex",
+    "where": "Wex, Legal Information Institute, Cornell Law School",
+    "date": "Reviewed Jun 2025",
+    "url": "https://www.law.cornell.edu/wex/surety_bond",
+    "license": {
+     "name": "CC BY-NC-SA 2.5",
+     "url": "https://creativecommons.org/licenses/by-nc-sa/2.5/"
+    }
+   }
+  ]
  },
  {
   "term": "Surname",
@@ -5291,7 +6395,19 @@
   "id": "tax",
   "letter": "T",
   "tfd": null,
-  "definitions": []
+  "definitions": [
+   {
+    "text": "Tax is any charge of money or property that is imposed by a government upon individuals or entities that are within the government's authority to collect. This term, however, generally does not include charges imposed in exchange for the provision of specific goods or services (e.g., bridge tolls or sanitation fees).",
+    "kind": "wex",
+    "where": "Wex, Legal Information Institute, Cornell Law School",
+    "date": "Reviewed Jun 2024",
+    "url": "https://www.law.cornell.edu/wex/tax",
+    "license": {
+     "name": "CC BY-NC-SA 2.5",
+     "url": "https://creativecommons.org/licenses/by-nc-sa/2.5/"
+    }
+   }
+  ]
  },
  {
   "term": "Taxpayer",
@@ -5519,14 +6635,38 @@
   "id": "trial",
   "letter": "T",
   "tfd": null,
-  "definitions": []
+  "definitions": [
+   {
+    "text": "A trial is a formal legal proceeding where legal claims are presented, evidence is examined, and witnesses are heard. It is overseen by a judge, jury, or other adjudicator who determines the guilt or innocence of a party in a criminal case or the outcome of a dispute in a civil case. Trials adhere to established legal procedures and rules of evidence, operating as an adversary proceeding in court.",
+    "kind": "wex",
+    "where": "Wex, Legal Information Institute, Cornell Law School",
+    "date": "Reviewed Jun 2024",
+    "url": "https://www.law.cornell.edu/wex/trial",
+    "license": {
+     "name": "CC BY-NC-SA 2.5",
+     "url": "https://creativecommons.org/licenses/by-nc-sa/2.5/"
+    }
+   }
+  ]
  },
  {
   "term": "Tribunal",
   "id": "tribunal",
   "letter": "T",
   "tfd": null,
-  "definitions": []
+  "definitions": [
+   {
+    "text": "A tribunal is an adjudicatory body or court of justice.",
+    "kind": "wex",
+    "where": "Wex, Legal Information Institute, Cornell Law School",
+    "date": "Reviewed Aug 2021",
+    "url": "https://www.law.cornell.edu/wex/tribunal",
+    "license": {
+     "name": "CC BY-NC-SA 2.5",
+     "url": "https://creativecommons.org/licenses/by-nc-sa/2.5/"
+    }
+   }
+  ]
  },
  {
   "term": "Trust",
@@ -5641,7 +6781,19 @@
   "id": "underwrite",
   "letter": "U",
   "tfd": null,
-  "definitions": []
+  "definitions": [
+   {
+    "text": "To underwrite is to assume financial risk in exchange for a fee, typically by agreeing to cover potential losses or provide funding in certain transactions. The term applies across a range of financial sectors and generally refers to the process of evaluating, pricing, and assuming risk with the expectation of earning a return. Broadly, underwriting involves a party (usually a financial institution) agreeing to bear specific financial risks, such as those associated with loans, insurance policies, or securities offerings. For example:",
+    "kind": "wex",
+    "where": "Wex, Legal Information Institute, Cornell Law School",
+    "date": "Reviewed Jun 2025",
+    "url": "https://www.law.cornell.edu/wex/underwrite",
+    "license": {
+     "name": "CC BY-NC-SA 2.5",
+     "url": "https://creativecommons.org/licenses/by-nc-sa/2.5/"
+    }
+   }
+  ]
  },
  {
   "term": "Uniform Commercial Code (UCC)",
@@ -5667,7 +6819,19 @@
   "id": "unlawful",
   "letter": "U",
   "tfd": null,
-  "definitions": []
+  "definitions": [
+   {
+    "text": "The term unlawful is a general description for conduct that is illegal or not authorized by law.",
+    "kind": "wex",
+    "where": "Wex, Legal Information Institute, Cornell Law School",
+    "date": "Reviewed Jun 2024",
+    "url": "https://www.law.cornell.edu/wex/unlawful",
+    "license": {
+     "name": "CC BY-NC-SA 2.5",
+     "url": "https://creativecommons.org/licenses/by-nc-sa/2.5/"
+    }
+   }
+  ]
  },
  {
   "term": "Unlawful Act",
@@ -5703,21 +6867,57 @@
   "id": "veto",
   "letter": "V",
   "tfd": null,
-  "definitions": []
+  "definitions": [
+   {
+    "text": "Veto is the power to reject or block a particular course of action chosen by another. For example, in business law a veto prohibits an official action done by a company or firm. Further, a business can grant stockholders/shareholders the right to veto board decisions, thus stopping those decisions from coming to fruition.",
+    "kind": "wex",
+    "where": "Wex, Legal Information Institute, Cornell Law School",
+    "date": "Reviewed Jun 2026",
+    "url": "https://www.law.cornell.edu/wex/veto",
+    "license": {
+     "name": "CC BY-NC-SA 2.5",
+     "url": "https://creativecommons.org/licenses/by-nc-sa/2.5/"
+    }
+   }
+  ]
  },
  {
   "term": "Void",
   "id": "void",
   "letter": "V",
   "tfd": null,
-  "definitions": []
+  "definitions": [
+   {
+    "text": "Void means having no legal effect from the start. Thus, a void contract is invalid from the start of its purported closing. Note: having no legal effect, it does not change the legal relationship between the parties involved.",
+    "kind": "wex",
+    "where": "Wex, Legal Information Institute, Cornell Law School",
+    "date": "Reviewed Jul 2024",
+    "url": "https://www.law.cornell.edu/wex/void",
+    "license": {
+     "name": "CC BY-NC-SA 2.5",
+     "url": "https://creativecommons.org/licenses/by-nc-sa/2.5/"
+    }
+   }
+  ]
  },
  {
   "term": "Waive",
   "id": "waive",
   "letter": "W",
   "tfd": null,
-  "definitions": []
+  "definitions": [
+   {
+    "text": "To waive is to voluntarily relinquish or give up a right, claim, or privilege. It can apply to a variety of legal situations, such as knowingly giving up a legal right like a speedy trial or a jury trial, forgoing certain rights in a settlement talk, or not enforcing a term of a contract. Waiving a right can remove real or potential liability for another party in the contract. This can be done either in written form or through some form of action. For example, if you waive a fee, you decide not to charge it, even though you have the right to do so.",
+    "kind": "wex",
+    "where": "Wex, Legal Information Institute, Cornell Law School",
+    "date": "Reviewed Dec 2024",
+    "url": "https://www.law.cornell.edu/wex/waive",
+    "license": {
+     "name": "CC BY-NC-SA 2.5",
+     "url": "https://creativecommons.org/licenses/by-nc-sa/2.5/"
+    }
+   }
+  ]
  },
  {
   "term": "War",
@@ -5739,7 +6939,19 @@
   "id": "ward",
   "letter": "W",
   "tfd": null,
-  "definitions": []
+  "definitions": [
+   {
+    "text": "In a legal context, a ward refers to a person who is under the protection, care, or guardianship of another individual, typically due to being a minor or legally incapacitated. Courts appoint guardians to oversee the well-being and decision-making of wards who are unable to care for themselves.",
+    "kind": "wex",
+    "where": "Wex, Legal Information Institute, Cornell Law School",
+    "date": "Reviewed Jul 2024",
+    "url": "https://www.law.cornell.edu/wex/ward",
+    "license": {
+     "name": "CC BY-NC-SA 2.5",
+     "url": "https://creativecommons.org/licenses/by-nc-sa/2.5/"
+    }
+   }
+  ]
  },
  {
   "term": "Warrant",
