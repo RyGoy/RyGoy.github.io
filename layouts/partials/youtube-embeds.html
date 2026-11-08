@@ -1,6 +1,7 @@
-{{- /* YouTube videos linked in a comment's message (partials/lpPosts.html), each shown in the comment as its thumbnail.
-     static/js/youtube-embed.js swaps a thumbnail for the YouTube player when it is clicked; without JavaScript the
-     thumbnail links to the video. Context: the message text. Each video is shown once, in the order linked. */ -}}
+{{- /* YouTube videos linked in a post or comment (partials/lpPosts.html): in its message, or as a post's link. Each is
+     shown under the message as its thumbnail. static/js/youtube-embed.js swaps a thumbnail for the YouTube player
+     when it is clicked; without JavaScript the thumbnail links to the video. Context: the message text and the link,
+     one after the other. Each video is shown once, in the order linked. */ -}}
 {{- $ids := slice -}}
 {{- range findRESubmatch `(?i)(?:youtube\.com/(?:\S*?[?&#/]v=|embed/|v/|shorts/)|youtu\.be/)([A-Za-z0-9_-]{11})` . -}}
   {{- $id := index . 1 -}}{{- if not (in $ids $id) }}{{ $ids = $ids | append $id }}{{ end -}}

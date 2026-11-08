@@ -1,4 +1,4 @@
-// YouTube videos in comments (layouts/partials/youtube-embeds.html): clicking a thumbnail replaces it with the
+// YouTube videos in posts and comments (layouts/partials/youtube-embeds.html): clicking a thumbnail replaces it with the
 // YouTube player, so a page with many linked videos loads none of them until one is played.
 document.addEventListener('click', (e) => {
   const link = e.target.closest?.('a.video-embed[data-video]');
