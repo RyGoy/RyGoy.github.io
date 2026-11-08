@@ -27,3 +27,5 @@ No raindrop ever wants to admit that it contributed to the flood. If you believe
 No one owes you anything. You are not entitled to the time and effort of strangers who are better than you.
 
 **NO COMMERCE EXPECTED OR IMPLIED**
+
+[![Creative Commons BY-NC-ND 3.0](/images/cc/by-nc-nd.svg)](https://creativecommons.org/licenses/by-nc-nd/3.0/) © ROGUESUPPORT INC, shared under a Creative Commons Attribution-NonCommercial-NoDerivs 3.0 Unported License
