@@ -1,0 +1,4 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><!-- Favicon: a brass Latin cross with a dark edge, readable on light and dark tabs -->
+  <defs><linearGradient id="brass" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e2c68c"/><stop offset="1" stop-color="#a8884f"/></linearGradient></defs>
+  <path d="M26 2H38V16H54V28H38V62H26V28H10V16H26Z" fill="url(#brass)" stroke="#1d170c" stroke-width="2.5" stroke-linejoin="miter"/>
+</svg>
