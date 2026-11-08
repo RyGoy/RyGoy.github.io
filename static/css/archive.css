@@ -180,7 +180,7 @@ main { min-height: 35vh; }
 .post-message { font-size: 1.125rem; line-height: 1.85; }
 .post-message p { white-space: pre-line; margin: 0 0 1.3em; }
 .post-message p:last-child { margin-bottom: 0; }
-/* YouTube videos in comments (partials/youtube-embeds.html, js/youtube-embed.js) */
+/* YouTube videos in posts and comments (partials/youtube-embeds.html, js/youtube-embed.js) */
 .video-embeds { display: grid; gap: 1rem; max-width: 36rem; margin: 1.25rem 0 0; }
 .video-embed { position: relative; display: block; width: 100%; aspect-ratio: 16 / 9; overflow: hidden; border: 1px solid var(--line); background: #000; }
 .video-embed img { display: block; width: 100%; height: 100%; object-fit: cover; opacity: .8; transition: opacity .15s; }
