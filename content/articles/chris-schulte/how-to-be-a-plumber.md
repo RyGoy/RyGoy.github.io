@@ -10,6 +10,7 @@ Shared under a Creative Commons Attribution-NonCommercial-NoDerivs 3.0 Unported 
 
 
 By: Chris Schulte
+CC BY-ND-NC 3.0 UNPORTED LICENSE
 
 How to be a plumber, appointed by Ricky South
 
