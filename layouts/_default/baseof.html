@@ -12,7 +12,7 @@
     <header class="masthead">
       <div class="masthead-title">
         <a class="masthead-home" href="{{ site.Home.RelPermalink }}">The Tender For Law</a>
-        <a class="license-badge" rel="license noopener noreferrer" href="https://creativecommons.org/licenses/by-nc-nd/3.0/" target="_blank" title="Creative Commons Attribution-NonCommercial-NoDerivs 3.0 Unported License"><img src="{{ "images/cc/by-nc-nd.svg" | relURL }}" width="88" height="31" alt="Creative Commons BY-NC-ND 3.0"></a>
+        <a class="license-badge" rel="license noopener noreferrer" href="https://creativecommons.org/licenses/by-nc-nd/3.0/" target="_blank" title="Creative Commons Attribution-NonCommercial-NoDerivs 3.0 Unported License"><img src="{{ "images/cc/by-nc-nd.svg" | relURL }}" width="88" height="31" alt="Creative Commons BY-NC-ND"><span class="license-badge-version">3.0</span></a>
       </div>
       {{ if not .IsHome }}{{ partial "breadcrumbs.html" . }}{{ end }}
       {{ partialCached "language-switch.html" . }}
