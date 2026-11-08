@@ -1,0 +1,18 @@
+{{- /* Archived links for the web addresses in a post's or comment's message (partials/lpPosts.html), listed under the
+       message, which is shown unchanged. Each one opens the Wayback Machine's copy from near the date of the message
+       (partials/archive-url.html). Trailing punctuation is left off an address; each address is listed once, in the
+       order written. Context: dict "text" (the message) and "date" (its created_time). */ -}}
+{{- $urls := slice -}}
+{{- range findRE `https?://\S+` .text -}}
+  {{- $url := replaceRE `[.,;:!?)\]}'"]+$` "" . -}}{{- if not (in $urls $url) }}{{ $urls = $urls | append $url }}{{ end -}}
+{{- end -}}
+{{- with $urls -}}
+<div class="archive-links" data-pagefind-ignore="all">
+  <p>Archived links (Wayback Machine), added by this site. Not part of the original message.</p>
+  <ul>
+    {{- range . }}
+    <li><a class="archive-link" href="{{ partial "archive-url.html" (dict "url" . "date" $.date) }}"><span>Archived link:</span> {{ . }}</a></li>
+    {{- end }}
+  </ul>
+</div>
+{{- end -}}
