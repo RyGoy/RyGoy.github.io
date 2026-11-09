@@ -10,5 +10,3 @@ weight = 2
 +++
 
 *The Accounting Game: Basic Accounting Fresh from the Lemonade Stand* teaches the language of accounting by following a child's lemonade stand from its first sale.
-
-The book is still under copyright. A copy, with its license and notice, is coming soon from [wfgresearch.org](https://wfgresearch.org/). Until then, Open Library has the catalogue record and lending options.
