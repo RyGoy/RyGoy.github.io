@@ -10,5 +10,3 @@ weight = 12
 +++
 
 Christopher Hitchens (1949–2011) was a journalist and essayist. In this book, his best-known, he takes on the major religions in turn and argues that ethics and wonder need no supernatural foundation.
-
-The book is still under copyright. A copy, with its license and notice, is coming soon from [wfgresearch.org](https://wfgresearch.org/). Until then, Open Library has the catalogue record and finding options.
