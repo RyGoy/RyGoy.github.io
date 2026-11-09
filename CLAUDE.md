@@ -89,6 +89,7 @@ Older students' notes connecting posts and articles. Each note is a Markdown fil
 
 ## Styling and assets
 
+- Home page carousel, headed "The gold is in the comments": `partials/carousel.html` (between the hero and the volumes) and `static/js/carousel.js`, cover-flow style (current frame in front, the others stepped back to each side, wrapping round, no autoplay; frames are wide, 16:9, on desktop and tall, 2:3, on phones). Its frames are placeholders numbered 1–5 until their content is decided.
 - Live stylesheet: `static/css/archive.css` (hand-written, dark "occult codex" design), loaded from `partials/head.html`. JS: `static/js/navigation.js`.
 - Volume pages and the posts and comments in them show their volume's roman numeral (`data-numeral` on the heading) where other pages show the faint rose window.
 - Faint emblems (`static/images/emblems/`) and gothic stonework (`static/images/gothic/`: ashlar texture on the page and sidebar, blind-arcade frieze under the masthead and atop the footer) are CSS-only decoration. Keep them faint.
