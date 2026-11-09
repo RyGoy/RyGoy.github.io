@@ -6,7 +6,7 @@ description = "Machiavelli's handbook on how principalities are won, held and lo
 pdf = "/library/machiavelli-the-prince.pdf"
 source = "https://www.gutenberg.org/ebooks/1232"
 source_label = "Project Gutenberg"
-weight = 19
+weight = 20
 +++
 
 Niccolò Machiavelli (1469–1527) served the Florentine republic as a diplomat and official until the Medici returned to power in 1512. Out of office, he wrote *The Prince* in 1513 and dedicated it to Lorenzo de' Medici. It was published in 1532, after his death.
