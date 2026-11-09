@@ -1,5 +1,9 @@
-<article class="archive-entry{{ if .Params.post_id }} comment-entry{{ end }}" id="entry-{{ .Params.id }}" data-author="{{ .Params.from_name }}">
+{{ $anthology := partial "anthology-entry.html" . }}
+{{ $printedName := "" }}{{ with $anthology.entry }}{{ $printedName = .name | default "" }}{{ end }}
+<article class="archive-entry{{ if .Params.post_id }} comment-entry{{ end }}{{ if .Params.anthology }} anthology-entry{{ end }}" id="entry-{{ .Params.id }}" data-author="{{ .Params.from_name | default $printedName }}">
   {{ partial "lpPosts.html" . }}
+  {{ partial "anthology-copy.html" (dict "page" . "found" $anthology) }}
+  {{ partial "anthology-links.html" .Params.anthology_links }}
   <footer class="entry-footer">
     {{ partial "lpGo.html" . }}
     <button type="button" class="share-button" data-pagefind-ignore aria-live="polite">Share</button>

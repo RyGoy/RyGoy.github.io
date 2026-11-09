@@ -1,0 +1,24 @@
+{{- /* The printed copy of a post or comment from The Tender For Law Anthology (data/anthology/, static/anthology/).
+       Where the export has the name and content, the picture is folded away under "Printed copy". Where the export
+       lacks either, or the post is one the export lacks entirely, the picture is shown in their place.
+       Context: dict "page" and "found" (from partials/anthology-entry.html). */ -}}
+{{- with .found.entry -}}
+  {{- $e := . -}}
+  {{- $v := $.found.volume -}}
+  {{- $noun := cond (isset $.page.Params "post_id") "comment" "post" -}}
+  {{- $caption := printf "Printed copy from <a href=%q>%s</a>, page %d (printed 14 June 2014). Added by this site; not part of the Facebook export." $v.source $v.title (int $e.page) -}}
+  {{- if or $e.missing $.page.Params.anthology -}}
+<figure class="anthology-copy is-shown">
+  <img src="{{ $e.image | relURL }}" width="{{ $e.w }}" height="{{ $e.h }}" alt="{{ $e.text | default $.page.Params.anthology_text | default (printf "Printed copy of this %s" $noun) }}" loading="lazy" data-pagefind-index-attrs="alt">
+  <figcaption data-pagefind-ignore>{{ $caption | safeHTML }}</figcaption>
+</figure>
+  {{- else -}}
+<details class="anthology-copy" data-pagefind-ignore>
+  <summary>Printed copy · Anthology Volume {{ $v.volume }}, page {{ $e.page }}</summary>
+  <figure>
+    <img src="{{ $e.image | relURL }}" width="{{ $e.w }}" height="{{ $e.h }}" alt="Printed copy of this {{ $noun }}" loading="lazy">
+    <figcaption>{{ $caption | safeHTML }}</figcaption>
+  </figure>
+</details>
+  {{- end -}}
+{{- end -}}

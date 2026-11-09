@@ -73,6 +73,18 @@ Posts and comments show archived copies of their outside links: under a post's l
 - The Wayback Machine refuses to search some sites (such as Dropbox, "excluded from the Wayback Machine"); the script records those as having no copy after checking that the Wayback Machine answers other searches.
 - Archived links are kept out of the search index (`data-pagefind-ignore`).
 
+## The Tender For Law Anthology
+
+Anibal Jose Baez (as "Mackximus"/MAXIMILIANO PEREZ) printed the group's feed from Facebook on 14 June 2014 and shared it as nine PDFs, "The Tender For Law Anthology" (https://app.box.com/s/47vmhgo8olstohisc2ju, 1.5 GB, not hosted here). The printout has names, pictures and comments the Facebook export lost. Volumes are processed one at a time; Volume 1 (8 Jan – 9 Jul 2013, 1,273 pages) is done.
+
+- `static/anthology/v<N>/<id>.webp`: a cropped picture of each post and comment as printed, named by its site `id` (or the id of a recovered item).
+- `data/anthology/v<N>.json`: `entries` (site id → picture, PDF page, printed name; `missing` and the printed `text` when the export has no name or no content), `recovered` (post id → comments the export lacks: picture, printed name, time in UTC, text, complete `links`), and the volume's title and Box address.
+- `content/vol_*/anthology-v<N>-<page>/_index.md`: posts the export lacks entirely, in the volume for their quarter. Front matter `anthology`, `time_unknown` (the printout gives posts a date only), `anthology_text`, `anthology_links`.
+- Templates: `partials/anthology-entry.html` looks an id up. `partials/anthology-copy.html` (from `entry.html`) folds the picture under "Printed copy · Anthology Volume N, page P", or shows it in place of a name or content the export lacks. `partials/anthology-comments.html` merges recovered comments into a post's comments by time (the post page and the comments link both count it); `partials/anthology-comment.html` renders one. `partials/anthology-links.html` lists printed addresses (YouTube ones as thumbnails).
+- Names that come only from the printout (recovered posts and comments, names the export lacks) are shown in the dictionary's Wex blue (`.anthology-name`). The exported record itself is not edited.
+- Pipeline (`scripts/anthology/`, Python with Pillow, plus poppler's `pdftotext`/`pdftoppm`): `pdftotext -bbox-layout vol.pdf bbox.html`; `pdftoppm -r 110 -png vol.pdf pages/p`; `parse.py bbox.html parsed.json` (splits the feed column into posts and comments with their page strips); `match.py <repo> parsed.json matched.json pages` (matches by time, name and text; names are read by their blue colour); `build.py <repo> <N> matched.json pages`; `verify.py <repo> <build dir> <N>` after a build.
+- Printout quirks the scripts handle: times are US Eastern (with daylight saving); an edited comment shows its edit time; long posts are cut short ("See More"); many members were renamed between the export and the printout ("Harry Wombat"/"Harry Nosed Wombat", "August le Blanc"/"Bobis Youruncle"); every page break can drop a strip of content, including name or date lines, which no crop can recover.
+
 ## Poster filter
 
 Volume pages (the posts) and post pages (the comments) have a "Filter by poster" panel (`partials/poster-filter.html`, `static/js/poster-filter.js`). The list of names is built from each entry's `data-author` attribute. Don't name that attribute `data-poster`: Go templates treat `poster` as a URL attribute and percent-encode it. The selection is kept in the address (`?poster=Name&poster=Other&mode=hide`) and carried to the previous/next volume links. Without JavaScript, the panel stays hidden.

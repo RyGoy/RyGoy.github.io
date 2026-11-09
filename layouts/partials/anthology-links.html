@@ -1,0 +1,6 @@
+{{- /* The complete addresses printed in a recovered post or comment, as links, with any YouTube videos among them
+       shown as thumbnails (partials/youtube-embeds.html). Context: a list of addresses, or nil. */ -}}
+{{- with . -}}
+  {{ partial "youtube-embeds.html" (delimit . "\n") }}
+  <ul class="anthology-links" data-pagefind-ignore>{{ range . }}<li><a href="{{ . }}">{{ . }}</a></li>{{ end }}</ul>
+{{- end -}}
