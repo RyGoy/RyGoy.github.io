@@ -49,6 +49,17 @@ def segments(start, end):
     return [[p0, y0, CONTENT_BOTTOM]] + [[p, CONTENT_TOP, CONTENT_BOTTOM] for p in range(p0 + 1, p1)] + [[p1, CONTENT_TOP, y1]]
 
 
+def close_open(post, comment):
+    """A comment whose date line fell into a page break: keep it, ending at its last line, with no date."""
+    if post is not None and comment and comment.get('last'):
+        comment['date'] = ''
+        comment['end'] = comment['last']
+        comment['segments'] = segments(comment['start'], comment['end'])
+        post['comments'].append(comment)
+        return comment['end']
+    return None
+
+
 def parse(path):
     """Items tile the feed: a post runs from its header to its Like · Comment · Share line; each comment runs from
     the end of the item before it to its date line, so pictures and page breaks inside it are kept."""
@@ -69,6 +80,7 @@ def parse(path):
                 header, top = prev['text'] + ' ' + t, prev
                 if post is not None and state == 'body' and post['text'] and post['text'][-1] == prev['text']:
                     post['text'].pop()
+            close_open(post, comment)
             post = {'header': header, 'date': nxt['text'], 'text': [], 'comments': [], 'likes': None,
                     'start': (top['page'], max(CONTENT_TOP, top['y0'] - 8))}
             posts.append(post)
@@ -103,10 +115,18 @@ def parse(path):
             i += 1
             continue
         if t.startswith('Write a comment'):
+            cursor = close_open(post, comment) or cursor
             state, comment = None, None
             i += 1
             continue
         if post is None or state is None:
+            # Content after "Write a comment" with no header: the post's name and date lines fell into a page break.
+            # Start a post without them; its text and its comments' times still identify it.
+            if cursor is not None and not t.startswith('Write a comment'):
+                post = {'header': '', 'date': '', 'text': [], 'comments': [], 'likes': None, 'start': cursor}
+                posts.append(post)
+                state, comment = 'body', None
+                continue  # read this line again as the post's first line
             i += 1
             continue
         else:
@@ -120,6 +140,7 @@ def parse(path):
                     comment = {'lines': [], 'start': cursor, 'first': {'page': l['page'], 'boxes': l['boxes'], 'text': t}}
                 comment['lines'].append(t)
                 comment.setdefault('x1', []).append(round(l['x1'], 1))
+                comment['last'] = (l['page'], l['y1'] + 3)
                 if COMMENT_DATE.match(t):
                     comment['date'] = t
                     comment['end'] = (l['page'], l['y1'] + 3)

@@ -7,6 +7,9 @@
   {{- $v := $.found.volume -}}
   {{- $noun := cond (isset $.page.Params "post_id") "comment" "post" -}}
   {{- $caption := printf "Printed copy from <a href=%q>%s</a>, page %d (printed 14 June 2014). Added by this site; not part of the Facebook export." $v.source $v.title (int $e.page) -}}
+  {{- /* "partial": a page break in the printout swallowed this one's end and the next one's start, so the picture
+         shows this one's beginning followed by the end of the next. */ -}}
+  {{- if $e.partial }}{{ $caption = printf "%s A page break in the printout cut this %s: the picture shows its beginning, then the end of the next one." $caption $noun }}{{ end -}}
   {{- if or $e.missing $.page.Params.anthology -}}
 <figure class="anthology-copy is-shown">
   <img src="{{ $e.image | relURL }}" width="{{ $e.w }}" height="{{ $e.h }}" alt="{{ $e.text | default $.page.Params.anthology_text | default (printf "Printed copy of this %s" $noun) }}" loading="lazy" data-pagefind-index-attrs="alt">
@@ -14,7 +17,7 @@
 </figure>
   {{- else -}}
 <details class="anthology-copy" data-pagefind-ignore>
-  <summary>Printed copy · Anthology Volume {{ $v.volume }}, page {{ $e.page }}</summary>
+  <summary>Printed copy · Anthology Volume {{ $v.volume }}, page {{ $e.page }}{{ if $e.partial }} · cut by a page break{{ end }}</summary>
   <figure>
     <img src="{{ $e.image | relURL }}" width="{{ $e.w }}" height="{{ $e.h }}" alt="Printed copy of this {{ $noun }}" loading="lazy">
     <figcaption>{{ $caption | safeHTML }}</figcaption>

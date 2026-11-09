@@ -14,8 +14,16 @@ OFFSET = timedelta(hours=4)  # only for grouping posts by local date; within a d
 norm = lambda t: re.sub(r'[^a-z0-9]+', ' ', (t or '').lower()).strip()
 
 
+# Address boilerplate: two links to different videos share all of these, so they don't count as shared words.
+STOP_WORDS = {'a', 'an', 'the', 'and', 'or', 'but', 'of', 'to', 'in', 'on', 'at', 'for', 'with', 'by', 'from', 'it', 'is',
+              'be', 'was', 'are', 'this', 'that', 'i', 'you', 'he', 'she', 'we', 'they', 'my', 'your', 'have', 'has',
+              'not', 'no', 'so', 'if', 'as', 'do', 'can', 'may', 'who', 'what', 'all', 'me', 'just', 't', 'don', 're'}
+URL_WORDS = {'http', 'https', 'www', 'com', 'org', 'net', 'ca', 'html', 'htm', 'php', 'youtube', 'youtu', 'be', 'watch',
+             'v', 'feature', 'share', 'player', 'embedded', 'facebook', 'l', 'u', 'h', 's', 'photo', 'fbid', 'set'}
+
+
 def words(t):
-    return set(norm(t).split())
+    return set(norm(t).split()) - URL_WORDS - STOP_WORDS
 
 
 def similarity(a, b):
@@ -105,11 +113,18 @@ def main(repo, parsed_path, out_path):
     for p in posts.values():
         by_local_date[(p['utc'] - OFFSET).date()].append(p)
     parsed = json.load(open(parsed_path))
+    dates = [pdf_time(pp['date']) for pp in parsed if pdf_time(pp['date'])]
+    span = (min(dates) - timedelta(days=2), max(dates) + timedelta(days=2))
     results = []
-    for pp in parsed:
+    def ranked(pp):
+        """Candidate site posts for a PDF post, best first, as (score, id)."""
         local = pdf_time(pp['date'])
         body = ' '.join(pp['text'])
-        cands = {p['id']: p for dd in (-1, 0, 1) for p in by_local_date.get((local + timedelta(days=dd)).date(), [])} if local else {}
+        if local:
+            cands = {p['id']: p for dd in (-1, 0, 1) for p in by_local_date.get((local + timedelta(days=dd)).date(), [])}
+        else:
+            # The header (name and date) fell into a page break: any post from the volume's months may be it.
+            cands = {p['id']: p for p in posts.values() if span[0] <= p['utc'] <= span[1]}
         pdf_minutes = [t for t in (pdf_time(pc['date']) for pc in pp['comments']) if t]
         # Posts that hold comments at the same minutes are candidates too (pictures, files, deleted links).
         for t in pdf_minutes:
@@ -123,26 +138,40 @@ def main(repo, parsed_path, out_path):
             # so a candidate is ruled out only when its name shares no word with the start of the header.
             # Accounts were also renamed outright ("Bobis Youruncle" / "August le Blanc"): a name with no word in
             # common only lowers the score; the text and the comment times decide.
-            same_name = not p.get('from_name') or bool(words(p['from_name']) & set(norm(pp['header']).split()[:6]))
+            same_name = not p.get('from_name') or not pp['header'] or bool(words(p['from_name']) & set(norm(pp['header']).split()[:6]))
             factor = 1 if same_name else 0.6
-            site_text = ' '.join(filter(None, [p.get('message'), p.get('name'), p.get('description')]))
+            site_text = ' '.join(filter(None, [p.get('message'), p.get('name'), p.get('description'), p.get('link')]))
             wa, wb = words(body), words(site_text)
             # The printout cuts long posts short ("... See More"), so measure against the shorter text, but give
             # short texts less weight so a few common words can't win.
             text = len(wa & wb) / min(len(wa), len(wb)) * min(1, min(len(wa), len(wb)) / 8) if wa and wb else 0
+            # The same video or photo ID (a long token of letters and digits) in both is as good as the same text.
+            if any(len(w) >= 8 and re.search(r'\d', w) and re.search(r'[a-z]', w) for w in wa & wb):
+                text = max(text, 0.9)
             if pdf_minutes:
                 site_minutes = {c['utc'].replace(second=0) for c in comments.get(p['id'], [])}
                 agree = sum(t in site_minutes for t in pdf_minutes) / len(pdf_minutes)
-                same_day = 0.1 if (p['utc'] - OFFSET).date() == local.date() else 0
+                same_day = 0.1 if local and (p['utc'] - OFFSET).date() == local.date() else 0
                 combined = 0.4 * text + 0.6 * agree + same_day
                 # Near-identical text decides when the comments don't contradict it (few comments, or some agree).
                 if text >= 0.8 and (len(pdf_minutes) <= 2 or agree >= 0.3):
                     combined = max(combined, 0.9 * text + same_day)
                 return factor * combined
+            if not local:
+                return factor * text if text >= 0.8 else 0  # no header, no comments: only near-identical text
             return factor * (text + (0.1 if (p['utc'] - OFFSET).date() == local.date() else 0))
-        best = max(cands.values(), key=post_score, default=None)
-        score = post_score(best) if best else 0
-        site_post = best if best and score >= 0.45 else None
+        return sorted(((post_score(p), p['id']) for p in cands.values()), reverse=True)
+
+    # A site post is the printout of only one PDF post: assign best first, the rest try their next candidates.
+    ranks = [ranked(pp) for pp in parsed]
+    choice, taken = {}, set()
+    for sc, k, pid in sorted(((sc, k, pid) for k, rk in enumerate(ranks) for sc, pid in rk[:5] if sc >= 0.45), reverse=True):
+        if k not in choice and pid not in taken:
+            choice[k] = (pid, sc)
+            taken.add(pid)
+    for k, pp in enumerate(parsed):
+        pid, score = choice.get(k, (None, ranks[k][0][0] if ranks[k] else 0))
+        site_post = posts[pid] if pid else None
         result = {'pdf': pp, 'name': header_name(pp['header']), 'site_post': site_post and site_post['id'], 'post_score': round(score, 2), 'comments': []}
         site_comments = comments.get(site_post['id'], []) if site_post else []
         # Score every PDF comment against every site comment of the post, then pair them best first.
@@ -184,19 +213,45 @@ def main(repo, parsed_path, out_path):
         # Second pass: a few printed times differ by minutes without an "Edited" label. Pair what is left when the
         # text is the same (at least five words) and the times are within three hours.
         for k, info in enumerate(infos):
-            if k in site_of or not info['utc']:
+            if k in site_of:
                 continue
             body = info['text'][len(info['author']):] if info['author'] else info['text']
-            if len(words(body)) < 5:
+            n = len(words(body))
+            if n < 4:
                 continue
-            best = max((c for c in site_comments if c['id'] not in used and abs((c['utc'] - info['utc']).total_seconds()) <= 10800),
+            # Both texts need some length: "I" or "YOU" would otherwise match anything containing that word.
+            best = max((c for c in site_comments if c['id'] not in used and len(words(c.get('message') or '')) >= 4),
                        key=lambda c: similarity(body, c.get('message') or ''), default=None)
-            if best and similarity(body, best.get('message') or '') >= 0.8:
+            if not best:
+                continue
+            sim = similarity(body, best.get('message') or '')
+            near = bool(info['utc']) and abs((best['utc'] - info['utc']).total_seconds()) <= 10800
+            if not info['utc'] and n >= 4 and sim >= 0.8:  # its date line fell into a page break
+                near, n = True, max(n, 5)
+            # Within one post the same words are the same comment: near in time, or nearly identical.
+            if (near and n >= 5 and sim >= 0.8) or sim >= 0.9:
                 used.add(best['id']); site_of[k] = (best['id'], 0.8)
         for k, info in enumerate(infos):
             cid, sc = site_of.get(k, (None, 0))
             result['comments'].append({'pdf': info['pdf'], 'author': info['author'], 'text': info['text'],
                                        'utc': info['utc'] and info['utc'].isoformat(), 'site': cid, 'score': round(sc, 2)})
+        # A page break can swallow the end of one comment and the start of the next, leaving one printed item that
+        # holds the first one's beginning and the second one's end. Link the other one to that picture too.
+        result['partial'] = []
+        for c in site_comments:
+            if c['id'] in used:
+                continue
+            w = norm(c.get('message') or '').split()
+            if len(w) < 6:
+                continue
+            head, tail = ' '.join(w[:6]), ' '.join(w[-6:])
+            for k, info in enumerate(infos):
+                pdf_text = norm(info['text'])
+                # Its beginning or (when the item was paired with the comment it starts with) its end.
+                if len(info['pdf']['segments']) > 1 and (head in pdf_text or tail in pdf_text):
+                    result['partial'].append((c['id'], k))
+                    used.add(c['id'])
+                    break
         result['site_unmatched_comments'] = [c['id'] for c in site_comments if c['id'] not in used]
         results.append(result)
     json.dump({'results': results,

@@ -72,7 +72,7 @@ def main(repo, volume, matched_path, pages):
     vkey = f'v{volume}'
     M = json.load(open(matched_path))
     img_dir = os.path.join(repo, 'static', 'anthology', vkey)
-    entries, recovered, new_posts = {}, {}, []
+    entries, recovered, new_posts, skipped = {}, {}, [], []
     pdf_page = lambda segs: segs[0][0]
     for r in M['results']:
         pp = r['pdf']
@@ -80,8 +80,14 @@ def main(repo, volume, matched_path, pages):
         if r['site_post']:
             post_key = r['site_post']
         else:
-            # A post the site lacks: a page of its own in the volume for its quarter.
-            local = datetime.strptime(re.match(r'\w+ \d{1,2}, \d{4}', pp['date'])[0], '%B %d, %Y')
+            # A post the site lacks: a page of its own in the volume for its quarter. One whose header fell into a
+            # page break takes its date from its first comment; with neither, there is nothing to place it by.
+            m = re.match(r'\w+ \d{1,2}, \d{4}', pp['date']) or next(
+                (re.match(r'\w+ \d{1,2}, \d{4}', c['pdf']['date']) for c in r['comments'] if c['pdf'].get('date')), None)
+            if not m:
+                skipped.append(page)
+                continue
+            local = datetime.strptime(m[0], '%B %d, %Y')
             n = sum(1 for p in new_posts if p['page'] == page)
             post_key = f'anthology-{vkey}-{page:04d}' + (f'-{n + 1}' if n else '')
         img = trim(crop.crop(pages, pp['segments']))
@@ -96,6 +102,7 @@ def main(repo, volume, matched_path, pages):
             entries[post_key] = entry
         else:
             new_posts.append({'key': post_key, 'page': page, 'local': local, 'entry': entry, 'pdf': pp, 'name': r['name']})
+        partial = {k: cid for cid, k in r.get('partial', [])}
         for k, c in enumerate(r['comments']):
             pc = c['pdf']
             key = c['site'] or f'{post_key}-c{k + 1}'
@@ -104,6 +111,9 @@ def main(repo, volume, matched_path, pages):
             ce = {'image': f'anthology/{vkey}/{key}.webp', 'page': pdf_page(pc['segments']), 'w': w, 'h': h}
             if c['author']:
                 ce['name'] = c['author']
+            if k in partial:
+                # This picture also holds the start of another comment, whose end a page break swallowed.
+                entries[partial[k]] = dict(ce, partial=True)
             if c['site']:
                 if missing(repo, M['site_comments'][c['site']]['path']):
                     ce['missing'] = True
@@ -150,7 +160,8 @@ def main(repo, volume, matched_path, pages):
     with open(os.path.join(repo, 'data', 'anthology', f'{vkey}.json'), 'w', encoding='utf-8') as f:
         json.dump(data, f, ensure_ascii=False, separators=(',', ':'))
     n_rec = sum(len(v) for v in recovered.values())
-    print(f'{len(entries)} site entries with pictures, {len(new_posts)} new posts, {n_rec} recovered comments')
+    print(f'{len(entries)} site entries with pictures, {len(new_posts)} new posts, {n_rec} recovered comments; '
+          f'left out (no header, date or comments) on pages {skipped}')
 
 
 if __name__ == '__main__':
