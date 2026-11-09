@@ -3,9 +3,12 @@ title = "The Accounting Game"
 author = "Darrell Mullis and Judith Orloff"
 edition = "Sourcebooks, 2008 · ISBN 978-1-4022-1975-7"
 description = "Basic accounting taught through running a lemonade stand: assets, liabilities, the balance sheet and the income statement, one sale at a time."
-pdf = "static/library/TheAccountingGame.pdf"
+coming_soon = true
+source = "https://openlibrary.org/books/OL24315384M/Accounting_Game"
 source_label = "Find it on Open Library"
 weight = 2
 +++
 
 *The Accounting Game: Basic Accounting Fresh from the Lemonade Stand* teaches the language of accounting by following a child's lemonade stand from its first sale.
+
+The book is still under copyright. A copy, with its license and notice, is coming soon from [wfgresearch.org](https://wfgresearch.org/). Until then, Open Library has the catalogue record and lending options.

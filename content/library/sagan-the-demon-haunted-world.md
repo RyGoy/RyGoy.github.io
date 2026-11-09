@@ -10,3 +10,5 @@ weight = 19
 +++
 
 Carl Sagan (1934–1996) was an astronomer and the presenter of the television series *Cosmos*. In this book he looks at alien abductions, recovered memories, witch hunts and other claims, and shows how to question them. Some of its chapters were written with Ann Druyan.
+
+The book is still under copyright. A copy, with its license and notice, is coming soon from [wfgresearch.org](https://wfgresearch.org/). Until then, Open Library has the catalogue record and finding options.
