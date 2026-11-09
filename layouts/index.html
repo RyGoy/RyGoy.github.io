@@ -1,5 +1,6 @@
 {{ define "main" }}
   {{ partial "body.html" . }}
+  {{ partial "carousel.html" . }}
   {{ with .Content }}<div class="prose">{{ . }}</div>{{ end }}
   <section class="volume-library" id="volumes" aria-labelledby="volumes-heading">
     <div class="section-heading"><h2 id="volumes-heading">Volumes</h2><span class="rule" aria-hidden="true"></span></div>

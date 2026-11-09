@@ -1,0 +1,25 @@
+{{- /* Home page carousel, between the hero and the volumes. Cover-flow style: the current frame sits in front, the
+       others step back and shrink to each side, and it wraps around. No autoplay; the arrows, the arrow keys, a click
+       on a side frame or a swipe move it. static/js/carousel.js sets each frame's data-pos (its distance from the
+       current frame); the positions below are the starting layout, so the frames still show without JavaScript.
+       The frames are placeholders numbered 1–5 until their content is decided. */ -}}
+{{- $frames := seq 5 -}}
+{{- $count := len $frames -}}
+<section class="carousel-section" aria-labelledby="carousel-heading">
+<div class="section-heading"><h2 id="carousel-heading">The gold is in the comments</h2><span class="rule" aria-hidden="true"></span></div>
+<div class="carousel" aria-roledescription="carousel" aria-labelledby="carousel-heading">
+  <div class="carousel-stage">
+    {{- range $i, $n := $frames }}
+    {{- /* Start with frame 1 in front: frames after it to the right, the rest wrapped round to the left. */ -}}
+    {{- $pos := $i }}{{ if gt $i (div $count 2) }}{{ $pos = sub $i $count }}{{ end }}
+    <div class="carousel-frame" role="group" aria-roledescription="slide" aria-label="{{ $n }} of {{ $count }}" data-pos="{{ $pos }}"{{ if ne $pos 0 }} aria-hidden="true"{{ end }}>
+      <span class="carousel-placeholder">{{ $n }}</span>
+    </div>
+    {{- end }}
+  </div>
+  <button class="carousel-arrow carousel-prev" type="button" aria-label="Previous" hidden>‹</button>
+  <button class="carousel-arrow carousel-next" type="button" aria-label="Next" hidden>›</button>
+  <p class="carousel-status sr-only" aria-live="polite"></p>
+</div>
+</section>
+<script src="{{ "js/carousel.js" | relURL }}" defer></script>
