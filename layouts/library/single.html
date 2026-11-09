@@ -9,6 +9,9 @@
   {{ with .Description }}<p class="book-summary">{{ . }}</p>{{ end }}
   <div class="book-actions" data-pagefind-ignore>
     {{/* A pdf starting with "/" is a copy in static/library/; a full address is someone else's copy, opened in place. */}}
+    {{/* coming_soon: a copy will be published by wfgresearch.org with its license and notice. Until its address is
+         known, the button says so and leads to the home page. */}}
+    {{ if .Params.coming_soon }}<a class="book-button" href="{{ "/" | relURL }}">Coming soon</a>{{ end }}
     {{ with .Params.pdf }}<a class="book-button" href="{{ . | relURL }}"{{ if not (hasPrefix . "/") }} rel="noopener noreferrer"{{ end }}>Read the PDF <span aria-hidden="true">↗</span></a>{{ if hasPrefix . "/" }}<a class="book-link" href="{{ . | relURL }}" download>Download</a>{{ end }}{{ end }}
     {{ with .Params.source }}<a class="book-link" href="{{ . }}" rel="noopener noreferrer">{{ $.Params.source_label | default "Source" }} <span aria-hidden="true">↗</span></a>{{ end }}
   </div>
