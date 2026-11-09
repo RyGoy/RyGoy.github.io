@@ -3,7 +3,6 @@ title = "Foundation and Empire"
 author = "Isaac Asimov"
 edition = "Gnome Press, 1952"
 description = "The second Foundation book: the Foundation survives an attack by the last great general of the dying Empire, then faces the Mule, a mutant who can bend people's emotions and whom Hari Seldon's plan did not foresee."
-reading_list = "/vol_xii/462493170453287_913756938660239/462493170453287_913756938660239-913773291991937/"
 source = "https://archive.org/details/foundationtrilog0000isaa_c7g1"
 source_label = "Borrow it on the Internet Archive"
 weight = 14

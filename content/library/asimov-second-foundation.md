@@ -3,7 +3,6 @@ title = "Second Foundation"
 author = "Isaac Asimov"
 edition = "Gnome Press, 1953"
 description = "The last book of the Foundation trilogy: the Mule, and then the Foundation itself, hunt for the hidden Second Foundation that Hari Seldon set up to keep his plan on course."
-reading_list = "/vol_xii/462493170453287_913756938660239/462493170453287_913756938660239-913773291991937/"
 source = "https://archive.org/details/foundationtrilog0000isaa_c7g1"
 source_label = "Borrow it on the Internet Archive"
 weight = 15
