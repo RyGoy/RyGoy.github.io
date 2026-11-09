@@ -5,6 +5,7 @@ edition = "London: Kegan Paul, Trench, 1888"
 description = "Bagehot's account of how English government actually works: the “dignified” parts that hold the public's loyalty, and the “efficient” parts that do the governing."
 pdf = "/library/bagehot-the-english-constitution-1888.pdf"
 source = "https://archive.org/details/englishconstitut00bageuoft"
+source_label = "Internet Archive"
 weight = 1
 +++
 
