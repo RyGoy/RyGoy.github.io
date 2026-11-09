@@ -1,5 +1,5 @@
 {{ if and (not .Params.post_id) (ne page.RelPermalink .RelPermalink) }}
-  {{ $n := len .Pages }}
+  {{ $n := len (partial "anthology-comments.html" .) }}{{/* includes comments recovered from the Anthology */}}
   {{ if $n }}
     <a class="comments-link" data-pagefind-ignore href="{{ .RelPermalink }}#comments" aria-label="Read {{ $n }} {{ cond (eq $n 1) "comment" "comments" }}">Read Comments <span class="comment-count" aria-hidden="true">{{ $n }}</span></a>
   {{ else }}

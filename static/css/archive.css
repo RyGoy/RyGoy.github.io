@@ -852,3 +852,15 @@ body::after { content: ""; position: fixed; z-index: -1; right: -6rem; bottom: -
 .carousel-prev { left: clamp(.25rem, 4vw, 3rem); }
 .carousel-next { right: clamp(.25rem, 4vw, 3rem); }
 @media (prefers-reduced-motion: reduce) { .carousel-frame { transition: none; } }
+
+/* The Tender For Law Anthology (partials/anthology-*.html): printed copies of posts and comments. Names that come only
+   from the printout are in the dictionary's Wex blue. */
+.anthology-name { color: #9ccbee !important; }
+.anthology-copy { margin: 1.25rem 0 0; font-size: .75rem; color: var(--muted); }
+.anthology-copy > summary { padding: .25rem 0; cursor: pointer; }
+.anthology-copy[open] > summary { color: #d6ba86; }
+.anthology-copy figure { margin: .75rem 0 0; }
+.anthology-copy img { display: block; max-width: 100%; height: auto; background: #fff; border: 1px solid var(--line); }
+.anthology-copy figcaption { margin-top: .5rem; font-style: italic; }
+.anthology-copy figcaption a { color: #d7be91; }
+.anthology-links { margin: .75rem 0 0; padding-left: 1.2rem; font-size: .85rem; overflow-wrap: anywhere; }

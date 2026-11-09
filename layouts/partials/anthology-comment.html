@@ -1,0 +1,15 @@
+{{- /* A comment the Facebook export lacks, recovered from The Tender For Law Anthology (data/anthology/v*.json,
+       "recovered"). Its picture is the content; its name, printed in blue, and its complete addresses come from the
+       printout. Context: dict "c" (the comment) and "volume" (its data file). */ -}}
+{{- $c := .c -}}
+<article class="archive-entry comment-entry anthology-entry" id="entry-{{ $c.id }}" data-author="{{ $c.name }}">
+  <header class="entry-header">
+    {{ with $c.name }}<h2 class="anthology-name" data-pagefind-filter="Commenter">{{ . }}</h2>{{ end }}
+    {{ with $c.time }}<span class="entry-date"><time datetime="{{ . }}">{{ (time.AsTime .).Format "Jan 02, 2006 3:04 PM" }}</time></span>{{ end }}
+  </header>
+  <figure class="anthology-copy is-shown">
+    <img src="{{ $c.image | relURL }}" width="{{ $c.w }}" height="{{ $c.h }}" alt="{{ $c.text | default "Printed copy of this comment" }}" loading="lazy" data-pagefind-index-attrs="alt">
+    <figcaption data-pagefind-ignore>Recovered from <a href="{{ .volume.source }}">{{ .volume.title }}</a>, page {{ $c.page }} (printed 14 June 2014). Not in the Facebook export; added by this site.</figcaption>
+  </figure>
+  {{ partial "anthology-links.html" $c.links }}
+</article>

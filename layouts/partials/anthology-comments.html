@@ -1,0 +1,12 @@
+{{- /* A post's comments in time order: its comment pages (dict "page") and the comments recovered from the Anthology
+       that the export lacks (dict "c" and "volume", for partials/anthology-comment.html). Returning partial; the
+       comments link (partials/lpGo.html) counts the same list. Context: the post. */ -}}
+{{- $items := slice -}}
+{{- range .Pages }}{{ $items = $items | append (dict "time" .Params.created_time "page" .) }}{{ end -}}
+{{- with .Params.id -}}
+  {{- $id := . -}}
+  {{- range $vol := site.Data.anthology -}}
+    {{- range index $vol.recovered $id }}{{ $items = $items | append (dict "time" (.time | default "") "c" . "volume" $vol) }}{{ end -}}
+  {{- end -}}
+{{- end -}}
+{{- return sort $items "time" -}}

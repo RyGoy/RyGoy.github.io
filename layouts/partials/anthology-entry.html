@@ -1,0 +1,11 @@
+{{- /* The Anthology's record of a post or comment, looked up by its id in data/anthology/v*.json: dict "entry" (its
+       picture, page, printed name and, when the export lacks the name or content, "missing" and the printed text)
+       and "volume" (that file), or an empty dict. Returning partial. */ -}}
+{{- $found := dict -}}
+{{- with .Params.id -}}
+  {{- $id := . -}}
+  {{- range $vol := site.Data.anthology -}}
+    {{- with index $vol.entries $id }}{{ $found = dict "entry" . "volume" $vol }}{{ end -}}
+  {{- end -}}
+{{- end -}}
+{{- return $found -}}
