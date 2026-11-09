@@ -4,7 +4,7 @@ edition = "biblehub.com"
 description = "A free online Bible library: dozens of translations side by side, the Hebrew and Greek behind them, word studies and commentaries."
 source = "https://biblehub.com/"
 source_label = "Open Bible Hub"
-weight = 22
+weight = 23
 +++
 
 Bible Hub puts many translations of the same verse on one page, so you can see where they agree and where they part ways. It also has an interlinear that sets the Hebrew and Greek under the English, Strong's concordance for looking up each original word, and commentaries old and new.

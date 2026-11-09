@@ -6,7 +6,7 @@ description = "Solzhenitsyn's history of the Soviet prison-camp system, built fr
 coming_soon = true
 source = "https://openlibrary.org/works/OL35325460W"
 source_label = "Borrow volume 1 on Open Library"
-weight = 11
+weight = 12
 +++
 
 Aleksandr Solzhenitsyn (1918–2008) called the book "an experiment in literary investigation". He wrote it in secret, and it was first published in Paris in 1973. Its seven parts appear in three volumes. Volume 1 (Parts I–II) covers the "prison industry": arrest, interrogation, and the system that moved prisoners through it.

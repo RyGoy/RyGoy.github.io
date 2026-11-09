@@ -6,7 +6,7 @@ description = "Riegel's case for money issued by the people who trade, not by go
 pdf = "https://www.community-exchange.org/docs/Riegel/private_enterprise_money.pdf"
 source = "https://www.community-exchange.org/"
 source_label = "Community Exchange System"
-weight = 6
+weight = 7
 +++
 
 Edward C. Riegel (1879–1953) argued that money is a record of value given and owed, and that traders can issue it themselves through a clearing system, without a government or a bank.
