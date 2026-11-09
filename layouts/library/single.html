@@ -10,6 +10,8 @@
   <div class="book-actions" data-pagefind-ignore>
     {{/* A pdf starting with "/" is a copy in static/library/; a full address is someone else's copy, opened in place. */}}
     {{ with .Params.pdf }}<a class="book-button" href="{{ . | relURL }}"{{ if not (hasPrefix . "/") }} rel="noopener noreferrer"{{ end }}>Read the PDF <span aria-hidden="true">↗</span></a>{{ if hasPrefix . "/" }}<a class="book-link" href="{{ . | relURL }}" download>Download</a>{{ end }}{{ end }}
+    {{/* reading_list: the post or comment where the book was recommended, on this site. */}}
+    {{ with .Params.reading_list }}<a class="book-button" href="{{ . | relURL }}">Reading list <span aria-hidden="true">→</span></a>{{ end }}
     {{ with .Params.source }}<a class="book-link" href="{{ . }}" rel="noopener noreferrer">{{ $.Params.source_label | default "Source" }} <span aria-hidden="true">↗</span></a>{{ end }}
   </div>
   {{/* Previous and next book, in the order /library/ lists them (layouts/library/list.html).
