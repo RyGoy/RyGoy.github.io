@@ -9,16 +9,20 @@
     let current = frames.findIndex((frame) => frame.dataset.pos === '0');
     if (current < 0) current = 0;
 
-    const show = (index) => {
+    const show = (index, announce = true) => {
       current = (index + count) % count;
       frames.forEach((frame, i) => {
         let pos = (i - current + count) % count;
         if (pos > count / 2) pos -= count;
         frame.dataset.pos = pos;
         frame.toggleAttribute('aria-hidden', pos !== 0);
+        // Only the front frame's link is reachable by keyboard.
+        for (const link of frame.querySelectorAll('a')) link.tabIndex = pos === 0 ? 0 : -1;
       });
-      status.textContent = frames[current].getAttribute('aria-label');
+      if (announce) status.textContent = frames[current].getAttribute('aria-label');
     };
+
+    show(current, false);
 
     for (const arrow of carousel.querySelectorAll('.carousel-arrow')) {
       arrow.hidden = false;
