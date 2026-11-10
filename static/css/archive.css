@@ -572,7 +572,7 @@ main { min-height: 35vh; }
    --saber-blue and --saber-red, so theme_colours.py leaves them as they are. The blade's three layers (core, near glow,
    far glow) share one gradient, red to blue, slid from its blue end to its red end. */
 .hero-saber { display: none; }
-:root[data-theme="dark"] .hero-rule { display: none; }
+/* (blade switched off in body.html for now, so Dark keeps the rule) :root[data-theme="dark"] .hero-rule { display: none; } */
 :root[data-theme="dark"] .hero-saber { --saber-blue: #2b8dff; --saber-red: #ff1f33; position: relative; display: flex; align-items: center; width: min(23rem, 86%); height: 2rem; margin: 0 auto 1.1rem; }
 :root[data-theme="dark"] .hero-saber::after { content: ""; position: absolute; left: 20%; right: 0; top: 95%; height: .8rem; border-radius: 50%; background-color: var(--saber-blue); filter: blur(12px); opacity: 0; pointer-events: none; animation: saber-cast .42s ease-out .3s forwards, saber-tint 2.6s ease-in-out 2.67s forwards; }
 :root[data-theme="dark"] .hero-saber-hilt { flex: none; display: flex; align-items: center; cursor: pointer; text-decoration: none; filter: drop-shadow(0 1px 2px #000000c0); transition: filter .2s; }
