@@ -24,6 +24,16 @@
           <span class="sr-only">Show commentary</span><span class="commentary-state" aria-hidden="true">Off</span>
         </button>
       </div>
+      {{/* Colour theme: Sepia (the site's own), Light or Dark. static/js/navigation.js shows it and keeps the choice;
+           partials/head.html applies it before the page paints. */}}
+      <div class="theme-controls" role="group" aria-labelledby="theme-heading" hidden>
+        <span class="nav-heading" id="theme-heading">Theme</span>
+        <span class="theme-switch">
+          <button type="button" data-theme-choice="sepia" aria-pressed="true">Sepia</button>
+          <button type="button" data-theme-choice="light" aria-pressed="false">Light</button>
+          <button type="button" data-theme-choice="dark" aria-pressed="false">Dark</button>
+        </span>
+      </div>
       <div class="nav-group">
         <a class="nav-heading" href="{{ site.Home.RelPermalink }}#volumes">Volumes</a>
         <ol class="volume-nav">
