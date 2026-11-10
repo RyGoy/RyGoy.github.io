@@ -4,7 +4,8 @@
 A printed name is taken as a rename when it is printed on at least two of the site's posts and comments and at least 80%
 of them are by one other export account; or, when it is nobody's name in the export, it is printed once and shares a
 word with that account's name. The rest (a name printed on a picture that also holds another member's comment, for example) are
-listed as rejected, for review.
+listed as rejected, for review. KNOWN lists renames printed only once with no word in common, checked by hand (same
+text and time as the export's comment or post).
 Usage: aliases.py <repo>
 """
 import collections, glob, json, os, re, sys
@@ -29,11 +30,13 @@ for f in sorted(glob.glob(f'{repo}/data/anthology/v*.json')):
 
 NAME = re.compile(r"^[^\W\d_][\w'’.-]*( [\w'’.-]+)*$")
 shared_word = lambda a, b: {w for w in re.findall(r'\w{3,}', a.lower())} & {w for w in re.findall(r'\w{3,}', b.lower())}
-aliases, rejected = {}, []
+KNOWN = {'Anone Brat': 'Pearl Basso', 'Boom Boom Mauri': 'Mauricio Moz', 'Julian Figiel': 'Carlos Rivera',
+         'Shewolf Herrera': 'Nelida Torres-Santiago'}
+aliases, rejected = dict(KNOWN), []
 for printed, counts in seen.items():
     name, n = counts.most_common(1)[0]
     total = sum(counts.values())
-    if norm(name) == norm(printed):
+    if norm(name) == norm(printed) or printed in KNOWN:
         continue  # mostly printed as it was exported
     if n >= 2 and n >= 0.8 * total:
         aliases[printed] = name  # also when the new name is in the export (J.P. Alexander's later posts as Jesse)
