@@ -6,6 +6,6 @@
  "anthology": "v1",
  "anthology_text": "https://www.youtube.com/watch?feature=player_embedded& v=wbDiX9Amo9g#! A declaration of The Independence of New Zealand - 28th october 1835 The truth about the DOI 1835 and the treaty of waitangi 1840 YOUTUBE",
  "anthology_links": [
-  "https://www.youtube.com/watch?feature=player_embedded&"
+  "https://www.youtube.com/watch?feature=player_embedded&v=wbDiX9Amo9g#"
  ]
 }

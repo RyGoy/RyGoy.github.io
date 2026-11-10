@@ -2,6 +2,8 @@
        "recovered"). Its picture is the content; its name, printed in blue, and its complete addresses come from the
        printout. Context: dict "c" (the comment) and "volume" (its data file). */ -}}
 {{- $c := .c -}}
+{{- /* A page borrowed from the next volume ("volume") carries that volume's print date. */ -}}
+{{- $pv := cond (isset $c "volume") (index site.Data.anthology (printf "v%d" (int $c.volume))) .volume -}}
 <article class="archive-entry comment-entry anthology-entry" id="entry-{{ $c.id }}" data-author="{{ $c.name }}">
   <header class="entry-header">
     {{ with $c.name }}<h2 class="anthology-name" data-pagefind-filter="Commenter">{{ . }}</h2>{{ end }}
@@ -9,7 +11,7 @@
   </header>
   <figure class="anthology-copy is-shown">
     <img src="{{ $c.image | relURL }}" width="{{ $c.w }}" height="{{ $c.h }}" alt="{{ $c.text | default "Printed copy of this comment" }}" loading="lazy" data-pagefind-index-attrs="alt">
-    <figcaption data-pagefind-ignore>Recovered from <a href="{{ .volume.source }}">{{ .volume.title }}</a>, page {{ $c.page }} (printed 14 June 2014). Not in the Facebook export; added by this site.</figcaption>
+    <figcaption data-pagefind-ignore>Recovered from <a href="{{ .volume.source }}">{{ with $c.volume }}The Tender For Law Anthology, Volume {{ . }}{{ else }}{{ $.volume.title }}{{ end }}</a>, page {{ $c.page }} (printed {{ (time.AsTime $pv.printed).Format "2 January 2006" }}). Not in the Facebook export; added by this site.</figcaption>
   </figure>
   {{ partial "anthology-links.html" $c.links }}
 </article>

@@ -6,7 +6,7 @@
  "anthology": "v1",
  "anthology_text": "This just in: https://www.facebook.com/photo.php?fbid=599957340036155& set=a.599957326702823.1073741830.100000656831698",
  "anthology_links": [
-  "https://www.facebook.com/photo.php?fbid=599957340036155&"
+  "https://www.facebook.com/photo.php?fbid=599957340036155&set=a.599957326702823.1073741830.100000656831698"
  ],
  "anthology_header": "Kent Barrett shared Alexander Ream's photo."
 }
