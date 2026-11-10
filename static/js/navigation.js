@@ -27,6 +27,25 @@ if (commentaryToggle) {
   });
 }
 
+// Colour theme (sidebar): Sepia, the site's own, or Light or Dark (archive.css, :root[data-theme]). The choice is
+// remembered in this browser only; partials/head.html applies it before the page paints.
+const themeControls = document.querySelector('.theme-controls');
+if (themeControls) {
+  const KEY = 'ttfl-theme';
+  const buttons = themeControls.querySelectorAll('[data-theme-choice]');
+  const showTheme = (theme) => {
+    if (theme === 'sepia') document.documentElement.removeAttribute('data-theme');
+    else document.documentElement.setAttribute('data-theme', theme);
+    buttons.forEach((button) => button.setAttribute('aria-pressed', String(button.dataset.themeChoice === theme)));
+  };
+  showTheme(document.documentElement.getAttribute('data-theme') || 'sepia');
+  themeControls.hidden = false;
+  buttons.forEach((button) => button.addEventListener('click', () => {
+    showTheme(button.dataset.themeChoice);
+    try { localStorage.setItem(KEY, button.dataset.themeChoice); } catch { /* not remembered */ }
+  }));
+}
+
 // Back-to-top link on list pages (_default/baseof.html). Without JavaScript it is always shown;
 // with it, the link appears once the visitor has scrolled past the first screen.
 const backToTop = document.querySelector('.back-to-top');

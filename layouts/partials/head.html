@@ -25,6 +25,8 @@
 <link rel="icon" href="{{ "images/favicon-crucifix.svg" | relURL }}" type="image/svg+xml">
 <link rel="icon" href="{{ "images/favicon-32.png" | relURL }}" type="image/png" sizes="32x32">
 <link rel="apple-touch-icon" href="{{ "images/apple-touch-icon.png" | relURL }}">
+{{/* The colour theme chosen in the sidebar (static/js/navigation.js), set before the stylesheet paints. */}}
+<script>try{var t=localStorage.getItem('ttfl-theme');if(t==='light'||t==='dark')document.documentElement.setAttribute('data-theme',t)}catch(e){}</script>
 <link rel="stylesheet" href="{{ "css/archive.css" | relURL }}">
 <script src="{{ "js/navigation.js" | relURL }}" defer></script>
 <script src="{{ "js/share.js" | relURL }}" defer></script>
