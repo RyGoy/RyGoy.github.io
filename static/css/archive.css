@@ -340,6 +340,11 @@ iframe.video-embed { border: 1px solid var(--line); }
 .copyright { display: flex; flex-wrap: wrap; align-items: center; gap: .75rem 1rem; border-top: 1px solid var(--line); padding-top: 1.5rem; margin: 2.5rem 0 0; font-size: .65rem; letter-spacing: .055em; }
 .license-badge { display: block; flex: none; line-height: 0; }
 .license-badge img { display: block; width: 88px; height: 31px; }
+/* The shield of Canada's 1921 arms closes the licence line, the CC button's height, dimmed like the footer seal until
+   pointed at. */
+.copyright > span { flex: 1 1 18rem; }
+.footer-shield { flex: none; margin-left: auto; width: 24px; height: 31px; opacity: .7; transition: opacity .2s; }
+.footer-shield:hover { opacity: 1; }
 .error-page { padding-bottom: 6rem; }
 @media (min-width: 100rem) {
   .site-shell { margin-right: auto; }
@@ -508,6 +513,9 @@ html:has(.terms-gate[open]) { overflow: hidden; }
 .prose p:has(> a[href^="https://creativecommons.org/licenses/"] > img) { display: flex; align-items: center; gap: 1rem; margin-top: 1.75rem; padding-top: 1.1rem; border-top: 1px solid var(--line); font-size: .82rem; line-height: 1.5; letter-spacing: .02em; color: var(--muted); }
 .prose a[href^="https://creativecommons.org/licenses/"] { flex: none; line-height: 0; }
 .prose a[href^="https://creativecommons.org/licenses/"] img { display: block; width: 88px; height: 31px; }
+/* The shield of Canada's 1921 arms closes the licence line, as in the footer. Added here, not in content/terms.md,
+   because editing the terms text asks every visitor to accept them again. */
+.prose p:has(> a[href^="https://creativecommons.org/licenses/"] > img)::after { content: ""; flex: none; margin-left: auto; width: 24px; height: 31px; background: url("../images/canada-shield-1921.svg") center / contain no-repeat; opacity: .7; }
 .terms-gate-body > img { flex: none; display: block; width: auto; max-width: 48%; max-height: min(55vh, 42rem); }
 @media (max-width: 48rem) {
   .terms-gate-body { flex-direction: column; align-items: center; gap: 0; }
