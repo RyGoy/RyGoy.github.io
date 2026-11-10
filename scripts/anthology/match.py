@@ -442,6 +442,10 @@ def main(repo, parsed_path, out_path):
                 author = author[:-len(tag) - 1]
             elif len(author.split()) >= 3 and author.endswith(','):
                 author = author.rsplit(' ', 1)[0]
+        # A name with no avatar beside it is a mention (or an address) opening the rest of a comment whose own name
+        # line fell into a page break ("Derek Moran, it gets annoying...").
+        if author and not has_avatar(pc.get('first')):
+            return text, None
         return text, author
     authors = {(k, j): comment_author(pc) for k, pp in enumerate(parsed) for j, pc in enumerate(pp['comments'])}
     # Renamed accounts ("Mackximus Minimus" printed, "Anibal Jose Baez" exported): a printed name and an exported
@@ -498,7 +502,8 @@ def main(repo, parsed_path, out_path):
                     if refs[i]['page'] != pc['segments'][-1][0]:
                         continue
                     tail = next((n for n in names if lines[i].startswith(n + ' ')), None)
-                    if tail and blue_words(refs[i]).startswith(tail):
+                    # (With an avatar beside it: a paragraph can open with a blue mention, "Pete Daoust apparently...".)
+                    if tail and blue_words(refs[i]).startswith(tail) and has_avatar(refs[i]):
                         info.update(author=tail, text=' '.join(lines[i:]), whole=text)
                         break
             infos.append(info)

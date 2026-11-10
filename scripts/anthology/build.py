@@ -17,11 +17,15 @@ from datetime import datetime, timedelta, timezone
 from zoneinfo import ZoneInfo
 
 import crop
-from match import no_emoticons, pdf_date, similarity
+import match
+from match import has_avatar, no_emoticons, pdf_date, similarity
 
 EASTERN = ZoneInfo('America/New_York')
 URL = re.compile(r'https?://\S+')
 COMPLETE = re.compile(r'(\.(s?html?|php|aspx?|pdf|jpe?g|png|gif)|youtu\.be/[\w-]{11}|[?&]v=[\w-]{11})$', re.I)
+# Accounts that never appear in the printout (probably blocked by the printing account): their comments have no copy,
+# so no item is theirs, whatever the matcher paired by time or by quoted text.
+NEVER_PRINTED = {'Adam Thomas', 'Blake Gardner', 'Dean Kory', 'Lana Dukakis', 'Sky Kittycat'}
 ROMAN = {1: 'i', 2: 'ii', 3: 'iii', 4: 'iv', 5: 'v', 6: 'vi', 7: 'vii', 8: 'viii', 9: 'ix', 10: 'x', 11: 'xi',
          12: 'xii', 13: 'xiii', 14: 'xiv'}
 
@@ -83,18 +87,19 @@ def utc_text(dt):
     return dt.strftime('%Y-%m-%dT%H:%M:%S+0000')
 
 
-def split_item(pc, c, site_text, last=False):
+def split_item(pc, c, site_text, last=False, page=None):
     """An item that holds the start of one comment and the rest of the next (a page break swallowed the first one's
     end and the second one's start): where the second begins. Returns (segments before, segments after, lines
     before, lines after), or None when it can't be told. The second begins at its own name line when that is printed
     (the "tail"), otherwise at the page break whose following lines best match its text (or, with no text to go by
-    and `last`, at the last break: the second's end and date are the item's last lines)."""
+    and `last`, at the last break: the second's end and date are the item's last lines). `page`: the second begins
+    at the top of that page."""
     segs, lines, refs = pc['segments'], pc['lines'], pc.get('refs') or []
     if len(segs) < 2 or len(refs) != len(lines):
         return None
     at = lambda i: (refs[i]['page'], refs[i]['boxes'][0][1] - 2.8)  # a line's top, avatar included
-    cut = None
-    if c.get('tail'):
+    cut = (page, 0) if page else None
+    if cut is None and c.get('tail'):
         idx = [i for i, l in enumerate(lines) if l != pc['date']]
         j = next((j for j in range(len(idx)) if ' '.join(lines[i] for i in idx[j:]) == c['tail']), None)
         if j:
@@ -132,6 +137,7 @@ def printed_name(text, names):
 
 def main(repo, volume, matched_path, pages, last_page=None, printed='2014-06-14'):
     volume = int(volume)
+    match.PAGES = pages  # for has_avatar()
     first_borrowed = 1
     if last_page and ':' in last_page:
         last_page, first_borrowed = last_page.split(':')
@@ -145,6 +151,14 @@ def main(repo, volume, matched_path, pages, last_page=None, printed='2014-06-14'
         return volume, page
     vkey = f'v{volume}'
     M = json.load(open(matched_path))
+    unprinted = {sid for sid, s in M['site_comments'].items() if s.get('from_name') in NEVER_PRINTED}
+    for sid in unprinted:
+        del M['site_comments'][sid]
+    for r in M['results']:
+        r['partial'] = [[cid, k] for cid, k in r.get('partial', []) if cid not in unprinted]
+        for c in r['comments']:
+            if c['site'] in unprinted:
+                c['site'] = None
     img_dir = os.path.join(repo, 'static', 'anthology', vkey)
     entries, recovered, new_posts, skipped, dropped = {}, {}, [], [], []
     pdf_page = lambda segs: segs[0][0]
@@ -204,6 +218,31 @@ def main(repo, volume, matched_path, pages, last_page=None, printed='2014-06-14'
             return None
         near = [sid for sid in by_post[post_key] if sid not in claimed and sid not in entries
                 and 0 <= (parse_t(M['site_comments'][sid]['created_time']) - p).total_seconds() < 60]
+        return near[0] if len(near) == 1 else None
+
+    def second_start(pc):
+        """The page whose first line is another comment's, its name line hidden under the page's menu bar or lost in
+        the break but its avatar printed beside it (a comment's own text continues there with no avatar; the first
+        comment's text must be printed before it)."""
+        refs = pc.get('refs') or []
+        for p, _, _ in pc['segments'][1:]:
+            first = next((r for r in refs if r['page'] == p and r['text'] != pc['date']), None)
+            if (first and first['boxes'] and 314 <= first['boxes'][0][0] <= 317 and has_avatar(first)
+                    and any(r['page'] < p and r['text'] != pc['date'] for r in refs)):
+                return p
+        return None
+
+    def text_owner(post_key, c, text, site):
+        """The one site comment with no item whose end is `text` (the part of an item after a break), written in the
+        item's printed minute (or up to two days before an edit time). The avatar by itself isn't enough: a comment's
+        own avatar can run onto the next page beside its text."""
+        if not c['utc'] or c.get('approx') is not None or len(re.findall(r'[^\W\d_]+', text)) < 1:
+            return None
+        p = parse_t(c['utc'])
+        lo = -2 * 86400 if 'Edited' in (c['pdf'].get('date') or '') else 0
+        near = [sid for sid in by_post[post_key] if sid not in claimed and sid not in entries and sid != site
+                and lo <= (parse_t(M['site_comments'][sid]['created_time']) - p).total_seconds() < 60
+                and same_end(message(sid), text) and similarity(text, message(sid)) >= 0.6]
         return near[0] if len(near) == 1 else None
 
     def date_half(sid, segs, lines):
@@ -290,10 +329,22 @@ def main(repo, volume, matched_path, pages, last_page=None, printed='2014-06-14'
                     split = split_item(pc, c, site_text)
                     if split and not same_end(site_text, ' '.join(split[3])):
                         split = None  # the part after the break isn't this comment's end
-                elif top and c.get('tail') and c['author'] and who(c['author']) != mine:
-                    # Its own comment, then another member's printed whole after the break (name, text and date).
+                elif top and c.get('tail') and c['author'] and (
+                        who(c['author']) != mine or similarity(c['tail'], site_text) < 0.5):
+                    # Its own comment, then another member's (or another of its member's) printed whole after the
+                    # break (name, text and date).
                     split = split_item(pc, c, c['tail'])
                     reverse = bool(split)
+                elif top and c.get('tail'):
+                    split = split_item(pc, c, c['tail'])  # another of its member's comments, then this one
+            if not split and not site and k not in partial and top and c.get('tail'):
+                split = split_item(pc, c, c['tail'])  # another comment's start, then this one with its name
+            if not split and k not in partial and not c.get('tail') and len(pc['segments']) > 1:
+                p2 = second_start(pc)
+                parts = p2 and split_item(pc, c, '', page=p2)
+                other = parts and crop_height(parts[0]) >= 20 and text_owner(post_key, c, ' '.join(parts[3]), site)
+                if other:
+                    split, dated = parts, other
             if split and dated:
                 segs_a, segs_b, lines_a, lines_b = split
                 ce = picture(key, segs_a)
@@ -359,8 +410,12 @@ def main(repo, volume, matched_path, pages, last_page=None, printed='2014-06-14'
                 # is that comment's, not the recovered one's, so give none (the picture shows both).
                 if c['author'] and not (k in partial and not site and not c.get('tail')):
                     ce['name'] = c['author']
+                first = pc.get('first')
                 if c.get('cut'):
                     ce['cut'] = 'date'  # only its date line printed: a page break swallowed its name and text
+                elif (first and first.get('boxes') and first['boxes'][0][1] <= 90 and not has_avatar(first)
+                      and any(l != pc['date'] for l in pc['lines'])):
+                    ce['cut'] = 'start'  # it opens at a page top with no avatar: its name and first words fell into the break
                 for cid in partial.get(k, []):
                     # This picture also holds the start of another comment, whose end a page break swallowed.
                     entries[cid] = dict(ce, partial=True)
@@ -421,6 +476,13 @@ def main(repo, volume, matched_path, pages, last_page=None, printed='2014-06-14'
     letters = lambda t: re.search(r'[^\W\d_]', no_emoticons(t))
     for post_key, comments in recovered.items():
         for ce in list(comments):
+            if ce.get('time') and not ce.get('name') and not ce.get('text') and any(
+                    sid in entries and parse_t(M['site_comments'][sid]['created_time']).replace(second=0) == parse_t(ce['time'])
+                    for sid in by_post[post_key]):
+                # A date line alone, in the minute of a comment that has its picture: that comment's own date.
+                os.remove(os.path.join(repo, 'static', ce['image']))
+                comments.remove(ce)
+                continue
             if not (ce.get('name') and ce.get('time')):
                 continue
             body = ce['text'][len(ce['name']):].strip() if ce['text'].startswith(ce['name']) else ce['text']
