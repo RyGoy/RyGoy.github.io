@@ -840,7 +840,7 @@ body::after { content: ""; position: fixed; z-index: -1; right: -6rem; bottom: -
   box-shadow: 0 18px 50px #000000c0;
   transform: translate(-50%, -50%) translateX(calc(var(--x) * var(--step))) scale(var(--scale));
   filter: brightness(calc(1 - var(--dim)));
-  transition: transform .45s ease, filter .45s ease;
+  transition: transform .45s ease, filter .45s ease, opacity .45s ease;
   cursor: pointer; user-select: none;
 }
 .carousel-frame[data-pos="0"] { z-index: 3; cursor: default; }
@@ -850,7 +850,31 @@ body::after { content: ""; position: fixed; z-index: -1; right: -6rem; bottom: -
 .carousel-frame[data-pos="2"], .carousel-frame[data-pos="-2"] { z-index: 1; --scale: .66; --dim: .55; }
 .carousel-frame[data-pos="2"] { --x: 1.75; }
 .carousel-frame[data-pos="-2"] { --x: -1.75; }
+/* With more than five frames, the rest wait out of sight behind the outer ones, on their own side. */
+.carousel-frame:not([data-pos="0"], [data-pos="1"], [data-pos="-1"], [data-pos="2"], [data-pos="-2"]) {
+  z-index: 0; --x: 1.75; --scale: .55; --dim: .8; opacity: 0; pointer-events: none;
+}
+.carousel-frame:not([data-pos="0"], [data-pos="1"], [data-pos="-1"], [data-pos="2"], [data-pos="-2"])[data-pos^="-"] { --x: -1.75; }
 .carousel-placeholder { font-family: var(--display); font-variant-numeric: lining-nums; font-size: clamp(4rem, 10vw, 7rem); color: #d3bf98; }
+/* A frame holding a post or comment: its name and date, as much of its text as fits (faded out at the foot when it
+   runs over), and a link to it. Type is sized to the frame, in cqw of the carousel. */
+.carousel-card {
+  display: flex; flex-direction: column; place-items: stretch; gap: .7em; padding: 1.4em 1.6em 1.2em; text-align: left;
+  font-size: clamp(.8rem, 1.7cqw, 1.02rem); color: var(--paper);
+}
+.carousel-card-header { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: .2em 1em; }
+.carousel-card-name { font-family: var(--display); font-size: 1.45em; font-weight: 600; color: #d3bf98; }
+.carousel-card-header time { font-size: .85em; color: var(--muted); }
+.carousel-card-text {
+  flex: 1; min-height: 0; overflow: hidden; line-height: 1.6; overflow-wrap: anywhere;
+  mask-image: linear-gradient(to bottom, #000 calc(100% - 3em), transparent);
+  -webkit-mask-image: linear-gradient(to bottom, #000 calc(100% - 3em), transparent);
+}
+.carousel-card-text p { white-space: pre-line; margin: 0 0 .9em; }
+.carousel-card-link { align-self: flex-start; font-size: .9em; color: var(--brass); text-decoration: none; }
+.carousel-card-link:hover, .carousel-card-link:focus-visible { color: var(--paper); text-decoration: underline; }
+/* A side frame's click brings it to the front (carousel.js), so its link waits until then. */
+.carousel-frame:not([data-pos="0"]) a { pointer-events: none; }
 .carousel-arrow {
   position: absolute; top: 50%; z-index: 4; transform: translateY(-50%);
   width: 3rem; height: 3rem; padding: 0 0 .25rem; border: 0; background: none;

@@ -2,19 +2,45 @@
        others step back and shrink to each side, and it wraps around. No autoplay; the arrows, the arrow keys, a click
        on a side frame or a swipe move it. static/js/carousel.js sets each frame's data-pos (its distance from the
        current frame); the positions below are the starting layout, so the frames still show without JavaScript.
-       The frames are placeholders numbered 1–5 until their content is decided. */ -}}
-{{- $frames := seq 5 -}}
+       The frames are the posts and comments listed in data/carousel.json (content paths, e.g.
+       "vol_i/<post id>" for a post, "vol_i/<post id>/<post id>-<comment id>" for a comment), each showing as much of
+       its text as fits and linking to it in its volume; numbered placeholders make up the rest of the first five. */ -}}
+{{- $pages := slice -}}
+{{- range site.Data.carousel }}{{ with site.GetPage . }}{{ $pages = $pages | append . }}{{ else }}{{ errorf "data/carousel.json: no page %q" . }}{{ end }}{{ end -}}
+{{- $frames := $pages -}}
+{{- if lt (len $pages) 5 }}{{ range seq (add (len $pages) 1) 5 }}{{ $frames = $frames | append . }}{{ end }}{{ end -}}
 {{- $count := len $frames -}}
 <section class="carousel-section" aria-labelledby="carousel-heading">
 <div class="section-heading"><h2 id="carousel-heading">The gold is in the comments</h2><span class="rule" aria-hidden="true"></span></div>
 <div class="carousel" aria-roledescription="carousel" aria-labelledby="carousel-heading">
   <div class="carousel-stage">
-    {{- range $i, $n := $frames }}
+    {{- range $i, $f := $frames }}
     {{- /* Start with frame 1 in front: frames after it to the right, the rest wrapped round to the left. */ -}}
     {{- $pos := $i }}{{ if gt $i (div $count 2) }}{{ $pos = sub $i $count }}{{ end }}
-    <div class="carousel-frame" role="group" aria-roledescription="slide" aria-label="{{ $n }} of {{ $count }}" data-pos="{{ $pos }}"{{ if ne $pos 0 }} aria-hidden="true"{{ end }}>
-      <span class="carousel-placeholder">{{ $n }}</span>
+    {{- $label := printf "%d of %d" (add $i 1) $count }}
+    {{- $hidden := cond (ne $pos 0) " aria-hidden=\"true\"" "" }}
+    {{- if eq (printf "%T" $f) "int" }}
+    <div class="carousel-frame" role="group" aria-roledescription="slide" aria-label="{{ $label }}" data-pos="{{ $pos }}"{{ $hidden | safeHTMLAttr }}>
+      <span class="carousel-placeholder">{{ $f }}</span>
     </div>
+    {{- else }}
+    {{- with $f }}
+    {{- $anthology := partial "anthology-entry.html" . }}
+    {{- $printed := "" }}{{ with $anthology.entry }}{{ $printed = .name | default "" }}{{ end }}
+    {{- $names := partial "anthology-names.html" (dict "export" (.Params.from_name | default "") "printed" $printed) }}
+    {{- $volume := cond (isset .Params "post_id") .Parent.Parent .Parent }}
+    {{- $href := printf "%s#entry-%s" .Parent.RelPermalink .Params.id }}
+    <article class="carousel-frame carousel-card" role="group" aria-roledescription="slide" aria-label="{{ $label }}: {{ $names.main }}" data-pos="{{ $pos }}"{{ $hidden | safeHTMLAttr }}>
+      <header class="carousel-card-header">
+        <span class="carousel-card-name">{{ $names.main }}</span>
+        {{ with .Params.created_time }}<time datetime="{{ . }}">{{ (time.AsTime .).Format "January 2, 2006" }}</time>{{ end }}
+      </header>
+      {{- /* As much of the text as the frame holds: the CSS fades out what runs past its foot. */}}
+      <div class="carousel-card-text">{{ range split (replace (.Params.message | default "" | truncate 1500 | htmlUnescape) "\r\n" "\n") "\n\n" }}<p>{{ . }}</p>{{ end }}</div>
+      <a class="carousel-card-link" href="{{ $href }}">Read it in {{ $volume.Title }}{{ if not (isset .Params "post_id") }} · {{ len .Pages }} comments{{ end }} →</a>
+    </article>
+    {{- end }}
+    {{- end }}
     {{- end }}
   </div>
   <button class="carousel-arrow carousel-prev" type="button" aria-label="Previous" hidden>‹</button>
