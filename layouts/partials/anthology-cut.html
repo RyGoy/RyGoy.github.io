@@ -1,0 +1,8 @@
+{{- /* The caption sentence for a printed copy that a page break cut (entry "cut"), with a leading space; "" if none.
+       Context: dict "cut" ("end", "start" or "date") and "noun" ("post" or "comment"). */ -}}
+{{- with .cut -}}
+  {{- if eq . "end" }} A page break in the printout cut off the end of this {{ $.noun }}.
+  {{- else if eq . "start" }} A page break in the printout cut off the beginning of this {{ $.noun }}, with its name.
+  {{- else if eq . "date" }} A page break in the printout swallowed this {{ $.noun }}: only its date was printed.
+  {{- end -}}
+{{- end -}}

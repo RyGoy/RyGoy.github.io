@@ -1,0 +1,19 @@
+{{- /* The names to show for a post or comment: the export's name, and the name printed in the Anthology when the
+       member had been renamed by then (data/anthology_aliases.json, printed name → export name, from
+       scripts/anthology/aliases.py). Returning partial. Context: dict "export" (the export's name, "" if it has none)
+       and "printed" (the printed name, "" if none). Returns dict "main" (the name searched and filtered by: the
+       export's, or the account's export name for a renamed member, or else the printed one), "mainBlue" (true when
+       "main" itself comes only from the printout) and "blue" (a printed name shown after it, in blue, or ""). */ -}}
+{{- $export := .export | default "" -}}
+{{- $printed := .printed | default "" -}}
+{{- $alias := "" -}}
+{{- with site.Data.anthology_aliases }}{{ $aliases := . }}{{ with $printed }}{{ $alias = index $aliases . | default "" }}{{ end }}{{ end -}}
+{{- $r := dict "main" $export "mainBlue" false "blue" "" -}}
+{{- if $export -}}
+  {{- if and $printed (eq $alias $export) }}{{ $r = merge $r (dict "blue" $printed) }}{{ end -}}
+{{- else if $alias -}}
+  {{- $r = dict "main" $alias "mainBlue" false "blue" $printed -}}
+{{- else if $printed -}}
+  {{- $r = dict "main" $printed "mainBlue" true "blue" "" -}}
+{{- end -}}
+{{- return $r -}}

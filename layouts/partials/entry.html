@@ -1,6 +1,8 @@
 {{ $anthology := partial "anthology-entry.html" . }}
 {{ $printedName := "" }}{{ with $anthology.entry }}{{ $printedName = .name | default "" }}{{ end }}
-<article class="archive-entry{{ if .Params.post_id }} comment-entry{{ end }}{{ if .Params.anthology }} anthology-entry{{ end }}" id="entry-{{ .Params.id }}" data-author="{{ .Params.from_name | default $printedName }}">
+{{ $export := .Params.from_name | default "" }}{{ if .Params.anthology }}{{ $printedName = $export }}{{ $export = "" }}{{ end }}
+{{ $names := partial "anthology-names.html" (dict "export" $export "printed" $printedName) }}
+<article class="archive-entry{{ if .Params.post_id }} comment-entry{{ end }}{{ if .Params.anthology }} anthology-entry{{ end }}" id="entry-{{ .Params.id }}" data-author="{{ $names.main }}">
   {{ partial "lpPosts.html" . }}
   {{ partial "anthology-copy.html" (dict "page" . "found" $anthology) }}
   {{ partial "anthology-links.html" .Params.anthology_links }}
