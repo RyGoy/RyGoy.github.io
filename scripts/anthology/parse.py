@@ -210,10 +210,11 @@ def parse(path):
             continue
         if post is not None and state == 'body':
             # The post ends at its Like · Comment · Share line. That line is sometimes lost at a page break, so its
-            # likes line, its first comment (x ~315) or "Write a comment" also end it.
+            # likes line (x ~299, after its thumb; a text line ending "like this" is at ~285), its first comment
+            # (x ~315) or "Write a comment" also end it.
             if ACTIONS.match(t):
                 end = (l['page'], l['y1'] + 3)
-            elif (LIKES.search(t) and l['x0'] < 310) or 314.5 <= l['x0'] <= 316.5 or t.startswith('Write a comment'):
+            elif (LIKES.search(t) and 295 <= l['x0'] < 310) or 314.5 <= l['x0'] <= 316.5 or t.startswith('Write a comment'):
                 end = (l['page'], l['y0'] - 2)
                 i -= 1  # read this line again as part of the comments
             else:

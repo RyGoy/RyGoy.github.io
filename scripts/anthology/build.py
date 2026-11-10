@@ -17,7 +17,7 @@ from datetime import datetime, timedelta, timezone
 from zoneinfo import ZoneInfo
 
 import crop
-from match import pdf_date, similarity
+from match import no_emoticons, pdf_date, similarity
 
 EASTERN = ZoneInfo('America/New_York')
 URL = re.compile(r'https?://\S+')
@@ -75,18 +75,20 @@ def missing(repo, path, post=False):
     Anthology but export as nothing): the picture then stands in for what is missing."""
     d = json.loads(open(os.path.join(repo, path), encoding='utf-8').read())
     content = [d.get('message')] + ([d.get('name'), d.get('description'), d.get('caption')] if post else [])
-    return not (d.get('from_name') or '').strip() or not any(re.search(r'\w', c or '') for c in content)
+    # An emoticon (":/") is content; a "?" alone is what the export left of an emoji or sticker.
+    return not (d.get('from_name') or '').strip() or not any(re.search(r'[^\s?()]', c or '') for c in content)
 
 
 def utc_text(dt):
     return dt.strftime('%Y-%m-%dT%H:%M:%S+0000')
 
 
-def split_item(pc, c, site_text):
+def split_item(pc, c, site_text, last=False):
     """An item that holds the start of one comment and the rest of the next (a page break swallowed the first one's
     end and the second one's start): where the second begins. Returns (segments before, segments after, lines
     before, lines after), or None when it can't be told. The second begins at its own name line when that is printed
-    (the "tail"), otherwise at the page break whose following lines best match its text."""
+    (the "tail"), otherwise at the page break whose following lines best match its text (or, with no text to go by
+    and `last`, at the last break: the second's end and date are the item's last lines)."""
     segs, lines, refs = pc['segments'], pc['lines'], pc.get('refs') or []
     if len(segs) < 2 or len(refs) != len(lines):
         return None
@@ -101,7 +103,10 @@ def split_item(pc, c, site_text):
         def after(p):
             return ' '.join(l for l, r in zip(lines, refs) if r['page'] >= p and l != pc['date'])
         breaks = [s[0] for s in segs[1:]]
-        p = max(breaks, key=lambda p: similarity(after(p), site_text) if site_text else 0) if len(breaks) > 1 else breaks[0]
+        if len(breaks) > 1 and site_text and re.search(r'\w', site_text):
+            p = max(breaks, key=lambda p: similarity(after(p), site_text))
+        else:
+            p = breaks[-1] if last else breaks[0]
         cut = (p, 0)
     page, y = cut
     a, b = [], []
@@ -151,8 +156,10 @@ def main(repo, volume, matched_path, pages, last_page=None, printed='2014-06-14'
     who = lambda n: re.sub(r'[^a-z]', '', (aliases.get(n, n) or '').lower())
     exported = set()  # every name in the export: a member not in it has no comments on the site
     for f in glob.glob(os.path.join(repo, 'content', 'vol_*', '*', '*.md')):
+        if os.path.basename(os.path.dirname(f)).startswith('anthology-'):
+            continue  # a post the export lacks, written by this script
         m = re.search(r'"from_name": "((?:[^"\\]|\\.)*)"', open(f, encoding='utf-8').read(2000))
-        if m and '/anthology-' not in f:
+        if m:
             exported.add(who(json.loads(f'"{m[1]}"')))
     ends = lambda t: re.findall(r'[^\W\d_]+', (t or '').lower())[-4:]  # a text's last words
 
@@ -177,6 +184,36 @@ def main(repo, volume, matched_path, pages, last_page=None, printed='2014-06-14'
     lost = collections.Counter(who(c['author']) for r in M['results'] for c in r['comments']
                                if not c['site'] and c['author'])
     lost = {n for n, k in lost.items() if k >= 3 and n not in exported}
+    parse_t = lambda t: datetime.fromisoformat(t[:19])
+    claimed = {c['site'] for r in M['results'] for c in r['comments'] if c['site']}  # site comments the matcher
+    claimed |= {cid for r in M['results'] for cid, _ in r.get('partial', [])}  # paired with an item, whole or part
+    by_post = collections.defaultdict(list)
+    for sid, s in M['site_comments'].items():
+        by_post[s.get('post_id')].append(sid)
+
+    def date_owner(post_key, c, site):
+        """The site comment whose date line an item spanning a page break ends with, when that isn't the comment
+        it was paired with: the one comment on the post written in the printed minute that no item was paired with.
+        The break swallowed the paired comment's end and date and the other's name and start (or all its text), so
+        the item is the first one's start, then the other's end and date."""
+        pc = c['pdf']
+        if len(pc['segments']) < 2 or not c['utc'] or c.get('approx') is not None or 'Edited' in (pc.get('date') or ''):
+            return None
+        p = parse_t(c['utc'])
+        if site and parse_t(M['site_comments'][site]['created_time']).replace(second=0) == p:
+            return None
+        near = [sid for sid in by_post[post_key] if sid not in claimed and sid not in entries
+                and 0 <= (parse_t(M['site_comments'][sid]['created_time']) - p).total_seconds() < 60]
+        return near[0] if len(near) == 1 else None
+
+    def date_half(sid, segs, lines):
+        """The picture of a comment whose name and start (or all its text) fell into a page break."""
+        e = picture(sid, segs)
+        e['cut'] = 'start' if lines or crop_height(segs) > 40 else 'date'
+        if missing(repo, M['site_comments'][sid]['path']):
+            e['missing'], e['text'] = True, ' '.join(lines)
+        return e
+    edited = set()  # recovered comments printed with their edit time
     for r in M['results']:
         pp = r['pdf']
         page = pdf_page(pp['segments'])
@@ -233,8 +270,21 @@ def main(repo, volume, matched_path, pages, last_page=None, printed='2014-06-14'
             if len(partial.get(k, [])) == 1:
                 split = split_item(pc, c, site_text or (c.get('tail') or ''))
             reverse = False  # the item is paired with its first comment; the second, after the break, is another's
+            dated = None  # the site comment whose end and date follow the break, by its printed time (date_owner)
+            top = printed_name(next((l for l in pc['lines'] if l != pc['date']), ''), names)
+            if not split and k not in partial and len(pc['segments']) > 1 and (site or (top and not c.get('tail'))):
+                other = date_owner(post_key, c, site)
+                theirs = other and who(M['site_comments'][other].get('from_name'))
+                # The top is the paired comment's own (its name, or none printed); an unpaired item's top is by a
+                # member other than the dated comment's (the same member's would be that comment itself).
+                if other and (who(top) == who(M['site_comments'][site].get('from_name')) if site and top
+                              else site or who(top) != theirs):
+                    split = split_item(pc, c, message(other), last=True)
+                    if split and crop_height(split[0]) >= 20 and same_end(message(other), ' '.join(split[3])):
+                        dated = other
+                    else:
+                        split = None
             if not split and site and k not in partial and len(pc['segments']) > 1:
-                top = printed_name(next((l for l in pc['lines'] if l != pc['date']), ''), names)
                 mine = who(M['site_comments'][site].get('from_name'))
                 if top and who(top) != mine:
                     split = split_item(pc, c, site_text)
@@ -244,7 +294,15 @@ def main(repo, volume, matched_path, pages, last_page=None, printed='2014-06-14'
                     # Its own comment, then another member's printed whole after the break (name, text and date).
                     split = split_item(pc, c, c['tail'])
                     reverse = bool(split)
-            if split and reverse:
+            if split and dated:
+                segs_a, segs_b, lines_a, lines_b = split
+                ce = picture(key, segs_a)
+                ce['cut'] = 'end'  # its end and date fell into the page break
+                if top:
+                    ce['name'] = top
+                entries[dated] = date_half(dated, segs_b, lines_b)
+                split = (segs_a, segs_b, lines_a, lines_a)  # this comment's text is the part before the break
+            elif split and reverse:
                 segs_a, segs_b, lines_a, lines_b = split
                 ce = picture(key, segs_a)
                 ce['cut'] = 'end'  # its date is the other comment's: the break swallowed its end and date
@@ -255,13 +313,25 @@ def main(repo, volume, matched_path, pages, last_page=None, printed='2014-06-14'
             elif split:
                 segs_a, segs_b, lines_a, lines_b = split
                 cid = partial[k][0] if partial.get(k) else None
-                # Its own name opens its lines; the item's author can be the second comment's (printed after the break).
-                name_a = (printed_name(lines_a[0], names) if lines_a else None) or (c['author'] if cid else None)
+                # Its own name opens its lines (the item's author can be the second comment's, printed after the break).
+                name_a = printed_name(lines_a[0], names) if lines_a else None
                 author = lambda sid: who(M['site_comments'][sid].get('from_name'))
-                if cid and site and name_a and who(name_a) != author(cid) and who(name_a) == author(site):
-                    # The matcher swapped them: the top is the date's comment's start, the bottom the other one's end.
-                    site, cid = cid, site
-                    key = site
+                if cid and site:
+                    # Which of the two is above the break: the date line (below it) is the second's; else the name
+                    # printed at the top, when they are by different members; else their texts.
+                    pt = c['utc'] and c.get('approx') is None and 'Edited' not in (pc.get('date') or '') and parse_t(c['utc'])
+                    at = lambda sid: bool(pt) and parse_t(M['site_comments'][sid]['created_time']).replace(second=0) == pt
+                    ta, tb = ' '.join(lines_a), ' '.join(lines_b)
+                    fit = lambda above, below: similarity(ta, message(above)) + similarity(tb, message(below))
+                    if at(cid) != at(site):
+                        swap = at(cid)
+                    elif name_a and author(cid) != author(site):
+                        swap = who(name_a) != author(cid) and who(name_a) == author(site)
+                    else:
+                        swap = fit(site, cid) > fit(cid, site) + 0.3
+                    if swap:  # the matcher swapped them: the top is the paired comment's start, the bottom the other's end
+                        site, cid = cid, site
+                        key = site
                 if not segs_a or crop_height(segs_a) < 20:
                     pass  # only a sliver (an avatar's edge) above the break: nothing of that comment to show
                 elif cid and not (name_a and who(name_a) != author(cid)):
@@ -281,8 +351,8 @@ def main(repo, volume, matched_path, pages, last_page=None, printed='2014-06-14'
                 own = c.get('tail') and printed_name(c['tail'], names)
                 if own:
                     ce['name'] = own
-                else:
-                    ce['cut'] = 'start'  # its name and first words fell into the page break
+                else:  # its name and first words fell into the page break (or all its text: only its date printed)
+                    ce['cut'] = 'start' if lines_b or crop_height(segs_b) > 40 else 'date'
             else:
                 ce = picture(key, pc['segments'])
                 # An unpaired item that begins with another (site) comment, cut by a page break: the name at its start
@@ -304,20 +374,26 @@ def main(repo, volume, matched_path, pages, last_page=None, printed='2014-06-14'
                 x1s = [x for l, x in zip(pc['lines'], pc.get('x1', [])) if l != pc['date']]
                 # An item that begins with another comment's start holds this one after its name line (the "tail"),
                 # or after the page break when its name fell into it.
-                if split:
-                    j = len(text_lines) - len(split[3])
+                if dated:  # its start, above the break; the date printed is the dated comment's
+                    text_lines, x1s = split[2], x1s[:len(split[2])]
                 else:
-                    j = next((j for j in range(len(text_lines)) if c.get('tail') and ' '.join(text_lines[j:]) == c['tail']), 0)
-                text_lines, x1s = text_lines[j:], x1s[j:]
+                    if split:
+                        j = len(text_lines) - len(split[3])
+                    else:
+                        j = next((j for j in range(len(text_lines)) if c.get('tail') and ' '.join(text_lines[j:]) == c['tail']), 0)
+                    text_lines, x1s = text_lines[j:], x1s[j:]
                 ce.update({'id': key, 'time': c['utc'] and utc_text(datetime.fromisoformat(c['utc'])),
                            'text': ' '.join(text_lines), 'links': links(text_lines, x1s, 590)})
-                if c.get('approx') is not None:
+                if dated:  # written before the dated comment, by how much unknown
+                    ce['time'] = utc_text(parse_t(M['site_comments'][dated]['created_time']) - timedelta(seconds=1))
+                if c.get('approx') is not None or dated:
                     ce['time_approx'] = True  # printed as "11 hrs": an estimate, placed between its neighbours
+                if 'Edited' in (pc.get('date') or '') and not dated:
+                    edited.add(key)
                 recovered.setdefault(post_key, []).append(ce)
     # The first half of a two-comment item, by a member other than the comment it was linked to: that member's
     # latest comment on the post before the second one, still without a copy; or, for a member the export lacks
     # altogether, a recovered comment placed just before the second (its date fell into the page break).
-    parse_t = lambda t: datetime.fromisoformat(t[:19])
     # A whole second comment printed after the break ("exact": its own date) is that member's comment at that minute.
     for n, (post_key, name, segs, lines, when, x1s, exact) in enumerate(tops):
         window = (timedelta(seconds=-60), timedelta(seconds=60)) if exact else (timedelta(0), timedelta(days=2))
@@ -340,18 +416,25 @@ def main(repo, volume, matched_path, pages, last_page=None, printed='2014-06-14'
             recovered.setdefault(post_key, []).append(e)
     # A recovered comment that is a site comment still without a copy: the same member (renames included), the same
     # post, within three minutes, and the same text or no letters in either (an emoticon prints as a picture; "0.00%"
-    # was printed ".00000001 %").
-    letters = lambda t: re.search(r'[^\W\d_]', t or '')
+    # was printed ".00000001 %"). With the same text, also an estimated time ("8 hrs") within three hours, and an
+    # edited one written up to two days before its printed edit time.
+    letters = lambda t: re.search(r'[^\W\d_]', no_emoticons(t))
     for post_key, comments in recovered.items():
         for ce in list(comments):
             if not (ce.get('name') and ce.get('time')):
                 continue
             body = ce['text'][len(ce['name']):].strip() if ce['text'].startswith(ce['name']) else ce['text']
-            t = datetime.fromisoformat(ce['time'].replace('+0000', '+00:00'))
-            near = [sid for sid, s in M['site_comments'].items()
-                    if s.get('post_id') == post_key and sid not in entries and who(s.get('from_name')) == who(ce['name'])
-                    and abs((datetime.fromisoformat(s['created_time'].replace('+0000', '+00:00')) - t).total_seconds()) <= 180
-                    and ((not letters(body) and not letters(message(sid))) or similarity(body, message(sid)) >= 0.8)]
+            t = parse_t(ce['time'])
+            lo, hi = (-2 * 86400 if ce['id'] in edited else -10800 if ce.get('time_approx') else -180), (
+                10800 if ce.get('time_approx') else 180)
+
+            def same(sid):
+                gap = (parse_t(M['site_comments'][sid]['created_time']) - t).total_seconds()
+                if not letters(body) and not letters(message(sid)):
+                    return abs(gap) <= 180
+                return (abs(gap) <= 180 or lo <= gap <= hi) and similarity(body, message(sid)) >= 0.8
+            near = [sid for sid in by_post[post_key] if sid not in entries
+                    and who(M['site_comments'][sid].get('from_name')) == who(ce['name']) and same(sid)]
             if len(near) == 1:
                 e = {k: v for k, v in ce.items() if k not in ('id', 'time', 'time_approx', 'text', 'links')}
                 if missing(repo, M['site_comments'][near[0]]['path']):
