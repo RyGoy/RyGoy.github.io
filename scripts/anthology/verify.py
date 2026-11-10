@@ -47,7 +47,7 @@ for key, e in data['entries'].items():
     doc = page_html(post)
     if doc is None:
         problems.append(f'{key}: no built page for post {post}'); continue
-    m = re.search(rf'<article[^>]*id="?entry-{re.escape(key)}"?[^>]*>(.*?)</article>', doc, re.S)
+    m = re.search(rf'<article[^>]*id="?entry-{re.escape(key)}(?=[\s">])"?[^>]*>(.*?)</article>', doc, re.S)
     if not m:
         problems.append(f'{key}: entry not on its page'); continue
     block = m.group(1)
@@ -72,7 +72,7 @@ for post, comments in data['recovered'].items():
     for c in comments:
         counts['recovered'] += 1
         check_image(c, c['id'])
-        m = doc and re.search(rf'<article[^>]*id="?entry-{re.escape(c["id"])}"?[^>]*>(.*?)</article>', doc, re.S)
+        m = doc and re.search(rf'<article[^>]*id="?entry-{re.escape(c["id"])}(?=[\s">])"?[^>]*>(.*?)</article>', doc, re.S)
         if not m:
             problems.append(f'{c["id"]}: recovered comment not on page {post}'); continue
         block = m.group(1)
