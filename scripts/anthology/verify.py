@@ -78,7 +78,8 @@ for post, comments in data['recovered'].items():
         block = m.group(1)
         if '/' + c['image'] not in block:
             problems.append(f'{c["id"]}: recovered picture missing')
-        if c.get('name') and not re.search(r'anthology-name[^>]*>' + re.escape(html.escape(c['name'], quote=False)), block):
+        # The name is in the blue heading, or (for a renamed member) after the export name, inside its filter span.
+        if c.get('name') and not re.search(r'anthology-name[^>]*>(?:<span[^>]*>)?' + re.escape(html.escape(c['name'], quote=False)), block):
             problems.append(f'{c["id"]}: name {c["name"]!r} not shown in blue')
         for url in c.get('links', []):
             if html.escape(url) not in block and url not in block:

@@ -4,14 +4,15 @@
 {{- $c := .c -}}
 {{- /* A page borrowed from the next volume ("volume") carries that volume's print date. */ -}}
 {{- $pv := cond (isset $c "volume") (index site.Data.anthology (printf "v%d" (int $c.volume))) .volume -}}
-<article class="archive-entry comment-entry anthology-entry" id="entry-{{ $c.id }}" data-author="{{ $c.name }}">
+{{- $names := partial "anthology-names.html" (dict "export" "" "printed" ($c.name | default "")) -}}
+<article class="archive-entry comment-entry anthology-entry" id="entry-{{ $c.id }}" data-author="{{ $names.main }}">
   <header class="entry-header">
-    {{ with $c.name }}<h2 class="anthology-name" data-pagefind-filter="Commenter">{{ . }}</h2>{{ end }}
-    {{ with $c.time }}<span class="entry-date"><time datetime="{{ . }}">{{ (time.AsTime .).Format "Jan 02, 2006 3:04 PM" }}</time></span>{{ end }}
+    {{ with $names.main }}<h2{{ if $names.mainBlue }} class="anthology-name"{{ end }}><span data-pagefind-filter="Commenter">{{ . }}</span>{{ with $names.blue }}<span class="name-sep" aria-hidden="true"> · </span><span class="anthology-name" title="The name printed in the Anthology">{{ . }}</span>{{ end }}</h2>{{ end }}
+    {{ with $c.time }}<span class="entry-date"><time datetime="{{ . }}">{{ (time.AsTime .).Format (cond ($c.time_approx | default false) "Jan 02, 2006" "Jan 02, 2006 3:04 PM") }}</time></span>{{ end }}
   </header>
   <figure class="anthology-copy is-shown">
     <img src="{{ $c.image | relURL }}" width="{{ $c.w }}" height="{{ $c.h }}" alt="{{ $c.text | default "Printed copy of this comment" }}" loading="lazy" data-pagefind-index-attrs="alt">
-    <figcaption data-pagefind-ignore>Recovered from <a href="{{ .volume.source }}">{{ with $c.volume }}The Tender For Law Anthology, Volume {{ . }}{{ else }}{{ $.volume.title }}{{ end }}</a>, page {{ $c.page }} (printed {{ (time.AsTime $pv.printed).Format "2 January 2006" }}). Not in the Facebook export; added by this site.</figcaption>
+    <figcaption data-pagefind-ignore>Recovered from <a href="{{ .volume.source }}">{{ with $c.volume }}The Tender For Law Anthology, Volume {{ . }}{{ else }}{{ $.volume.title }}{{ end }}</a>, page {{ $c.page }} (printed {{ (time.AsTime $pv.printed).Format "2 January 2006" }}). Not in the Facebook export; added by this site.{{ partial "anthology-cut.html" (dict "cut" $c.cut "noun" "comment") }}</figcaption>
   </figure>
   {{ partial "anthology-links.html" $c.links }}
 </article>

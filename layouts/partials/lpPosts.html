@@ -4,7 +4,11 @@
          recovered from it (front matter "anthology"). */}}
   {{ $anthology := partial "anthology-entry.html" . }}
   {{ $filter := cond (isset .Params "post_id") "Commenter" "Author" }}
-  {{ with .Params.from_name }}<h2{{ if $.Params.anthology }} class="anthology-name"{{ end }} data-pagefind-filter="{{ $filter }}">{{ . }}</h2>{{ else }}{{ with $anthology.entry }}{{ with .name }}<h2 class="anthology-name" data-pagefind-filter="{{ $filter }}">{{ . }}</h2>{{ end }}{{ end }}{{ end }}
+  {{- /* A member renamed by the time of the printout shows both names: the export's, then the printed one in blue. */}}
+  {{ $export := .Params.from_name | default "" }}{{ $printed := "" }}
+  {{ if .Params.anthology }}{{ $printed = $export }}{{ $export = "" }}{{ else }}{{ with $anthology.entry }}{{ $printed = .name | default "" }}{{ end }}{{ end }}
+  {{ $names := partial "anthology-names.html" (dict "export" $export "printed" $printed) }}
+  {{ with $names.main }}<h2{{ if $names.mainBlue }} class="anthology-name"{{ end }}><span data-pagefind-filter="{{ $filter }}">{{ . }}</span>{{ with $names.blue }}<span class="name-sep" aria-hidden="true"> · </span><span class="anthology-name" title="The name printed in the Anthology">{{ . }}</span>{{ end }}</h2>{{ end }}
   {{ with .Params.created_time }}{{ $time := printf "<time datetime=%q>%s</time>" . ((time.AsTime .).Format (cond ($.Params.time_unknown | default false) "Jan 02, 2006" "Jan 02, 2006 3:04 PM")) }}{{ if eq page.RelPermalink $.RelPermalink }}<span class="entry-date">{{ $time | safeHTML }}</span>{{ else }}<a class="entry-date" href="{{ $.RelPermalink }}">{{ $time | safeHTML }}</a>{{ end }}{{ end }}
 </header>
 {{ with .Params.message }}<div class="post-message">{{ range split (replace . "\r\n" "\n") "\n\n" }}<p>{{ . }}</p>{{ end }}</div>{{ end }}{{ partial "archive-links.html" (dict "page" . "field" "message") }}
