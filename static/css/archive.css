@@ -555,6 +555,9 @@ main { min-height: 35vh; }
 .image-viewer-close:hover, .image-viewer-close:focus-visible { border-color: var(--brass); }
 .image-viewer form { padding: .75rem; }
 .image-viewer img { max-height: calc(94vh - 4.5rem); }
+/* The blade hilt's video (body.html): as wide as the screen allows, the frame black whatever the theme. */
+.image-viewer.video-viewer { width: min(94vw, 1100px); max-width: none; }
+.video-viewer video { display: block; width: 100%; height: auto; max-height: calc(94vh - 4.5rem); background: black; }
 .image-viewer-close { color: var(--c-1d170c); background: linear-gradient(var(--c-d9bd84), var(--c-a8884f)); border-color: var(--c-e3c991); box-shadow: inset 0 1px 0 var(--c-fff3d080); }
 .image-viewer-close:hover, .image-viewer-close:focus-visible { color: var(--c-120e06); background: linear-gradient(var(--c-e8cf98), var(--c-b9985c)); border-color: var(--c-f0d9a6); }
 .hero-seal { margin: 0 auto 1.2rem; height: 4.5rem; width: 4.5rem; opacity: .65; }
@@ -572,7 +575,9 @@ main { min-height: 35vh; }
 :root[data-theme="dark"] .hero-rule { display: none; }
 :root[data-theme="dark"] .hero-saber { --saber-blue: #2b8dff; --saber-red: #ff1f33; position: relative; display: flex; align-items: center; width: min(23rem, 86%); height: 2rem; margin: 0 auto 1.1rem; }
 :root[data-theme="dark"] .hero-saber::after { content: ""; position: absolute; left: 20%; right: 0; top: 95%; height: .8rem; border-radius: 50%; background-color: var(--saber-blue); filter: blur(12px); opacity: 0; pointer-events: none; animation: saber-cast .42s ease-out .3s forwards, saber-tint 2.6s ease-in-out 2.67s forwards; }
-:root[data-theme="dark"] .hero-saber-hilt { flex: none; display: flex; align-items: center; filter: drop-shadow(0 1px 2px #000000c0); }
+:root[data-theme="dark"] .hero-saber-hilt { flex: none; display: flex; align-items: center; cursor: pointer; text-decoration: none; filter: drop-shadow(0 1px 2px #000000c0); transition: filter .2s; }
+:root[data-theme="dark"] .hero-saber-hilt:hover, :root[data-theme="dark"] .hero-saber-hilt:focus-visible { filter: drop-shadow(0 1px 2px #000000c0) drop-shadow(0 0 5px #ffffff40) brightness(1.2); }
+:root[data-theme="dark"] .hero-saber-hilt:focus-visible { outline: 1px solid var(--brass); outline-offset: 4px; }
 :root[data-theme="dark"] .hero-saber-hilt i { display: block; position: relative; }
 :root[data-theme="dark"] .hero-saber-pommel { width: .42rem; height: .74rem; border-radius: .22rem .06rem .06rem .22rem; background: linear-gradient(#c4c4c4, #5c5c5c 45%, #262626 80%, #111); box-shadow: inset .1rem 0 0 #00000059; }
 :root[data-theme="dark"] .hero-saber-ring { width: .16rem; height: .7rem; border-radius: 1px; background: linear-gradient(#f3e5bb, #a68c52 45%, #4a3c1c); }
