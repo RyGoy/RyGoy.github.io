@@ -272,8 +272,14 @@ def main(repo, parsed_path, out_path):
     local_day = lambda p: p['utc'].replace(tzinfo=timezone.utc).astimezone(EASTERN).date()
     results = []
 
+    # Renames found after earlier builds (data/anthology_aliases.json, printed name -> export name, by aliases.py).
+    alias_path = os.path.join(repo, 'data', 'anthology_aliases.json')
+    renamed = json.load(open(alias_path, encoding='utf-8')) if os.path.exists(alias_path) else {}
+
     def poster_matches(p, pp):
         first = norm(pp['header']).split()[:6]
+        if renamed.get(header_name(pp['header'])) == p.get('from_name'):
+            return True  # "Bildo Schmildo uploaded a file." / Bill Wiethaup
         return bool(words(p.get('from_name') or '') & set(first)) or similar_names(words(p.get('from_name') or ''), first)
 
     def ranked(pp):
@@ -381,10 +387,21 @@ def main(repo, parsed_path, out_path):
     def empty(p):
         content = ' '.join(filter(None, [p.get('message'), p.get('name'), p.get('description')]))
         return not plain_words(content) and not EMOTICON.search(p.get('message') or '')
+    # A run of one poster's uploads can lose a header (and date) in a page break: a post with no comments, between
+    # two posts headed by the same poster on the same day, is that poster's, that day.
+    heads, days = {}, {}
+    for k, pp in enumerate(parsed):
+        if 0 < k < len(parsed) - 1 and not pp['comments'] and not (header_name(pp['header']) and pdf_time(pp['date'])):
+            a, b = parsed[k - 1], parsed[k + 1]
+            da, db = pdf_time(a['date']), pdf_time(b['date'])
+            if (header_name(a['header']) and header_name(a['header']) == header_name(b['header']) and da and db
+                    and da.date() == db.date() and (not pdf_time(pp['date']) or pdf_time(pp['date']).date() == da.date())):
+                heads[k], days[k] = a['header'], da
+    header_of = lambda k: dict(parsed[k], header=heads.get(k, parsed[k]['header']))
     day_groups = defaultdict(lambda: ([], []))
     for k, pp in enumerate(parsed):
-        local = pdf_time(pp['date'])
-        if (k not in choice and local and header_name(pp['header'])
+        local = pdf_time(pp['date']) or days.get(k)
+        if (k not in choice and local and header_name(header_of(k)['header'])
                 and not any(pdf_time(pc['date']) for pc in pp['comments'])):
             day_groups[local.date()][0].append(k)
     for p in posts.values():
@@ -397,7 +414,7 @@ def main(repo, parsed_path, out_path):
         for p in ps:
             by_name[p['from_name']][1].append(p)
             for k in ks:
-                if poster_matches(p, parsed[k]):
+                if poster_matches(p, header_of(k)):
                     by_name[p['from_name']][0].append(k)
         for name, (nks, nps) in by_name.items():
             nks = sorted(set(k for k in nks if k not in choice))
@@ -406,6 +423,26 @@ def main(repo, parsed_path, out_path):
                 for k, p in zip(nks, nps):
                     choice[k] = (p['id'], 0.5)
                     taken.add(p['id'])
+    # An album or photo post prints no words of its own, and its comments can be lost from the export (they belong
+    # to the photos): "Scott Duncan added photos to 16 July 2013." with 218 printed comments, exported as an empty
+    # post with one. Pair such a printed post with the one empty post its poster made that day before its first
+    # printed comment.
+    albums = defaultdict(lambda: ([], []))
+    for k, pp in enumerate(parsed):
+        local = pdf_time(pp['date'])
+        if k not in choice and local and header_name(pp['header']) and pp['comments'] and not words(' '.join(pp['text'])):
+            albums[local.date()][0].append(k)
+    for p in posts.values():
+        if p['id'] not in taken and empty(p) and p.get('from_name') and local_day(p) in albums:
+            albums[local_day(p)][1].append(p)
+    for day, (ks, ps) in albums.items():
+        for k in ks:
+            first = min((t for pc in parsed[k]['comments'] for t in [pdf_time(pc['date'])] if t), default=None)
+            mine = [p for p in ps if poster_matches(p, parsed[k]) and p['id'] not in taken and (not first or p['utc'] <= first)]
+            rivals = [j for j in ks if j != k and any(poster_matches(p, parsed[j]) for p in mine)]
+            if len(mine) == 1 and not rivals:
+                choice[k] = (mine[0]['id'], 0.5)
+                taken.add(mine[0]['id'])
 
     def comment_author(pc):
         text = ' '.join(l for l in pc['lines'] if l != pc['date'])
