@@ -30,6 +30,8 @@ jobs:
   # Build job
   build:
     runs-on: ubuntu-latest
+    outputs:
+      artifact_id: ${{ steps.artifact.outputs.artifact_id }}
     env:
       HUGO_VERSION: 0.114.0
     steps:
@@ -64,6 +66,7 @@ jobs:
         # Every use of each dictionary term, as JSON in public/concordance/ for /concordance/.
         run: python3 scripts/concordance.py public/concordance
       - name: Upload artifact
+        id: artifact
         uses: actions/upload-pages-artifact@v3
         with:
           path: ./public
@@ -72,10 +75,48 @@ jobs:
   deploy:
     environment:
       name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
+      url: ${{ steps.deployment.outputs.page_url || steps.retry.outputs.page_url }}
     runs-on: ubuntu-latest
     needs: build
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+        continue-on-error: true
+      - name: Retry a stalled deployment
+        # GitHub Pages sometimes leaves a deployment in "syncing_files" until deploy-pages gives up and cancels it
+        # (10 minutes, its maximum; a healthy sync of this site takes 1-2). A retry under the same commit never
+        # starts, because deploy-pages names the deployment after the commit, so this asks the Pages API itself,
+        # the same way deploy-pages does but under a new build version for each attempt.
+        id: retry
+        if: steps.deployment.outcome == 'failure'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          ARTIFACT_ID: ${{ needs.build.outputs.artifact_id }}
+        run: |
+          api="repos/${GITHUB_REPOSITORY}/pages/deployments"
+          for attempt in 1 2 3; do
+            version="${GITHUB_SHA}-${GITHUB_RUN_ID}-${GITHUB_RUN_ATTEMPT}-retry${attempt}"
+            token=$(curl -sSf -H "Authorization: bearer ${ACTIONS_ID_TOKEN_REQUEST_TOKEN}" "${ACTIONS_ID_TOKEN_REQUEST_URL}" | jq -r .value)
+            if ! created=$(gh api -X POST "$api" -F artifact_id="$ARTIFACT_ID" -f pages_build_version="$version" -f oidc_token="$token"); then
+              echo "Attempt $attempt: the deployment was not created (the cancelled one may still be closing); waiting."
+              sleep 60
+              continue
+            fi
+            id=$(jq -r '.id // (.status_url | split("/") | last)' <<<"$created")
+            echo "page_url=$(jq -r '.page_url // empty' <<<"$created")" >> "$GITHUB_OUTPUT"
+            echo "Attempt $attempt: deployment $id ($version)"
+            status=""
+            for i in $(seq 1 108); do  # 9 minutes
+              sleep 5
+              status=$(gh api "$api/$id" --jq .status || echo "unknown")
+              case "$status" in
+                succeed) echo "Deployed."; exit 0 ;;
+                deployment_failed|deployment_content_failed|deployment_cancelled|deployment_lost) break ;;
+              esac
+            done
+            echo "Attempt $attempt: ended at \"$status\"; cancelling it."
+            gh api -X POST "$api/$id/cancel" > /dev/null || true
+          done
+          echo "::error::GitHub Pages did not finish any of the deployments."
+          exit 1
