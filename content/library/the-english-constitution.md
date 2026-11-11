@@ -9,6 +9,14 @@ source_label = "Internet Archive"
 weight = 1
 # The emblem beside the title, in place of the rose window: the cobra in its own colours (static/images/emblems/cobra-colour.webp).
 emblem = "cobra"
+
+# The cobra is a link that plays this video in a pop-up (layouts/library/single.html).
+[emblem_video]
+src = "/videos/rebel-scum.mp4"
+poster = "/videos/rebel-scum.webp"
+title = "Rebel Scum"
+width = 960
+height = 720
 +++
 
 Walter Bagehot (1826–1877) first published *The English Constitution* as a book in 1867. He separates the constitution into its **dignified** parts, such as the monarchy, which win the public's reverence and loyalty, and its **efficient** parts, mainly the Cabinet and the House of Commons, which actually govern.
