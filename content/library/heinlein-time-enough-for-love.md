@@ -7,8 +7,14 @@ coming_soon = true
 source = "https://openlibrary.org/works/OL59739W"
 source_label = "Find it on Open Library"
 weight = 18
+
+[copyright]
+status = "In copyright. G. P. Putnam's Sons published the book in 1973. Heinlein died in 1988, and his widow, Virginia, left most of their literary estate to the Heinlein Prize Trust."
+holder = "The Robert A. and Virginia Heinlein Prize Trust"
+us = "1 January 2069, 95 years after the book was published"
+canada = "1 January 2059, 70 years after Heinlein's death in 1988"
 +++
 
 Robert A. Heinlein (1907–1988) was one of the most widely read science-fiction writers of the twentieth century. In this novel, Lazarus Long, tired of living, is persuaded to keep going by being asked to tell his life story.
 
-The book is still under copyright. A copy, with its license and notice, is coming soon from [wfgresearch.org](https://wfgresearch.org/). Until then, Open Library has the catalogue record and finding options.
+The book is still under copyright: the copyright section below gives its status, who holds it and when it is expected to enter the public domain. A copy, with its license and notice, is coming soon from [wfgresearch.org](https://wfgresearch.org/).

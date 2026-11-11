@@ -7,8 +7,14 @@ coming_soon = true
 source = "https://openlibrary.org/works/OL2974379W"
 source_label = "Find it on Open Library"
 weight = 13
+
+[copyright]
+status = "In copyright. Twelve published the book in the United States, and Atlantic Books in Britain, in 2007. Hitchens died in 2011, and the copyright passed to his estate."
+holder = "The estate of Christopher Hitchens"
+us = "1 January 2082, 70 years after Hitchens's death in 2011"
+canada = "1 January 2082, 70 years after Hitchens's death in 2011"
 +++
 
 Christopher Hitchens (1949–2011) was a journalist and essayist. In this book, his best-known, he takes on the major religions in turn and argues that ethics and wonder need no supernatural foundation.
 
-The book is still under copyright. A copy, with its license and notice, is coming soon from [wfgresearch.org](https://wfgresearch.org/). Until then, Open Library has the catalogue record and finding options.
+The book is still under copyright: the copyright section below gives its status, who holds it and when it is expected to enter the public domain. A copy, with its license and notice, is coming soon from [wfgresearch.org](https://wfgresearch.org/).

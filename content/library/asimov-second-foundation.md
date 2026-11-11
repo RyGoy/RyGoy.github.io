@@ -7,8 +7,14 @@ coming_soon = true
 source = "https://archive.org/details/foundationtrilog0000isaa_c7g1"
 source_label = "Borrow it on the Internet Archive"
 weight = 16
+
+[copyright]
+status = "In copyright. Gnome Press published Second Foundation as a book in 1953. Its two parts first appeared as stories in Astounding Science Fiction in 1948 and 1949–50. The copyright passed to Asimov's estate when he died in 1992."
+holder = "The Estate of Isaac Asimov"
+us = "1 January 2049, 95 years after the book was published (the stories first printed in 1948–50: from 1 January 2044)"
+canada = "1 January 2063, 70 years after Asimov's death in 1992"
 +++
 
 *Second Foundation* gathers two stories first printed in *Astounding Science Fiction*: "Search by the Mule" and "Search by the Foundation". It completes the trilogy begun in [*Foundation*](/library/asimov-foundation/) and [*Foundation and Empire*](/library/asimov-foundation-and-empire/).
 
-The book is still under copyright. A copy, with its license and notice, is coming soon from [wfgresearch.org](https://wfgresearch.org/). Until then, the Internet Archive lends *The Foundation Trilogy* (1981), which has all three books in one volume.
+The book is still under copyright: the copyright section below gives its status, who holds it and when it is expected to enter the public domain. A copy, with its license and notice, is coming soon from [wfgresearch.org](https://wfgresearch.org/).

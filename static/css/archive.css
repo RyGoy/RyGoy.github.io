@@ -22,6 +22,7 @@
   --emblem-ankh: url("../images/emblems/ankh.svg");
   --emblem-rose: url("../images/emblems/rose.svg");
   --emblem-crucifix: url("../images/emblems/crucifix.svg");
+  --emblem-cobra: url("../images/emblems/cobra.png");  /* a mask: black, with the shading in its transparency */
   /* The faint emblems (templar cross, compass, rose window, ...) and the eye beside section headings. */
   --emblem-colour: var(--brass);
   --emblem-mark: var(--c-4a4536);
@@ -1396,6 +1397,8 @@ body::after { content: ""; position: fixed; z-index: -1; right: -6rem; bottom: -
 /* Gothic touches: a rose window behind page titles, and titles cut into the stone. */
 .page-heading { position: relative; isolation: isolate; }
 .page-heading::after { content: ""; position: absolute; z-index: -1; right: 0; top: 50%; width: 12rem; aspect-ratio: 1; transform: translateY(-50%); background: var(--emblem-colour); opacity: calc(.05 * var(--emblem-strength)); pointer-events: none; -webkit-mask: var(--emblem-rose) center / contain no-repeat; mask: var(--emblem-rose) center / contain no-repeat; }
+/* A page can name its own emblem for the title (emblem in the front matter, as data-emblem on the heading). */
+.page-heading[data-emblem="cobra"]::after { aspect-ratio: 623 / 640; -webkit-mask-image: var(--emblem-cobra); mask-image: var(--emblem-cobra); }
 /* Volume pages and the posts and comments in them show the volume's numeral (data-numeral) in place of the rose. */
 .page-heading[data-numeral]::after { content: attr(data-numeral); width: auto; aspect-ratio: auto; font-family: var(--display); font-size: 10rem; font-weight: 500; line-height: 1; letter-spacing: .02em; color: var(--emblem-colour); background: none; opacity: calc(.08 * var(--emblem-strength)); -webkit-mask: none; mask: none; }
 .discussed-heading::after { -webkit-mask-image: var(--emblem-crucifix); mask-image: var(--emblem-crucifix); }
@@ -1417,6 +1420,18 @@ body::after { content: ""; position: fixed; z-index: -1; right: -6rem; bottom: -
 .book-actions { display: flex; flex-wrap: wrap; align-items: center; gap: .9rem 1.4rem; margin: 1.5rem 0 2.5rem; }
 .book-button { padding-right: 1.15rem; }
 .book-link { color: var(--c-d6ba86); }
+/* In-copyright books (coming_soon): the same buttons, switched off. They are spans, not links; pointer-events keeps the
+   hover look away. */
+.book-button.is-off, .book-link.is-off { opacity: .4; filter: grayscale(1); pointer-events: none; box-shadow: none; }
+.book-off-note { flex-basis: 100%; margin: -.4rem 0 0; color: var(--muted); font-size: .85rem; }
+.book-copyright { margin: 2.5rem 0; padding-top: 1.5rem; border-top: 1px solid var(--line); max-width: 44rem; }
+.book-copyright h2 { font-size: 1.6rem; margin: 0 0 .75rem; }
+.book-copyright dl { display: grid; gap: .6rem; margin: 1rem 0; }
+.book-copyright dl div { display: grid; grid-template-columns: minmax(9rem, 14rem) 1fr; gap: .25rem 1rem; }
+.book-copyright dt { color: var(--muted); font-size: .85rem; letter-spacing: .06em; text-transform: uppercase; }
+.book-copyright dd { margin: 0; }
+.book-copyright-note { color: var(--muted); font-size: .85rem; }
+@media (max-width: 560px) { .book-copyright dl div { grid-template-columns: 1fr; } }
 
 /* Home page carousel (partials/carousel.html, static/js/carousel.js): cover flow. The current frame (data-pos 0) is in
    front; the others step back to each side, smaller and dimmer, the farthest partly hidden behind the nearer. Frames are
