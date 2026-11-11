@@ -1098,12 +1098,24 @@ html:has(.terms-gate[open]) { overflow: hidden; }
 /* The shield of Canada's 1921 arms closes the licence line, as in the footer. Added here, not in content/terms.md,
    because editing the terms text asks every visitor to accept them again. */
 .prose p:has(> a[href^="https://creativecommons.org/licenses/"] > img)::after { content: ""; flex: none; margin-left: auto; width: 24px; height: 31px; background: url("../images/canada-shield-1921.svg") center / contain no-repeat; opacity: .7; }
+/* On a phone the licence text gets its own full-width line under the button and the shield. */
+@media (max-width: 30rem) {
+  .prose p:has(> a[href^="https://creativecommons.org/licenses/"] > img) { flex-wrap: wrap; }
+  .prose a[href^="https://creativecommons.org/licenses/"] { order: -2; }
+  .prose p:has(> a[href^="https://creativecommons.org/licenses/"] > img)::after { order: -1; }
+}
 .terms-gate-body > img { flex: none; display: block; width: auto; max-width: 48%; max-height: min(55vh, 42rem); }
 @media (max-width: 48rem) {
   .terms-gate-body { flex-direction: column; align-items: center; gap: 0; }
   .terms-gate-text { flex-basis: auto; }
   .terms-gate-body > img { max-width: 100%; max-height: 70vh; }
 }
+/* The terms pop-up fits the screen: the text scrolls in the space left over, so the question and buttons stay in
+   view on short phones. A phone held sideways leaves too little height for that, so there the whole pop-up scrolls. */
+.terms-gate[open]:has(> .terms-gate-question) { display: flex; flex-direction: column; }
+.terms-gate:has(> .terms-gate-question) > * { flex: none; }
+.terms-gate:has(> .terms-gate-question) > .terms-gate-body { flex: 0 1 auto; min-height: 0; }
+@media (max-height: 30rem) { .terms-gate:has(> .terms-gate-question) > .terms-gate-body { flex: none; max-height: none; overflow: visible; } }
 .terms-gate-question { margin: 1.25rem 0 1rem; padding-top: 1rem; border-top: 1px solid var(--line); font-family: var(--display); font-size: 1.3rem; color: var(--brass); }
 .terms-gate-actions { display: flex; flex-wrap: wrap; gap: .75rem; }
 .terms-gate-actions button { min-width: 7.5rem; padding: .7rem 1.4rem; font: inherit; font-family: var(--display); font-size: .85rem; font-weight: 600; letter-spacing: .14em; text-transform: uppercase; cursor: pointer; color: var(--c-e1c797); background: var(--c-b89a630a); border: 1px solid var(--c-806943); transition: background .15s, border-color .15s, color .15s, box-shadow .15s; }
