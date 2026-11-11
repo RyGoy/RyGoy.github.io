@@ -16,5 +16,3 @@ canada = "70 years after the death of the last surviving author"
 +++
 
 *The Accounting Game: Basic Accounting Fresh from the Lemonade Stand* teaches the language of accounting by following a child's lemonade stand from its first sale.
-
-The book is still under copyright: the copyright section below gives its status, who holds it and when it is expected to enter the public domain. A copy, with its license and notice, is coming soon from [wfgresearch.org](https://wfgresearch.org/).

@@ -16,5 +16,3 @@ canada = "1 January 2082, 70 years after Hitchens's death in 2011"
 +++
 
 Christopher Hitchens (1949–2011) was a journalist and essayist. In this book, his best-known, he takes on the major religions in turn and argues that ethics and wonder need no supernatural foundation.
-
-The book is still under copyright: the copyright section below gives its status, who holds it and when it is expected to enter the public domain. A copy, with its license and notice, is coming soon from [wfgresearch.org](https://wfgresearch.org/).

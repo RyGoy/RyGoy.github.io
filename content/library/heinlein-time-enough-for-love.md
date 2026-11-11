@@ -16,5 +16,3 @@ canada = "1 January 2059, 70 years after Heinlein's death in 1988"
 +++
 
 Robert A. Heinlein (1907–1988) was one of the most widely read science-fiction writers of the twentieth century. In this novel, Lazarus Long, tired of living, is persuaded to keep going by being asked to tell his life story.
-
-The book is still under copyright: the copyright section below gives its status, who holds it and when it is expected to enter the public domain. A copy, with its license and notice, is coming soon from [wfgresearch.org](https://wfgresearch.org/).
