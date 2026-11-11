@@ -7,7 +7,7 @@ pdf = "https://www.themythiscanada.com/pdfs/RRSmith/Ho_Canada-1965.pdf"
 source = "https://www.themythiscanada.com/"
 source_label = "The Myth is Canada"
 weight = 3
-# The emblem behind the title, in place of the rose window (static/images/emblems/cobra.png).
+# The emblem beside the title, in place of the rose window: the cobra in its own colours (static/images/emblems/cobra-colour.webp).
 emblem = "cobra"
 +++
 
