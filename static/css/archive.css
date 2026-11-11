@@ -540,7 +540,7 @@ main { min-height: 35vh; }
 .hero { position: relative; display: grid; place-items: center; min-height: 34rem; padding: 4rem 0 3.5rem; text-align: center; isolation: isolate; }
 .hero::before { content: ""; position: absolute; inset: 1.6rem 0; border: 1px solid var(--c-b89a6320); z-index: -1; pointer-events: none; }
 .hero::after { content: ""; position: absolute; inset: 2rem .4rem; border: 1px solid var(--c-b89a6314); z-index: -1; pointer-events: none; }
-.hero { grid-template-columns: minmax(13rem, 21rem) minmax(0, 1fr); gap: clamp(2rem, 4vw, 4rem); padding-inline: clamp(1.5rem, 4vw, 3.5rem); }
+.hero { grid-template-columns: minmax(13rem, min(24rem, 26vw)) minmax(0, 1fr); gap: clamp(2rem, 4vw, 4rem); padding-inline: clamp(1.5rem, 4vw, 3.5rem); }
 .hero-plate { margin: 0; width: 100%; padding: .55rem; border: 1px solid var(--c-b89a6366); background: var(--c-0c0c0b); box-shadow: 0 0 0 1px var(--c-000000a0), 0 18px 50px var(--c-000000b0), 0 0 70px var(--c-b89a631c); }
 .hero-plate img { display: block; width: 100%; height: auto; }
 /* "Click to enlarge" on the hero plate, and the full-size viewer it opens (partials/body.html). Touch screens show the hint all the time. */
