@@ -1409,7 +1409,8 @@ body::after { content: ""; position: fixed; z-index: -1; right: -6rem; bottom: -
 a.page-emblem { cursor: pointer; transition: transform .2s; }
 a.page-emblem:hover, a.page-emblem:focus-visible { transform: translateY(-50%) scale(1.04); }
 a.page-emblem:focus-visible { outline: 2px solid var(--brass); outline-offset: 6px; border-radius: 8px; }
-.image-viewer.video-viewer.emblem-video { width: min(94vw, 760px); }
+/* --video-ratio (width / height, from the front matter) narrows the pop-up for a tall video so it fits the screen height without bars at the sides. */
+.image-viewer.video-viewer.emblem-video { width: min(94vw, 760px, calc((94vh - 4.5rem) * var(--video-ratio, 1.7778) + 26px)); }
 @media (max-width: 720px) {
   .page-heading[data-emblem="cobra"] { padding-right: 0; }
   .page-emblem { position: static; width: 10rem; margin: 1.5rem 0 0; transform: none; }

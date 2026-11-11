@@ -11,7 +11,7 @@
     {{ if eq .Params.emblem "cobra" }}{{ with .Params.emblem_video }}<a class="page-emblem" href="{{ .src | relURL }}" aria-haspopup="dialog" aria-label="Play the video {{ .title }}" title="Play {{ .title }}" data-pagefind-ignore></a>{{ else }}<span class="page-emblem" aria-hidden="true"></span>{{ end }}{{ end }}
   </header>
   {{ if eq .Params.emblem "cobra" }}{{ with .Params.emblem_video }}
-  <dialog class="image-viewer video-viewer emblem-video" id="emblem-video" aria-label="{{ .title }} (video)" data-pagefind-ignore>
+  <dialog class="image-viewer video-viewer emblem-video" id="emblem-video" aria-label="{{ .title }} (video)" style="--video-ratio: {{ div (float .width) .height }}" data-pagefind-ignore>
     <video src="{{ .src | relURL }}"{{ with .poster }} poster="{{ . | relURL }}"{{ end }} width="{{ .width }}" height="{{ .height }}" controls playsinline preload="none"></video>
     <form method="dialog"><button class="image-viewer-close">Close</button></form>
   </dialog>
