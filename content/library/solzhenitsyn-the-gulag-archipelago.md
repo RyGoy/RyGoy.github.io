@@ -6,7 +6,7 @@ description = "Solzhenitsyn's history of the Soviet prison-camp system, built fr
 coming_soon = true
 source = "https://openlibrary.org/works/OL35325460W"
 source_label = "Borrow volume 1 on Open Library"
-weight = 12
+weight = 13
 
 [copyright]
 status = "In copyright. The Russian text was first published in Paris in 1973, and Thomas P. Whitney's English translation of its first two parts by Harper & Row in 1974. Solzhenitsyn died in 2008 and Whitney in 2007. The text and the translation each have their own copyright."

@@ -6,7 +6,7 @@ description = "Uniform rules for international bills of exchange and promissory 
 pdf = "https://uncitral.un.org/sites/default/files/media-documents/uncitral/en/x_12_e.pdf"
 source = "https://uncitral.un.org/"
 source_label = "UNCITRAL"
-weight = 4
+weight = 5
 +++
 
 The United Nations General Assembly adopted this convention in 1988. It applies only to an instrument that is headed "International bill of exchange (UNCITRAL Convention)" or "International promissory note (UNCITRAL Convention)", so the parties choose its rules by how they write the instrument.

@@ -6,7 +6,7 @@ description = "As the Galactic Empire decays, the mathematician Hari Seldon uses
 coming_soon = true
 source = "https://archive.org/details/foundationtrilog0000isaa_c7g1"
 source_label = "Borrow it on the Internet Archive"
-weight = 14
+weight = 15
 
 [copyright]
 status = "In copyright. Gnome Press published Foundation as a book in 1951. Four of its five parts first appeared as stories in Astounding Science Fiction in 1942 and 1944. The copyright was renewed in 1979, and passed to Asimov's estate when he died in 1992."
