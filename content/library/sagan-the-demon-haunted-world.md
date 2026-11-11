@@ -6,7 +6,7 @@ description = "Sagan's case for scientific thinking against pseudoscience and su
 coming_soon = true
 source = "https://openlibrary.org/works/OL2950942W"
 source_label = "Find it on Open Library"
-weight = 19
+weight = 20
 
 [copyright]
 status = "In copyright. Random House published the book in 1995. Sagan died in 1996; his copyrights are managed by Democritus Properties, which later editions name as a copyright holder."

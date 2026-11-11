@@ -6,7 +6,7 @@ description = "Paine's case for deism: belief in one God known through reason an
 pdf = "/library/paine-the-age-of-reason.pdf"
 source = "https://en.wikisource.org/wiki/The_Age_of_Reason"
 source_label = "Wikisource"
-weight = 11
+weight = 12
 +++
 
 Thomas Paine (1737–1809), the author of *Common Sense* and *Rights of Man*, published *The Age of Reason* in parts between 1794 and 1807. Much of Part I was written in Paris as the Terror closed in, and he was imprisoned shortly after finishing it.

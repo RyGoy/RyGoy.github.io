@@ -6,7 +6,7 @@ description = "Bastiat's argument that law exists to protect each person's life,
 pdf = "https://cdn.mises.org/thelaw.pdf"
 source = "https://mises.org/"
 source_label = "Mises Institute"
-weight = 9
+weight = 10
 +++
 
 Frédéric Bastiat (1801–1850) wrote *The Law* in 1850, the year he died. He asks what law is for, and answers that it is the collective organisation of each person's right to defend themselves, their liberty and their property. When law is turned to taking from some people for the benefit of others, he calls it **legal plunder**.

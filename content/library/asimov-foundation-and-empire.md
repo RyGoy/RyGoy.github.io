@@ -6,7 +6,7 @@ description = "The second Foundation book: the Foundation survives an attack by 
 coming_soon = true
 source = "https://archive.org/details/foundationtrilog0000isaa_c7g1"
 source_label = "Borrow it on the Internet Archive"
-weight = 15
+weight = 16
 
 [copyright]
 status = "In copyright. Gnome Press published Foundation and Empire as a book in 1952. Its two parts first appeared as stories in Astounding Science Fiction in 1945. The copyright passed to Asimov's estate when he died in 1992."

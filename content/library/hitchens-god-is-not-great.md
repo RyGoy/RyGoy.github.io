@@ -6,7 +6,7 @@ description = "Hitchens's polemic against organised religion: that its scripture
 coming_soon = true
 source = "https://openlibrary.org/works/OL2974379W"
 source_label = "Find it on Open Library"
-weight = 13
+weight = 14
 
 [copyright]
 status = "In copyright. Twelve published the book in the United States, and Atlantic Books in Britain, in 2007. Hitchens died in 2011, and the copyright passed to his estate."

@@ -6,7 +6,7 @@ description = "Lazarus Long, the oldest living human, tells the stories of his m
 coming_soon = true
 source = "https://openlibrary.org/works/OL59739W"
 source_label = "Find it on Open Library"
-weight = 18
+weight = 19
 
 [copyright]
 status = "In copyright. G. P. Putnam's Sons published the book in 1973. Heinlein died in 1988, and his widow, Virginia, left most of their literary estate to the Heinlein Prize Trust."

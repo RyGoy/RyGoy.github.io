@@ -5,7 +5,7 @@ edition = "1952 · amended since"
 description = "The model law for commercial transactions in the United States: sales, leases, negotiable instruments, bank deposits, funds transfers, letters of credit, documents of title, investment securities and secured transactions."
 source = "https://www.uniformlaws.org/acts/ucc"
 source_label = "Uniform Law Commission"
-weight = 6
+weight = 7
 +++
 
 The Uniform Commercial Code is written and kept up to date jointly by the Uniform Law Commission and the American Law Institute. It was first published in 1952. It is not federal law: each state enacts it as its own statute, sometimes with changes, and every state has adopted it, Louisiana only in part.

@@ -6,7 +6,7 @@ description = "The last book of the Foundation trilogy: the Mule, and then the F
 coming_soon = true
 source = "https://archive.org/details/foundationtrilog0000isaa_c7g1"
 source_label = "Borrow it on the Internet Archive"
-weight = 16
+weight = 17
 
 [copyright]
 status = "In copyright. Gnome Press published Second Foundation as a book in 1953. Its two parts first appeared as stories in Astounding Science Fiction in 1948 and 1949–50. The copyright passed to Asimov's estate when he died in 1992."
