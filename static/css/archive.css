@@ -1256,6 +1256,15 @@ html:has(.terms-gate[open]) { overflow: hidden; }
   --pagefind-ui-border-radius: 0;
 }
 .site-search-results mark { color: var(--ink); background: var(--brass); }
+/* The search filters as searchable dropdowns (static/js/search-filters.js; their box and tags are the poster filter's):
+   once they are in place (under the search box), Pagefind's checkbox panel is hidden and the results take its width. The
+   panel is hidden through #search, and these rules and the shared box and tag rules carry a second selector, because
+   pagefind-ui.css, loaded later, sets the panel and resets everything in its form (all: unset) at one class's weight. */
+.reading-column .search-filters { display: grid; grid-template-columns: repeat(auto-fill, minmax(12rem, 1fr)); gap: 1rem 1.25rem; margin: 1.1rem 0 .5rem; }
+.reading-column .search-filters[hidden] { display: none; }
+.reading-column .search-filter { display: grid; gap: .5rem; align-content: start; }
+.search-filter .poster-filter-search input { width: 100%; box-sizing: border-box; }
+#search.has-filter-dropdowns .pagefind-ui__filter-panel { display: none; }
 .search-unavailable { color: var(--muted); }
 
 /* Sidebar Webamp player (static/js/webamp-dock.js). The dock covers the viewport so the windows can
@@ -1324,12 +1333,12 @@ html:has(.terms-gate[open]) { overflow: hidden; }
 .poster-filter legend { padding: 0; margin-bottom: .5rem; font-size: .8rem; letter-spacing: .12em; text-transform: uppercase; color: var(--brass); }
 .poster-filter-mode label { display: inline-flex; align-items: center; gap: .45rem; margin-right: 1.4rem; cursor: pointer; }
 .poster-filter input[type="radio"], .poster-filter input[type="checkbox"] { accent-color: var(--brass); width: 1rem; height: 1rem; margin: 0; }
-.poster-filter-search { display: grid; gap: .4rem; font-size: .8rem; letter-spacing: .12em; text-transform: uppercase; color: var(--brass); }
-.poster-filter-search input { font: inherit; font-size: 1rem; letter-spacing: 0; text-transform: none; color: var(--paper); background: var(--ink); border: 1px solid var(--line); padding: .55rem .7rem; }
-.poster-filter-search input:focus-visible { outline: 1px solid var(--brass); border-color: var(--brass); }
-.poster-filter-chips { display: flex; flex-wrap: wrap; gap: .45rem; margin: 0; padding: 0; list-style: none; }
-.poster-filter-chips button { font: inherit; font-size: .9rem; color: var(--c-19140b); background: var(--brass); border: 0; border-radius: 999px; padding: .25rem .75rem; cursor: pointer; }
-.poster-filter-chips button:hover { background: var(--c-d6ba86); }
+:is(.poster-filter, .search-filters) .poster-filter-search { display: grid; gap: .4rem; font-size: .8rem; letter-spacing: .12em; text-transform: uppercase; color: var(--brass); }
+:is(.poster-filter, .search-filters) .poster-filter-search input { font: inherit; font-size: 1rem; letter-spacing: 0; text-transform: none; color: var(--paper); background: var(--ink); border: 1px solid var(--line); padding: .55rem .7rem; }
+:is(.poster-filter, .search-filters) .poster-filter-search input:focus-visible { outline: 1px solid var(--brass); border-color: var(--brass); }
+:is(.poster-filter, .search-filters) .poster-filter-chips { display: flex; flex-wrap: wrap; gap: .45rem; margin: 0; padding: 0; list-style: none; }
+:is(.poster-filter, .search-filters) .poster-filter-chips button { font: inherit; font-size: .9rem; color: var(--c-19140b); background: var(--brass); border: 0; border-radius: 999px; padding: .25rem .75rem; cursor: pointer; }
+:is(.poster-filter, .search-filters) .poster-filter-chips button:hover { background: var(--c-d6ba86); }
 .poster-filter-names ul { display: grid; grid-template-columns: repeat(auto-fill, minmax(14rem, 1fr)); gap: .15rem 1.2rem; margin: 0; padding: 0; list-style: none; }
 .poster-filter-names label { display: flex; align-items: center; gap: .55rem; padding: .3rem 0; cursor: pointer; }
 .poster-filter-name { flex: 1; min-width: 0; overflow-wrap: anywhere; }
