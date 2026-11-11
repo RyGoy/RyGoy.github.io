@@ -558,6 +558,13 @@ main { min-height: 35vh; }
 /* The blade hilt's video (body.html): as wide as the screen allows, the frame black whatever the theme. */
 .image-viewer.video-viewer { width: min(94vw, 1100px); max-width: none; }
 .video-viewer video { display: block; width: 100%; height: auto; max-height: calc(94vh - 4.5rem); background: black; }
+/* SOURCE's Webamp (body.html, light theme): its windows (main, equaliser, playlist: 275 x 348 at normal size) render
+   inside the stage, which is sized to hold them; the loading note sits over it, outside Webamp's node. */
+.image-viewer.webamp-viewer { width: fit-content; max-width: 94vw; }
+.webamp-frame { position: relative; width: 300px; height: 372px; margin: .4rem auto 0; }
+.webamp-stage { position: absolute; inset: 0; }
+.webamp-loading { position: absolute; inset: 0; display: grid; place-items: center; margin: 0; color: var(--muted); font-family: var(--display); letter-spacing: .12em; text-transform: uppercase; font-size: .85rem; }
+.webamp-loading[hidden] { display: none; }
 .image-viewer-close { color: var(--c-1d170c); background: linear-gradient(var(--c-d9bd84), var(--c-a8884f)); border-color: var(--c-e3c991); box-shadow: inset 0 1px 0 var(--c-fff3d080); }
 .image-viewer-close:hover, .image-viewer-close:focus-visible { color: var(--c-120e06); background: linear-gradient(var(--c-e8cf98), var(--c-b9985c)); border-color: var(--c-f0d9a6); }
 .hero-seal { margin: 0 auto 1.2rem; height: 4.5rem; width: 4.5rem; opacity: .65; }
@@ -625,7 +632,11 @@ main { min-height: 35vh; }
 :root[data-theme="light"] .hero-waves-end { position: relative; flex: none; width: 1.4rem; height: 1.4rem; opacity: 0; animation: waves-appear .5s ease-out .05s forwards; }
 :root[data-theme="light"] .hero-waves-destination { animation-delay: .5s; }
 :root[data-theme="light"] .hero-waves-end b { position: absolute; left: 0; top: calc(100% + .35rem); font-family: var(--display); font-size: .6rem; font-weight: 600; letter-spacing: .2em; text-transform: uppercase; white-space: nowrap; color: #6b6b6b; }
-:root[data-theme="light"] .hero-waves-destination b { left: auto; right: 0; }  /* labels run inward, so neither passes the ends */
+:root[data-theme="light"] .hero-waves-destination b { left: auto; right: 0; }
+:root[data-theme="light"] .hero-waves-source { color: inherit; text-decoration: none; cursor: pointer; }
+:root[data-theme="light"] .hero-waves-source:hover::before, :root[data-theme="light"] .hero-waves-source:focus-visible::before { border-color: #141414; box-shadow: 0 0 0 .18rem #ffffffc0, 0 0 0 calc(.18rem + 1px) #4d4d4d; }
+:root[data-theme="light"] .hero-waves-source:hover b, :root[data-theme="light"] .hero-waves-source:focus-visible b { color: #141414; }
+:root[data-theme="light"] .hero-waves-source:focus-visible { outline: 1px solid #4d4d4d; outline-offset: .45rem; border-radius: 50%; }  /* labels run inward, so neither passes the ends */
 :root[data-theme="light"] .hero-waves-end i, :root[data-theme="light"] .hero-waves-end::before, :root[data-theme="light"] .hero-waves-end::after { content: ""; position: absolute; inset: 0; box-sizing: border-box; }
 :root[data-theme="light"] .hero-waves-source::before { border: 1px solid #4d4d4d; border-radius: 50%; box-shadow: 0 0 0 .18rem #ffffff80, 0 0 0 calc(.18rem + 1px) #a3a3a3; }
 :root[data-theme="light"] .hero-waves-source i { inset: 32%; border-radius: 50%; background: #2b2b2b; }
@@ -675,7 +686,16 @@ main { min-height: 35vh; }
 :root:not([data-theme]) .hero-exp-drop-3 { animation-delay: 2.80s; }
 :root:not([data-theme]) .hero-exp-curve { clip-path: inset(0 75.30% 0 0); opacity: 0; animation: exp-appear .4s ease-out .1s forwards, exp-draw 3s linear .3s forwards; }
 :root:not([data-theme]) .hero-exp-curve path { stroke: var(--brass); stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round; vector-effect: non-scaling-stroke; filter: drop-shadow(0 0 3px var(--c-b89a6350)); }
-:root:not([data-theme]) .hero-exp-dot { position: absolute; width: .42rem; height: .42rem; margin: -.21rem 0 0 -.21rem; border-radius: 50%; background: var(--red); box-shadow: 0 0 0 .12rem var(--ink), 0 0 6px var(--red); opacity: 0; animation: exp-trace 4s linear .3s infinite, exp-fade 4s linear .3s infinite; }
+:root:not([data-theme]) .hero-exp-dot { position: absolute; display: block; z-index: 1; cursor: pointer; text-decoration: none; width: .42rem; height: .42rem; margin: -.21rem 0 0 -.21rem; border-radius: 50%; background: var(--red); box-shadow: 0 0 0 .12rem var(--ink), 0 0 6px var(--red); opacity: 0; animation: exp-trace 4s linear .3s infinite, exp-fade 4s linear .3s infinite; }
+/* The point is a link (the recording in Webamp, static/js/webamp-links.js) with a Play button riding beside it, below and
+   right of the curve where nothing else is drawn. A wider invisible ring makes it easier to hit, and pointing at the graph
+   or tabbing to the link holds the point still and in view so it can be clicked. */
+:root:not([data-theme]) .hero-exp-dot::after { content: ""; position: absolute; inset: -.6rem; border-radius: 50%; }
+:root:not([data-theme]) .hero-exp-play { position: absolute; left: .55rem; top: .45rem; padding: .14rem .5rem .1rem; white-space: nowrap; border: 1px solid var(--red); border-radius: 999px; background: var(--ink); color: var(--paper); font-family: var(--display); font-size: .62rem; font-weight: 600; letter-spacing: .16em; line-height: 1.2; text-transform: uppercase; box-shadow: 0 0 8px var(--c-b89a6350); }
+:root:not([data-theme]) .hero-exp-dot:hover .hero-exp-play, :root:not([data-theme]) .hero-exp-dot:focus-visible .hero-exp-play { background: var(--red); }
+:root:not([data-theme]) .hero-exp-dot:focus-visible { outline: 1px solid var(--brass); outline-offset: 3px; }
+:root:not([data-theme]) .hero-exp:hover :is(.hero-exp-dot, .hero-exp-tangent), :root:not([data-theme]) .hero-exp:focus-within :is(.hero-exp-dot, .hero-exp-tangent) { animation-play-state: paused; }
+:root:not([data-theme]) .hero-exp:hover .hero-exp-dot, :root:not([data-theme]) .hero-exp:focus-within .hero-exp-dot { opacity: 1 !important; }
 :root:not([data-theme]) .hero-exp-tangent { position: absolute; top: 92.00%; height: 1px; margin-top: -.5px; transform-origin: 0 50%; background: linear-gradient(90deg, var(--red), var(--red) 80%, transparent); opacity: 0; animation: exp-tangent 4s linear .3s infinite, exp-fade-soft 4s linear .3s infinite; }
 :root:not([data-theme]) .hero-exp-tangent::before { content: ""; position: absolute; left: -.17rem; top: -.17rem; width: .34rem; height: .34rem; border: 1px solid var(--red); border-radius: 50%; box-sizing: border-box; }
 :root:not([data-theme]) .hero-exp-label { position: absolute; left: 76%; top: -14%; font-family: var(--display); font-style: italic; font-size: .95rem; line-height: 1; color: var(--brass); opacity: 0; animation: exp-appear .6s ease-out 3.1s forwards; }
@@ -692,7 +712,8 @@ main { min-height: 35vh; }
   :root:not([data-theme]) .hero-exp-axis, :root:not([data-theme]) .hero-exp-curve, :root:not([data-theme]) .hero-exp-label { opacity: 1; }
   :root:not([data-theme]) .hero-exp-curve { clip-path: inset(0 2.73% 0 0); }
   :root:not([data-theme]) .hero-exp-drop { transform: none; }
-  :root:not([data-theme]) .hero-exp-dot, :root:not([data-theme]) .hero-exp-tangent { display: none; }
+  :root:not([data-theme]) .hero-exp-tangent { display: none; }
+  :root:not([data-theme]) .hero-exp-dot { left: 97.27%; top: 4.83%; opacity: 1; }  /* the Play button stays, at the end of the curve */
 }
 .hero h1 { font-size: clamp(3.3rem, 5.8vw, 6rem); letter-spacing: -.025em; margin-bottom: 1.4rem; text-wrap: balance; }
 .hero p { max-width: 34rem; margin: 0 auto; color: var(--muted); font-size: 1.05rem; line-height: 1.7; }
