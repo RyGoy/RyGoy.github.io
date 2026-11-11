@@ -7,8 +7,14 @@ coming_soon = true
 source = "https://openlibrary.org/works/OL2950942W"
 source_label = "Find it on Open Library"
 weight = 19
+
+[copyright]
+status = "In copyright. Random House published the book in 1995. Sagan died in 1996; his copyrights are managed by Democritus Properties, which later editions name as a copyright holder."
+holder = "Democritus Properties, LLC (Carl Sagan's estate)"
+us = "1 January 2067, 70 years after Sagan's death in 1996"
+canada = "1 January 2067, 70 years after Sagan's death in 1996"
 +++
 
 Carl Sagan (1934–1996) was an astronomer and the presenter of the television series *Cosmos*. In this book he looks at alien abductions, recovered memories, witch hunts and other claims, and shows how to question them. Some of its chapters were written with Ann Druyan.
 
-The book is still under copyright. A copy, with its license and notice, is coming soon from [wfgresearch.org](https://wfgresearch.org/). Until then, Open Library has the catalogue record and finding options.
+The book is still under copyright: the copyright section below gives its status, who holds it and when it is expected to enter the public domain. A copy, with its license and notice, is coming soon from [wfgresearch.org](https://wfgresearch.org/).

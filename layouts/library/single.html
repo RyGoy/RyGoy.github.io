@@ -1,6 +1,6 @@
 {{ define "main" }}
 <article class="longform reading-column library-book" data-pagefind-body data-pagefind-filter="Section:Library">
-  <header class="page-heading">
+  <header class="page-heading"{{ with .Params.emblem }} data-emblem="{{ . }}"{{ end }}>
     <p class="eyebrow"><a href="{{ .CurrentSection.RelPermalink }}">{{ .CurrentSection.Title }}</a></p>
     <h1>{{ .Title }}</h1>
     {{ with .Params.author }}<p class="article-author" data-pagefind-filter="Author">{{ . }}</p>{{ end }}
@@ -8,12 +8,17 @@
   </header>
   {{ with .Description }}<p class="book-summary">{{ . }}</p>{{ end }}
   <div class="book-actions" data-pagefind-ignore>
-    {{/* A pdf starting with "/" is a copy in static/library/; a full address is someone else's copy, opened in place. */}}
-    {{/* coming_soon: a copy will be published by wfgresearch.org with its license and notice. Until its address is
-         known, the button says so and leads to the home page. */}}
-    {{ if .Params.coming_soon }}<a class="book-button" href="{{ "/" | relURL }}">Coming soon</a>{{ end }}
+    {{/* Public-domain books: "Read the PDF" and "Download" for the copy (a pdf starting with "/" is a copy in
+         static/library/; a full address is someone else's copy, opened in place, with no Download), and the source. */}}
+    {{/* coming_soon: the book is still in copyright. It has the same buttons, switched off (not links), and the
+         copyright section below says why. Its source address stays in the front matter for when they are turned on. */}}
+    {{ if .Params.coming_soon }}
+    <span class="book-button is-off" title="Off while the book is in copyright">Read the PDF <span aria-hidden="true">↗</span></span><span class="book-link is-off" title="Off while the book is in copyright">Download</span>{{ with .Params.source }}<span class="book-link is-off" title="Off while the book is in copyright">{{ $.Params.source_label | default "Source" }} <span aria-hidden="true">↗</span></span>{{ end }}
+    <p class="book-off-note">In copyright, so these links are off: see Copyright, below.</p>
+    {{ else }}
     {{ with .Params.pdf }}<a class="book-button" href="{{ . | relURL }}"{{ if not (hasPrefix . "/") }} rel="noopener noreferrer"{{ end }}>Read the PDF <span aria-hidden="true">↗</span></a>{{ if hasPrefix . "/" }}<a class="book-link" href="{{ . | relURL }}" download>Download</a>{{ end }}{{ end }}
     {{ with .Params.source }}<a class="book-link" href="{{ . }}" rel="noopener noreferrer">{{ $.Params.source_label | default "Source" }} <span aria-hidden="true">↗</span></a>{{ end }}
+    {{ end }}
   </div>
   {{/* Previous and next book, in the order /library/ lists them (layouts/library/list.html).
        It sits above the preface so readers can flip through the books without scrolling. */}}
@@ -26,6 +31,20 @@
   {{ end }}{{ end }}
   </nav>
   <div class="prose">{{ .Content }}</div>
+  {{/* Books still in copyright: what their status is, who holds it, and when it is expected to end ([copyright] in the
+       front matter: status, holder, us and canada). */}}
+  {{ with .Params.copyright }}
+  <section class="book-copyright" aria-labelledby="book-copyright-heading">
+    <h2 id="book-copyright-heading">Copyright</h2>
+    <p>{{ .status }}</p>
+    <dl>
+      <div><dt>Held by</dt><dd>{{ .holder }}</dd></div>
+      <div><dt>Public domain in the United States</dt><dd>{{ .us }}</dd></div>
+      <div><dt>Public domain in Canada</dt><dd>{{ .canada }}</dd></div>
+    </dl>
+    <p class="book-copyright-note">The dates are worked out from the publication dates and the authors' deaths. In the United States a book published before 1978 is protected for 95 years after publication, and a later one for 70 years after its author's death; in Canada a book is protected for 70 years after its author's death. Protection runs to the end of the year, so a book enters the public domain on 1 January.</p>
+  </section>
+  {{ end }}
   {{ partial "commentary-panel.html" . }}
 </article>
 {{ end }}
