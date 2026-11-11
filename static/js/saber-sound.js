@@ -8,6 +8,7 @@ const AudioCtx = window.AudioContext || window.webkitAudioContext;
 if (blade && AudioCtx) {
   let ctx = null;
   let stop = null;
+  const silence = () => { if (stop) { stop(); stop = null; } };
 
   const seconds = (value) => (value.endsWith('ms') ? parseFloat(value) / 1000 : parseFloat(value));
   const timing = (name) => {
@@ -85,7 +86,7 @@ if (blade && AudioCtx) {
   // animationstart fires when the ignition begins (after its delay), each time the blade is shown.
   blade.addEventListener('animationstart', (event) => {
     if (event.target !== blade || event.animationName !== 'saber-ignite') return;
-    if (stop) { stop(); stop = null; }
+    silence();
     if (navigator.userActivation && !navigator.userActivation.hasBeenActive) return;
     const ignite = timing('saber-ignite');
     const bleed = timing('saber-bleed');
@@ -103,6 +104,9 @@ if (blade && AudioCtx) {
   });
   // Leaving Dark hides the blade and cancels its animations: stop the sound with them.
   blade.addEventListener('animationcancel', (event) => {
-    if (event.target === blade && event.animationName === 'saber-ignite' && stop) { stop(); stop = null; }
+    if (event.target === blade && event.animationName === 'saber-ignite') silence();
   });
+  // Clicking the hilt opens its video in a pop-up (partials/body.html): stop the hum, so only the video is heard and
+  // nothing sounds on after the pop-up closes.
+  document.querySelector('a.hero-saber-hilt')?.addEventListener('click', silence);
 }
