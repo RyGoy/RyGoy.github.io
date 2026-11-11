@@ -16,5 +16,3 @@ canada = "1 January 2063, 70 years after Asimov's death in 1992"
 +++
 
 Isaac Asimov (1920–1992) wrote the Foundation stories in the 1940s, and they were gathered as *Foundation* in 1951, the first book of the trilogy. Seldon's Foundation is set up to preserve knowledge and steer a thousand years of history. Each crisis it meets is settled less by force than by trade, religion and the control of technology.
-
-The book is still under copyright: the copyright section below gives its status, who holds it and when it is expected to enter the public domain. A copy, with its license and notice, is coming soon from [wfgresearch.org](https://wfgresearch.org/).

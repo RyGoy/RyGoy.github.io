@@ -16,5 +16,3 @@ canada = "1 January 2079, 70 years after Solzhenitsyn's death in 2008 (the trans
 +++
 
 Aleksandr Solzhenitsyn (1918–2008) called the book "an experiment in literary investigation". He wrote it in secret, and it was first published in Paris in 1973. Its seven parts appear in three volumes. Volume 1 (Parts I–II) covers the "prison industry": arrest, interrogation, and the system that moved prisoners through it.
-
-The book is still under copyright: the copyright section below gives its status, who holds it and when it is expected to enter the public domain. A copy, with its license and notice, is coming soon from [wfgresearch.org](https://wfgresearch.org/).

@@ -7,6 +7,8 @@ pdf = "/library/bagehot-the-english-constitution-1888.pdf"
 source = "https://archive.org/details/englishconstitut00bageuoft"
 source_label = "Internet Archive"
 weight = 1
+# The emblem beside the title, in place of the rose window: the cobra in its own colours (static/images/emblems/cobra-colour.webp).
+emblem = "cobra"
 +++
 
 Walter Bagehot (1826–1877) first published *The English Constitution* as a book in 1867. He separates the constitution into its **dignified** parts, such as the monarchy, which win the public's reverence and loyalty, and its **efficient** parts, mainly the Cabinet and the House of Commons, which actually govern.

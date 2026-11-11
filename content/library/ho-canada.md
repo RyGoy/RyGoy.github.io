@@ -9,6 +9,14 @@ source_label = "The Myth is Canada"
 weight = 3
 # The emblem beside the title, in place of the rose window: the cobra in its own colours (static/images/emblems/cobra-colour.webp).
 emblem = "cobra"
+
+# The cobra is a link that plays this video in a pop-up (layouts/library/single.html).
+[emblem_video]
+src = "/videos/fumbles-robot-chicken.mp4"
+poster = "/videos/fumbles-robot-chicken.webp"
+title = "Fumbles (Robot Chicken)"
+width = 480
+height = 360
 +++
 
 R. Rogers Smith was born in 1884 at Fort Qu'Appelle, in what is now Saskatchewan. He was a mechanical engineer and a student of international and constitutional law. His final chapter proposes a "do-it-yourself" way for an individual Canadian to assert the right to vote as a Canadian.

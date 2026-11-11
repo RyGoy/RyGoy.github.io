@@ -16,5 +16,3 @@ canada = "1 January 2067, 70 years after Sagan's death in 1996"
 +++
 
 Carl Sagan (1934–1996) was an astronomer and the presenter of the television series *Cosmos*. In this book he looks at alien abductions, recovered memories, witch hunts and other claims, and shows how to question them. Some of its chapters were written with Ann Druyan.
-
-The book is still under copyright: the copyright section below gives its status, who holds it and when it is expected to enter the public domain. A copy, with its license and notice, is coming soon from [wfgresearch.org](https://wfgresearch.org/).

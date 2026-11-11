@@ -1397,16 +1397,25 @@ body::after { content: ""; position: fixed; z-index: -1; right: -6rem; bottom: -
 .page-heading { position: relative; isolation: isolate; }
 .page-heading::after { content: ""; position: absolute; z-index: -1; right: 0; top: 50%; width: 12rem; aspect-ratio: 1; transform: translateY(-50%); background: var(--emblem-colour); opacity: calc(.05 * var(--emblem-strength)); pointer-events: none; -webkit-mask: var(--emblem-rose) center / contain no-repeat; mask: var(--emblem-rose) center / contain no-repeat; }
 /* A page can name its own emblem for the title (emblem in the front matter, as data-emblem on the heading).
-   Ho, Canada!'s cobra is an important symbol, so it is shown in its own colours, not as a faint mask: a cut-out of
-   COBRA.svg (static/images/emblems/cobra-colour.webp), beside the title and lightly toned for each theme. */
+   The cobra (on Ho, Canada! and The English Constitution) is an important symbol, so it is shown in its own colours,
+   not as a faint mask: .page-emblem in the heading (layouts/library/single.html), a cut-out of COBRA.svg
+   (static/images/emblems/cobra-colour.webp), beside the title and lightly toned for each theme. On Ho, Canada! it is
+   a link that plays a video in a pop-up (#emblem-video). */
 .page-heading[data-emblem="cobra"] { padding-right: 15rem; }
-.page-heading[data-emblem="cobra"]::after { width: 13rem; aspect-ratio: 701 / 720; opacity: 1; background: url("../images/emblems/cobra-colour.webp") center / contain no-repeat; -webkit-mask: none; mask: none; filter: sepia(.25) saturate(.85) drop-shadow(0 .4rem 1.1rem var(--c-00000059)); }
-:root[data-theme="light"] .page-heading[data-emblem="cobra"]::after { filter: saturate(.95) drop-shadow(0 .35rem .9rem var(--c-00000059)); }
-:root[data-theme="dark"] .page-heading[data-emblem="cobra"]::after { filter: brightness(.9) saturate(.9) drop-shadow(0 0 1.1rem color-mix(in srgb, var(--emblem-colour) 45%, transparent)); }
+.page-heading[data-emblem="cobra"]::after { content: none; }
+.page-emblem { position: absolute; right: 0; top: 50%; display: block; width: 13rem; aspect-ratio: 701 / 720; transform: translateY(-50%); background: url("../images/emblems/cobra-colour.webp") center / contain no-repeat; filter: sepia(.25) saturate(.85) drop-shadow(0 .4rem 1.1rem var(--c-00000059)); }
+:root[data-theme="light"] .page-emblem { filter: saturate(.95) drop-shadow(0 .35rem .9rem var(--c-00000059)); }
+:root[data-theme="dark"] .page-emblem { filter: brightness(.9) saturate(.9) drop-shadow(0 0 1.1rem color-mix(in srgb, var(--emblem-colour) 45%, transparent)); }
+a.page-emblem { cursor: pointer; transition: transform .2s; }
+a.page-emblem:hover, a.page-emblem:focus-visible { transform: translateY(-50%) scale(1.04); }
+a.page-emblem:focus-visible { outline: 2px solid var(--brass); outline-offset: 6px; border-radius: 8px; }
+.image-viewer.video-viewer.emblem-video { width: min(94vw, 760px); }
 @media (max-width: 720px) {
   .page-heading[data-emblem="cobra"] { padding-right: 0; }
-  .page-heading[data-emblem="cobra"]::after { position: static; display: block; width: 10rem; margin: 1.5rem 0 0; transform: none; }
+  .page-emblem { position: static; width: 10rem; margin: 1.5rem 0 0; transform: none; }
+  a.page-emblem:hover, a.page-emblem:focus-visible { transform: scale(1.04); }
 }
+@media (prefers-reduced-motion: reduce) { a.page-emblem { transition: none; } }
 /* Volume pages and the posts and comments in them show the volume's numeral (data-numeral) in place of the rose. */
 .page-heading[data-numeral]::after { content: attr(data-numeral); width: auto; aspect-ratio: auto; font-family: var(--display); font-size: 10rem; font-weight: 500; line-height: 1; letter-spacing: .02em; color: var(--emblem-colour); background: none; opacity: calc(.08 * var(--emblem-strength)); -webkit-mask: none; mask: none; }
 .discussed-heading::after { -webkit-mask-image: var(--emblem-crucifix); mask-image: var(--emblem-crucifix); }

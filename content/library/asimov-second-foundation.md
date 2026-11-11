@@ -16,5 +16,3 @@ canada = "1 January 2063, 70 years after Asimov's death in 1992"
 +++
 
 *Second Foundation* gathers two stories first printed in *Astounding Science Fiction*: "Search by the Mule" and "Search by the Foundation". It completes the trilogy begun in [*Foundation*](/library/asimov-foundation/) and [*Foundation and Empire*](/library/asimov-foundation-and-empire/).
-
-The book is still under copyright: the copyright section below gives its status, who holds it and when it is expected to enter the public domain. A copy, with its license and notice, is coming soon from [wfgresearch.org](https://wfgresearch.org/).
