@@ -572,7 +572,7 @@ main { min-height: 35vh; }
    --saber-blue and --saber-red, so theme_colours.py leaves them as they are. The blade's three layers (core, near glow,
    far glow) share one gradient, red to blue, slid from its blue end to its red end. */
 .hero-saber { display: none; }
-/* (blade switched off in body.html for now, so Dark keeps the rule) :root[data-theme="dark"] .hero-rule { display: none; } */
+:root[data-theme="dark"] .hero-rule { display: none; }
 :root[data-theme="dark"] .hero-saber { --saber-blue: #2b8dff; --saber-red: #ff1f33; position: relative; display: flex; align-items: center; width: min(23rem, 86%); height: 2rem; margin: 0 auto 1.1rem; }
 :root[data-theme="dark"] .hero-saber::after { content: ""; position: absolute; left: 20%; right: 0; top: 95%; height: .8rem; border-radius: 50%; background-color: var(--saber-blue); filter: blur(12px); opacity: 0; pointer-events: none; animation: saber-cast .42s ease-out .3s forwards, saber-tint 2.6s ease-in-out 2.67s forwards; }
 :root[data-theme="dark"] .hero-saber-hilt { flex: none; display: flex; align-items: center; cursor: pointer; text-decoration: none; filter: drop-shadow(0 1px 2px #000000c0); transition: filter .2s; }
@@ -610,6 +610,89 @@ main { min-height: 35vh; }
   :root[data-theme="dark"] .hero-saber-flash { opacity: .7; }
   :root[data-theme="dark"] .hero-saber::after { opacity: .22; }
   :root[data-theme="dark"] .hero-saber-flash, :root[data-theme="dark"] .hero-saber::after, :root[data-theme="dark"] .hero-saber-body::before { background-color: var(--saber-red); }
+}
+/* Light theme only: the blade's motion drawn as moving lines between two points, SOURCE (a ringed point) and DESTINATION
+   (a ringed diamond), in the same place (the rule above the title gives way to it as it does to the blade). The points
+   appear, then three waves and a straight core line open out from the source as the blade ignites, surge, and flow
+   towards the destination, each swelling at its own speed (the hum). Two seconds after, each line darkens from the
+   source over 2.6s and stays (the blade's bleed). Small packets travel the core line, one every .8s: the source rings
+   as each leaves and the destination as each arrives. Each line is its own shade of grey, from --from to --to; each wave
+   is a mask (--wave, one period, tiled) over a sliding gradient like the blade's, and its height (--amp) is the swell.
+   Colours are written under :root[data-theme="light"] and the keyframes use none, so theme_colours.py leaves them as they are. */
+.hero-waves { display: none; }
+:root[data-theme="light"] .hero-rule { display: none; }
+:root[data-theme="light"] .hero-waves { display: flex; align-items: center; gap: .45rem; width: min(27rem, 92%); height: 2.6rem; margin: -.3rem auto 1.5rem; }
+:root[data-theme="light"] .hero-waves-end { position: relative; flex: none; width: 1.4rem; height: 1.4rem; opacity: 0; animation: waves-appear .5s ease-out .05s forwards; }
+:root[data-theme="light"] .hero-waves-destination { animation-delay: .5s; }
+:root[data-theme="light"] .hero-waves-end b { position: absolute; left: 0; top: calc(100% + .35rem); font-family: var(--display); font-size: .6rem; font-weight: 600; letter-spacing: .2em; text-transform: uppercase; white-space: nowrap; color: #6b6b6b; }
+:root[data-theme="light"] .hero-waves-destination b { left: auto; right: 0; }  /* labels run inward, so neither passes the ends */
+:root[data-theme="light"] .hero-waves-end i, :root[data-theme="light"] .hero-waves-end::before, :root[data-theme="light"] .hero-waves-end::after { content: ""; position: absolute; inset: 0; box-sizing: border-box; }
+:root[data-theme="light"] .hero-waves-source::before { border: 1px solid #4d4d4d; border-radius: 50%; box-shadow: 0 0 0 .18rem #ffffff80, 0 0 0 calc(.18rem + 1px) #a3a3a3; }
+:root[data-theme="light"] .hero-waves-source i { inset: 32%; border-radius: 50%; background: #2b2b2b; }
+:root[data-theme="light"] .hero-waves-destination::before { inset: 12%; border: 1px solid #4d4d4d; transform: rotate(45deg); box-shadow: 0 0 0 .16rem #ffffff80, 0 0 0 calc(.16rem + 1px) #a3a3a3; }
+:root[data-theme="light"] .hero-waves-destination i { inset: 36%; border: 1px solid #2b2b2b; transform: rotate(45deg); }
+:root[data-theme="light"] .hero-waves-end::after { border: 1px solid #5e5e5e; border-radius: 50%; opacity: 0; animation: waves-ring .8s ease-out .9s infinite; }
+:root[data-theme="light"] .hero-waves-destination::after { animation-delay: 3.3s; }
+:root[data-theme="light"] .hero-waves-path { position: relative; flex: 1; align-self: stretch; clip-path: inset(0 100% 0 0); animation: waves-open .42s cubic-bezier(.2, .9, .3, 1) .25s forwards; }
+:root[data-theme="light"] .hero-waves-path > i { position: absolute; inset: 0; background: linear-gradient(90deg, var(--to) 0 40%, var(--from) 60% 100%) 100% 0 / 250% 100%; -webkit-mask: var(--wave) 0 50% / var(--period) var(--amp) repeat-x; mask: var(--wave) 0 50% / var(--period) var(--amp) repeat-x; animation: waves-bleed 2.6s ease-in-out 2.67s forwards, waves-flow var(--speed) linear infinite, waves-surge .7s ease-out .25s backwards, waves-swell var(--swell) ease-in-out .95s infinite; }
+:root[data-theme="light"] .hero-waves-a { --wave: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 32' preserveAspectRatio='none'%3E%3Cpath d='M0 16C16 2 16 2 32 16S48 30 64 16' fill='none' stroke='white' stroke-width='2' vector-effect='non-scaling-stroke'/%3E%3C/svg%3E"); --period: 3.2rem; --amp: 58%; --speed: 1.6s; --swell: 1.9s; --from: #6b6b6b; --to: #2b2b2b; }
+:root[data-theme="light"] .hero-waves-b { --wave: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 32' preserveAspectRatio='none'%3E%3Cpath d='M0 16C16 2 16 2 32 16S48 30 64 16' fill='none' stroke='white' stroke-width='1.4' vector-effect='non-scaling-stroke'/%3E%3C/svg%3E"); --period: 5.2rem; --amp: 40%; --speed: 2.6s; --swell: 2.7s; --from: #a3a3a3; --to: #5e5e5e; }
+:root[data-theme="light"] .hero-waves-c { --wave: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 32' preserveAspectRatio='none'%3E%3Cpath d='M0 16C16 2 16 2 32 16S48 30 64 16' fill='none' stroke='white' stroke-width='1.1' vector-effect='non-scaling-stroke'/%3E%3C/svg%3E"); --period: 2.1rem; --amp: 24%; --speed: 1.1s; --swell: 1.3s; --from: #c4c4c4; --to: #8c8c8c; }
+:root[data-theme="light"] .hero-waves-path > .hero-waves-core { --from: #4d4d4d; --to: #141414; inset: calc(50% - 1px) 0; -webkit-mask: none; mask: none; animation: waves-bleed 2.6s ease-in-out 2.67s forwards; }
+:root[data-theme="light"] .hero-waves-path > .hero-waves-packet { inset: auto; left: 0; top: 50%; width: .34rem; height: .34rem; margin-top: -.17rem; border-radius: 50%; background: #2b2b2b; box-shadow: 0 0 0 .14rem #ffffffa0; -webkit-mask: none; mask: none; opacity: 0; animation: waves-transit 2.4s linear .9s infinite; }
+:root[data-theme="light"] .hero-waves-packet:nth-of-type(6) { animation-delay: 1.7s; }
+:root[data-theme="light"] .hero-waves-packet:nth-of-type(7) { animation-delay: 2.5s; }
+@keyframes waves-appear { from { opacity: 0; transform: scale(.6); } to { opacity: 1; transform: scale(1); } }
+@keyframes waves-ring { 0% { opacity: .7; transform: scale(1); } 100% { opacity: 0; transform: scale(2.1); } }
+@keyframes waves-transit { 0% { left: 0; opacity: 0; } 8% { opacity: 1; } 92% { opacity: 1; } 100% { left: calc(100% - .34rem); opacity: 0; } }
+@keyframes waves-open { 0% { clip-path: inset(0 100% 0 0); opacity: .4; } 35% { opacity: 1; } 50% { opacity: .5; } 62% { opacity: 1; } 100% { clip-path: inset(0 0 0 0); opacity: 1; } }
+@keyframes waves-bleed { to { background-position: 0 0; } }
+@keyframes waves-flow { to { -webkit-mask-position: calc(var(--period) * -1) 50%; mask-position: calc(var(--period) * -1) 50%; } }
+@keyframes waves-surge { 0% { -webkit-mask-size: var(--period) 0%; mask-size: var(--period) 0%; } 45% { -webkit-mask-size: var(--period) calc(var(--amp) * 1.6); mask-size: var(--period) calc(var(--amp) * 1.6); } 100% { -webkit-mask-size: var(--period) var(--amp); mask-size: var(--period) var(--amp); } }
+@keyframes waves-swell { 0%, 100% { -webkit-mask-size: var(--period) var(--amp); mask-size: var(--period) var(--amp); } 30% { -webkit-mask-size: var(--period) calc(var(--amp) * .55); mask-size: var(--period) calc(var(--amp) * .55); } 65% { -webkit-mask-size: var(--period) calc(var(--amp) * 1.25); mask-size: var(--period) calc(var(--amp) * 1.25); } }
+@media (prefers-reduced-motion: reduce) {
+  :root[data-theme="light"] .hero-waves *, :root[data-theme="light"] .hero-waves *::before, :root[data-theme="light"] .hero-waves *::after { animation: none !important; }
+  :root[data-theme="light"] .hero-waves-end { opacity: 1; }
+  :root[data-theme="light"] .hero-waves-path { clip-path: none; }
+  :root[data-theme="light"] .hero-waves-path > i { background-position: 0 0; }
+  :root[data-theme="light"] .hero-waves-path > .hero-waves-packet { display: none; }
+}
+/* Sepia theme only: the exponential function, y = e^x, in the same place as the blade (dark) and the moving lines (light),
+   where the rule above the title gives way to it. The axes appear; the curve is drawn from left to right at an even pace
+   in x, so its rise speeds up (each unit of x multiplies the height by e: the dashed drops at x = -1, 0, 1 rise as the
+   point passes them); a red point rides the curve with its tangent, which always meets the x-axis exactly one unit behind
+   the point (the slope of e^x is e^x). Then the point traces it again every 4s. Drawn with the theme's own variables, so
+   theme_colours.py has nothing to do here. The curve, the drops and the keyframes are computed from e^x (viewBox
+   220x50, x from -3.0 to 1.6, y from 0 to 5); the box keeps that aspect ratio so the tangent's angles hold. */
+.hero-exp { display: none; }
+:root:not([data-theme]) .hero-rule { display: none; }
+:root:not([data-theme]) .hero-exp { position: relative; display: block; width: min(19rem, 78%); aspect-ratio: 220 / 50; margin: -.2rem auto 1.2rem; }
+:root:not([data-theme]) .hero-exp svg { position: absolute; inset: 0; width: 100%; height: 100%; overflow: visible; fill: none; }
+:root:not([data-theme]) .hero-exp-axis { stroke: var(--brass); stroke-opacity: .45; stroke-width: 1; vector-effect: non-scaling-stroke; opacity: 0; animation: exp-appear .5s ease-out .05s forwards; }
+:root:not([data-theme]) .hero-exp-drop { stroke: var(--brass); stroke-opacity: .55; stroke-width: 1; stroke-dasharray: 2 2.5; vector-effect: non-scaling-stroke; transform-box: fill-box; transform-origin: 50% 100%; transform: scaleY(0); animation: exp-rise .45s ease-out forwards; }
+:root:not([data-theme]) .hero-exp-drop-1 { animation-delay: 1.13s; }
+:root:not([data-theme]) .hero-exp-drop-2 { animation-delay: 1.97s; }
+:root:not([data-theme]) .hero-exp-drop-3 { animation-delay: 2.80s; }
+:root:not([data-theme]) .hero-exp-curve { clip-path: inset(0 75.30% 0 0); opacity: 0; animation: exp-appear .4s ease-out .1s forwards, exp-draw 3s linear .3s forwards; }
+:root:not([data-theme]) .hero-exp-curve path { stroke: var(--brass); stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round; vector-effect: non-scaling-stroke; filter: drop-shadow(0 0 3px var(--c-b89a6350)); }
+:root:not([data-theme]) .hero-exp-dot { position: absolute; width: .42rem; height: .42rem; margin: -.21rem 0 0 -.21rem; border-radius: 50%; background: var(--red); box-shadow: 0 0 0 .12rem var(--ink), 0 0 6px var(--red); opacity: 0; animation: exp-trace 4s linear .3s infinite, exp-fade 4s linear .3s infinite; }
+:root:not([data-theme]) .hero-exp-tangent { position: absolute; top: 92.00%; height: 1px; margin-top: -.5px; transform-origin: 0 50%; background: linear-gradient(90deg, var(--red), var(--red) 80%, transparent); opacity: 0; animation: exp-tangent 4s linear .3s infinite, exp-fade-soft 4s linear .3s infinite; }
+:root:not([data-theme]) .hero-exp-tangent::before { content: ""; position: absolute; left: -.17rem; top: -.17rem; width: .34rem; height: .34rem; border: 1px solid var(--red); border-radius: 50%; box-sizing: border-box; }
+:root:not([data-theme]) .hero-exp-label { position: absolute; left: 76%; top: -14%; font-family: var(--display); font-style: italic; font-size: .95rem; line-height: 1; color: var(--brass); opacity: 0; animation: exp-appear .6s ease-out 3.1s forwards; }
+:root:not([data-theme]) .hero-exp-label sup { font-size: .7em; }
+@keyframes exp-appear { to { opacity: 1; } }
+@keyframes exp-rise { to { transform: scaleY(1); } }
+@keyframes exp-draw { to { clip-path: inset(0 2.73% 0 0); } }
+@keyframes exp-fade { 0% { opacity: 0; } 4% { opacity: 1; } 72% { opacity: 1; } 82% { opacity: 0; } 100% { opacity: 0; } }
+@keyframes exp-fade-soft { 0% { opacity: 0; } 6% { opacity: .75; } 72% { opacity: .75; } 82% { opacity: 0; } 100% { opacity: 0; } }
+@keyframes exp-trace { 0.00% { left: 24.70%; top: 89.62%; } 2.08% { left: 26.72%; top: 89.37%; } 4.17% { left: 28.74%; top: 89.09%; } 6.25% { left: 30.75%; top: 88.78%; } 8.33% { left: 32.77%; top: 88.45%; } 10.42% { left: 34.78%; top: 88.07%; } 12.50% { left: 36.80%; top: 87.66%; } 14.58% { left: 38.81%; top: 87.20%; } 16.67% { left: 40.83%; top: 86.70%; } 18.75% { left: 42.85%; top: 86.14%; } 20.83% { left: 44.86%; top: 85.53%; } 22.92% { left: 46.88%; top: 84.84%; } 25.00% { left: 48.89%; top: 84.09%; } 27.08% { left: 50.91%; top: 83.26%; } 29.17% { left: 52.92%; top: 82.34%; } 31.25% { left: 54.94%; top: 81.33%; } 33.33% { left: 56.96%; top: 80.20%; } 35.42% { left: 58.97%; top: 78.96%; } 37.50% { left: 60.99%; top: 77.59%; } 39.58% { left: 63.00%; top: 76.07%; } 41.67% { left: 65.02%; top: 74.40%; } 43.75% { left: 67.04%; top: 72.55%; } 45.83% { left: 69.05%; top: 70.50%; } 47.92% { left: 71.07%; top: 68.24%; } 50.00% { left: 73.08%; top: 65.74%; } 52.08% { left: 75.10%; top: 62.98%; } 54.17% { left: 77.11%; top: 59.93%; } 56.25% { left: 79.13%; top: 56.56%; } 58.33% { left: 81.15%; top: 52.83%; } 60.42% { left: 83.16%; top: 48.71%; } 62.50% { left: 85.18%; top: 44.16%; } 64.58% { left: 87.19%; top: 39.13%; } 66.67% { left: 89.21%; top: 33.57%; } 68.75% { left: 91.23%; top: 27.42%; } 70.83% { left: 93.24%; top: 20.63%; } 72.92% { left: 95.26%; top: 13.12%; } 75.00% { left: 97.27%; top: 4.83%; } 100% { left: 97.27%; top: 4.83%; } }
+@keyframes exp-tangent { 0.00% { left: 4.55%; width: 25.21%; transform: rotate(-1.54deg); } 2.08% { left: 6.56%; width: 25.21%; transform: rotate(-1.70deg); } 4.17% { left: 8.58%; width: 25.21%; transform: rotate(-1.88deg); } 6.25% { left: 10.59%; width: 25.21%; transform: rotate(-2.08deg); } 8.33% { left: 12.61%; width: 25.22%; transform: rotate(-2.29deg); } 10.42% { left: 14.62%; width: 25.22%; transform: rotate(-2.54deg); } 12.50% { left: 16.64%; width: 25.23%; transform: rotate(-2.80deg); } 14.58% { left: 18.66%; width: 25.23%; transform: rotate(-3.10deg); } 16.67% { left: 20.67%; width: 25.24%; transform: rotate(-3.42deg); } 18.75% { left: 22.69%; width: 25.25%; transform: rotate(-3.78deg); } 20.83% { left: 24.70%; width: 25.26%; transform: rotate(-4.18deg); } 22.92% { left: 26.72%; width: 25.28%; transform: rotate(-4.61deg); } 25.00% { left: 28.74%; width: 25.30%; transform: rotate(-5.10deg); } 27.08% { left: 30.75%; width: 25.32%; transform: rotate(-5.63deg); } 29.17% { left: 32.77%; width: 25.35%; transform: rotate(-6.22deg); } 31.25% { left: 34.78%; width: 25.38%; transform: rotate(-6.86deg); } 33.33% { left: 36.80%; width: 25.42%; transform: rotate(-7.58deg); } 35.42% { left: 38.81%; width: 25.47%; transform: rotate(-8.36deg); } 37.50% { left: 40.83%; width: 25.53%; transform: rotate(-9.23deg); } 39.58% { left: 42.85%; width: 25.60%; transform: rotate(-10.18deg); } 41.67% { left: 44.86%; width: 25.69%; transform: rotate(-11.22deg); } 43.75% { left: 46.88%; width: 25.80%; transform: rotate(-12.37deg); } 45.83% { left: 48.89%; width: 25.93%; transform: rotate(-13.62deg); } 47.92% { left: 50.91%; width: 26.09%; transform: rotate(-14.99deg); } 50.00% { left: 52.92%; width: 26.28%; transform: rotate(-16.49deg); } 52.08% { left: 54.94%; width: 26.51%; transform: rotate(-18.12deg); } 54.17% { left: 56.96%; width: 26.79%; transform: rotate(-19.88deg); } 56.25% { left: 58.97%; width: 27.13%; transform: rotate(-21.78deg); } 58.33% { left: 60.99%; width: 27.55%; transform: rotate(-23.83deg); } 60.42% { left: 63.00%; width: 28.04%; transform: rotate(-26.02deg); } 62.50% { left: 65.02%; width: 28.63%; transform: rotate(-28.34deg); } 64.58% { left: 67.04%; width: 29.34%; transform: rotate(-30.80deg); } 66.67% { left: 69.05%; width: 30.17%; transform: rotate(-33.38deg); } 68.75% { left: 71.07%; width: 31.17%; transform: rotate(-36.06deg); } 70.83% { left: 73.08%; width: 32.34%; transform: rotate(-38.82deg); } 72.92% { left: 75.10%; width: 33.72%; transform: rotate(-41.65deg); } 75.00% { left: 77.11%; width: 35.33%; transform: rotate(-44.50deg); } 100% { left: 77.11%; width: 35.33%; transform: rotate(-44.50deg); } }
+@media (prefers-reduced-motion: reduce) {
+  :root:not([data-theme]) .hero-exp *, :root:not([data-theme]) .hero-exp-curve { animation: none !important; }
+  :root:not([data-theme]) .hero-exp-axis, :root:not([data-theme]) .hero-exp-curve, :root:not([data-theme]) .hero-exp-label { opacity: 1; }
+  :root:not([data-theme]) .hero-exp-curve { clip-path: inset(0 2.73% 0 0); }
+  :root:not([data-theme]) .hero-exp-drop { transform: none; }
+  :root:not([data-theme]) .hero-exp-dot, :root:not([data-theme]) .hero-exp-tangent { display: none; }
 }
 .hero h1 { font-size: clamp(3.3rem, 5.8vw, 6rem); letter-spacing: -.025em; margin-bottom: 1.4rem; text-wrap: balance; }
 .hero p { max-width: 34rem; margin: 0 auto; color: var(--muted); font-size: 1.05rem; line-height: 1.7; }
