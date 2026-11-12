@@ -71,13 +71,13 @@
     <p>An archive of old Facebook posts from 2013 - 2018 + Articles for Various Authors.</p>
     <div class="hero-links"><a href="#volumes">Volumes <span aria-hidden="true">↓</span></a><a href="{{ "articles/" | relURL }}">Articles <span aria-hidden="true">↗</span></a><a href="https://cdd.com" target="_blank" rel="noopener noreferrer">Super Powered Nigger Bitches From Space <span aria-hidden="true">↗</span>{{ with site.Params.live_sign_text }}{{ if site.Params.live_sign }}<span class="live-sign" data-day="{{ site.Params.live_sign_day }}" data-from="{{ site.Params.live_sign_from }}" data-to="{{ site.Params.live_sign_to }}" hidden>{{ . }}</span>{{ end }}{{ end }}</a></div>
     {{ if site.Params.live_sign }}
-    {{/* The neon sign on the cdd.com button (live_sign in config.toml): shown only on its day between its times, Eastern
+    {{/* The neon sign on the cdd.com button (live_sign in config.toml): shown only on its day between its times, Toronto
          time, checked every half minute. Without JavaScript it stays hidden. */}}
     <script>
       {
         const sign = document.querySelector('.live-sign');
         if (sign) {
-          const clock = new Intl.DateTimeFormat('en-US', { timeZone: 'America/New_York', weekday: 'short', hour: '2-digit', minute: '2-digit', hourCycle: 'h23' });
+          const clock = new Intl.DateTimeFormat('en-US', { timeZone: 'America/Toronto', weekday: 'short', hour: '2-digit', minute: '2-digit', hourCycle: 'h23' });
           const minutes = (time) => { const [h, m] = time.split(':').map(Number); return h * 60 + m; };
           const update = () => {
             const now = Object.fromEntries(clock.formatToParts(new Date()).map((part) => [part.type, part.value]));

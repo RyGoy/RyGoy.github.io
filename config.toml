@@ -14,7 +14,7 @@ commentary_telegram = true
 commentary_telegram_bot = "CommentaryTTFLbot"
 
 # The neon sign on the home page's cdd.com button (layouts/partials/body.html): lit only while the show is on, on
-# live_sign_day from live_sign_from to live_sign_to, Eastern time (New York, so EDT in summer), and off the rest of the
+# live_sign_day from live_sign_from to live_sign_to, Toronto time (EST, or EDT in summer), and off the rest of the
 # week. live_sign = false leaves it out; live_sign_text is what it says. Days are Mon, Tue, Wed, Thu, Fri, Sat, Sun.
 live_sign = true
 live_sign_text = "LIVE 20:00 EST Thursdays"
