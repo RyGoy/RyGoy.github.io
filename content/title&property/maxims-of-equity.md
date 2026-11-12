@@ -8,8 +8,6 @@ weight = 2
 tags = ["EQUITY", "TRUSTS", "PROPERTY"]
 +++
 
-> **DISCLAIMER: This is an AI written article.**
-
 ## Where equity comes from
 
 The common-law courts decided cases by fixed rules. Where a fixed rule gave an unjust result, people petitioned the King's Chancellor, who decided by **conscience**. The rules the Court of Chancery built up over centuries are called **equity**, and the short sayings that sum them up are the **maxims of equity**.
@@ -155,4 +153,4 @@ All are free scans on the Internet Archive.
 
 ---
 
-*This is an AI written article, protect your self with SURETY, ACCOUNTING, AND THE LAW OF AGENCY*
+*Protect your self with SURETY, ACCOUNTING, AND THE LAW OF AGENCY*
