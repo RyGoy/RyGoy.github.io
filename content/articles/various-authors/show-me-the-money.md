@@ -12,9 +12,10 @@ emblem = "cobra"
 # The cobra is a link that plays this video in a pop-up (layouts/partials/page-emblem.html).
 [emblem_video]
 src = "/videos/trainedwell.mp4"
+poster = "/videos/trainedwell.webp"
 title = "Trained Well My Young Apprentice"
-width = 1280
-height = 720
+width = 640
+height = 272
 +++
 <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
   <div class="carousel-inner">
