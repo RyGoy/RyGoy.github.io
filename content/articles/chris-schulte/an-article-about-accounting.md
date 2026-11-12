@@ -6,6 +6,16 @@ description = "The mechanism by which the story of the transfer of surety, is to
 weight = "4"
 tags = ["ACCOUNTING", "SURETY", "NARRATIVE"]
 categories = ["RESPONSIBILITY"]
+# The emblem beside the title: the cobra in its own colours (static/images/emblems/cobra-colour.webp).
+emblem = "cobra"
+
+# The cobra is a link that plays this video in a pop-up (layouts/partials/page-emblem.html).
+[emblem_video]
+src = "/videos/trainedwell.mp4"
+poster = "/videos/trainedwell.webp"
+title = "Trained Well My Young Apprentice"
+width = 640
+height = 272
 +++
 Shared under a Creative Commons Attribution-NonCommercial-NoDerivs 3.0 Unported License.
 

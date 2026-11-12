@@ -1419,10 +1419,9 @@ body::after { content: ""; position: fixed; z-index: -1; right: -6rem; bottom: -
 .page-heading { position: relative; isolation: isolate; }
 .page-heading::after { content: ""; position: absolute; z-index: -1; right: 0; top: 50%; width: 12rem; aspect-ratio: 1; transform: translateY(-50%); background: var(--emblem-colour); opacity: calc(.05 * var(--emblem-strength)); pointer-events: none; -webkit-mask: var(--emblem-rose) center / contain no-repeat; mask: var(--emblem-rose) center / contain no-repeat; }
 /* A page can name its own emblem for the title (emblem in the front matter, as data-emblem on the heading).
-   The cobra (on Ho, Canada! and The English Constitution) is an important symbol, so it is shown in its own colours,
-   not as a faint mask: .page-emblem in the heading (layouts/library/single.html), a cut-out of COBRA.svg
-   (static/images/emblems/cobra-colour.webp), beside the title and lightly toned for each theme. On Ho, Canada! it is
-   a link that plays a video in a pop-up (#emblem-video). */
+   The cobra (on some library books and articles) is an important symbol, so it is shown in its own colours, not as a faint mask: .page-emblem in the heading (partials/page-emblem.html, for
+   library books and articles), a cut-out of COBRA.svg (static/images/emblems/cobra-colour.webp), beside the title and
+   lightly toned for each theme. With a video ([emblem_video]) it is a link that plays it in a pop-up (#emblem-video). */
 .page-heading[data-emblem="cobra"] { padding-right: 15rem; }
 .page-heading[data-emblem="cobra"]::after { content: none; }
 .page-emblem { position: absolute; right: 0; top: 50%; display: block; width: 13rem; aspect-ratio: 701 / 720; transform: translateY(-50%); background: url("../images/emblems/cobra-colour.webp") center / contain no-repeat; filter: sepia(.25) saturate(.85) drop-shadow(0 .4rem 1.1rem var(--c-00000059)); }

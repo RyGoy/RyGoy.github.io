@@ -1,0 +1,24 @@
+{{/* The cobra beside a page's title, for pages with emblem = "cobra" (library books, articles); the heading carries
+     data-emblem (archive.css, .page-emblem). It is shown in its own colours (other pages have the faint rose window).
+     With [emblem_video] in the front matter (src, poster, title, width, height) it is a link that plays that video in a
+     pop-up; without JavaScript the link opens the file itself. */}}
+{{ if eq .Params.emblem "cobra" }}{{ with .Params.emblem_video }}
+<a class="page-emblem" href="{{ .src | relURL }}" aria-haspopup="dialog" aria-label="Play the video {{ .title }}" title="Play {{ .title }}" data-pagefind-ignore></a>
+<dialog class="image-viewer video-viewer emblem-video" id="emblem-video" aria-label="{{ .title }} (video)" style="--video-ratio: {{ div (float .width) .height }}" data-pagefind-ignore>
+  <video src="{{ .src | relURL }}"{{ with .poster }} poster="{{ . | relURL }}"{{ end }} width="{{ .width }}" height="{{ .height }}" controls playsinline preload="none"></video>
+  <form method="dialog"><button class="image-viewer-close">Close</button></form>
+</dialog>
+<script>
+  {
+    const link = document.querySelector('a.page-emblem');
+    const player = document.getElementById('emblem-video');
+    if (link && typeof player.showModal === 'function') {
+      const video = player.querySelector('video');
+      link.addEventListener('click', (event) => { event.preventDefault(); player.showModal(); video.play().catch(() => {}); });
+      player.addEventListener('click', (event) => { if (event.target === player) player.close(); });
+      // Close, Esc or a click outside: stop the video with the pop-up.
+      player.addEventListener('close', () => video.pause());
+    }
+  }
+</script>
+{{ else }}<span class="page-emblem" aria-hidden="true"></span>{{ end }}{{ end }}
