@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 440">
+  <!-- A bounty hunter's T-visor helmet, embossed, for the carousel cards (archive.css, .carousel-frame::before).
+       The shapes are a height map in grey (lighter is higher; each covers what is under it): shell, cheeks, then ear
+       caps and rangefinder raised highest, the visor sunk. The filter lights it from the top left. Flat ground comes
+       out exactly mid grey, so with mix-blend-mode: soft-light only the relief shows, in each theme's card colour. -->
+  <defs>
+    <filter id="emboss" x="0" y="0" width="100%" height="100%" color-interpolation-filters="sRGB">
+      <feColorMatrix type="luminanceToAlpha" result="map"/>
+      <feGaussianBlur in="map" stdDeviation="2.6" result="height"/>
+      <!-- elevation 30: a flat surface gets sin(30) = 0.5, mid grey. -->
+      <feDiffuseLighting in="height" surfaceScale="7" diffuseConstant="1" lighting-color="#fff">
+        <feDistantLight azimuth="225" elevation="30"/>
+      </feDiffuseLighting>
+    </filter>
+  </defs>
+  <g filter="url(#emboss)">
+    <rect width="400" height="440" fill="#000"/>
+    <!-- Shell: dome, straight sides, flared jaw. -->
+    <path fill="#b8b8b8" d="M200 34C116 34 72 92 70 170L68 300C68 336 76 362 92 384L132 404H268L308 384C324 362 332 336 332 300L330 170C328 92 284 34 200 34Z"/>
+    <!-- Cheek plates, down from the visor's wings to the jaw. -->
+    <path fill="#d9d9d9" d="M98 214H168V392L132 392 102 372C92 352 90 330 92 300Z"/>
+    <path fill="#d9d9d9" d="M302 214H232V392L268 392 298 372C308 352 310 330 308 300Z"/>
+    <!-- Brow band above the visor, and the dent in the dome. -->
+    <path fill="#cfcfcf" d="M92 132C130 118 270 118 308 132V146C270 134 130 134 92 146Z"/>
+    <ellipse cx="248" cy="78" rx="20" ry="12" fill="#949494" transform="rotate(-18 248 78)"/>
+    <!-- The T visor, sunk into the face. -->
+    <path fill="#2e2e2e" d="M100 156H300V206H234V336L222 352H178L166 336V206H100Z"/>
+    <!-- Ear caps. -->
+    <circle cx="70" cy="236" r="30" fill="#fff"/>
+    <circle cx="70" cy="236" r="15" fill="#cfcfcf"/>
+    <circle cx="330" cy="236" r="30" fill="#fff"/>
+    <circle cx="330" cy="236" r="15" fill="#cfcfcf"/>
+    <!-- Rangefinder: a stalk up from the right ear cap, the eyepiece bent in at the top. -->
+    <path fill="#fff" d="M340 208L346 40H358L352 208Z"/>
+    <path fill="#fff" d="M300 26H360V52H300Z"/>
+    <path fill="#b0b0b0" d="M306 32H326V46H306Z"/>
+  </g>
+</svg>
