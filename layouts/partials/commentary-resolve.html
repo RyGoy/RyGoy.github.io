@@ -1,6 +1,6 @@
 {{/* Returns the page a commentary reference points at, or false. A reference is a site link
    ("/vol_i/123_456/", or the full https:// address) or a commentary note's title or file name. */}}
-{{ $ref := strings.TrimSpace (string .) }}
+{{ $ref := trim (string .) " \t\r\n" }}
 {{ $ref = replaceRE `^https?://[^/]+` "" $ref }}
 {{ $ref = replaceRE `[#?].*$` "" $ref }}
 {{ $page := false }}
