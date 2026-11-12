@@ -7,8 +7,10 @@ title = "TheTenderForLaw.com Test Deployment"
 # https://rygoy.github.io at https://comments.app (log in with Telegram). Empty hides the section.
 comments_app_website = ""
 
-# The commentary bot's Telegram username, without the @ (telegram-bot/README.md). Set, "Add commentary" opens the bot
-# on the page; empty, it opens GitHub's editor with a new note.
+# The commentary bot (telegram-bot/README.md). With commentary_telegram = true, "Add commentary" opens the bot, by its
+# Telegram username (without the @), on the page; with false, it opens GitHub's editor with a new note instead. This
+# switches the site's link only: to stop the bot itself, see "Turning it off" in telegram-bot/README.md.
+commentary_telegram = true
 commentary_telegram_bot = "CommentaryTTFLbot"
 
 # Link previews (Open Graph / Twitter tags in partials/head.html) for pages with nothing of their own: the Grand

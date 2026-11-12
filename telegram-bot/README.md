@@ -42,6 +42,11 @@ You need a Telegram account, a free Cloudflare account, and GitHub access to thi
    ```
 
 6. **Try it.** Message the bot `/start`, reply with a test note, and approve it in the group. Delete the test file from `content/commentary/` afterwards.
-7. **Turn it on for the site.** Set `commentary_telegram_bot` in `config.toml` to the bot's username, without the `@`.
+7. **Turn it on for the site.** In `config.toml`, set `commentary_telegram_bot` to the bot's username, without the `@`, and `commentary_telegram = true`.
 
 To change the bot, edit `worker.js`, run `npm test` here, and `npx wrangler deploy` again. `npx wrangler tail` shows its logs.
+
+## Turning it off
+
+- **The site's link:** set `commentary_telegram = false` in `config.toml`. After the deploy, "Add commentary" opens GitHub's editor instead of the bot; `true` brings the bot back. The bot itself still answers anyone who messages it.
+- **The bot, at once:** `curl "https://api.telegram.org/bot<TOKEN>/deleteWebhook?drop_pending_updates=true"`. Telegram stops passing anything to the Worker, so new notes and the Approve and Reject buttons do nothing, and messages sent meanwhile are dropped. Step 5 (`setWebhook`) turns it back on.

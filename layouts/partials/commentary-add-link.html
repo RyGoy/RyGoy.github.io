@@ -3,9 +3,10 @@
      of A-Z a-z 0-9 _ -: its lowercase path with "/" written "S" and the archive's Facebook group ID prefix written "G"
      (decodePage in telegram-bot/worker.js), so a comment's path fits. A path that doesn't fit is left out, and the
      contributor pastes the page's link instead.
-     Without a bot (params.commentary_telegram_bot), it opens GitHub's editor with a new note in content/commentary/,
-     connected to this page; for accounts without write access GitHub turns it into a pull request. */}}
-{{ with site.Params.commentary_telegram_bot }}
+     With the bot switched off or unnamed (params.commentary_telegram, params.commentary_telegram_bot), it opens
+     GitHub's editor with a new note in content/commentary/, connected to this page; for accounts without write access
+     GitHub turns it into a pull request. */}}
+{{ with and site.Params.commentary_telegram site.Params.commentary_telegram_bot }}
   {{ $start := "" }}
   {{ if ne $.Section "commentary" }}
     {{ $param := replace (replace $.RelPermalink "462493170453287_" "G") "/" "S" }}
