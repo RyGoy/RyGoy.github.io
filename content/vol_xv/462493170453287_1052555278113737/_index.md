@@ -1,0 +1,14 @@
+ {
+   "id": "462493170453287_1052555278113737",
+   "created_time": "2016-08-18T19:19:47+0000",
+   "from_name": "Erich Kirov",
+   "message": "THE TENDER FOR LAW is NOW CLOSED. Censorship drove the founder out, and without Scott Duncan, this group is only valuable as an archive. This group was an examination of what you needed to know to fight Judicial corruption, by examining the stuff you are LIED TO about.; MONEY, and the hidden-in-plain-sight contract that is tendered daily. SPOILERS: IT'S ALWAYS ABOUT ACCOUNTING AND SURETY. You are BOUND by ACTS, STATUTES, and CODES when you use MONEY. On that money are the words THIS NOTE IS LEGAL TENDER: THIS NOTE - The note the words (NOTICE) is written on. IS LEGAL - CODES, ACTS, AND STATUTES with the force of law. TENDER - tender verb ten·dered ten·der·ing Definition of TENDER transitive verb 1: to make a tender of 2: to present for acceptance : offer \"tendered my resignation\" intransitive verb : to make a bid or tender Origin of TENDER Middle English tendren, from Anglo-French tendre offer First Known Use: 15th century THIS NOTE IS LEGAL TENDER = THIS NOTE IS A TENDER FOR LAW This forum is where you can ask all your questions, and we don't have to keep typing the same answers over and over. To that end, I am telling you to WATCH THIS FIRST: http://youtu.be/3P7izAUe3ZM NOT watching this, and then posting a question and/or making idiotic statements which reveal you HAVEN'T watched this, means you are DELIBERATELY ignoring these instructions, and you will be banned. And when your examination of these things is done, you will see that we also have a REAL SOLUTION to the problem. YOU CAN'T BUY that shit ANYWHERE! :D ...no really. You can't. It's copyrighted. Unless otherwise stated, BY DEFAULT, anything Scott. and/or Tara Duncan publishes, in THE TENDER FOR LAW, is under a Creative Commons Attribution-NonCommercial-NoDerivs 3.0 Unported License: 1) You MUST say where it came from (Tara, Myself, or THE TENDER FOR LAW group) 2) You CANNOT derive works from it 3) You CANNOT MAKE MONEY off it. Make all the money you like off of \"Scottisms\" TL;DR - IT'S ALWAYS ABOUT ACCOUNTING AND SURETY. THIS NOTE IS LEGAL TENDER = OFFERING AN UNCONDITIONAL \"BENEFIT\" OF ACTS, STATUTES AND CODES. PEREMPTORY NOTICE: ALL WRITINGS PUBLISHED HERE BY AQUILAE AND/OR ITS TRUSTEES AND/OR ITS GRANTORS, ARE, UNLESS OTHERWISE STATED, PUBLISHED under a Creative Commons Attribution-NonCommercial-NoDerivs 3.0 Unported License. Have you tried to join and been IGNORED? GOOD! That's what's supposed to happen! If you don't have a ROGUESUPPORT BATTLEFIELD 2142 SOLDIERNAME, YOU DON\"T GET IN! You had 2 years. Go fuck yourself. WORK for it. Read the group and figure out how. EARN YOUR VOICE HERE! Also: Jimmy Hoffa; Call your office.",
+   "link": "",
+   "name": "",
+   "caption": "",
+   "description": "",
+   "source": "",
+   "type": "status",
+   "place": "None",
+   "imported": "TTFL DB.db"
+ }
