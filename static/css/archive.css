@@ -1494,11 +1494,11 @@ a.page-emblem:focus-visible { outline: 2px solid var(--brass); outline-offset: 6
   transition: transform .45s ease, filter .45s ease, opacity .45s ease;
   cursor: pointer; user-select: none;
 }
-/* Pressed into every frame's face: a T-visor helmet in relief (images/emblems/helmet-emboss.svg, mid grey but for its
-   lit and shaded edges). Soft-light leaves mid grey unchanged, so only the relief shows, in each theme's own card
-   colour. The frame's transform makes it a stacking context, so z-index -1 keeps the helmet over the frame's
-   background and under its text. */
-.carousel-frame::before { content: ""; position: absolute; inset: 5% 0; z-index: -1; background: url("../images/emblems/helmet-emboss.svg") center / contain no-repeat; mix-blend-mode: soft-light; opacity: .5; pointer-events: none; }
+/* Dark theme only: the original bounty hunter's helmet pressed into every frame's face (images/emblems/helmet-emboss.svg,
+   mid grey but for its lit and shaded edges). Soft-light leaves mid grey unchanged, so only the relief shows, in the
+   card's own colour. The frame's transform makes it a stacking context, so z-index -1 keeps the helmet over the
+   frame's background and under its text. */
+:root[data-theme="dark"] .carousel-frame::before { content: ""; position: absolute; inset: 5% 0; z-index: -1; background: url("../images/emblems/helmet-emboss.svg") center / contain no-repeat; mix-blend-mode: soft-light; opacity: .5; pointer-events: none; }
 .carousel-frame[data-pos="0"] { z-index: 3; cursor: default; }
 .carousel-frame[data-pos="1"], .carousel-frame[data-pos="-1"] { z-index: 2; --scale: .8; --dim: .35; }
 .carousel-frame[data-pos="1"] { --x: 1; }
