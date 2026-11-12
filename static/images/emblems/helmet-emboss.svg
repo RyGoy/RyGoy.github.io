@@ -1,12 +1,13 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 440">
-  <!-- A bounty hunter's T-visor helmet, embossed, for the carousel cards (archive.css, .carousel-frame::before).
-       The shapes are a height map in grey (lighter is higher; each covers what is under it): shell, cheeks, then ear
-       caps and rangefinder raised highest, the visor sunk. The filter lights it from the top left. Flat ground comes
-       out exactly mid grey, so with mix-blend-mode: soft-light only the relief shows, in each theme's card colour. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 480">
+  <!-- The original bounty hunter's helmet, front on, embossed, for the carousel cards (archive.css,
+       .carousel-frame::before). The shapes are a height map in grey (lighter is higher; each covers what is under it):
+       the shell, the cheek plates proud of it, the keystone, the ear caps and rangefinder highest, the dent and
+       the T visor sunk. The filter lights it from the top left. Flat ground comes out exactly mid grey, so with
+       mix-blend-mode: soft-light only the relief shows, in each theme's card colour. -->
   <defs>
     <filter id="emboss" x="0" y="0" width="100%" height="100%" color-interpolation-filters="sRGB">
       <feColorMatrix type="luminanceToAlpha" result="map"/>
-      <feGaussianBlur in="map" stdDeviation="2.6" result="height"/>
+      <feGaussianBlur in="map" stdDeviation="3.2" result="height"/>
       <!-- elevation 30: a flat surface gets sin(30) = 0.5, mid grey. -->
       <feDiffuseLighting in="height" surfaceScale="7" diffuseConstant="1" lighting-color="#fff">
         <feDistantLight azimuth="225" elevation="30"/>
@@ -14,25 +15,23 @@
     </filter>
   </defs>
   <g filter="url(#emboss)">
-    <rect width="400" height="440" fill="#000"/>
-    <!-- Shell: dome, straight sides, flared jaw. -->
-    <path fill="#b8b8b8" d="M200 34C116 34 72 92 70 170L68 300C68 336 76 362 92 384L132 404H268L308 384C324 362 332 336 332 300L330 170C328 92 284 34 200 34Z"/>
-    <!-- Cheek plates, down from the visor's wings to the jaw. -->
-    <path fill="#d9d9d9" d="M98 214H168V392L132 392 102 372C92 352 90 330 92 300Z"/>
-    <path fill="#d9d9d9" d="M302 214H232V392L268 392 298 372C308 352 310 330 308 300Z"/>
-    <!-- Brow band above the visor, and the dent in the dome. -->
-    <path fill="#cfcfcf" d="M92 132C130 118 270 118 308 132V146C270 134 130 134 92 146Z"/>
-    <ellipse cx="248" cy="78" rx="20" ry="12" fill="#949494" transform="rotate(-18 248 78)"/>
-    <!-- The T visor, sunk into the face. -->
-    <path fill="#2e2e2e" d="M100 156H300V206H234V336L222 352H178L166 336V206H100Z"/>
-    <!-- Ear caps. -->
-    <circle cx="70" cy="236" r="30" fill="#fff"/>
-    <circle cx="70" cy="236" r="15" fill="#cfcfcf"/>
-    <circle cx="330" cy="236" r="30" fill="#fff"/>
-    <circle cx="330" cy="236" r="15" fill="#cfcfcf"/>
-    <!-- Rangefinder: a stalk up from the right ear cap, the eyepiece bent in at the top. -->
-    <path fill="#fff" d="M340 208L346 40H358L352 208Z"/>
-    <path fill="#fff" d="M300 26H360V52H300Z"/>
-    <path fill="#b0b0b0" d="M306 32H326V46H306Z"/>
+    <rect width="400" height="480" fill="#000"/>
+    <!-- Ear caps, seen edge on: a bump each side at the visor, the right one carrying the rangefinder. -->
+    <rect x="40" y="186" width="30" height="92" rx="12" fill="#d8d8d8"/>
+    <rect x="330" y="186" width="30" height="92" rx="12" fill="#d8d8d8"/>
+    <!-- Rangefinder: the stalk up from the right ear cap, its tip bent in over the dome. -->
+    <path fill="#e6e6e6" d="M340 192L346 52C346 46 350 42 356 42H360C364 42 366 46 366 52L358 192Z"/>
+    <path fill="#f2f2f2" d="M330 30L364 24C370 23 374 27 374 33V52C374 58 370 61 364 60L330 56C325 56 322 52 322 48V38C322 34 325 31 330 30Z"/>
+    <path fill="#b8b8b8" d="M328 38L344 36V50L328 50Z"/>
+    <!-- Shell: dome and straight sides, ending at the mouth; the cheek plates carry on below it. -->
+    <path fill="#a8a8a8" d="M200 28C110 28 60 92 58 186L60 322C62 352 72 374 92 390L118 402H282L308 390C328 374 338 352 340 322L342 186C340 92 290 28 200 28Z"/>
+    <!-- The dent in the dome, on its right (the viewer's left). -->
+    <ellipse cx="136" cy="98" rx="30" ry="18" fill="#8e8e8e" transform="rotate(-28 136 98)"/>
+    <!-- Keystone, above the visor. -->
+    <path fill="#d0d0d0" d="M186 104H214L218 182H182Z"/>
+    <!-- Cheek plates: the face below the visor, past the foot of the shell to a square chin. -->
+    <path fill="#c8c8c8" d="M66 236H334L326 330C320 382 306 422 286 454H114C94 422 80 382 74 330Z"/>
+    <!-- The T visor, sunk into the face: the bar's ends angle in at the foot, the stem runs to the chin. -->
+    <path fill="#262626" d="M68 182H332L320 238H234V398L226 410H174L166 398V238H80Z"/>
   </g>
 </svg>
