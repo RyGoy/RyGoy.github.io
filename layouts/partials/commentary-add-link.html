@@ -1,5 +1,18 @@
-{{/* "Add commentary" opens GitHub's editor with a new note in content/commentary/, connected to this page.
-     For accounts without write access GitHub turns the note into a pull request, so it appears only once approved. */}}
+{{/* "Add commentary" opens the commentary bot on Telegram (telegram-bot/) on this page; moderators approve each note
+     before the bot commits it to content/commentary/. The page goes in the start parameter, which takes at most 64
+     of A-Z a-z 0-9 _ -: its lowercase path with "/" written "S" and the archive's Facebook group ID prefix written "G"
+     (decodePage in telegram-bot/worker.js), so a comment's path fits. A path that doesn't fit is left out, and the
+     contributor pastes the page's link instead.
+     Without a bot (params.commentary_telegram_bot), it opens GitHub's editor with a new note in content/commentary/,
+     connected to this page; for accounts without write access GitHub turns it into a pull request. */}}
+{{ with site.Params.commentary_telegram_bot }}
+  {{ $start := "" }}
+  {{ if ne $.Section "commentary" }}
+    {{ $param := replace (replace $.RelPermalink "462493170453287_" "G") "/" "S" }}
+    {{ if and (findRE `^/[a-z0-9_/-]+$` $.RelPermalink) (le (len $param) 64) }}{{ $start = printf "?start=%s" $param }}{{ end }}
+  {{ end }}
+<a class="commentary-add" href="https://t.me/{{ . }}{{ $start }}" target="_blank" rel="noopener noreferrer">Add commentary <span aria-hidden="true">↗</span></a>
+{{ else }}
 {{ $connects := "" }}
 {{ $name := "your-note-title" }}
 {{ if ne .Section "commentary" }}
@@ -9,3 +22,4 @@
 {{ $note := printf "---\ntitle: \"Your title\"\nauthor: \"Your name\"\ndate: %s\nconnects:%s\n---\n\nExplain the connection here. Under connects, list the link of every post or article this note ties together. Link other commentary with [[Note title]].\n" (now.Format "2006-01-02") $connects }}
 {{ $url := printf "https://github.com/RyGoy/RyGoy.github.io/new/main/content/commentary?%s" (querify "filename" (printf "%s.md" $name) "value" $note) }}
 <a class="commentary-add" href="{{ $url | safeURL }}">Add commentary <span aria-hidden="true">↗</span></a>
+{{ end }}
