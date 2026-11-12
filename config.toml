@@ -13,6 +13,15 @@ comments_app_website = ""
 commentary_telegram = true
 commentary_telegram_bot = "CommentaryTTFLbot"
 
+# The neon sign on the home page's cdd.com button (layouts/partials/body.html): lit only while the show is on, on
+# live_sign_day from live_sign_from to live_sign_to, Eastern time (New York, so EDT in summer), and off the rest of the
+# week. live_sign = false leaves it out; live_sign_text is what it says. Days are Mon, Tue, Wed, Thu, Fri, Sat, Sun.
+live_sign = true
+live_sign_text = "LIVE 20:00 EST Thursdays"
+live_sign_day = "Thu"
+live_sign_from = "20:00"
+live_sign_to = "23:00"
+
 # Link previews (Open Graph / Twitter tags in partials/head.html) for pages with nothing of their own: the Grand
 # Fluff Auto pop-up's picture and text. partials/footer.html shows the same picture in the pop-up.
 [params.preview]
