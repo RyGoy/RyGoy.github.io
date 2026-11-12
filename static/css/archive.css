@@ -548,6 +548,16 @@ main { min-height: 35vh; }
 .hero-zoom-hint { position: absolute; left: 50%; bottom: .9rem; transform: translateX(-50%); padding: .35rem .8rem; white-space: nowrap; pointer-events: none; font-family: var(--display); font-size: .8rem; letter-spacing: .14em; text-transform: uppercase; color: var(--paper); background: var(--c-0c0c0bd9); border: 1px solid var(--c-b89a6366); opacity: 0; transition: opacity .2s; }
 .hero-zoom:hover .hero-zoom-hint, .hero-zoom:focus-visible .hero-zoom-hint { opacity: 1; }
 @media (hover: none) { .hero-zoom-hint { opacity: 1; } }
+/* Dark theme: with the pointer on the saber's hilt, the poster scrolls slowly up and away to "I don't recognize my
+   own country" (square, so cropped to the frame from the left, keeping its top and its text); off it, it snaps back.
+   The transition is set only on the hovered rule, so leaving runs none. Lazy loading leaves the picture unloaded in the
+   themes that hide it. */
+.hero-swap { display: none; }
+:root[data-theme="dark"] .hero-zoom { overflow: hidden; }
+:root[data-theme="dark"] .hero-plate .hero-swap { display: block; position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 100% 0; transform: translateY(100%); }
+:root[data-theme="dark"] .hero:has(.hero-saber-hilt:hover) .hero-zoom > img { transform: translateY(-100%); transition: transform 4s ease-in-out; }
+:root[data-theme="dark"] .hero:has(.hero-saber-hilt:hover) .hero-zoom > .hero-swap { transform: none; }
+@media (prefers-reduced-motion: reduce) { :root[data-theme="dark"] .hero:has(.hero-saber-hilt:hover) .hero-zoom > img { transition: none; } }
 .image-viewer { padding: 12px 12px 0; max-width: min(92vw, 888px); max-height: 94vh; border: 1px solid var(--c-a08455); outline: 1px solid var(--c-b89a6338); outline-offset: -7px; background: linear-gradient(var(--c-1a1915), var(--c-0c0c0b)); color: var(--paper); box-shadow: 0 0 0 1px var(--c-000000), 0 2rem 5rem var(--c-000000cc), 0 0 6rem var(--c-b89a631a); }
 .image-viewer img { display: block; width: auto; height: auto; max-width: 100%; max-height: calc(94vh - 3.5rem); margin-inline: auto; }
 .image-viewer form { margin: 0; padding: .6rem; text-align: center; }
