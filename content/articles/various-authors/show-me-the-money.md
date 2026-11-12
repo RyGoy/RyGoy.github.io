@@ -6,6 +6,15 @@ description = "Consumer or Producer"
 tags = ["ACCOUNTING", "AGENCY"]
 categories = ["CORPORATIONS"]
 weight = "90"
+# The emblem beside the title: the cobra in its own colours (static/images/emblems/cobra-colour.webp).
+emblem = "cobra"
+
+# The cobra is a link that plays this video in a pop-up (layouts/partials/page-emblem.html).
+[emblem_video]
+src = "/videos/trainedwell.mp4"
+title = "Trained Well My Young Apprentice"
+width = 1280
+height = 720
 +++
 <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
   <div class="carousel-inner">

@@ -10,7 +10,7 @@ weight = 1
 # The emblem beside the title, in place of the rose window: the cobra in its own colours (static/images/emblems/cobra-colour.webp).
 emblem = "cobra"
 
-# The cobra is a link that plays this video in a pop-up (layouts/library/single.html).
+# The cobra is a link that plays this video in a pop-up (layouts/partials/page-emblem.html).
 [emblem_video]
 src = "/videos/rebel-scum.mp4"
 poster = "/videos/rebel-scum.webp"
