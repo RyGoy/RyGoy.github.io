@@ -1,0 +1,4 @@
+# The commentary bot's Cloudflare Worker (README.md). Its secrets are set with `npx wrangler secret put`, not here.
+name = "ttfl-commentary-bot"
+main = "worker.js"
+compatibility_date = "2026-10-01"
