@@ -4,8 +4,11 @@
   <figure class="hero-plate">
     <a class="hero-zoom" href="{{ "images/better-than-jesus.jpg" | relURL }}" aria-haspopup="dialog">
       <img src="{{ "images/better-than-jesus-600.jpg" | relURL }}" width="600" height="800" alt="{{ $alt }}" fetchpriority="high">
-      {{/* Dark theme only: hovering the saber's hilt scrolls the poster away to this (archive.css, .hero-swap). */}}
-      <img class="hero-swap" src="{{ "images/my-country.jpg" | relURL }}" width="1024" height="1024" alt="" aria-hidden="true" loading="lazy">
+      {{/* The pictures the poster scrolls away to (archive.css, .hero-swap): the Dark theme's when the saber's hilt is
+           pointed at, the Light theme's when the SOURCE point is. Each theme shows (and, lazily, loads) only its own;
+           change one picture by its src (a file in static/images/), with its width and height. */}}
+      <img class="hero-swap hero-swap-dark" src="{{ "images/my-country.jpg" | relURL }}" width="1024" height="1024" alt="" aria-hidden="true" loading="lazy">
+      <img class="hero-swap hero-swap-light" src="{{ "images/my-country.jpg" | relURL }}" width="1024" height="1024" alt="" aria-hidden="true" loading="lazy">
       <span class="hero-zoom-hint" aria-hidden="true">Click to enlarge</span>
     </a>
   </figure>
