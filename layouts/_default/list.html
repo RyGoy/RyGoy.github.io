@@ -1,6 +1,6 @@
 {{ define "main" }}
 {{ if .Params.id }}
-  <header class="page-heading thread-heading reading-column" data-numeral="{{ upper (strings.TrimPrefix "vol_" .FirstSection.Section) }}"><p class="eyebrow"><a href="{{ .FirstSection.RelPermalink }}">{{ .FirstSection.Title }}</a></p><h1>{{ with .Params.created_time }}{{ (time.AsTime .).Format (cond ($.Params.time_unknown | default false) "Jan 02, 2006" "Jan 02, 2006 3:04 PM") }}{{ end }}</h1></header>
+  <header class="page-heading thread-heading reading-column" data-numeral="{{ upper (strings.TrimPrefix "vol_" .FirstSection.Section) }}"><p class="eyebrow"><a href="{{ .FirstSection.RelPermalink }}">{{ .FirstSection.Title }}</a></p><h1>{{ .Params.from_name | default "Post" }}{{ with .Params.created_time }}<span class="thread-date">{{ (time.AsTime .).Format (cond ($.Params.time_unknown | default false) "Jan 02, 2006" "Jan 02, 2006 3:04 PM") }}</span>{{ end }}</h1></header>
   {{ $searchTitle := partial "page-label.html" . }}
   <div class="reading-column" data-pagefind-body data-pagefind-filter="Section:Volumes" data-pagefind-meta="title:{{ replace $searchTitle "," "" }}">
     {{ partial "search-filters.html" (dict "date" .Params.created_time "volume" .FirstSection) }}

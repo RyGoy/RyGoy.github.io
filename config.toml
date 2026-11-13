@@ -1,8 +1,13 @@
 baseURL = "https://thetenderforlaw.com/"
 languageCode = "en-us"
-title = "TheTenderForLaw.com Test Deployment"
+title = "The Tender For Law"
+# robots.txt (layouts/robots.txt) points search engines at the sitemap.
+enableRobotsTXT = true
 
 [params]
+# The site's description for search engines and link previews: the home page, and pages without their own
+# (layouts/partials/seo-meta.html).
+description = "An archive of THE TENDER FOR LAW Facebook group, 2013 to 2018: its posts and comments on surety, accounting, agency, bills of exchange, insurance and title, with articles by its members and a library of the books behind them."
 # Telegram comments at the bottom of the home page (layouts/index.html). Get the ID by connecting
 # https://rygoy.github.io at https://comments.app (log in with Telegram). Empty hides the section.
 comments_app_website = ""
