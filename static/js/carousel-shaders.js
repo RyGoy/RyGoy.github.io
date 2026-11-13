@@ -1,6 +1,6 @@
 // Animated backgrounds behind the home page carousel's frames (partials/carousel.html, .carousel-shader in
 // archive.css), one per theme: Dark has "Ashfall" (embers glowing through drifting noise, with dark ash zooming past),
-// Light has the plasma grid (glowing purple lines weaving over a blue-to-purple wash), and Sepia metal hexagons (at the
+// Light has the plasma grid (lines weaving across, drawn in the theme's brass on its own parchment), and Sepia metal hexagons (at the
 // end, with three.js). Dark's and Light's are fragment shaders drawn on a canvas under the frames with plain WebGL; the canvas
 // follows the theme switch, draws only while the carousel is on screen, and under reduced motion shows a still frame.
 // Without WebGL (or JavaScript) the carousel keeps its own background.
@@ -8,7 +8,9 @@
 // Ashfall: Liam Egan, https://codepen.io/shubniggurath/pen/oPGyQw (a public CodePen, so MIT). Its noise came from a
 // noise texture on CodePen's server; here a hash computed in the shader takes its place, and three.js (used only to
 // draw one rectangle) is left out. Its clock starts at 50, not the pen's -10000.
-// Plasma grid: "Shader Background" by Le Thanh, https://21st.dev/@minhxthanh/components/shader-background.
+// Plasma grid: "Shader Background" by Le Thanh, https://21st.dev/@minhxthanh/components/shader-background. Its own
+// dark blue-to-purple ground and purple lines are replaced by the theme's colours: the carousel's background
+// (u_ground) and --brass (u_ink), read from the stylesheet, so the lines move over the page's own parchment.
 (() => {
   const VERTEX = 'attribute vec2 position; void main() { gl_Position = vec4(position, 0.0, 1.0); }';
 
@@ -82,10 +84,11 @@
     precision highp float;
     uniform vec2 u_resolution;
     uniform float u_time;
+    uniform vec3 u_ground;
+    uniform vec3 u_ink;
     const float overallSpeed = 0.2;
     const float gridSmoothWidth = 0.015;
     const float scale = 5.0;
-    const vec4 lineColor = vec4(0.4, 0.2, 0.8, 1.0);
     const float minLineWidth = 0.01;
     const float maxLineWidth = 0.2;
     const float lineSpeed = 1.0 * overallSpeed;
@@ -110,10 +113,9 @@
       vec2 uv = gl_FragCoord.xy / u_resolution;
       vec2 space = (gl_FragCoord.xy - u_resolution / 2.0) / u_resolution.x * 2.0 * scale;
       float horizontalFade = 1.0 - (cos(uv.x * 6.28) * 0.5 + 0.5);
-      float verticalFade = 1.0 - (cos(uv.y * 6.28) * 0.5 + 0.5);
       space.y += random(space.x * warpFrequency + u_time * warpSpeed) * warpAmplitude * (0.5 + horizontalFade);
       space.x += random(space.y * warpFrequency + u_time * warpSpeed + 2.0) * warpAmplitude * horizontalFade;
-      vec4 lines = vec4(0.0);
+      float lines = 0.0;
       for (int l = 0; l < linesPerGroup; l++) {
         float normalizedLineIndex = float(l) / float(linesPerGroup);
         float offsetTime = u_time * offsetSpeed;
@@ -126,11 +128,9 @@
         float circleX = mod(float(l) + u_time * lineSpeed, 25.0) - 12.0;
         vec2 circlePosition = vec2(circleX, getPlasmaY(circleX, horizontalFade, offset));
         line += drawCircle(circlePosition, 0.01, space) * 4.0;
-        lines += line * lineColor * rand;
+        lines += line * rand;
       }
-      vec4 colour = mix(vec4(0.1, 0.1, 0.3, 1.0), vec4(0.3, 0.1, 0.5, 1.0), uv.x) * verticalFade;
-      colour.a = 1.0;
-      gl_FragColor = colour + lines;
+      gl_FragColor = vec4(mix(u_ground, u_ink, clamp(lines * 0.8, 0.0, 1.0)), 1.0);
     }`;
 
   // Each theme's shader and its clock: seconds since the page opened, in the units the shader was written for.
@@ -165,7 +165,8 @@
       gl.bindAttribLocation(program, 0, 'position');
       gl.linkProgram(program);
       if (!gl.getProgramParameter(program, gl.LINK_STATUS)) continue;
-      programs[theme] = { program, resolution: gl.getUniformLocation(program, 'u_resolution'), time: gl.getUniformLocation(program, 'u_time') };
+      const at = (name) => gl.getUniformLocation(program, name);
+      programs[theme] = { program, resolution: at('u_resolution'), time: at('u_time'), ground: at('u_ground'), ink: at('u_ink') };
     }
     if (!Object.keys(programs).length) continue;
 
@@ -176,7 +177,14 @@
     gl.vertexAttribPointer(0, 2, gl.FLOAT, false, 0, 0);
     carousel.prepend(canvas);
 
-    let theme = null, onScreen = false, frame = 0;
+    let theme = null, onScreen = false, frame = 0, ground = [0, 0, 0], ink = [1, 1, 1];
+    // A CSS colour as 0-1 RGB: a 2D canvas writes any colour back as #rrggbb.
+    const paint = document.createElement('canvas').getContext('2d');
+    const rgb = (css) => {
+      paint.fillStyle = '#000'; paint.fillStyle = css.trim() || '#000';
+      const hex = /^#[0-9a-f]{6}$/i.test(paint.fillStyle) ? paint.fillStyle : '#000000';
+      return [1, 3, 5].map((i) => parseInt(hex.slice(i, i + 2), 16) / 255);
+    };
     const draw = (now) => {
       frame = 0;
       const p = programs[theme];
@@ -188,12 +196,16 @@
       gl.useProgram(p.program);
       gl.uniform2f(p.resolution, w, h);
       gl.uniform1f(p.time, SHADERS[theme].time((still.matches ? 20000 : now) / 1000));
+      if (p.ground) gl.uniform3f(p.ground, ...ground);
+      if (p.ink) gl.uniform3f(p.ink, ...ink);
       gl.drawArrays(gl.TRIANGLE_STRIP, 0, 4);
       if (onScreen && !still.matches) frame = requestAnimationFrame(draw);
     };
     const update = () => {
       theme = document.documentElement.getAttribute('data-theme');
       canvas.hidden = !programs[theme];
+      const css = getComputedStyle(carousel);
+      ground = rgb(css.backgroundColor); ink = rgb(css.getPropertyValue('--brass'));
       cancelAnimationFrame(frame); frame = 0;
       if (programs[theme] && onScreen) frame = requestAnimationFrame(draw);
     };
