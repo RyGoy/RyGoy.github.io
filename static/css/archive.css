@@ -1483,6 +1483,11 @@ html:has(.terms-gate[open]) { overflow: hidden; }
    Eye of Providence (Illuminati), square and compasses (Freemasons), cross pattee (Templars),
    Eye of Horus and ankh (Egypt). Each is a pseudo-element masked with the SVG, so it takes the brass colour. */
 body::after { content: ""; position: fixed; z-index: -1; right: -6rem; bottom: -6rem; width: min(54rem, 90vw); aspect-ratio: 1; background: var(--emblem-colour); opacity: calc(.035 * var(--emblem-strength)); pointer-events: none; -webkit-mask: var(--emblem-eye) center / contain no-repeat; mask: var(--emblem-eye) center / contain no-repeat; }
+/* Water ripples on the page background (static/js/ripple.js): a canvas fixed behind everything else, first in the
+   body so even the other background layers (the emblem above) paint over it. Each simulation cell is one canvas pixel,
+   scaled up smoothly to the screen. */
+.bg-ripple { position: fixed; inset: 0; z-index: -1; width: 100%; height: 100%; pointer-events: none; }
+@media print { .bg-ripple { display: none; } }
 .hero-copy { position: relative; }
 .hero-copy::before { content: ""; position: absolute; z-index: -1; left: 50%; top: 50%; width: min(26rem, 90%); aspect-ratio: 1; transform: translate(-50%, -52%); background: var(--emblem-colour); opacity: calc(.05 * var(--emblem-strength)); pointer-events: none; -webkit-mask: var(--emblem-eye) center / contain no-repeat; mask: var(--emblem-eye) center / contain no-repeat; }
 .sidebar::after { content: ""; display: block; width: 9rem; aspect-ratio: 1; margin: 3.5rem auto 0; background: var(--emblem-colour); opacity: calc(.07 * var(--emblem-strength)); pointer-events: none; -webkit-mask: var(--emblem-compass) center / contain no-repeat; mask: var(--emblem-compass) center / contain no-repeat; }
