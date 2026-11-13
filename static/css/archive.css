@@ -1568,7 +1568,10 @@ a.page-emblem:focus-visible { outline: 2px solid var(--brass); outline-offset: 6
 }
 @media (max-width: 42rem) { .carousel { --card-w: min(17rem, 58cqw); --card-ratio: 2 / 3; --step: 16cqw; } }
 .carousel-section { margin-top: 2.5rem; }
-.carousel-stage { position: relative; height: calc(var(--card-w) / (var(--card-ratio)) + 1rem); }
+.carousel-stage { position: relative; z-index: 1; height: calc(var(--card-w) / (var(--card-ratio)) + 1rem); }
+/* The animated background behind the frames in Dark and Light (static/js/carousel-shaders.js); the stage's z-index
+   keeps every frame above it. */
+.carousel-shader { position: absolute; inset: 0; z-index: 0; width: 100%; height: 100%; pointer-events: none; }
 .carousel-frame {
   --x: 0; --scale: 1; --dim: 0;
   position: absolute; top: 50%; left: 50%; display: grid; place-items: center;
