@@ -1,0 +1,12 @@
+{{- /* The sitemap for search engines, at /sitemap.xml (named in robots.txt). Single-comment pages are left out: they
+       repeat their post's page and are kept out of search (noindex in partials/head.html), and with them the list ran
+       to 130,000 addresses, past the 50,000 a sitemap may hold, so search engines ignored it. */ -}}
+{{ printf "<?xml version=\"1.0\" encoding=\"utf-8\" standalone=\"yes\"?>" | safeHTML }}
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  {{- range .Data.Pages }}{{ if and .Permalink (not (isset .Params "post_id")) }}
+  <url>
+    <loc>{{ .Permalink }}</loc>{{ if not .Lastmod.IsZero }}
+    <lastmod>{{ safeHTML (.Lastmod.Format "2006-01-02T15:04:05-07:00") }}</lastmod>{{ end }}
+  </url>
+  {{- end }}{{ end }}
+</urlset>

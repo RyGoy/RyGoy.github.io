@@ -891,6 +891,8 @@ iframe.video-embed { border: 1px solid var(--line); }
 .comment-entry .entry-header { margin-bottom: 1rem; }
 .comment-thread { margin-left: 1.25rem; }
 .thread-heading h1 { font-size: clamp(2.2rem, 4vw, 3.5rem); }
+/* Post and comment pages: the heading is the author, with the date beneath. */
+.thread-heading h1 .thread-date { display: block; margin-top: .3em; font-size: .42em; letter-spacing: .03em; color: var(--muted); }
 .volume-pagination { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 1rem; padding: 1.5rem 0; border-block: 1px solid var(--line); font-size: .95rem; }
 .volume-pagination a { text-decoration: none; color: var(--c-d3bf98); }
 .volume-pagination a:hover, .volume-pagination a:focus-visible { color: var(--c-fff5de); }

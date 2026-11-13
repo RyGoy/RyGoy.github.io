@@ -1,0 +1,42 @@
+{{/* Structured data for search engines (schema.org, as JSON-LD), from partials/head.html:
+     - the home page: the WebSite;
+     - posts: a DiscussionForumPosting (Google's type for forum threads), its comments from the export as Comments;
+     - articles (the articles section and the Library's subject sections): an Article;
+     - every page but the home page, comments and the 404: a BreadcrumbList (home, its sections, the page).
+     Comment pages get none: they are left out of search (noindex in head.html). jsonify escapes <, > and &, so text
+     can't close the script. */}}
+{{ $ctx := "https://schema.org" }}
+{{ $date := "2006-01-02T15:04:05Z07:00" }}
+{{ if .IsHome }}
+  <script type="application/ld+json">{{ dict "@context" $ctx "@type" "WebSite" "name" "The Tender For Law" "url" site.Home.Permalink "description" site.Params.description | jsonify | safeJS }}</script>
+{{ else if and .Params.id (not (isset .Params "post_id")) }}
+  {{ $text := partial "seo-text.html" . | default .Params.name | default .Description }}
+  {{ with .Params.created_time }}{{ if $text }}
+    {{ $comments := slice }}
+    {{ range sort $.Pages "Params.created_time" }}
+      {{ $c := partial "seo-text.html" . }}
+      {{ if and $c .Params.created_time }}
+        {{ $comments = $comments | append (dict "@type" "Comment" "text" $c "url" .Permalink "datePublished" ((time.AsTime .Params.created_time).Format $date) "author" (dict "@type" "Person" "name" (.Params.from_name | default "A member"))) }}
+      {{ end }}
+    {{ end }}
+    {{ $post := dict "@context" $ctx "@type" "DiscussionForumPosting" "headline" (truncate 110 "…" $text) "text" $text "url" $.Permalink "datePublished" ((time.AsTime .).Format (cond ($.Params.time_unknown | default false) "2006-01-02" $date)) "author" (dict "@type" "Person" "name" ($.Params.from_name | default "A member")) "isPartOf" (dict "@type" "CollectionPage" "name" $.FirstSection.Title "url" $.FirstSection.Permalink) "interactionStatistic" (dict "@type" "InteractionCounter" "interactionType" "https://schema.org/CommentAction" "userInteractionCount" (len $comments)) }}
+    {{ with $comments }}{{ $post = merge $post (dict "comment" .) }}{{ end }}
+    <script type="application/ld+json">{{ $post | jsonify | safeJS }}</script>
+  {{ end }}{{ end }}
+{{ else if and .IsPage (in (slice "articles" "accounting" "agency" "bills-of-exchange" "insurance" "title&property") .Section) }}
+  {{ $article := dict "@context" $ctx "@type" "Article" "headline" .Title "url" .Permalink }}
+  {{ with .Params.author }}{{ $article = merge $article (dict "author" (dict "@type" "Person" "name" .)) }}{{ end }}
+  {{ if not .Date.IsZero }}{{ $article = merge $article (dict "datePublished" (.Date.Format $date)) }}{{ end }}
+  {{ with .Description }}{{ $article = merge $article (dict "description" .) }}{{ end }}
+  <script type="application/ld+json">{{ $article | jsonify | safeJS }}</script>
+{{ end }}
+{{ if not (or .IsHome (isset .Params "post_id") (eq .Kind "404")) }}
+  {{ $items := slice }}
+  {{ range .Ancestors.Reverse }}
+    {{ $items = $items | append (dict "@type" "ListItem" "position" (add (len $items) 1) "name" (cond .IsHome "The Tender For Law" .Title) "item" .Permalink) }}
+  {{ end }}
+  {{ $items = $items | append (dict "@type" "ListItem" "position" (add (len $items) 1) "name" (partial "page-label.html" .)) }}
+  {{ if gt (len $items) 1 }}
+  <script type="application/ld+json">{{ dict "@context" $ctx "@type" "BreadcrumbList" "itemListElement" $items | jsonify | safeJS }}</script>
+  {{ end }}
+{{ end }}

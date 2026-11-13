@@ -1,0 +1,29 @@
+{{/* The page's title and description, for search engines and link previews (partials/head.html). Returns a dict:
+     title, description.
+     - Posts and comments: "Author: the opening of the message · Volume N · The Tender For Law", described by the
+       message's opening (their front matter's description is the shared link's, not theirs). A post with no message
+       is named by its shared link's title, or else its date.
+     - Volumes: their months and number of posts.
+     - Other pages: their own title and description, or the site's (params.description in config.toml). */}}
+{{ $site := "The Tender For Law" }}
+{{ $title := $site }}
+{{ $desc := .Description }}
+{{ if .Params.id }}
+  {{ $text := partial "seo-text.html" . }}
+  {{ $who := .Params.from_name | default (cond (isset .Params "post_id") "Comment" "Post") }}
+  {{ $head := $text | default .Params.name }}
+  {{ if not $head }}{{ with .Params.created_time }}{{ $head = (time.AsTime .).Format "2 January 2006" }}{{ end }}{{ end }}
+  {{ $title = printf "%s: %s · %s · %s" $who (truncate 60 "…" $head) .FirstSection.Title $site }}
+  {{ $desc = cond (ne $text "") (truncate 160 "…" $text) (.Description | default .Params.name) }}
+{{ else if not .IsHome }}
+  {{ $title = printf "%s · %s" .Title $site }}
+  {{ if and (eq .Kind "section") (hasPrefix .Section "vol_") (not $desc) }}
+    {{ $posts := sort .Pages "Params.created_time" }}
+    {{ with $posts }}
+      {{ $first := (time.AsTime (index . 0).Params.created_time).Format "January 2006" }}
+      {{ $last := (time.AsTime (index . (sub (len .) 1)).Params.created_time).Format "January 2006" }}
+      {{ $desc = printf "%s of The Tender For Law: %d posts from the Facebook group, %s%s, with their comments." $.Title (len .) $first (cond (eq $first $last) "" (printf " to %s" $last)) }}
+    {{ end }}
+  {{ end }}
+{{ end }}
+{{ return dict "title" $title "description" ($desc | default site.Params.description) }}

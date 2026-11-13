@@ -1,0 +1,7 @@
+{{/* A post's or comment's text as one line of plain text (its message, or the Anthology's printed text for a post
+     the export lacks), for titles, descriptions and structured data (partials/seo-meta.html, structured-data.html).
+     Empty when it has none. */}}
+{{ $t := .Params.message | default .Params.anthology_text | default "" }}
+{{ $t = $t | plainify | htmlUnescape }}
+{{ $t = trim (replaceRE `\s+` " " $t) " " }}
+{{ return $t }}

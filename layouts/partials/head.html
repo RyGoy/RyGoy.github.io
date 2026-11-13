@@ -1,16 +1,23 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="color-scheme" content="dark">
-{{ $title := "The Tender For Law" }}{{ if not .IsHome }}{{ $title = printf "%s · The Tender For Law" (.Title | default .Params.id) }}{{ end }}
+{{/* Title and description (partials/seo-meta.html), the page's one address (canonical), and search engines kept off
+     single-comment pages, which repeat their post's page, and the 404 page (noindex; links on them are still followed).
+     Structured data: partials/structured-data.html. */}}
+{{ $meta := partial "seo-meta.html" . }}
+{{ $title := $meta.title }}
 <title>{{ $title }}</title>
-{{ with .Description }}<meta name="description" content="{{ . }}">{{ end }}
+{{ with $meta.description }}<meta name="description" content="{{ . }}">{{ end }}
+<link rel="canonical" href="{{ .Permalink }}">
+{{ if or (isset .Params "post_id") (eq .Kind "404") }}<meta name="robots" content="noindex, follow">{{ end }}
+{{ partial "structured-data.html" . }}
 {{/* Link previews when the page is shared: its title, its description or else the Grand Fluff Auto pop-up's text,
      and the pop-up's picture (site.Params.preview in config.toml). A portrait picture, so a "summary" card. */}}
 {{ with site.Params.preview }}
 <meta property="og:site_name" content="The Tender For Law">
 <meta property="og:type" content="{{ if $.IsPage }}article{{ else }}website{{ end }}">
 <meta property="og:title" content="{{ $title }}">
-<meta property="og:description" content="{{ $.Description | default .description }}">
+<meta property="og:description" content="{{ $meta.description | default .description }}">
 <meta property="og:url" content="{{ $.Permalink }}">
 <meta property="og:image" content="{{ .image | absURL }}">
 <meta property="og:image:width" content="{{ .image_width }}">
@@ -18,7 +25,7 @@
 <meta property="og:image:alt" content="{{ .image_alt }}">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="{{ $title }}">
-<meta name="twitter:description" content="{{ $.Description | default .description }}">
+<meta name="twitter:description" content="{{ $meta.description | default .description }}">
 <meta name="twitter:image" content="{{ .image | absURL }}">
 <meta name="twitter:image:alt" content="{{ .image_alt }}">
 {{ end }}
