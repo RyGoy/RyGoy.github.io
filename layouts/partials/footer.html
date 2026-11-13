@@ -25,7 +25,26 @@
 <section><h3>Required Reading</h3><ul>
 <li><a href="https://bitcoin.org/bitcoin.pdf" target="_blank" rel="noopener noreferrer">Satoshi White Paper</a></li>
 <li><a href="https://minds.com/taraduncan" target="_blank" rel="noopener noreferrer">Tara&rsquo;s Minds Feed</a></li>
+<li><a class="goat-link" href="#" role="button">THERE WERE NO GOATS</a></li>
 </ul></section>
+{{/* THERE WERE NO GOATS: each click sends a stick figure goat walking across the bottom of the screen, left to right
+     (archive.css, .goat); it goes when it has crossed. Without JavaScript the link does nothing. */}}
+<template id="goat"><svg class="goat" viewBox="0 0 120 100" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+  <g class="goat-body"><path d="M28 46H80M28 46L20 36M80 46L91 26L105 33M91 26C88 16 82 10 74 9M92 28L84 32M103 33L102 43"/><circle cx="96" cy="28" r=".6" fill="currentColor"/></g>
+  <path class="goat-leg" d="M34 46L32 82"/><path class="goat-leg goat-leg-b" d="M38 46L37 82"/>
+  <path class="goat-leg goat-leg-b" d="M72 46L74 82"/><path class="goat-leg" d="M76 46L78 82"/>
+</svg></template>
+<script>
+  {
+    const goat = document.getElementById('goat');
+    document.querySelector('.goat-link')?.addEventListener('click', (event) => {
+      event.preventDefault();
+      const walker = goat.content.firstElementChild.cloneNode(true);
+      walker.addEventListener('animationend', (e) => { if (e.target === walker) walker.remove(); });
+      document.body.append(walker);
+    });
+  }
+</script>
 <section><h3>Legal Definitions</h3><ul>
 <li><a href="https://www.law.cornell.edu/wex" target="_blank" rel="noopener noreferrer">Cornell Wex</a></li>
 <li><a href="https://dictionary.law.com/" target="_blank" rel="noopener noreferrer">Law.com</a></li>
