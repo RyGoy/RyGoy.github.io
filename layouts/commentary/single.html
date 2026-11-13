@@ -3,25 +3,20 @@
 <article class="longform reading-column commentary-note" data-pagefind-body data-pagefind-filter="Section:Commentary">
   <header class="page-heading">
     {{ if not .Date.IsZero }}{{ partial "search-filters.html" (dict "date" .Date) }}{{ end }}
-    <p class="eyebrow"><a href="{{ .CurrentSection.RelPermalink }}">Commentary</a></p>
+    <p class="eyebrow"><a href="{{ .CurrentSection.RelPermalink }}">Commentary</a>{{ if .Params.question }} · Question{{ end }}</p>
     <h1>{{ .Title }}</h1>
-    {{ with .Params.author }}<p class="article-author" data-pagefind-filter="Author">{{ . }}</p>{{ end }}
+    {{ with .Params.author }}<p class="article-author">{{ if $.Params.question }}Asked by {{ end }}<span data-pagefind-filter="Author">{{ . }}</span></p>{{ end }}
     {{ if not .Date.IsZero }}<time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "Jan 02, 2006" }}</time>{{ end }}
   </header>
-  {{/* [[Note title]], [[/site/link/]] and [[target|label]] become links, as in Obsidian. Unknown targets stay as text. */}}
-  {{ $text := .RawContent }}
-  {{ range uniq (findRE `\[\[[^\]]+\]\]` $text) }}
-    {{ $match := . }}
-    {{ $parts := split (strings.TrimSuffix "]]" (strings.TrimPrefix "[[" .)) "|" }}
-    {{ $label := index $parts (sub (len $parts) 1) }}
-    {{ with partial "commentary-resolve.html" (index $parts 0) }}
-      {{ if eq (len $parts) 1 }}{{ $label = partial "page-label.html" . }}{{ end }}
-      {{ $text = replace $text $match (printf "[%s](%s)" $label .RelPermalink) }}
-    {{ else }}
-      {{ $text = replace $text $match $label }}
-    {{ end }}
+  <div class="prose">{{ partial "commentary-text.html" (dict "page" . "text" .RawContent) }}</div>
+  {{/* A question (question: true) carries the moderator's answer from Telegram (telegram-bot/worker.js). */}}
+  {{ with .Params.answer }}
+  <section class="commentary-answer" aria-labelledby="answer-heading">
+    <h2 id="answer-heading">Answer</h2>
+    {{ with $.Params.answered_by }}<p class="commentary-answer-by">Answered by <span data-pagefind-filter="Author">{{ . }}</span></p>{{ end }}
+    <div class="prose">{{ partial "commentary-text.html" (dict "page" $ "text" .) }}</div>
+  </section>
   {{ end }}
-  <div class="prose">{{ $.RenderString (dict "display" "block") $text }}</div>
   {{ with index $commentary.links .RelPermalink }}
   <section class="commentary-links" aria-labelledby="connects-heading" data-pagefind-ignore>
     <h2 id="connects-heading">Connects</h2>

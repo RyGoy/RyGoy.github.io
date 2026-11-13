@@ -9,7 +9,9 @@ Contributors send commentary to a Telegram bot. Moderators approve it in a Teleg
 3. The bot posts the note to the moderators' group as the exact file it will commit, with **Approve** and **Reject**.
 4. **Approve** commits `content/commentary/<title>-<message id>.md` and tells the contributor its address. **Reject** tells them it was not approved. Either way the buttons go, so each note is decided once (a second Approve finds the file already there).
 
-Nothing is stored in the Worker: the note lives in the moderators' message, and the contributor's chat ID in the button. Anyone in the moderators' group can approve, so keep it to moderators.
+**Questions.** "Ask a question" on a page (or `/ask` in the bot) works the same way, but the moderators' copy has only **Reject** and ends with "Reply to this message with your answer". A moderator approves a question by **replying to it in the group** with the answer: the bot commits the question with the answer and the moderator's Telegram name (`answer` and `answered_by` in its front matter, beside `question: true`), marks the group message answered, and sends the answer to the one who asked. The page shows the question, then the answer. A second reply finds the file already there. The bot sees these replies with Telegram's default privacy mode (a bot in a group receives replies to its own messages), so nothing needs changing in BotFather; other group messages are ignored.
+
+Nothing is stored in the Worker: the note (or question) lives in the moderators' message, and the contributor's chat ID in the button. Anyone in the moderators' group can approve, so keep it to moderators.
 
 Notes can't break the build: Hugo strips raw HTML from Markdown, unknown links are ignored, and the bot writes `{{` as `{&#123;` so a note can't call a shortcode.
 

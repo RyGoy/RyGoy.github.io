@@ -8,7 +8,7 @@
   <ul class="commentary-list">
   {{ range . }}
     <li>
-      <a class="commentary-title" href="{{ .RelPermalink }}">{{ .Title }}</a>{{ with .Params.author }} <span class="commentary-author">· {{ . }}</span>{{ end }}
+      {{ if .Params.question }}<span class="commentary-kind">Question</span> {{ end }}<a class="commentary-title" href="{{ .RelPermalink }}">{{ .Title }}</a>{{ with .Params.author }} <span class="commentary-author">· {{ . }}</span>{{ end }}
       {{ with .Summary }}<p>{{ replaceRE `\[\[(?:[^\]|]*\|)?([^\]]+)\]\]` "$1" (plainify .) | truncate 220 }}</p>{{ end }}
       {{ $others := slice }}
       {{ range index $commentary.links .RelPermalink }}{{ if ne .RelPermalink $here }}{{ $others = $others | append . }}{{ end }}{{ end }}

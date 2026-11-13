@@ -1,6 +1,6 @@
 {{/* Returns the commentary links, computed once per build (use via partialCached):
      notes:     every note in content/commentary/, newest first
-     links:     note RelPermalink -> pages it connects (its "connects" list plus [[...]] links in its text)
+     links:     note RelPermalink -> pages it connects (its "connects" list plus [[...]] links in its text and answer)
      backlinks: page RelPermalink -> notes that connect to it */}}
 {{ $notes := (where site.RegularPages "Section" "commentary").ByDate.Reverse }}
 {{ $store := newScratch }}
@@ -10,7 +10,7 @@
   {{ $note := . }}
   {{ $refs := slice }}
   {{ with .Params.connects }}{{ if reflect.IsSlice . }}{{ $refs = $refs | append . }}{{ else }}{{ $refs = $refs | append (slice .) }}{{ end }}{{ end }}
-  {{ range findRE `\[\[[^\]]+\]\]` .RawContent }}
+  {{ range findRE `\[\[[^\]]+\]\]` (printf "%s\n%s" .RawContent (.Params.answer | default "")) }}
     {{ $refs = $refs | append (index (split (strings.TrimSuffix "]]" (strings.TrimPrefix "[[" .)) "|") 0) }}
   {{ end }}
   {{ $targets := slice }}
