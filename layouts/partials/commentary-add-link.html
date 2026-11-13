@@ -2,17 +2,23 @@
      before the bot commits it to content/commentary/. The page goes in the start parameter, which takes at most 64
      of A-Z a-z 0-9 _ -: its lowercase path with "/" written "S" and the archive's Facebook group ID prefix written "G"
      (decodePage in telegram-bot/worker.js), so a comment's path fits. A path that doesn't fit is left out, and the
-     contributor pastes the page's link instead.
+     contributor pastes the page's link instead. "Ask a question" opens it the same way with Q before the page (or
+     just Q): a moderator answers the question in Telegram, and it is published with the answer.
      With the bot switched off or unnamed (params.commentary_telegram, params.commentary_telegram_bot), it opens
      GitHub's editor with a new note in content/commentary/, connected to this page; for accounts without write access
      GitHub turns it into a pull request. */}}
 {{ with and site.Params.commentary_telegram site.Params.commentary_telegram_bot }}
   {{ $start := "" }}
+  {{ $ask := "?start=Q" }}
   {{ if ne $.Section "commentary" }}
     {{ $param := replace (replace $.RelPermalink "462493170453287_" "G") "/" "S" }}
-    {{ if and (findRE `^/[a-z0-9_/-]+$` $.RelPermalink) (le (len $param) 64) }}{{ $start = printf "?start=%s" $param }}{{ end }}
+    {{ if findRE `^/[a-z0-9_/-]+$` $.RelPermalink }}
+      {{ if le (len $param) 64 }}{{ $start = printf "?start=%s" $param }}{{ end }}
+      {{ if le (len $param) 63 }}{{ $ask = printf "?start=Q%s" $param }}{{ end }}
+    {{ end }}
   {{ end }}
 <a class="commentary-add" href="https://t.me/{{ . }}{{ $start }}" target="_blank" rel="noopener noreferrer">Add commentary <span aria-hidden="true">↗</span></a>
+<a class="commentary-add" href="https://t.me/{{ . }}{{ $ask }}" target="_blank" rel="noopener noreferrer">Ask a question <span aria-hidden="true">↗</span></a>
 {{ else }}
 {{ $connects := "" }}
 {{ $name := "your-note-title" }}

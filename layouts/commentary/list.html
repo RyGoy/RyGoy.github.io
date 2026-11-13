@@ -31,7 +31,7 @@
     <ul class="commentary-list">
     {{ range . }}
       <li>
-        <a class="commentary-title" href="{{ .RelPermalink }}">{{ .Title }}</a>{{ with .Params.author }} <span class="commentary-author">· {{ . }}</span>{{ end }}
+        {{ if .Params.question }}<span class="commentary-kind">Question</span> {{ end }}<a class="commentary-title" href="{{ .RelPermalink }}">{{ .Title }}</a>{{ with .Params.author }} <span class="commentary-author">· {{ . }}</span>{{ end }}
         {{ with index $commentary.links .RelPermalink }}<p class="commentary-connects">Connects: {{ range $i, $page := . }}{{ if $i }} · {{ end }}<a href="{{ $page.RelPermalink }}">{{ partial "page-label.html" $page }}</a>{{ end }}</p>{{ end }}
       </li>
     {{ end }}

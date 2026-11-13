@@ -1,0 +1,15 @@
+{{/* Returns a note's text (its body, or a question's answer) as HTML: [[Note title]], [[/site/link/]] and
+     [[target|label]] become links, as in Obsidian; unknown targets stay as text. Takes (dict "page" . "text" $text). */}}
+{{ $text := .text }}
+{{ range uniq (findRE `\[\[[^\]]+\]\]` $text) }}
+  {{ $match := . }}
+  {{ $parts := split (strings.TrimSuffix "]]" (strings.TrimPrefix "[[" .)) "|" }}
+  {{ $label := index $parts (sub (len $parts) 1) }}
+  {{ with partial "commentary-resolve.html" (index $parts 0) }}
+    {{ if eq (len $parts) 1 }}{{ $label = partial "page-label.html" . }}{{ end }}
+    {{ $text = replace $text $match (printf "[%s](%s)" $label .RelPermalink) }}
+  {{ else }}
+    {{ $text = replace $text $match $label }}
+  {{ end }}
+{{ end }}
+{{ return $.page.RenderString (dict "display" "block") $text }}
