@@ -644,7 +644,7 @@ main { min-height: 35vh; }
    far glow) share one gradient, red to blue, slid from its blue end to its red end. */
 .hero-saber { display: none; }
 :root[data-theme="dark"] .hero-rule { display: none; }
-:root[data-theme="dark"] .hero-saber { --saber-blue: #2b8dff; --saber-red: #ff1f33; position: relative; display: flex; align-items: center; width: min(23rem, 86%); height: 2rem; margin: 0 auto 1.1rem; }
+:root[data-theme="dark"] .hero-saber { --saber-blue: #2b8dff; --saber-red: #ff1f33; --saber-purple: #a83dff; position: relative; display: flex; align-items: center; width: min(23rem, 86%); height: 2rem; margin: 0 auto 1.1rem; }
 :root[data-theme="dark"] .hero-saber::after { content: ""; position: absolute; left: 20%; right: 0; top: 95%; height: .8rem; border-radius: 50%; background-color: var(--saber-blue); filter: blur(12px); opacity: 0; pointer-events: none; animation: saber-cast 1.1s ease-out .39s forwards, saber-tint 3.38s ease-in-out 2.2s forwards; }
 :root[data-theme="dark"] .hero-saber-hilt { flex: none; display: flex; align-items: center; filter: drop-shadow(0 1px 2px #000000c0); transition: filter .2s; }
 :root[data-theme="dark"] a.hero-saber-hilt { cursor: pointer; text-decoration: none; }
@@ -665,6 +665,28 @@ main { min-height: 35vh; }
 :root[data-theme="dark"] .hero-saber-core { position: absolute; left: 0; right: .12rem; top: 50%; height: 42%; transform: translateY(-50%); border-radius: inherit; background: #fff; }
 :root[data-theme="dark"] .hero-saber-flow { position: absolute; inset: 0; border-radius: inherit; background: repeating-linear-gradient(90deg, #fff0 0 1.2rem, #ffffffa0 1.8rem, #fff0 2.4rem); opacity: .55; animation: saber-flow 1.04s linear infinite; }
 :root[data-theme="dark"] .hero-saber-flash { position: absolute; z-index: 1; left: 3.95rem; top: 50%; width: 1.3rem; height: 1.3rem; margin-top: -.65rem; border-radius: 50%; background-color: var(--saber-blue); box-shadow: inset 0 0 0 .4rem #ffffff80; filter: blur(4px); opacity: 0; pointer-events: none; animation: saber-flash 1s ease-out .29s forwards, saber-tint .78s ease-in 2.2s forwards, saber-flicker 3.12s ease-in-out 1.45s infinite; }
+/* Heat shimmer: the air over the blade wavers, its glow and the stone above it warped by #saber-heat (a drifting
+   turbulence displacement in partials/body.html) through backdrop-filter, faded in once the blade is out. Where a
+   browser can't use an SVG filter as a backdrop filter, it is simply not there. */
+.hero-saber-defs { position: absolute; width: 0; height: 0; overflow: hidden; }
+:root[data-theme="dark"] .hero-saber::before { content: ""; position: absolute; z-index: 1; left: 4.3rem; right: -.7rem; bottom: 62%; height: 2.4rem; pointer-events: none; -webkit-backdrop-filter: url(#saber-heat); backdrop-filter: url(#saber-heat); -webkit-mask: linear-gradient(to top, #0000, #000 30%, #000 60%, #0000), linear-gradient(90deg, #0000, #000 10%, #000 90%, #0000); -webkit-mask-composite: source-in; mask: linear-gradient(to top, #0000, #000 30%, #000 60%, #0000), linear-gradient(90deg, #0000, #000 10%, #000 90%, #0000); mask-composite: intersect; opacity: 0; animation: saber-heat 1.2s ease-in 1.43s forwards; }
+/* The tip: an invisible button over the blade's end, there once the red bleed has finished (5.58s). Clicking it puts
+   .is-windu on .hero-saber (the script after #saber-viewer): purple bleeds in from the tip to the hilt over the same
+   3.4s as the red did, and the flash at the emitter, the light on the stone and the hilt's button turn last. The
+   finished ignition is replaced by its end state, so nothing replays; changing theme takes the class off. */
+.hero-saber-tip { display: none; }
+:root[data-theme="dark"] .hero-saber-tip { display: block; position: absolute; z-index: 2; right: -.6rem; top: 50%; width: 2.75rem; height: 2.75rem; margin-top: -1.375rem; padding: 0; border: 0; border-radius: 50%; background: none; -webkit-appearance: none; appearance: none; cursor: pointer; visibility: hidden; animation: saber-ready 0s 5.58s forwards; }
+:root[data-theme="dark"] .hero-saber-tip:focus-visible { outline: 1px solid var(--brass); outline-offset: 2px; }
+:root[data-theme="dark"] .hero-saber.is-windu .hero-saber-blade { transform: none; background: linear-gradient(90deg, #ffe1e4 0 40%, #f1e2ff 60% 100%) 0 0 / 250% 100%; animation: saber-windu 3.38s ease-in-out forwards, saber-hum 3.12s ease-in-out 1.45s infinite; }
+:root[data-theme="dark"] .hero-saber.is-windu .hero-saber-blade::before, :root[data-theme="dark"] .hero-saber.is-windu .hero-saber-blade::after { background: linear-gradient(90deg, var(--saber-red) 0 40%, var(--saber-purple) 60% 100%) 0 0 / 250% 100%; animation: saber-windu 3.38s ease-in-out forwards; }
+:root[data-theme="dark"] .hero-saber.is-windu .hero-saber-blade::after { animation: saber-windu 3.38s ease-in-out forwards, saber-plasma 2.21s ease-in-out 1.45s infinite; }
+:root[data-theme="dark"] .hero-saber.is-windu .hero-saber-flash { opacity: .7; background-color: var(--saber-red); animation: saber-flicker 3.12s ease-in-out 1.45s infinite, saber-windu-tint 1.1s ease-in 2s forwards; }
+:root[data-theme="dark"] .hero-saber.is-windu::after { opacity: .22; background-color: var(--saber-red); animation: saber-windu-tint 1.1s ease-in 2s forwards; }
+:root[data-theme="dark"] .hero-saber.is-windu .hero-saber-body::before { background-color: var(--saber-red); animation: saber-windu-tint .78s ease-in 2.3s forwards; }
+@keyframes saber-heat { to { opacity: 1; } }
+@keyframes saber-ready { to { visibility: visible; } }
+@keyframes saber-windu { to { background-position: 100% 0; } }
+@keyframes saber-windu-tint { to { background-color: var(--saber-purple); } }
 @keyframes saber-ignite { 0% { transform: scaleX(0); opacity: .4; } 35% { opacity: 1; } 50% { opacity: .55; } 62% { opacity: 1; } 100% { transform: scaleX(1); opacity: 1; } }
 @keyframes saber-bleed { to { background-position: 0 0; } }
 @keyframes saber-hum { 0%, 100% { filter: brightness(1); } 8% { filter: brightness(.78); } 12% { filter: brightness(1.08); } 50% { filter: brightness(.9); } }
@@ -682,6 +704,10 @@ main { min-height: 35vh; }
   :root[data-theme="dark"] .hero-saber-flash { opacity: .7; }
   :root[data-theme="dark"] .hero-saber::after { opacity: .22; }
   :root[data-theme="dark"] .hero-saber-flash, :root[data-theme="dark"] .hero-saber::after, :root[data-theme="dark"] .hero-saber-body::before { background-color: var(--saber-red); }
+  :root[data-theme="dark"] .hero-saber::before { display: none; }
+  :root[data-theme="dark"] .hero-saber-tip { visibility: visible; }
+  :root[data-theme="dark"] .hero-saber.is-windu .hero-saber-blade, :root[data-theme="dark"] .hero-saber.is-windu .hero-saber-blade::before, :root[data-theme="dark"] .hero-saber.is-windu .hero-saber-blade::after { background-position: 100% 0; }
+  :root[data-theme="dark"] .hero-saber.is-windu .hero-saber-flash, :root[data-theme="dark"] .hero-saber.is-windu::after, :root[data-theme="dark"] .hero-saber.is-windu .hero-saber-body::before { background-color: var(--saber-purple); }
 }
 /* Light theme only: the blade's motion drawn as moving lines between two points, SOURCE (a ringed point) and DESTINATION
    (a ringed diamond), in the same place (the rule above the title gives way to it as it does to the blade). The points
