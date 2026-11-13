@@ -12,10 +12,12 @@
     {{/* Public-domain books: "Read the PDF" and "Download" for the copy (a pdf starting with "/" is a copy in
          static/library/; a full address is someone else's copy, opened in place, with no Download), and the source. */}}
     {{/* coming_soon: the book is still in copyright. It has the same buttons, switched off (not links), and the
-         copyright section below says why. Its source address stays in the front matter for when they are turned on. */}}
+         copyright section below says why. Its source address stays in the front matter for when they are turned on.
+         A source on Open Library (which lends, rather than shares, a copy) stays on as a link. */}}
     {{ if .Params.coming_soon }}
-    <span class="book-button is-off" title="Off while the book is in copyright">Read the PDF <span aria-hidden="true">↗</span></span><span class="book-link is-off" title="Off while the book is in copyright">Download</span>{{ with .Params.source }}<span class="book-link is-off" title="Off while the book is in copyright">{{ $.Params.source_label | default "Source" }} <span aria-hidden="true">↗</span></span>{{ end }}
-    <p class="book-off-note">In copyright, so these links are off: see Copyright, below.</p>
+    {{ $openLibrary := hasPrefix (.Params.source | default "") "https://openlibrary.org/" }}
+    <span class="book-button is-off" title="Off while the book is in copyright">Read the PDF <span aria-hidden="true">↗</span></span><span class="book-link is-off" title="Off while the book is in copyright">Download</span>{{ with .Params.source }}{{ if $openLibrary }}<a class="book-link" href="{{ . }}" rel="noopener noreferrer">{{ $.Params.source_label | default "Source" }} <span aria-hidden="true">↗</span></a>{{ else }}<span class="book-link is-off" title="Off while the book is in copyright">{{ $.Params.source_label | default "Source" }} <span aria-hidden="true">↗</span></span>{{ end }}{{ end }}
+    <p class="book-off-note">In copyright, so {{ if $openLibrary }}the PDF is{{ else }}these links are{{ end }} off: see Copyright, below.</p>
     {{ else }}
     {{ with .Params.pdf }}<a class="book-button" href="{{ . | relURL }}"{{ if not (hasPrefix . "/") }} rel="noopener noreferrer"{{ end }}>Read the PDF <span aria-hidden="true">↗</span></a>{{ if hasPrefix . "/" }}<a class="book-link" href="{{ . | relURL }}" download>Download</a>{{ end }}{{ end }}
     {{ with .Params.source }}<a class="book-link" href="{{ . }}" rel="noopener noreferrer">{{ $.Params.source_label | default "Source" }} <span aria-hidden="true">↗</span></a>{{ end }}
