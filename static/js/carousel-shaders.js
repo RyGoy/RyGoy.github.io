@@ -206,12 +206,14 @@
 
   // Sepia: Kevin Levron's hexagonal grid (threejs-components, ISC; https://codepen.io/soju22/pen/MYgbRwg): metal
   // hexagons bobbing in and out, lit by two lights that follow the pointer. Here each hexagon is one of five colours
-  // (black, grey, white, two reds; the library's own colours blend into in-between shades). It loads (three.js with it, from jsDelivr) only once Sepia is shown
+  // (black, grey, patina gold, two reds; the library's own colours blend into in-between shades). It loads (three.js with it, from jsDelivr) only once Sepia is shown
   // with the carousel near the screen, and draws only while its canvas is on screen (the library's own observer;
   // archive.css hides the canvas in the other themes). Under reduced motion the hexagons hold still.
   const HEX_GRID = 'https://cdn.jsdelivr.net/npm/threejs-components@0.0.16/build/backgrounds/grid1.cdn.min.js';
   const THREE_URL = 'https://cdn.jsdelivr.net/npm/three@0.170.0/+esm';  // the three.js grid1 imports, so it loads once
-  const HEX_COLOURS = [0x0b0b0b, 0x6e6e6e, 0xf0f0f0, 0xb3121f, 0x5c0a10];  // black, grey, white, red, dark red
+  // Each hexagon's colour, with its share in twentieths: black, red and dark red a fifth each; grey and patina gold
+  // where white was (three quarters grey, a quarter gold), so grey 7 and gold 1.
+  const HEX_COLOURS = [[0x0b0b0b, 4], [0x6e6e6e, 7], [0x8f7d3a, 1], [0xb3121f, 4], [0x5c0a10, 4]].flatMap(([c, n]) => Array(n).fill(c));
   
   const startHexes = async (canvas) => {
     const [{ default: Grid }, THREE] = await Promise.all([import(HEX_GRID), import(THREE_URL)]);
