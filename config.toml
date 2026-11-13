@@ -21,6 +21,11 @@ live_sign_text = "LIVE 20:00 EST Thursdays"
 live_sign_day = "Thu"
 live_sign_from = "20:00"
 live_sign_to = "23:00"
+# Before it, from live_standby_from until live_sign_from on the same day, a blue sign flashing slowly says
+# live_standby_text. live_standby = false leaves the blue sign out (live_sign = false leaves out both).
+live_standby = true
+live_standby_text = "Standby"
+live_standby_from = "19:45"
 
 # Link previews (Open Graph / Twitter tags in partials/head.html) for pages with nothing of their own: the Grand
 # Fluff Auto pop-up's picture and text. partials/footer.html shows the same picture in the pop-up.
