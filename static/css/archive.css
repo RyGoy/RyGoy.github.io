@@ -738,12 +738,17 @@ main { min-height: 35vh; }
 /* The neon sign on the cdd.com button (live_sign in config.toml; shown by the script after it in partials/body.html while
    the show is on): a line of red tube under the label, the button's frame lit to match. The red is the same in every
    theme (set on :root, so theme_colours.py leaves it as it is). It flickers on, then holds. */
-:root { --live-neon: #ff2a3a; --live-neon-core: #ffe3e5; }
+:root { --live-neon: #ff2a3a; --live-neon-core: #ffe3e5; --standby-neon: #2b8dff; --standby-neon-core: #e3f0ff; }
 .hero-links .live-sign { display: block; margin: .45rem 0 0; font-family: var(--display); font-size: .82rem; font-weight: 700; letter-spacing: .16em; text-transform: uppercase; text-align: center; color: var(--live-neon-core); text-shadow: 0 0 1px var(--live-neon-core), 0 0 4px var(--live-neon), 0 0 9px var(--live-neon), 0 0 18px var(--live-neon); animation: live-neon-on 1.4s steps(1, end) both; }
 .hero-links .live-sign[hidden] { display: none; }
 .hero-links a:has(> .live-sign:not([hidden])) { border-color: var(--live-neon); box-shadow: 0 0 6px var(--live-neon), inset 0 0 6px var(--live-neon); }
 @keyframes live-neon-on { 0%, 12%, 30%, 44% { opacity: .15; text-shadow: none; } 6%, 22%, 38%, 100% { opacity: 1; } }
-@media (prefers-reduced-motion: reduce) { .hero-links .live-sign { animation: none; } }
+/* Standby, before the show (live_standby): the same sign in blue, flashing slowly, frame and all. */
+.hero-links a:has(> .live-standby:not([hidden])) { --live-neon: var(--standby-neon); --live-neon-core: var(--standby-neon-core); animation: live-standby-frame 3s ease-in-out infinite; }
+.hero-links .live-standby { animation: live-standby-flash 3s ease-in-out infinite; }
+@keyframes live-standby-flash { 50% { opacity: .2; text-shadow: none; } }
+@keyframes live-standby-frame { 50% { border-color: var(--c-665539); box-shadow: none; } }
+@media (prefers-reduced-motion: reduce) { .hero-links .live-sign, .hero-links a:has(> .live-standby:not([hidden])) { animation: none; } }
 .section-heading { display: flex; align-items: center; gap: 1.4rem; margin: 1.5rem 0; }
 .section-heading h2 { font-size: 1.65rem; letter-spacing: .025em; margin: 0; color: var(--c-d3bf98); }
 .section-heading h2 a { text-decoration: none; }
