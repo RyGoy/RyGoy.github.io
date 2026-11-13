@@ -442,6 +442,44 @@
   --c-fff5de: #f0eeeb;
   --c-ffffff12: #eeeeee12;
 }
+:root:not([data-theme]) {
+  --ink: #282928;
+  --surface: #2d2e2a;
+  --line: #413f33;
+  --c-050504f7: #20201ef7;
+  --c-0a0a09: #242422;
+  --c-0c0c0b: #252524;
+  --c-0c0c0bd9: #252524d9;
+  --c-0e100d: #252824;
+  --c-10110f: #272926;
+  --c-120e06: #2b261b;
+  --c-12110ed9: #2a2824d9;
+  --c-121210f5: #292926f5;
+  --c-141411: #2a2a26;
+  --c-141512: #2a2b27;
+  --c-141512f0: #2a2b27f0;
+  --c-161613: #2b2b28;
+  --c-19140b: #302a1e;
+  --c-191a17: #2d2e2a;
+  --c-1a1915: #2e2d28;
+  --c-1d170c: #332b1d;
+  --c-1d1c18: #302f2a;
+  --c-1f1e19: #31302a;
+  --c-24231c: #34332a;
+  --c-24241e33: #34342c33;
+  --c-28201955: #3a302755;
+  --c-28271f: #37362b;
+  --c-2a24190d: #3b33250d;
+  --c-2a2620: #39342d;
+  --c-2a2920: #38372b;
+  --c-332d22: #40382b;
+  --c-332e23: #3f392b;
+  --c-39382e88: #413f3388;
+  --c-3f3b2f: #454132;
+  --c-4a3f2c: #4f422a;
+  --c-4a4536: #4c4634;
+  --c-4c2424: #5c2a2a;
+}
 /* theme colours: end */
 /* Set by hand: the light theme's fainter stonework, and cream kept on the dark red Volumes button. */
 :root[data-theme="light"] {

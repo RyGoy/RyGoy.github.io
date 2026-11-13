@@ -4,7 +4,8 @@ Sepia is the site's own design. Every colour in the stylesheet is a variable: th
 (--ink, --paper, ...) and one per remaining colour, named after its sepia value (--c-e1c797). This script
 - turns any colour written directly in a rule into such a variable (so new rules can use plain colours, then run it),
 - and rewrites the block between the theme markers: the sepia values, then `:root[data-theme="light"]` and
-  `:root[data-theme="dark"]` with every colour worked out from its sepia value.
+  `:root[data-theme="dark"]` with every colour worked out from its sepia value, then `:root:not([data-theme])`, the
+  Sepia theme's darkest tones lifted (sepia(), below), so Sepia is lighter than the values Dark is worked out from.
 Light turns lightness over (dark stone becomes parchment, cream text becomes brown ink) and keeps each colour's hue;
 dark shadows stay shadows, lighter, and dark accents (the red) stay as they are. Dark keeps the lightness of text and
 takes the backgrounds near black, with the warmth taken out (charcoal and off-white, the brass kept muted). Values it
@@ -134,6 +135,17 @@ def dark(h):
     return from_oklch(L * 0.95, C * 0.4, H) + alpha
 
 
+# Sepia's own darkest tones, lifted toward SEPIA_TO (by SEPIA_LIFT of the way) so Sepia sits further from Dark. Its
+# values in the first block stay the source the light and dark themes are worked out from.
+SEPIA_TO, SEPIA_LIFT = 0.40, 0.45
+
+def sepia(h):
+    alpha = h[7:]
+    L, C, H = oklch(h[:7])
+    if L < 0.05 or L >= SEPIA_TO:  # black (shadows) and everything lighter stay as they are
+        return h
+    return from_oklch(L + (SEPIA_TO - L) * SEPIA_LIFT, C * 1.2, H) + alpha
+
 def main():
     css = open(PATH, encoding='utf-8').read()
     old = {}
@@ -155,6 +167,8 @@ def main():
         lines.append(f'  color-scheme: {scheme};')
         lines += [f'  {k}: {fn(v)};' for k, v in {**named, **palette}.items()]
         lines.append('}')
+    lifted = {k: sepia(v) for k, v in {**named, **palette}.items() if sepia(v) != v}
+    lines += [':root:not([data-theme]) {'] + [f'  {k}: {v};' for k, v in lifted.items()] + ['}']
     lines.append(END)
     at = root.end()
     css = css[:at] + '\n' + '\n'.join(lines) + css[at:]
