@@ -943,6 +943,16 @@ iframe.video-embed { border: 1px solid var(--line); }
 .footer-grid ul { list-style: none; padding: 0; margin: 0; }
 .footer-grid li { font-size: .8rem; line-height: 1.6; margin-bottom: .85rem; overflow-wrap: anywhere; }
 .footer-grid a { text-decoration: none; }
+/* THERE WERE NO GOATS (partials/footer.html): a stick figure goat walks across the bottom of the screen, legs swinging
+   in pairs, its body bobbing with each step. Under reduced motion it still crosses (the visitor asked for it), stiff legged. */
+.goat { position: fixed; z-index: 60; left: 0; bottom: .5rem; width: 7rem; height: auto; color: var(--brass); pointer-events: none; animation: goat-walk 10s linear forwards; }
+.goat-leg { transform-box: fill-box; transform-origin: 50% 0; animation: goat-step .45s ease-in-out infinite alternate; }
+.goat-leg-b { animation-direction: alternate-reverse; }
+.goat-body { animation: goat-bob .225s ease-in-out infinite alternate; }
+@keyframes goat-walk { from { transform: translateX(-8rem); } to { transform: translateX(100vw); } }
+@keyframes goat-step { from { transform: rotate(-16deg); } to { transform: rotate(16deg); } }
+@keyframes goat-bob { to { transform: translateY(-1.5px); } }
+@media (prefers-reduced-motion: reduce) { .goat-leg, .goat-body { animation: none; } }
 .copyright { display: flex; flex-wrap: wrap; align-items: center; gap: .75rem 1rem; border-top: 1px solid var(--line); padding-top: 1.5rem; margin: 2.5rem 0 0; font-size: .65rem; letter-spacing: .055em; }
 .license-badge { display: block; flex: none; line-height: 0; }
 .license-badge img { display: block; width: 88px; height: 31px; }
