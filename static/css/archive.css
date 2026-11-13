@@ -1027,11 +1027,12 @@ iframe.video-embed { border: 1px solid var(--line); }
 .footer-grid li { font-size: .8rem; line-height: 1.6; margin-bottom: .85rem; overflow-wrap: anywhere; }
 .footer-grid a { text-decoration: none; }
 /* THERE WERE NO GOATS (partials/footer.html): a stick figure goat walks across the bottom of the screen, legs swinging
-   in pairs, its body bobbing with each step. Under reduced motion it still crosses (the visitor asked for it), stiff legged. */
-.goat { position: fixed; z-index: 60; left: 0; bottom: .5rem; width: 7rem; height: auto; color: var(--brass); pointer-events: none; animation: goat-walk 10s linear forwards; }
-.goat-leg { transform-box: fill-box; transform-origin: 50% 0; animation: goat-step .45s ease-in-out infinite alternate; }
+   in pairs, its body bobbing with each step. Each goat walks at its own pace, --goat-pace (set by the footer's script, 0.9 to
+   1.1): the crossing (10s at 1) and its steps both scale with it. Under reduced motion it still crosses (the visitor asked for it), stiff legged. */
+.goat { position: fixed; z-index: 60; left: 0; bottom: .5rem; width: 7rem; height: auto; color: var(--brass); pointer-events: none; animation: goat-walk calc(10s / var(--goat-pace, 1)) linear forwards; }
+.goat-leg { transform-box: fill-box; transform-origin: 50% 0; animation: goat-step calc(.45s / var(--goat-pace, 1)) ease-in-out infinite alternate; }
 .goat-leg-b { animation-direction: alternate-reverse; }
-.goat-body { animation: goat-bob .225s ease-in-out infinite alternate; }
+.goat-body { animation: goat-bob calc(.225s / var(--goat-pace, 1)) ease-in-out infinite alternate; }
 @keyframes goat-walk { from { transform: translateX(-8rem); } to { transform: translateX(100vw); } }
 @keyframes goat-step { from { transform: rotate(-16deg); } to { transform: rotate(16deg); } }
 @keyframes goat-bob { to { transform: translateY(-1.5px); } }
