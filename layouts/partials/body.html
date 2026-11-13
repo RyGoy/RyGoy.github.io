@@ -28,7 +28,7 @@
     {{/* The links on the theme animations (the dark hilt's video, the light SOURCE's and the sepia Play button's Webamp)
        and their pop-ups and scripts: set this to false to switch them all off. */}}
     {{ $animationLinks := true }}
-    <div class="hero-seal" aria-hidden="true"><img src="{{ "images/seal.svg" | relURL }}" width="180" height="180" alt=""></div>
+    <div class="hero-seal" aria-hidden="true"><span class="seal"></span></div>
     <div class="hero-rule" aria-hidden="true"><span></span>✧<span></span></div>
     <div class="hero-saber">{{ if $animationLinks }}<a class="hero-saber-hilt" href="{{ "videos/darth-liberty.mp4" | relURL }}" aria-haspopup="dialog" aria-label="Play the video Both Parties?" title="Play">{{ else }}<span class="hero-saber-hilt" aria-hidden="true">{{ end }}<i class="hero-saber-pommel"></i><i class="hero-saber-ring"></i><i class="hero-saber-grip"></i><i class="hero-saber-ring"></i><i class="hero-saber-body"></i><i class="hero-saber-emitter"></i>{{ if $animationLinks }}</a>{{ else }}</span>{{ end }}<span class="hero-saber-blade" aria-hidden="true"><span class="hero-saber-core"></span><span class="hero-saber-flow"></span></span><span class="hero-saber-flash" aria-hidden="true"></span></div>
     {{/* Its ignition sound, which fades out over the red bleed (on whether or not the links are switched on). */}}
