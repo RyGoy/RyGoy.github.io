@@ -1596,7 +1596,7 @@ a.page-emblem:focus-visible { outline: 2px solid var(--brass); outline-offset: 6
    soft-light leaves mid grey unchanged, so only the relief shows, in the card's own colour. The frame's transform makes
    it a stacking context, so z-index -1 keeps the relief over the frame's background and under its text. */
 :root:is([data-theme="dark"], :not([data-theme])) .carousel-frame::before { content: ""; position: absolute; inset: 5% 0; z-index: -1; background: url("../images/emblems/helmet-emboss.svg") center / contain no-repeat; mix-blend-mode: soft-light; opacity: .5; pointer-events: none; }
-:root:not([data-theme]) .carousel-frame::before { background-image: url("../images/emblems/jolly-roger-emboss.svg"); }
+:root:not([data-theme]) .carousel-frame::before { background-image: url("../images/emblems/jolly-roger-emboss.svg"); opacity: .35; } /* fainter than the helmet */
 .carousel-frame[data-pos="0"] { z-index: 3; cursor: default; }
 .carousel-frame[data-pos="1"], .carousel-frame[data-pos="-1"] { z-index: 2; --scale: .8; --dim: .35; }
 .carousel-frame[data-pos="1"] { --x: 1; }
