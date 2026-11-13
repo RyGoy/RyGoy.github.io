@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="40 24 420 496">
+  <!-- A Jolly Roger, embossed, for the carousel cards in the Sepia theme (archive.css, .carousel-frame::before): a
+       skull front on above two crossed bones. Drawn for this site, after the common doodle of one. The shapes are a
+       height map in grey (lighter is higher; each covers what is under it): the bones, the upper one higher; the skull
+       above them, its brow ridge and cheekbones proud, its jaw a little lower; the eye sockets, nose and the gaps
+       between the teeth sunk. The filter lights it from the top left. Flat ground comes out exactly mid grey, so with
+       mix-blend-mode: soft-light only the relief shows, in the card's own colour. Flat fills only: gradients band once
+       lit. Same filter as helmet-emboss.svg. -->
+  <defs>
+    <filter id="emboss" x="0" y="0" width="100%" height="100%" color-interpolation-filters="sRGB">
+      <feColorMatrix type="luminanceToAlpha" result="map"/>
+      <feGaussianBlur in="map" stdDeviation="3.2" result="height"/>
+      <!-- elevation 30: a flat surface gets sin(30) = 0.5, mid grey. -->
+      <feDiffuseLighting in="height" surfaceScale="7" diffuseConstant="1" lighting-color="#fff">
+        <feDistantLight azimuth="225" elevation="30"/>
+      </feDiffuseLighting>
+    </filter>
+    <!-- A bone along the x-axis, centred: the shaft, and two knobs at each end, either side of it. -->
+    <g id="bone">
+      <rect x="-172" y="-13" width="344" height="26" rx="13"/>
+      <circle cx="-186" cy="-15" r="22"/><circle cx="-186" cy="15" r="22"/>
+      <circle cx="186" cy="-15" r="22"/><circle cx="186" cy="15" r="22"/>
+    </g>
+  </defs>
+  <g filter="url(#emboss)">
+    <rect x="40" y="24" width="420" height="496" fill="#000"/>
+    <!-- Crossed bones under the jaw, crossing at (250, 404); the one rising to the right lies on top. -->
+    <use href="#bone" fill="#9a9a9a" transform="translate(250 404) rotate(27)"/>
+    <use href="#bone" fill="#b0b0b0" transform="translate(250 404) rotate(-27)"/>
+    <!-- Lower jaw, a little below the face. -->
+    <path fill="#9e9e9e" d="M178 292C176 326 204 356 250 358C296 356 324 326 322 292Z"/>
+    <!-- Cranium and face: a broad dome, the temples drawn in, cheekbones out, down to the upper teeth. -->
+    <path fill="#a8a8a8" d="M146 214C128 118 180 44 250 44C320 44 372 118 354 214C362 232 356 252 340 262C330 268 322 278 318 294L182 294C178 278 170 268 160 262C144 252 138 232 146 214Z"/>
+    <!-- Brow ridge over the eyes, dipping between them. -->
+    <path fill="#c6c6c6" d="M162 198C188 176 226 178 246 194L254 194C274 178 312 176 338 198L334 210C310 194 276 196 254 208L246 208C224 196 190 194 166 210Z"/>
+    <!-- Cheekbones. -->
+    <path fill="#c0c0c0" d="M150 234C162 250 186 256 206 256C198 268 178 272 162 266C150 260 144 248 150 234Z"/>
+    <path fill="#c0c0c0" d="M350 234C338 250 314 256 294 256C302 268 322 272 338 266C350 260 356 248 350 234Z"/>
+    <!-- Eye sockets, angled down to the nose. -->
+    <path fill="#2e2e2e" d="M174 212C198 198 232 202 242 220C242 240 228 252 206 252C186 252 172 238 174 212Z"/>
+    <path fill="#2e2e2e" d="M326 212C302 198 268 202 258 220C258 240 272 252 294 252C314 252 328 238 326 212Z"/>
+    <!-- Nose: an upturned heart. -->
+    <path fill="#343434" d="M250 238C243 247 235 260 235 272C235 281 244 283 250 276C256 283 265 281 265 272C265 260 257 247 250 238Z"/>
+    <!-- The mouth: the dark gap the teeth stand in, then the upper and lower teeth. -->
+    <rect x="186" y="284" width="128" height="44" rx="10" fill="#4a4a4a"/>
+    <g fill="#bcbcbc">
+      <rect x="190" y="286" width="12" height="19" rx="3"/><rect x="203.5" y="286" width="12" height="20" rx="3"/>
+      <rect x="217" y="286" width="12" height="21" rx="3"/><rect x="230.5" y="286" width="12" height="22" rx="3"/>
+      <rect x="244" y="286" width="12" height="22" rx="3"/><rect x="257.5" y="286" width="12" height="22" rx="3"/>
+      <rect x="271" y="286" width="12" height="21" rx="3"/><rect x="284.5" y="286" width="12" height="20" rx="3"/>
+      <rect x="298" y="286" width="12" height="19" rx="3"/>
+    </g>
+    <g fill="#b2b2b2">
+      <rect x="196" y="309" width="12" height="16" rx="3"/><rect x="209.5" y="310" width="12" height="16" rx="3"/>
+      <rect x="223" y="310" width="12" height="17" rx="3"/><rect x="236.5" y="310" width="12" height="17" rx="3"/>
+      <rect x="250" y="310" width="12" height="17" rx="3"/><rect x="263.5" y="310" width="12" height="17" rx="3"/>
+      <rect x="277" y="310" width="12" height="16" rx="3"/><rect x="290.5" y="309" width="12" height="16" rx="3"/>
+    </g>
+  </g>
+</svg>
