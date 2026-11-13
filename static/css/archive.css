@@ -936,8 +936,9 @@ iframe.video-embed { border: 1px solid var(--line); }
 .footer-intro { display: flex; align-items: center; flex-wrap: wrap; gap: 1.3rem; padding-bottom: 2rem; margin-bottom: 2rem; border-bottom: 1px solid var(--line); }
 .footer-intro img { opacity: .65; }
 .footer-intro > p { max-width: 23rem; margin: 0; font-size: .85rem; line-height: 1.7; }
-.social-links { display: flex; flex-wrap: wrap; gap: .4rem 1rem; margin-left: auto; font-size: .75rem; }
-.social-links a { text-decoration: none; }
+.social-links { display: flex; flex-wrap: wrap; align-items: center; gap: .4rem .9rem; margin-left: auto; font-size: .75rem; }
+.social-links a { display: inline-flex; padding: .2rem; text-decoration: none; }
+.social-links svg { display: block; width: 1.25rem; height: 1.25rem; }
 .footer-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 1.75rem; }
 .footer-grid h3 { color: var(--c-d3bf98); font-size: 1.2rem; margin-bottom: 1.25rem; }
 .footer-grid ul { list-style: none; padding: 0; margin: 0; }
