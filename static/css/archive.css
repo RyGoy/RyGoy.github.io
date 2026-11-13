@@ -453,7 +453,15 @@
   --emblem-colour: #990011;
   --emblem-mark: #990011;
   --emblem-strength: 3;  /* a dark red on near black needs more than the brass did to show */
+  /* The six-pointed star (the seal: sidebar, hero, footer) and the rose window, whose ring and spokes read as the
+     Empire's crest, in a clear red: the rose stronger than the other emblems, so it shows as red, not as shadow. */
+  --seal-colour: #d11a2a;
+  --rose-colour: #d11a2a;
+  --rose-strength: 4;
 }
+/* The seal is a mask of images/seal.svg in --seal-colour: brass, but red in the dark theme (above). */
+:root { --seal-colour: #b89a63; }
+.seal { display: block; background: var(--seal-colour); -webkit-mask: url("../images/seal.svg") center / contain no-repeat; mask: url("../images/seal.svg") center / contain no-repeat; }
 * { box-sizing: border-box; }
 html { scroll-padding-top: 2rem; }
 body {
@@ -488,7 +496,7 @@ summary { cursor: pointer; }
   scrollbar-width: thin; scrollbar-color: var(--c-514a39) var(--c-141512);
 }
 .brand { display: flex; align-items: center; gap: 1rem; text-decoration: none; margin-bottom: 2.25rem; }
-.brand img { opacity: .85; flex: none; }
+.brand .seal { width: 58px; height: 58px; opacity: .85; flex: none; }
 .brand span { font-family: var(--display); font-size: 2rem; letter-spacing: .18em; }
 .navigation > summary { color: var(--brass); }
 .navigation[open] > summary { display: none; }
@@ -578,7 +586,7 @@ main { min-height: 35vh; }
 .image-viewer-close { color: var(--c-1d170c); background: linear-gradient(var(--c-d9bd84), var(--c-a8884f)); border-color: var(--c-e3c991); box-shadow: inset 0 1px 0 var(--c-fff3d080); }
 .image-viewer-close:hover, .image-viewer-close:focus-visible { color: var(--c-120e06); background: linear-gradient(var(--c-e8cf98), var(--c-b9985c)); border-color: var(--c-f0d9a6); }
 .hero-seal { margin: 0 auto 1.2rem; height: 4.5rem; width: 4.5rem; opacity: .65; }
-.hero-seal img { width: 100%; height: 100%; }
+.hero-seal .seal { width: 100%; height: 100%; }
 .hero-copy { max-width: 45rem; padding-inline: 1.5rem; }
 .hero-rule { display: flex; align-items: center; justify-content: center; gap: 1rem; color: var(--brass); margin-bottom: 1.2rem; }
 .hero-rule span { height: 1px; width: 3.5rem; background: var(--c-b89a6350); }
@@ -934,7 +942,7 @@ iframe.video-embed { border: 1px solid var(--line); }
 .prose hr { border: 0; border-top: 1px solid var(--line); margin-block: 2.5rem; }
 .site-footer { margin-top: 5rem; border-top: 1px solid var(--c-665239); padding: 2.5rem 0 1.5rem; color: var(--muted); background: var(--arcade) 0 0 / 1.2rem 1.2rem repeat-x; }
 .footer-intro { display: flex; align-items: center; flex-wrap: wrap; gap: 1.3rem; padding-bottom: 2rem; margin-bottom: 2rem; border-bottom: 1px solid var(--line); }
-.footer-intro img { opacity: .65; }
+.footer-intro .seal { flex: none; width: 48px; height: 48px; opacity: .65; }
 .footer-intro > p { max-width: 23rem; margin: 0; font-size: .85rem; line-height: 1.7; }
 .social-links { display: flex; flex-wrap: wrap; align-items: center; gap: .4rem .9rem; margin-left: auto; font-size: .75rem; }
 .social-links a { display: inline-flex; padding: .2rem; text-decoration: none; }
@@ -973,7 +981,7 @@ iframe.video-embed { border: 1px solid var(--line); }
 @media (max-width: 67.999rem) {
   .sidebar { position: relative; width: auto; padding: 1rem 1.5rem; border-right: 0; border-bottom: 1px solid var(--line); }
   .brand { margin: 0; display: inline-flex; gap: .75rem; }
-  .brand img { width: 38px; height: 38px; }
+  .brand .seal { width: 38px; height: 38px; }
   .brand span { font-size: 1.5rem; }
   .navigation > summary, .navigation[open] > summary { display: list-item; position: absolute; top: 1.25rem; right: 1.5rem; font-size: .88rem; padding: .25rem; }
   .navigation nav { padding-top: 1.75rem; }
@@ -1443,12 +1451,13 @@ body::after { content: ""; position: fixed; z-index: -1; right: -6rem; bottom: -
 .volume-card:nth-child(6n+1) { --emblem: var(--emblem-eye); }
 .volume-card:nth-child(6n+2) { --emblem: var(--emblem-compass); }
 .volume-card:nth-child(6n+3) { --emblem: var(--emblem-rose); }
+.volume-card:nth-child(6n+3)::after { background: var(--rose-colour, var(--emblem-colour)); opacity: calc(.06 * var(--rose-strength, var(--emblem-strength))); }
 .volume-card:nth-child(6n+4) { --emblem: var(--emblem-templar); }
 .volume-card:nth-child(6n+5) { --emblem: var(--emblem-horus); }
 .volume-card:nth-child(6n) { --emblem: var(--emblem-ankh); }
 /* Gothic touches: a rose window behind page titles, and titles cut into the stone. */
 .page-heading { position: relative; isolation: isolate; }
-.page-heading::after { content: ""; position: absolute; z-index: -1; right: 0; top: 50%; width: 12rem; aspect-ratio: 1; transform: translateY(-50%); background: var(--emblem-colour); opacity: calc(.05 * var(--emblem-strength)); pointer-events: none; -webkit-mask: var(--emblem-rose) center / contain no-repeat; mask: var(--emblem-rose) center / contain no-repeat; }
+.page-heading::after { content: ""; position: absolute; z-index: -1; right: 0; top: 50%; width: 12rem; aspect-ratio: 1; transform: translateY(-50%); background: var(--rose-colour, var(--emblem-colour)); opacity: calc(.05 * var(--rose-strength, var(--emblem-strength))); pointer-events: none; -webkit-mask: var(--emblem-rose) center / contain no-repeat; mask: var(--emblem-rose) center / contain no-repeat; }
 /* A page can name its own emblem for the title (emblem in the front matter, as data-emblem on the heading).
    The cobra (on some library books and articles) is an important symbol, so it is shown in its own colours, not as a faint mask: .page-emblem in the heading (partials/page-emblem.html, for
    library books and articles), a cut-out of COBRA.svg (static/images/emblems/cobra-colour.webp), beside the title and
@@ -1472,6 +1481,7 @@ a.page-emblem:focus-visible { outline: 2px solid var(--brass); outline-offset: 6
 /* Volume pages and the posts and comments in them show the volume's numeral (data-numeral) in place of the rose. */
 .page-heading[data-numeral]::after { content: attr(data-numeral); width: auto; aspect-ratio: auto; font-family: var(--display); font-size: 10rem; font-weight: 500; line-height: 1; letter-spacing: .02em; color: var(--emblem-colour); background: none; opacity: calc(.08 * var(--emblem-strength)); -webkit-mask: none; mask: none; }
 .discussed-heading::after { -webkit-mask-image: var(--emblem-crucifix); mask-image: var(--emblem-crucifix); }
+.discussed-heading { --rose-colour: initial; --rose-strength: initial; } /* the crucifix keeps the emblems' colour */
 .hero h1, .page-heading h1 { text-shadow: 0 -1px 0 var(--c-000000b0), 0 1px 0 var(--c-e5dcc812); }
 @media (max-width: 67.999rem) {
   .sidebar::after { display: none; }
