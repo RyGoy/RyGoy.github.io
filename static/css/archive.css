@@ -453,8 +453,9 @@
   --emblem-colour: #990011;
   --emblem-mark: #990011;
   --emblem-strength: 3;  /* a dark red on near black needs more than the brass did to show */
-  /* The six-pointed star (the seal: sidebar, hero, footer) and the rose window, whose ring and spokes read as the
-     Empire's crest, in a clear red: the rose stronger than the other emblems, so it shows as red, not as shadow. */
+  /* The six-pointed star (the seal: sidebar, hero, footer) and the rose window behind page headings, whose ring and
+     spokes read as the Empire's crest, in a clear red: that rose stronger than the other emblems, so it shows as red,
+     not as shadow. On the volume cards the rose is as faint as the cards' other emblems. */
   --seal-colour: #d11a2a;
   --rose-colour: #d11a2a;
   --rose-strength: 4;
@@ -1451,7 +1452,6 @@ body::after { content: ""; position: fixed; z-index: -1; right: -6rem; bottom: -
 .volume-card:nth-child(6n+1) { --emblem: var(--emblem-eye); }
 .volume-card:nth-child(6n+2) { --emblem: var(--emblem-compass); }
 .volume-card:nth-child(6n+3) { --emblem: var(--emblem-rose); }
-.volume-card:nth-child(6n+3)::after { background: var(--rose-colour, var(--emblem-colour)); opacity: calc(.06 * var(--rose-strength, var(--emblem-strength))); }
 .volume-card:nth-child(6n+4) { --emblem: var(--emblem-templar); }
 .volume-card:nth-child(6n+5) { --emblem: var(--emblem-horus); }
 .volume-card:nth-child(6n) { --emblem: var(--emblem-ankh); }
