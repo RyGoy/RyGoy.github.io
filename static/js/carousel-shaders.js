@@ -1,7 +1,7 @@
 // Animated backgrounds behind the home page carousel's frames (partials/carousel.html, .carousel-shader in
 // archive.css), one per theme: Dark has "Ashfall" (embers glowing through drifting noise, with dark ash zooming past),
-// Light has the plasma grid (glowing purple lines weaving over a blue-to-purple wash). Sepia has none and keeps the
-// carousel's own background. Each is a fragment shader drawn on a canvas under the frames with plain WebGL; the canvas
+// Light has the plasma grid (glowing purple lines weaving over a blue-to-purple wash), and Sepia metal hexagons (at the
+// end, with three.js). Dark's and Light's are fragment shaders drawn on a canvas under the frames with plain WebGL; the canvas
 // follows the theme switch, draws only while the carousel is on screen, and under reduced motion shows a still frame.
 // Without WebGL (or JavaScript) the carousel keeps its own background.
 //
@@ -199,5 +199,88 @@
     still.addEventListener('change', update);
     addEventListener('resize', () => { if (onScreen && still.matches) update(); });
     update();
+  }
+
+  // Sepia: Kevin Levron's hexagonal grid (threejs-components, ISC; https://codepen.io/soju22/pen/MYgbRwg): metal
+  // hexagons bobbing in and out, lit by two lights that follow the pointer. Here each hexagon is one of five colours
+  // (black, grey, white, two reds; the library's own colours blend into in-between shades), and some of the black and
+  // red ones carry a Jolly Roger on their face. It loads (three.js with it, from jsDelivr) only once Sepia is shown
+  // with the carousel near the screen, and draws only while its canvas is on screen (the library's own observer;
+  // archive.css hides the canvas in the other themes). Under reduced motion the hexagons hold still.
+  const HEX_GRID = 'https://cdn.jsdelivr.net/npm/threejs-components@0.0.16/build/backgrounds/grid1.cdn.min.js';
+  const THREE_URL = 'https://cdn.jsdelivr.net/npm/three@0.170.0/+esm';  // the three.js grid1 imports, so it loads once
+  const HEX_COLOURS = [0x0b0b0b, 0x6e6e6e, 0xf0f0f0, 0xb3121f, 0x5c0a10];  // black, grey, white, red, dark red
+  const PIRATE = new Set([0, 3, 4]);  // the colours a Jolly Roger can show on
+  const PIRATE_SHARE = 0.15;          // of those hexagons, the share that carry one
+
+  // A Jolly Roger in white on a clear ground: crossed bones behind a skull, its eyes, nose and teeth cut out.
+  const jollyRoger = () => {
+    const c = document.createElement('canvas');
+    c.width = c.height = 256;
+    const g = c.getContext('2d');
+    g.fillStyle = g.strokeStyle = '#f2efe8';
+    g.lineCap = 'round';
+    for (const [x1, y1, x2, y2] of [[48, 236, 208, 132], [48, 132, 208, 236]]) {
+      g.lineWidth = 20;
+      g.beginPath(); g.moveTo(x1, y1); g.lineTo(x2, y2); g.stroke();
+      // Each end of a bone is two knobs, either side of the shaft.
+      for (const [x, y, dx, dy] of [[x1, y1, x2 - x1, y2 - y1], [x2, y2, x1 - x2, y1 - y2]]) {
+        const len = Math.hypot(dx, dy), nx = -dy / len * 11, ny = dx / len * 11;
+        for (const s of [1, -1]) { g.beginPath(); g.arc(x + nx * s, y + ny * s, 14, 0, 2 * Math.PI); g.fill(); }
+      }
+    }
+    g.beginPath(); g.arc(128, 100, 66, 0, 2 * Math.PI); g.fill();                       // cranium
+    g.beginPath(); g.roundRect(92, 130, 72, 58, 14); g.fill();                         // jaw
+    g.globalCompositeOperation = 'destination-out';
+    for (const x of [102, 154]) { g.beginPath(); g.ellipse(x, 108, 19, 22, 0, 0, 2 * Math.PI); g.fill(); }
+    g.beginPath(); g.moveTo(128, 128); g.lineTo(117, 150); g.lineTo(139, 150); g.closePath(); g.fill();
+    g.lineWidth = 5; g.lineCap = 'butt';
+    for (const x of [108, 120, 132, 144, 156]) { g.beginPath(); g.moveTo(x, 164); g.lineTo(x, 188); g.stroke(); }
+    return c;
+  };
+
+  const startHexes = async (canvas) => {
+    const [{ default: Grid }, THREE] = await Promise.all([import(HEX_GRID), import(THREE_URL)]);
+    const bg = Grid(canvas, { timeCoef: still.matches ? 0 : 1 });
+    bg.three.maxPixelRatio = 1.5;
+    bg.three.resize();
+    const { grid } = bg;
+    const colour = new THREE.Color(), pirates = [];
+    for (let i = 0; i < grid.count; i++) {
+      const k = Math.floor(Math.random() * HEX_COLOURS.length);
+      grid.setColorAt(i, colour.set(HEX_COLOURS[k]));
+      if (PIRATE.has(k) && Math.random() < PIRATE_SHARE) pirates.push(i);
+    }
+    grid.instanceColor.needsUpdate = true;
+    // The flags: one square each, laid just above its hexagon's face (the face is at z = 0 in the hexagon's own
+    // space), moved with the hexagon every frame; unlit, so toned down to bone grey to sit with the lit metal.
+    const size = grid.config.radius * 1.35;
+    const map = new THREE.CanvasTexture(jollyRoger());
+    map.colorSpace = THREE.SRGBColorSpace;
+    const flags = new THREE.InstancedMesh(new THREE.PlaneGeometry(size, size), new THREE.MeshBasicMaterial({ map, color: 0x8c8880, transparent: true, depthWrite: false }), pirates.length);
+    flags.frustumCulled = false;
+    grid.add(flags);
+    const hexMatrix = new THREE.Matrix4(), lift = new THREE.Matrix4().makeTranslation(0, 0, grid.config.radius * 0.02);
+    const before = bg.three.onBeforeRender;
+    bg.three.onBeforeRender = (time) => {
+      before(time);
+      pirates.forEach((i, k) => { grid.getMatrixAt(i, hexMatrix); flags.setMatrixAt(k, hexMatrix.multiply(lift)); });
+      flags.instanceMatrix.needsUpdate = true;
+    };
+  };
+
+  for (const carousel of document.querySelectorAll('.carousel')) {
+    const canvas = document.createElement('canvas');
+    canvas.className = 'carousel-hex';
+    canvas.setAttribute('aria-hidden', 'true');
+    carousel.prepend(canvas);
+    let near = false, started = false;
+    const check = () => {
+      if (started || !near || document.documentElement.hasAttribute('data-theme')) return;
+      started = true;
+      startHexes(canvas).catch((error) => { console.warn('carousel hexagons:', error); canvas.remove(); });
+    };
+    new MutationObserver(check).observe(document.documentElement, { attributes: true, attributeFilter: ['data-theme'] });
+    new IntersectionObserver(([entry]) => { near = entry.isIntersecting; check(); }, { rootMargin: '300px' }).observe(carousel);
   }
 })();
