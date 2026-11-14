@@ -1488,6 +1488,20 @@ html:has(.terms-gate[open]) { overflow: hidden; }
 .musical-recap-button:not(.is-playing) span::after { left: .08rem; opacity: 0; }
 .musical-recap-button.is-playing::before { box-shadow: 0 2px 8px 0 var(--c-00000080), inset 0 -1px 0 0 var(--c-00000066); }
 .musical-recap-button.is-playing span::before, .musical-recap-button.is-playing span::after { background-color: var(--c-e05879); box-shadow: inset 1px -1px 2px 0 var(--c-000000bf); }
+/* Its lyrics (static/js/musical-recap.js): a small card floating in the bottom-right corner while it plays, fading in
+   and out with the sound. With timed lyrics the line being sung is brighter and kept in the middle; the × hides it until
+   Play is next pressed. It is never wider than the screen. */
+.recap-lyrics { position: fixed; z-index: 50; right: 1rem; bottom: 1rem; width: min(19rem, calc(100vw - 2rem)); padding: .55rem .9rem .7rem; color: var(--muted); background: var(--surface); border: 1px solid var(--line); box-shadow: 0 8px 24px var(--c-00000080); visibility: hidden; opacity: 0; transform: translateY(.6rem); transition: opacity .4s ease, transform .4s ease, visibility 0s linear .4s; }
+.recap-lyrics.is-shown { visibility: visible; opacity: .96; transform: none; transition-delay: 0s; }
+.recap-lyrics-head { display: flex; align-items: center; justify-content: space-between; gap: 1rem; margin-bottom: .35rem; font-family: var(--display); font-size: .8rem; letter-spacing: .14em; text-transform: uppercase; color: var(--brass); }
+.recap-lyrics-close { padding: 0 .2rem; font: inherit; font-size: 1.15rem; line-height: 1; color: var(--muted); background: none; border: 0; cursor: pointer; }
+.recap-lyrics-close:hover, .recap-lyrics-close:focus-visible { color: var(--paper); }
+.recap-lyrics-lines { position: relative; max-height: 7.2rem; margin: 0; padding: 0; overflow-y: auto; list-style: none; font-size: .95rem; line-height: 1.5; scrollbar-width: thin; }
+.recap-lyrics.is-timed .recap-lyrics-lines { padding-block: 2.6rem; scrollbar-width: none; -webkit-mask: linear-gradient(#0000, #000 30%, #000 70%, #0000); mask: linear-gradient(#0000, #000 30%, #000 70%, #0000); }
+.recap-lyrics.is-timed li { opacity: .55; transition: opacity .3s ease, color .3s ease; }
+.recap-lyrics.is-timed li.is-current { opacity: 1; color: var(--paper); }
+@media (prefers-reduced-motion: reduce) { .recap-lyrics { transform: none; transition: none; } .recap-lyrics.is-timed li { transition: none; } }
+@media print { .recap-lyrics { display: none; } }
 .webamp-open { width: 100%; margin: -1rem 0 1.75rem; font: inherit; font-size: .9rem; cursor: pointer; color: var(--c-e1c797); background: var(--surface); border: 1px solid var(--c-806943); padding: .45rem .65rem; }
 .webamp-open:hover, .webamp-open:focus-visible { color: var(--c-fff5de); border-color: var(--brass); background: var(--c-b89a6314); }
 .webamp-open:disabled { cursor: default; color: var(--muted); border-color: var(--line); background: var(--surface); }
