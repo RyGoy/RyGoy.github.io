@@ -1472,7 +1472,7 @@ html:has(.terms-gate[open]) { overflow: hidden; }
    in the theme's tones, with "Musical Recap For The Kids" set round it (an SVG textPath). A well, a raised disc, a dish
    and two pills: stopped, the pills close into a play triangle; playing, the disc sinks a little and the pause pills
    turn the pen's pink. */
-.musical-recap { position: relative; width: 7.5rem; height: 7.5rem; margin: -.8rem auto 1.2rem; }
+.musical-recap { position: relative; width: 7.5rem; height: 7.5rem; margin: 1.6rem auto 0; }
 .musical-recap[hidden] { display: none; }
 .musical-recap-ring { position: absolute; inset: 0; width: 100%; height: 100%; overflow: visible; pointer-events: none; fill: var(--brass); font-family: var(--display); font-size: 10.5px; font-weight: 600; letter-spacing: .06em; }
 .musical-recap-button { -webkit-tap-highlight-color: transparent; position: absolute; top: 50%; left: 50%; width: 4.7rem; height: 4.7rem; margin: -2.35rem 0 0 -2.35rem; padding: 0; border: 0; border-radius: 50%; background-color: var(--c-11120e); box-shadow: inset 0 4px 8px 0 var(--c-000000a6), 0 1px 0 0 var(--c-ffffff14); transition: .5s ease; cursor: pointer; }
