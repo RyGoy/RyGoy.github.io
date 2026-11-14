@@ -10,13 +10,6 @@
         <label class="sr-only" for="site-search-query">Search articles and volumes</label>
         <input id="site-search-query" type="search" name="q" placeholder="Search articles and volumes" required>
       </form>
-      {{/* Musical Recap: play/pause for static/audio/the-sound-of-violence.mp3, which keeps playing from page to page
-           (static/js/musical-recap.js, which shows it; hidden without JavaScript). The words round it are decoration: the
-           button's own name says the same. */}}
-      <div class="musical-recap" hidden>
-        <svg class="musical-recap-ring" viewBox="0 0 120 120" aria-hidden="true"><path id="musical-recap-circle" fill="none" d="M60 113a53 53 0 1 1 0-106a53 53 0 1 1 0 106"/><text textLength="326" lengthAdjust="spacing"><textPath href="#musical-recap-circle">✦ MUSICAL RECAP FOR THE KIDS</textPath></text></svg>
-        <button class="musical-recap-button" id="musical-recap" type="button" data-audio="{{ "audio/the-sound-of-violence.mp3" | relURL }}" aria-label="Play musical recap for the kids" title="Play musical recap for the kids"><span></span></button>
-      </div>
       {{/* WEBAMP DISABLED: remove this comment wrapper to bring the "Open Webamp" button back.
            Also re-enable the webamp-dock.js script in partials/head.html.
       {{ with site.Data.webamp.tracks }}
@@ -74,6 +67,13 @@
       {{ with site.GetPage "/whats-in-the-jab" }}
       <div class="nav-group article-nav"><a class="nav-heading" href="{{ .RelPermalink }}"{{ if eq $.RelPermalink .RelPermalink }} aria-current="page"{{ end }}>{{ .Title }}</a></div>
       {{ end }}
+      {{/* Musical Recap: play/pause for static/audio/the-sound-of-violence.mp3, which keeps playing from page to page
+           (static/js/musical-recap.js, which shows it; hidden without JavaScript). The words round it are decoration: the
+           button's own name says the same. */}}
+      <div class="musical-recap" hidden>
+        <svg class="musical-recap-ring" viewBox="0 0 120 120" aria-hidden="true"><path id="musical-recap-circle" fill="none" d="M60 113a53 53 0 1 1 0-106a53 53 0 1 1 0 106"/><text textLength="326" lengthAdjust="spacing"><textPath href="#musical-recap-circle">✦ MUSICAL RECAP FOR THE KIDS</textPath></text></svg>
+        <button class="musical-recap-button" id="musical-recap" type="button" data-audio="{{ "audio/the-sound-of-violence.mp3" | relURL }}" aria-label="Play musical recap for the kids" title="Play musical recap for the kids"><span></span></button>
+      </div>
     </nav>
   </details>
 </aside>
