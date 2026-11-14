@@ -29,24 +29,69 @@
 <li><a href="https://minds.com/taraduncan" target="_blank" rel="noopener noreferrer">Tara&rsquo;s Minds Feed</a></li>
 <li><a class="goat-link" href="#" role="button">THERE WERE NO GOATS</a></li>
 </ul></section>
-{{/* THERE WERE NO GOATS: each click sends a stick figure goat walking across the bottom of the screen, left to right
-     (archive.css, .goat), each at its own pace; it goes when it has crossed. Without JavaScript the link does nothing. */}}
-<template id="goat"><svg class="goat" viewBox="0 0 120 100" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
-  <g class="goat-body"><path d="M28 46H80M28 46L20 36M80 46L91 26L105 33M91 26C88 16 82 10 74 9M92 28L84 32M103 33L102 43"/><circle cx="96" cy="28" r=".6" fill="currentColor"/></g>
-  <path class="goat-leg" d="M34 46L32 82"/><path class="goat-leg goat-leg-b" d="M38 46L37 82"/>
-  <path class="goat-leg goat-leg-b" d="M72 46L74 82"/><path class="goat-leg" d="M76 46L78 82"/>
+{{/* THERE WERE NO GOATS: each click sends a goat walking across the bottom of the screen, left to right (archive.css,
+     .goat), each at its own pace, now and then jumping; it goes when it has crossed. While any goat is out the pointer is a
+     crosshair (html.goat-season) and a goat clicked or tapped is shot: it flips, falls off the bottom and goes, X for an eye.
+     Under reduced motion goats don't jump, and a shot goat fades. Without JavaScript the link does nothing. */}}
+<template id="goat"><svg class="goat" viewBox="0 0 120 100" aria-hidden="true" fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+  <g class="goat-hop">
+  <g class="goat-leg goat-far" fill="none" stroke-width="4"><path d="M47 54L45 70L47 85"/><path d="M45.5 87h3" stroke-width="4"/></g>
+  <g class="goat-leg goat-leg-b goat-fore goat-far" fill="none" stroke-width="4"><path d="M73 55L71.5 71L73 85"/><path d="M71.5 87h3" stroke-width="4"/></g>
+  <g class="goat-body">
+    <path d="M29 39C26 34 23 31 20 30C21 34 24 38 27 42Z"/>
+    <path d="M30 38C44 33 64 34 76 34C80 30 84 24 88 18L96 26C94 34 92 42 88 50C86 56 80 58 74 58L44 58C34 59 27 54 26 46C25 42 27 39 30 38Z" fill-opacity=".28" stroke-width="3"/>
+    <path d="M30 44C36 42 42 46 44 56M75 38C71 44 72 52 76 57" fill="none" stroke-width="1.5" stroke-opacity=".6"/>
+    <path d="M93 12C92 5 87 0 81 0C86 3 89 7 90 13Z" opacity=".6"/><path d="M90 13C88 6 82 2 75 3C81 5 85 9 87 15Z"/>
+    <path d="M86 18C88 11 95 10 99 13L109 24C111 27 110 31 106 31C102 31 99 30 96 28C92 26 87 23 86 18Z" fill-opacity=".28" stroke-width="3"/>
+    <path d="M91 18C86 17 81 20 79 23C84 23 89 21 92 20Z"/>
+    <path d="M104 31C104 35 102 39 100 43C99.5 38 99 34 99 30Z"/>
+    <circle class="goat-eye" cx="97" cy="17.5" r="1.6" stroke="none"/><path class="goat-eye-x" d="M95 15.5l4 4m0-4l-4 4" fill="none" stroke-width="1.6"/>
+  </g>
+  <g class="goat-leg goat-leg-b" fill="none" stroke-width="4.5"><path d="M40 55C38 62 35 66 35 71L38 85"/><path d="M36 87h3.5" stroke-width="4.5"/></g>
+  <g class="goat-leg goat-fore" fill="none" stroke-width="4.5"><path d="M79 56L80 71L79 85"/><path d="M77 87h3.5" stroke-width="4.5"/></g>
+  </g>
 </svg></template>
 <script>
   {
-    const goat = document.getElementById('goat');
+    const goat = document.getElementById('goat'), root = document.documentElement;
+    const still = matchMedia('(prefers-reduced-motion: reduce)'), herd = new Set();
+    // Now and then a jump, of its own height (archive.css, --hop); the next is planned when it lands.
+    const plan = (walker) => {
+      walker.hop = setTimeout(() => {
+        walker.style.setProperty('--hop', (-1.8 - Math.random() * 1.7).toFixed(2) + 'rem');
+        walker.classList.add('is-jumping');
+      }, 600 + Math.random() * 2400);
+    };
+    const leave = (walker) => {
+      clearTimeout(walker.hop); walker.remove(); herd.delete(walker);
+      if (!herd.size) root.classList.remove('goat-season');
+    };
     document.querySelector('.goat-link')?.addEventListener('click', (event) => {
       event.preventDefault();
       const walker = goat.content.firstElementChild.cloneNode(true);
       // Each goat its own pace: up to 10% slower or faster than the usual (archive.css, --goat-pace).
       walker.style.setProperty('--goat-pace', (0.9 + Math.random() * 0.2).toFixed(3));
-      walker.addEventListener('animationend', (e) => { if (e.target === walker) walker.remove(); });
+      walker.addEventListener('animationend', (e) => {
+        if (e.animationName === 'goat-walk' || e.animationName.startsWith('goat-shot')) leave(walker);
+        else if (e.animationName === 'goat-jump') { walker.classList.remove('is-jumping'); plan(walker); }
+      });
+      walker.addEventListener('pointerdown', () => {
+        if (walker.classList.contains('is-shot')) return;
+        clearTimeout(walker.hop);
+        walker.classList.replace('is-jumping', 'is-shot') || walker.classList.add('is-shot');
+      });
+      herd.add(walker); root.classList.add('goat-season');
       document.body.append(walker);
+      if (!still.matches) plan(walker);
     });
+    // Every shot taken in goat season flashes where it lands, hit or miss; a miss still clicks what it is on.
+    document.addEventListener('pointerdown', (e) => {
+      if (!root.classList.contains('goat-season') || e.button !== 0) return;
+      const bang = document.createElement('span');
+      bang.className = 'goat-bang'; bang.style.left = e.clientX + 'px'; bang.style.top = e.clientY + 'px';
+      bang.addEventListener('animationend', () => bang.remove());
+      document.body.append(bang);
+    }, true);
   }
 </script>
 <section><h3>Legal Definitions</h3><ul>
