@@ -54,19 +54,41 @@
   </g>
 </svg></template>
 <template id="strutter"><svg class="strutter" viewBox="0 0 60 150" aria-hidden="true" stroke-linecap="round" stroke-linejoin="round">
-  <g class="strut-arm strut-b" fill="none"><path d="M30 31L29 48" stroke="#e8e2d6" stroke-width="5"/><path d="M29 48L31 63" stroke="#c79a74" stroke-width="3.4"/></g>
-  <g class="strut-leg strut-b" fill="none" stroke="#c79a74"><path d="M31 76L32 112" stroke-width="5.4"/><path d="M32 112L31 139" stroke-width="3.8"/><path d="M29 139h4c2 1 4.5 3.5 5.5 7h-6l-1.5-3-.8 3H29z" fill="#b3152f" stroke="#7d0e20" stroke-width=".8"/></g>
-  <g class="strut-leg" fill="none" stroke="#e2b48c"><path d="M31 76L32 112" stroke-width="5.4"/><path d="M32 112L31 139" stroke-width="3.8"/><path d="M29 139h4c2 1 4.5 3.5 5.5 7h-6l-1.5-3-.8 3H29z" fill="#b3152f" stroke="#7d0e20" stroke-width=".8"/></g>
+  <defs>
+    <linearGradient id="strut-skin"><stop offset="0" stop-color="#d4a37c"/><stop offset=".55" stop-color="#efc7a2"/><stop offset="1" stop-color="#d9aa84"/></linearGradient>
+    <linearGradient id="strut-red"><stop offset="0" stop-color="#8e1129"/><stop offset=".5" stop-color="#c41e3a"/><stop offset=".82" stop-color="#e1475f"/><stop offset="1" stop-color="#b51a35"/></linearGradient>
+    <linearGradient id="strut-hair-g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#4b2c1a"/><stop offset=".5" stop-color="#2b170d"/><stop offset="1" stop-color="#3d2314"/></linearGradient>
+  </defs>
+  <g class="strut-arm strut-b"><path d="M28.6 31C30.6 30 33 30.4 33.6 32L32.8 47.2L28.8 47.2C28.4 41 28 36 28.6 31Z" fill="#e9e3d7" stroke="#cbc1b2" stroke-width=".6"/><path d="M29.2 46.6L32.6 46.6C32.8 52 33 57 32.8 61L30.7 61.3C30.2 57 29.4 52 29.2 46.6Z" fill="#c99872"/><ellipse cx="31.8" cy="62.9" rx="1.35" ry="2.3" fill="#c99872"/><path d="M28.9 46.8h4" stroke="#cbc1b2" stroke-width="1.4"/><path d="M30.4 58.9h2.5" stroke="#d4af37" stroke-width=".9"/></g>
+  <g class="strut-leg strut-b"><path d="M28.5 76L34 76C34.6 84 34 90 33.4 96C33.6 106 33 124 32.6 136L30.6 136C30 126 28.2 112 28.8 104C29.2 100 29.6 98 29.6 96C29.2 90 28.2 84 28.5 76Z" fill="#c99872"/><path d="M30.2 135.4C31.4 136.4 32.7 136.3 33.1 135.7C34.6 138.8 36.9 141.6 39.5 144.4C40 145.2 39.4 146 38.3 146C36.1 146 34.6 145.3 33.4 143.9C32.6 142.8 31.7 141.6 30.9 141.2Z" fill="#8e1129" stroke="#6d0c1c" stroke-width=".5"/><path d="M31 140.6L30.4 146.2" stroke="#6d0c1c" stroke-width="1"/></g>
+  <g class="strut-leg"><path d="M28.5 76L34 76C34.6 84 34 90 33.4 96C33.6 106 33 124 32.6 136L30.6 136C30 126 28.2 112 28.8 104C29.2 100 29.6 98 29.6 96C29.2 90 28.2 84 28.5 76Z" fill="url(#strut-skin)"/><path d="M30.2 135.4C31.4 136.4 32.7 136.3 33.1 135.7C34.6 138.8 36.9 141.6 39.5 144.4C40 145.2 39.4 146 38.3 146C36.1 146 34.6 145.3 33.4 143.9C32.6 142.8 31.7 141.6 30.9 141.2Z" fill="url(#strut-red)" stroke="#6d0c1c" stroke-width=".5"/><path d="M31 140.6L30.4 146.2" stroke="#6d0c1c" stroke-width="1"/></g>
   <g class="strut-upper">
-    <path class="strut-skirt" d="M26.5 56H36.5C39.5 64 41.5 76 42 89L22 89C22.5 76 24 64 26.5 56Z" fill="#c41e3a" stroke="#8f1228" stroke-width="1"/>
-    <path d="M26 29C30 27 35 27 37 29C40 33 41 38 39 42C37 46 35 50 36.5 57L26.5 57C27.5 50 25 40 26 29Z" fill="#faf7f0" stroke="#cfc6b8" stroke-width="1"/>
-    <path d="M30.5 28L33 34L35.5 28.5" fill="none" stroke="#cfc6b8" stroke-width="1"/><path d="M26.4 56.5h10" stroke="#1c1515" stroke-width="1.6"/>
-    <path d="M30.5 21.5h3.4v7h-3.4z" fill="#e2b48c"/>
-    <path class="strut-hair" d="M25 12C25 3 38 3 39.5 11C36 8.5 31 9 29 13.5C28 24 27.5 33 22 41C20 31 22.5 21 25 12Z" fill="#3a2216"/>
-    <circle cx="32.5" cy="15" r="7.2" fill="#e2b48c"/>
-    <path d="M25.3 15C25 7 31 5.5 35 7C38 8 39.5 10 39.7 12.5C36 10 31 10.5 29 15.5C28 15.5 26.5 15.5 25.3 15Z" fill="#3a2216"/>
-    <path d="M35.2 14.2l2 -.4" stroke="#1c1515" stroke-width="1"/><path d="M37.6 19.2h1.8" stroke="#b0122a" stroke-width="1.4"/>
-    <g class="strut-arm" fill="none"><path d="M31 31L30 48" stroke="#faf7f0" stroke-width="5"/><path d="M30 31L29.5 47" stroke="#cfc6b8" stroke-width=".8"/><path d="M30 48L32 63" stroke="#e2b48c" stroke-width="3.4"/></g>
+    <g class="strut-skirt">
+      <path d="M27.6 53.5L36.6 53.5C38.8 58 40 62 40.4 67C41 74 41.6 82 42.6 90C36 91.6 28 91.6 21.6 90C22.4 82 23.4 74 24.4 67C25 62 26 57.5 27.6 53.5Z" fill="url(#strut-red)" stroke="#7d0e20" stroke-width=".6"/>
+      <path d="M31 57.5C30.6 70 29.6 80 28.6 90.6M35 57.5C35.6 70 36.6 80 37.6 90.6" fill="none" stroke="#7d0e20" stroke-width=".55" stroke-opacity=".6"/>
+      <path d="M38.4 60C39.2 66 39.8 74 40.4 85" fill="none" stroke="#f07a8c" stroke-width=".8" stroke-opacity=".55"/>
+      <path d="M27.4 53.2h9.4v2.2h-9.4z" fill="#1c1515"/><path d="M34.1 53h2v2.6h-2z" fill="none" stroke="#d4af37" stroke-width=".55"/>
+    </g>
+    <path d="M27 30.5C29 29 33 28.6 36.4 29.4C38.6 30 39.6 32 40.4 34.5C41.4 37.5 41 40.5 39 42.5C37.6 44 36.6 47 36.4 51L36.6 53.6L27.6 53.6C27.8 50 27 46 26.4 42C25.6 37 25.6 33 27 30.5Z" fill="#fbf8f2" stroke="#d2c8b9" stroke-width=".6"/>
+    <path d="M39 42.6C37.6 43.6 36.9 46 36.7 49.5M27.4 34C27 39 27.6 45 28.3 51" fill="none" stroke="#e2d9ca" stroke-width="1.1"/>
+    <path d="M34.6 33.4C35.4 38 36 45 36 53" fill="none" stroke="#e2d9ca" stroke-width=".5"/>
+    <g fill="#c9bfae"><circle cx="34.9" cy="36.4" r=".45"/><circle cx="35.4" cy="40.6" r=".45"/><circle cx="35.8" cy="44.8" r=".45"/><circle cx="35.9" cy="49" r=".45"/></g>
+    <path class="strut-hair" d="M38.6 9.5C37 5 33 3.2 29 3.8C24.5 4.5 22 8 22 13C22 19 21 24 19.5 29C18 34 18.8 39 17 44C20.5 42.5 22.5 39 23 35.5C24 38.5 23.5 42 22.5 45.5C26 42 27.2 37 27 32C27 27 28.5 22 29.5 18C30 15 31.5 12 34 10.5C35.5 9.8 37.2 9.6 38.6 9.5Z" fill="url(#strut-hair-g)"/>
+    <path d="M30.6 21.4L35.6 22.4L35.8 29.6C34 30.4 32 30.4 30.4 29.6Z" fill="#dcae88"/>
+    <path d="M31 28.4L33.5 33L31.2 31.9L29.4 30Z M36 28.8L33.5 33L35.6 32L37.2 30.2Z" fill="#fbf8f2" stroke="#d2c8b9" stroke-width=".5"/>
+    <path d="M31 6C35.5 6 38.5 8.5 39.2 12L41.6 16.2C41.8 16.8 40.9 17.2 40 17.3L40.5 18.6L39.9 19.2L40.3 20.1C40 21.6 39.3 22.8 37.8 23.2C35.5 23.8 33 23.6 31.5 22.6C27 20 25 15 25.5 11C26 8 28 6 31 6Z" fill="url(#strut-skin)"/>
+    <circle cx="36.2" cy="17.6" r="1.7" fill="#e8848a" fill-opacity=".35"/>
+    
+    <path d="M35.3 13.3C36.1 12.6 37.4 12.6 38.1 13.3C37.4 14 36.2 14.1 35.3 13.3Z" fill="#241510"/>
+    <path d="M37.9 13.1l1.2-.8M37.3 12.8l.8-1.1M36.6 12.7l.3-1.1" stroke="#241510" stroke-width=".4"/>
+    <path d="M35 11.1C36.2 10.3 37.9 10.4 38.9 11.2" fill="none" stroke="#3a2216" stroke-width=".65"/>
+    <path d="M39.9 18.5C40.7 18.6 40.8 19 40.1 19.3C40.8 19.5 40.7 20.1 39.9 20.3C39.3 19.8 39.3 18.9 39.9 18.5Z" fill="#b3152f"/>
+    <path d="M38.8 9.6C37.6 5.4 33.6 3.5 29.5 4.1C25.8 4.7 24.4 8 24.8 11.6C25.2 15.2 26.6 19.8 29.4 21.8C29.4 17.4 30.6 13.4 32.7 11.5C34.5 10.1 36.7 9.6 38.8 9.6Z" fill="url(#strut-hair-g)"/>
+    <path d="M38.6 9.5C36 9.8 33.6 11 32.2 13.6C31.6 11 33.2 7 37.2 7.2C38 7.6 38.5 8.4 38.6 9.5Z" fill="url(#strut-hair-g)"/>
+    <path d="M30.8 13.8C32.3 13.5 32.8 16 31.4 17.3" fill="none" stroke="#c99872" stroke-width=".7"/>
+    <path d="M30.6 14.2C29.8 12 30.6 10 32.4 9.6" fill="none" stroke="#7a4c2e" stroke-width=".45" stroke-opacity=".8"/><circle cx="31.4" cy="18.9" r=".85" fill="#d4af37"/>
+    <path d="M27.5 6.6C24.5 10.5 24.4 18 22.9 25C21.8 31 21.3 36 19.8 41M30.4 5.6C27.8 10 27.4 16 26.4 22C25.7 27 25.8 32 24.6 38M33.5 8.8C31.5 9.6 30 11.5 29.4 14" fill="none" stroke="#7a4c2e" stroke-width=".4" stroke-opacity=".45"/>
+    <g class="strut-arm"><path d="M28.6 31C30.6 30 33 30.4 33.6 32L32.8 47.2L28.8 47.2C28.4 41 28 36 28.6 31Z" fill="#fbf8f2" stroke="#d2c8b9" stroke-width=".6"/><path d="M29.2 46.6L32.6 46.6C32.8 52 33 57 32.8 61L30.7 61.3C30.2 57 29.4 52 29.2 46.6Z" fill="url(#strut-skin)"/><ellipse cx="31.8" cy="62.9" rx="1.35" ry="2.3" fill="url(#strut-skin)"/><path d="M28.9 46.8h4" stroke="#d2c8b9" stroke-width="1.4"/><path d="M30.4 58.9h2.5" stroke="#d4af37" stroke-width=".9"/></g>
   </g>
 </svg></template>
 <script>
