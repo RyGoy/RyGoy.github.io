@@ -69,10 +69,11 @@
       {{ end }}
       {{/* Musical Recap: play/pause for static/audio/the-sound-of-violence.mp3, which keeps playing from page to page
            (static/js/musical-recap.js, which shows it; hidden without JavaScript). The words round it are decoration: the
-           button's own name says the same. */}}
+           button's own name says the same. Its lyrics, if static/audio/the-sound-of-violence.lrc exists, show in a floating
+           card while it plays (built by the script). */}}
       <div class="musical-recap" hidden>
         <svg class="musical-recap-ring" viewBox="0 0 120 120" aria-hidden="true"><path id="musical-recap-circle" fill="none" d="M60 113a53 53 0 1 1 0-106a53 53 0 1 1 0 106"/><text textLength="326" lengthAdjust="spacing"><textPath href="#musical-recap-circle">✦ MUSICAL RECAP FOR THE KIDS</textPath></text></svg>
-        <button class="musical-recap-button" id="musical-recap" type="button" data-audio="{{ "audio/the-sound-of-violence.mp3" | relURL }}" aria-label="Play musical recap for the kids" title="Play musical recap for the kids"><span></span></button>
+        <button class="musical-recap-button" id="musical-recap" type="button" data-audio="{{ "audio/the-sound-of-violence.mp3" | relURL }}"{{ if fileExists "static/audio/the-sound-of-violence.lrc" }} data-lyrics="{{ "audio/the-sound-of-violence.lrc" | relURL }}"{{ end }} aria-label="Play musical recap for the kids" title="Play musical recap for the kids"><span></span></button>
       </div>
     </nav>
   </details>
