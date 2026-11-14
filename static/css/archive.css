@@ -37,11 +37,15 @@
   --c-000000: #000000;
   --c-00000018: #00000018;
   --c-00000059: #00000059;
+  --c-00000066: #00000066;
+  --c-00000080: #00000080;
   --c-0000008c: #0000008c;
   --c-00000099: #00000099;
   --c-000000a0: #000000a0;
+  --c-000000a6: #000000a6;
   --c-000000aa: #000000aa;
   --c-000000b0: #000000b0;
+  --c-000000bf: #000000bf;
   --c-000000c0: #000000c0;
   --c-000000cc: #000000cc;
   --c-050504f7: #050504f7;
@@ -50,6 +54,7 @@
   --c-0c0c0bd9: #0c0c0bd9;
   --c-0e100d: #0e100d;
   --c-10110f: #10110f;
+  --c-11120e: #11120e;
   --c-120e06: #120e06;
   --c-12110ed9: #12110ed9;
   --c-121210f5: #121210f5;
@@ -60,9 +65,11 @@
   --c-19140b: #19140b;
   --c-191a17: #191a17;
   --c-1a1915: #1a1915;
+  --c-1c1a14: #1c1a14;
   --c-1d170c: #1d170c;
   --c-1d1c18: #1d1c18;
   --c-1f1e19: #1f1e19;
+  --c-22201a: #22201a;
   --c-24231c: #24231c;
   --c-24241e33: #24241e33;
   --c-28201955: #28201955;
@@ -70,10 +77,12 @@
   --c-2a24190d: #2a24190d;
   --c-2a2620: #2a2620;
   --c-2a2920: #2a2920;
+  --c-2f2b21: #2f2b21;
   --c-332d22: #332d22;
   --c-332e23: #332e23;
   --c-39382e88: #39382e88;
   --c-3f3b2f: #3f3b2f;
+  --c-433b2c: #433b2c;
   --c-4a3f2c: #4a3f2c;
   --c-4a4536: #4a4536;
   --c-4c2424: #4c2424;
@@ -93,6 +102,7 @@
   --c-80694399: #80694399;
   --c-8fa3a0: #8fa3a0;
   --c-91784d: #91784d;
+  --c-918164: #918164;
   --c-9b7a46: #9b7a46;
   --c-9ccbee: #9ccbee;
   --c-9ccbee66: #9ccbee66;
@@ -141,6 +151,7 @@
   --c-d9cfba: #d9cfba;
   --c-ddd2bb: #ddd2bb;
   --c-dfcba4: #dfcba4;
+  --c-e05879: #e05879;
   --c-e0c48a: #e0c48a;
   --c-e1c797: #e1c797;
   --c-e1d3b4: #e1d3b4;
@@ -163,6 +174,8 @@
   --c-fff3d099: #fff3d099;
   --c-fff5de: #fff5de;
   --c-ffffff12: #ffffff12;
+  --c-ffffff14: #ffffff14;
+  --c-ffffff1f: #ffffff1f;
 }
 :root[data-theme="light"] {
   color-scheme: light;
@@ -176,11 +189,15 @@
   --c-000000: #000000;
   --c-00000018: #0000000b;
   --c-00000059: #00000028;
+  --c-00000066: #0000002e;
+  --c-00000080: #0000003a;
   --c-0000008c: #0000003f;
   --c-00000099: #00000045;
   --c-000000a0: #00000048;
+  --c-000000a6: #0000004b;
   --c-000000aa: #0000004c;
   --c-000000b0: #0000004f;
+  --c-000000bf: #00000056;
   --c-000000c0: #00000056;
   --c-000000cc: #0000005c;
   --c-050504f7: #fff9e5f7;
@@ -189,6 +206,7 @@
   --c-0c0c0bd9: #f9f0dcd9;
   --c-0e100d: #f5ebd7;
   --c-10110f: #f3e9d5;
+  --c-11120e: #f2e8d4;
   --c-120e06: #f6ecd8;
   --c-12110ed9: #f2e8d5d9;
   --c-121210f5: #f1e7d4f5;
@@ -199,9 +217,11 @@
   --c-19140b: #ede3d0;
   --c-191a17: #e6ddc9;
   --c-1a1915: #e7deca;
+  --c-1c1a14: #e6dcc9;
   --c-1d170c: #e9dfcc;
   --c-1d1c18: #e3dac6;
   --c-1f1e19: #e1d7c4;
+  --c-22201a: #ded4c1;
   --c-24231c: #dad1be;
   --c-24241e33: #d9d0bd33;
   --c-28201955: #dcd2bf55;
@@ -209,10 +229,12 @@
   --c-2a24190d: #d8cebb0d;
   --c-2a2620: #d6ccb9;
   --c-2a2920: #d3cab7;
+  --c-2f2b21: #d0c6b3;
   --c-332d22: #cdc3b0;
   --c-332e23: #ccc3b0;
   --c-39382e88: #bbbaad88;
   --c-3f3b2f: #b9b5a6;
+  --c-433b2c: #bcb3a1;
   --c-4a3f2c: #baad97;
   --c-4a4536: #afaa98;
   --c-4c2424: #4c2424;
@@ -232,6 +254,7 @@
   --c-80694399: #957d5799;
   --c-8fa3a0: #455a57;
   --c-91784d: #8b6e3b;
+  --c-918164: #7c6a49;
   --c-9b7a46: #8d6828;
   --c-9ccbee: #003b5c;
   --c-9ccbee66: #003b5c66;
@@ -280,6 +303,7 @@
   --c-d9cfba: #372d19;
   --c-ddd2bb: #352b15;
   --c-dfcba4: #402d00;
+  --c-e05879: #b6084d;
   --c-e0c48a: #4a2f00;
   --c-e1c797: #462d00;
   --c-e1d3b4: #362a09;
@@ -302,6 +326,8 @@
   --c-fff3d099: #20150099;
   --c-fff5de: #1c1401;
   --c-ffffff12: #0f0f0f12;
+  --c-ffffff14: #0f0f0f14;
+  --c-ffffff1f: #0f0f0f1f;
 }
 :root[data-theme="dark"] {
   color-scheme: dark;
@@ -315,11 +341,15 @@
   --c-000000: #000000;
   --c-00000018: #00000018;
   --c-00000059: #00000059;
+  --c-00000066: #00000066;
+  --c-00000080: #00000080;
   --c-0000008c: #0000008c;
   --c-00000099: #00000099;
   --c-000000a0: #000000a0;
+  --c-000000a6: #000000a6;
   --c-000000aa: #000000aa;
   --c-000000b0: #000000b0;
+  --c-000000bf: #000000bf;
   --c-000000c0: #000000c0;
   --c-000000cc: #000000cc;
   --c-050504f7: #010101f7;
@@ -328,6 +358,7 @@
   --c-0c0c0bd9: #030303d9;
   --c-0e100d: #040404;
   --c-10110f: #040404;
+  --c-11120e: #050504;
   --c-120e06: #040403;
   --c-12110ed9: #040404d9;
   --c-121210f5: #050505f5;
@@ -338,9 +369,11 @@
   --c-19140b: #060605;
   --c-191a17: #080808;
   --c-1a1915: #080807;
+  --c-1c1a14: #080808;
   --c-1d170c: #070706;
   --c-1d1c18: #090909;
   --c-1f1e19: #0a0a0a;
+  --c-22201a: #0b0b0b;
   --c-24231c: #1d1d1b;
   --c-24241e33: #1d1d1c33;
   --c-28201955: #1d1b1a55;
@@ -348,10 +381,12 @@
   --c-2a24190d: #201e1c0d;
   --c-2a2620: #21201f;
   --c-2a2920: #222220;
+  --c-2f2b21: #252422;
   --c-332d22: #272624;
   --c-332e23: #282725;
   --c-39382e88: #2f2f2d88;
   --c-3f3b2f: #333230;
+  --c-433b2c: #343330;
   --c-4a3f2c: #393733;
   --c-4a4536: #3c3b38;
   --c-4c2424: #3e2626;
@@ -371,6 +406,7 @@
   --c-80694399: #71634e99;
   --c-8fa3a0: #8e9594;
   --c-91784d: #807159;
+  --c-918164: #80796e;
   --c-9b7a46: #877457;
   --c-9ccbee: #c4cbd0;
   --c-9ccbee66: #c4cbd066;
@@ -419,6 +455,7 @@
   --c-d9cfba: #d7d5d2;
   --c-ddd2bb: #dad8d5;
   --c-dfcba4: #d5d2cd;
+  --c-e05879: #b86978;
   --c-e0c48a: #d0ccc4;
   --c-e1c797: #d3cfc8;
   --c-e1d3b4: #dcdad5;
@@ -441,6 +478,8 @@
   --c-fff3d099: #f0eee999;
   --c-fff5de: #f0eeeb;
   --c-ffffff12: #eeeeee12;
+  --c-ffffff14: #eeeeee14;
+  --c-ffffff1f: #eeeeee1f;
 }
 :root:not([data-theme]) {
   --ink: #282928;
@@ -452,6 +491,7 @@
   --c-0c0c0bd9: #252524d9;
   --c-0e100d: #252824;
   --c-10110f: #272926;
+  --c-11120e: #282924;
   --c-120e06: #2b261b;
   --c-12110ed9: #2a2824d9;
   --c-121210f5: #292926f5;
@@ -462,9 +502,11 @@
   --c-19140b: #302a1e;
   --c-191a17: #2d2e2a;
   --c-1a1915: #2e2d28;
+  --c-1c1a14: #302e26;
   --c-1d170c: #332b1d;
   --c-1d1c18: #302f2a;
   --c-1f1e19: #31302a;
+  --c-22201a: #34312a;
   --c-24231c: #34332a;
   --c-24241e33: #34342c33;
   --c-28201955: #3a302755;
@@ -472,10 +514,12 @@
   --c-2a24190d: #3b33250d;
   --c-2a2620: #39342d;
   --c-2a2920: #38372b;
+  --c-2f2b21: #3c372b;
   --c-332d22: #40382b;
   --c-332e23: #3f392b;
   --c-39382e88: #413f3388;
   --c-3f3b2f: #454132;
+  --c-433b2c: #4a402e;
   --c-4a3f2c: #4f422a;
   --c-4a4536: #4c4634;
   --c-4c2424: #5c2a2a;
@@ -1423,6 +1467,27 @@ html:has(.terms-gate[open]) { overflow: hidden; }
 
 /* Sidebar Webamp player (static/js/webamp-dock.js). The dock covers the viewport so the windows can
    be dragged anywhere; only the windows take clicks, so the page underneath stays usable. */
+/* The sidebar's Musical Recap (partials/navbar.html, static/js/musical-recap.js): a round 3D play/pause button, after
+   havardob's "3D Pause Button" (https://codepen.io/havardob/pen/bGwmYKQ, a public CodePen, so MIT), drawn smaller and
+   in the theme's tones, with "Musical Recap For The Kids" set round it (an SVG textPath). A well, a raised disc, a dish
+   and two pills: stopped, the pills close into a play triangle; playing, the disc sinks a little and the pause pills
+   turn the pen's pink. */
+.musical-recap { position: relative; width: 7.5rem; height: 7.5rem; margin: -.8rem auto 1.2rem; }
+.musical-recap[hidden] { display: none; }
+.musical-recap-ring { position: absolute; inset: 0; width: 100%; height: 100%; overflow: visible; pointer-events: none; fill: var(--brass); font-family: var(--display); font-size: 10.5px; font-weight: 600; letter-spacing: .06em; }
+.musical-recap-button { -webkit-tap-highlight-color: transparent; position: absolute; top: 50%; left: 50%; width: 4.7rem; height: 4.7rem; margin: -2.35rem 0 0 -2.35rem; padding: 0; border: 0; border-radius: 50%; background-color: var(--c-11120e); box-shadow: inset 0 4px 8px 0 var(--c-000000a6), 0 1px 0 0 var(--c-ffffff14); transition: .5s ease; cursor: pointer; }
+.musical-recap-button:focus-visible { outline: 1px solid var(--brass); outline-offset: 3px; }
+.musical-recap-button::before { content: ""; position: absolute; top: 15%; left: 15%; width: 70%; height: 70%; border-radius: 50%; background-image: linear-gradient(var(--c-433b2c), var(--c-1c1a14)); box-shadow: 0 6px 8px 0 var(--c-000000b0), inset 0 -1px 0 0 var(--c-00000066); transition: .5s ease; }
+.musical-recap-button::after { content: ""; position: absolute; top: 30%; left: 30%; width: 40%; height: 40%; border-radius: 50%; background-image: linear-gradient(var(--c-22201a), var(--c-2f2b21)); box-shadow: inset 0 -1px 0 0 var(--c-ffffff1f), inset 0 1px 0 0 var(--c-00000066); }
+.musical-recap-button span { position: absolute; z-index: 1; top: 50%; left: 50%; }
+.musical-recap-button span::before, .musical-recap-button span::after { content: ""; position: absolute; top: 50%; width: .24rem; height: .78rem; border-radius: 99em; background-color: var(--c-918164); box-shadow: inset 1px -1px 2px 0 var(--c-00000066); transform: translate(-50%, -50%); clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); transition: .25s ease; }
+.musical-recap-button span::before { left: -.3rem; }
+.musical-recap-button span::after { left: .3rem; }
+/* Stopped: the left pill widens into a play triangle (the right one tucks in behind it). */
+.musical-recap-button:not(.is-playing) span::before { left: .08rem; width: .66rem; border-radius: .08rem; clip-path: polygon(0 0, 100% 50%, 100% 50%, 0 100%); }
+.musical-recap-button:not(.is-playing) span::after { left: .08rem; opacity: 0; }
+.musical-recap-button.is-playing::before { box-shadow: 0 2px 8px 0 var(--c-00000080), inset 0 -1px 0 0 var(--c-00000066); }
+.musical-recap-button.is-playing span::before, .musical-recap-button.is-playing span::after { background-color: var(--c-e05879); box-shadow: inset 1px -1px 2px 0 var(--c-000000bf); }
 .webamp-open { width: 100%; margin: -1rem 0 1.75rem; font: inherit; font-size: .9rem; cursor: pointer; color: var(--c-e1c797); background: var(--surface); border: 1px solid var(--c-806943); padding: .45rem .65rem; }
 .webamp-open:hover, .webamp-open:focus-visible { color: var(--c-fff5de); border-color: var(--brass); background: var(--c-b89a6314); }
 .webamp-open:disabled { cursor: default; color: var(--muted); border-color: var(--line); background: var(--surface); }
