@@ -1805,6 +1805,13 @@ a.page-emblem:focus-visible { outline: 2px solid var(--brass); outline-offset: 6
    from the printout are in the dictionary's Wex blue. */
 .anthology-name { color: var(--c-9ccbee) !important; }
 .name-sep { color: var(--muted); }
+/* "Notify admin of mistake" beside a linked Facebook profile (partials/lpPosts.html): a small link to the commentary
+   bot's "Ask a question", with its hint in a tooltip on hover or focus. */
+.profile-mistake { position: relative; font-size: .72rem; }
+.profile-mistake a { color: var(--muted); text-decoration: underline dotted; text-underline-offset: .2em; }
+.profile-mistake a:hover, .profile-mistake a:focus-visible { color: var(--brass); }
+.profile-mistake-tip { position: absolute; left: 0; top: calc(100% + .4rem); z-index: 5; width: max-content; max-width: min(22rem, 80vw); padding: .5rem .7rem; font-size: .8rem; line-height: 1.45; color: var(--paper); background: var(--surface); border: 1px solid var(--line); border-radius: 3px; opacity: 0; visibility: hidden; pointer-events: none; transition: opacity .15s; }
+.profile-mistake:hover .profile-mistake-tip, .profile-mistake a:focus-visible + .profile-mistake-tip { opacity: 1; visibility: visible; }
 .anthology-copy { margin: 1.25rem 0 0; font-size: .75rem; color: var(--muted); }
 .anthology-copy > summary { padding: .25rem 0; cursor: pointer; }
 .anthology-copy[open] > summary { color: var(--c-d6ba86); }

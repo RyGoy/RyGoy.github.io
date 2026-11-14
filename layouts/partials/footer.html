@@ -57,6 +57,7 @@
   <defs>
     <linearGradient id="strut-skin"><stop offset="0" stop-color="#f2c9b1"/><stop offset=".55" stop-color="#fde6d6"/><stop offset="1" stop-color="#f5d0ba"/></linearGradient>
     <linearGradient id="strut-red"><stop offset="0" stop-color="#8e1129"/><stop offset=".5" stop-color="#c41e3a"/><stop offset=".82" stop-color="#e1475f"/><stop offset="1" stop-color="#b51a35"/></linearGradient>
+    <linearGradient id="strut-blue"><stop offset="0" stop-color="#0f2a6b"/><stop offset=".5" stop-color="#1d4fc4"/><stop offset=".82" stop-color="#4f7fe8"/><stop offset="1" stop-color="#1a46b0"/></linearGradient>
     <linearGradient id="strut-hair-g" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#3a2f78"/><stop offset=".45" stop-color="#271f55"/><stop offset="1" stop-color="#4b3d9a"/></linearGradient>
     <linearGradient id="strut-iris" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1e1550"/><stop offset=".55" stop-color="#5b48c8"/><stop offset="1" stop-color="#b3a5ff"/></linearGradient>
   </defs>
@@ -65,9 +66,9 @@
   <g class="strut-leg"><path d="M28.5 76L34 76C34.6 84 34 90 33.4 96C33.6 106 33 124 32.6 136L30.6 136C30 126 28.2 112 28.8 104C29.2 100 29.6 98 29.6 96C29.2 90 28.2 84 28.5 76Z" fill="url(#strut-skin)"/><path d="M30.2 135.4C31.4 136.4 32.7 136.3 33.1 135.7C34.6 138.8 36.9 141.6 39.5 144.4C40 145.2 39.4 146 38.3 146C36.1 146 34.6 145.3 33.4 143.9C32.6 142.8 31.7 141.6 30.9 141.2Z" fill="url(#strut-red)" stroke="#6d0c1c" stroke-width=".5"/><path d="M31 140.6L30.4 146.2" stroke="#6d0c1c" stroke-width="1"/></g>
   <g class="strut-upper">
     <g class="strut-skirt">
-      <path d="M27.6 53.5L36.6 53.5C38.8 58 40 62 40.4 67C41 74 41.6 82 42.6 90C36 91.6 28 91.6 21.6 90C22.4 82 23.4 74 24.4 67C25 62 26 57.5 27.6 53.5Z" fill="url(#strut-red)" stroke="#7d0e20" stroke-width=".6"/>
-      <path d="M31 57.5C30.6 70 29.6 80 28.6 90.6M35 57.5C35.6 70 36.6 80 37.6 90.6" fill="none" stroke="#7d0e20" stroke-width=".55" stroke-opacity=".6"/>
-      <path d="M38.4 60C39.2 66 39.8 74 40.4 85" fill="none" stroke="#f07a8c" stroke-width=".8" stroke-opacity=".55"/>
+      <path d="M27.6 53.5L36.6 53.5C38.8 58 40 62 40.4 67C41 74 41.6 82 42.6 90C36 91.6 28 91.6 21.6 90C22.4 82 23.4 74 24.4 67C25 62 26 57.5 27.6 53.5Z" fill="url(#strut-red)" stroke="#7d0e20" stroke-width=".6" data-blue="fill: url(#strut-blue); stroke: #0b1f52"/>
+      <path d="M31 57.5C30.6 70 29.6 80 28.6 90.6M35 57.5C35.6 70 36.6 80 37.6 90.6" fill="none" stroke="#7d0e20" stroke-width=".55" stroke-opacity=".6" data-blue="stroke: #0b1f52"/>
+      <path d="M38.4 60C39.2 66 39.8 74 40.4 85" fill="none" stroke="#f07a8c" stroke-width=".8" stroke-opacity=".55" data-blue="stroke: #8fb0ff"/>
       <path d="M27.4 53.2h9.4v2.2h-9.4z" fill="#1c1515"/><path d="M34.1 53h2v2.6h-2z" fill="none" stroke="#d4af37" stroke-width=".55"/>
     </g>
     <path class="strut-hair" d="M38 7C34 3 27 3 23.4 7C20.4 10.5 20.6 16 20 22C19.4 30 17.6 38 15.6 46C14.8 50 13.8 55 12.4 60.5C15.4 58.6 17 56 18 53C18.1 57 17.4 60.4 16.2 63.6C19.6 61.4 21.4 57.8 22.2 54C22.8 57 23 60 22.4 63C25.2 60 26.2 55.4 26.2 50C26.2 42 27.2 34 28.6 27C29.2 23 27.4 17 28 12Z" fill="url(#strut-hair-g)"/>
@@ -123,6 +124,8 @@
       // Every tenth click: not a goat. She crosses, can't be shot, and isn't one of the herd.
       if (++clicks % 10 === 0) {
         const lady = strutter.content.firstElementChild.cloneNode(true);
+        // One time in seven or so (15%) her skirt is blue: its parts carry their blue in data-blue.
+        if (Math.random() < 0.15) lady.querySelectorAll('[data-blue]').forEach((el) => el.setAttribute('style', el.dataset.blue));
         lady.addEventListener('animationend', (e) => { if (e.animationName === 'strut-cross') lady.remove(); });
         document.body.append(lady);
         return;
