@@ -7,7 +7,8 @@
 // .is-playing (archive.css). Without JavaScript the button stays hidden.
 // Lyrics: when the button has data-lyrics (an LRC file: lines of text, each optionally after [mm:ss.xx] times), a small
 // card floats in the corner while it plays (.recap-lyrics), fetched the first time it plays on a page. With times, the
-// line being sung is marked and kept in view; without, it is a list to scroll. Its × hides it until Play is next
+// line being sung is marked and kept in view, and an empty timed line ('[01:10.00]' alone) marks an instrumental
+// break: the card fades out until the next sung line (and before the first); without times, it is a list to scroll. Its × hides it until Play is next
 // pressed, on every page (sessionStorage).
 (() => {
   const button = document.getElementById('musical-recap');
@@ -80,7 +81,8 @@
     const CLOSED = 'ttfl-musical-recap-lyrics-closed';
     const closed = () => { try { return sessionStorage.getItem(CLOSED) === '1'; } catch { return false; } };
     const setClosed = (on) => { try { if (on) sessionStorage.setItem(CLOSED, '1'); else sessionStorage.removeItem(CLOSED); } catch { /* not kept */ } };
-    let card = null; let list = null; let lines = []; let current = -1; let loading = null;
+    let card = null; let list = null; let lines = []; let current = -2; let loading = null;  // -2: not yet placed (-1 is before the first line)
+    let resting = false;  // in an instrumental break (timed lyrics only)
 
     // LRC: '[01:02.50]text' (a line may carry several times); tags such as [ar:...] are skipped.
     const parse = (text) => {
@@ -112,6 +114,7 @@
       for (const line of lines) {
         const item = document.createElement('li');
         item.textContent = line.text || '\u00a0';
+        if (line.at !== null && !line.text) item.className = 'is-break';
         list.append(item);
       }
       card.append(head, list);
@@ -125,15 +128,17 @@
       if (at === current) return;
       list.children[current]?.classList.remove('is-current');
       current = at;
+      const rest = current < 0 || !lines[current].text;
+      if (rest !== resting) { resting = rest; update(); }
+      if (rest) return;
       const item = list.children[current];
-      if (!item) return;
       item.classList.add('is-current');
       // Keep it in the middle of the card (scrolling the list only, never the page).
       list.scrollTo({ top: item.offsetTop - list.clientHeight / 2 + item.offsetHeight / 2, behavior: card.classList.contains('is-shown') ? 'smooth' : 'auto' });
     };
 
     const update = () => {
-      const show = !sound.paused && !closed();
+      const show = !sound.paused && !closed() && !resting;
       if (show && !card) {
         loading ??= fetch(url).then((r) => (r.ok ? r.text() : Promise.reject(new Error(r.status))))
           .then((text) => { lines = parse(text); if (lines.length) build(); })

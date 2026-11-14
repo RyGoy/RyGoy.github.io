@@ -1500,6 +1500,7 @@ html:has(.terms-gate[open]) { overflow: hidden; }
 .recap-lyrics.is-timed .recap-lyrics-lines { padding-block: 2.6rem; scrollbar-width: none; -webkit-mask: linear-gradient(#0000, #000 30%, #000 70%, #0000); mask: linear-gradient(#0000, #000 30%, #000 70%, #0000); }
 .recap-lyrics.is-timed li { opacity: .55; transition: opacity .3s ease, color .3s ease; }
 .recap-lyrics.is-timed li.is-current { opacity: 1; color: var(--paper); }
+.recap-lyrics li.is-break { display: none; }
 @media (prefers-reduced-motion: reduce) { .recap-lyrics { transform: none; transition: none; } .recap-lyrics.is-timed li { transition: none; } }
 @media print { .recap-lyrics { display: none; } }
 .webamp-open { width: 100%; margin: -1rem 0 1.75rem; font: inherit; font-size: .9rem; cursor: pointer; color: var(--c-e1c797); background: var(--surface); border: 1px solid var(--c-806943); padding: .45rem .65rem; }
