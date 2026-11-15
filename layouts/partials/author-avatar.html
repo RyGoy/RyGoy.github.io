@@ -1,0 +1,6 @@
+{{- /* The author's picture beside their name (partials/lpPosts.html, partials/article.html), from data/author_avatars.json
+       by name: the member's current Facebook profile picture, or one the site owner supplied. Nothing when there is
+       none. Context: the name. Decorative (the name is beside it), so no alt text, and kept out of the search index. */ -}}
+{{- with index (site.Data.author_avatars.avatars | default dict) . -}}
+<img class="author-avatar" src="{{ . | relURL }}" width="40" height="40" alt="" loading="lazy" data-pagefind-ignore>
+{{- end -}}
