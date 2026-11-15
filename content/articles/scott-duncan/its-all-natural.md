@@ -43,4 +43,6 @@ Peer review:http://www.ncbi.nlm.nih.gov/pubmed?linkname=pubmed_pubmed_reviews&fr
 South Africa as a nation… will believe ANTYHING:http://news.bbc.co.uk/2/hi/africa/5319680.stm
 Sex with virgins cures AIDS: http://en.wikipedia.org/wiki/Virgin_cleansing_myth
 
+{{< youtube HhGuXCuDb1U >}}
+
 <p><a class="" href="https://web.archive.org/web/20190528015618/https://kentbarrett.com/its-all-natural/" targt="_blank">[Kent Barrett]</a></p>
