@@ -11,7 +11,7 @@
       {{- /* The byline's picture: its author's, or else that of the author whose folder it is in (articles/<name>/, e.g.
              Scott Duncan's articles bylined ROGUESUPPORT INC). */}}
       {{ $avatars := site.Data.author_avatars.avatars | default dict }}
-      {{ $byline := strings.TrimSpace (.Params.author | default "") }}
+      {{ $byline := trim (.Params.author | default "") " \t\r\n\u00a0" }}
       {{ $folder := "" }}{{ with .File }}{{ $folder = title (replace (path.Base .Dir) "-" " ") }}{{ end }}
       {{ $face := cond (isset $avatars $byline) $byline $folder }}
       {{ with .Params.author }}<p class="article-author">{{ partial "author-avatar.html" $face }}<span data-pagefind-filter="Author">{{ . }}</span></p>{{ end }}
