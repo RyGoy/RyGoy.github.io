@@ -2,7 +2,7 @@
 author = "Tara Duncan"
 title = "YOU THINK WRONG, AND VALUE THE WRONG THINGS"
 date = "2014-05-05"
-description = ""
+description = "Tara Duncan on the people who come to realize they \"think wrong and value the wrong things\", and return asking for help."
 tags = ["NARRATIVE"]
 weight = "1"
 +++

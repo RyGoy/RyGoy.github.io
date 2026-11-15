@@ -2,7 +2,7 @@
 author = "Tara Duncan"
 title = "If you see something, say something!"
 date = "2016-05-03"
-description = ""
+description = "Tara Duncan on how the dystopias of Huxley, Orwell and Bradbury are fast becoming our world. First posted on Facebook in May 2016."
 tags = ["NARRATIVE"]
 categories = ["PARASITES", "CITIZENSHIP", "RESPONSIBILITY"]
 +++

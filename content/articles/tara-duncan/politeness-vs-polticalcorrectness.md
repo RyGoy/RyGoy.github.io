@@ -2,7 +2,7 @@
 author = "Tara Duncan"
 title = "Politeness vs. Political Correctness"
 date = "2016-08-27"
-description = ""
+description = "Tara Duncan on the difference between politeness and political correctness, starting from a door held open for a stranger."
 tags = ["NARRATIVE"]
 +++
 

@@ -2,7 +2,7 @@
 author = " Scott Duncan "
 title = "Hate Speech"
 date = "2017-02-08"
-description = ""
+description = "Why \"hate speech\" is a legal invention: the law defines hate speech but never hate itself, since defining it would criminalize an emotion."
 tags = ["ACCOUNTING", "NARRATIVE"]
 categories = ["PARASITES", "CRIME"]
 +++

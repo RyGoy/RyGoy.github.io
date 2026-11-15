@@ -1,0 +1,15 @@
+{{- /* Returning partial (use via partialCached): the posts and comments that articles were made from, as a dict of
+       post or comment ID → article. Read from each article's opening line ("*First posted to THE TENDER FOR LAW …",
+       "*First appeared …", "*Posted to …", "*Shared to …"), whose link names the post (/vol_x/<post id>/) or the
+       comment (/vol_x/<post id>/#entry-<comment id>). partials/lpPosts.html links the post or comment back to its
+       article, so search engines see the article as the main copy of the text and readers can find it. */ -}}
+{{- $sources := dict -}}
+{{- range where site.RegularPages "Section" "articles" -}}
+  {{- $article := . -}}
+  {{- range findRE `(?m)^\*(First posted|First appeared|Posted to|Shared to) [^\n]*?\]\(/vol_[a-z]+/[0-9_]+/(#entry-[0-9]+)?\)` .RawContent 1 -}}
+    {{- $ids := split (replaceRE `(?s).*\]\(/vol_[a-z]+/([0-9_]+)/(#entry-([0-9]+))?\)$` "$1 $3" .) " " -}}
+    {{- $id := cond (ne (index $ids 1) "") (index $ids 1) (index $ids 0) -}}
+    {{- $sources = merge $sources (dict $id $article) -}}
+  {{- end -}}
+{{- end -}}
+{{- return $sources -}}

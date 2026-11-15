@@ -2,7 +2,7 @@
 author = "ROGUESUPPORT INC"
 title = "THE TENDER FOR LAW – CHILDREN’S AID SOCIETY [C.A.S] FOR IDIOTS"
 date = "2014-05-05"
-description = ""
+description = "Scott Duncan's 2013 \"emergency article\" answering Dean Clifford on family services and the law, read through Ontario's Child and Family Services Act."
 tags = ["TRUSTS"]
 +++
 *First posted to THE TENDER FOR LAW on 2013-03-13. [Read the original post and its comments in Volume 1](/vol_i/462493170453287_491707400865197/).*

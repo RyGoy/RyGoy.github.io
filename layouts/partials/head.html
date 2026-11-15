@@ -11,24 +11,31 @@
 <link rel="canonical" href="{{ .Permalink }}">
 {{ if or (isset .Params "post_id") (eq .Kind "404") }}<meta name="robots" content="noindex, follow">{{ end }}
 {{ partial "structured-data.html" . }}
-{{/* Link previews when the page is shared: its title, its description or else the Grand Fluff Auto pop-up's text,
-     and the pop-up's picture (site.Params.preview in config.toml). A portrait picture, so a "summary" card. */}}
-{{ with site.Params.preview }}
+{{/* Link previews when the page is shared: its title and description, and a picture: a post's or comment's own
+     recovered picture (data/photos.json, the first one, when it is at least 200 pixels across and no more than twice
+     as tall as it is wide), or else the site's card (site.Params.share in config.toml, 1200 by 630, the size Facebook
+     and X show full width, so a "summary_large_image" card). */}}
+{{ $share := site.Params.share }}
+{{ $img := dict "src" $share.image "w" $share.image_width "h" $share.image_height "alt" $share.image_alt }}
+{{ with .Params.id }}{{ with site.Data.photos }}{{ with index .entries $.Params.id }}{{ with index . 0 }}
+  {{ if and (ge .w 200) (le .h (mul .w 2)) }}
+    {{ $img = dict "src" .src "w" .w "h" .h "alt" (printf "Picture shared in this %s" (cond (isset $.Params "post_id") "comment" "post")) }}
+  {{ end }}
+{{ end }}{{ end }}{{ end }}{{ end }}
 <meta property="og:site_name" content="The Tender For Law">
 <meta property="og:type" content="{{ if $.IsPage }}article{{ else }}website{{ end }}">
 <meta property="og:title" content="{{ $title }}">
-<meta property="og:description" content="{{ $meta.description | default .description }}">
+<meta property="og:description" content="{{ $meta.description }}">
 <meta property="og:url" content="{{ $.Permalink }}">
-<meta property="og:image" content="{{ .image | absURL }}">
-<meta property="og:image:width" content="{{ .image_width }}">
-<meta property="og:image:height" content="{{ .image_height }}">
-<meta property="og:image:alt" content="{{ .image_alt }}">
-<meta name="twitter:card" content="summary">
+<meta property="og:image" content="{{ $img.src | absURL }}">
+<meta property="og:image:width" content="{{ $img.w }}">
+<meta property="og:image:height" content="{{ $img.h }}">
+<meta property="og:image:alt" content="{{ $img.alt }}">
+<meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="{{ $title }}">
-<meta name="twitter:description" content="{{ $meta.description | default .description }}">
-<meta name="twitter:image" content="{{ .image | absURL }}">
-<meta name="twitter:image:alt" content="{{ .image_alt }}">
-{{ end }}
+<meta name="twitter:description" content="{{ $meta.description }}">
+<meta name="twitter:image" content="{{ $img.src | absURL }}">
+<meta name="twitter:image:alt" content="{{ $img.alt }}">
 <link rel="icon" href="{{ "images/favicon-crucifix.svg" | relURL }}" type="image/svg+xml">
 <link rel="icon" href="{{ "images/favicon-32.png" | relURL }}" type="image/png" sizes="32x32">
 <link rel="apple-touch-icon" href="{{ "images/apple-touch-icon.png" | relURL }}">

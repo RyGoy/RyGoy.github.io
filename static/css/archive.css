@@ -1831,6 +1831,9 @@ a.page-emblem:focus-visible { outline: 2px solid var(--brass); outline-offset: 6
 .profile-mistake a:hover, .profile-mistake a:focus-visible { color: var(--brass); }
 .profile-mistake-tip { position: absolute; left: 0; top: calc(100% + .4rem); z-index: 5; width: max-content; max-width: min(22rem, 80vw); padding: .5rem .7rem; font-size: .8rem; line-height: 1.45; color: var(--paper); background: var(--surface); border: 1px solid var(--line); border-radius: 3px; opacity: 0; visibility: hidden; pointer-events: none; transition: opacity .15s; }
 .profile-mistake:hover .profile-mistake-tip, .profile-mistake a:focus-visible + .profile-mistake-tip { opacity: 1; visibility: visible; }
+/* "Also published as an article" under a post or comment that became one (partials/lpPosts.html). */
+.entry-article { margin: .9rem 0 0; font-size: .9rem; font-style: italic; color: var(--muted); }
+.entry-article a { color: var(--brass); }
 .anthology-copy { margin: 1.25rem 0 0; font-size: .75rem; color: var(--muted); }
 .anthology-copy > summary { padding: .25rem 0; cursor: pointer; }
 .anthology-copy[open] > summary { color: var(--c-d6ba86); }

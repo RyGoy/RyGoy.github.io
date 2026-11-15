@@ -32,8 +32,15 @@ live_standby = true
 live_standby_text = "Standby"
 live_standby_from = "19:45"
 
-# Link previews (Open Graph / Twitter tags in partials/head.html) for pages with nothing of their own: the Grand
-# Fluff Auto pop-up's picture and text. partials/footer.html shows the same picture in the pop-up.
+# Link previews (Open Graph / Twitter tags in partials/head.html): the picture for pages with none of their own, a
+# 1200 by 630 card with the seal and the site's name (made with ImageMagick from images/seal.svg and the site font).
+[params.share]
+image = "images/share-card.jpg"
+image_width = 1200
+image_height = 630
+image_alt = "The Tender For Law: the seal and the site's name, with the words: The Facebook group archive, 2013–2018."
+
+# The Grand Fluff Auto pop-up's picture and text (partials/footer.html).
 [params.preview]
 image = "images/grand-fluff-auto.jpg"
 image_width = 768

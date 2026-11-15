@@ -2,7 +2,7 @@
 author = "Ceit Butler"
 title = "Channeling Nancy (Or; Why Lying Is Really Bad…)"
 date = "2016-01-01"
-description = ""
+description = "Ceit Butler, a lifelong reader raised on Narnia, Middle Earth and Asimov, on why lying is really bad."
 tags = ["ACCOUNTING", "NARRATIVE"]
 weight = "12"
 +++

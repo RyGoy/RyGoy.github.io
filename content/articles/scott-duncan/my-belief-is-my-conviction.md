@@ -2,7 +2,7 @@
 author = "ROGUESUPPORT INC"
 title = "My Belief Is My Conviction"
 date = "2014-05-05"
-description = ""
+description = "Scott Duncan on his conviction that all belief is evil, told through a conversation with a former helmsman of the Tycho-Brahe."
 tags = ["ACCOUNTING", "TAXATION"]
 +++
 

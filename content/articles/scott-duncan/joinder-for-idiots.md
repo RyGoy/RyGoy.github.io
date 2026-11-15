@@ -2,7 +2,7 @@
 author = "ROGUESUPPORT INC"
 title = "JOINDER FOR IDIOTS"
 date = "2014-05-05"
-description = ""
+description = "The legal name, its case and spelling, and what they really mean: why a name in capitals is administrative policy, not a corporation."
 tags = ["AGENCY", "TRUSTS"]
 weight = "15"
 +++

@@ -2,7 +2,7 @@
 author = "Tara Duncan"
 title = "Our Thoughts and Prayers are With You"
 date = "2016-10-11"
-description = ""
+description = "Why \"our thoughts and prayers are with you\" does nothing: Tara Duncan on hollow platitudes, and on putting care into action."
 tags = ["NARRATIVE"]
 weight = "2"
 +++

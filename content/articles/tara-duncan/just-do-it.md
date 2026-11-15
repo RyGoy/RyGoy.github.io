@@ -2,7 +2,7 @@
 author = "Tara Duncan"
 title = "Just Do It"
 date = "2016-01-20 03:45:00"
-description = ""
+description = "People who want to do something, do it: Tara Duncan on the difference between researching a goal and actually doing it."
 tags = ["NARRATIVE"]
 +++
 <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">

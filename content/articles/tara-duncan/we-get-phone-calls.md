@@ -2,7 +2,7 @@
 author = "Tara Duncan"
 title = "We Get Phone Calls"
 date = "2016-09-24"
-description = ""
+description = "From fake Windows support calls to vendors who profit from credulity: Tara Duncan on those who make money from what people don't know."
 tags = ["NARRATIVE"]
 +++
 <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">

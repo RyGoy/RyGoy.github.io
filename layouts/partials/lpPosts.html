@@ -19,6 +19,8 @@
 {{ with .Params.message }}<div class="post-message">{{ range split (replace . "\r\n" "\n") "\n\n" }}<p>{{ . }}</p>{{ end }}</div>{{ end }}{{ partial "archive-links.html" (dict "page" . "field" "message") }}
 {{ partial "youtube-embeds.html" (printf "%s\n%s" (.Params.message | default "") (.Params.link | default "")) }}
 {{ partial "entry-photos.html" . }}
+{{- /* A post or comment that became an article links to it (partials/article-sources.html). */}}
+{{ with .Params.id }}{{ with index (partialCached "article-sources.html" "articles") . }}<p class="entry-article" data-pagefind-ignore>Also published as an article: <a href="{{ .RelPermalink }}">{{ .Title }}</a></p>{{ end }}{{ end }}
 {{ if or .Params.name .Params.caption .Params.description .Params.link }}
   <div class="source-card">
     {{ with .Params.link }}<a class="source-link" href="{{ . }}">{{ $.Params.name | default . }}</a>{{ partial "archive-links.html" (dict "page" $ "field" "link") }}{{ else }}{{ with .Params.name }}<p class="source-title">{{ . }}</p>{{ end }}{{ end }}

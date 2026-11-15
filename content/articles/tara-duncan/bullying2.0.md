@@ -2,7 +2,7 @@
 author = "Tara Duncan"
 title = "Bullying 2.0"
 date = "2015-12-29"
-description = ""
+description = "Tara Duncan on bullying: a practice as old as recorded history, from the schoolyards of her childhood to today."
 tags = ["AGENCY", "NARRATIVE"]
 categories = ["RESPONSIBILITY", "CRIME"]
 +++
