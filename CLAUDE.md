@@ -84,6 +84,11 @@ Posts and comments show archived copies of their outside links: under a post's l
 - The Wayback Machine refuses to search some sites (such as Dropbox, "excluded from the Wayback Machine"); the script records those as having no copy after checking that the Wayback Machine answers other searches.
 - Archived links are kept out of the search index (`data-pagefind-ignore`).
 
+## Recovered pictures
+
+- The export kept photo posts as empty posts and pictures in comments as addresses only. Pictures recovered since are shown under their post or comment (`partials/entry-photos.html`, called from `lpPosts.html`), each linking to the full-size file, with a caption saying where it came from and that this site added it: the group's Facebook page (`facebook`), the picture's own address (`original`) or the Wayback Machine's copy (`wayback`, linked, with its date).
+- `scripts/import_photos.py <photo-collection folder>` copies them into `static/photos/<volume>/<post or comment ID>.<jpg|png|gif>` and writes `data/photos.json` (keyed by post or comment ID). It rebuilds both from the collection's `facebook/results.csv` and `outside/results.csv` each run and removes pictures no longer listed, so rerun it after collecting more rather than adding files by hand. The collection lives outside the repo.
+
 ## The Tender For Law Anthology
 
 Anibal Jose Baez (as "Mackximus"/MAXIMILIANO PEREZ) printed the group's feed from Facebook on 13 and 14 June 2014 and shared it as nine PDFs, "The Tender For Law Anthology" (https://app.box.com/s/47vmhgo8olstohisc2ju, 1.5 GB, not hosted here). The printout has names, pictures and comments the Facebook export lost. All nine volumes are done. They come from four separate print runs (the footer's "N of M" and time):

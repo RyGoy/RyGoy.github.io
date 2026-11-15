@@ -1,0 +1,20 @@
+{{- /* Pictures recovered for a post or comment (partials/lpPosts.html), from data/photos.json, which
+       scripts/import_photos.py writes: a photo still on the group's Facebook page ("facebook"), or a picture whose
+       address is in the post or comment, from that address ("original") or the Wayback Machine's copy ("wayback").
+       The export kept photo posts empty and pictures as addresses only, so each is labelled as added by this site.
+       The picture opens full size. */ -}}
+{{- $noun := cond (isset .Params "post_id") "comment" "post" -}}
+{{- with site.Data.photos }}{{ with index .entries $.Params.id }}
+<div class="entry-photos">
+  {{- range . }}
+  <figure class="entry-photo">
+    <a href="{{ .src | relURL }}"><img src="{{ .src | relURL }}" width="{{ .w }}" height="{{ .h }}" alt="Picture shared in this {{ $noun }}" loading="lazy"></a>
+    <figcaption data-pagefind-ignore>
+      {{- if eq .source "facebook" }}Restored by this site from the group's Facebook page; the Facebook export did not keep the picture.
+      {{- else if eq .source "wayback" }}Restored by this site from <a href="{{ .copy }}">the Wayback Machine's copy</a>{{ with .date }} (saved {{ (time.AsTime .).Format "2 Jan 2006" }}){{ end }}; the original address no longer opens.
+      {{- else }}Restored by this site from <a href="{{ .url }}">its original address</a>; the Facebook export kept only the address.
+      {{- end }}</figcaption>
+  </figure>
+  {{- end }}
+</div>
+{{- end }}{{ end -}}
