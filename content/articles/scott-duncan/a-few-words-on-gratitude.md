@@ -73,3 +73,5 @@ Let me say that again, just so we're clear.  You are not qualified to thank me i
 TL;DR: Do shit.  Cue Shia LaBeouf:
 
 [Shia LaBeouf TED Talk](https://youtu.be/os6U77Hhm_s)
+
+{{< youtube os6U77Hhm_s >}}

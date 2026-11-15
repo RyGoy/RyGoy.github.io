@@ -8,7 +8,13 @@
     <h1>{{ .Title }}</h1>
     {{/* Author and date on the left, Share on the right of the same row. */}}
     {{ if or .Params.author .Params.date $writing }}<div class="article-byline">
-      {{ with .Params.author }}<p class="article-author" data-pagefind-filter="Author">{{ . }}</p>{{ end }}
+      {{- /* The byline's picture: its author's, or else that of the author whose folder it is in (articles/<name>/, e.g.
+             Scott Duncan's articles bylined ROGUESUPPORT INC). */}}
+      {{ $avatars := site.Data.author_avatars.avatars | default dict }}
+      {{ $byline := strings.TrimSpace (.Params.author | default "") }}
+      {{ $folder := "" }}{{ with .File }}{{ $folder = title (replace (path.Base .Dir) "-" " ") }}{{ end }}
+      {{ $face := cond (isset $avatars $byline) $byline $folder }}
+      {{ with .Params.author }}<p class="article-author">{{ partial "author-avatar.html" $face }}<span data-pagefind-filter="Author">{{ . }}</span></p>{{ end }}
       {{ with .Params.date }}<time datetime="{{ . }}">{{ (time.AsTime .).Format "Jan 02, 2006" }}</time>{{ end }}
       {{ if $writing }}<button type="button" class="share-button" data-pagefind-ignore aria-live="polite">Share</button>{{ end }}
     </div>{{ end }}

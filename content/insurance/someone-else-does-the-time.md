@@ -132,7 +132,7 @@ That isn't a licence. It's a debt, and the only honest way to pay it is with you
 
 Your friend, in good faith
 
-NOTICE: My Name is William Wallace, a licensed custodian of this record at the time of this article's publishing, TTFL alumni do not value anything you believe, what you believe is harmful to those of us who chose to live in reality, we are not your friends and if you are a "Christian" of the Piece-Of-Shit variety, you will quickly be "excommunicated"/banned. We don't want to associate with losers who burden "their Hero", Christ promised better men than him, who the fuck are you, and what have you done lately? [Andrew Torba excluded]
+NOTICE: My Name is William Wallace, a licensed custodian of this record at the time of this article's publishing, TTFL alumni do not value anything you believe, what you believe is harmful to those of us who choose to live in reality, we are not your friends and if you are a "Christian" of the Piece-Of-Shit variety, you will quickly be "excommunicated"/banned. We don't want to associate with losers who burden "their Hero", Christ promised better men than him, who the fuck are you, and what have you done lately? [Andrew Torba excluded]
 
 #AllBeliefIsEvil
 
