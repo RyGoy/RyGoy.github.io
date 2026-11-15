@@ -74,6 +74,8 @@ The search page shows the filters as searchable dropdowns, not Pagefind UI's che
 
 A post or comment whose message links a YouTube video (`youtube.com/watch?v=`, `youtu.be/`, `embed/`, `shorts/`, mobile links), or a post whose link is one, shows each video under its text and above the link card (`partials/youtube-embeds.html`, called from `partials/lpPosts.html`). Message text is front matter, where shortcodes don't run, so the template finds the links itself. Each video is a thumbnail until clicked; `static/js/youtube-embed.js` then swaps in the youtube-nocookie player, so pages with dozens of videos load none up front. Without JavaScript the thumbnail links to YouTube. Removed videos show YouTube's grey placeholder.
 
+In articles and other Markdown pages, a YouTube video is embedded with Hugo's built-in `{{< youtube ID >}}` shortcode on its own line, not left as a bare address (an address inside a sentence keeps its link, with the shortcode after that paragraph).
+
 ## Archived links
 
 Posts and comments show archived copies of their outside links: under a post's link card, and in a list under a message, each labelled "Archived link (<archive>, saved <date>)" with a note that it was added by this site and is not part of the original. The record is never changed: messages and original links render exactly as exported (apart from the added elements, a build is byte-identical to one without this feature).

@@ -108,7 +108,7 @@ As I explain, step-by-step, how I intend to accomplish this lofty goal, it will 
 
 While this sinks in… Enjoy this LIVE FOOTAGE OF “Scott Duncan Simu-Drones” ATTACKING! 
 
-https://www.youtube.com/watch?v=6TAWFML2544
+{{< youtube 6TAWFML2544 >}}
 
 
 
