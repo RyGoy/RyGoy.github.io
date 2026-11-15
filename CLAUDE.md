@@ -124,8 +124,8 @@ The feed is ordered by last activity, so old posts revived by new comments are p
 
 Beside a linked profile, "Notify admin of mistake" (`.profile-mistake`) opens the commentary bot's "Ask a question" on that post or comment, or "Add commentary" when the bot is off; its tooltip (`.profile-mistake-tip`, on hover or focus) asks the visitor to ask a question and give the link. Both it and the commentary panel take their addresses from `partials/commentary-links.html` (a returning partial: `add`, `ask`).
 
-
 Author pictures: `data/author_avatars.json` maps a name (export name, or an article's `author`) to a picture in `static/images/avatars/`, shown as a small round picture before the name on posts and comments (`partials/lpPosts.html`) and in article bylines (`partials/article.html`), through `partials/author-avatar.html` (`.author-avatar`). They are each linked member's current Facebook profile picture (`<profile id>.jpg`; members whose profile shows Facebook's default silhouette have none), plus Scott Duncan's (`scott-duncan.webp`), supplied by the site owner, on all his content. To change one, replace its file or edit its entry.
+
 ## Poster filter
 
 Volume pages (the posts) and post pages (the comments) have a "Filter by poster" panel (`partials/poster-filter.html`, `static/js/poster-filter.js`). The list of names is built from each entry's `data-author` attribute. Don't name that attribute `data-poster`: Go templates treat `poster` as a URL attribute and percent-encode it. The selection is kept in the address (`?poster=Name&poster=Other&mode=hide`) and carried to the previous/next volume links. Without JavaScript, the panel stays hidden.
