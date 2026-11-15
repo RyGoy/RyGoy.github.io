@@ -13,7 +13,8 @@ Run it from the site folder, after collecting more pictures (it rebuilds everyth
     python3 scripts/import_photos.py ../photo-collection
 
 Files written:
-  static/photos/<volume>/<post or comment ID>.<jpg|png|gif>   a copy of each picture (others there are removed)
+  static/photos/<volume>/<post or comment ID>[-2, -3 …].<jpg|png|gif>   a copy of each picture (others there are
+                        removed); a post with several pictures numbers the second and later ones
   data/photos.json      by post or comment ID: the picture's address, size and where it came from, which
                         partials/entry-photos.html shows under the post or comment
 
@@ -98,14 +99,13 @@ def main():
             ext = kind(f.read(8))
         if not ext:
             sys.exit(f"not a JPEG, PNG or GIF: {path}")
-        if entry in entries:
-            sys.exit(f"two pictures for {entry}: the template shows a list, but check before adding a second")
-        rel = f"photos/{volume}/{entry}.{ext}"
+        n = len(entries.get(entry, []))
+        rel = f"photos/{volume}/{entry}{f'-{n + 1}' if n else ''}.{ext}"
         os.makedirs(os.path.join(SITE, "static", "photos", volume), exist_ok=True)
         shutil.copyfile(path, os.path.join(SITE, "static", rel))
         written.add(rel)
         w, h = size(path)
-        entries[entry] = [dict(src=rel, w=w, h=h, **record)]
+        entries.setdefault(entry, []).append(dict(src=rel, w=w, h=h, **record))
 
     for root, _, files in os.walk(os.path.join(SITE, "static", "photos")):
         for name in files:
@@ -121,9 +121,10 @@ def main():
         json.dump(out, f, indent=1, ensure_ascii=False)
         f.write("\n")
     by = {}
-    for v in entries.values():
-        by[v[0]["source"]] = by.get(v[0]["source"], 0) + 1
-    print(f"{len(entries)} pictures: " + ", ".join(f"{n} {s}" for s, n in sorted(by.items())))
+    for r in (r for v in entries.values() for r in v):
+        by[r["source"]] = by.get(r["source"], 0) + 1
+    print(f"{sum(by.values())} pictures on {len(entries)} posts and comments: "
+          + ", ".join(f"{n} {s}" for s, n in sorted(by.items())))
 
 
 if __name__ == "__main__":
