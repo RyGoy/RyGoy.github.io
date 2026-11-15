@@ -5,6 +5,9 @@ date = "2015-01-01"
 description = "You are him or his agent"
 tags = ["TRUSTS", "NARRATIVE"]
 +++
+![A man in a suit reading a newspaper in shock](/images/articles/defamatory-libel-for-odiots.jpg)
+
+*Picture: [Kent Barrett](https://web.archive.org/web/20190528003942/https://kentbarrett.com/defamatory-libel-for-idiots/)*
 
 # THE TENDER FOR LAW: DEFAMATORY LIBEL FOR IDIOTS; A Serendipitously, Happily-Coincidental Article (c) 1982-2015 ROGUESUPPORT INC. under a Creative Commons Attribution-NonCommercial-NoDerivs 3.0 Unported License.  
 

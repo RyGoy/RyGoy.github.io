@@ -6,6 +6,9 @@ description = "Tara Duncan on the people who come to realize they \"think wrong 
 tags = ["NARRATIVE"]
 weight = "1"
 +++
+![The cover of Harlan Ellison's book Stalking the Nightmare](/images/articles/you-think-wrong-and-value-the-wrong-things.webp)
+
+*Picture: [Kent Barrett](https://web.archive.org/web/20190528003913/https://kentbarrett.com/you-think-wrong-and-value-the-wrong-things/)*
 
 THE TENDER FOR LAW: YOU THINK WRONG AND VALUE THE WRONG THINGS – By Tara Duncan (c) 2015 ROGUESUPPORT INC.  under a Creative Commons Attribution-NonCommercial-NoDerivs 3.0 Unported License. While this is predominantly directed at personal friends and acquaintances, there are perhaps some FB group members who may benefit from the information in this article, as well. This should not be new information to most. It does seem, however, to be a repeating theme.
 

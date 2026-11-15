@@ -6,13 +6,9 @@ description = "Scream Freee-Dumb!"
 tags = ["TITLE", "TRUSTS"]
 categories = ["HER MAJESTY AND AN ORGANIZATION", "PARASITES", "ADMIRALTY"]
 +++
-<div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="/img/govern-me-harder.jpg" class="d-block w-100" alt="...">
-    </div>
-  </div>
-</div>
+![A parody of Munch's The Scream, titled "The Freeeee-Dumb"](/images/articles/the-looming-threat-of-freedumb.webp)
+
+*Picture: [Kent Barrett](https://web.archive.org/web/20190528004035/https://kentbarrett.com/the-tender-for-law-the-looming-threat-of-freedumb/)*
 
 ---
 

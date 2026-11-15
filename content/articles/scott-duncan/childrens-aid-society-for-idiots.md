@@ -7,6 +7,11 @@ tags = ["TRUSTS"]
 +++
 *First posted to THE TENDER FOR LAW on 2013-03-13. [Read the original post and its comments in Volume 1](/vol_i/462493170453287_491707400865197/).*
 
+![A crying child clinging to an adult](/images/articles/childrens-aid-society-for-idiots.jpg)
+
+*Picture: [Kent Barrett](https://web.archive.org/web/20191205220815/https://kentbarrett.com/childrens_aid_society/)*
+
+
 
 
 (c) 2013 ROGUESUPPORT INC. under a Creative Commons Attribution-NonCommercial-NoDerivs 3.0 Unported License.

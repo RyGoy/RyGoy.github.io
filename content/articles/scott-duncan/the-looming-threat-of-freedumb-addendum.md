@@ -6,13 +6,9 @@ description = "I think my anger and despair is justified.  Don’t you?"
 tags = ["TRUSTS", "TITLE", "NARRATIVE"]
 categories = ["AUTHORITY"]
 +++
-<div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="/img/strawman.png" class="d-block w-100" alt="...">
-    </div>
-  </div>
-</div>
+![The ROGUESUPPORT logo: a silver emblem in a red ring](/images/articles/the-looming-threat-of-freedumb-addendum.jpg)
+
+*Picture: [Kent Barrett](https://web.archive.org/web/20190528014859/https://kentbarrett.com/the-tender-for-law-the-looming-threat-of-freedumb-addendum/)*
 
 ---
 

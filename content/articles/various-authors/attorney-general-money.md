@@ -8,6 +8,11 @@ weight = "10"
 +++
 *Posted to THE TENDER FOR LAW by Lou Manotti on 2016-03-03. [Read the post and its comments in Volume 13](/vol_xiii/462493170453287_953462428023023/).*
 
+![A painted portrait captioned "Minister of Justice and Attorney General"](/images/articles/attorney-general-money.jpg)
+
+*Picture: [Kent Barrett](https://web.archive.org/web/20190528004449/https://kentbarrett.com/attorney-general-money-by-lou-manotti/)*
+
+
 
 It was mentioned by a member, that the concept of ATTORNEY GENERAL MONEY was not well known; so this is to clean up any misconceptions and to make a few things clear.
 

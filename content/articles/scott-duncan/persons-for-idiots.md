@@ -7,13 +7,9 @@ tags = ["AGENCY", "SURETY"]
 categories = ["JOINDER", "MAN ≠ PERSON", "HER MAJESTY AND AN ORGANIZATION"]
 weight = "11"
 +++
-<div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="/img/gomer-pyle.jpg" class="d-block w-100" alt="...">
-    </div>
-  </div>
-</div>
+![Gomer Pyle, hand on his cap, looking surprised](/images/articles/persons-for-idiots.webp)
+
+*Picture: [Kent Barrett](https://web.archive.org/web/20190528031033/https://kentbarrett.com/persons-for-idiots/)*
 
 ---
 

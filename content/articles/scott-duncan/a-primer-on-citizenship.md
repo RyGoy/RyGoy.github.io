@@ -5,6 +5,9 @@ date = "2014-05-05"
 description = "A Primer On Citizenship"
 tags = ["AGENCY", "SURETY", "ACCOUNTING"]
 +++
+![A Canadian passport in front of the Canadian flag](/images/articles/a-primer-on-citizenship.jpg)
+
+*Picture: [Kent Barrett](https://web.archive.org/web/20190528001338/https://kentbarrett.com/oh-say-cant-you-see-a-primer-on-citizenship/)*
 
 # OH, SAY CAN’T YOU SEE? – A Primer On Citizenship
 

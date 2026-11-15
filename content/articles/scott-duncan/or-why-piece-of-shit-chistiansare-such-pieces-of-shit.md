@@ -5,13 +5,9 @@ date = "2015-10-15"
 description = "This might lead you to believe that I harbour a profound hostility and resentment for Piece-of-Shit Christians, and you would be right."
 tags = ["NARRATIVE", "SURETY", "PROPERTY"]
 +++
-<div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="/img/hal-eye-pyramid.jpg" class="d-block w-100" alt="...">
-    </div>
-  </div>
-</div>
+![HAL 9000's red eye at the top of a pyramid](/images/articles/or-why-piece-of-shit-chistiansare-such-pieces-of-shit.webp)
+
+*Picture: [Kent Barrett](https://web.archive.org/web/20190528014343/https://kentbarrett.com/the-truth-about-the-illuminati/)*
 
 ---
 

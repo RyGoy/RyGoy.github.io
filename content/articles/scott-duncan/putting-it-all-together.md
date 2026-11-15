@@ -7,13 +7,9 @@ tags = ["TRUSTS", "ACCOUNTING", "SURETY"]
 +++
 *First posted to THE TENDER FOR LAW on 2015-06-21. [Read the original post and its comments in Volume 10](/vol_x/462493170453287_845066405529293/).*
 
-<div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="/img/5monkies.jpg" class="d-block w-100" alt="...">
-    </div>
-  </div>
-</div>
+![A comic strip of the five monkeys experiment: monkeys, a ladder and bananas](/images/articles/putting-it-all-together.jpg)
+
+*Picture: [Kent Barrett](https://web.archive.org/web/20190528014440/https://kentbarrett.com/putting-it-all-together-scott-duncan/)*
 
 ---
 

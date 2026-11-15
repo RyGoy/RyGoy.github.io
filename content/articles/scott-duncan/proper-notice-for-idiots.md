@@ -9,13 +9,9 @@ weight = "12"
 +++
 *First posted to THE TENDER FOR LAW on 2013-02-19. [Read the original post and its comments in Volume 1](/vol_i/462493170453287_482690341766903/).*
 
-<div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="/img/notice.gif" class="d-block w-100" alt="...">
-    </div>
-  </div>
-</div>
+![A sign: "Notice. Thank you for noticing this new notice. Your noticing it has been noted and will be reported to the authorities"](/images/articles/proper-notice-for-idiots.webp)
+
+*Picture: [Kent Barrett](https://web.archive.org/web/20190528003932/https://kentbarrett.com/proper-notice-for-idiots/)*
 
 ---
 

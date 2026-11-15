@@ -8,6 +8,11 @@ weight = "16"
 +++
 *First posted to THE TENDER FOR LAW on 2013-03-11. [Read the original post and its comments in Volume 1](/vol_i/462493170453287_490962517606352/).*
 
+![A cartoon of a man spouting legal Latin (estoppel, status quo ante, ad infinitum) at a baffled listener](/images/articles/legalese-for-idiots.webp)
+
+*Picture: [Kent Barrett](https://web.archive.org/web/20190528005756/https://kentbarrett.com/legalese-for-idiots/)*
+
+
 
 # LEGALESE FOR IDIOTS
 

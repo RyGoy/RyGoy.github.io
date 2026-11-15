@@ -5,6 +5,9 @@ date = "2014-05-05"
 description = "Scott Duncan on his conviction that all belief is evil, told through a conversation with a former helmsman of the Tycho-Brahe."
 tags = ["ACCOUNTING", "TAXATION"]
 +++
+![An old engraving of a crowded church, captioned "It is going to be… BIBLICAL!"](/images/articles/my-belief-is-my-conviction.jpg)
+
+*Picture: [Kent Barrett](https://web.archive.org/web/20190528035937/https://kentbarrett.com/my-belief-is-my-conviction/)*
 
 THE TENDER FOR LAW: “MY BELIEF, IS MY CONVICTION”
 (c) 2014 ROGUESUPPORT INC. under a Creative Commons Attribution-NonCommercial-NoDerivs 3.0 Unported License.

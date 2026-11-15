@@ -6,7 +6,9 @@ description = "The legal name, its case and spelling, and what they really mean:
 tags = ["AGENCY", "TRUSTS"]
 weight = "15"
 +++
+![A parody event banner: "480 Day Event! Advanced Bullshit and Evasions: Divestment from Sanity & Logic"](/images/articles/joinder-for-idiots.webp)
 
+*Picture: [Kent Barrett](https://web.archive.org/web/20190528032742/https://kentbarrett.com/joinder-for-idiots/)*
 
 THE TENDER FOR LAW: JOINDER FOR IDIOTS (c) 2014 ROGUESUPPORT INC. under a Creative Commons Attribution-NonCommercial-NoDerivs 3.0 Unported License.
 

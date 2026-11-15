@@ -6,13 +6,9 @@ description = "the “Lamborghini” I’m tossing you the keys to, is actually 
 tags = ["TITLE", "NARRATIVE"]
 +++
 
-<div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="/img/menard.jpg" class="d-block w-100" alt="...">
-    </div>
-  </div>
-</div>
+![Book cover: "The Truth and Robert Menard, or The Many Defenestrations of a Freeman Guru" by Scott Duncan](/images/articles/freedumb-the-truth-and-robert-menard.webp)
+
+*Picture: [Kent Barrett](https://web.archive.org/web/20190528013331/https://kentbarrett.com/free-dumb-the-truth-robert-menard/)*
 
 ---
 

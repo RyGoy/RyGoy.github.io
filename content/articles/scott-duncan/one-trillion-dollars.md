@@ -5,6 +5,9 @@ date = "2014-05-05"
 description = "You are him or his agent"
 tags = ["NARRATIVE"]
 +++
+![A cartoon pig in a Spider-Man suit](/images/articles/one-trillion-dollars.webp)
+
+*Picture: [Kent Barrett](https://web.archive.org/web/20191205223323/https://kentbarrett.com/one-trillion-dollars/)*
 
 # ONE TRILLION DOLLARS!
 

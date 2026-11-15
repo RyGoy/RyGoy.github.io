@@ -7,6 +7,10 @@ tags = ["TRUSTS", "ACCOUNTING", "PROPERTY"]
 categories = ["RIGHTS", "DAN LIEN-YOUR-NAME WILSON"]
 weight = "9"
 +++
+![J. R. "Bob" Dobbs, the pipe-smoking face of the Church of the SubGenius](/images/articles/lien-your-name.gif)
+
+*Picture: [Kent Barrett](https://web.archive.org/web/20190528015837/https://kentbarrett.com/lien_your_name/)*
+
 	 						
 		
 		
