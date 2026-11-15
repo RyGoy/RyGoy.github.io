@@ -1822,7 +1822,7 @@ a.page-emblem:focus-visible { outline: 2px solid var(--brass); outline-offset: 6
 .anthology-name { color: var(--c-9ccbee) !important; }
 .name-sep { color: var(--muted); }
 /* The author's picture beside the name (partials/author-avatar.html) */
-.author-avatar { display: inline-block; width: 1.9rem; height: 1.9rem; margin-right: .55rem; vertical-align: middle; border-radius: 50%; object-fit: cover; border: 1px solid var(--line); background: var(--surface); }
+.author-avatar { display: inline-block; width: 2.85rem; height: 2.85rem; margin-right: .55rem; vertical-align: middle; border-radius: 50%; object-fit: cover; border: 1px solid var(--line); background: var(--surface); }
 .article-author .author-avatar { width: 2.4rem; height: 2.4rem; }
 /* "Notify admin of mistake" beside a linked Facebook profile (partials/lpPosts.html): a small link to the commentary
    bot's "Ask a question", with its hint in a tooltip on hover or focus. */
