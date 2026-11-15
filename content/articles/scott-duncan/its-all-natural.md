@@ -5,7 +5,9 @@ date = "2014-05-05"
 description = "You are him or his agent"
 tags = ["NARRATIVE"]
 +++
+![An illustration of a snake-oil salesman holding up a bottle in an Old West town](/images/articles/its-all-natural.jpg)
 
+*Picture: [Kent Barrett](https://web.archive.org/web/20190528015618/https://kentbarrett.com/its-all-natural/)*
 
 26 June 2014 at 20:40
 You often hear me lament the fact that there are people who only pretend to think.  I often counter this unfortunate phenomenon with Tim Minchin’s “Storm”.   More specifically, I reference the quote “Do you know what they call alternative medicine that’s been proven to work?  …medicine”.   The alternative medicine crowd has no idea what this means, as they consider PhotoShop pictures and Youtube videos “proof”.  They try to look “sciency”, but rarely have anything resembling proof, while always seeming to have a “store”.  This, in and of itself, should make you suspicious about the self-serving nature of anything being recommended, but the larger issue is with the process itself.

@@ -2,17 +2,13 @@
 author = "Tara Duncan"
 title = "Bullying 2.0"
 date = "2015-12-29"
-description = ""
+description = "Tara Duncan on bullying: a practice as old as recorded history, from the schoolyards of her childhood to today."
 tags = ["AGENCY", "NARRATIVE"]
 categories = ["RESPONSIBILITY", "CRIME"]
 +++
-<div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="/img/no-bullying.jpg" class="d-block w-100" alt="...">
-    </div>
-  </div>
-</div>
+![A smiling girl beside a "No Bullying Zone" sign](/images/articles/bullying2.0.jpg)
+
+*Picture: [Minds](https://www.minds.com/blog/view/619149636107513876)*
 
 ---
 

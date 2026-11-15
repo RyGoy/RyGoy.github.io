@@ -6,6 +6,9 @@ description = "You are him or his agent"
 tags = ["TRUSTS", "ACCOUNTING", "AGENCY"]
 weight = "21"
 +++
+![The Death Star half sunk in the sea](/images/articles/obiter-dictum-meades-v-meads-for-idiots.jpg)
+
+*Picture: [Kent Barrett](https://web.archive.org/web/20190528035216/https://kentbarrett.com/meads-v-meads-for-idiots/)*
 
 # Obiter Dictum: MEADS V. MEADS FOR IDIOTS
 

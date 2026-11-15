@@ -8,7 +8,9 @@ tags = ["NARRATIVE"]
 *First posted to THE TENDER FOR LAW on 2015-06-21. [Read the original post and its comments in Volume 10](/vol_x/462493170453287_844734415562492/).*
 
 
-![CORPUS DELICTI](/img/murder.jpg)
+![A chalk outline of a body at a crime scene](/images/articles/corpus-dilecti.jpg)
+
+*Picture: [Kent Barrett](https://web.archive.org/web/20190528012754/https://kentbarrett.com/corpus-delicti/)*
 
 
 THE TENDER FOR LAW: PERSONS FOR IDIOTS (c) 2014 ROGUESUPPORT INC. under a Creative Commons Attribution-NonCommercial-NoDerivs 3.0 Unported License.

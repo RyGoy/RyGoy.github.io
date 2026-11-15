@@ -1,7 +1,10 @@
 {{/* Structured data for search engines (schema.org, as JSON-LD), from partials/head.html:
      - the home page: the WebSite;
-     - posts: a DiscussionForumPosting (Google's type for forum threads), its comments from the export as Comments;
-     - articles (the articles section and the Library's subject sections): an Article;
+     - posts: a DiscussionForumPosting (Google's type for forum threads), its comments from the export as Comments, and
+       its recovered pictures (data/photos.json); a post with no text is described by its pictures, if it has any;
+     - articles (the articles section and the Library's subject sections): an Article, with its first picture (a
+       Markdown image in its text; not the old /img/ ones, which are gone) or else the site's card (params.share), and
+       ROGUESUPPORT INC as publisher; an article bylined ROGUESUPPORT INC names it as an Organization, not a Person;
      - every page but the home page, comments and the 404: a BreadcrumbList (home, its sections, the page).
      Comment pages get none: they are left out of search (noindex in head.html). jsonify escapes <, > and &, so text
      can't close the script. */}}
@@ -11,7 +14,9 @@
   <script type="application/ld+json">{{ dict "@context" $ctx "@type" "WebSite" "name" "The Tender For Law" "url" site.Home.Permalink "description" site.Params.description | jsonify | safeJS }}</script>
 {{ else if and .Params.id (not (isset .Params "post_id")) }}
   {{ $text := partial "seo-text.html" . | default .Params.name | default .Description }}
-  {{ with .Params.created_time }}{{ if $text }}
+  {{ $photos := slice }}
+  {{ with site.Data.photos }}{{ range index .entries $.Params.id }}{{ $photos = $photos | append (.src | absURL) }}{{ end }}{{ end }}
+  {{ with .Params.created_time }}{{ if or $text $photos }}
     {{ $comments := slice }}
     {{ range sort $.Pages "Params.created_time" }}
       {{ $c := partial "seo-text.html" . }}
@@ -19,13 +24,19 @@
         {{ $comments = $comments | append (dict "@type" "Comment" "text" $c "url" .Permalink "datePublished" ((time.AsTime .Params.created_time).Format $date) "author" (dict "@type" "Person" "name" (.Params.from_name | default "A member"))) }}
       {{ end }}
     {{ end }}
-    {{ $post := dict "@context" $ctx "@type" "DiscussionForumPosting" "headline" (truncate 110 "…" $text) "text" $text "url" $.Permalink "datePublished" ((time.AsTime .).Format (cond ($.Params.time_unknown | default false) "2006-01-02" $date)) "author" (dict "@type" "Person" "name" ($.Params.from_name | default "A member")) "isPartOf" (dict "@type" "CollectionPage" "name" $.FirstSection.Title "url" $.FirstSection.Permalink) "interactionStatistic" (dict "@type" "InteractionCounter" "interactionType" "https://schema.org/CommentAction" "userInteractionCount" (len $comments)) }}
+    {{ $post := dict "@context" $ctx "@type" "DiscussionForumPosting" "headline" (truncate 110 "…" ($text | default (printf "Picture shared by %s" ($.Params.from_name | default "a member")))) "url" $.Permalink "datePublished" ((time.AsTime .).Format (cond ($.Params.time_unknown | default false) "2006-01-02" $date)) "author" (dict "@type" "Person" "name" ($.Params.from_name | default "A member")) "isPartOf" (dict "@type" "CollectionPage" "name" $.FirstSection.Title "url" $.FirstSection.Permalink) "interactionStatistic" (dict "@type" "InteractionCounter" "interactionType" "https://schema.org/CommentAction" "userInteractionCount" (len $comments)) }}
+    {{ with $text }}{{ $post = merge $post (dict "text" .) }}{{ end }}
+    {{ with $photos }}{{ $post = merge $post (dict "image" .) }}{{ end }}
     {{ with $comments }}{{ $post = merge $post (dict "comment" .) }}{{ end }}
     <script type="application/ld+json">{{ $post | jsonify | safeJS }}</script>
   {{ end }}{{ end }}
 {{ else if and .IsPage (in (slice "articles" "accounting" "agency" "bills-of-exchange" "insurance" "title&property") .Section) }}
   {{ $article := dict "@context" $ctx "@type" "Article" "headline" .Title "url" .Permalink }}
-  {{ with .Params.author }}{{ $article = merge $article (dict "author" (dict "@type" "Person" "name" .)) }}{{ end }}
+  {{ $rogue := dict "@type" "Organization" "name" "ROGUESUPPORT INC" "logo" (dict "@type" "ImageObject" "url" ("images/roguesupport-logo.jpg" | absURL) "width" 467 "height" 540) }}
+  {{ with .Params.author }}{{ $article = merge $article (dict "author" (cond (eq (upper (trim . " ")) "ROGUESUPPORT INC") $rogue (dict "@type" "Person" "name" .))) }}{{ end }}
+  {{ $image := site.Params.share.image | absURL }}
+  {{ range first 1 (findRE `!\[[^\]]*\]\(([^)\s]+)` .RawContent) }}{{ $src := replaceRE `^!\[[^\]]*\]\(` "" . }}{{ if not (hasPrefix $src "/img/") }}{{ $image = $src | absURL }}{{ end }}{{ end }}
+  {{ $article = merge $article (dict "image" $image "publisher" $rogue) }}
   {{ if not .Date.IsZero }}{{ $article = merge $article (dict "datePublished" (.Date.Format $date)) }}{{ end }}
   {{ with .Description }}{{ $article = merge $article (dict "description" .) }}{{ end }}
   <script type="application/ld+json">{{ $article | jsonify | safeJS }}</script>

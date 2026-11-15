@@ -9,6 +9,11 @@ weight = "14"
 +++
 *Posted to THE TENDER FOR LAW by Pete Daoust on 2014-10-26. [Read the post and its comments in Volume 8](/vol_viii/462493170453287_738361576199777/).*
 
+![The Hulk, captioned "Super-duper-hyper-awesome-uber-person: You won't like him when he's legal"](/images/articles/agency-for-idiots.jpg)
+
+*Picture: [Kent Barrett](https://web.archive.org/web/20190528015837/https://kentbarrett.com/agency/)*
+
+
 
 THE TENDER FOR LAW: AGENCY (ARTIFICIAL PERSONS) FOR IDIOTS (c) 2014 ROGUESUPPORT INC. under a Creative Commons Attribution-NonCommercial-NoDerivs 3.0 Unported License. 
 

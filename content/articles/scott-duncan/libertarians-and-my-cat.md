@@ -7,6 +7,11 @@ tags = ["NARRATIVE"]
 +++
 *First posted to THE TENDER FOR LAW on 2015-07-07. [Read the original post and its comments in Volume 11](/vol_xi/462493170453287_851550111547589/).*
 
+![Two photographs side by side: Figure 1, a cat; Figure 2, a man](/images/articles/libertarians-and-my-cat.webp)
+
+*Picture: [Kent Barrett](https://web.archive.org/web/20190528022254/https://kentbarrett.com/libertarians-and-my-cat/)*
+
+
 
 # Libertarians And My Cat
 

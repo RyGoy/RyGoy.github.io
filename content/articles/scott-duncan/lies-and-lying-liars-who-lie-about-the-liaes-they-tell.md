@@ -6,6 +6,9 @@ description = "An Objective and Fair Analysis of the LAW SOCIETY"
 tags = ["SURETY", "NARRATIVE"]
 weight = "20"
 +++
+![Pinocchio with his long nose](/images/articles/lies-and-lying-liars-who-lie-about-the-liaes-they-tell.webp)
+
+*Picture: [Kent Barrett](https://web.archive.org/web/20190528002853/https://kentbarrett.com/lies-and-the-lying-liars-who-lie-about-the-lies-they-tell/)*
 
 # LIES AND THE LYING LIARS WHO LIE ABOUT THE LIES THEY TELL: An Objective and Fair Analysis of the LAW SOCIETY 
 

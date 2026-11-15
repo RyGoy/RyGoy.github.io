@@ -2,7 +2,7 @@
 author = "Tara Duncan"
 title = "Somebody Called Me A Cunt"
 date = "2019-01-19"
-description = ""
+description = "Tara Duncan on being called a \"cunt\" on social media for disagreeing, and what the insult says about the people who use it."
 tags = ["NARRATIVE"]
 +++
 

@@ -2,10 +2,12 @@
 author = "Tara Duncan"
 title = "Politeness vs. Political Correctness"
 date = "2016-08-27"
-description = ""
+description = "Tara Duncan on the difference between politeness and political correctness, starting from a door held open for a stranger."
 tags = ["NARRATIVE"]
 +++
+![A woman in a grey period gown riding sidesaddle on a white horse](/images/articles/politeness-vs-polticalcorrectness.jpg)
 
+*Picture: [Minds](https://www.minds.com/taraduncan/blog/politeness-vs-political-correctness-616301467539611656)*
 
 [Language and concepts contained herein may offend some with delicate constitutions.  If you are one of these people, please immediately stop reading]
 
