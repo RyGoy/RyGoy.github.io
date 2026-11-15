@@ -6,13 +6,9 @@ description = "Tara Duncan on how the dystopias of Huxley, Orwell and Bradbury a
 tags = ["NARRATIVE"]
 categories = ["PARASITES", "CITIZENSHIP", "RESPONSIBILITY"]
 +++
-<div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="/img/see-say-something.jpg" class="d-block w-100" alt="...">
-    </div>
-  </div>
-</div>
+![An anime schoolgirl wearing a red armband, in front of a swastika and a rally crowd](/images/articles/if-you-see-something-say-something.jpg)
+
+*Picture: [Minds](https://www.minds.com/blog/view/614265122583486478)*
 
 ---
 

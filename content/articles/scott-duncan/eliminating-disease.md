@@ -5,6 +5,9 @@ date = "2020-06-04"
 description = "People In Government"
 tags = ["NARRATIVE"]
 +++
+![White blocks scattered among drops of red blood](/images/articles/eliminating-disease.jpg)
+
+*Picture: [Minds](https://www.minds.com/roguesupport/blog/eliminating-disease-1115339921959227392)*
 
 Scott Duncan - Vice President; Rogue Support Inc.
 

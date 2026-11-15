@@ -7,13 +7,9 @@ tags = ["NARRATIVE"]
 categories = ["COMPUTER SCIENCE"]
 +++
 # Is this the fold? i don't know who's fold this is
-<div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="/img/foldit.jpg" class="d-block w-100" alt="...">
-    </div>
-  </div>
-</div>
+![A screenshot of Foldit, the protein-folding puzzle game](/images/articles/fold-it-good.jpg)
+
+*Picture: [Minds](https://www.minds.com/blog/view/617750504797118465)*
 
 ---
 
