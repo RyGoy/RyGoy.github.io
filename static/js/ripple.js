@@ -9,7 +9,7 @@
   const CELL = 6;          // CSS pixels per simulation cell (the canvas is scaled up, smoothly, to the screen)
   const DAMPING = 0.97;    // the share of a ripple left after each step: lower fades sooner
   const DROP = 2.5;        // the depth of a drop where the pointer moves
-  const STRENGTH = 0.1;    // the most a ring lightens or darkens the background (opacity)
+  const STRENGTH = 0.05;   // the most a ring lightens or darkens the background (opacity)
   const GAIN = 0.6;        // slope to light and shade
   const canvas = document.createElement('canvas');
   canvas.className = 'bg-ripple';
