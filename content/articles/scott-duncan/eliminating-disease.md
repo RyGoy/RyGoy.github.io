@@ -5,6 +5,8 @@ date = "2020-06-04"
 description = "People In Government"
 tags = ["NARRATIVE"]
 +++
+Shared under a Creative Commons Attribution-NonCommercial-NoDerivs 3.0 Unported License.
+
 ![White blocks scattered among drops of red blood](/images/articles/eliminating-disease.jpg)
 
 *Picture: [Minds](https://www.minds.com/roguesupport/blog/eliminating-disease-1115339921959227392)*

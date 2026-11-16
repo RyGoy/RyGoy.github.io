@@ -18,8 +18,7 @@ weight = "12"
 Appointed by "N" for "Not Surety",
 A reference to THE TENDER FOR LAW on Facebook.
 
-Shared under a Creative Commons 3.0 Unported License; BY-ND-NC
-(c) INGENIUM HOLDINGS INCORPORATED 
+Shared under a Creative Commons Attribution-NonCommercial-NoDerivs 3.0 Unported License.
 
 ---
 

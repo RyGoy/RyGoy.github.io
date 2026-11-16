@@ -6,6 +6,8 @@ description = "The only winning move is not to play."
 tags = ["NARRATIVE"]
 categories = ["JOINDER"]
 +++
+Shared under a Creative Commons Attribution-NonCommercial-NoDerivs 3.0 Unported License.
+
 *First posted to THE TENDER FOR LAW on 2014-03-05. [Read the original post and its comments in Volume 5](/vol_v/462493170453287_633326853369917/).*
 
 ---

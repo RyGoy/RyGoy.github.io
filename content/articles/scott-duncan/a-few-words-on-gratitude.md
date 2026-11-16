@@ -6,6 +6,8 @@ description = "Do shit."
 tags = ["NARRATIVE"]
 categories = ["DEBT", "RESPONSIBILITY", "EVERYBODY KNOWS"]
 +++
+Shared under a Creative Commons Attribution-NonCommercial-NoDerivs 3.0 Unported License.
+
 *First posted to THE TENDER FOR LAW on 2016-03-07. [Read the original post and its comments in Volume 13](/vol_xiii/462493170453287_955376827831583/).*
 
 ---

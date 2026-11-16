@@ -6,6 +6,8 @@ description = "Adults with imaginary friends"
 tags = ["NARRATIVE"]
 categories = ["RESPONSIBILITY", "EVERYBODY KNOWS"]
 +++
+Shared under a Creative Commons Attribution-NonCommercial-NoDerivs 3.0 Unported License.
+
 <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
   <div class="carousel-inner">
     <div class="carousel-item active">

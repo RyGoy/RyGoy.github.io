@@ -27,7 +27,7 @@ height = 272
 
 ---
 
-##### (c) INGENIUM HOLDINGS INCORPORATED under a Creative Commons 3.0 Unported License; BY-ND-NC
+Shared under a Creative Commons Attribution-NonCommercial-NoDerivs 3.0 Unported License.
 
 If you’re like me, for most of your life you’ve had minimal conscious interactions with ACCOUNTING, It was always presented to me as something very boring and complicated so I'd always avoided learning about it. While embracing my love of ignorance **I COULD NOT SEE** how this **ABSTRACTION** was being used against me every day or how I could use it for my benefit.
 

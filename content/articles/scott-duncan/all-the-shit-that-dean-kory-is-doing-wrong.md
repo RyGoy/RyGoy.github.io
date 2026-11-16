@@ -6,6 +6,8 @@ description = "...AND NAZIS!"
 tags = ["TRUSTS", "SURETY"]
 categories = ["COURT", "FREEDUMB"]
 +++
+Shared under a Creative Commons Attribution-NonCommercial-NoDerivs 3.0 Unported License.
+
 *First posted to THE TENDER FOR LAW on 2013-05-30. [Read the original post and its comments in Volume 2](/vol_ii/462493170453287_518715888164348/).*
 
 ---

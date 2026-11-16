@@ -1,1 +1,3 @@
 node_modules
+# Hugo builds here; CI rebuilds it for each deploy, so it is not kept in the repository.
+public/

@@ -6,6 +6,8 @@ description = "Why \"hate speech\" is a legal invention: the law defines hate sp
 tags = ["ACCOUNTING", "NARRATIVE"]
 categories = ["PARASITES", "CRIME"]
 +++
+Shared under a Creative Commons Attribution-NonCommercial-NoDerivs 3.0 Unported License.
+
 
 The title of this article is not just a title, it's intent.  By intent, I mean that I intend to make this article qualify as "hate speech" according to every Western Law on the books.  That's right, I intend to commit the "crime" of "hate speech".  
  

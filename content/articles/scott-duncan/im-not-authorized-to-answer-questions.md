@@ -5,6 +5,8 @@ date = "2022-05-02"
 description = "I'M NOT AUTHORIZED TO ANSWER QUESTIONS"
 tags = ["SURETY", "ACCOUNTING"]
 +++
+Shared under a Creative Commons Attribution-NonCommercial-NoDerivs 3.0 Unported License.
+
 <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
   <div class="carousel-inner">
     <div class="carousel-item active">

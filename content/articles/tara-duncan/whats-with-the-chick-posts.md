@@ -5,6 +5,8 @@ date = "2013-10-11"
 description = "Think or shut the fuck up!"
 tags = ["NARRATIVE"]
 +++
+Shared under a Creative Commons Attribution-NonCommercial-NoDerivs 3.0 Unported License.
+
 *First posted to THE TENDER FOR LAW on 2013-10-11. [Read the original post and its comments in Volume 4](/vol_iv/462493170453287_570487992987137/).*
 
 ---
