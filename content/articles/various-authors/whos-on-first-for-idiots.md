@@ -9,6 +9,10 @@ weight = "11"
 
 ##### Who’s On First: FOR IDIOTS (c) 2015 ROGUESUPPORT INC. under a Creative Commons Attribution-NonCommercial-NoDerivs 3.0 Unported License.
 
+![Lou Costello, in a straw hat, and Bud Abbott, in a fedora and pinstriped suit, in a crowd holding up dollar bills to buy war bonds](/images/articles/whos-on-first-for-idiots.jpg)
+
+*Picture: Bud Abbott and Lou Costello selling war bonds at Defense House, Los Angeles, about 1942, by the Los Angeles Daily News ([UCLA Library, via Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Actors_Bud_Abbott,_Lou_Costello_selling_war_bonds_at_Defense_House_in_Los_Angeles,_Calif.,_circa_1942_(cropped).jpg), [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)). Read this article as first published on [Kent Barrett's site](https://web.archive.org/web/20190528030713/https://kentbarrett.com/whos-on-first-for-idiots/).*
+
 For anyone still lagging behind in the “name game” confusion surrounding systems relating to law and money, I present, “Who’s on First?”
 
 Also for your edification, I have copied/pasted the opening sentences from Wikipedia describing the comedy routine, below:

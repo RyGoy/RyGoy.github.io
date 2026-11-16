@@ -9,6 +9,8 @@ Shared under a Creative Commons Attribution-NonCommercial-NoDerivs 3.0 Unported 
 
 *First posted to THE TENDER FOR LAW on 2013-10-11. [Read the original post and its comments in Volume 4](/vol_iv/462493170453287_570487992987137/).*
 
+![A meme of the drooling, pointy-headed "brainlet" drawing, captioned "I know a guy who know's a guy... no names... he has a problem. Anyone who is anyone should just know what I mean"](/images/articles/whats-with-the-chick-posts.jpg)
+
 ---
 
 What's with the chick posts?

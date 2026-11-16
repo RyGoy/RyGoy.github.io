@@ -6,6 +6,8 @@ weight = 1
 tags = ["SURETY", "ACCOUNTING"]
 +++
 
+![A mock Disney Pixar film poster, "Regreta: Ghosts of the Past": a tattooed young woman with her arms crossed and a sorry look walks barefoot towards the viewer, followed by a crowd of crying, ghostly blue babies](/images/articles/someone-else-does-the-time.jpg)
+
 Dear friend,
 
 There's an old saying: *if you can't do the time, don't do the crime.* I want to write to you about the arrangement that quietly reverses it: **you do the crime, and someone else does the time.** I think that arrangement is immoral. I also think your own Scripture agrees with me more than the way it is often preached.

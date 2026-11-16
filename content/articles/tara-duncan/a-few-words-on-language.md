@@ -9,6 +9,8 @@ Shared under a Creative Commons Attribution-NonCommercial-NoDerivs 3.0 Unported 
 
 *First posted to THE TENDER FOR LAW on 2013-05-04. [Read the original post and its comments in Volume 2](/vol_ii/462493170453287_509592139076723/).*
 
+![A meme of the drooling, pointy-headed "brainlet" drawing, captioned "When someone replies 'Your an idiot' and says 'You know what I mean'"](/images/articles/a-few-words-on-language.jpg)
+
 ---
 
 A few words on language

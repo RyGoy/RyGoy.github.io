@@ -10,6 +10,10 @@ Shared under a Creative Commons Attribution-NonCommercial-NoDerivs 3.0 Unported 
 
 *First posted to THE TENDER FOR LAW on 2013-05-30. [Read the original post and its comments in Volume 2](/vol_ii/462493170453287_518715888164348/).*
 
+![Carl Sagan quote over a broken wooden pier in fog: "Are we willing to tolerate ignorance and complacency in matters that affect the entire human family?"](/images/articles/all-the-shit-that-dean-kory-is-doing-wrong.jpg)
+
+*Picture: [Quotefancy](https://quotefancy.com/media/wallpaper/3840x2160/8451756-Carl-Sagan-Quote-Are-we-willing-to-tolerate-ignorance-and-complacency-in-matters-that.jpg)*
+
 ---
 
 THE TENDER FOR LAW PRESENTS: ALL THE SHIT THAT DEAN KORY IS DOING WRONG!

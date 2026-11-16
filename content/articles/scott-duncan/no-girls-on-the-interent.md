@@ -7,6 +7,8 @@ tags = ["NARRATIVE"]
 +++
 Shared under a Creative Commons Attribution-NonCommercial-NoDerivs 3.0 Unported License.
 
+![An anime-style woman with white hair, in a black dress and boots, seen from behind with a sword in each hand, among smoke and machinery](/images/articles/no-girls-on-the-interent.jpg)
+
 
 
 THERE ARE NO GIRLS ON THE INTERNET

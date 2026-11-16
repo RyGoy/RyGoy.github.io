@@ -63,6 +63,23 @@ jobs:
       - name: Build concordance
         # Every use of each dictionary term, as JSON in public/concordance/ for /concordance/.
         run: python3 scripts/concordance.py public/concordance
+      - name: Restore the pages last sent to IndexNow
+        # A fingerprint of each page in the sitemap as last sent (job "indexnow" below saves it once they are sent).
+        uses: actions/cache/restore@v4
+        with:
+          path: indexnow-manifest.json
+          key: indexnow-${{ github.run_id }}
+          restore-keys: indexnow-
+      - name: List the pages that changed
+        run: |
+          mkdir -p indexnow
+          python3 scripts/indexnow.py changed public indexnow-manifest.json indexnow/manifest.json indexnow/urls.txt
+      - name: Upload the list of changed pages
+        uses: actions/upload-artifact@v4
+        with:
+          name: indexnow
+          path: indexnow/
+          retention-days: 1
       - name: Upload artifact
         id: artifact
         uses: actions/upload-pages-artifact@v3
@@ -118,3 +135,28 @@ jobs:
           done
           echo "::error::GitHub Pages did not finish any of the deployments."
           exit 1
+
+  # Tells Bing and the other IndexNow search engines (not Google) which pages changed, once they are live.
+  # scripts/indexnow.py; the key is static/indexnow.txt. If they can't be sent, the next deploy sends them again.
+  indexnow:
+    runs-on: ubuntu-latest
+    needs: deploy
+    steps:
+      - name: Checkout the script
+        uses: actions/checkout@v4
+        with:
+          sparse-checkout: scripts/indexnow.py
+          sparse-checkout-cone-mode: false
+      - name: Download the list of changed pages
+        uses: actions/download-artifact@v4
+        with:
+          name: indexnow
+          path: indexnow
+      - name: Send them to IndexNow
+        run: python3 scripts/indexnow.py submit indexnow/urls.txt
+      - name: Remember what was sent
+        run: mv indexnow/manifest.json indexnow-manifest.json
+      - uses: actions/cache/save@v4
+        with:
+          path: indexnow-manifest.json
+          key: indexnow-${{ github.run_id }}

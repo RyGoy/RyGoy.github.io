@@ -9,6 +9,8 @@ Shared under a Creative Commons Attribution-NonCommercial-NoDerivs 3.0 Unported 
 
 *First appeared on THE TENDER FOR LAW as a comment by Scott Duncan on 2013-07-07. [Read it in Volume 3](/vol_iii/462493170453287_533890363313567/#entry-533930439976226).*
 
+![A meme of a man lying on a living-room floor aiming a scoped rifle on a bipod, captioned "I missed my mom on Mother's Day... so I invested in a better scope!"](/images/articles/im-closing-up-the-group.jpg)
+
 ---
 
 I'm closing up the group. Here's why.

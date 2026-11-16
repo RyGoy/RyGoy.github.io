@@ -8,6 +8,8 @@ weight = "10"
 +++
 *First appeared on THE TENDER FOR LAW as a comment by Derek Moran on 2013-12-21. [Read it in Volume 3](/vol_iii/462493170453287_537421026293834/#entry-602411166461486).*
 
+![An ornate illuminated-manuscript poster titled “Better-Than-Jesus”, with a crucifix in a gilded oval between two arrows reading “Surety & Accounting” and “Accounting & Surety”, and “#ScottIsAlwaysRight” along the bottom.](/images/better-than-jesus-600.jpg)
+
 (c) 2014 ROGUESUPPORT INC. under a Creative Commons Attribution-NonCommercial-NoDerivs 3.0 Unported License. 
 
 # NOTICE OF MISTAKE – GET THESE TO ME IF I’M ARRESTED

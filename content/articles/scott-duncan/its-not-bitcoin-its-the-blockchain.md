@@ -10,6 +10,8 @@ Shared under a Creative Commons Attribution-NonCommercial-NoDerivs 3.0 Unported 
 
 *First appeared on THE TENDER FOR LAW as a comment by Scott Duncan on 2014-11-24. [Read it in Volume 8](/vol_viii/462493170453287_747878295248105/#entry-751438801558721).*
 
+![A meme of a man lying on a living-room floor aiming a scoped rifle on a bipod, captioned "I missed my mom on Mother's Day... so I invested in a better scope!"](/images/articles/its-not-bitcoin-its-the-blockchain.jpg)
+
 ---
 
 IT'S NOT BITCOIN! IT'S THE BLOCKCHAIN!

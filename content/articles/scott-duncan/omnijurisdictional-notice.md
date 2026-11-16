@@ -7,6 +7,7 @@ tags = ["TITLE"]
 +++
 *Shared to THE TENDER FOR LAW by Pete Daoust on 2015-03-16. [Read the post and its comments in Volume 9](/vol_ix/462493170453287_803214169714517/).*
 
+![An engraved-style poster, "Omnijurisdictional Notice", in three panels: a pope on his throne reading a book titled Canon Law; a king in naval uniform under the royal arms, holding a scroll that reads Trust Law; and a man in an admiral's uniform at a ship's wheel, beside a globe, an anchor and a sailing ship, over a banner that reads Admiralty Law. A seal at the foot reads "Omnia jurisdictio, unus ordo"](/images/articles/omnijurisdictional-notice.jpg)
 
 # OMNIJURISDICTIONAL NOTICE
 
