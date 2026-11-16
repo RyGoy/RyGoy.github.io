@@ -5,11 +5,15 @@
     <a class="hero-zoom" href="{{ "images/better-than-jesus.jpg" | relURL }}" aria-haspopup="dialog">
       <img src="{{ "images/better-than-jesus-600.jpg" | relURL }}" width="600" height="800" alt="{{ $alt }}" fetchpriority="high">
       {{/* The pictures the poster scrolls away to (archive.css, .hero-swap): the Dark theme's when the saber's hilt is
-           pointed at, the Light theme's when the SOURCE point is, the Sepia theme's when the eˣ curve's Play dot is. Each theme shows (and, lazily, loads) only its own;
+           pointed at, the Light theme's when the SOURCE point is, the Sepia theme's when the eˣ curve's Play dot is. When the cdd.com button (.hero-cdd) is, each theme
+           has one more, which comes down from the top as the poster drops away. Each theme shows (and, lazily, loads) only its own;
            change one picture by its src (a file in static/images/), with its width and height. */}}
       <img class="hero-swap hero-swap-dark" src="{{ "images/my-country.jpg" | relURL }}" width="1024" height="1024" alt="" aria-hidden="true" loading="lazy">
       <img class="hero-swap hero-swap-light" src="{{ "images/dying-civilization.jpg" | relURL }}" width="1079" height="1200" alt="" aria-hidden="true" loading="lazy">
       <img class="hero-swap hero-swap-sepia" src="{{ "images/coda-2.jpg" | relURL }}" width="550" height="692" alt="" aria-hidden="true" loading="lazy">
+      <img class="hero-swap hero-swap-empire" src="{{ "images/join-the-empire.jpg" | relURL }}" width="853" height="1280" alt="" aria-hidden="true" loading="lazy">
+      <img class="hero-swap hero-swap-cobra" src="{{ "images/cobra-army.jpg" | relURL }}" width="526" height="821" alt="" aria-hidden="true" loading="lazy">
+      <img class="hero-swap hero-swap-spnbfs" src="{{ "images/SPNBFS.jpg" | relURL }}" width="912" height="1136" alt="" aria-hidden="true" loading="lazy">
       <span class="hero-zoom-hint" aria-hidden="true">Click to enlarge</span>
     </a>
   </figure>
@@ -83,7 +87,7 @@
     {{ end }}
     <h1 id="site-title">The Tender For Law</h1>
     <p>An archive of old Facebook posts from 2013 - 2018 + Articles for Various Authors.</p>
-    <div class="hero-links"><a href="#volumes">Volumes <span aria-hidden="true">↓</span></a><a href="{{ "articles/" | relURL }}">Articles <span aria-hidden="true">↗</span></a><a href="https://cdd.com" target="_blank" rel="noopener noreferrer">Super Powered Nigger Bitches From Space <span aria-hidden="true">↗</span>{{ if site.Params.live_sign }}{{ if site.Params.live_standby }}{{ with site.Params.live_standby_text }}<span class="live-sign live-standby" data-day="{{ site.Params.live_sign_day }}" data-from="{{ site.Params.live_standby_from }}" data-to="{{ site.Params.live_sign_from }}" hidden>{{ . }}</span>{{ end }}{{ end }}{{ with site.Params.live_sign_text }}<span class="live-sign" data-day="{{ site.Params.live_sign_day }}" data-from="{{ site.Params.live_sign_from }}" data-to="{{ site.Params.live_sign_to }}" hidden>{{ . }}</span>{{ end }}{{ end }}</a></div>
+    <div class="hero-links"><a href="#volumes">Volumes <span aria-hidden="true">↓</span></a><a href="{{ "articles/" | relURL }}">Articles <span aria-hidden="true">↗</span></a><a class="hero-cdd" href="https://cdd.com" target="_blank" rel="noopener noreferrer">Super Powered Nigger Bitches From Space <span aria-hidden="true">↗</span>{{ if site.Params.live_sign }}{{ if site.Params.live_standby }}{{ with site.Params.live_standby_text }}<span class="live-sign live-standby" data-day="{{ site.Params.live_sign_day }}" data-from="{{ site.Params.live_standby_from }}" data-to="{{ site.Params.live_sign_from }}" hidden>{{ . }}</span>{{ end }}{{ end }}{{ with site.Params.live_sign_text }}<span class="live-sign" data-day="{{ site.Params.live_sign_day }}" data-from="{{ site.Params.live_sign_from }}" data-to="{{ site.Params.live_sign_to }}" hidden>{{ . }}</span>{{ end }}{{ end }}</a></div>
     {{ if site.Params.live_sign }}
     {{/* The neon signs on the cdd.com button (live_sign and live_standby in config.toml): each shown only on its day
          between its times, Toronto time, checked every half minute. Without JavaScript they stay hidden. */}}
