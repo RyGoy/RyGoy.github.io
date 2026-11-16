@@ -7,6 +7,8 @@ tags = ["TRUSTS"]
 +++
 Shared under a Creative Commons Attribution-NonCommercial-NoDerivs 3.0 Unported License.
 
+![A man's face faded into a sunset sky over a city skyline at dusk, beside a glass office tower with its windows lit](/images/articles/irish-rocco.jpg)
+
 # IRISH ROCCO!
 
 So @DaveCullen plays the naive "useful idiot' and sets you all up for a fleecing.

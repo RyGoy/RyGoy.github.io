@@ -3,6 +3,8 @@ title = "Bills of Exchange"
 description = "How a bill of exchange moves a debt between parties, who stands as surety for whom, and how each step is recorded in the books."
 +++
 
+![Part of a Canada Revenue Agency remittance voucher, stamped "Received from Payment" by the teller on 24 August 2022, signed, and stamped "Tender in accordance with the Bills of Exchange Act, RSC 1985, c B-4"](/images/articles/bills-of-exchange.jpg)
+
 A bill of exchange is a written order that moves a debt from one place to another. Most of the law around it exists to answer one question at every step: **who is liable, and in what order?** Accounting answers the same question in numbers. This page walks through both, first for the adult reader, then for a five-year-old.
 
 **One assumption runs through this whole page:** every signature is authorized. Each person who signs has the authority to bind the party they sign for, so every obligation described below is valid and enforceable. The page explains the mechanism, not whether a particular signature was authorized.

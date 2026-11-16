@@ -10,6 +10,8 @@ Shared under a Creative Commons Attribution-NonCommercial-NoDerivs 3.0 Unported 
 
 *First posted to THE TENDER FOR LAW on 2014-07-04. [Read the original post and its comments in Volume 7](/vol_vii/462493170453287_689301251105810/).*
 
+![The front and back of a Canadian one-dollar bill from 1973: the Queen beside the Canadian arms and the words "This note is legal tender", and on the back, the Parliament Buildings above a river full of floating logs and a tugboat](/images/articles/a-few-words-on-legal-tender.jpg)
+
 ---
 
 A FEW WORDS ON THE SUBJECT OF: LEGAL TENDER

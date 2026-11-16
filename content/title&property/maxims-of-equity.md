@@ -8,6 +8,8 @@ weight = 2
 tags = ["EQUITY", "TRUSTS", "PROPERTY"]
 +++
 
+![A poster, "Little Wooden Boat (Game) v1.0": money is debt, obligation, promises and accounting, a tool we use to play together. Assets are rights owed to us and rights we own, where title is registered; liabilities are obligations owed by us to creditors, where our debts are registered; equity is the fiduciary duties owed by us to beneficiaries, a trust relationship; income is revenue minus expenses; amortize intangible assets and depreciate tangible ones. It also lists eight Scottisms, among them: Scott is always right, Legal = Surety & Accounting, only the legal definition applies, and lien your name](/images/articles/maxims-of-equity.jpg)
+
 ## Where equity comes from
 
 The common-law courts decided cases by fixed rules. Where a fixed rule gave an unjust result, people petitioned the King's Chancellor, who decided by **conscience**. The rules the Court of Chancery built up over centuries are called **equity**, and the short sayings that sum them up are the **maxims of equity**.

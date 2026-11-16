@@ -10,6 +10,10 @@ Shared under a Creative Commons Attribution-NonCommercial-NoDerivs 3.0 Unported 
 
 *First posted to THE TENDER FOR LAW on 2013-05-20. [Read the original post and its comments in Volume 2](/vol_ii/462493170453287_515130628522874/).*
 
+![The Royal Banner of Scotland: a red lion rampant on gold, inside a double red border edged with fleurs-de-lis](/images/articles/with-great-power.png)
+
+*Picture: the Royal Banner of Scotland, drawn by Eyrian ([Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Royal_Banner_of_Scotland.svg), [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/)).*
+
 ---
 
 We've all heard the term, "With great power comes great responsibility".
