@@ -661,10 +661,12 @@ main { min-height: 35vh; }
 :root[data-theme="light"] .hero:has(.hero-waves-source:hover) .hero-zoom > .hero-swap-light,
 :root:not([data-theme]) .hero:has(.hero-exp-dot:hover) .hero-zoom > .hero-swap-sepia { transform: none; }
 /* The other way round: with the pointer on the cdd.com button (.hero-cdd), the poster drops slowly down and away as
-   that theme's picture comes down from the top: Dark's join-the-empire.jpg, kept to its bottom so its words show;
-   Sepia's cobra-army.jpg and Light's SPNBFS.jpg (blank white for now; replace the file to change it), centred. */
+   that theme's picture comes down from the top. Dark's join-the-empire.jpg and Sepia's cobra-army.jpg are narrower than
+   the poster's frame, so they are shown whole, not cropped, widened to the frame by their own border colour (the Empire
+   poster's red edge, the Cobra poster's aged paper); Light's is cropped to the frame, centred. */
 :root[data-theme="dark"] .hero-plate .hero-swap-empire, :root:not([data-theme]) .hero-plate .hero-swap-cobra, :root[data-theme="light"] .hero-plate .hero-swap-spnbfs { display: block; position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 50% 50%; transform: translateY(-100%); }
-:root[data-theme="dark"] .hero-plate .hero-swap-empire { object-position: 50% 100%; }
+:root[data-theme="dark"] .hero-plate .hero-swap-empire { object-fit: contain; background: #d7120f; }
+:root:not([data-theme]) .hero-plate .hero-swap-cobra { object-fit: contain; background: #c1a592; }
 :root[data-theme="dark"] .hero:has(.hero-cdd:hover) .hero-zoom > img,
 :root:not([data-theme]) .hero:has(.hero-cdd:hover) .hero-zoom > img,
 :root[data-theme="light"] .hero:has(.hero-cdd:hover) .hero-zoom > img { transform: translateY(100%); transition: transform 4s ease-in-out; }
