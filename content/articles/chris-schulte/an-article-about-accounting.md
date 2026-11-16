@@ -23,7 +23,7 @@ Shared under a Creative Commons Attribution-NonCommercial-NoDerivs 3.0 Unported 
 CC BY-ND-NC 3.0 UNPORTED LICENSE
 
 
-![A penguin peeking out of a round hole in a wooden wall beside a tag that reads "fact: you are a piece of shit"](/images/articles/trust-but-verify.gif)
+![Jew-Coaster](/static/videos/JewCoaster.mp4)
 
 ---
 
