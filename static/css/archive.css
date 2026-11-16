@@ -28,6 +28,8 @@
   --emblem-strength: 1;  /* times each emblem's faint opacity */
   /* Gothic masonry (static/images/gothic/): ashlar stonework tile and a blind-arcade frieze. */
   --stone: url("../images/gothic/ashlar.svg") 0 0 / 240px 96px;
+  /* The sidebar's cloth: the Robertson Ancient (Clan Donnachaidh) tartan, drawn faint (static/images/tartan/robertson.svg). */
+  --tartan: url("../images/tartan/robertson.svg") 0 0 / 224px 224px;
   --arcade: url("../images/gothic/arcade.svg");
   --display: "Cormorant Garamond", "Palatino Linotype", Palatino, Georgia, serif;
   --body: "Iowan Old Style", "Palatino Linotype", "Book Antiqua", Palatino, Georgia, serif;
@@ -525,9 +527,12 @@
   --c-4c2424: #5c2a2a;
 }
 /* theme colours: end */
-/* Set by hand: the light theme's fainter stonework, and cream kept on the dark red Volumes button. */
+/* Set by hand: the light theme's fainter stonework and tartan (a quarter washed out by the sidebar's own colour), and cream
+   kept on the dark red Volumes button. */
 :root[data-theme="light"] {
   --stone: url("../images/gothic/ashlar-light.svg") 0 0 / 240px 96px;
+  --tartan: linear-gradient(color-mix(in srgb, var(--c-141512) 25%, transparent), color-mix(in srgb, var(--c-141512) 25%, transparent)),
+    url("../images/tartan/robertson.svg") 0 0 / 224px 224px;
   --c-ebd9bc: #f3e4c8;
 }
 /* The dark theme's emblems in cdd.com's red (its buttons, icons and text: Bootstrap's --primary, #901). */
@@ -573,8 +578,8 @@ summary { cursor: pointer; }
 .skip-link:focus { top: 1rem; }
 .sidebar {
   position: fixed; inset: 0 auto 0 0; width: 16rem; overflow-y: auto;
-  /* A stone pier: the ashlar texture, with a second line inside the edge like a column shaft. */
-  background: linear-gradient(var(--c-39382e88), var(--c-39382e88)) right 5px top 0 / 1px 100% no-repeat, var(--stone), var(--c-141512);
+  /* The Robertson tartan, faint, with a second line inside the edge like a column shaft. */
+  background: linear-gradient(var(--c-39382e88), var(--c-39382e88)) right 5px top 0 / 1px 100% no-repeat, var(--tartan), var(--c-141512);
   border-right: 1px solid var(--line); padding: 2rem 1.6rem;
   scrollbar-width: thin; scrollbar-color: var(--c-514a39) var(--c-141512);
 }
@@ -1747,7 +1752,7 @@ a.page-emblem:focus-visible { outline: 2px solid var(--brass); outline-offset: 6
 .hero h1, .page-heading h1 { text-shadow: 0 -1px 0 var(--c-000000b0), 0 1px 0 var(--c-e5dcc812); }
 @media (max-width: 67.999rem) {
   .sidebar::after { display: none; }
-  .sidebar { background: var(--stone), var(--c-141512); }
+  .sidebar { background: var(--tartan), var(--c-141512); }
 }
 @media (max-width: 42rem) { .page-heading::after { width: 8rem; } .page-heading[data-numeral]::after { width: auto; font-size: 6.5rem; } }
 @media print {
