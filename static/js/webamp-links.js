@@ -44,6 +44,10 @@
       }
     });
     player.addEventListener('click', (event) => { if (event.target === player) player.close(); });
-    player.addEventListener('close', () => { ready?.then((webamp) => webamp.pause(), () => {}); });
+    // Webamp's pause() toggles (on a stopped or paused player it plays), so pause only what is playing: otherwise
+    // closing after the recording ended, or after pausing it, would start it again.
+    player.addEventListener('close', () => {
+      ready?.then((webamp) => { if (webamp.getMediaStatus() === 'PLAYING') webamp.pause(); }, () => {});
+    });
   }
 })();

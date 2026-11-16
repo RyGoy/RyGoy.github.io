@@ -10,7 +10,8 @@ Light turns lightness over (dark stone becomes parchment, cream text becomes bro
 dark shadows stay shadows, lighter, and dark accents (the red) stay as they are. Dark keeps the lightness of text and
 takes the backgrounds near black, with the warmth taken out (charcoal and off-white, the brass kept muted). Values it
 can't work out are set by hand after the generated block (the light theme's stone, the cream on the red button). Colours that are not the theme's stay as written: masks,
-the black video frame, the white behind the Anthology's printed pages, the cream flash card, and print styles.
+the black video frame, the white behind the Anthology's printed pages, the cream flash card, the hover pictures'
+borders (matched to each picture, .hero-swap), and print styles.
 Usage: theme_colours.py [<archive.css>]   (standard library only; run it after changing colours)
 """
 import math, re, sys
@@ -23,7 +24,7 @@ NAMED = ('--ink', '--surface', '--paper', '--muted', '--brass', '--line', '--red
 
 def keep(selector, prop, media):
     """Colours that are not the theme's."""
-    return ('print' in media or 'fc-card' in selector or 'mask' in prop
+    return ('print' in media or 'fc-card' in selector or 'mask' in prop or 'hero-swap' in selector
             or (selector.strip() == '.video-embed' and prop == 'background')
             or selector.strip() == '.anthology-copy img')
 
