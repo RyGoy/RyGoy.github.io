@@ -5,6 +5,8 @@ date = "2014-07-06"
 description = "Do you think members should block other members?"
 tags = ["NARRATIVE"]
 +++
+Shared under a Creative Commons Attribution-NonCommercial-NoDerivs 3.0 Unported License.
+
 *First posted to THE TENDER FOR LAW on 2014-07-06. [Read the original post and its comments in Volume 7](/vol_vii/462493170453287_690168484352420/).*
 
 ---

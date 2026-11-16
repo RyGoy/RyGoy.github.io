@@ -6,6 +6,8 @@ tags = ["TRUSTS", "TITLE", "PROPERTY"]
 categories = ["CLAIMS"]
 weight = "1"
 +++
+Shared under a Creative Commons Attribution-NonCommercial-NoDerivs 3.0 Unported License.
+
 
 <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
   <div class="carousel-inner">

@@ -5,6 +5,8 @@ date = "2016-01-20 03:45:00"
 description = "People who want to do something, do it: Tara Duncan on the difference between researching a goal and actually doing it."
 tags = ["NARRATIVE"]
 +++
+Shared under a Creative Commons Attribution-NonCommercial-NoDerivs 3.0 Unported License.
+
 ![A red splatter with the words "just do it"](/images/articles/just-do-it.jpg)
 
 *Picture: [Minds](https://www.minds.com/taraduncan/blog/just-do-it-620104502892048388)*

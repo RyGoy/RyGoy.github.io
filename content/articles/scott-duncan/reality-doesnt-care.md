@@ -6,6 +6,8 @@ description = "REALITY DOESN'T CARE. Neither should you."
 tags = ["NARRATIVE"]
 categories = ["FREEDUMB"]
 +++
+Shared under a Creative Commons Attribution-NonCommercial-NoDerivs 3.0 Unported License.
+
 *First appeared on THE TENDER FOR LAW as a comment by Scott Duncan on 2014-06-28. [Read it in Volume 6](/vol_vi/462493170453287_686792848023317/#entry-686890691346866).*
 
 ---

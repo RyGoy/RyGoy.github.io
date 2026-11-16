@@ -5,6 +5,8 @@ date = "2021-03-03"
 description = "Only Tara knows for sure"
 tags = ["NARRATIVE"]
 +++
+Shared under a Creative Commons Attribution-NonCommercial-NoDerivs 3.0 Unported License.
+
 
 
 THERE ARE NO GIRLS ON THE INTERNET

@@ -5,6 +5,8 @@ date = "2020-04-16"
 description = "There are no good lawyers"
 tags = ["TRUSTS"]
 +++
+Shared under a Creative Commons Attribution-NonCommercial-NoDerivs 3.0 Unported License.
+
 # IRISH ROCCO!
 
 So @DaveCullen plays the naive "useful idiot' and sets you all up for a fleecing.

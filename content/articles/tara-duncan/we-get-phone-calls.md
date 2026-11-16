@@ -5,6 +5,8 @@ date = "2016-09-24"
 description = "From fake Windows support calls to vendors who profit from credulity: Tara Duncan on those who make money from what people don't know."
 tags = ["NARRATIVE"]
 +++
+Shared under a Creative Commons Attribution-NonCommercial-NoDerivs 3.0 Unported License.
+
 ![A puppy asleep with a telephone handset at its ear](/images/articles/we-get-phone-calls.jpg)
 
 *Picture: [Minds](https://www.minds.com/taraduncan/blog/we-get-phone-calls-626430478710218754)*

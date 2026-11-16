@@ -6,6 +6,8 @@ description = "Fold.it for science"
 tags = ["NARRATIVE"]
 categories = ["COMPUTER SCIENCE"]
 +++
+Shared under a Creative Commons Attribution-NonCommercial-NoDerivs 3.0 Unported License.
+
 # Is this the fold? i don't know who's fold this is
 ![A screenshot of Foldit, the protein-folding puzzle game](/images/articles/fold-it-good.jpg)
 

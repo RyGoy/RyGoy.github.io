@@ -5,6 +5,8 @@ date = "2019-01-19"
 description = "Tara Duncan on being called a \"cunt\" on social media for disagreeing, and what the insult says about the people who use it."
 tags = ["NARRATIVE"]
 +++
+Shared under a Creative Commons Attribution-NonCommercial-NoDerivs 3.0 Unported License.
+
 
 Somebody called me a "cunt" once on social media. Actually to be fair more than a few people have called me this or something similar at intervals over the years; sometimes variations on this theme with greater or fewer adjectives, perhaps according to their whims, creative abilities or the occasion. This seemed dependent on their perception of how much I had offended their delicate sensibilities by simply disagreeing with whatever idea or belief they held.
 

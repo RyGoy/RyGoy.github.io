@@ -6,6 +6,8 @@ description = "BITCOIN is the APPLICATION."
 tags = ["NARRATIVE"]
 categories = ["COMPUTER SCIENCE"]
 +++
+Shared under a Creative Commons Attribution-NonCommercial-NoDerivs 3.0 Unported License.
+
 *First appeared on THE TENDER FOR LAW as a comment by Scott Duncan on 2014-11-24. [Read it in Volume 8](/vol_viii/462493170453287_747878295248105/#entry-751438801558721).*
 
 ---
