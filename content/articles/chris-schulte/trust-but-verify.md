@@ -23,13 +23,7 @@ Shared under a Creative Commons Attribution-NonCommercial-NoDerivs 3.0 Unported 
 CC BY-ND-NC 3.0 UNPORTED LICENSE
 
 
-<div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="/img/kowalski.gif" class="d-block w-100" alt="...">
-    </div>
-  </div>
-</div>
+![A penguin peeking out of a round hole in a wooden wall beside a tag that reads "fact: you are a piece of shit"](/images/articles/trust-but-verify.gif)
 
 ---
 
