@@ -1,8 +1,8 @@
 +++
 author = "ROGUESUPPORT INC"
 title = "PERSONS FOR IDIOTS"
+description = "All of you have encountered the term “PERSON”. You are not a PERSON, rather you HAVE a PERSON. This distinction is the first lie of omission. PERSONS FOR IDIOTS."
 date = "2014-05-05"
-description = "You are him or his agent"
 tags = ["AGENCY", "SURETY"]
 categories = ["JOINDER", "MAN ≠ PERSON", "HER MAJESTY AND AN ORGANIZATION"]
 weight = "11"

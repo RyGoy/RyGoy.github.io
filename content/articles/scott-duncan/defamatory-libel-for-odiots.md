@@ -1,8 +1,8 @@
 +++
 author = "ROGUESUPPORT INC"
 title = "DEFAMATORY LIBEL FOR IDIOTS"
+description = "THE TENDER FOR LAW is about LAW and COMMERCE, and how you don’t get what you pay for. Scott Duncan dusts off a case where transcripts were forged."
 date = "2015-01-01"
-description = "You are him or his agent"
 tags = ["TRUSTS", "NARRATIVE"]
 +++
 ![A man in a suit reading a newspaper in shock](/images/articles/defamatory-libel-for-odiots.jpg)

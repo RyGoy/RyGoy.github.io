@@ -1,8 +1,8 @@
 +++
 author = "ROGUESUPPORT INC"
 title = "Putting It All Together"
+description = "In THE TENDER FOR LAW one of its evolved maxims is that “The gold is in the comments”. Every once in a while a gold nugget comes up. Scott Duncan puts it all together."
 date = "2014-05-05"
-description = "You are him or his agent"
 tags = ["TRUSTS", "ACCOUNTING", "SURETY"]
 +++
 *First posted to THE TENDER FOR LAW on 2015-06-21. [Read the original post and its comments in Volume 10](/vol_x/462493170453287_845066405529293/).*

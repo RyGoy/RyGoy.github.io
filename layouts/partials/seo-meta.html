@@ -1,21 +1,66 @@
 {{/* The page's title and description, for search engines and link previews (partials/head.html). Returns a dict:
      title, description.
-     - Posts and comments: "Author: the opening of the message · Volume N · The Tender For Law", described by the
-       message's opening (their front matter's description is the shared link's, not theirs). A post with no message
-       is named by its shared link's title, or else its date.
+     - Posts and comments: "the opening of the message – Author · The Tender For Law", the words first, since a
+       search result shows only about 60 characters of a title; the opening, without web addresses, is shortened to
+       keep the title near 80.
+       Described by the message's opening, with who wrote it and when if it is short (their front matter's
+       description is the shared link's, not theirs). A short message's title has its date too. One
+       with no message is named by its shared link's title, or else as a picture, post or comment with its date and
+       time (a member often shared several in a day), and described by who shared it, when and where, with the
+       shared link's title and, for a post, its first comment.
+     - The home page: the site's name and what it is.
      - Volumes: their months and number of posts.
-     - Other pages: their own title and description, or the site's (params.description in config.toml). */}}
+     - Other pages: their own title, and their own description, or else the opening of their text, or else (lists
+       such as tag pages) how many pages they list and the first few; failing all of those, the site's
+       (params.description in config.toml). */}}
 {{ $site := "The Tender For Law" }}
 {{ $title := $site }}
 {{ $desc := .Description }}
+{{ $clean := `\s+` }}
 {{ if .Params.id }}
   {{ $text := partial "seo-text.html" . }}
-  {{ $who := .Params.from_name | default (cond (isset .Params "post_id") "Comment" "Post") }}
-  {{ $head := $text | default .Params.name }}
-  {{ if not $head }}{{ with .Params.created_time }}{{ $head = (time.AsTime .).Format "2 January 2006" }}{{ end }}{{ end }}
-  {{ $title = printf "%s: %s · %s · %s" $who (truncate 60 "…" $head) .FirstSection.Title $site }}
-  {{ $desc = cond (ne $text "") (truncate 160 "…" $text) (.Description | default .Params.name) }}
-{{ else if not .IsHome }}
+  {{ $who := .Params.from_name | default "A member" }}
+  {{ $when := "" }}
+  {{ with .Params.created_time }}{{ $when = (time.AsTime .).Format (cond ($.Params.time_unknown | default false) "2 January 2006" "2 January 2006, 3:04 PM") }}{{ end }}
+  {{/* Web addresses are left out of the title: a post that is only a link is named by the link's title. */}}
+  {{ $head := trim (replaceRE $clean " " (replaceRE `(?i)\b(https?://|www\.)\S+` "" $text)) " " }}
+  {{ $head = $head | default .Params.name }}
+  {{ if not $head }}
+    {{ $kind := cond (isset .Params "post_id") "Comment" "Post" }}
+    {{ if eq .Params.type "photo" }}{{ $kind = "Picture" }}{{ end }}
+    {{ with site.Data.photos }}{{ with index .entries $.Params.id }}{{ $kind = "Picture" }}{{ end }}{{ end }}
+    {{ $head = printf "%s, %s" $kind ($when | default .FirstSection.Title) }}
+  {{/* A short message (":)", "Thoughts?") is one a member often wrote more than once: its date tells them apart. */}}
+  {{ else if and $when (lt (len $head) 25) }}
+    {{ $head = printf "%s, %s" $head $when }}
+  {{ end }}
+  {{ $suffix := printf " – %s · %s" $who $site }}
+  {{ $room := sub 80 (len $suffix) }}
+  {{ if lt $room 45 }}{{ $room = 45 }}{{ end }}
+  {{ $title = printf "%s%s" (truncate $room "…" $head) $suffix }}
+  {{ if gt (len $text) 70 }}
+    {{ $desc = truncate 160 "…" $text }}
+  {{ else if $text }}
+    {{/* A short message says little by itself: who wrote it, when and where. */}}
+    {{ $desc = printf "%s – %s%s, in %s of %s." $text $who (cond (ne $when "") (printf ", %s" $when) "") .FirstSection.Title $site }}
+  {{ else }}
+    {{ $desc = printf "Shared by %s%s in %s of %s." $who (cond (ne $when "") (printf " on %s" $when) "") .FirstSection.Title $site }}
+    {{ with .Params.name }}{{ $desc = printf "%s: %s." (strings.TrimSuffix "." $desc) (strings.TrimSuffix "." .) }}{{ end }}
+    {{ if not (isset .Params "post_id") }}
+      {{ $first := "" }}
+      {{ range sort .Pages "Params.created_time" }}
+        {{ if not $first }}
+          {{ $c := partial "seo-text.html" . }}
+          {{ if $c }}{{ $first = printf "%s: %s" (.Params.from_name | default "A member") $c }}{{ end }}
+        {{ end }}
+      {{ end }}
+      {{ with $first }}{{ $desc = printf "%s First comment, by %s" $desc . }}{{ end }}
+    {{ end }}
+    {{ $desc = truncate 160 "…" $desc }}
+  {{ end }}
+{{ else if .IsHome }}
+  {{ $title = printf "%s: the Facebook group's archive, 2013 to 2018" $site }}
+{{ else }}
   {{ $title = printf "%s · %s" .Title $site }}
   {{ if and (eq .Kind "section") (hasPrefix .Section "vol_") (not $desc) }}
     {{ $posts := sort .Pages "Params.created_time" }}
@@ -24,6 +69,18 @@
       {{ $last := (time.AsTime (index . (sub (len .) 1)).Params.created_time).Format "January 2006" }}
       {{ $desc = printf "%s of The Tender For Law: %d posts from the Facebook group, %s%s, with their comments." $.Title (len .) $first (cond (eq $first $last) "" (printf " to %s" $last)) }}
     {{ end }}
+  {{ end }}
+  {{ if not $desc }}
+    {{/* Leaving out the licence line that opens many articles. */}}
+    {{ with .Summary }}{{ $desc = trim (replaceRE $clean " " (. | plainify | htmlUnescape)) " " }}{{ end }}
+    {{ $desc = truncate 160 "…" (trim (replaceRE `^Shared under a Creative Commons [^.]*License\.` "" $desc) " ") }}
+  {{ end }}
+  {{ if and (not $desc) (not .IsPage) .Pages }}
+    {{ $names := slice }}
+    {{ range first 4 .Pages }}{{ with .LinkTitle }}{{ $names = $names | append . }}{{ end }}{{ end }}
+    {{ $desc = printf "%s in %s: %d %s" .Title $site (len .Pages) (cond (eq (len .Pages) 1) "page" "pages") }}
+    {{ with $names }}{{ $desc = printf "%s, including %s" $desc (delimit . ", " " and ") }}{{ end }}
+    {{ $desc = truncate 160 "…" (printf "%s." $desc) }}
   {{ end }}
 {{ end }}
 {{ return dict "title" $title "description" ($desc | default site.Params.description) }}

@@ -92,11 +92,11 @@ If he understood this much, how much more does he understand?  Could my only wis
 
 *SPOILER ALERT*:  …Nope!
 
-Continued Next Article:  [FREE-DUMB – THE TRUTH & ROBERT MENARD](/scott-duncan/freedumb-the-truth-and-robert-menard/)
+Continued Next Article:  [FREE-DUMB – THE TRUTH & ROBERT MENARD](/articles/scott-duncan/freedumb-the-truth-and-robert-menard/)
 
 Because the point of this article is constantly missed, I shall dumb it down for you:The “Rule of Law” got us this far. It is now staffed by the corrupt, violent and inept. The Free-dumb movement are a threat to YOU, because when you study what I teach, it is TRUE and self-evident. The corrupt, violent, and inept, COMMERCIAL GOVERNMENT (That’s what the Charter IS) want to lump YOU in with the free-dumbers and their half-truths, so they can “legally” dismiss ALL voices that draw attention to the fact that the “People’s Government” is in fact corrupt, violent, and inept. They even INVENT made-up groups, that REAL nut-jobs adopt! Al Queda is one! “Sovereign Citizen” is another. REAL NUTS adopt these MADE UP THINGS and make them real. THAT is a BIG part of “The Looming Threat of FreeDumb”. 
 
-[SEE:](/scott-duncan/the-looming-threat-of-freedumb-addendum/) ADDENDUM https://www.facebook.com/notes/scott-duncan/the-tender-for-law-the-looming-threat-of-freedumb-addendum/986796628053476 
+[SEE:](/articles/scott-duncan/the-looming-threat-of-freedumb-addendum/) ADDENDUM https://www.facebook.com/notes/scott-duncan/the-tender-for-law-the-looming-threat-of-freedumb-addendum/986796628053476 
 
 ---
 <p><a class="" href="https://web.archive.org/web/20190528004035/https://kentbarrett.com/the-tender-for-law-the-looming-threat-of-freedumb/" targt="_blank">[Kent Barrett]</a></p>

@@ -1,18 +1,18 @@
 +++
 title = "Terms"
 description = "The terms every visitor accepts before entering the archive."
-# Sound played when the pop-up opens. Either a file in static/audio/
+# Sound played when the banner appears. Either a file in static/audio/
 # (written as "/audio/name.mp3") or a full link ("https://..."). Remove the
 # line for no sound.
 # TERMS AUDIO DISABLED: uncomment the next line to bring the pop-up music back.
 # audio = "/audio/terms-song.mp3"
-# Everything below the closing +++ is shown in the first-visit pop-up
+# Everything below the closing +++ is shown in the terms banner
 # (static/js/terms-gate.js) and on this page at /terms/.
 # Changing the text asks every visitor to accept again: acceptance is
 # remembered per version of this text.
 #
 # Image: put the file in static/images/ and reference it with a path that
-# starts with /images/, so it also loads inside the pop-up on other pages:
+# starts with /images/ (the banner leaves the picture out; /terms/ shows it):
 #   ![Describe the image here](/images/terms.jpg)
 +++
 

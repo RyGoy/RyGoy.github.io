@@ -1,8 +1,8 @@
 +++
 author = "ROGUESUPPORT INC"
 title = "ONE TRILLION DOLLARS!"
+description = "HEY! Andrew D’Spyder-Pig! Looks like those evil Bitcoin folk have “thefted” a trillion bucks! Scott Duncan on Bitcoin and the Blockchain, January 2016."
 date = "2014-05-05"
-description = "You are him or his agent"
 tags = ["NARRATIVE"]
 +++
 ![A cartoon pig in a Spider-Man suit](/images/articles/one-trillion-dollars.webp)

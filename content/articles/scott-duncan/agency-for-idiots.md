@@ -1,8 +1,8 @@
 +++
 author = "ROGUESUPPORT INC"
 title = "AGENCY (ARTIFICIAL PERSONS) FOR IDIOTS"
+description = "HER MAJESTY AND AN ORGANIZATION: it’s the ultimate artificial person. Scott Duncan on how the Criminal Code of Canada defines “every one”, “person” and “owner”."
 date = "2014-05-05"
-description = "You are him or his agent"
 tags = ["AGENCY", "SURETY", "TRUSTS"]
 categories = ["HER MAJESTY AND AN ORGANIZATION", "JOINDER"]
 weight = "14"

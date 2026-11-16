@@ -1,7 +1,7 @@
 +++
 author = "ROGUESUPPORT INC"
 title = "DUSTIN MYHEAD"
-description = "You are him or his agent"
+description = "It is the story of “Dustin”. Full name: Dustin MyHead. Posted by Scott Duncan on Facebook on 14 April 2016."
 tags = ["ACCOUNTING", "NARRATIVE"]
 weight = "75"
 +++

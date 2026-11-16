@@ -1,0 +1,10 @@
+{{- /* Markdown pictures (articles, the Library, notes, the terms). A picture kept in static/ gets its width and height,
+       read from the file, so the page keeps its place for it while it loads instead of jumping down when it arrives
+       (CSS scales it: img { max-width: 100%; height: auto }). Others are written as Hugo writes them. */ -}}
+{{- $src := .Destination -}}
+{{- $w := 0 -}}{{- $h := 0 -}}
+{{- $file := path.Join "static" (index (split $src "?") 0) -}}
+{{- if and (hasPrefix $src "/") (not (hasPrefix $src "//")) (in (slice ".jpg" ".jpeg" ".png" ".gif" ".webp") (lower (path.Ext $file))) (fileExists $file) -}}
+  {{- with imageConfig $file }}{{ $w = .Width }}{{ $h = .Height }}{{ end -}}
+{{- end -}}
+<img src="{{ $src | safeURL }}" alt="{{ .Text | plainify | htmlUnescape }}"{{ with .Title }} title="{{ . }}"{{ end }}{{ if $w }} width="{{ $w }}" height="{{ $h }}"{{ end }}>

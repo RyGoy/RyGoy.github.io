@@ -1,0 +1,6 @@
+{{- /* Markdown headings. Every page already has its title as its one h1, so a "# heading" in the text is written as
+       an h2 (class "h1-size" keeps its look: .prose h1 in archive.css): search engines read a page with several h1s
+       as having no clear subject. Other levels are written as Hugo writes them. */ -}}
+{{- $level := .Level -}}
+{{- if eq $level 1 }}{{ $level = 2 }}{{ end -}}
+<h{{ $level }} id="{{ .Anchor | safeURL }}"{{ if eq .Level 1 }} class="h1-size"{{ end }}>{{ .Text | safeHTML }}</h{{ $level }}>

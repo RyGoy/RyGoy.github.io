@@ -1052,7 +1052,7 @@ iframe.video-embed { border: 1px solid var(--line); }
 .prose p { margin-bottom: 1.5em; }
 .prose > :first-child { margin-top: 0; }
 .prose h1, .prose h2, .prose h3, .prose h4 { margin: 1.7em 0 .65em; color: var(--c-dfcba4); }
-.prose h1 { font-size: 2.6rem; }
+.prose h1, .prose .h1-size { font-size: 2.6rem; }
 .prose h2 { font-size: 2.2rem; }
 .prose h3 { font-size: 1.7rem; }
 .prose a { color: var(--c-d7bc87); }
@@ -1359,6 +1359,26 @@ html:has(.terms-gate[open]) { overflow: hidden; }
 .terms-gate-actions button:first-child:hover, .terms-gate-actions button:first-child:focus-visible { color: var(--c-120e06); background: linear-gradient(var(--c-e8cf98), var(--c-b9985c)); border-color: var(--c-f0d9a6); box-shadow: inset 0 1px 0 var(--c-fff3d099), 0 .4rem 1.4rem var(--c-b89a6340); }
 .terms-gate-actions button:focus-visible { outline: 2px solid var(--c-e3c991); outline-offset: 3px; }
 .terms-gate-refusal { width: min(40rem, calc(100vw - 2rem)); border-color: var(--red); }
+/* The terms as a banner along the bottom of the screen (static/js/terms-gate.js): the pop-up's frame and buttons,
+   smaller, over the page without covering it all or blocking it. The text scrolls in its share of the screen, so
+   the question and Yes/No stay in view. */
+.terms-banner { position: fixed; z-index: 55; left: 50%; bottom: 1rem; box-sizing: border-box; display: flex; flex-direction: column; max-height: min(42vh, 26rem); padding: 1.25rem clamp(1rem, 3vw, 2rem); transform: translateX(-50%); }
+.terms-banner[hidden] { display: none; }
+.terms-banner > * { flex: none; }
+.terms-banner h2 { margin-bottom: .6rem; font-size: 1.35rem; }
+.terms-banner h2::after { margin-top: .5rem; }
+.terms-banner > .terms-gate-body { flex: 0 1 auto; min-height: 0; max-height: none; }
+.terms-banner .terms-gate-text { font-size: 1rem; line-height: 1.6; }
+.terms-banner .terms-gate-question { margin: .75rem 0 .6rem; padding-top: .6rem; font-size: 1.1rem; }
+.terms-banner .terms-gate-actions button { min-width: 6rem; padding: .5rem 1.1rem; }
+.terms-banner.terms-gate-refusal { width: min(40rem, calc(100vw - 2rem)); }
+.terms-banner.terms-gate-refusal > p { margin: 0 0 .9rem; }
+/* Beside the sidebar, centred in the page's own column. */
+@media (min-width: 68rem) { .terms-banner { left: calc(50% + 8rem); width: min(64rem, calc(100vw - 18rem)); } .terms-banner.terms-gate-refusal { width: min(40rem, calc(100vw - 18rem)); } }
+@media (max-height: 30rem) { .terms-banner { overflow-y: auto; } }
+@media (max-width: 48rem) { .terms-banner { bottom: .5rem; width: calc(100vw - 1rem); max-height: 45vh; } }
+@media (prefers-reduced-motion: no-preference) { .terms-banner:not([hidden]) { animation: banner-in .4s cubic-bezier(.2, .8, .2, 1); } }
+@keyframes banner-in { from { opacity: 0; transform: translate(-50%, 1.5rem); } }
 /* Grand Fluff Auto launch notice (partials/footer.html), the terms pop-up's look at a smaller size. */
 .game-launch { width: min(44rem, calc(100vw - 2rem)); }
 .game-launch .terms-gate-body { margin-bottom: 1.5rem; }

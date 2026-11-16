@@ -1,8 +1,8 @@
 +++
 author = "ROGUESUPPORT INC"
 title = "SURETY FOR IDIOTS"
+description = "It’s been a while since I’ve posted an article, and I’ve solidified the “For Idiots” concept. Let’s cover SURETY! By Scott Duncan, March 2013."
 date = "2014-05-05"
-description = "You are him or his agent"
 tags = ["SURETY", "PROPERTY", "ACCOUNTING"]
 categories = ["RESPONSIBILITY"]
 weight = "13"

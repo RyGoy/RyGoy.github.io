@@ -1,8 +1,8 @@
 +++
 author = "ROGUESUPPORT INC"
 title = "Give In Lieu Of “Identification”"
+description = "Give in lieu of “identification”: a NOTICE OF WAIVER OF PUBLIC BENEFITS under Ontario’s Change of Name Act, for the public servant who demands IDENTIFICATION."
 date = "2014-05-05"
-description = "You are him or his agent"
 tags = ["AGENCY", "TRUSTS"]
 +++
 Shared under a Creative Commons Attribution-NonCommercial-NoDerivs 3.0 Unported License.
