@@ -1,8 +1,8 @@
 +++
 author = "ROGUESUPPORT INC"
 title = "Obiter Dictum: MEADS V. MEADS FOR IDIOTS"
+description = "It’s time to stir the pot, disturb some shit as it were. Scott Duncan’s Obiter Dictum on MEADS V. MEADS, for idiots."
 date = "2014-05-05"
-description = "You are him or his agent"
 tags = ["TRUSTS", "ACCOUNTING", "AGENCY"]
 weight = "21"
 +++

@@ -1,15 +1,31 @@
-// First-visit terms pop-up. Loaded by layouts/partials/terms-gate.html; the terms come from the /terms/ page.
+// Terms banner. Loaded by layouts/partials/terms-gate.html; the terms come from the /terms/ page.
+// It appears along the bottom of the screen 20 seconds after the visitor arrived on the site (counted from their
+// first page this visit, so moving between pages doesn't restart the count), and stays on every page until they
+// answer Yes. It doesn't cover the page or block it: a pop-up that hides a page on arrival is one search engines
+// rank lower, and it was the first thing every visitor from a search saw.
 (() => {
   const script = document.currentScript;
   const termsUrl = new URL(script.dataset.terms, location.href);
   const version = script.dataset.version;
   const KEY = 'ttfl-terms-accepted';
+  const ARRIVED = 'ttfl-arrived';
+  const DELAY = 20000;
 
-  // Storage can be blocked (private windows, strict settings); then the visitor is asked on each page.
+  // Storage can be blocked (private windows, strict settings); then the visitor is asked on each page, 20 seconds
+  // after it opened.
   const accepted = () => { try { return localStorage.getItem(KEY) === version; } catch { return false; } };
   const remember = () => { try { localStorage.setItem(KEY, version); } catch { /* not remembered */ } };
+  const arrived = () => {
+    try {
+      const stored = Number(sessionStorage.getItem(ARRIVED));
+      if (stored) return stored;
+      sessionStorage.setItem(ARRIVED, String(Date.now()));
+    } catch { /* not remembered */ }
+    return Date.now();
+  };
 
   if (accepted() || location.pathname === termsUrl.pathname) return;
+  const showAt = arrived() + DELAY;
 
   const element = (tag, props, ...children) => {
     const node = Object.assign(document.createElement(tag), props);
@@ -17,8 +33,8 @@
     return node;
   };
 
-  // Sound plays while either pop-up is open. Browsers often block sound before the visitor has
-  // interacted with the site, so each pop-up has a button to start or stop it.
+  // Sound plays while the banner is showing. Browsers often block sound before the visitor has interacted with
+  // the site, so it has a button to start or stop it.
   const sound = script.dataset.audio ? new Audio(script.dataset.audio) : null;
   const soundButtons = [];
   const soundButton = () => {
@@ -43,9 +59,7 @@
   }
 
   const show = (title, terms) => {
-    let agreed = false;
-
-    // The picture sits beside the terms, so lift it (and the paragraph Markdown wraps it in) out of the text.
+    // The banner is too small for the terms' picture; the /terms/ page shows it.
     const image = terms.querySelector('img');
     if (image) {
       const holder = image.parentElement;
@@ -55,46 +69,40 @@
 
     const yes = element('button', { type: 'button', className: 'terms-gate-yes', textContent: 'Yes' });
     const no = element('button', { type: 'button', textContent: 'No' });
-    const gate = element('dialog', { className: 'terms-gate' },
-      element('h2', { id: 'terms-gate-title', textContent: title, tabIndex: -1, autofocus: true }),
+    const banner = element('section', { className: 'terms-gate terms-banner' },
+      element('h2', { id: 'terms-banner-title', textContent: title }),
       element('div', { className: 'terms-gate-body' },
-        element('div', { className: 'prose terms-gate-text' }, ...terms.childNodes),
-        ...(image ? [image] : [])),
+        element('div', { className: 'prose terms-gate-text' }, ...terms.childNodes)),
       element('p', { className: 'terms-gate-question', textContent: 'Do you agree to the terms?' }),
       element('div', { className: 'terms-gate-actions' }, yes, no, soundButton()));
-    gate.setAttribute('aria-labelledby', 'terms-gate-title');
+    banner.setAttribute('aria-labelledby', 'terms-banner-title');
 
     const back = element('button', { type: 'button', textContent: 'Back to the terms' });
-    const refusal = element('dialog', { className: 'terms-gate terms-gate-refusal' },
-      element('h2', { id: 'terms-gate-refusal-title', textContent: 'Then fuck off.', tabIndex: -1, autofocus: true }),
+    const refusal = element('section', { className: 'terms-gate terms-banner terms-gate-refusal', hidden: true },
+      element('h2', { id: 'terms-banner-refusal-title', textContent: 'Then fuck off.', tabIndex: -1 }),
       element('p', { textContent: 'We don’t have time for your bullshit.' }),
       element('div', { className: 'terms-gate-actions' }, back, soundButton()));
-    refusal.setAttribute('aria-labelledby', 'terms-gate-refusal-title');
+    refusal.setAttribute('aria-labelledby', 'terms-banner-refusal-title');
 
     yes.addEventListener('click', () => {
-      agreed = true;
       remember();
       sound?.pause();
-      gate.remove();
+      banner.remove();
       refusal.remove();
     });
     no.addEventListener('click', () => {
-      gate.close();
-      refusal.showModal();
+      banner.hidden = true;
+      refusal.hidden = false;
+      refusal.querySelector('h2').focus();
       sound?.play().catch(() => {}); // the click allows sound, so the refusal always has music
     });
-    back.addEventListener('click', () => { refusal.close(); gate.showModal(); });
+    back.addEventListener('click', () => {
+      refusal.hidden = true;
+      banner.hidden = false;
+      yes.focus();
+    });
 
-    // There is no way past without answering: Escape is ignored, and a dialog the browser closes anyway reopens.
-    for (const dialog of [gate, refusal]) {
-      dialog.addEventListener('cancel', event => event.preventDefault());
-      dialog.addEventListener('close', () => {
-        if (!agreed && !gate.open && !refusal.open) dialog.showModal();
-      });
-    }
-
-    document.body.append(gate, refusal);
-    gate.showModal();
+    document.body.append(banner, refusal);
     if (sound) {
       labelSoundButtons();
       // Browsers usually block sound until the visitor interacts with the page. If this is blocked, start
@@ -109,13 +117,15 @@
     }
   };
 
-  // If the terms page can't be loaded, let the visitor in rather than show an empty pop-up.
-  fetch(termsUrl)
-    .then(response => (response.ok ? response.text() : Promise.reject(response.status)))
-    .then(html => {
-      const page = new DOMParser().parseFromString(html, 'text/html');
-      const terms = page.querySelector('.prose');
-      if (terms) show(page.querySelector('h1')?.textContent.trim() || 'Terms', document.importNode(terms, true));
-    })
-    .catch(() => {});
+  // If the terms page can't be loaded, show nothing rather than an empty banner.
+  setTimeout(() => {
+    fetch(termsUrl)
+      .then(response => (response.ok ? response.text() : Promise.reject(response.status)))
+      .then(html => {
+        const page = new DOMParser().parseFromString(html, 'text/html');
+        const terms = page.querySelector('.prose');
+        if (terms) show(page.querySelector('h1')?.textContent.trim() || 'Terms', document.importNode(terms, true));
+      })
+      .catch(() => {});
+  }, Math.max(0, showAt - Date.now()));
 })();

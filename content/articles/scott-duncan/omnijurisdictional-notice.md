@@ -1,8 +1,8 @@
 +++
 author = "ROGUESUPPORT INC"
 title = "OMNIJURISDICTIONAL NOTICE"
+description = "ATTENTION, SIMU-DRONES: Scott Duncan’s OMNIJURISDICTIONAL NOTICE, a document that kept growing, shared to THE TENDER FOR LAW by Pete Daoust in March 2015."
 date = "2014-05-05"
-description = "You are him or his agent"
 tags = ["TITLE"]
 +++
 *Shared to THE TENDER FOR LAW by Pete Daoust on 2015-03-16. [Read the post and its comments in Volume 9](/vol_ix/462493170453287_803214169714517/).*

@@ -1,8 +1,8 @@
 +++
 author = "ROGUESUPPORT INC"
 title = "IT’S ALL NATURAL!"
+description = "The mechanism by which entities like “Natural News” feed on your credulity, shown with a peer-reviewed article on essential oils. By Scott Duncan, June 2014."
 date = "2014-05-05"
-description = "You are him or his agent"
 tags = ["NARRATIVE"]
 +++
 Shared under a Creative Commons Attribution-NonCommercial-NoDerivs 3.0 Unported License.

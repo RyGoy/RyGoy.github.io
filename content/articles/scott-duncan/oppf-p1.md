@@ -1,8 +1,8 @@
 +++
 author = "ROGUESUPPORT INC"
 title = "ONE PEOPLE’S PUBLIC FRAUD (OPPF) Part ONE"
+description = "ONE PEOPLE’S PUBLIC FRAUD (OPPF), part one. You’ll notice I didn’t use the word TRUST: scams like this diminish the word. ROGUESUPPORT INC, February 2013."
 date = "2013-02-23"
-description = "You are him or his agent"
 tags = ["TRUSTS"]
 +++
 *First posted to THE TENDER FOR LAW on 2013-02-24. [Read the original post and its comments in Volume 1](/vol_i/462493170453287_484380801597857/).*

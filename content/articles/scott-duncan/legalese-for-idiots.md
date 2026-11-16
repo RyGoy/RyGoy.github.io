@@ -1,8 +1,8 @@
 +++
 author = "ROGUESUPPORT INC"
 title = "LEGALESE FOR IDIOTS"
+description = "It’s feast or famine around here at THE TENDER FOR LAW. Derek Moran doubted Scott Duncan could top the SURETY article. CHALLENGE ACCEPTED: LEGALESE FOR IDIOTS."
 date = "2013-01-01"
-description = "You are him or his agent"
 tags = ["SURETY", "TRUSTS"]
 weight = "16"
 +++
