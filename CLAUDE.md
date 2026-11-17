@@ -10,6 +10,10 @@ Hugo static site ("The Tender For Law"): an archive of old Facebook group posts 
 
 `docs/` holds the architecture for people, as linked notes that open in Obsidian (`docs/README.md` is the map; `docs/architecture/*.md`, one per part; `docs/architecture.canvas`; `docs/changelog.md` from `scripts/docs_changelog.py`). When a change alters how a part works, update its note in the same change; add any outside service to `docs/hosting.md`.
 
+## Beginner's guide
+
+`guide/` is a second Obsidian vault, for learners: paths of lessons that teach the accounting lens the archive assumes, quoting only Scott Duncan's and Chris Schulte's own words (`guide/README.md`). The lessons (`guide/lens/`, front matter `terms:` and `search:`) and paths are written by hand; `scripts/guide_build.py` writes `guide/terms/` (one note per dictionary term) and `guide/sources/` (each lesson's ranked candidate quotes) and checks that every quote in a lesson appears word for word at the address it links (`check` to only check). Run it after editing a lesson or the dictionary. Lessons are drafts until someone who knows the material approves them; don't state the archive's teaching as fact in them, attribute it.
+
 ## Settings
 
 `config.toml` holds every setting an administrator changes, one `[params.<feature>]` section per feature (`telegram`, `live_sign`, `animation_links`, `webamp_dock`, `comments_app`, `link_preview`, `grand_fluff_auto`), each with a comment naming the template that reads it and, for features that can be turned off, an `on` switch. Put a new switch there, not in a template variable or a commented-out block, and document it in the section's comment.

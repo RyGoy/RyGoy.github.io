@@ -6,3 +6,6 @@ resources/_gen/
 
 # Obsidian's own settings, when docs/ is opened as a vault (docs/README.md).
 docs/.obsidian/
+
+# Obsidian's own settings, when guide/ is opened as a vault (guide/README.md).
+guide/.obsidian/
