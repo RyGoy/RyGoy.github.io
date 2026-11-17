@@ -1,0 +1,78 @@
+# Flash card deck. Format and rules: docs/flashcards.md
+# The beginners' deck, after the lesson at /accounting/start-here/. A story deck: its cards are played in order, and the
+# stand's books under the card carry each entry from card to card, so every card needs an amount, one debit and one
+# credit, and every account must be listed under accounts with its kind.
+title: "Start Here: Mia's Lemonade Stand"
+story: true
+accounts:
+  Cash: asset
+  Supplies: asset
+  Table: asset
+  Owed by Mrs. Lee: asset
+  IOU to Mom: liability
+  Owed to Corner Shop: liability
+  "Mia's Money": equity
+  Sales: income
+  Helper Pay: expense
+  Supplies Used: expense
+cards:
+  - prompt: "Mia starts a lemonade stand. She puts $20 of her own savings into the stand's cash tin."
+    amount: 20
+    debit: Cash
+    credit: "Mia's Money"
+    explain: "Two things changed. Cash is something the stand has, and it went up, so it goes on the left: debit. Mia's Money is her stake in the stand (equity), and it went up, so it goes on the right: credit."
+  - prompt: "Mom lends the stand $30. Mia promises to pay it back."
+    amount: 30
+    debit: Cash
+    credit: IOU to Mom
+    explain: "Cash, something the stand has, went up: debit. The stand now owes Mom $30, something it owes, which went up: credit. A loan isn't income, because it has to be paid back."
+  - prompt: "Mia buys lemons, sugar and cups for $15, paying from the tin."
+    amount: 15
+    debit: Supplies
+    credit: Cash
+    explain: "Supplies, something the stand has, went up: debit. Cash went down, and something the stand has goes down on the right: credit. Nothing was lost: $15 of cash became $15 of supplies, so the totals didn't change."
+  - prompt: "Mia buys a folding table for the stand, paying $25 from the tin."
+    amount: 25
+    debit: Table
+    credit: Cash
+    explain: "The table is something the stand has and will keep using, so it went up on the left: debit. Cash went down: credit."
+  - prompt: "Mia sells 10 cups of lemonade at $1 each, for cash."
+    amount: 10
+    debit: Cash
+    credit: Sales
+    explain: "Cash went up: debit. Sales are income, and income makes Mia's stake bigger, so it goes up on the stake's side, the right: credit."
+  - prompt: "Mrs. Lee takes 5 cups for her party and promises to pay the $5 tomorrow."
+    amount: 5
+    debit: Owed by Mrs. Lee
+    credit: Sales
+    explain: "The sale happened today, so Sales went up: credit. No cash came in. Instead the stand has a right to be paid $5, which counts as something it has: debit Owed by Mrs. Lee."
+  - prompt: "Mrs. Lee comes back and pays the $5 she owes."
+    amount: 5
+    debit: Cash
+    credit: Owed by Mrs. Lee
+    explain: "Cash went up: debit. What Mrs. Lee owes went down to nothing, and something the stand has goes down on the right: credit. This isn't a new sale: the sale was counted yesterday."
+  - prompt: "Mia pays her brother $4 from the tin to paint a sign."
+    amount: 4
+    debit: Helper Pay
+    credit: Cash
+    explain: "Cash went down: credit. Paying for help is a cost of running the stand (an expense). Costs make Mia's stake smaller, so they go up on the left: debit Helper Pay."
+  - prompt: "At the end of the week, $9 of the lemons, sugar and cups have been used up making lemonade."
+    amount: 9
+    debit: Supplies Used
+    credit: Supplies
+    explain: "The supplies the stand has went down by $9: credit. What was used up is a cost of making the lemonade it sold: debit Supplies Used."
+  - prompt: "Mia buys $8 more lemons from the corner shop, and will pay the shop next week."
+    amount: 8
+    debit: Supplies
+    credit: Owed to Corner Shop
+    explain: "Supplies went up: debit. No cash left the tin. Instead the stand now owes the shop $8, something it owes, which went up: credit."
+  - prompt: "Mia pays Mom back $10 of the loan, from the tin."
+    amount: 10
+    debit: IOU to Mom
+    credit: Cash
+    explain: "Cash went down: credit. The stand owes Mom less, and something it owes goes down on the left: debit. Paying back a loan isn't a cost: the stand is only returning what it borrowed."
+  - prompt: "Mia takes $5 from the tin to buy herself a book."
+    amount: 5
+    debit: "Mia's Money"
+    credit: Cash
+    explain: "Cash went down: credit. The book is Mia's, not the stand's, so it isn't a cost of the stand. Mia took back part of her stake, and her stake goes down on the left: debit Mia's Money."

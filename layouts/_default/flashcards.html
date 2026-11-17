@@ -1,7 +1,15 @@
 {{ define "main" }}
 {{/* Every file in data/flashcards/ is a deck. Format and rules: docs/flashcards.md. */}}
+{{ $kinds := slice "asset" "liability" "equity" "income" "expense" }}
 {{ $decks := slice }}
 {{ range $file, $deck := site.Data.flashcards }}
+  {{/* A story deck (story: true) is played in order, with the books under the card (js/flashcards.js): it lists each
+       account's kind under accounts, and each card has an amount, one debit and one credit. */}}
+  {{ $accounts := $deck.accounts | default dict }}
+  {{ range $name, $kind := $accounts }}
+    {{ if not (in $kinds $kind) }}{{ errorf "data/flashcards/%s: account %q is %q; use asset, liability, equity, income or expense" $file $name $kind }}{{ end }}
+  {{ end }}
+  {{ if and $deck.story (not $accounts) }}{{ errorf "data/flashcards/%s: a story deck needs accounts" $file }}{{ end }}
   {{ $cards := slice }}
   {{ range $i, $c := $deck.cards }}
     {{ $where := printf "data/flashcards/%s, card %d" $file (add $i 1) }}
@@ -9,14 +17,26 @@
     {{ $debit := cond (reflect.IsSlice $c.debit) $c.debit (slice $c.debit) }}
     {{ $credit := cond (reflect.IsSlice $c.credit) $c.credit (slice $c.credit) }}
     {{ with intersect $debit $credit }}{{ errorf "%s: %v cannot be both a debit and a credit" $where . }}{{ end }}
-    {{ $cards = $cards | append (dict "prompt" $c.prompt "debit" $debit "credit" $credit "explain" ($c.explain | default "")) }}
+    {{ if $accounts }}
+      {{ range $name := $debit | append $credit }}
+        {{ if not (index $accounts $name) }}{{ errorf "%s: %q is not in the deck's accounts" $where $name }}{{ end }}
+      {{ end }}
+    {{ end }}
+    {{ if $deck.story }}
+      {{ if not (and (eq (len $debit) 1) (eq (len $credit) 1)) }}{{ errorf "%s: a story card has one debit and one credit" $where }}{{ end }}
+      {{ if not (gt ($c.amount | default 0) 0) }}{{ errorf "%s: a story card needs an amount above 0" $where }}{{ end }}
+    {{ end }}
+    {{ $cards = $cards | append (dict "prompt" $c.prompt "debit" $debit "credit" $credit "explain" ($c.explain | default "") "amount" ($c.amount | default 0)) }}
   {{ end }}
   {{ if not $cards }}{{ errorf "data/flashcards/%s: needs a cards list" $file }}{{ end }}
-  {{ $decks = $decks | append (dict "title" ($deck.title | default $file) "cards" $cards) }}
+  {{ $decks = $decks | append (dict "title" ($deck.title | default $file) "cards" $cards "accounts" $accounts "story" ($deck.story | default false)) }}
 {{ end }}
 <header class="page-heading reading-column">
   <p class="eyebrow"><a href="{{ .Parent.RelPermalink }}">{{ .Parent.Title }}</a></p>
   <h1>{{ .Title }}</h1>
+  {{ with .Params.image }}{{ $size := imageConfig (printf "static%s" .) }}
+  <img class="fc-title-image" src="{{ . | relURL }}" width="{{ $size.Width }}" height="{{ $size.Height }}" alt="{{ $.Params.image_alt }}">
+  {{ end }}
   {{ with .Content }}<div class="prose">{{ . }}</div>{{ end }}
 </header>
 <div class="reading-column flashcards" id="flashcards">
@@ -37,8 +57,15 @@
     <div class="fc-actions">
       <button type="submit" class="fc-check">Check answer</button>
       <button type="button" class="fc-next" hidden>Next card</button>
+      <button type="button" class="fc-again" hidden>Play again</button>
     </div>
   </form>
+  {{/* A story deck's books: what the business has, against what it owes and its owner's stake, after each answer. */}}
+  <section class="fc-card fc-books" aria-labelledby="fc-books-title" hidden>
+    <h2 class="eyebrow fc-books-title" id="fc-books-title"></h2>
+    <div class="fc-books-sides"></div>
+    <p class="fc-books-check" aria-live="polite"></p>
+  </section>
 </div>
 <script type="application/json" id="fc-data">{{ $decks | jsonify | safeJS }}</script>
 <script src="{{ "js/flashcards.js" | relURL }}" defer></script>

@@ -1277,7 +1277,7 @@ iframe.video-embed { border: 1px solid var(--line); }
 }
 .fc-card ::selection { color: var(--card); background: var(--card-ink); }
 .fc-card :focus-visible { outline-color: var(--card-rule); outline-offset: 3px; }
-.fc-progress { font-family: var(--display); font-weight: 600; letter-spacing: .14em; text-transform: uppercase; color: var(--card-rule); }
+.fc-progress, .fc-books-title { font-family: var(--display); font-weight: 600; letter-spacing: .14em; text-transform: uppercase; color: var(--card-rule); }
 .fc-actions { display: flex; flex-wrap: wrap; gap: .75rem; }
 .fc-actions button { cursor: pointer; color: var(--card); background: var(--card-ink); border: 0; border-radius: 3px; padding: .55rem 1.2rem; }
 .fc-actions button:hover { background: var(--c-4a3f2c); }
@@ -1310,6 +1310,26 @@ iframe.video-embed { border: 1px solid var(--line); }
 .fc-result.is-right { border-color: var(--card-right); }
 .fc-result.is-wrong { border-color: var(--card-wrong); }
 .fc-verdict { font-family: var(--display); font-size: 1.4rem; font-weight: 700; }
+/* The page's title picture (front matter image, layouts/_default/flashcards.html). */
+.fc-title-image { display: block; width: 100%; height: auto; margin: 0 0 1.5rem; border: 1px solid var(--line); }
+/* A story deck's books (js/flashcards.js), a second index card under the question: what the business has, against
+   what it owes and its owner's stake, each account's change from the last answer marked, and the two totals. */
+.fc-books { padding-block: 1.5rem; }
+.fc-books-title { margin-bottom: 1rem; font-size: .85rem; }
+.fc-books-sides { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; }
+@media (max-width: 42rem) { .fc-books-sides { grid-template-columns: 1fr; gap: 1rem; } }
+.fc-books-side { display: flex; flex-direction: column; }
+.fc-books-heading { margin: 0 0 .4rem; padding-bottom: .3rem; font-family: var(--display); font-weight: 700; border-bottom: 2px solid var(--card-rule); }
+.fc-books h3 { margin: .5rem 0 .2rem; font-family: inherit; font-size: .75rem; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; color: var(--card-muted); }
+.fc-books ul { margin: 0; padding: 0; list-style: none; }
+.fc-books li { display: flex; gap: .5rem; padding: .25rem .35rem; border-bottom: 1px solid var(--card-line); font-variant-numeric: tabular-nums; }
+.fc-books li > :first-child { flex: 1; }
+.fc-books li.is-changed { background: color-mix(in srgb, var(--card-rule) 12%, transparent); font-weight: 600; }
+.fc-books-change { font-size: .8rem; color: var(--card-rule); align-self: center; }
+.fc-books-amount { min-width: 4rem; text-align: right; }
+.fc-books-empty { margin: .25rem .35rem; font-style: italic; color: var(--card-muted); }
+.fc-books-total { display: flex; justify-content: space-between; margin: auto 0 0; padding: .45rem .35rem 0; border-top: 2px solid var(--card-ink); font-weight: 700; font-variant-numeric: tabular-nums; }
+.fc-books-check { margin: 1rem 0 0; font-size: .95rem; color: var(--card-muted); }
 .is-right > .fc-verdict { color: var(--card-right); }
 .is-wrong > .fc-verdict { color: var(--card-wrong); }
 @media (max-width: 42rem) {
