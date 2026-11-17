@@ -20,7 +20,7 @@ cards:
     amount: 20
     debit: Cash
     credit: "Mia's Money"
-    explain: "Two things changed. Cash is something the stand has, and it went up, so it goes on the left: debit. Mia's Money is her stake in the stand (equity), and it went up, so it goes on the right: credit."
+    explain: "Two things changed. The $20 is now the stand's cash, held in the stand's name: something the stand has, and it went up, so it goes on the left: debit. Mia no longer owns that $20. She has a claim on the stand instead, Mia's Money (equity), and it went up, so it goes on the right: credit."
   - prompt: "Mom lends the stand $30. Mia promises to pay it back."
     amount: 30
     debit: Cash
@@ -75,4 +75,4 @@ cards:
     amount: 5
     debit: "Mia's Money"
     credit: Cash
-    explain: "Cash went down: credit. The book is Mia's, not the stand's, so it isn't a cost of the stand. Mia took back part of her stake, and her stake goes down on the left: debit Mia's Money."
+    explain: "Cash went down: credit. The book is Mia's, not the stand's, so it isn't a cost of the stand. The $5 left the stand and became Mia's own, so her claim on the stand is $5 smaller, and her stake goes down on the left: debit Mia's Money."
