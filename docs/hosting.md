@@ -71,7 +71,7 @@ The bot's logic is written once, in files that don't know where they run:
 Only **two addresses** say where the bot is, so a move changes only those two:
 
 1. **Telegram's webhook**: where Telegram delivers messages (`setWebhook`, below).
-2. **`flashcards_accounts` in `config.toml`**: where the flash card page sends sign-ins and progress. Leave it empty while accounts are off.
+2. **`accounts` under `[params.telegram]` in `config.toml`**: where the flash card page sends sign-ins and progress. Leave it empty while accounts are off.
 
 Players stay signed in across a move: their sessions are signed with a key made from the bot's token, not tied to the host.
 
@@ -126,7 +126,7 @@ Players stay signed in across a move: their sessions are signed with a key made 
      -d secret_token=<WEBHOOK_SECRET> \
      -d 'allowed_updates=["message","callback_query"]'
    ```
-6. **Point the site at it**, if accounts are on: set `flashcards_accounts = "https://bot.thetenderforlaw.com"` in `config.toml` and deploy.
+6. **Point the site at it**, if accounts are on: set `accounts = "https://bot.thetenderforlaw.com"` under `[params.telegram]` in `config.toml` and deploy.
 7. **Retire the Cloudflare copy** once the new one works. `npx wrangler delete` removes the Worker and its schedule. After that, `npx wrangler d1 delete ttfl-accounts` removes the database, if you made one, and `npx wrangler logout` removes the login from this computer.
 
 ## Moving the bot to Cloudflare (from your own machine, or the first time)
@@ -140,7 +140,7 @@ Players stay signed in across a move: their sessions are signed with a key made 
    ```
 
    D1 refuses `BEGIN TRANSACTION` and `COMMIT`, so delete those two lines from `accounts.sql` first.
-3. Point Telegram's webhook and `flashcards_accounts` at the `…workers.dev` address, as in steps 5 and 6 above.
+3. Point Telegram's webhook and `accounts` (`[params.telegram]`) at the `…workers.dev` address, as in steps 5 and 6 above.
 4. Stop the old server: `sudo systemctl disable --now ttfl-bot`.
 
 ## The d3 file from cdnjs
@@ -161,8 +161,8 @@ None of these is Cloudflare. They're listed so the whole picture is in one place
 | Telegram | The bot; the Login widget on the flash card page (`telegram.org`, loaded only when a player clicks Sign in) | `telegram-bot/`, `static/js/flashcards.js` |
 | GitHub API | The bot commits approved notes | `telegram-bot/bot.js`, `GITHUB_TOKEN` |
 | jsDelivr (`cdn.jsdelivr.net`) | three.js and its hexagon grid (Sepia carousel); Webamp | `static/js/carousel-shaders.js`, `static/js/webamp-links.js` |
-| unpkg (`unpkg.com`) | Webamp, for the sidebar's dock: **off** (commented out in `partials/head.html` and `partials/navbar.html`) | `static/js/webamp-dock.js` |
-| comments.app | Telegram comments on the home page: **off** (`comments_app_website` is empty) | `layouts/index.html` |
+| unpkg (`unpkg.com`) | Webamp, for the sidebar's dock: **off** (`[params.webamp_dock]` in `config.toml`) | `static/js/webamp-dock.js` |
+| comments.app | Telegram comments on the home page: **off** (`[params.comments_app]` `website` is empty) | `layouts/index.html` |
 | YouTube (`youtube-nocookie.com`, `i.ytimg.com`) | Videos in posts, loaded on click | `partials/youtube-embeds.html`, `static/js/youtube-embed.js` |
 | npm registry | Pagefind, fetched by `npx` at each deploy | `.github/workflows/hugo.yml` |
 | IndexNow (`api.indexnow.org`) | Tells search engines about changed pages after each deploy | `scripts/indexnow.py`, `.github/workflows/hugo.yml` |

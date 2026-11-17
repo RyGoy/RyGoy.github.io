@@ -1,6 +1,6 @@
 # Flash card accounts
 
-Players of the [Flash cards](flash-cards.md) can sign in with Telegram, so their progress follows them to every device, and ask the bot to remind them when they haven't practised. **It's built but switched off.** It turns on when `flashcards_accounts` in `config.toml` holds the bot's address, after the setup in `telegram-bot/README.md`, "Flash card accounts".
+Players of the [Flash cards](flash-cards.md) can sign in with Telegram, so their progress follows them to every device, and ask the bot to remind them when they haven't practised. **It's built but switched off.** It turns on when `accounts` under `[params.telegram]` in `config.toml` holds the bot's address, after the setup in `telegram-bot/README.md`, "Flash card accounts".
 
 ## Signing in
 
@@ -41,7 +41,7 @@ sequenceDiagram
 | | |
 |---|---|
 | The API, reminders, `/stop`, `/delete` | `telegram-bot/accounts.js` |
-| The sign-in panel | `layouts/_default/flashcards.html` (shown only with `flashcards_accounts` set) |
+| The sign-in panel | `layouts/_default/flashcards.html` (shown only with `[params.telegram]` `accounts` set) |
 | Merging and saving | `static/js/flashcards.js` (the Accounts section) |
 | Tests | `telegram-bot/test-accounts.mjs`, `test-server.mjs` |
 

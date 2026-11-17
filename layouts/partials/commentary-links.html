@@ -5,11 +5,11 @@
        archive's Facebook group ID prefix written "G" (decodePage in telegram-bot/bot.js), so a comment's path fits.
        A path that doesn't fit is left out, and the contributor pastes the page's link instead. "Ask a question" opens
        it the same way with Q before the page (or just Q): a moderator answers the question in Telegram, and it is
-       published with the answer. With the bot switched off or unnamed (params.commentary_telegram,
-       params.commentary_telegram_bot), "add" opens GitHub's editor with a new note in content/commentary/, connected
+       published with the answer. With the bot switched off or unnamed (params.telegram.commentary,
+       params.telegram.bot), "add" opens GitHub's editor with a new note in content/commentary/, connected
        to this page; for accounts without write access GitHub turns it into a pull request. */ -}}
 {{- $r := dict "add" "" "ask" "" -}}
-{{- with and site.Params.commentary_telegram site.Params.commentary_telegram_bot -}}
+{{- with and site.Params.telegram.commentary site.Params.telegram.bot -}}
   {{- $start := "" -}}
   {{- $ask := "?start=Q" -}}
   {{- if ne $.Section "commentary" -}}

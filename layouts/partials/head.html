@@ -13,9 +13,9 @@
 {{ partial "structured-data.html" . }}
 {{/* Link previews when the page is shared: its title and description, and a picture: a post's or comment's own
      recovered picture (data/photos.json, the first one, when it is at least 200 pixels across and no more than twice
-     as tall as it is wide), or else the site's card (site.Params.share in config.toml, 1200 by 630, the size Facebook
+     as tall as it is wide), or else the site's card (params.link_preview in config.toml, 1200 by 630, the size Facebook
      and X show full width, so a "summary_large_image" card). */}}
-{{ $share := site.Params.share }}
+{{ $share := site.Params.link_preview }}
 {{ $img := dict "src" $share.image "w" $share.image_width "h" $share.image_height "alt" $share.image_alt }}
 {{ with .Params.id }}{{ with site.Data.photos }}{{ with index .entries $.Params.id }}{{ with index . 0 }}
   {{ if and (ge .w 200) (le .h (mul .w 2)) }}
@@ -48,8 +48,6 @@
 <script src="{{ "js/ripple.js" | relURL }}" defer></script>
 <script src="{{ "js/musical-recap.js" | relURL }}" defer></script>
 <script src="{{ "js/dictionary-terms.js" | relURL }}" data-terms="{{ partialCached "dictionary-terms.html" . }}" data-dictionary="{{ "dictionary/" | relURL }}" defer></script>
-{{/* WEBAMP DISABLED: remove this comment wrapper to bring the Webamp player back.
-     Also re-enable the "Open Webamp" button in partials/navbar.html.
-<script src="{{ "js/webamp-dock.js" | relURL }}" defer></script>
-*/}}
+{{/* The sidebar's Webamp player, with its button in partials/navbar.html: [params.webamp_dock] in config.toml. */}}
+{{ if site.Params.webamp_dock.on }}<script src="{{ "js/webamp-dock.js" | relURL }}" defer></script>{{ end }}
 {{ partialCached "terms-gate.html" . }}

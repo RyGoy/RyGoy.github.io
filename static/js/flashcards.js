@@ -4,7 +4,7 @@
 // to card, so the player sees what changed and that what the business has still equals what it owes plus its owner's stake.
 // Progress is kept in this browser (localStorage, see STORE): where each deck was left, each deck's best score, and
 // each card's last answer, from which "Practise my mistakes" deals the cards last answered wrong.
-// With accounts on (data-accounts, params.flashcards_accounts), a player who signs in with Telegram also keeps it in
+// With accounts on (data-accounts, params.telegram.accounts), a player who signs in with Telegram also keeps it in
 // their account (kept by the commentary bot, telegram-bot/accounts.js), merged with each browser's copy (merge).
 (() => {
   const data = document.getElementById('fc-data');

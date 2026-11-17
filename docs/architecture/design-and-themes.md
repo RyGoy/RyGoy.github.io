@@ -15,7 +15,7 @@ The site's look: a dark "occult codex", in three colour themes, with animations 
 | Carousel, "The gold is in the comments" (`data/carousel.json`) | `partials/carousel.html`, `static/js/carousel.js` |
 | Carousel backgrounds: an ember shader (Dark), plasma lines (Light), metal hexagons (Sepia, three.js from jsDelivr) | `static/js/carousel-shaders.js` |
 | Above the title: e^x drawn (Sepia), signal waves (Light), the blade (Dark, with sound from `saber-sound.js`) | `partials/body.html`, `archive.css` |
-| Live sign on the cdd.com button, lit Thursdays 20:00–23:00 Toronto time | `partials/body.html`, `config.toml` (`live_sign*`) |
+| Live sign on the cdd.com button, lit Thursdays 20:00–23:00 Toronto time | `partials/body.html`, `config.toml` (`[params.live_sign]`) |
 | Pop-up videos and Webamp players behind the animations | `static/js/webamp-links.js`, `partials/body.html` |
 
 ## Everywhere

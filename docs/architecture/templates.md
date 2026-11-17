@@ -30,6 +30,10 @@ A few pages have their own layouts: the dictionary, concordance, search, flash c
 | `partials/archive-links.html`, `entry-photos.html`, `youtube-embeds.html` | Added material under posts and comments. See [Recovered records](recovered-records.md) |
 | `partials/poster-filter.html` | Filter by poster, on volumes and posts |
 
+## Settings
+
+`config.toml` holds every setting an administrator changes, one section per feature (`[params.telegram]`, `[params.live_sign]`, `[params.animation_links]`, `[params.webamp_dock]`, `[params.comments_app]`, `[params.link_preview]`, `[params.grand_fluff_auto]`). Each says which template reads it, and features that can be turned off have an `on` switch. New switches go there, not in a template.
+
 ## Rules that bite
 
 - **Templates must work on Hugo 0.114**, the deploy's version. `strings.TrimSpace` is too new, for one: use `trim`.

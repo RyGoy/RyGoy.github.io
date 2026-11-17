@@ -39,10 +39,10 @@
   {{ end }}
   {{ with .Content }}<div class="prose">{{ . }}</div>{{ end }}
 </header>
-{{/* With params.flashcards_accounts (the bot's address, wherever it runs: docs/hosting.md) and the bot's username, players can
+{{/* With params.telegram.accounts (the bot's address, wherever it runs: docs/hosting.md) and the bot's username, players can
      sign in with Telegram to keep their progress on every device and get reminders (js/flashcards.js). */}}
-{{ $accounts := and site.Params.flashcards_accounts site.Params.commentary_telegram_bot }}
-<div class="reading-column flashcards" id="flashcards"{{ if $accounts }} data-accounts="{{ site.Params.flashcards_accounts }}" data-bot="{{ site.Params.commentary_telegram_bot }}"{{ end }}>
+{{ $accounts := and site.Params.telegram.accounts site.Params.telegram.bot }}
+<div class="reading-column flashcards" id="flashcards"{{ if $accounts }} data-accounts="{{ site.Params.telegram.accounts }}" data-bot="{{ site.Params.telegram.bot }}"{{ end }}>
   <noscript><p>The flash card game needs JavaScript.</p></noscript>
   <div class="fc-toolbar" hidden>
     <label>Deck <select class="fc-deck"></select></label>
