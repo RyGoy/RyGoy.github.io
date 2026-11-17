@@ -1,0 +1,337 @@
+{
+ "nodes": [
+  {
+   "id": "intro",
+   "type": "text",
+   "x": 0,
+   "y": -320,
+   "width": 760,
+   "height": 220,
+   "text": "# The Tender For Law: architecture\n\nA static site built by Hugo from this repository and served by GitHub Pages, plus one running program, the Telegram bot.\n\nOpen any card to read its note. Start with [[README|the map]] or the overview card. Arrows show what feeds what. Move cards and add your own notes: this canvas is yours to annotate."
+  },
+  {
+   "id": "g-repo",
+   "type": "group",
+   "label": "In the repository",
+   "x": -40,
+   "y": -40,
+   "width": 820,
+   "height": 900,
+   "color": "4"
+  },
+  {
+   "id": "g-site",
+   "type": "group",
+   "label": "On the site, in the visitor's browser",
+   "x": 820,
+   "y": -40,
+   "width": 820,
+   "height": 680,
+   "color": "5"
+  },
+  {
+   "id": "g-bot",
+   "type": "group",
+   "label": "The bot: Cloudflare today, or your own machine",
+   "x": 1680,
+   "y": -40,
+   "width": 400,
+   "height": 900,
+   "color": "6"
+  },
+  {
+   "id": "overview",
+   "type": "file",
+   "file": "architecture/overview.md",
+   "x": 820,
+   "y": -320,
+   "width": 320,
+   "height": 160,
+   "color": "1"
+  },
+  {
+   "id": "content",
+   "type": "file",
+   "file": "architecture/content-model.md",
+   "x": 0,
+   "y": 0,
+   "width": 320,
+   "height": 160
+  },
+  {
+   "id": "scripts",
+   "type": "file",
+   "file": "architecture/scripts.md",
+   "x": 0,
+   "y": 220,
+   "width": 320,
+   "height": 160
+  },
+  {
+   "id": "anthology",
+   "type": "file",
+   "file": "architecture/anthology.md",
+   "x": 0,
+   "y": 440,
+   "width": 320,
+   "height": 160
+  },
+  {
+   "id": "recovered",
+   "type": "file",
+   "file": "architecture/recovered-records.md",
+   "x": 0,
+   "y": 660,
+   "width": 320,
+   "height": 160
+  },
+  {
+   "id": "templates",
+   "type": "file",
+   "file": "architecture/templates.md",
+   "x": 420,
+   "y": 0,
+   "width": 320,
+   "height": 160
+  },
+  {
+   "id": "build",
+   "type": "file",
+   "file": "architecture/build-and-deploy.md",
+   "x": 420,
+   "y": 220,
+   "width": 320,
+   "height": 160
+  },
+  {
+   "id": "changelog",
+   "type": "file",
+   "file": "changelog.md",
+   "x": 420,
+   "y": 660,
+   "width": 320,
+   "height": 160
+  },
+  {
+   "id": "search",
+   "type": "file",
+   "file": "architecture/search-and-seo.md",
+   "x": 860,
+   "y": 0,
+   "width": 320,
+   "height": 160
+  },
+  {
+   "id": "dictionary",
+   "type": "file",
+   "file": "architecture/dictionary-and-concordance.md",
+   "x": 860,
+   "y": 220,
+   "width": 320,
+   "height": 160
+  },
+  {
+   "id": "library",
+   "type": "file",
+   "file": "architecture/library.md",
+   "x": 860,
+   "y": 440,
+   "width": 320,
+   "height": 160
+  },
+  {
+   "id": "design",
+   "type": "file",
+   "file": "architecture/design-and-themes.md",
+   "x": 1280,
+   "y": 0,
+   "width": 320,
+   "height": 160
+  },
+  {
+   "id": "flashcards",
+   "type": "file",
+   "file": "architecture/flash-cards.md",
+   "x": 1280,
+   "y": 220,
+   "width": 320,
+   "height": 160
+  },
+  {
+   "id": "commentary",
+   "type": "file",
+   "file": "architecture/commentary.md",
+   "x": 1280,
+   "y": 440,
+   "width": 320,
+   "height": 160
+  },
+  {
+   "id": "bot",
+   "type": "file",
+   "file": "architecture/telegram-bot.md",
+   "x": 1720,
+   "y": 0,
+   "width": 320,
+   "height": 160
+  },
+  {
+   "id": "accounts",
+   "type": "file",
+   "file": "architecture/flash-card-accounts.md",
+   "x": 1720,
+   "y": 220,
+   "width": 320,
+   "height": 160
+  },
+  {
+   "id": "hosting",
+   "type": "file",
+   "file": "hosting.md",
+   "x": 1720,
+   "y": 440,
+   "width": 320,
+   "height": 160,
+   "color": "3"
+  },
+  {
+   "id": "decks",
+   "type": "file",
+   "file": "flashcards.md",
+   "x": 1720,
+   "y": 660,
+   "width": 320,
+   "height": 160
+  }
+ ],
+ "edges": [
+  {
+   "id": "content-templates",
+   "fromNode": "content",
+   "fromSide": "right",
+   "toNode": "templates",
+   "toSide": "left",
+   "label": "rendered by"
+  },
+  {
+   "id": "templates-build",
+   "fromNode": "templates",
+   "fromSide": "bottom",
+   "toNode": "build",
+   "toSide": "top",
+   "label": "built by"
+  },
+  {
+   "id": "scripts-build",
+   "fromNode": "scripts",
+   "fromSide": "right",
+   "toNode": "build",
+   "toSide": "left",
+   "label": "concordance, IndexNow"
+  },
+  {
+   "id": "anthology-content",
+   "fromNode": "anthology",
+   "fromSide": "top",
+   "toNode": "content",
+   "toSide": "bottom",
+   "label": "recovered posts"
+  },
+  {
+   "id": "recovered-anthology",
+   "fromNode": "recovered",
+   "fromSide": "top",
+   "toNode": "anthology",
+   "toSide": "bottom",
+   "label": "alongside"
+  },
+  {
+   "id": "build-search",
+   "fromNode": "build",
+   "fromSide": "right",
+   "toNode": "search",
+   "toSide": "left",
+   "label": "Pagefind index"
+  },
+  {
+   "id": "build-dictionary",
+   "fromNode": "build",
+   "fromSide": "right",
+   "toNode": "dictionary",
+   "toSide": "left",
+   "label": "concordance"
+  },
+  {
+   "id": "templates-design",
+   "fromNode": "templates",
+   "fromSide": "right",
+   "toNode": "design",
+   "toSide": "left",
+   "label": "load"
+  },
+  {
+   "id": "library-flashcards",
+   "fromNode": "library",
+   "fromSide": "right",
+   "toNode": "flashcards",
+   "toSide": "left",
+   "label": "accounting subject"
+  },
+  {
+   "id": "flashcards-accounts",
+   "fromNode": "flashcards",
+   "fromSide": "right",
+   "toNode": "accounts",
+   "toSide": "left",
+   "label": "progress on every device"
+  },
+  {
+   "id": "commentary-bot",
+   "fromNode": "commentary",
+   "fromSide": "right",
+   "toNode": "bot",
+   "toSide": "left",
+   "label": "notes arrive through"
+  },
+  {
+   "id": "bot-content",
+   "fromNode": "bot",
+   "fromSide": "top",
+   "toNode": "content",
+   "toSide": "top",
+   "label": "commits approved notes"
+  },
+  {
+   "id": "bot-accounts",
+   "fromNode": "bot",
+   "fromSide": "bottom",
+   "toNode": "accounts",
+   "toSide": "top",
+   "label": "keeps"
+  },
+  {
+   "id": "accounts-hosting",
+   "fromNode": "accounts",
+   "fromSide": "bottom",
+   "toNode": "hosting",
+   "toSide": "top",
+   "label": "database and schedule"
+  },
+  {
+   "id": "decks-flashcards",
+   "fromNode": "decks",
+   "fromSide": "left",
+   "toNode": "flashcards",
+   "toSide": "right",
+   "label": "how to write decks"
+  },
+  {
+   "id": "overview-intro",
+   "fromNode": "overview",
+   "fromSide": "left",
+   "toNode": "intro",
+   "toSide": "right",
+   "label": ""
+  }
+ ]
+}

@@ -167,3 +167,7 @@ None of these is Cloudflare. They're listed so the whole picture is in one place
 | npm registry | Pagefind, fetched by `npx` at each deploy | `.github/workflows/hugo.yml` |
 | IndexNow (`api.indexnow.org`) | Tells search engines about changed pages after each deploy | `scripts/indexnow.py`, `.github/workflows/hugo.yml` |
 | Wayback Machine, archive.today | Archived links (run by hand, not at deploy) | `scripts/archive_links.py` |
+
+## Related notes
+
+[The bot](architecture/telegram-bot.md) · [Flash card accounts](architecture/flash-card-accounts.md) · [Build and deploy](architecture/build-and-deploy.md) · [The map](README.md)

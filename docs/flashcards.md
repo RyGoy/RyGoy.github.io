@@ -1,5 +1,7 @@
 # Flash card questions
 
+How the game works, and how it connects to the rest of the site: [Flash cards](architecture/flash-cards.md) and [Flash card accounts](architecture/flash-card-accounts.md), in [the map](README.md).
+
 The game page is `/accounting/flashcards/` (`content/accounting/flashcards.md`). It loads every YAML file in `data/flashcards/`. Each file is one deck and shows up in the page's **Deck** menu.
 
 ## Add questions

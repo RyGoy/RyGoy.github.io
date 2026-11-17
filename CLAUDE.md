@@ -6,6 +6,10 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 Hugo static site ("The Tender For Law"): an archive of old Facebook group posts and comments (2013–2018) plus long-form articles by various authors. No theme (`themes/` is empty); all templates live in `layouts/`. Deployed to GitHub Pages.
 
+## Architecture notes
+
+`docs/` holds the architecture for people, as linked notes that open in Obsidian (`docs/README.md` is the map; `docs/architecture/*.md`, one per part; `docs/architecture.canvas`; `docs/changelog.md` from `scripts/docs_changelog.py`). When a change alters how a part works, update its note in the same change; add any outside service to `docs/hosting.md`.
+
 ## Commands
 
 - Dev server: `hugo server`
