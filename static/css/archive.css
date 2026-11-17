@@ -1790,6 +1790,16 @@ a.page-emblem:focus-visible { outline: 2px solid var(--brass); outline-offset: 6
 .book-edition { color: var(--muted); font-size: .9rem; margin: .25rem 0 0; }
 .book-author { color: var(--muted); font-size: .85rem; margin-left: .35rem; }
 .book-summary { font-size: 1.2rem; color: var(--c-d9cdb4); max-width: 44rem; }
+/* A book's cover beside its summary and buttons (layouts/library/single.html), and small in the Library list. */
+.book-cover { float: right; width: 11rem; margin: .4rem 0 1.5rem 2rem; }
+.book-cover img, .book-thumb { display: block; border: 1px solid var(--line); box-shadow: 0 .5rem 1.5rem var(--c-00000059); }
+.book-cover img { width: 100%; height: auto; }
+.book-cover figcaption { margin-top: .4rem; font-size: .75rem; color: var(--muted); }
+.book-cover figcaption a { color: inherit; }
+.library-book .volume-pagination { clear: both; }
+@media (max-width: 40rem) { .book-cover { float: none; width: 8rem; margin: 0 0 1.25rem; } }
+.book-item { display: flex; align-items: center; gap: .85rem; }
+.book-thumb { flex: none; width: 2.4rem; height: 3.5rem; object-fit: cover; object-position: top; box-shadow: 0 .2rem .5rem var(--c-00000059); }
 .book-actions { display: flex; flex-wrap: wrap; align-items: center; gap: .9rem 1.4rem; margin: 1.5rem 0 2.5rem; }
 .book-button { padding-right: 1.15rem; }
 .book-link { color: var(--c-d6ba86); }

@@ -1,5 +1,6 @@
 +++
 title = "The Art of War"
+cover = "images/library/sun-tzu-the-art-of-war.webp"
 author = "Sun Tzu"
 edition = "Translated by Lionel Giles, 1910 · Allandale Online Publishing, 2000"
 description = "The classic Chinese treatise on strategy, in thirteen chapters: planning, deception, terrain, the use of spies, and winning without fighting."

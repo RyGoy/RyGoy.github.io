@@ -1,5 +1,7 @@
 +++
 title = "Leviathan"
+cover = "images/library/hobbes-leviathan.webp"
+cover_alt = "Frontispiece of the 1651 edition: the sovereign, his body made of his subjects, over the land"
 author = "Thomas Hobbes"
 edition = "London: J. M. Dent (Everyman's Library), 1914 · introduction by A. D. Lindsay"
 description = "Hobbes's argument that without a common power people live in a war of all against all, and that they escape it by covenanting to give up their right to govern themselves to a sovereign: the Leviathan, or Commonwealth."

@@ -1,5 +1,7 @@
 +++
 title = "Bible Hub"
+cover = "images/library/bible-hub.webp"
+cover_alt = "Bible Hub's logo"
 edition = "biblehub.com"
 description = "A free online Bible library: dozens of translations side by side, the Hebrew and Greek behind them, word studies and commentaries."
 source = "https://biblehub.com/"

@@ -1,5 +1,7 @@
 +++
 title = "Ho, Canada!"
+cover = "images/library/ho-canada.webp"
+cover_alt = "Title page of the 1965 first edition"
 author = "R. Rogers Smith (Chief Wapanatak)"
 edition = "1965 · re-edited 1996 by Jean-Paul Rhéaume"
 description = "Smith argues that Canada is “a geographical expression, not a political entity”, that the British North America Act of 1867 was designed to keep Canada a colony, and that Canadians have never been able to vote as Canadians."

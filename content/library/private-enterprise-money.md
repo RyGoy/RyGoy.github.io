@@ -1,5 +1,7 @@
 +++
 title = "Private Enterprise Money"
+cover = "images/library/private-enterprise-money.webp"
+cover_alt = "Title page"
 author = "E. C. Riegel"
 edition = "1944"
 description = "Riegel's case for money issued by the people who trade, not by governments: a unit of account that buyers and sellers create between themselves when they exchange goods and services."

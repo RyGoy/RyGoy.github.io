@@ -5,7 +5,7 @@
   {{ with .Pages.ByWeight }}
   <article class="article-card">
     <h2>Books</h2>
-    <ul class="article-contents">{{ range . }}<li><a href="{{ .RelPermalink }}">{{ .Title }}</a>{{ with .Params.author }} <span class="book-author">{{ . }}</span>{{ end }}</li>{{ end }}</ul>
+    <ul class="article-contents">{{ range . }}<li class="book-item">{{ with .Params.cover }}{{ with resources.Get . }}{{ $thumb := .Resize "72x webp q80" }}<img class="book-thumb" src="{{ $thumb.RelPermalink }}" width="{{ $thumb.Width }}" height="{{ $thumb.Height }}" alt="" loading="lazy">{{ end }}{{ end }}<span><a href="{{ .RelPermalink }}">{{ .Title }}</a>{{ with .Params.author }} <span class="book-author">{{ . }}</span>{{ end }}</span></li>{{ end }}</ul>
   </article>
   {{ end }}
   {{ range .Params.subjects }}{{ with site.GetPage . }}

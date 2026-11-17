@@ -7,6 +7,16 @@
     {{ with .Params.edition }}<p class="book-edition">{{ . }}</p>{{ end }}
     {{ partial "page-emblem.html" . }}
   </header>
+  {{/* The cover (or a title page), from assets/ (cover in the front matter), resized here; the Library list shows it
+       small (layouts/library/list.html). cover_alt describes it when it isn't the cover; cover_credit (and
+       cover_credit_url) credits a picture whose licence asks for it. */}}
+  {{ with .Params.cover }}{{ with resources.Get . }}
+  {{ $img := . }}{{ if gt .Width 360 }}{{ $img = .Resize "360x webp q82" }}{{ end }}
+  <figure class="book-cover" data-pagefind-ignore>
+    <img src="{{ $img.RelPermalink }}" width="{{ $img.Width }}" height="{{ $img.Height }}" alt="{{ $.Params.cover_alt | default (printf "Cover of %s" $.Title) }}">
+    {{ with $.Params.cover_credit }}<figcaption>{{ with $.Params.cover_credit_url }}<a href="{{ . }}" rel="noopener noreferrer">{{ end }}{{ . }}{{ if $.Params.cover_credit_url }}</a>{{ end }}</figcaption>{{ end }}
+  </figure>
+  {{ else }}{{ errorf "%s: cover %q is not in assets/" $.File.Path . }}{{ end }}{{ end }}
   {{ with .Description }}<p class="book-summary">{{ . }}</p>{{ end }}
   <div class="book-actions" data-pagefind-ignore>
     {{/* Public-domain books: "Read the PDF" and "Download" for the copy (a pdf starting with "/" is a copy in

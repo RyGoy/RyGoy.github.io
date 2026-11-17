@@ -1,5 +1,6 @@
 +++
 title = "The Accounting Game"
+cover = "images/library/the-accounting-game.webp"
 author = "Darrell Mullis and Judith Orloff"
 edition = "Sourcebooks, 2008 · ISBN 978-1-4022-1975-7"
 description = "Basic accounting taught through running a lemonade stand: assets, liabilities, the balance sheet and the income statement, one sale at a time."

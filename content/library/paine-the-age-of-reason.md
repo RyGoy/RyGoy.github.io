@@ -1,5 +1,7 @@
 +++
 title = "The Age of Reason"
+cover = "images/library/paine-the-age-of-reason.webp"
+cover_alt = "Title page of the 1794 edition"
 author = "Thomas Paine"
 edition = "1794–1807 · text from Wikisource"
 description = "Paine's case for deism: belief in one God known through reason and nature, and against revealed religion, church authority, and the claim that the Bible is the word of God."

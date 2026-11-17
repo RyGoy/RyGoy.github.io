@@ -1,5 +1,7 @@
 +++
 title = "An Inquiry into the Nature and Causes of the Wealth of Nations"
+cover = "images/library/smith-the-wealth-of-nations.webp"
+cover_alt = "Title page of the first edition, 1776"
 author = "Adam Smith"
 edition = "1776 · text from Project Gutenberg"
 description = "Smith's account of how nations grow rich: the division of labour, money and prices, wages, profit and rent, the accumulation of capital, and his case against the mercantile system."
