@@ -22,11 +22,29 @@ The game page is `/accounting/flashcards/` (`content/accounting/flashcards.md`).
 
 3. Run `hugo server` and open `/accounting/flashcards/` to check the new cards.
 
+## Story decks
+
+`0-lemonade-stand.yaml` is a story deck: the beginners' deck, after the lesson at `/accounting/start-here/` (`content/accounting/start-here.md`). The game opens on it. Its cards are played in order, not shuffled, and after each answer the stand's books under the card (`.fc-books`) write the entry in and show what the stand has against what it owes plus Mia's stake. A story deck adds:
+
+```yaml
+story: true
+accounts:                 # every account its cards use, and its kind: asset, liability, equity, income or expense
+  Cash: asset
+  "Mia's Money": equity
+cards:
+  - prompt: "Mia puts $20 of her own savings into the cash tin."
+    amount: 20            # required: the entry's amount, for the books
+    debit: Cash           # exactly one debit and one credit
+    credit: "Mia's Money"
+```
+
+The build stops if a story card has no amount, more than one debit or credit, or an account not listed under `accounts`. A deck that lists its `accounts` (story or not) takes its wrong-answer choices from that list only.
+
 ## Rules
 
 - `prompt`, `debit` and `credit` are required. The build stops and names the file and card number if one is missing.
 - An account can't be both a debit and a credit on the same card. The build stops if it is.
-- Spell account names exactly as the existing decks do. For example, use `Accounts Payable`, not `A/P`. The game draws its wrong-answer choices from every account name in every deck, so a misspelling becomes a separate account.
+- Spell account names exactly as the existing decks do. For example, use `Accounts Payable`, not `A/P`. The game draws its wrong-answer choices from every account name in every deck that doesn't list its own `accounts`, so a misspelling becomes a separate account.
 - Put the prompt and explanation in double quotes. Inside them, use single quotes, not double quotes.
 - The player picks accounts only. Amounts in the prompt are for context and are not checked.
 - Write prompts to match the page's stated conventions: a corporation, perpetual inventory, the allowance method for bad debts and the gross method for discounts. If a card uses a different method, say so in its prompt.
