@@ -40,6 +40,10 @@ cards:
 
 The build stops if a story card has no amount, more than one debit or credit, or an account not listed under `accounts`. A deck that lists its `accounts` (story or not) takes its wrong-answer choices from that list only.
 
+## Players' progress
+
+The game keeps each player's progress in their browser (`localStorage`, key `ttfl-flashcards`; `static/js/flashcards.js`): where they are in each deck, each deck's best score (shown in the Deck menu), and each card's last answer. **Practise my mistakes** deals the cards last answered wrong. A deck is known by its file name and a card by its deck and prompt, so renaming a deck file, or rewording a prompt, starts that deck or card afresh for everyone. Fixing a typo in an explanation or an account name doesn't. Adding or removing cards in a deck restarts it for players partway through it; their best score and mistakes are kept.
+
 ## Rules
 
 - `prompt`, `debit` and `credit` are required. The build stops and names the file and card number if one is missing.

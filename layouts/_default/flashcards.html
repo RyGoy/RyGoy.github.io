@@ -29,7 +29,7 @@
     {{ $cards = $cards | append (dict "prompt" $c.prompt "debit" $debit "credit" $credit "explain" ($c.explain | default "") "amount" ($c.amount | default 0)) }}
   {{ end }}
   {{ if not $cards }}{{ errorf "data/flashcards/%s: needs a cards list" $file }}{{ end }}
-  {{ $decks = $decks | append (dict "title" ($deck.title | default $file) "cards" $cards "accounts" $accounts "story" ($deck.story | default false)) }}
+  {{ $decks = $decks | append (dict "key" $file "title" ($deck.title | default $file) "cards" $cards "accounts" $accounts "story" ($deck.story | default false)) }}
 {{ end }}
 <header class="page-heading reading-column">
   <p class="eyebrow"><a href="{{ .Parent.RelPermalink }}">{{ .Parent.Title }}</a></p>
@@ -66,6 +66,12 @@
     <div class="fc-books-sides"></div>
     <p class="fc-books-check" aria-live="polite"></p>
   </section>
+  {{/* Shown by js/flashcards.js when the browser lets it keep progress (localStorage). */}}
+  <div class="fc-saved" hidden>
+    <p class="fc-saved-note" aria-live="polite"></p>
+    <button type="button" class="fc-restart">Start this deck over</button>
+    <button type="button" class="fc-forget">Forget my progress</button>
+  </div>
 </div>
 <script type="application/json" id="fc-data">{{ $decks | jsonify | safeJS }}</script>
 <script src="{{ "js/flashcards.js" | relURL }}" defer></script>
