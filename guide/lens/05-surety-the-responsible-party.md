@@ -1,15 +1,15 @@
 ---
 title: "Surety: the responsible party"
-path: accounting-lens
-step: 5
+description: "Surety is the responsible party: who must pay when what is owed isn't paid."
+weight: 5
 terms: [Surety, Liability, Legal]
 search: ["surety", "responsible party", "liabilit*", "transfer*"]
-status: draft
+draft: true
 ---
 
 # Surety: the responsible party
 
-[The accounting lens](../paths/01-the-accounting-lens.md) · step 5 of 8 · You need first: [Title is all that is sold](04-title-is-all-that-is-sold.md) · Next: [Money is debt in transit](06-money-is-debt-in-transit.md)
+[The accounting lens](_index.md) · step 5 of 8 · You need first: [Title is all that is sold](04-title-is-all-that-is-sold.md) · Next: [Money is debt in transit](06-money-is-debt-in-transit.md)
 
 > [!warning] Draft
 > Written from the archive's own words, and waiting for a reader who knows the material to approve it.

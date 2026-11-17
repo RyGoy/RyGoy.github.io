@@ -1,15 +1,15 @@
 ---
 title: "Tender, and discharge"
-path: accounting-lens
-step: 8
+description: "What 'legal tender' offers, and what discharging a debt does in the books."
+weight: 8
 terms: [Tender, Legal Tender, Discharge, Remittance, Joinder]
 search: ["tender*", "discharge*", "zero-out", "unconditional offer", "remittance"]
-status: draft
+draft: true
 ---
 
 # Tender, and discharge
 
-[The accounting lens](../paths/01-the-accounting-lens.md) · step 8 of 8 · You need first: [Trust, and the trustee](07-trust-and-the-trustee.md)
+[The accounting lens](_index.md) · step 8 of 8 · You need first: [Trust, and the trustee](07-trust-and-the-trustee.md)
 
 > [!warning] Draft
 > Written from the archive's own words, and waiting for a reader who knows the material to approve it.

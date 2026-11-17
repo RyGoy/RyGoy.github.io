@@ -75,3 +75,15 @@ image = "images/grand-fluff-auto.jpg"
 image_width = 768
 image_height = 1360
 image_alt = "Grand Fluff Auto cover art: a girl with long dark hair in a school uniform stands between two men under the Grand Fluff Auto Five logo."
+
+# Where Hugo finds content: content/, plus the beginner's guide's lessons (guide/lens/, also an Obsidian vault:
+# guide/README.md), published as /accounting/lens/ with layouts/lesson/. Each lesson is `draft: true` until it is
+# approved: `hugo server -D` previews them, and the deploy (without -D) leaves them out.
+[module]
+[[module.mounts]]
+source = "content"
+target = "content"
+[[module.mounts]]
+source = "guide/lens"
+target = "content/accounting/lens"
+

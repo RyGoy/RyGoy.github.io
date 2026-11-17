@@ -4,6 +4,8 @@ THE TENDER FOR LAW archive holds five years of a Facebook group: 130,000 posts a
 
 This guide teaches that way of seeing first, then leads you through the archive's best material with it, in order. It quotes only the archive's own words, each linked to where it was written.
 
+**On the site:** the lessons in `lens/` are also the site's pages, at `/accounting/lens/` (the Accounting page's third card). While a lesson has `draft: true`, only a preview shows it: `hugo server -D --renderToMemory`. Removing `draft: true` publishes it with the next deploy.
+
 **Reading it in Obsidian:** open this `guide/` folder as a vault (Obsidian → Open folder as vault → `guide`). Start with Path 1 below. Ctrl+G shows the graph: lessons, the terms they teach, and how they connect.
 
 > [!warning] A pilot
@@ -11,7 +13,7 @@ This guide teaches that way of seeing first, then leads you through the archive'
 
 ## Paths
 
-1. [**The accounting lens**](paths/01-the-accounting-lens.md): eight lessons, from debits and credits to tender. Start here. Its map: `paths/accounting-lens.canvas`.
+1. [**The accounting lens**](lens/_index.md): eight lessons, from debits and credits to tender. Start here. Its map: `paths/accounting-lens.canvas`.
 2. *Bills of exchange* (to come)
 3. *Agency* (to come)
 4. *Surety and insurance* (to come)
@@ -26,7 +28,8 @@ This guide teaches that way of seeing first, then leads you through the archive'
 | Folder | What | Written by |
 |---|---|---|
 | `lens/` | The lessons | Hand, from the sources; every quote checked |
-| `paths/` | The order to read them in, and each path's canvas | Hand |
+| `lens/_index.md` | Path 1's lesson plan: the order to read the lessons in | Hand |
+| `paths/` | Each path's canvas map | Hand |
 | `terms/` | One note per dictionary term | `scripts/guide_build.py`, from `data/dictionary.json` and the archive |
 | `sources/` | For each lesson, the 25 best candidates to quote, with the question each answered | `scripts/guide_build.py` |
 

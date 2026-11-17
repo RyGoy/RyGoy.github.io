@@ -6,7 +6,7 @@ The Library gathers the subjects the group studied and the books behind them, at
 
 - **The five subjects:** accounting, agency, bills of exchange, insurance, and title and property, one section each under `content/`.
 - **Where they're listed:** `content/library/_index.md` names them in its `subjects` front matter. The sidebar, the home page and `/library/` all read that one list.
-- **What a subject holds:** its own articles. Accounting has the Start Here lesson and the [Flash cards](flash-cards.md).
+- **What a subject holds:** its own articles. Accounting has the Start Here lesson, the [Flash cards](flash-cards.md), and the Accounting Lens: the beginner's guide's lessons (`guide/lens/`, mounted at `/accounting/lens/`; drafts, so shown only in a `hugo server -D` preview until approved).
 - **The "Reading the Bible" guide** is the body of `content/library/_index.md`, shown under the cards on `/library/`.
 
 ## Books

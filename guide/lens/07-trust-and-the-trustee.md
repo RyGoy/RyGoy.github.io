@@ -1,15 +1,15 @@
 ---
 title: "Trust, and the trustee"
-path: accounting-lens
-step: 7
+description: "The three parties to a trust, and how Scott Duncan reads a corporation as one."
+weight: 7
 terms: [Trust, Trustee, Beneficiary, Agent, Grantor, Debt]
 search: ["trust", "trustee*", "beneficiar*", "fiduciary", "agent*", "grantor*", "breached a trust"]
-status: draft
+draft: true
 ---
 
 # Trust, and the trustee
 
-[The accounting lens](../paths/01-the-accounting-lens.md) · step 7 of 8 · You need first: [Money is debt in transit](06-money-is-debt-in-transit.md) · Next: [Tender, and discharge](08-tender-and-discharge.md)
+[The accounting lens](_index.md) · step 7 of 8 · You need first: [Money is debt in transit](06-money-is-debt-in-transit.md) · Next: [Tender, and discharge](08-tender-and-discharge.md)
 
 > [!warning] Draft
 > Written from the archive's own words, and waiting for a reader who knows the material to approve it.

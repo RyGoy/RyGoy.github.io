@@ -1,7 +1,7 @@
 +++
 title = "Start Here: Debits and Credits"
 description = "Debits and credits from zero, in five minutes: what a business has, what it owes, the claim of the one who put money in, and the one rule that says which side each change goes on."
-weight = 0
+weight = 1
 +++
 
 You need no accounting at all to start. This page explains the few ideas behind every bookkeeping entry, using a lemonade stand. Afterwards, the [flash card game](/accounting/flashcards/) lets you practise on the same stand, one sale at a time.

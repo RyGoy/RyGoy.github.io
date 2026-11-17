@@ -1924,3 +1924,16 @@ a.page-emblem:focus-visible { outline: 2px solid var(--brass); outline-offset: 6
 .anthology-copy figcaption { margin-top: .5rem; font-style: italic; }
 .anthology-copy figcaption a { color: var(--c-d7be91); }
 .anthology-links { margin: .75rem 0 0; padding-left: 1.2rem; font-size: .85rem; overflow-wrap: anywhere; }
+
+/* The beginner's guide's lessons (layouts/lesson/, partials/lesson-content.html): Obsidian's callouts as boxes, the
+   check questions folding open, and the links to the lessons either side. */
+.lesson .callout { margin: 1.5rem 0; padding: .75rem 1rem; border: 1px solid var(--line); border-left: 3px solid var(--brass); background: var(--surface); }
+.lesson .callout p { margin: 0; }
+.lesson .callout p + p { margin-top: .4rem; }
+.lesson .callout-title { font-weight: 600; color: var(--brass); }
+.lesson details.callout summary { cursor: pointer; font-weight: 600; }
+.lesson details.callout[open] summary { margin-bottom: .5rem; }
+.lesson-pager { display: flex; justify-content: space-between; gap: 1rem; margin-top: 2.5rem; padding-top: 1rem; border-top: 1px solid var(--line); }
+.lesson-pager a { display: grid; gap: .15rem; max-width: 48%; }
+.lesson-pager span { font-size: .75rem; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
+.lesson-pager .lesson-next { margin-left: auto; text-align: right; }

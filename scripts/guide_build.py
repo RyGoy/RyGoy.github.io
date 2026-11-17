@@ -186,6 +186,8 @@ def lessons():
     """The hand-written lessons: their file, title and front matter lists."""
     out = []
     for path in sorted((GUIDE / "lens").glob("*.md")):
+        if path.name == "_index.md":  # the path's lesson plan, not a lesson
+            continue
         text = path.read_text(encoding="utf-8")
         m = re.match(r"---\n(.*?)\n---\n", text, re.S)
         front = m.group(1) if m else ""

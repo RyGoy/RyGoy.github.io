@@ -1,15 +1,15 @@
 ---
 title: "Money is debt in transit"
-path: accounting-lens
-step: 6
+description: "Money as one side of a debt: Scott Duncan's 'money is debt in transit', money of exchange and money of account."
+weight: 6
 terms: [Money, Currency, Debt, Bank, Money Of Account, Money Of Exchange]
 search: ["money", "currency", "debt in transit", "promise*", "bank*", "currency exchange"]
-status: draft
+draft: true
 ---
 
 # Money is debt in transit
 
-[The accounting lens](../paths/01-the-accounting-lens.md) · step 6 of 8 · You need first: [Surety: the responsible party](05-surety-the-responsible-party.md) · Next: [Trust, and the trustee](07-trust-and-the-trustee.md)
+[The accounting lens](_index.md) · step 6 of 8 · You need first: [Surety: the responsible party](05-surety-the-responsible-party.md) · Next: [Trust, and the trustee](07-trust-and-the-trustee.md)
 
 > [!warning] Draft
 > Written from the archive's own words, and waiting for a reader who knows the material to approve it.

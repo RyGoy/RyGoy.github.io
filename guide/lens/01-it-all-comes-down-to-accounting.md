@@ -1,15 +1,15 @@
 ---
 title: "It all comes down to accounting"
-path: accounting-lens
-step: 1
+description: "Why the archive reads everything legal as surety and accounting, in Scott Duncan's and Chris Schulte's own words."
+weight: 1
 terms: [Accounting, Law, Money, Legal, Surety]
 search: ["accounting", "accountant*", "comes down to money", "by-product of money", "follow the money"]
-status: draft
+draft: true
 ---
 
 # It all comes down to accounting
 
-[The accounting lens](../paths/01-the-accounting-lens.md) · step 1 of 8 · Next: [Every entry has two sides](02-every-entry-has-two-sides.md)
+[The accounting lens](_index.md) · step 1 of 8 · Next: [Every entry has two sides](02-every-entry-has-two-sides.md)
 
 > [!warning] Draft
 > Written from the archive's own words, and waiting for a reader who knows the material to approve it.

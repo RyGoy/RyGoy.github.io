@@ -1,15 +1,15 @@
 ---
 title: "Every entry has two sides"
-path: accounting-lens
-step: 2
+description: "Debits and credits, and the first habit of the accounting lens: before reading an entry, ask whose books it is in."
+weight: 2
 terms: [Credit, Account]
 search: ["debit*", "credit*", "ledger*", "double entry", "balance"]
-status: draft
+draft: true
 ---
 
 # Every entry has two sides
 
-[The accounting lens](../paths/01-the-accounting-lens.md) · step 2 of 8 · You need first: [It all comes down to accounting](01-it-all-comes-down-to-accounting.md) · Next: [What is had, and what is owed](03-what-is-had-and-what-is-owed.md)
+[The accounting lens](_index.md) · step 2 of 8 · You need first: [It all comes down to accounting](01-it-all-comes-down-to-accounting.md) · Next: [What is had, and what is owed](03-what-is-had-and-what-is-owed.md)
 
 > [!warning] Draft
 > Written from the archive's own words, and waiting for a reader who knows the material to approve it.

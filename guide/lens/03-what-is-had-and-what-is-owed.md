@@ -1,15 +1,15 @@
 ---
 title: "What is had, and what is owed"
-path: accounting-lens
-step: 3
+description: "Assets, liabilities and equity, and why what is owed and the owner's stake both sit on the credit side."
+weight: 3
 terms: [Liability, Credit]
 search: ["asset*", "liabilit*", "equity", "capital", "owe*", "creditor*", "debtor*"]
-status: draft
+draft: true
 ---
 
 # What is had, and what is owed
 
-[The accounting lens](../paths/01-the-accounting-lens.md) · step 3 of 8 · You need first: [Every entry has two sides](02-every-entry-has-two-sides.md) · Next: [Title is all that is sold](04-title-is-all-that-is-sold.md)
+[The accounting lens](_index.md) · step 3 of 8 · You need first: [Every entry has two sides](02-every-entry-has-two-sides.md) · Next: [Title is all that is sold](04-title-is-all-that-is-sold.md)
 
 > [!warning] Draft
 > Written from the archive's own words, and waiting for a reader who knows the material to approve it.

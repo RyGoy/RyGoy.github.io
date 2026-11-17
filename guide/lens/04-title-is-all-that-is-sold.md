@@ -1,15 +1,15 @@
 ---
 title: "Title is all that is sold"
-path: accounting-lens
-step: 4
+description: "Title, use and a claim are three different things: what Scott Duncan means by 'Title is all that is sold'."
+weight: 4
 terms: [Title, Property, Ownership, Owner, Lien]
 search: ["title", "property", "own", "owned", "owner*", "ownership", "register*"]
-status: draft
+draft: true
 ---
 
 # Title is all that is sold
 
-[The accounting lens](../paths/01-the-accounting-lens.md) · step 4 of 8 · You need first: [What is had, and what is owed](03-what-is-had-and-what-is-owed.md) · Next: [Surety: the responsible party](05-surety-the-responsible-party.md)
+[The accounting lens](_index.md) · step 4 of 8 · You need first: [What is had, and what is owed](03-what-is-had-and-what-is-owed.md) · Next: [Surety: the responsible party](05-surety-the-responsible-party.md)
 
 > [!warning] Draft
 > Written from the archive's own words, and waiting for a reader who knows the material to approve it.
