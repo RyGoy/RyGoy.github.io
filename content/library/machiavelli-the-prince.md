@@ -1,5 +1,7 @@
 +++
 title = "The Prince"
+cover = "images/library/machiavelli-the-prince.webp"
+cover_alt = "Title page of a 1550 edition"
 author = "Niccolò Machiavelli"
 edition = "1532 · translated by W. K. Marriott, 1908 · text from Project Gutenberg"
 description = "Machiavelli's handbook on how principalities are won, held and lost, judged by what rulers actually do rather than by what they ought to do."

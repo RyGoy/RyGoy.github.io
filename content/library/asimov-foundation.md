@@ -1,5 +1,6 @@
 +++
 title = "Foundation"
+cover = "images/library/asimov-foundation.webp"
 author = "Isaac Asimov"
 edition = "Gnome Press, 1951"
 description = "As the Galactic Empire decays, the mathematician Hari Seldon uses psychohistory, a science that predicts the behaviour of whole populations, to shorten the dark age that will follow it."

@@ -1,5 +1,7 @@
 +++
 title = "The English Constitution"
+cover = "images/library/the-english-constitution.webp"
+cover_alt = "Title page of the 1888 edition"
 author = "Walter Bagehot"
 edition = "London: Kegan Paul, Trench, 1888"
 description = "Bagehot's account of how English government actually works: the “dignified” parts that hold the public's loyalty, and the “efficient” parts that do the governing."

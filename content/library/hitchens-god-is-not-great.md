@@ -1,5 +1,6 @@
 +++
 title = "God Is Not Great: How Religion Poisons Everything"
+cover = "images/library/hitchens-god-is-not-great.webp"
 author = "Christopher Hitchens"
 edition = "Twelve, 2007"
 description = "Hitchens's polemic against organised religion: that its scriptures are man-made, its claims about the universe are false, and its influence on human conduct has been more harmful than good."

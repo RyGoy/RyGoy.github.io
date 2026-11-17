@@ -1,5 +1,7 @@
 +++
 title = "A Treatise of the System of the World"
+cover = "images/library/newton-system-of-the-world.webp"
+cover_alt = "Title page of the 1731 edition"
 author = "Isaac Newton"
 edition = "London, 1731"
 description = "Newton's plain-language account of universal gravitation: why the planets, their moons and the comets move as they do, and how the Moon raises the tides."

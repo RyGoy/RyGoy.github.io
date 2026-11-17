@@ -1,5 +1,6 @@
 +++
 title = "Second Foundation"
+cover = "images/library/asimov-second-foundation.webp"
 author = "Isaac Asimov"
 edition = "Gnome Press, 1953"
 description = "The last book of the Foundation trilogy: the Mule, and then the Foundation itself, hunt for the hidden Second Foundation that Hari Seldon set up to keep his plan on course."

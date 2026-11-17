@@ -1,5 +1,7 @@
 +++
 title = "Two Treatises of Government"
+cover = "images/library/locke-two-treatises-of-government.webp"
+cover_alt = "Title page of the 1690 edition"
 author = "John Locke"
 edition = "1689 · text from The Works of John Locke, 1823"
 description = "Locke's answer to Robert Filmer's divine right of kings, and his account of the state of nature, property, consent and the limits of civil government."

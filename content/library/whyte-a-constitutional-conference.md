@@ -1,5 +1,7 @@
 +++
 title = "“A Constitutional Conference … Shall Be Convened …”: Living with Constitutional Promises"
+cover = "images/library/whyte-a-constitutional-conference.webp"
+cover_alt = "First page of the article"
 author = "John D. Whyte"
 edition = "Constitutional Forum constitutionnel 8:1 (1996), pages 15–19"
 description = "Whyte argues that Canada's first ministers never held the review of the amending formula that section 49 of the Constitution Act, 1982 promised within fifteen years, and that treating the June 1996 meeting as that review broke a promise made at patriation."

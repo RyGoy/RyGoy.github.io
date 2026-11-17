@@ -1,3 +1,5 @@
 node_modules
 # Hugo builds here; CI rebuilds it for each deploy, so it is not kept in the repository.
 public/
+# Hugo's processed images (resized library covers); rebuilt by each build.
+resources/_gen/

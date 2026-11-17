@@ -1,5 +1,9 @@
 +++
 title = "Uniform Commercial Code"
+cover = "images/library/uniform-commercial-code.webp"
+cover_alt = "The 2007 edition of the Uniform Commercial Code"
+cover_credit = "Photo: Coolcaesar, CC BY-SA 3.0"
+cover_credit_url = "https://commons.wikimedia.org/wiki/File:Uniform_Commercial_Code.jpg"
 author = "Uniform Law Commission and American Law Institute"
 edition = "1952 · amended since"
 description = "The model law for commercial transactions in the United States: sales, leases, negotiable instruments, bank deposits, funds transfers, letters of credit, documents of title, investment securities and secured transactions."

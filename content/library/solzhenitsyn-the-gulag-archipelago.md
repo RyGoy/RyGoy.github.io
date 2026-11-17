@@ -1,5 +1,7 @@
 +++
 title = "The Gulag Archipelago, 1918–1956"
+cover = "images/library/solzhenitsyn-the-gulag-archipelago.webp"
+cover_alt = "Cover of the abridged edition"
 author = "Aleksandr Solzhenitsyn"
 edition = "1973 · English translation by Thomas P. Whitney, 1974"
 description = "Solzhenitsyn's history of the Soviet prison-camp system, built from his own imprisonment and the testimony of more than two hundred other prisoners: arrest, interrogation, trial and the camps themselves."

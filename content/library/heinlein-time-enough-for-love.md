@@ -1,5 +1,6 @@
 +++
 title = "Time Enough for Love"
+cover = "images/library/heinlein-time-enough-for-love.webp"
 author = "Robert A. Heinlein"
 edition = "G. P. Putnam's Sons, 1973"
 description = "Lazarus Long, the oldest living human, tells the stories of his more than two thousand years of life, with the aphorisms collected as \"The Notebooks of Lazarus Long\"."

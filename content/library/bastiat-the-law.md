@@ -1,5 +1,6 @@
 +++
 title = "The Law"
+cover = "images/library/bastiat-the-law.webp"
 author = "Frédéric Bastiat"
 edition = "1850 · Ludwig von Mises Institute edition, 2007"
 description = "Bastiat's argument that law exists to protect each person's life, liberty and property, and that it becomes “legal plunder” when it is used to take from some for the benefit of others."
