@@ -4,6 +4,8 @@
 // to card, so the player sees what changed and that what the business has still equals what it owes plus its owner's stake.
 // Progress is kept in this browser (localStorage, see STORE): where each deck was left, each deck's best score, and
 // each card's last answer, from which "Practise my mistakes" deals the cards last answered wrong.
+// With accounts on (data-accounts, params.flashcards_accounts), a player who signs in with Telegram also keeps it in
+// their account (the commentary bot's Worker, telegram-bot/accounts.js), merged with each browser's copy (merge).
 (() => {
   const data = document.getElementById('fc-data');
   const game = document.getElementById('flashcards');
@@ -31,8 +33,10 @@
   //   mode:    the mode played last, which the page opens on.
   //   decks:   deck key or "all" -> { correct, answered } of the best finished round.
   //   cards:   card key -> { right, wrong, last }, last being "right" or "wrong".
+  //   t:       when anything above last changed (ms), and since: when the player last chose Forget my progress; merge
+  //            uses both to put two copies together.
   const STORE = 'ttfl-flashcards';
-  const empty = () => ({ v: 1, mode: null, playing: {}, decks: {}, cards: {} });
+  const empty = () => ({ v: 1, t: 0, since: 0, mode: null, playing: {}, decks: {}, cards: {} });
   const storage = (() => {
     try {
       localStorage.setItem(`${STORE}-test`, '1');
@@ -42,16 +46,55 @@
       return null; // private windows and blocked storage: the game still works, and forgets on leaving
     }
   })();
+  // A copy of the progress as read from this browser or the player's account, filled out; anything unreadable is empty.
+  const progressFrom = stored => {
+    if (stored?.v !== 1) return empty();
+    const state = { ...empty(), ...stored };
+    for (const key of ['playing', 'decks', 'cards']) if (!state[key] || typeof state[key] !== 'object') state[key] = {};
+    return state;
+  };
   let saved = (() => {
     try {
-      const stored = JSON.parse(storage?.getItem(STORE));
-      if (stored?.v === 1) return { ...empty(), ...stored };
+      return progressFrom(JSON.parse(storage?.getItem(STORE)));
     } catch { /* unreadable: start afresh */ }
     return empty();
   })();
-  const save = () => {
+  // The progress as text, keys sorted and without t, to tell whether two copies hold the same.
+  const canon = state => JSON.stringify({ ...state, t: 0 }, (key, value) => (value && typeof value === 'object' && !Array.isArray(value)
+    ? Object.fromEntries(Object.entries(value).sort(([a], [b]) => (a < b ? -1 : a > b ? 1 : 0))) : value));
+  let kept = canon(saved);
+  const write = () => {
     try { storage?.setItem(STORE, JSON.stringify(saved)); } catch { /* full or blocked: keep playing */ }
   };
+  // Keeps the progress when it has changed, and has it saved to the player's account.
+  const save = () => {
+    const now = canon(saved);
+    if (now === kept) return;
+    kept = now;
+    saved.t = Date.now();
+    write();
+    changed();
+  };
+
+  // Puts two copies of the progress together, as when a player signs in on a second device: each card's record with
+  // more answers, each deck's better best score, and where the decks are from the copy changed last. A copy older than
+  // the other's Forget my progress counts as empty, so what was forgotten on one device doesn't come back from another.
+  function merge(a, b) {
+    const time = state => state.t || 0;
+    if (time(a) < (b.since || 0)) a = { ...empty(), since: a.since || 0 };
+    if (time(b) < (a.since || 0)) b = { ...empty(), since: b.since || 0 };
+    const [older, newer] = time(a) > time(b) ? [b, a] : [a, b];
+    const answers = record => (record?.right || 0) + (record?.wrong || 0);
+    const ratio = best => (best ? best.correct / best.answered : -1);
+    const cards = { ...older.cards };
+    for (const [key, record] of Object.entries(newer.cards)) if (answers(record) >= answers(cards[key])) cards[key] = record;
+    const best = { ...older.decks };
+    for (const [key, round] of Object.entries(newer.decks)) if (ratio(round) >= ratio(best[key])) best[key] = round;
+    return {
+      ...empty(), mode: newer.mode, playing: newer.playing, decks: best, cards,
+      t: Math.max(time(a), time(b)), since: Math.max(a.since || 0, b.since || 0),
+    };
+  }
 
   const find = selector => game.querySelector(selector);
   const toolbar = find('.fc-toolbar');
@@ -158,7 +201,8 @@
 
   function noteSaved(text) {
     savedPanel.hidden = !storage;
-    savedNote.textContent = `${text ? `${text} ` : ''}Your progress is kept in this browser only.`;
+    const where = account ? 'Your progress is kept in this browser and in your Telegram account.' : 'Your progress is kept in this browser only.';
+    savedNote.textContent = `${text ? `${text} ` : ''}${where}`;
   }
 
   function showCard() {
@@ -234,6 +278,7 @@
     record[right ? 'right' : 'wrong'] += 1;
     record.last = right ? 'right' : 'wrong';
     saved.cards[card.key] = record;
+    touched = true;
     remember(position + 1); // answered: a reload deals the next card
     fillDecks();
     noteSaved('');
@@ -374,9 +419,8 @@
     prompt.focus();
   });
   find('.fc-forget').addEventListener('click', () => {
-    if (!confirm('Forget your scores, your mistakes and where you are in every deck?')) return;
-    saved = empty();
-    try { storage?.removeItem(STORE); } catch { /* nothing kept */ }
+    if (!confirm(`Forget your scores, your mistakes and where you are in every deck${account ? ', here and in your Telegram account' : ''}?`)) return;
+    saved = { ...empty(), since: Date.now() }; // kept, so the account and other devices forget it too (merge)
     mode = '';
     deckSelect.value = '0';
     fillDecks();
@@ -387,12 +431,167 @@
   // Choosing a deck picks it up where it was left.
   deckSelect.addEventListener('change', () => start(true));
 
+  // Accounts: signing in with Telegram (its Login widget, from telegram.org, loaded only when the player asks), then
+  // keeping the progress in the account. Each save sends the whole progress with the revision it was merged with;
+  // when another device saved in between, the Worker answers 409 with its copy, which is merged in and sent again.
+  const api = game.dataset.accounts?.replace(/\/+$/, '');
+  const ACCOUNT = 'ttfl-flashcards-account'; // { token, name }
+  const panel = find('.fc-account');
+  let account = null;
+  let rev = null; // the account's revision this browser last merged with; null until it has been read
+  let edits = 0; // changes made here, and how many of them the account has
+  let sent = 0;
+  let syncing = null;
+  let timer = 0;
+  let touched = false; // a card answered on this visit: progress arriving from the account then leaves the card be
+  if (api && storage && panel) {
+    try { account = JSON.parse(storage.getItem(ACCOUNT)); } catch { /* none */ }
+    if (typeof account?.token !== 'string') account = null;
+  }
+
+  function changed() {
+    if (!account) return;
+    edits += 1;
+    clearTimeout(timer);
+    timer = setTimeout(sync, 3000); // a few answers in a row go in one save
+  }
+
+  async function call(method, path, body, keepalive = false) {
+    const res = await fetch(`${api}${path}`, {
+      method,
+      keepalive,
+      headers: { ...(account ? { Authorization: `Bearer ${account.token}` } : {}), ...(body ? { 'Content-Type': 'application/json' } : {}) },
+      body: body ? JSON.stringify(body) : undefined,
+    });
+    const data = await res.json().catch(() => ({}));
+    if (res.status === 401 && path !== '/api/login') throw Object.assign(new Error('signed out'), { signedOut: true });
+    if (!res.ok && res.status !== 409) throw new Error(data.error || `HTTP ${res.status}`);
+    return { status: res.status, data };
+  }
+
+  // Merges the account's copy into this browser's. Shows the result if it changed anything here, and marks it to be
+  // saved if the account lacks anything from here.
+  function absorb(remote) {
+    const theirs = progressFrom(remote);
+    const merged = merge(saved, theirs);
+    if (canon(merged) !== canon(saved)) {
+      saved = merged;
+      kept = canon(saved);
+      write();
+      if (touched) fillDecks();
+      else openLast();
+    }
+    if (canon(merged) !== canon(theirs)) edits += 1;
+  }
+
+  // Brings this browser and the account level: reads the account the first time, then saves until it has every
+  // change made here. One at a time; a change made meanwhile is picked up by the next.
+  function sync(keepalive = false) {
+    if (!account) return Promise.resolve();
+    clearTimeout(timer);
+    syncing = (syncing || Promise.resolve()).then(async () => {
+      try {
+        if (rev === null) {
+          const { data } = await call('GET', '/api/progress');
+          rev = data.rev;
+          remindBox.checked = Boolean(data.remind);
+          absorb(data.progress);
+        }
+        for (let tries = 0; sent < edits && tries < 3; tries++) {
+          const at = edits;
+          const { status, data } = await call('PUT', '/api/progress', { progress: saved, rev }, keepalive);
+          rev = data.rev;
+          if (status === 409) absorb(data.progress);
+          else sent = at;
+        }
+        noteAccount(sent < edits ? 'Not all saved to your account yet.' : 'Saved.');
+      } catch (err) {
+        if (err.signedOut) signOut('You were signed out. Sign in again to keep saving to your account.');
+        else noteAccount("Couldn't reach your account just now: your progress is kept in this browser, and saved there when it's back.");
+      }
+    });
+    return syncing;
+  }
+
+  function noteAccount(status = '') {
+    panel.hidden = false;
+    find('.fc-signed-out').hidden = Boolean(account);
+    find('.fc-signed-in').hidden = !account;
+    find('.fc-account-note').textContent = account ? `Signed in with Telegram as ${account.name || 'you'}. ${status}`.trim() : '';
+    noteSaved('');
+  }
+
+  function signOut(message) {
+    account = null;
+    rev = null;
+    try { storage.removeItem(ACCOUNT); } catch { /* nothing kept */ }
+    noteAccount();
+    signInButton.hidden = false;
+    telegramSlot.replaceChildren(...(message ? [element('p', { textContent: message })] : []));
+  }
+
+  const signInButton = find('.fc-sign-in');
+  const telegramSlot = find('.fc-telegram');
+  const remindBox = find('.fc-remind');
+  if (api && storage && panel) {
+    // Telegram's button: its widget calls this with the signed login, which the Worker checks.
+    window.ttflFlashcardsLogin = async user => {
+      try {
+        const { data } = await call('POST', '/api/login', user);
+        if (!data.token) throw new Error(data.error);
+        account = { token: data.token, name: data.name };
+        storage.setItem(ACCOUNT, JSON.stringify(account));
+        rev = null;
+        edits += 1; // what this browser has goes to the account, once merged with it
+        telegramSlot.replaceChildren();
+        noteAccount('Saving…');
+        sync();
+      } catch {
+        telegramSlot.replaceChildren(element('p', { textContent: "The sign-in didn't work. Please try again." }));
+        signInButton.hidden = false;
+      }
+    };
+    signInButton.addEventListener('click', () => {
+      signInButton.hidden = true;
+      const script = element('script', { async: true, src: 'https://telegram.org/js/telegram-widget.js?22' });
+      Object.assign(script.dataset, { telegramLogin: game.dataset.bot, size: 'medium', onauth: 'ttflFlashcardsLogin(user)', requestAccess: 'write' });
+      script.addEventListener('error', () => {
+        telegramSlot.replaceChildren(element('p', { textContent: "Telegram's sign-in didn't load. Please try again later." }));
+        signInButton.hidden = false;
+      });
+      telegramSlot.replaceChildren(script);
+    });
+    find('.fc-sign-out').addEventListener('click', () => {
+      sync().then(() => signOut('Signed out. Your progress stays in this browser.'));
+    });
+    remindBox.addEventListener('change', async () => {
+      const want = remindBox.checked;
+      try {
+        const { data } = await call('PUT', '/api/reminders', { remind: want });
+        remindBox.checked = data.remind;
+        noteAccount(data.remind ? "The bot will remind you when you haven't practised for two days. Send it /stop to turn this off." : 'Reminders are off.');
+      } catch (err) {
+        remindBox.checked = !want;
+        if (err.signedOut) signOut('You were signed out. Sign in again to keep saving to your account.');
+        else noteAccount("Couldn't reach your account just now. Please try again.");
+      }
+    });
+    // Leaving the page saves what hasn't been saved yet.
+    addEventListener('visibilitychange', () => {
+      if (document.visibilityState === 'hidden' && sent < edits) sync(true);
+    });
+    noteAccount();
+  }
+
   // Open on the deck played last, unless it was the mistakes and none are left.
-  fillDecks();
-  const opening = saved.mode === 'all' || (saved.mode === 'mistakes' && mistakes().length) ? saved.mode
-    : String(Math.max(0, decks.findIndex(d => d.key === saved.mode)));
-  deckSelect.value = opening;
+  function openLast() {
+    fillDecks();
+    deckSelect.value = saved.mode === 'all' || (saved.mode === 'mistakes' && mistakes().length) ? saved.mode
+      : String(Math.max(0, decks.findIndex(d => d.key === saved.mode)));
+    start(true);
+  }
   toolbar.hidden = false;
   form.hidden = false;
-  start(true);
+  openLast();
+  sync();
 })();

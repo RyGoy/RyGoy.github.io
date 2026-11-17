@@ -1334,6 +1334,13 @@ iframe.video-embed { border: 1px solid var(--line); }
 .fc-saved-note { flex: 1 1 16rem; margin: 0; }
 .fc-saved button { cursor: pointer; font: inherit; color: var(--paper); background: transparent; border: 1px solid var(--line); padding: .3rem .75rem; }
 .fc-saved button:hover { background: var(--surface); }
+.fc-account { flex: 1 1 100%; display: grid; gap: .5rem; border-top: 1px solid var(--line); padding-top: .75rem; }
+.fc-account p { margin: 0; }
+.fc-signed-out, .fc-signed-in { display: flex; flex-wrap: wrap; align-items: center; gap: .5rem 1rem; }
+.fc-signed-out > p, .fc-account-note { flex: 1 1 16rem; }
+.fc-signed-in label { display: inline-flex; align-items: center; gap: .4rem; cursor: pointer; }
+.fc-telegram:empty { display: none; }
+.fc-account-privacy { font-size: .78rem; }
 .is-right > .fc-verdict { color: var(--card-right); }
 .is-wrong > .fc-verdict { color: var(--card-wrong); }
 @media (max-width: 42rem) {

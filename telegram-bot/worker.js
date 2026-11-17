@@ -2,12 +2,17 @@
 //
 // A contributor sends the bot a note in one message: the title on the first line, then the note. The bot passes it to
 // the moderators' group as the Markdown file it will become, with Approve and Reject buttons. Approve commits the file
-// to content/commentary/ on main, and the site's deploy publishes it. Nothing is stored here: the moderators' message
+// to content/commentary/ on main, and the site's deploy publishes it. No note is stored here: the moderators' message
 // holds the note, and the contributor's chat ID rides in the button.
 //
 // A question ("Ask a question" on the site, or /ask) comes in the same way but goes to the moderators with Reject only:
 // a moderator approves it by replying to it in the group with the answer, and the bot commits the question with that
 // answer and its author (answer, answered_by), and sends the answer to the one who asked.
+//
+// The same Worker keeps the flash card accounts (accounts.js): the site's API under /api/, the bot's /stop and
+// /delete, and the daily reminders.
+
+import { handleApi, onAccountCommand, sendReminders } from "./accounts.js";
 
 const REPO = "RyGoy/RyGoy.github.io";
 const SITE = "https://thetenderforlaw.com";
@@ -23,6 +28,8 @@ const ANSWER_HINT = "Reply to this message with your answer: the question and yo
 
 export default {
   async fetch(request, env) {
+    // The flash card accounts' API, for the site (accounts.js); everything else is Telegram's webhook.
+    if (new URL(request.url).pathname.startsWith("/api/")) return handleApi(request, env);
     if (request.method !== "POST") return new Response("Not found", { status: 404 });
     // Only Telegram knows the secret (setWebhook's secret_token), so only Telegram can drive the bot.
     if (request.headers.get("X-Telegram-Bot-Api-Secret-Token") !== env.WEBHOOK_SECRET) {
@@ -45,6 +52,10 @@ export default {
     }
     return new Response("ok");
   },
+  // Daily (wrangler.toml, [triggers]): flash card reminders.
+  async scheduled(event, env, ctx) {
+    ctx.waitUntil(sendReminders(env, tg));
+  },
 };
 
 async function onMessage(msg, env) {
@@ -54,6 +65,7 @@ async function onMessage(msg, env) {
   const reply = (t) => tg(env, "sendMessage", { chat_id: msg.chat.id, text: t });
 
   if (!text) return reply("Send your note as a text message.");
+  if (await onAccountCommand(msg, env, tg)) return; // /stop and /delete, for flash card accounts
   if (text.startsWith("/")) {
     // "Add commentary" on a page opens /start <page path>, "Ask a question" /start Q<page path> (or /ask). The prompt
     // asks for a reply, so the note comes back attached to it and the page travels with the note.
