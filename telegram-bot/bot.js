@@ -1,4 +1,7 @@
-// The commentary bot (a Cloudflare Worker, set up as in README.md).
+// The commentary bot and the flash card accounts: the logic, free of any host. It takes standard web requests and
+// returns responses, so it runs unchanged on Cloudflare (cloudflare.js) or on any machine with Node (server.mjs); see
+// docs/hosting.md. Settings and the database come in `env`: TELEGRAM_TOKEN, WEBHOOK_SECRET, MOD_CHAT_ID, GITHUB_TOKEN,
+// and DB (optional), a database with D1's prepare/bind/first/all/run calls (Cloudflare D1, or sqlite.js).
 //
 // A contributor sends the bot a note in one message: the title on the first line, then the note. The bot passes it to
 // the moderators' group as the Markdown file it will become, with Approve and Reject buttons. Approve commits the file
@@ -9,7 +12,7 @@
 // a moderator approves it by replying to it in the group with the answer, and the bot commits the question with that
 // answer and its author (answer, answered_by), and sends the answer to the one who asked.
 //
-// The same Worker keeps the flash card accounts (accounts.js): the site's API under /api/, the bot's /stop and
+// The same bot keeps the flash card accounts (accounts.js): the site's API under /api/, the bot's /stop and
 // /delete, and the daily reminders.
 
 import { handleApi, onAccountCommand, sendReminders } from "./accounts.js";
@@ -52,9 +55,9 @@ export default {
     }
     return new Response("ok");
   },
-  // Daily (wrangler.toml, [triggers]): flash card reminders.
-  async scheduled(event, env, ctx) {
-    ctx.waitUntil(sendReminders(env, tg));
+  // Once a day (the host's schedule: cloudflare.js, server.mjs): flash card reminders. Resolves to how many were due.
+  daily(env) {
+    return sendReminders(env, tg);
   },
 };
 

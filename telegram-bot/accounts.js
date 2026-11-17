@@ -1,5 +1,6 @@
 // Flash card accounts (README.md, "Flash card accounts"): players sign in on the flash card page with the Telegram
-// Login widget, and their progress is kept here, in the D1 database bound as DB (schema.sql), so it follows them to
+// Login widget, and their progress is kept in the database env.DB (schema.sql: D1 on Cloudflare, a SQLite file with
+// server.mjs; docs/hosting.md), so it follows them to
 // every device they sign in on. Players who ask for it get a reminder from the bot after two days without practice.
 //
 // The browser owns the progress: it merges its own copy with the stored one (static/js/flashcards.js) and saves the

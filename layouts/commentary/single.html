@@ -9,7 +9,7 @@
     {{ if not .Date.IsZero }}<time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "Jan 02, 2006" }}</time>{{ end }}
   </header>
   <div class="prose">{{ partial "commentary-text.html" (dict "page" . "text" .RawContent) }}</div>
-  {{/* A question (question: true) carries the moderator's answer from Telegram (telegram-bot/worker.js). */}}
+  {{/* A question (question: true) carries the moderator's answer from Telegram (telegram-bot/bot.js). */}}
   {{ with .Params.answer }}
   <section class="commentary-answer" aria-labelledby="answer-heading">
     <h2 id="answer-heading">Answer</h2>

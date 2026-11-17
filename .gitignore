@@ -3,3 +3,6 @@ node_modules
 public/
 # Hugo's processed images (resized library covers); rebuilt by each build.
 resources/_gen/
+
+# Obsidian's own settings, when docs/ is opened as a vault (docs/README.md).
+docs/.obsidian/

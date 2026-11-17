@@ -1,31 +1,13 @@
 // node telegram-bot/test-accounts.mjs: runs the flash card accounts (accounts.js) against a fake Telegram and an
-// in-memory SQLite database standing in for D1, with the real schema.sql.
+// in-memory SQLite database (sqlite.js, with the real schema.sql) standing in for D1.
 import assert from "node:assert/strict";
 import { createHash, createHmac } from "node:crypto";
-import { readFileSync } from "node:fs";
-import { DatabaseSync } from "node:sqlite";
-import worker from "./worker.js";
+import worker from "./bot.js";
 import { verifyLogin, reminder } from "./accounts.js";
-
-// D1's prepare/bind/first/run/all, over node:sqlite.
-function fakeD1() {
-  const db = new DatabaseSync(":memory:");
-  db.exec(readFileSync(new URL("./schema.sql", import.meta.url), "utf8"));
-  return {
-    raw: db,
-    prepare(sql) {
-      const bound = (args) => ({
-        first: async () => db.prepare(sql).get(...args) ?? null,
-        all: async () => ({ results: db.prepare(sql).all(...args) }),
-        run: async () => ({ meta: { changes: Number(db.prepare(sql).run(...args).changes) } }),
-      });
-      return { ...bound([]), bind: (...args) => bound(args) };
-    },
-  };
-}
+import { openDatabase } from "./sqlite.js";
 
 const TOKEN = "123:bot-token";
-const env = { WEBHOOK_SECRET: "s3cret", TELEGRAM_TOKEN: TOKEN, GITHUB_TOKEN: "G", MOD_CHAT_ID: "-100", DB: fakeD1() };
+const env = { WEBHOOK_SECRET: "s3cret", TELEGRAM_TOKEN: TOKEN, GITHUB_TOKEN: "G", MOD_CHAT_ID: "-100", DB: openDatabase() };
 let sent = [];
 let blocked = new Set();
 globalThis.fetch = async (url, init) => {
@@ -109,8 +91,7 @@ assert.equal((await api("GET", "/api/nothing", { token })).status, 404);
 assert.equal((await api("PUT", "/api/reminders", { token, body: { remind: "yes" } })).status, 400);
 res = await api("PUT", "/api/reminders", { token, body: { remind: true } });
 assert.deepEqual(await res.json(), { remind: true });
-const cron = (at) => new Promise((resolve) => worker.scheduled({}, env, { waitUntil: (p) => p.then(resolve) }))
-  .then(() => at);
+const cron = () => worker.daily(env);
 const day = 86400000;
 env.DB.raw.prepare("UPDATE players SET updated = ?, progress = ? WHERE id = 7")
   .run(Date.now() - 3 * day, JSON.stringify({ v: 1, cards: { a: { last: "wrong" }, b: { last: "right" }, c: { last: "wrong" } } }));
@@ -171,6 +152,6 @@ assert.equal(env.DB.raw.prepare("SELECT COUNT(*) AS n FROM players").get().n, 0)
 // Without the database bound, the API says so and the bot's commands answer kindly.
 const { DB, ...bare } = env;
 assert.equal((await worker.fetch(new Request("https://bot.example/api/progress"), bare)).status, 503);
-assert.equal(await new Promise((resolve) => worker.scheduled({}, bare, { waitUntil: (p) => p.then(resolve) })), 0);
+assert.equal(await worker.daily(bare), 0);
 
 console.log("accounts: all tests passed");

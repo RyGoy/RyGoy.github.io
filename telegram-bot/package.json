@@ -2,6 +2,6 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "test": "node test.mjs && node test-accounts.mjs"
+    "test": "node test.mjs && node test-accounts.mjs && node test-server.mjs"
   }
 }
