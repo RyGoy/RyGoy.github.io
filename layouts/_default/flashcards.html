@@ -39,7 +39,10 @@
   {{ end }}
   {{ with .Content }}<div class="prose">{{ . }}</div>{{ end }}
 </header>
-<div class="reading-column flashcards" id="flashcards">
+{{/* With params.flashcards_accounts (the Worker's address, telegram-bot/README.md) and the bot's username, players can
+     sign in with Telegram to keep their progress on every device and get reminders (js/flashcards.js). */}}
+{{ $accounts := and site.Params.flashcards_accounts site.Params.commentary_telegram_bot }}
+<div class="reading-column flashcards" id="flashcards"{{ if $accounts }} data-accounts="{{ site.Params.flashcards_accounts }}" data-bot="{{ site.Params.commentary_telegram_bot }}"{{ end }}>
   <noscript><p>The flash card game needs JavaScript.</p></noscript>
   <div class="fc-toolbar" hidden>
     <label>Deck <select class="fc-deck"></select></label>
@@ -71,6 +74,21 @@
     <p class="fc-saved-note" aria-live="polite"></p>
     <button type="button" class="fc-restart">Start this deck over</button>
     <button type="button" class="fc-forget">Forget my progress</button>
+    {{ if $accounts }}
+    <div class="fc-account" hidden>
+      <div class="fc-signed-out">
+        <p>Sign in with Telegram to keep your progress on every device, and to get a reminder when you haven't practised for a couple of days.</p>
+        <button type="button" class="fc-sign-in">Sign in with Telegram</button>
+        <div class="fc-telegram"></div>
+      </div>
+      <div class="fc-signed-in" hidden>
+        <p class="fc-account-note" aria-live="polite"></p>
+        <label><input type="checkbox" class="fc-remind"> Remind me on Telegram after two days away</label>
+        <button type="button" class="fc-sign-out">Sign out</button>
+      </div>
+      <p class="fc-account-privacy">Signing in keeps your Telegram ID and first name with your progress. Forget my progress erases the progress there too; sending <code>/delete</code> to the bot erases everything.</p>
+    </div>
+    {{ end }}
   </div>
 </div>
 <script type="application/json" id="fc-data">{{ $decks | jsonify | safeJS }}</script>

@@ -11,7 +11,7 @@ Contributors send commentary to a Telegram bot. Moderators approve it in a Teleg
 
 **Questions.** "Ask a question" on a page (or `/ask` in the bot) works the same way, but the moderators' copy has only **Reject** and ends with "Reply to this message with your answer". A moderator approves a question by **replying to it in the group** with the answer: the bot commits the question with the answer and the moderator's Telegram name (`answer` and `answered_by` in its front matter, beside `question: true`), marks the group message answered, and sends the answer to the one who asked. The page shows the question, then the answer. A second reply finds the file already there. The bot sees these replies with Telegram's default privacy mode (a bot in a group receives replies to its own messages), so nothing needs changing in BotFather; other group messages are ignored.
 
-Nothing is stored in the Worker: the note (or question) lives in the moderators' message, and the contributor's chat ID in the button. Anyone in the moderators' group can approve, so keep it to moderators.
+The commentary bot stores nothing in the Worker (the flash card accounts below do): the note (or question) lives in the moderators' message, and the contributor's chat ID in the button. Anyone in the moderators' group can approve, so keep it to moderators.
 
 Notes can't break the build: Hugo strips raw HTML from Markdown, unknown links are ignored, and the bot writes `{{` as `{&#123;` so a note can't call a shortcode.
 
@@ -47,6 +47,38 @@ You need a Telegram account, a free Cloudflare account, and GitHub access to thi
 7. **Turn it on for the site.** In `config.toml`, set `commentary_telegram_bot` to the bot's username, without the `@`, and `commentary_telegram = true`.
 
 To change the bot, edit `worker.js`, run `npm test` here, and `npx wrangler deploy` again. `npx wrangler tail` shows its logs.
+
+## Flash card accounts
+
+The same bot and Worker let players of the [flash cards](https://thetenderforlaw.com/accounting/flashcards/) sign in with Telegram, so their progress follows them to every device, and get a reminder from the bot after two days without practice. This part does keep data: each player's Telegram ID, first name, progress, when they last played, and whether they want reminders, in a Cloudflare D1 database (`schema.sql`, `accounts.js`). The site says so beside the sign-in button.
+
+- **Signing in** uses Telegram's Login widget on the flash card page. The Worker checks the login's signature with the bot's token (`POST /api/login`) and returns a session, signed with a key made from the token, that lasts 180 days. Changing the bot's token signs everyone out.
+- **Progress** is saved by the browser (`GET`/`PUT /api/progress`), which merges its own copy with the account's. Each save names the revision it was merged with; a save against an older one gets the stored copy back to merge (409).
+- **Reminders** are opt in (the checkbox under the game, `PUT /api/reminders`). Once a day (`[triggers]` in `wrangler.toml`) the Worker sends one message to each player who asked and hasn't played for two days, and no other until they play again. Players who blocked the bot are taken off.
+- **In the bot**, `/stop` turns reminders off and `/delete` deletes the player's row. Under the game, Forget my progress erases the progress but keeps the account.
+
+### Setting it up
+
+1. **Create the database**, in this folder:
+
+   ```sh
+   npx wrangler d1 create ttfl-accounts
+   ```
+
+   Uncomment the `[[d1_databases]]` block in `wrangler.toml` and put the `database_id` it printed there. Then make the table and deploy:
+
+   ```sh
+   npx wrangler d1 execute ttfl-accounts --remote --file schema.sql
+   npx wrangler deploy
+   ```
+
+2. **Allow the site to use the bot's login.** In [@BotFather](https://t.me/BotFather), send `/setdomain`, choose the bot and send `thetenderforlaw.com`. The Login widget works only on that domain, so it can't be tried on a local preview.
+3. **Tell the bot's commands** (optional): BotFather's `/setcommands` with `stop - Turn flash card reminders off` and `delete - Delete my flash card account`.
+4. **Turn it on for the site.** In `config.toml`, set `flashcards_accounts` to the Worker's address (from `deploy`, like `https://ttfl-commentary-bot.<you>.workers.dev`). The sign-in shows under the game after the next deploy.
+
+The site's addresses allowed to call the API are `ORIGINS` in `accounts.js`. `npm test` runs `test-accounts.mjs` too, against an in-memory SQLite database standing in for D1.
+
+**Turning it off:** set `flashcards_accounts = ""`. The sign-in goes from the site and progress stays in each browser. To stop reminders too, comment out `[triggers]` in `wrangler.toml` and deploy again. The data stays in D1 until it is deleted (`npx wrangler d1 execute ttfl-accounts --remote --command "DELETE FROM players"`).
 
 ## Turning it off
 

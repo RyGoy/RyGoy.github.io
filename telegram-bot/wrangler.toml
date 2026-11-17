@@ -2,3 +2,14 @@
 name = "ttfl-commentary-bot"
 main = "worker.js"
 compatibility_date = "2026-10-01"
+
+# Flash card accounts (accounts.js; README.md, "Flash card accounts"). `npx wrangler d1 create ttfl-accounts` prints
+# the database_id to put here; until then, leave this block commented out and the site's sign-in stays off.
+# [[d1_databases]]
+# binding = "DB"
+# database_name = "ttfl-accounts"
+# database_id = ""
+
+# The daily flash card reminders, at 15:07 UTC (10:07 in Toronto in winter, 11:07 in summer).
+[triggers]
+crons = ["7 15 * * *"]
