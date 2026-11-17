@@ -1,6 +1,6 @@
 // node telegram-bot/test.mjs: runs the bot against fake Telegram and GitHub APIs.
 import assert from "node:assert/strict";
-import worker, { noteFile, answerFile, sitePath, decodePage, slugify, GROUP_PREFIX } from "./worker.js";
+import worker, { noteFile, answerFile, sitePath, decodePage, slugify, GROUP_PREFIX } from "./bot.js";
 
 const env = { WEBHOOK_SECRET: "s3cret", TELEGRAM_TOKEN: "T", GITHUB_TOKEN: "G", MOD_CHAT_ID: "-100" };
 let calls = [];

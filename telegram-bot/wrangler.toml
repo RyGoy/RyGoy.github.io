@@ -1,6 +1,7 @@
-# The commentary bot's Cloudflare Worker (README.md). Its secrets are set with `npx wrangler secret put`, not here.
+# The bot on Cloudflare, as a Worker (README.md). cloudflare.js starts bot.js; on your own machine, server.mjs does
+# (docs/hosting.md). Its secrets are set with `npx wrangler secret put`, not here.
 name = "ttfl-commentary-bot"
-main = "worker.js"
+main = "cloudflare.js"
 compatibility_date = "2026-10-01"
 
 # Flash card accounts (accounts.js; README.md, "Flash card accounts"). `npx wrangler d1 create ttfl-accounts` prints

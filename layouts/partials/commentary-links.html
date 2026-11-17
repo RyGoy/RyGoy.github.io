@@ -2,7 +2,7 @@
        question", "" when the bot is off). "Add commentary" opens the commentary bot on Telegram (telegram-bot/) on
        this page; moderators approve each note before the bot commits it to content/commentary/. The page goes in the
        start parameter, which takes at most 64 of A-Z a-z 0-9 _ -: its lowercase path with "/" written "S" and the
-       archive's Facebook group ID prefix written "G" (decodePage in telegram-bot/worker.js), so a comment's path fits.
+       archive's Facebook group ID prefix written "G" (decodePage in telegram-bot/bot.js), so a comment's path fits.
        A path that doesn't fit is left out, and the contributor pastes the page's link instead. "Ask a question" opens
        it the same way with Q before the page (or just Q): a moderator answers the question in Telegram, and it is
        published with the answer. With the bot switched off or unnamed (params.commentary_telegram,

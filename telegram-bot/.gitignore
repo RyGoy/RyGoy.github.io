@@ -1,0 +1,6 @@
+# server.mjs's settings (the bot's secrets) and its accounts database: never commit them.
+.env
+*.db
+*.db-journal
+*.db-wal
+*.db-shm

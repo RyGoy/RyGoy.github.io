@@ -5,7 +5,7 @@
 // Progress is kept in this browser (localStorage, see STORE): where each deck was left, each deck's best score, and
 // each card's last answer, from which "Practise my mistakes" deals the cards last answered wrong.
 // With accounts on (data-accounts, params.flashcards_accounts), a player who signs in with Telegram also keeps it in
-// their account (the commentary bot's Worker, telegram-bot/accounts.js), merged with each browser's copy (merge).
+// their account (kept by the commentary bot, telegram-bot/accounts.js), merged with each browser's copy (merge).
 (() => {
   const data = document.getElementById('fc-data');
   const game = document.getElementById('flashcards');
@@ -433,7 +433,7 @@
 
   // Accounts: signing in with Telegram (its Login widget, from telegram.org, loaded only when the player asks), then
   // keeping the progress in the account. Each save sends the whole progress with the revision it was merged with;
-  // when another device saved in between, the Worker answers 409 with its copy, which is merged in and sent again.
+  // when another device saved in between, the bot answers 409 with its copy, which is merged in and sent again.
   const api = game.dataset.accounts?.replace(/\/+$/, '');
   const ACCOUNT = 'ttfl-flashcards-account'; // { token, name }
   const panel = find('.fc-account');
@@ -534,7 +534,7 @@
   const telegramSlot = find('.fc-telegram');
   const remindBox = find('.fc-remind');
   if (api && storage && panel) {
-    // Telegram's button: its widget calls this with the signed login, which the Worker checks.
+    // Telegram's button: its widget calls this with the signed login, which the bot checks.
     window.ttflFlashcardsLogin = async user => {
       try {
         const { data } = await call('POST', '/api/login', user);
