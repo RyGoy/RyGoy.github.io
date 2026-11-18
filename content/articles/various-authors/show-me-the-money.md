@@ -17,13 +17,7 @@ title = "Trained Well My Young Apprentice"
 width = 640
 height = 272
 +++
-<div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="https://github.com/user-attachments/assets/3f960ae3-e269-48ef-a722-f7f99e172730" class="d-block w-100" alt="...">
-    </div>
-  </div>
-</div>
+![A man in a shirt and tie shouting into a phone, beside the words "Show me the money!"](/images/articles/show-me-the-money.jpg)
 
 ---
 

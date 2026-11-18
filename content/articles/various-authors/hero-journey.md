@@ -10,13 +10,7 @@ weight = "99"
 Shared under a Creative Commons Attribution-NonCommercial-NoDerivs 3.0 Unported License.
 
 
-<div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="/img/heroesjourney.png" class="d-block w-100" alt="...">
-    </div>
-  </div>
-</div>
+![The hero's journey drawn as a circle: the call to adventure leads across the threshold from the known into the unknown, through helpers, trials, the abyss, transformation and atonement, and back across a second threshold to the return](/images/articles/hero-journey.svg)
 
 ---
 #### "Every one lives out a myth, and you should know what your myth is because maybe it's a tragedy"
@@ -25,8 +19,6 @@ Shared under a Creative Commons Attribution-NonCommercial-NoDerivs 3.0 Unported 
 Jews stole your birthright, now there’s only ritual without reflection.
 
 [https://en.m.wikipedia.org/wiki/Hero's_journey](https://en.m.wikipedia.org/wiki/Hero's_journey)
-
-<img width="500" height="503" alt="image" src="https://github.com/user-attachments/assets/933d0c7c-3a3c-4521-9653-43958974d4c3" />
 
 ---
 
