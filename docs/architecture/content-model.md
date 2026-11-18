@@ -32,7 +32,6 @@ content/vol_iii/                       a volume (one quarter of a year)
 |---|---|---|
 | `data/dictionary.json` | Terms and their definitions | [Dictionary and concordance](dictionary-and-concordance.md) |
 | `data/flashcards/*.yaml` | Flash card decks | [Flash cards](flash-cards.md) |
-| `data/corporate_registration.json` | Corporate registration offices and statutes, by country and region | [Library](library.md) |
 | `data/anthology/v<N>.json` | The printout's pictures and recovered comments | [Anthology](anthology.md) |
 | `data/anthology_aliases.json` | Members renamed between the export and the printout | [Anthology](anthology.md) |
 | `data/archives.json` | Archived copies of outside links | [Recovered records](recovered-records.md) |

@@ -14,7 +14,7 @@ The same two templates serve most pages, and branch on what the file contains, n
   - A comment or post (it has `id`): that one entry.
   - Anything else: an article (`partials/article.html`).
 
-A few pages have their own layouts: the dictionary, concordance, search, flash cards, corporate registration (`_default/*.html`), the Library (`library/`), commentary (`commentary/`), Most Discussed (`most-discussed/`) and the home page (`index.html`).
+A few pages have their own layouts: the dictionary, concordance, search, flash cards (`_default/*.html`), corporate registration (`corporate-registration/`), the Library (`library/`), commentary (`commentary/`), Most Discussed (`most-discussed/`) and the home page (`index.html`).
 
 ## Building blocks
 

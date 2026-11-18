@@ -1,0 +1,38 @@
+{{ define "main" }}
+{{/* One jurisdiction's corporate registration page (content/accounting/corporateregistration/<slug>.md, JSON front
+     matter): where to incorporate, the statute, where to file security interests, four summaries with their sources, a
+     note if any, and what the act requires the articles of incorporation to say, in its own words. */}}
+{{ $p := .Params }}
+{{ $section := .CurrentSection }}
+{{ range slice "country" "region" "flag" "office" "office_url" "act" "citation" "act_url" "security_registry" "legal_system" "minimums" "number_names" "tax" }}
+  {{ if not (index $p .) }}{{ errorf "%s: front matter needs %q" $.File.Path . }}{{ end }}
+{{ end }}
+{{ $securityLabel := "" }}
+{{ range $section.Params.countries }}{{ if eq .name $p.country }}{{ $securityLabel = .security_label }}{{ end }}{{ end }}
+{{ if not $securityLabel }}{{ errorf "%s: country %q is not in the section's countries" .File.Path $p.country }}{{ end }}
+{{ $sources := $p.sources | default dict }}
+<header class="page-heading reading-column">
+  <p class="eyebrow"><a href="{{ $section.RelPermalink }}">{{ $section.Title }}</a> · {{ $p.country }} · {{ $p.region }}</p>
+  <h1 class="registry-title">{{ partial "registry-flag.html" . }}<span>{{ .Title }}</span></h1>
+</header>
+<div class="reading-column">
+  <dl class="registry-facts">
+    <dt>Register</dt><dd><a href="{{ $p.office_url }}" rel="noopener">{{ $p.office }}</a></dd>
+    <dt>Legislation</dt><dd><a href="{{ $p.act_url }}" rel="noopener">{{ $p.act }}</a><span class="book-author">{{ $p.citation }}</span></dd>
+    <dt>{{ $securityLabel }}</dt><dd>{{ with $p.security_registry_url }}<a href="{{ . }}" rel="noopener">{{ $p.security_registry }}</a>{{ else }}{{ $p.security_registry }}{{ end }}</dd>
+    {{ range slice (slice "Legal system" "legal_system") (slice "Note" "note") (slice "Minimums" "minimums") (slice "Number names" "number_names") (slice "Tax" "tax") }}
+    {{ $label := index . 0 }}{{ $field := index . 1 }}
+    {{ with index $p $field }}<dt>{{ $label }}</dt><dd>{{ . }}{{ with index $sources $field }} <a class="registry-source" href="{{ . }}" rel="noopener">source</a>{{ end }}</dd>{{ end }}
+    {{ end }}
+  </dl>
+  {{ with $p.articles }}
+  <section class="registry-articles" aria-labelledby="articles">
+    <h2 id="articles">What the act requires: {{ .document }}</h2>
+    {{ with .who_may_incorporate }}<p class="registry-clause"><span class="registry-section">{{ .section }}</span> {{ .text }}</p>{{ end }}
+    <ul>{{ range .items }}<li class="registry-clause"><span class="registry-section">{{ .section }}</span> {{ .text }}</li>{{ end }}</ul>
+    {{ with .url }}<p><a href="{{ . }}" rel="noopener">Read the act</a></p>{{ end }}
+  </section>
+  {{ end }}
+  {{ with $section.Params.notice }}<aside class="guide-callout registry-notice">{{ . | markdownify }}</aside>{{ end }}
+</div>
+{{ end }}
