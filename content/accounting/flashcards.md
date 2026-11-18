@@ -2,7 +2,7 @@
 title = "Debit and Credit Flash Cards"
 description = "Choose the accounts to debit and credit for each accounting transaction, starting from zero with a lemonade stand."
 layout = "flashcards"
-weight = 1
+weight = 2
 image = "/images/accounting/little-wooden-boat-game.jpg"
 image_alt = "Little Wooden Boat (Game) v1.0: a poster explaining Assets (rights owed to us and rights we own, where title is registered), Liabilities (obligations owed by us to creditors), Equity (fiduciary duties owed to beneficiaries, a trust relationship), Revenue (income = revenue - expenses) and Expenses, with a list of Scottisms"
 +++

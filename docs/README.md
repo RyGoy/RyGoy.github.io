@@ -9,6 +9,7 @@ Start here. These notes explain the site's architecture in plain terms: what eac
 - [Overview](architecture/overview.md): the whole system on one page, and where to go next.
 - [Hosting and outside services](hosting.md): everything the site depends on outside this repository (Cloudflare and others), and how to move the bot between hosts.
 - [What we built](changelog.md): every change merged so far, by date, linked to the notes it touches.
+- **The beginner's guide** is a separate vault, `guide/` in the repository: lessons that teach the archive's accounting lens, built partly by `scripts/guide_build.py` (see [Scripts](architecture/scripts.md)).
 
 ## The parts
 

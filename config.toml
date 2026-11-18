@@ -1,3 +1,7 @@
+# The site's settings. Each feature has its own section below, saying what it does, which template reads it, and how
+# to turn it off (most have an `on` switch). Change a value, push, and the next deploy uses it. Every outside service
+# the site depends on is listed in docs/hosting.md.
+
 baseURL = "https://thetenderforlaw.com/"
 languageCode = "en-us"
 title = "The Tender For Law"
@@ -8,46 +12,78 @@ enableRobotsTXT = true
 # The site's description for search engines and link previews: the home page, and pages without their own
 # (layouts/partials/seo-meta.html).
 description = "An archive of THE TENDER FOR LAW Facebook group, 2013 to 2018: its posts and comments on surety, accounting, agency, bills of exchange, insurance and title, with articles by its members and a library of the books behind them."
-# Telegram comments at the bottom of the home page (layouts/index.html). Get the ID by connecting
-# https://rygoy.github.io at https://comments.app (log in with Telegram). Empty hides the section.
-comments_app_website = ""
 
-# The commentary bot (telegram-bot/README.md). With commentary_telegram = true, "Add commentary" opens the bot, by its
-# Telegram username (without the @), on the page; with false, it opens GitHub's editor with a new note instead. This
-# switches the site's link only: to stop the bot itself, see "Turning it off" in telegram-bot/README.md.
-commentary_telegram = true
-commentary_telegram_bot = "CommentaryTTFLbot"
-# Flash card accounts (telegram-bot/README.md, "Flash card accounts"): the bot's address, wherever it runs
-# (docs/hosting.md), such as "https://ttfl-commentary-bot.<you>.workers.dev" on Cloudflare. Players then sign in with the bot above to keep their flash card
-# progress on every device and get reminders. Empty keeps progress in each browser only.
-flashcards_accounts = ""
+# The Telegram bot (telegram-bot/README.md; where it runs: docs/hosting.md).
+[params.telegram]
+# The bot's Telegram username, without the @.
+bot = "CommentaryTTFLbot"
+# true: "Add commentary" and "Ask a question" open the bot on the page (layouts/partials/commentary-links.html).
+# false: "Add commentary" opens GitHub's editor with a new note instead. This switches the site's links only; to stop
+# the bot itself, see "Turning it off" in telegram-bot/README.md.
+commentary = true
+# Flash card accounts (telegram-bot/README.md, "Flash card accounts"): the bot's web address, wherever it runs, such
+# as "https://ttfl-commentary-bot.<you>.workers.dev" on Cloudflare. Players then sign in with the bot to keep their
+# flash card progress on every device and get reminders (layouts/_default/flashcards.html). Empty: accounts off, and
+# progress stays in each browser.
+accounts = ""
 
-# The neon sign on the home page's cdd.com button (layouts/partials/body.html): lit only while the show is on, on
-# live_sign_day from live_sign_from to live_sign_to, Toronto time (EST, or EDT in summer), and off the rest of the
-# week. live_sign = false leaves it out; live_sign_text is what it says. Days are Mon, Tue, Wed, Thu, Fri, Sat, Sun.
-live_sign = true
-live_sign_text = "LIVE 20:00 EST Thursdays"
-live_sign_day = "Thu"
-live_sign_from = "20:00"
-live_sign_to = "23:00"
-# Before it, from live_standby_from until live_sign_from on the same day, a blue sign flashing slowly says
-# live_standby_text. live_standby = false leaves the blue sign out (live_sign = false leaves out both).
-live_standby = true
-live_standby_text = "Standby"
-live_standby_from = "19:45"
+# The neon sign on the home page's cdd.com button (layouts/partials/body.html): lit only while the show is on, on `day`
+# from `from` to `to`, Toronto time (EST, or EDT in summer), and hidden the rest of the week. Days are Mon, Tue, Wed,
+# Thu, Fri, Sat, Sun. on = false leaves it out, with the standby sign.
+[params.live_sign]
+on = true
+text = "LIVE 20:00 EST Thursdays"
+day = "Thu"
+from = "20:00"
+to = "23:00"
+# Before it, on the same day from `from` until the live sign's `from`, a blue sign flashing slowly says `text`.
+# on = false leaves the blue sign out.
+[params.live_sign.standby]
+on = true
+text = "Standby"
+from = "19:45"
 
-# Link previews (Open Graph / Twitter tags in partials/head.html): the picture for pages with none of their own, a
-# 1200 by 630 card with the seal and the site's name (made with ImageMagick from images/seal.svg and the site font).
-[params.share]
+# The links on the home page's theme animations (layouts/partials/body.html): the dark hilt's video, the light
+# SOURCE's and the sepia Play button's Webamp players, and their pop-ups and scripts. on = false makes each a plain
+# part of its animation.
+[params.animation_links]
+on = true
+
+# The Webamp player in the sidebar: an "Open Webamp" button (layouts/partials/navbar.html) and its script
+# (static/js/webamp-dock.js, loaded from layouts/partials/head.html), playing data/webamp.toml.
+[params.webamp_dock]
+on = false
+
+# Telegram comments at the bottom of the home page (layouts/index.html), from comments.app. Get the ID by connecting
+# the site at https://comments.app (log in with Telegram). Empty hides the section.
+[params.comments_app]
+website = ""
+
+# Link previews when a page is shared (Open Graph and Twitter tags in layouts/partials/head.html, and the articles'
+# structured data): the picture for pages with none of their own, a 1200 by 630 card with the seal and the site's
+# name (made with ImageMagick from images/seal.svg and the site font).
+[params.link_preview]
 image = "images/share-card.jpg"
 image_width = 1200
 image_height = 630
 image_alt = "The Tender For Law: the seal and the site's name, with the words: The Facebook group archive, 2013–2018."
 
-# The Grand Fluff Auto pop-up's picture and text (partials/footer.html).
-[params.preview]
+# The Grand Fluff Auto pop-up's picture (layouts/partials/footer.html), shown 300 pixels wide. Its text is in the
+# template, with its links.
+[params.grand_fluff_auto]
 image = "images/grand-fluff-auto.jpg"
 image_width = 768
 image_height = 1360
 image_alt = "Grand Fluff Auto cover art: a girl with long dark hair in a school uniform stands between two men under the Grand Fluff Auto Five logo."
-description = "Grand Fluff Auto: you will need the FiveM client installed along with a licensed copy of GTAV from the Steam store. If you have all of these, the link loads the game and drops you into the server."
+
+# Where Hugo finds content: content/, plus the beginner's guide's lessons (guide/lens/, also an Obsidian vault:
+# guide/README.md), published as /accounting/lens/ with layouts/lesson/. Each lesson is `draft: true` until it is
+# approved: `hugo server -D` previews them, and the deploy (without -D) leaves them out.
+[module]
+[[module.mounts]]
+source = "content"
+target = "content"
+[[module.mounts]]
+source = "guide/lens"
+target = "content/accounting/lens"
+

@@ -18,6 +18,7 @@ The site itself is HTML, CSS and JavaScript. Python came in on 6 November 2026, 
 | `scripts/import_photos.py <collection>` | Copies recovered pictures in and writes `data/photos.json` | [Recovered records](recovered-records.md) |
 | `scripts/theme_colours.py` | Works out the Light and Dark colours from the Sepia ones | [Design and themes](design-and-themes.md) |
 | `scripts/anthology/*.py` | The printout pipeline (needs Pillow and poppler) | [Anthology](anthology.md) |
+| `scripts/guide_build.py [check]` | Builds the beginner's guide's term notes and quote candidates, and checks every quote in its lessons | `guide/README.md` |
 | `scripts/docs_changelog.py` | Refreshes [What we built](../changelog.md) from GitHub (needs `gh`) | [Home](../README.md) |
 
 ## Connected

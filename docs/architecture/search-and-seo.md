@@ -17,7 +17,7 @@ How visitors find things on the site, and how search engines find the site.
 - **Structured data** (`partials/structured-data.html`): the home page is a WebSite, posts are forum posts with their comments, and articles are Articles, with breadcrumbs.
 - **`robots.txt` and the sitemap** come from `layouts/robots.txt` and `layouts/_default/sitemap.xml`.
 - **IndexNow:** after each deploy, the changed pages are sent to search engines (`scripts/indexnow.py`). See [Build and deploy](build-and-deploy.md).
-- **Link previews** (Open Graph and Twitter tags in `partials/head.html`) use `[params.preview]` and `[params.share]` in `config.toml`.
+- **Link previews** (Open Graph and Twitter tags in `partials/head.html`) use the site's card, `[params.link_preview]` in `config.toml`, for pages with no picture of their own.
 
 ## Connected
 

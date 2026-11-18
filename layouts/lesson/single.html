@@ -1,0 +1,11 @@
+{{ define "main" }}
+{{/* A lesson of the beginner's guide (guide/lens/*.md; guide/README.md), with links to the lessons either side. */}}
+{{ $lessons := .CurrentSection.Pages.ByWeight }}
+<header class="page-heading reading-column">
+  <p class="eyebrow"><a href="{{ .CurrentSection.RelPermalink }}">{{ .CurrentSection.Title }}</a> · Lesson {{ .Weight }} of {{ len $lessons }}</p>
+  <h1>{{ .Title }}</h1>
+</header>
+{{ partial "lesson-pager.html" (dict "page" . "where" "top") }}
+<div class="reading-column prose lesson">{{ partial "lesson-content.html" . }}</div>
+{{ partial "lesson-pager.html" (dict "page" . "where" "bottom") }}
+{{ end }}

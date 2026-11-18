@@ -23,7 +23,7 @@ The note. [[Another note's title]] links to it, as in Obsidian.
 
 - **The COMMENTARY panel** under posts, comments and articles lists the notes connecting to that page. A sidebar switch shows it; it's off by default.
 - **`/commentary/`** has a connections map drawn with d3 (loaded from cdnjs; see [Hosting and outside services](../hosting.md)) and the list of notes.
-- **"Add commentary" and "Ask a question"** open the bot on that page. With `commentary_telegram = false` in `config.toml`, "Add commentary" opens GitHub's editor with a prefilled note instead.
+- **"Add commentary" and "Ask a question"** open the bot on that page. With `commentary = false` under `[params.telegram]` in `config.toml`, "Add commentary" opens GitHub's editor with a prefilled note instead.
 - **Where the links are worked out:** `partials/commentary.html` works out every note's links and backlinks once per build.
 
 ## How a note gets in

@@ -34,8 +34,8 @@
   </script>
   <div class="hero-copy">
     {{/* The links on the theme animations (the dark hilt's video, the light SOURCE's and the sepia Play button's Webamp)
-       and their pop-ups and scripts: set this to false to switch them all off. */}}
-    {{ $animationLinks := true }}
+       and their pop-ups and scripts: on or off with [params.animation_links] in config.toml. */}}
+    {{ $animationLinks := site.Params.animation_links.on }}
     <div class="hero-seal" aria-hidden="true"><span class="seal"></span></div>
     <div class="hero-rule" aria-hidden="true"><span></span>✧<span></span></div>
     <div class="hero-saber">{{ if $animationLinks }}<a class="hero-saber-hilt" href="{{ "videos/darth-liberty.mp4" | relURL }}" aria-haspopup="dialog" aria-label="Play the video Both Parties?" title="Play">{{ else }}<span class="hero-saber-hilt" aria-hidden="true">{{ end }}<i class="hero-saber-pommel"></i><i class="hero-saber-ring"></i><i class="hero-saber-grip"></i><i class="hero-saber-ring"></i><i class="hero-saber-body"></i><i class="hero-saber-emitter"></i>{{ if $animationLinks }}</a>{{ else }}</span>{{ end }}<span class="hero-saber-blade" aria-hidden="true"><span class="hero-saber-core"></span><span class="hero-saber-flow"></span></span><span class="hero-saber-flash" aria-hidden="true"></span>{{ if $animationLinks }}<button type="button" class="hero-saber-tip" aria-label="Bleed the blade purple"></button>{{ end }}<svg class="hero-saber-defs" aria-hidden="true" focusable="false"><filter id="saber-heat" x="-5%" y="-5%" width="110%" height="110%" color-interpolation-filters="sRGB"><feTurbulence type="fractalNoise" baseFrequency="0.022 0.1" numOctaves="2" seed="7" result="heat"><animate attributeName="baseFrequency" dur="2.4s" values="0.022 0.1;0.028 0.135;0.019 0.115;0.022 0.1" repeatCount="indefinite"/></feTurbulence><feDisplacementMap in="SourceGraphic" in2="heat" scale="4" xChannelSelector="R" yChannelSelector="G"/></filter></svg></div>
@@ -87,9 +87,9 @@
     {{ end }}
     <h1 id="site-title">The Tender For Law</h1>
     <p>An archive of old Facebook posts from 2013 - 2018 + Articles for Various Authors.</p>
-    <div class="hero-links"><a href="#volumes">Volumes <span aria-hidden="true">↓</span></a><a href="{{ "articles/" | relURL }}">Articles <span aria-hidden="true">↗</span></a><a class="hero-cdd" href="https://cdd.com" target="_blank" rel="noopener noreferrer">Super Powered Nigger Bitches From Space <span aria-hidden="true">↗</span>{{ if site.Params.live_sign }}{{ if site.Params.live_standby }}{{ with site.Params.live_standby_text }}<span class="live-sign live-standby" data-day="{{ site.Params.live_sign_day }}" data-from="{{ site.Params.live_standby_from }}" data-to="{{ site.Params.live_sign_from }}" hidden>{{ . }}</span>{{ end }}{{ end }}{{ with site.Params.live_sign_text }}<span class="live-sign" data-day="{{ site.Params.live_sign_day }}" data-from="{{ site.Params.live_sign_from }}" data-to="{{ site.Params.live_sign_to }}" hidden>{{ . }}</span>{{ end }}{{ end }}</a></div>
-    {{ if site.Params.live_sign }}
-    {{/* The neon signs on the cdd.com button (live_sign and live_standby in config.toml): each shown only on its day
+    <div class="hero-links"><a href="#volumes">Volumes <span aria-hidden="true">↓</span></a><a href="{{ "articles/" | relURL }}">Articles <span aria-hidden="true">↗</span></a><a class="hero-cdd" href="https://cdd.com" target="_blank" rel="noopener noreferrer">Super Powered Nigger Bitches From Space <span aria-hidden="true">↗</span>{{ with site.Params.live_sign }}{{ if .on }}{{ $sign := . }}{{ with .standby }}{{ if .on }}{{ with .text }}<span class="live-sign live-standby" data-day="{{ $sign.day }}" data-from="{{ $sign.standby.from }}" data-to="{{ $sign.from }}" hidden>{{ . }}</span>{{ end }}{{ end }}{{ end }}{{ with .text }}<span class="live-sign" data-day="{{ $sign.day }}" data-from="{{ $sign.from }}" data-to="{{ $sign.to }}" hidden>{{ . }}</span>{{ end }}{{ end }}{{ end }}</a></div>
+    {{ if site.Params.live_sign.on }}
+    {{/* The neon signs on the cdd.com button ([params.live_sign] in config.toml): each shown only on its day
          between its times, Toronto time, checked every half minute. Without JavaScript they stay hidden. */}}
     <script>
       {

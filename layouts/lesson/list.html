@@ -1,0 +1,8 @@
+{{ define "main" }}
+{{/* A path's lesson plan (guide/lens/_index.md): its text, with the lessons in order linked from its table. */}}
+<header class="page-heading reading-column">
+  <p class="eyebrow"><a href="{{ .Parent.RelPermalink }}">{{ .Parent.Title }}</a></p>
+  <h1>{{ .Title }}</h1>
+</header>
+<div class="reading-column prose lesson">{{ partial "lesson-content.html" . }}</div>
+{{ end }}

@@ -1,0 +1,327 @@
+{
+ "nodes": [
+  {
+   "id": "intro",
+   "type": "text",
+   "x": 0,
+   "y": -300,
+   "width": 760,
+   "height": 220,
+   "text": "# The accounting lens\n\nEight lessons, in order: two rows, left to right. The books first (top row), then what they record (bottom row). Terms each lesson teaches hang below it.\n\nBefore step 1: [Start Here](https://thetenderforlaw.com/accounting/start-here/) and the lemonade stand [flash cards](https://thetenderforlaw.com/accounting/flashcards/)."
+  },
+  {
+   "id": "g-books",
+   "type": "group",
+   "label": "The books",
+   "x": -40,
+   "y": -40,
+   "width": 1700,
+   "height": 280,
+   "color": "4"
+  },
+  {
+   "id": "g-what",
+   "type": "group",
+   "label": "What the books record",
+   "x": -40,
+   "y": 340,
+   "width": 1700,
+   "height": 280,
+   "color": "5"
+  },
+  {
+   "id": "s1",
+   "type": "file",
+   "file": "lens/01-it-all-comes-down-to-accounting.md",
+   "x": 0,
+   "y": 0,
+   "width": 360,
+   "height": 200
+  },
+  {
+   "id": "s2",
+   "type": "file",
+   "file": "lens/02-every-entry-has-two-sides.md",
+   "x": 420,
+   "y": 0,
+   "width": 360,
+   "height": 200
+  },
+  {
+   "id": "s3",
+   "type": "file",
+   "file": "lens/03-what-is-had-and-what-is-owed.md",
+   "x": 840,
+   "y": 0,
+   "width": 360,
+   "height": 200
+  },
+  {
+   "id": "s4",
+   "type": "file",
+   "file": "lens/04-title-is-all-that-is-sold.md",
+   "x": 1260,
+   "y": 0,
+   "width": 360,
+   "height": 200
+  },
+  {
+   "id": "s5",
+   "type": "file",
+   "file": "lens/05-surety-the-responsible-party.md",
+   "x": 0,
+   "y": 380,
+   "width": 360,
+   "height": 200
+  },
+  {
+   "id": "s6",
+   "type": "file",
+   "file": "lens/06-money-is-debt-in-transit.md",
+   "x": 420,
+   "y": 380,
+   "width": 360,
+   "height": 200
+  },
+  {
+   "id": "s7",
+   "type": "file",
+   "file": "lens/07-trust-and-the-trustee.md",
+   "x": 840,
+   "y": 380,
+   "width": 360,
+   "height": 200
+  },
+  {
+   "id": "s8",
+   "type": "file",
+   "file": "lens/08-tender-and-discharge.md",
+   "x": 1260,
+   "y": 380,
+   "width": 360,
+   "height": 200
+  },
+  {
+   "id": "term-accounting",
+   "type": "file",
+   "file": "terms/accounting.md",
+   "x": 0,
+   "y": 800,
+   "width": 260,
+   "height": 160,
+   "color": "3"
+  },
+  {
+   "id": "term-surety",
+   "type": "file",
+   "file": "terms/surety.md",
+   "x": 300,
+   "y": 800,
+   "width": 260,
+   "height": 160,
+   "color": "3"
+  },
+  {
+   "id": "term-credit",
+   "type": "file",
+   "file": "terms/credit.md",
+   "x": 600,
+   "y": 800,
+   "width": 260,
+   "height": 160,
+   "color": "3"
+  },
+  {
+   "id": "term-liability",
+   "type": "file",
+   "file": "terms/liability.md",
+   "x": 900,
+   "y": 800,
+   "width": 260,
+   "height": 160,
+   "color": "3"
+  },
+  {
+   "id": "term-title",
+   "type": "file",
+   "file": "terms/title.md",
+   "x": 1200,
+   "y": 800,
+   "width": 260,
+   "height": 160,
+   "color": "3"
+  },
+  {
+   "id": "term-money",
+   "type": "file",
+   "file": "terms/money.md",
+   "x": 1500,
+   "y": 800,
+   "width": 260,
+   "height": 160,
+   "color": "3"
+  },
+  {
+   "id": "term-trust",
+   "type": "file",
+   "file": "terms/trust.md",
+   "x": 1800,
+   "y": 800,
+   "width": 260,
+   "height": 160,
+   "color": "3"
+  },
+  {
+   "id": "term-tender",
+   "type": "file",
+   "file": "terms/tender.md",
+   "x": 2100,
+   "y": 800,
+   "width": 260,
+   "height": 160,
+   "color": "3"
+  },
+  {
+   "id": "term-discharge",
+   "type": "file",
+   "file": "terms/discharge.md",
+   "x": 2400,
+   "y": 800,
+   "width": 260,
+   "height": 160,
+   "color": "3"
+  },
+  {
+   "id": "g-terms",
+   "type": "group",
+   "label": "Words the lessons teach",
+   "x": -40,
+   "y": 740,
+   "width": 2720,
+   "height": 240,
+   "color": "3"
+  }
+ ],
+ "edges": [
+  {
+   "id": "e1",
+   "fromNode": "s1",
+   "fromSide": "right",
+   "toNode": "s2",
+   "toSide": "left"
+  },
+  {
+   "id": "e2",
+   "fromNode": "s2",
+   "fromSide": "right",
+   "toNode": "s3",
+   "toSide": "left"
+  },
+  {
+   "id": "e3",
+   "fromNode": "s3",
+   "fromSide": "right",
+   "toNode": "s4",
+   "toSide": "left"
+  },
+  {
+   "id": "e4",
+   "fromNode": "s4",
+   "fromSide": "bottom",
+   "toNode": "s5",
+   "toSide": "top",
+   "label": "then"
+  },
+  {
+   "id": "e5",
+   "fromNode": "s5",
+   "fromSide": "right",
+   "toNode": "s6",
+   "toSide": "left"
+  },
+  {
+   "id": "e6",
+   "fromNode": "s6",
+   "fromSide": "right",
+   "toNode": "s7",
+   "toSide": "left"
+  },
+  {
+   "id": "e7",
+   "fromNode": "s7",
+   "fromSide": "right",
+   "toNode": "s8",
+   "toSide": "left"
+  },
+  {
+   "id": "t1-accounting",
+   "fromNode": "s1",
+   "fromSide": "bottom",
+   "toNode": "term-accounting",
+   "toSide": "top"
+  },
+  {
+   "id": "t1-surety",
+   "fromNode": "s1",
+   "fromSide": "bottom",
+   "toNode": "term-surety",
+   "toSide": "top"
+  },
+  {
+   "id": "t2-credit",
+   "fromNode": "s2",
+   "fromSide": "bottom",
+   "toNode": "term-credit",
+   "toSide": "top"
+  },
+  {
+   "id": "t3-liability",
+   "fromNode": "s3",
+   "fromSide": "bottom",
+   "toNode": "term-liability",
+   "toSide": "top"
+  },
+  {
+   "id": "t4-title",
+   "fromNode": "s4",
+   "fromSide": "bottom",
+   "toNode": "term-title",
+   "toSide": "top"
+  },
+  {
+   "id": "t5-surety",
+   "fromNode": "s5",
+   "fromSide": "bottom",
+   "toNode": "term-surety",
+   "toSide": "top"
+  },
+  {
+   "id": "t6-money",
+   "fromNode": "s6",
+   "fromSide": "bottom",
+   "toNode": "term-money",
+   "toSide": "top"
+  },
+  {
+   "id": "t7-trust",
+   "fromNode": "s7",
+   "fromSide": "bottom",
+   "toNode": "term-trust",
+   "toSide": "top"
+  },
+  {
+   "id": "t8-tender",
+   "fromNode": "s8",
+   "fromSide": "bottom",
+   "toNode": "term-tender",
+   "toSide": "top"
+  },
+  {
+   "id": "t8-discharge",
+   "fromNode": "s8",
+   "fromSide": "bottom",
+   "toNode": "term-discharge",
+   "toSide": "top"
+  }
+ ]
+}

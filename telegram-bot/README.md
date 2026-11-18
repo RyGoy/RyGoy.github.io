@@ -4,7 +4,7 @@ Contributors send commentary to a Telegram bot. Moderators approve it in a Teleg
 
 ## How it works
 
-1. "Add commentary" on a page opens the bot with that page (`params.commentary_telegram_bot` in `config.toml`; `layouts/partials/commentary-add-link.html`). The bot asks for the note as a reply, with the page's link in its prompt.
+1. "Add commentary" on a page opens the bot with that page (`bot` in `[params.telegram]` in `config.toml`; `layouts/partials/commentary-add-link.html`). The bot asks for the note as a reply, with the page's link in its prompt.
 2. The contributor sends one message: the title on the first line, then the note. Every link to the site in it, and the page from the prompt, go under `connects`; `[[Note title]]` links another note. Their Telegram name is the author.
 3. The bot posts the note to the moderators' group as the exact file it will commit, with **Approve** and **Reject**.
 4. **Approve** commits `content/commentary/<title>-<message id>.md` and tells the contributor its address. **Reject** tells them it was not approved. Either way the buttons go, so each note is decided once (a second Approve finds the file already there).
@@ -46,7 +46,7 @@ You need a Telegram account, a free Cloudflare account, and GitHub access to thi
    ```
 
 6. **Try it.** Message the bot `/start`, reply with a test note, and approve it in the group. Delete the test file from `content/commentary/` afterwards.
-7. **Turn it on for the site.** In `config.toml`, set `commentary_telegram_bot` to the bot's username, without the `@`, and `commentary_telegram = true`.
+7. **Turn it on for the site.** In `config.toml`, under `[params.telegram]`, set `bot` to the bot's username, without the `@`, and `commentary = true`.
 
 To change the bot, edit `bot.js` (or `accounts.js`), run `npm test` here, and deploy again: `npx wrangler deploy` on Cloudflare (`npx wrangler tail` shows its logs), or restart `server.mjs` on your own machine.
 
@@ -61,7 +61,7 @@ The same bot lets players of the [flash cards](https://thetenderforlaw.com/accou
 
 ### Setting it up
 
-On Cloudflare, as follows. On your own machine, set `ACCOUNTS_DB` in `.env` (the file and its table are made when the server starts), do step 2, and set `flashcards_accounts` to your server's address.
+On Cloudflare, as follows. On your own machine, set `ACCOUNTS_DB` in `.env` (the file and its table are made when the server starts), do step 2, and set `accounts` under `[params.telegram]` to your server's address.
 
 1. **Create the database**, in this folder:
 
@@ -78,13 +78,13 @@ On Cloudflare, as follows. On your own machine, set `ACCOUNTS_DB` in `.env` (the
 
 2. **Allow the site to use the bot's login.** In [@BotFather](https://t.me/BotFather), send `/setdomain`, choose the bot and send `thetenderforlaw.com`. The Login widget works only on that domain, so it can't be tried on a local preview.
 3. **Tell the bot's commands** (optional): BotFather's `/setcommands` with `stop - Turn flash card reminders off` and `delete - Delete my flash card account`.
-4. **Turn it on for the site.** In `config.toml`, set `flashcards_accounts` to the Worker's address (from `deploy`, like `https://ttfl-commentary-bot.<you>.workers.dev`). The sign-in shows under the game after the next deploy.
+4. **Turn it on for the site.** In `config.toml`, set `accounts` under `[params.telegram]` to the Worker's address (from `deploy`, like `https://ttfl-commentary-bot.<you>.workers.dev`). The sign-in shows under the game after the next deploy.
 
 The site's addresses allowed to call the API are `ORIGINS` in `accounts.js`. `npm test` runs `test-accounts.mjs` too, against an in-memory SQLite database standing in for D1 (`sqlite.js`), and `test-server.mjs`, which starts `server.mjs`.
 
-**Turning it off:** set `flashcards_accounts = ""`. The sign-in goes from the site and progress stays in each browser. To stop reminders too, comment out `[triggers]` in `wrangler.toml` and deploy again. The data stays in D1 until it is deleted (`npx wrangler d1 execute ttfl-accounts --remote --command "DELETE FROM players"`).
+**Turning it off:** set `accounts = ""` under `[params.telegram]`. The sign-in goes from the site and progress stays in each browser. To stop reminders too, comment out `[triggers]` in `wrangler.toml` and deploy again. The data stays in D1 until it is deleted (`npx wrangler d1 execute ttfl-accounts --remote --command "DELETE FROM players"`).
 
 ## Turning it off
 
-- **The site's link:** set `commentary_telegram = false` in `config.toml`. After the deploy, "Add commentary" opens GitHub's editor instead of the bot; `true` brings the bot back. The bot itself still answers anyone who messages it.
+- **The site's link:** set `commentary = false` under `[params.telegram]` in `config.toml`. After the deploy, "Add commentary" opens GitHub's editor instead of the bot; `true` brings the bot back. The bot itself still answers anyone who messages it.
 - **The bot, at once:** `curl "https://api.telegram.org/bot<TOKEN>/deleteWebhook?drop_pending_updates=true"`. Telegram stops passing anything to the bot, so new notes and the Approve and Reject buttons do nothing, and messages sent meanwhile are dropped. Step 5 (`setWebhook`) turns it back on.

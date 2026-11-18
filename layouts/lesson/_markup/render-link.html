@@ -1,0 +1,22 @@
+{{- /* Links in the beginner's guide's lessons (guide/lens/, type "lesson"), which are written for Obsidian: a link to
+       another lesson ("02-every-entry-has-two-sides.md", or "_index.md" for the plan) goes to its page here; a term
+       note ("../terms/money.md") goes to the term in the site's Dictionary; any other file of the vault (its sources
+       and README) isn't on the site, so its text stays and the link goes. Web and site addresses are kept. */ -}}
+{{- $to := .Destination -}}
+{{- $href := "" -}}
+{{- if hasPrefix $to "https://thetenderforlaw.com/" -}}
+  {{- $href = strings.TrimPrefix "https://thetenderforlaw.com" $to | relURL -}}{{/* the site's own pages, from here */}}
+{{- else if or (hasPrefix $to "http") (hasPrefix $to "/") (hasPrefix $to "#") -}}
+  {{- $href = $to -}}
+{{- else if hasPrefix $to "../terms/" -}}
+  {{- $href = printf "%s#%s" ("dictionary/" | relURL) (strings.TrimSuffix ".md" (strings.TrimPrefix "../terms/" $to)) -}}
+{{- else if and (hasSuffix $to ".md") (not (in $to "/")) -}}
+  {{- $section := .Page.CurrentSection.RelPermalink -}}
+  {{- $stem := strings.TrimSuffix ".md" $to -}}
+  {{- $href = cond (eq $stem "_index") $section (printf "%s%s/" $section $stem) -}}
+{{- end -}}
+{{- if $href -}}
+<a href="{{ $href | safeURL }}"{{ with .Title }} title="{{ . }}"{{ end }}{{ if hasPrefix $href "http" }} rel="noopener"{{ end }}>{{ .Text | safeHTML }}</a>
+{{- else -}}
+{{ .Text | safeHTML }}
+{{- end -}}
