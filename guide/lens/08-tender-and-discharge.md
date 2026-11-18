@@ -4,23 +4,20 @@ description: "What 'legal tender' offers, and what discharging a debt does in th
 weight: 8
 terms: [Tender, Legal Tender, Discharge, Remittance, Joinder]
 search: ["tender*", "discharge*", "zero-out", "unconditional offer", "remittance"]
-draft: true
+draft: false
 ---
 
 # Tender, and discharge
 
 [The accounting lens](_index.md) · step 8 of 8 · You need first: [Trust, and the trustee](07-trust-and-the-trustee.md)
 
-> [!warning] Draft
-> Written from the archive's own words, and waiting for a reader who knows the material to approve it.
-
 ## The idea
 
-The archive takes its name from this word. To **tender** is to present an offer for acceptance. Scott Duncan reads the words on a bank note, THIS NOTE IS LEGAL TENDER, through that definition: the note is an offer, and whoever uses it accepts the terms that come with it. That is the group's name: THE TENDER FOR LAW.
+The archive takes its name from this word. In Scott Duncan's words, to [**tender**](../terms/tender.md) "[in the context of Law](https://thetenderforlaw.com/articles/scott-duncan/legalese-for-idiots/)" means "[to present to PERSON, an unconditional offer, to enter into a contract](https://thetenderforlaw.com/articles/scott-duncan/legalese-for-idiots/)": "[Unconditionally offered, with use being proof of acceptance.](https://thetenderforlaw.com/vol_v/462493170453287_622715734431029/#entry-622716431097626)" And "[ACCEPTING A TENDER IS CONSENT.](https://thetenderforlaw.com/vol_iii/462493170453287_550101411692462/#entry-561864330516170)" He reads the words on a bank note through that definition: the note is an offer, and whoever uses it accepts the terms that come with it. That is the group's name: "[THIS NOTE IS LEGAL TENDER = THIS NOTE IS A TENDER FOR LAW.](https://thetenderforlaw.com/vol_v/462493170453287_606995862669683/)"
 
-To **discharge** is the accounting end of a debt: the entry that brings an item's balance to zero. Chris Schulte shows the choice from [step 3](03-what-is-had-and-what-is-owed.md) at work here: credit a liability account and the payments discharge it, building the corporation's credit.
+[**Discharge**](../terms/discharge.md) is the end of the debt: "[to "zero-out" a balance of an item on an account](https://thetenderforlaw.com/vol_iii/462493170453287_532937380075532/#entry-532943700074900)", the entry that brings a balance to **zero**. The advice on how to discharge, the [**remittance**](../terms/remittance.md), is the responsible party's to give: "[Only the SURETY has the AUTHORITY to do that.](https://thetenderforlaw.com/vol_i/462493170453287_495437137158890/#entry-544514452251158)" Chris Schulte shows the choice from [step 3](03-what-is-had-and-what-is-owed.md) at work here: "[By crediting a liability account, you can discharge a monthly payment and build credit.](https://thetenderforlaw.com/articles/chris-schulte/an-article-about-accounting/)"
 
-With this, the lens is complete: books with two sides (2), what is had and owed (3), title (4), the responsible party (5), money as a debt (6), trust (7), and the offer and the settlement (8). The volumes can now be read as entries.
+We have fashioned the lens you must now study to see with. The International language of Law and Commerce is [**LEGALESE**](../terms/legalese.md), and "[LEGALESE IS NOT ENGLISH! It is a COPYRIGHTED LANGUAGE like JAVA or FORTRAN.](https://thetenderforlaw.com/vol_vi/462493170453287_655243544511581/#entry-656937777675491)" It is a bastardized form of English where precision is the purpose: "[Legalese is a massive forest of redefined words.](https://thetenderforlaw.com/vol_xii/462493170453287_888166014552665/)" If you are a native English speaker you will be unable to determine what a word means, legally, without this lens, so "[look up the LEGAL definition of the words I use, even (ESPECIALLY) if you … already think you know the meaning of the words.](https://thetenderforlaw.com/vol_ii/462493170453287_531460560223214/#entry-532416830127587)" "[Remember: ONLY LEGAL DEFINITIONS APPLY!](https://thetenderforlaw.com/vol_i/462493170453287_481209285248342/#entry-1016783841690881)"
 
 ## In their words
 

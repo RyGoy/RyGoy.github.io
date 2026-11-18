@@ -4,27 +4,28 @@ description: "The three parties to a trust, and how Scott Duncan reads a corpora
 weight: 7
 terms: [Trust, Trustee, Beneficiary, Agent, Grantor, Debt]
 search: ["trust", "trustee*", "beneficiar*", "fiduciary", "agent*", "grantor*", "breached a trust"]
-draft: true
+draft: false
 ---
 
 # Trust, and the trustee
 
 [The accounting lens](_index.md) · step 7 of 8 · You need first: [Money is debt in transit](06-money-is-debt-in-transit.md) · Next: [Tender, and discharge](08-tender-and-discharge.md)
 
-> [!warning] Draft
-> Written from the archive's own words, and waiting for a reader who knows the material to approve it.
-
 ## The idea
 
-A **trust** splits a thing three ways, among three parties:
+A [**trust**](../terms/trust.md) relationship involves three parties (“[There are three PARTIES in a TRUST](https://thetenderforlaw.com/articles/scott-duncan/obiter-dictum-meades-v-meads-for-idiots/)”):
 
-- the **grantor**, who puts the thing in and sets the terms;
-- the **trustee**, who holds the title ([step 4](04-title-is-all-that-is-sold.md)) and must manage it by those terms: a duty, not a benefit;
-- the **beneficiary**, who has the benefit.
+- the [**grantor**](../terms/grantor.md), who holds all the rights in the bundle of rights, splits them into legal and equitable interests, and gives these to the other parties. After that, "[The Grantor's job is DONE.](https://thetenderforlaw.com/vol_i/462493170453287_480677688634835/#entry-483921388310465)"
+- the [**trustee**](../terms/trustee.md), who holds the LEGAL title ([step 4](04-title-is-all-that-is-sold.md)) and must manage it by the terms set out by the grantor. The trustee is the OWNER with a duty, not a benefit: "[it is FIDUCIARY OWNERSHIP. You have duties and obligations](https://thetenderforlaw.com/vol_iv/462493170453287_573236309378972/#entry-576416412394295)".
+- the [**beneficiary**](../terms/beneficiary.md), who has the benefit. These rights are EQUITABLE rights.
 
-Scott Duncan reads a corporation exactly this way: its founders are the grantors, its directors (who hold titles) are trustees, and its shareholders, the equity holders of [step 3](03-what-is-had-and-what-is-owed.md), are the beneficiaries. And anyone acting for another, an **agent**, is in his words always a trustee, with the duties that brings.
+A corporation behaves exactly this way: its founders are the grantors (“[you and the Governmaent are acting as GRANTORS](https://thetenderforlaw.com/vol_i/462493170453287_485784274790843/#entry-490499764319294)”), its directors are the trustees (“[A corporation has DIRECTORS with titles (TRUSTEES)](https://thetenderforlaw.com/vol_i/462493170453287_485784274790843/#entry-490499764319294)”), and its shareholders, the equity holders of [step 3](03-what-is-had-and-what-is-owed.md), are the beneficiaries (“[SHAREHOLDERS who are the BENEFICIARIES](https://thetenderforlaw.com/vol_i/462493170453287_485784274790843/#entry-490499764319294)”).
 
-In the lens, a debt is the record of a trust not kept: something was held or promised for another, and it wasn't delivered.
+Anyone acting for another is an [**agent**](../terms/agent.md), and "[AN AGENT IS ALWAYS A TRUSTEE!](https://thetenderforlaw.com/vol_viii/462493170453287_756770651025536/#entry-759182050784396)", with fiduciary duties that are punishable if the trust is breached.
+
+Through this lens, we can see how the post office acts as the trustee for a trust you establish when you've paid the postage and delivered it to them for someone else's benefit.
+
+A trust splits title: the legal title holder is then obligated to ensure the equity holder receives the intended benefit(s).
 
 ## In the lemonade stand
 

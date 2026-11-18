@@ -4,23 +4,20 @@ description: "Debits and credits, and the first habit of the accounting lens: be
 weight: 2
 terms: [Credit, Account]
 search: ["debit*", "credit*", "ledger*", "double entry", "balance"]
-draft: true
+draft: false
 ---
 
 # Every entry has two sides
 
 [The accounting lens](_index.md) · step 2 of 8 · You need first: [It all comes down to accounting](01-it-all-comes-down-to-accounting.md) · Next: [What is had, and what is owed](03-what-is-had-and-what-is-owed.md)
 
-> [!warning] Draft
-> Written from the archive's own words, and waiting for a reader who knows the material to approve it.
-
 ## The idea
 
-Every event changes at least two things, so the books write every event down twice. **Debit** means the left side of an account, and **credit** means the right side. They don't mean good or bad, or in or out. In every entry the debits and credits add up to the same amount.
+Every event changes at least two [**accounts**](../terms/account.md), so the books write every event down twice. **Debit** means the left side of an account, and [**credit**](../terms/credit.md) means the right side. They don't mean good or bad, or even in or out necessarily. In every entry the debits and credits add up to the same amount, **zero**. If you've followed the Generally Accepted Accounting Principles, and the books balance, you're done! As Scott Duncan says, "[Accounting is not hard.](https://thetenderforlaw.com/vol_v/462493170453287_646832168686052/#entry-647149058654363)"
 
-When something passes between two parties, each keeps their own books, and the same event appears in both, **on opposite sides**. That is why your bank statement says "credit" when you put money in: it is the *bank's* record. In the bank's books your deposit is money it owes you, and what it owes goes up on the right. In your own books, the same deposit is cash you have, which goes up on the left.
+When something passes between two parties, each keeps their own books, and the same event appears in both, **on opposite sides**: in Chris Schulte's words, "[one parties debit is the others credit](https://thetenderforlaw.com/articles/chris-schulte/an-article-about-accounting/)". That is why your bank statement says "credit" when you put money in: it is the *bank's* record. In the bank's books your deposit is money it owes you, and what it owes goes up on the right. In your own books, the same deposit is cash you have, which goes up on the left. **Reconciliation** is just the process of ensuring both records match.
 
-So the first habit of the lens: before you read an entry, ask **whose books is this?**
+So the first habit of the lens: before you read an entry, ask **whose book is this?**
 
 ## In the lemonade stand
 

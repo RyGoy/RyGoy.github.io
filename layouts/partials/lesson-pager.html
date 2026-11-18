@@ -1,0 +1,9 @@
+{{- /* Buttons to the lessons either side, shown above and below a lesson (layouts/lesson/single.html).
+       Context: dict "page" (the lesson) and "where" ("top" or "bottom"). */ -}}
+{{- $page := .page -}}
+{{- $lessons := $page.CurrentSection.Pages.ByWeight -}}
+<nav class="reading-column lesson-pager lesson-pager-{{ .where }}" aria-label="Lessons{{ if eq .where "top" }}, above{{ else }}, below{{ end }}">
+  {{- /* Pages.Next and .Prev run against the sort order: Next gives the page before. */}}
+  {{ with $lessons.Next $page }}<a class="lesson-prev" href="{{ .RelPermalink }}" rel="prev"><span><span aria-hidden="true">←</span> Lesson {{ .Weight }}</span>{{ .Title }}</a>{{ else }}<a class="lesson-prev" href="{{ $page.CurrentSection.RelPermalink }}"><span><span aria-hidden="true">←</span> The plan</span>{{ $page.CurrentSection.Title }}</a>{{ end }}
+  {{ with $lessons.Prev $page }}<a class="lesson-next" href="{{ .RelPermalink }}" rel="next"><span>Lesson {{ .Weight }} <span aria-hidden="true">→</span></span>{{ .Title }}</a>{{ else }}<a class="lesson-next" href="{{ $page.CurrentSection.RelPermalink }}"><span>Back to the plan <span aria-hidden="true">→</span></span>{{ $page.CurrentSection.Title }}</a>{{ end }}
+</nav>

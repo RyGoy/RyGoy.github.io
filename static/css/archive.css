@@ -1933,7 +1933,11 @@ a.page-emblem:focus-visible { outline: 2px solid var(--brass); outline-offset: 6
 .lesson .callout-title { font-weight: 600; color: var(--brass); }
 .lesson details.callout summary { cursor: pointer; font-weight: 600; }
 .lesson details.callout[open] summary { margin-bottom: .5rem; }
-.lesson-pager { display: flex; justify-content: space-between; gap: 1rem; margin-top: 2.5rem; padding-top: 1rem; border-top: 1px solid var(--line); }
-.lesson-pager a { display: grid; gap: .15rem; max-width: 48%; }
-.lesson-pager span { font-size: .75rem; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
-.lesson-pager .lesson-next { margin-left: auto; text-align: right; }
+/* Two buttons of equal width, each the whole box clickable: the lesson before (or the plan) and the one after. */
+.lesson-pager { display: flex; gap: .75rem; }
+.lesson-pager-top { margin-bottom: 1.75rem; }
+.lesson-pager-bottom { margin-top: 2.5rem; padding-top: 1.25rem; border-top: 1px solid var(--line); }
+.lesson-pager a { flex: 1 1 0; display: flex; flex-direction: column; gap: .2rem; min-height: 3rem; padding: .6rem .9rem; border: 1px solid var(--line); border-radius: 4px; background: var(--surface); color: var(--paper); text-decoration: none; line-height: 1.3; }
+.lesson-pager a > span { font-size: .8rem; letter-spacing: .08em; text-transform: uppercase; color: var(--brass); }
+.lesson-pager a:hover, .lesson-pager a:focus-visible { border-color: var(--brass); }
+.lesson-pager .lesson-next { text-align: right; align-items: flex-end; }

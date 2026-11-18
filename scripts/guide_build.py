@@ -18,8 +18,15 @@ Then it checks every quote in the lessons: a blockquote in the form
     > "Words, exactly as written … more words from later in the same text."
     > — [Scott Duncan, Volume 3, 4 July 2013](https://thetenderforlaw.com/vol_iii/<post>/#entry-<comment>)
 
-must be found, word for word (spacing and curly quotes aside; "…" marks a cut), in the post, comment or article that
-its link names. A failed check exits with status 1 and names the lesson and the quote. Standard library only.
+or a quote in the running text, the quoted words linked inside the quote marks:
+
+    Surety, in his words, "[simply means "responsible party"](https://thetenderforlaw.com/vol_v/<post>/)".
+
+Each must be found, word for word (spacing and curly quotes aside; "…" marks a cut), in the post, comment or article that
+its link names. An article has no anchors of its own, so a link to a quote in one points at it with a text fragment,
+"…/articles/<author>/<article>/#:~:text=<the quote's words, percent-encoded>", which browsers scroll to and highlight;
+the fragment's words must be in the article too. A failed check exits with status 1 and names the lesson and the
+quote. Standard library only.
 """
 import html
 import json
@@ -28,6 +35,7 @@ import sys
 from collections import defaultdict
 from datetime import datetime
 from pathlib import Path
+from urllib.parse import unquote
 
 ROOT = Path(__file__).resolve().parent.parent
 CONTENT = ROOT / "content"
@@ -272,6 +280,8 @@ def write_terms(scott, lesson_list):
 
 
 QUOTE = re.compile(r'((?:^>.*\n)+?)^> — \[[^\]]*\]\((https?://[^)]+)\)', re.M)
+# A quote in the running text: the quoted words are the link, inside the quote marks: "[his words](https://…)".
+INLINE = re.compile(r'["“]\[([^\]]+)\]\((https?://[^)\s]+)\)["”]')
 
 
 def normal(text):
@@ -283,17 +293,22 @@ def check(texts, lesson_list):
     failures = []
     count = 0
     for lesson in lesson_list:
-        for block, url in QUOTE.findall(lesson["text"]):
+        quotes = [("\n".join(line[1:].strip() for line in block.splitlines()), url)
+                  for block, url in QUOTE.findall(lesson["text"])]
+        quotes += INLINE.findall(lesson["text"])
+        for quoted, url in quotes:
             if not url.startswith(SITE):
                 continue
-            quoted = "\n".join(line[1:].strip() for line in block.splitlines())
             quoted = quoted.strip().strip('"“”')
             count += 1
-            source = texts.get(url[len(SITE):].lower())
+            address, _, fragment = url[len(SITE):].partition("#:~:text=")
+            source = texts.get(address.lower())
             if source is None:
                 failures.append(f"{lesson['path'].name}: the link names no post, comment or article: {url}")
                 continue
             haystack, at = normal(source), 0
+            if fragment and any(normal(unquote(part)) not in haystack for part in fragment.split(",")):
+                failures.append(f"{lesson['path'].name}: the link's text fragment is not in {address}: {url}")
             for piece in [p for p in (normal(x) for x in quoted.split("…")) if p]:
                 found = haystack.find(piece, at)
                 if found < 0:

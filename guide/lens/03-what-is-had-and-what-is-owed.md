@@ -4,25 +4,22 @@ description: "Assets, liabilities and equity, and why what is owed and the owner
 weight: 3
 terms: [Liability, Credit]
 search: ["asset*", "liabilit*", "equity", "capital", "owe*", "creditor*", "debtor*"]
-draft: true
+draft: false
 ---
 
 # What is had, and what is owed
 
 [The accounting lens](_index.md) · step 3 of 8 · You need first: [Every entry has two sides](02-every-entry-has-two-sides.md) · Next: [Title is all that is sold](04-title-is-all-that-is-sold.md)
 
-> [!warning] Draft
-> Written from the archive's own words, and waiting for a reader who knows the material to approve it.
-
 ## The idea
 
-Everything in a set of books is one of three kinds:
+Everything in the books is found on the **balance sheet** under these three kinds of **accounts**:
 
 - **Assets**: what the business *has*. They sit on the left: their balance is a debit.
 - **Liabilities**: what the business *owes* to others. They sit on the right: a credit.
 - **Equity** (also called capital): the claim of whoever put their own value in. Also on the right: a credit.
 
-What the business has always equals what it owes plus the equity holders' claim. Chris Schulte's point is the one beginners miss: **liabilities and equity both sit on the credit side**. When value comes in, the books must record a claim against it on the right, and there are only two kinds: the business *owes* it back (a liability), or it becomes someone's *stake* (equity). Which one is chosen changes who can demand what.
+What the business has always equals what it owes plus the equity holders' claim. Chris Schulte's point is the one beginners miss: "[BOTH Liabilities AND Equity/Capital Accounts have a Credit balance](https://thetenderforlaw.com/articles/chris-schulte/an-article-about-accounting/)". When value comes in, the books must record a claim against it on the right, and there are only two kinds: the business *owes* it back (a [liability](../terms/liability.md)), or it becomes someone's *stake* (equity). Which one is chosen changes who can demand what. Scott Duncan counts equity in his formula too: "[EQUITY is part of the "accounting" in "It's all SURETY and ACCOUNTING"](https://thetenderforlaw.com/vol_x/462493170453287_842656495770284/#entry-850726338296633)".
 
 ## In the lemonade stand
 

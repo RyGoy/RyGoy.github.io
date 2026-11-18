@@ -34,7 +34,8 @@ This guide teaches that way of seeing first, then leads you through the archive'
 | `sources/` | For each lesson, the 25 best candidates to quote, with the question each answered | `scripts/guide_build.py` |
 
 - `python3 scripts/guide_build.py` rebuilds `terms/` and `sources/` (a few minutes) and checks every quote in the lessons.
-- `python3 scripts/guide_build.py check` only checks the quotes: each must appear word for word at the address it links.
+- `python3 scripts/guide_build.py check` only checks the quotes: each must appear word for word at the address it links. That covers the blockquotes and the quotes in the running text, written with the quoted words as the link, inside the quote marks: `"[simply means “responsible party”](https://thetenderforlaw.com/vol_v/…/)"`. After a bracket, use curly marks, `(“[…](…)”)`, which the site would otherwise leave straight.
+- **Scott's words first:** a lesson says what it means in Scott Duncan's own words wherever he has them, each quote linked to where he wrote it, and each term linked to its note in `terms/` (the Dictionary, on the site).
 - **A new lesson** is a file in `lens/` with front matter like the others: its `terms:` (dictionary terms it teaches, which link back to it) and its `search:` words (which choose its `sources/`).
 - **Running it never touches a lesson**, so editing a lesson is safe.
 

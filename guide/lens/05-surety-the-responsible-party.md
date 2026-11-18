@@ -4,21 +4,18 @@ description: "Surety is the responsible party: who must pay when what is owed is
 weight: 5
 terms: [Surety, Liability, Legal]
 search: ["surety", "responsible party", "liabilit*", "transfer*"]
-draft: true
+draft: false
 ---
 
 # Surety: the responsible party
 
 [The accounting lens](_index.md) · step 5 of 8 · You need first: [Title is all that is sold](04-title-is-all-that-is-sold.md) · Next: [Money is debt in transit](06-money-is-debt-in-transit.md)
 
-> [!warning] Draft
-> Written from the archive's own words, and waiting for a reader who knows the material to approve it.
-
 ## The idea
 
-The books record what is owed. **Surety** answers the next question: *who must pay it?* In ordinary usage a surety is someone who promises to answer for another's debt. Scott Duncan uses the word for the responsible party in general, and makes it the second half of everything legal: LEGAL = SURETY AND ACCOUNTING.
+The books record what is owed. [**Surety**](../terms/surety.md) answers the next question, because "[LEGALLY the only consideration is who must pay](https://thetenderforlaw.com/vol_v/462493170453287_606995862669683/)". In ordinary usage a surety is someone who promises to answer for another's debt. Scott Duncan dumbs it down: surety "[simply means “responsible party”](https://thetenderforlaw.com/vol_v/462493170453287_606995862669683/)", and he makes it the second half of everything legal: "[LEGAL = Accounting and Surety](https://thetenderforlaw.com/vol_v/462493170453287_606995862669683/)".
 
-Read through this lens, much of the archive is about where surety sits: who took it on (often without noticing), and how it can be limited or passed to someone else. A limited company is the plainest example: the letters LTD. announce that the shareholders' liability is limited.
+Read through this lens, much of the archive is about where surety sits: who took it on, often without noticing (“[You assume ALL LIABILITY when you ask to join this group](https://thetenderforlaw.com/vol_i/462493170453287_490608044308466/)”), and how it can be limited or passed to someone else: "[Liability is PASSED in BUSINESS channels.](https://thetenderforlaw.com/vol_vi/462493170453287_682875428415059/#entry-683430905026178)" A limited company is the plainest example: "[It's why LTD. is written after corporate names. LIABILITY IS LIMITED.](https://thetenderforlaw.com/vol_vi/462493170453287_671761712859764/#entry-672185976150671)"
 
 ## In the lemonade stand
 

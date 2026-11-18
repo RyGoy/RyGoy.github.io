@@ -4,25 +4,22 @@ description: "Title, use and a claim are three different things: what Scott Dunc
 weight: 4
 terms: [Title, Property, Ownership, Owner, Lien]
 search: ["title", "property", "own", "owned", "owner*", "ownership", "register*"]
-draft: true
+draft: false
 ---
 
 # Title is all that is sold
 
 [The accounting lens](_index.md) · step 4 of 8 · You need first: [What is had, and what is owed](03-what-is-had-and-what-is-owed.md) · Next: [Surety: the responsible party](05-surety-the-responsible-party.md)
 
-> [!warning] Draft
-> Written from the archive's own words, and waiting for a reader who knows the material to approve it.
-
 ## The idea
 
 Everyday speech says you "own" your car, your house, your company. The lens separates three things that speech runs together:
 
-- **Title**: the record of whose name a thing is held in. Title is what is bought and sold.
+- [**Title**](../terms/title.md): the record of whose name a thing is held in. In Scott Duncan's words, "[Title is all that is sold.](https://thetenderforlaw.com/vol_i/462493170453287_481479325221338/#entry-481489625220308)"
 - **Having the use of it**: you can drive the car, live in the house.
 - **A claim on it**: as a lender, or as an equity holder ([step 3](03-what-is-had-and-what-is-owed.md)).
 
-Scott Duncan's point is that registering something moves its title. A shareholder doesn't *own* a corporation: he holds a share, a claim. And whoever holds title has duties that come with it ([step 7](07-trust-and-the-trustee.md)).
+Scott Duncan's point is that registering something moves its title: "[You REGISTER (transfer title) your VEHICLE, and it becomes Government (Trust) property.](https://thetenderforlaw.com/vol_iv/462493170453287_573236309378972/#entry-576416412394295)" So "[NOTHING you "register" is owned by you.](https://thetenderforlaw.com/vol_i/462493170453287_488326607869943/#entry-489908367711767)" A shareholder doesn't *own* a corporation: "[You are now the SOLE SHAREHOLDER (not an "owner")](https://thetenderforlaw.com/vol_i/462493170453287_497054310330506/#entry-497245080311429)", holding a share, a claim. And whoever holds title has duties that come with it ([step 7](07-trust-and-the-trustee.md)): "[If you own something, you have SURETY for it.](https://thetenderforlaw.com/articles/scott-duncan/or-why-piece-of-shit-chistiansare-such-pieces-of-shit/)"
 
 ## In the lemonade stand
 

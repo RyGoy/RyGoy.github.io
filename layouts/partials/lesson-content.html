@@ -4,6 +4,9 @@
          "> [!question]- The question", a <details> whose answer opens on click. (Hugo 0.114 has no blockquote hook.) */ -}}
 {{- $html := string .Content -}}
 {{- $html = replaceRE `^\s*<h2 id="[^"]*" class="h1-size">.*?</h2>` "" $html 1 -}}
+{{- /* Its first line, "[The accounting lens](_index.md) · step N of 8 · … Next: […]", is for Obsidian: the page
+       has its own buttons to the lessons either side (partials/lesson-pager.html). */ -}}
+{{- $html = replaceRE `^\s*<p><a href="[^"]*">[^<]*</a> · step \d+ of \d+.*?</p>` "" $html 1 -}}
 {{- $html = replaceRE `(?s)<blockquote>\s*<p>\[!(\w+)\]- ([^\n]*)\n(.*?)</p>\s*</blockquote>` `<details class="callout callout-${1}"><summary>${2}</summary><p>${3}</p></details>` $html -}}
 {{- $html = replaceRE `(?s)<blockquote>\s*<p>\[!(\w+)\] ([^\n]*)\n(.*?)</p>\s*</blockquote>` `<aside class="callout callout-${1}"><p class="callout-title">${2}</p><p>${3}</p></aside>` $html -}}
 {{- $html | safeHTML -}}
