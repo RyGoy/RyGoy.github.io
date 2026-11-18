@@ -527,11 +527,11 @@
   --c-4c2424: #5c2a2a;
 }
 /* theme colours: end */
-/* Set by hand: the light theme's fainter stonework and tartan (a quarter washed out by the sidebar's own colour), and cream
+/* Set by hand: the light theme's fainter stonework and tartan (15% washed out by the sidebar's own colour), and cream
    kept on the dark red Volumes button. */
 :root[data-theme="light"] {
   --stone: url("../images/gothic/ashlar-light.svg") 0 0 / 240px 96px;
-  --tartan: linear-gradient(color-mix(in srgb, var(--c-141512) 25%, transparent), color-mix(in srgb, var(--c-141512) 25%, transparent)),
+  --tartan: linear-gradient(color-mix(in srgb, var(--c-141512) 15%, transparent), color-mix(in srgb, var(--c-141512) 15%, transparent)),
     url("../images/tartan/robertson.svg") 0 0 / 224px 224px;
   --c-ebd9bc: #f3e4c8;
 }
