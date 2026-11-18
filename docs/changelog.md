@@ -131,7 +131,7 @@ Back to [the map](README.md).
 - [#50](https://github.com/RyGoy/RyGoy.github.io/pull/50) Add "The gold is in the comments" carousel to the home page → [Content model](architecture/content-model.md), [Design and themes](architecture/design-and-themes.md)
 - [#49](https://github.com/RyGoy/RyGoy.github.io/pull/49) Restore the Coming soon buttons in the library → [Library](architecture/library.md)
 - [#48](https://github.com/RyGoy/RyGoy.github.io/pull/48) Add the Uniform Commercial Code to the library → [Library](architecture/library.md)
-- [#47](https://github.com/RyGoy/RyGoy.github.io/pull/47) DRAFT — do not merge until wfgresearch.org is live: standardize the library → [Library](architecture/library.md)
+- [#47](https://github.com/RyGoy/RyGoy.github.io/pull/47) Standardize the library → [Library](architecture/library.md)
 - [#45](https://github.com/RyGoy/RyGoy.github.io/pull/45) Add the books from Scott's reading list to the library → [Library](architecture/library.md)
 
 ## 2026-11-08
