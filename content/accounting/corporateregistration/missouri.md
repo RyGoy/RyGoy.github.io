@@ -13,9 +13,18 @@
   "security_registry": "Secretary of State, Uniform Commercial Code",
   "security_registry_url": "https://www.sos.mo.gov/ucc",
   "legal_system": "Common law",
-  "minimums": "One or more directors and one incorporator (an adult individual); a president and a secretary (one person may hold both); no residency or capital requirement; a Missouri registered agent; an annual report each year ($20 online).",
+  "minimums": [
+    "One or more directors and one incorporator (an adult individual)",
+    "A president and a secretary (one person may hold both)",
+    "No residency or capital requirement",
+    "A Missouri registered agent",
+    "An annual report each year ($20 online)"
+  ],
   "number_names": "No: the filer chooses the name, which must include \"corporation\", \"company\", \"incorporated\" or \"limited\" (or an abbreviation) and be distinguishable; numbers may be part of a chosen name.",
-  "tax": "Corporate income tax 4% flat (2026, unchanged since 2020); the corporate franchise tax was repealed from 2016.",
+  "tax": [
+    "Corporate income tax 4% flat (2026, unchanged since 2020)",
+    "The corporate franchise tax was repealed from 2016"
+  ],
   "sources": {
     "minimums": "https://revisor.mo.gov/main/OneSection.aspx?section=351.315",
     "number_names": "https://revisor.mo.gov/main/OneSection.aspx?section=351.110",

@@ -13,9 +13,19 @@
   "security_registry": "Register a personal property lien",
   "security_registry_url": "https://yukon.ca/en/legal-and-social-supports/legal-services/register-personal-property-lien",
   "legal_system": "Common law",
-  "minimums": "One or more directors (three for a public corporation with more than one shareholder), with no residency requirement; one or more incorporators; a registered office in Yukon; no minimum capital; an annual return each year.",
+  "minimums": [
+    "One or more directors (three for a public corporation with more than one shareholder), with no residency requirement",
+    "One or more incorporators",
+    "A registered office in Yukon",
+    "No minimum capital",
+    "An annual return each year"
+  ],
   "number_names": "Yes: leave the name blank on the articles and the registry assigns a numbered name, such as 45325 Yukon Inc.",
-  "tax": "2026 tax year: general rate 12%; small business rate 0% on the first $500,000; federal rates (15% general, 9% small business) apply on top.",
+  "tax": [
+    "2026 tax year: general rate 12%",
+    "Small business rate 0% on the first $500,000",
+    "Federal rates (15% general, 9% small business) apply on top"
+  ],
   "sources": {
     "minimums": "https://laws.yukon.ca/cms/images/LEGISLATION/PRINCIPAL/2002/2002-0020/2002-0020.pdf",
     "number_names": "https://yukon.ca/en/incorporate-yukon-business-corporation",

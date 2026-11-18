@@ -13,9 +13,18 @@
   "security_registry": "Department of Financial Institutions, UCC",
   "security_registry_url": "https://dfi.wi.gov/Pages/BusinessServices/UCC/GeneralInformation.aspx",
   "legal_system": "Common law",
-  "minimums": "One or more directors (individuals) and one or more incorporators; officers as set by the bylaws; no residency or capital requirement; a registered agent in Wisconsin; an annual report each year, filed online ($25).",
+  "minimums": [
+    "One or more directors (individuals) and one or more incorporators",
+    "Officers as set by the bylaws",
+    "No residency or capital requirement",
+    "A registered agent in Wisconsin",
+    "An annual report each year, filed online ($25)"
+  ],
   "number_names": "No: the filer chooses the name, which must contain \"corporation\", \"incorporated\", \"company\" or \"limited\" (or an abbreviation) and be distinguishable on DFI records; numbers may be part of a chosen name.",
-  "tax": "Corporate franchise/income tax 7.9% flat (2026); a manufacturing and agriculture credit can sharply reduce tax on qualifying income.",
+  "tax": [
+    "Corporate franchise/income tax 7.9% flat (2026)",
+    "A manufacturing and agriculture credit can sharply reduce tax on qualifying income"
+  ],
   "sources": {
     "minimums": "https://docs.legis.wisconsin.gov/statutes/statutes/180/viii/0803",
     "number_names": "https://docs.legis.wisconsin.gov/statutes/statutes/180/iv/0401",

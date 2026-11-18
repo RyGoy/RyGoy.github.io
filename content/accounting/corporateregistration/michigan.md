@@ -13,9 +13,18 @@
   "security_registry": "Department of State, Uniform Commercial Code",
   "security_registry_url": "https://www.michigan.gov/sos/industry-services/ucc",
   "legal_system": "Common law",
-  "minimums": "One or more directors and one incorporator; no residency or capital requirement; a president, secretary and treasurer (one person may hold several); a registered agent in Michigan; an annual report by May 15 ($25).",
+  "minimums": [
+    "One or more directors and one incorporator",
+    "No residency or capital requirement",
+    "A president, secretary and treasurer (one person may hold several)",
+    "A registered agent in Michigan",
+    "An annual report by May 15 ($25)"
+  ],
   "number_names": "No: the filer chooses the name, which must include a word such as Corporation or Inc. and be distinguishable; numbers may be part of a chosen name.",
-  "tax": "Corporate income tax 6% flat (2026). Corporations with under $350,000 of Michigan gross receipts, or liability of $100 or less, need not file or pay.",
+  "tax": [
+    "Corporate income tax 6% flat (2026)",
+    "Corporations with under $350,000 of Michigan gross receipts, or liability of $100 or less, need not file or pay"
+  ],
   "sources": {
     "minimums": "https://michigan.gov/lara/bureau-list/cscl/corps/michigan-business-roadmap/annual-reports-and-annual-statements",
     "number_names": "https://www.legislature.mi.gov/documents/mcl/pdf/mcl-450-1212.pdf",

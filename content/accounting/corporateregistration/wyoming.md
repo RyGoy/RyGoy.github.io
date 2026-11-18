@@ -13,9 +13,18 @@
   "security_registry": "Secretary of State, UCC / EFS",
   "security_registry_url": "https://sos.wyo.gov/Business/UCCEFSBuyerHome.aspx",
   "legal_system": "Common law",
-  "minimums": "One or more directors and one or more incorporators; officers as set in the bylaws; no residency or capital requirement; a registered agent in Wyoming; an annual report with licence tax ($60 minimum).",
+  "minimums": [
+    "One or more directors and one or more incorporators",
+    "Officers as set in the bylaws",
+    "No residency or capital requirement",
+    "A registered agent in Wyoming",
+    "An annual report with licence tax ($60 minimum)"
+  ],
   "number_names": "No: the filer chooses the name, which must be distinguishable on the Secretary of State's records and not deceptively similar to a registered mark; numbers may be part of a chosen name.",
-  "tax": "No corporate income tax. The only annual state charge is the annual report licence tax of $60 or $0.0002 per dollar of capital, property and assets in Wyoming, whichever is greater (2026).",
+  "tax": [
+    "No corporate income tax",
+    "The only annual state charge is the annual report licence tax of $60 or $0.0002 per dollar of capital, property and assets in Wyoming, whichever is greater (2026)"
+  ],
   "sources": {
     "minimums": "https://wyoleg.gov/statutes/compress/title17.pdf",
     "number_names": "https://wyoleg.gov/statutes/compress/title17.pdf",

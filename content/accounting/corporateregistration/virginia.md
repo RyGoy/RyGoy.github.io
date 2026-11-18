@@ -13,9 +13,17 @@
   "security_registry": "State Corporation Commission, Uniform Commercial Code",
   "security_registry_url": "https://www.scc.virginia.gov/businesses/ucc/",
   "legal_system": "Common law",
-  "minimums": "One or more directors and incorporators; no capital requirement; the registered agent must be a Virginia-resident officer, director or lawyer, or an authorized entity; a free annual report plus an annual registration fee from $100.",
+  "minimums": [
+    "One or more directors and incorporators",
+    "No capital requirement",
+    "The registered agent must be a Virginia-resident officer, director or lawyer, or an authorized entity",
+    "A free annual report plus an annual registration fee from $100"
+  ],
   "number_names": "No: the filer chooses the name, which must contain 'Corporation', 'Incorporated', 'Company' or 'Limited' (or an abbreviation) and be distinguishable; numbers may be part of a chosen name.",
-  "tax": "Tax year 2026: flat 6% corporate income tax on Virginia taxable income; no franchise tax beyond the SCC annual registration fee ($100 for up to 5,000 authorized shares).",
+  "tax": [
+    "Tax year 2026: flat 6% corporate income tax on Virginia taxable income",
+    "No franchise tax beyond the SCC annual registration fee ($100 for up to 5,000 authorized shares)"
+  ],
   "sources": {
     "minimums": "https://scc.virginia.gov/pages/Annual-Registration-Fees",
     "number_names": "https://law.lis.virginia.gov/vacode/title13.1/chapter9/section13.1-630/",

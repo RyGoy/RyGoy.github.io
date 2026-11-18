@@ -13,9 +13,19 @@
   "security_registry": "Secretary of State, UCC and Statutory Liens",
   "security_registry_url": "https://www.sos.nh.gov/ucc-and-statutory-liens",
   "legal_system": "Common law",
-  "minimums": "One or more directors and one or more incorporators; no residency or capital requirement; officers as the bylaws provide; a registered agent in the state; an annual report each year ($100).",
+  "minimums": [
+    "One or more directors and one or more incorporators",
+    "No residency or capital requirement",
+    "Officers as the bylaws provide",
+    "A registered agent in the state",
+    "An annual report each year ($100)"
+  ],
   "number_names": "No: the filer chooses the name, which must include \"corporation\", \"incorporated\", \"limited\" or an abbreviation; numbers may be part of a chosen name, but adding a number alone does not make a name distinguishable.",
-  "tax": "Business profits tax 7.5% flat (2026) plus business enterprise tax 0.55% on wages, interest and dividends paid; BPT payable is credited against BET; no sales or general personal income tax.",
+  "tax": [
+    "Business profits tax 7.5% flat (2026) plus business enterprise tax 0.55% on wages, interest and dividends paid",
+    "The business profits tax paid is credited against the business enterprise tax",
+    "No sales or general personal income tax"
+  ],
   "sources": {
     "minimums": "https://www.sos.nh.gov/corporations-0/forms-and-fees/corporations",
     "number_names": "https://gc.nh.gov/rsa/html/XXVII/293-A/293-A-401.htm",

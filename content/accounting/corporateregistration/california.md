@@ -13,9 +13,19 @@
   "security_registry": "Secretary of State, Uniform Commercial Code",
   "security_registry_url": "https://www.sos.ca.gov/business-programs/ucc",
   "legal_system": "Common law",
-  "minimums": "Three or more directors (one or two with one or two shareholders); one or more incorporators; a president or chair, secretary and CFO (one person may hold all); no residency or capital rule; registered agent; annual Statement of Information ($25).",
+  "minimums": [
+    "Three or more directors (one or two with one or two shareholders)",
+    "One or more incorporators",
+    "A president or chair, secretary and CFO (one person may hold all)",
+    "No residency or capital rule",
+    "Registered agent",
+    "Annual Statement of Information ($25)"
+  ],
   "number_names": "No: the filer chooses the name, which must be distinguishable from other corporations on record and not misleading; numbers may be part of a chosen name.",
-  "tax": "8.84% flat corporation franchise (income) tax for tax year 2026, with an $800 minimum franchise tax each year; a newly incorporated corporation is exempt from the minimum tax in its first taxable year.",
+  "tax": [
+    "8.84% flat corporation franchise (income) tax for tax year 2026, with an $800 minimum franchise tax each year",
+    "A newly incorporated corporation is exempt from the minimum tax in its first taxable year"
+  ],
   "sources": {
     "minimums": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CORP&sectionNum=212",
     "number_names": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CORP&sectionNum=201",

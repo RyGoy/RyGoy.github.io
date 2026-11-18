@@ -13,9 +13,17 @@
   "security_registry": "Secretary of State, UCC",
   "security_registry_url": "https://sos.wv.gov/business/uniform-commercial-code-ucc/uniform-commercial-code-ucc-basics",
   "legal_system": "Common law",
-  "minimums": "One or more directors and incorporators; no residency or capital requirement; an in-state registered agent is optional (the Secretary of State accepts service of process); an annual report by June 30 ($25).",
+  "minimums": [
+    "One or more directors and incorporators",
+    "No residency or capital requirement",
+    "An in-state registered agent is optional (the Secretary of State accepts service of process)",
+    "An annual report by June 30 ($25)"
+  ],
   "number_names": "No: the filer chooses the name, which must contain 'Corporation', 'Incorporated', 'Company' or 'Limited' (or an abbreviation) and be distinguishable; numbers may be part of a chosen name.",
-  "tax": "Tax year 2026: flat 6.5% corporate net income tax; no separate business franchise tax.",
+  "tax": [
+    "Tax year 2026: flat 6.5% corporate net income tax",
+    "No separate business franchise tax"
+  ],
   "sources": {
     "minimums": "https://code.wvlegislature.gov/31D-5-501/",
     "number_names": "https://code.wvlegislature.gov/31D-4-401/",

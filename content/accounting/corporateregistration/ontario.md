@@ -13,9 +13,18 @@
   "security_registry": "ServiceOntario, Personal Property Security Registration (Access Now)",
   "security_registry_url": "https://www.ontario.ca/page/register-security-interest-or-search-lien-access-now",
   "legal_system": "Common law",
-  "minimums": "One or more directors (three for an offering corporation), with no residency requirement since July 2021; one or more incorporators; a registered office in Ontario; an annual return each year (no fee).",
+  "minimums": [
+    "One or more directors (three for an offering corporation), with no residency requirement since July 2021",
+    "One or more incorporators",
+    "A registered office in Ontario",
+    "An annual return each year (no fee)"
+  ],
   "number_names": "Yes: a number name is the corporation number followed by 'Ontario' and a legal ending, such as 1234567 Ontario Inc.",
-  "tax": "2026 tax year: general 11.5%; small business rate on the first $500,000 cut from 3.2% to 2.2% on July 1, 2026 (prorated); federal rates (15% general, 9% small business) apply on top.",
+  "tax": [
+    "2026 tax year: general 11.5%",
+    "Small business rate on the first $500,000 cut from 3.2% to 2.2% on July 1, 2026 (prorated)",
+    "Federal rates (15% general, 9% small business) apply on top"
+  ],
   "sources": {
     "minimums": "https://www.ontario.ca/laws/statute/90b16",
     "number_names": "https://www.ontario.ca/laws/statute/90b16",

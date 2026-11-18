@@ -13,9 +13,18 @@
   "security_registry": "Personal Property Registry",
   "security_registry_url": "https://www.alberta.ca/personal-property-liens",
   "legal_system": "Common law",
-  "minimums": "One or more directors (three for a widely held reporting issuer), no residency rule since 2021; one or more incorporators; an Alberta registered office and a resident-Albertan agent for service; annual return.",
+  "minimums": [
+    "One or more directors (three for a widely held reporting issuer), no residency rule since 2021",
+    "One or more incorporators",
+    "An Alberta registered office and a resident-Albertan agent for service",
+    "Annual return"
+  ],
   "number_names": "Yes: on request the Registrar assigns a designated number as the corporation's name (s. 11), usually in the form 1234567 Alberta Ltd.",
-  "tax": "2026 tax year: general rate 8%, the lowest provincial general rate; small business rate 2% on the first $500,000; federal rates (15% general, 9% small business) apply on top.",
+  "tax": [
+    "2026 tax year: general rate 8%, the lowest provincial general rate",
+    "Small business rate 2% on the first $500,000",
+    "Federal rates (15% general, 9% small business) apply on top"
+  ],
   "sources": {
     "minimums": "https://kings-printer.alberta.ca/documents/Acts/B09.pdf",
     "number_names": "https://kings-printer.alberta.ca/documents/Acts/B09.pdf",

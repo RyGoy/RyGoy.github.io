@@ -13,9 +13,18 @@
   "security_registry": "Secretary of State, Uniform Commercial Code",
   "security_registry_url": "https://www.ilsos.gov/departments/business-services/uniform-commercial-code.html",
   "legal_system": "Common law",
-  "minimums": "One or more directors and one or more incorporators. No residency or capital requirement. Officers as set by the bylaws, a registered agent and office in Illinois, and an annual report ($75 plus franchise tax).",
+  "minimums": [
+    "One or more directors and one or more incorporators",
+    "No residency or capital requirement",
+    "Officers as set by the bylaws",
+    "A registered agent and office in Illinois",
+    "An annual report ($75 plus franchise tax)"
+  ],
   "number_names": "No: the filer chooses the name, which must include a word such as Corporation or Inc.; English letters and Arabic or Roman numerals are allowed.",
-  "tax": "For 2026, 9.5% on net income: 7% corporate income tax plus 2.5% personal property replacement tax. Franchise tax on paid-in capital, but the first $10,000 of liability is exempt.",
+  "tax": [
+    "For 2026, 9.5% on net income: 7% corporate income tax plus 2.5% personal property replacement tax",
+    "Franchise tax on paid-in capital, but the first $10,000 of liability is exempt"
+  ],
   "sources": {
     "minimums": "https://codes.findlaw.com/il/chapter-805-business-organizations/il-st-sect-805-5-8-10/",
     "number_names": "https://codes.findlaw.com/il/chapter-805-business-organizations/il-st-sect-805-5-4-05/",

@@ -13,9 +13,17 @@
   "security_registry": "Secretary of the Commonwealth, Uniform Commercial Code",
   "security_registry_url": "https://www.sec.state.ma.us/divisions/corporations/filing-by-subject/ucc/corporations-uniform-commercial-code.htm",
   "legal_system": "Common law",
-  "minimums": "One director if one shareholder, two if two, otherwise three (unless articles say otherwise); one or more incorporators; a president, treasurer and secretary (one person may hold all); registered agent; annual report ($125).",
+  "minimums": [
+    "One director if one shareholder, two if two, otherwise three (unless articles say otherwise)",
+    "One or more incorporators",
+    "A president, treasurer and secretary (one person may hold all)",
+    "Registered agent",
+    "Annual report ($125)"
+  ],
   "number_names": "No: the filer chooses the name, which must include \"corporation\", \"incorporated\", \"company\", \"limited\" or an abbreviation; numbers may be part of a chosen name.",
-  "tax": "Corporate excise (2026): 8% of net income plus $2.60 per $1,000 of taxable tangible property or net worth, with a $456 minimum.",
+  "tax": [
+    "Corporate excise (2026): 8% of net income plus $2.60 per $1,000 of taxable tangible property or net worth, with a $456 minimum"
+  ],
   "sources": {
     "minimums": "https://malegislature.gov/Laws/GeneralLaws/PartI/TitleXXII/Chapter156D/Section8.03",
     "number_names": "https://malegislature.gov/Laws/GeneralLaws/PartI/TitleXXII/Chapter156D/Section4.01",

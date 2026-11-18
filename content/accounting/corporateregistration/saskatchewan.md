@@ -13,9 +13,19 @@
   "security_registry": "Saskatchewan Registries, Personal Property Registry",
   "security_registry_url": "https://www.saskregistries.ca/sppr",
   "legal_system": "Common law",
-  "minimums": "One or more directors (three for a distributing corporation); no Canadian residency rule since 2023, but an attorney is needed if no director or officer lives in Saskatchewan; one or more incorporators; a Saskatchewan registered office; annual return.",
+  "minimums": [
+    "One or more directors (three for a distributing corporation)",
+    "No Canadian residency rule since 2023, but an attorney is needed if no director or officer lives in Saskatchewan",
+    "One or more incorporators",
+    "A Saskatchewan registered office",
+    "Annual return"
+  ],
   "number_names": "Yes: on request the Registrar assigns a designating number followed by 'Saskatchewan' and a legal ending (s. 2-9), such as 101234567 Saskatchewan Ltd.",
-  "tax": "2026 tax year: general rate 12%; small business rate 1% on the first $600,000 (above the $500,000 federal limit); federal rates (15% general, 9% small business) apply on top.",
+  "tax": [
+    "2026 tax year: general rate 12%",
+    "Small business rate 1% on the first $600,000 (above the $500,000 federal limit)",
+    "Federal rates (15% general, 9% small business) apply on top"
+  ],
   "sources": {
     "minimums": "https://publications.saskatchewan.ca/api/v1/products/122776/formats/142689/download",
     "number_names": "https://publications.saskatchewan.ca/api/v1/products/122776/formats/142689/download",

@@ -13,9 +13,18 @@
   "security_registry": "Secretary of State, business and UCC services",
   "security_registry_url": "https://sos.tn.gov/businesses/services",
   "legal_system": "Common law",
-  "minimums": "One or more directors and incorporators; no residency or capital requirement; a registered agent in Tennessee; an annual report each year ($20) listing at least one officer.",
+  "minimums": [
+    "One or more directors and incorporators",
+    "No residency or capital requirement",
+    "A registered agent in Tennessee",
+    "An annual report each year ($20) listing at least one officer"
+  ],
   "number_names": "No: the filer chooses the name, which must contain 'Corporation', 'Incorporated' or 'Company' (or an abbreviation) and be distinguishable; numbers may be part of a chosen name.",
-  "tax": "Tax year 2026: 6.5% excise tax on net earnings plus franchise tax of 0.25% of net worth ($100 minimum); the property-based franchise measure was repealed in 2024. No personal income tax on wages.",
+  "tax": [
+    "Tax year 2026: 6.5% excise tax on net earnings plus franchise tax of 0.25% of net worth ($100 minimum)",
+    "The property-based franchise measure was repealed in 2024",
+    "No personal income tax on wages"
+  ],
   "sources": {
     "minimums": "https://sos.tn.gov/businesses/faqs",
     "number_names": "https://law.justia.com/codes/tennessee/2021/title-48/chapter-14/section-48-14-101",

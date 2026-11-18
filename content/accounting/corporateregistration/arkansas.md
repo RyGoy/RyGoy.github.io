@@ -13,9 +13,17 @@
   "security_registry": "Secretary of State, Uniform Commercial Code",
   "security_registry_url": "https://www.sos.arkansas.gov/business-commercial-services-bcs/uniform-commercial-code-ucc/",
   "legal_system": "Common law",
-  "minimums": "One or more directors and incorporators; no residency or capital requirement; a registered agent in Arkansas; an annual franchise tax report due May 1 (minimum $150 for corporations with stock).",
+  "minimums": [
+    "One or more directors and incorporators",
+    "No residency or capital requirement",
+    "A registered agent in Arkansas",
+    "An annual franchise tax report due May 1 (minimum $150 for corporations with stock)"
+  ],
   "number_names": "No: the filer chooses the name, which must contain 'Corporation', 'Incorporated', 'Company' or 'Limited' (or an abbreviation) and be distinguishable on the register; numbers may be part of a chosen name.",
-  "tax": "Tax year 2026: graduated corporate income tax of 1% to 4.3% (4.3% on income over $11,000), with the top rate cut to 4.1% from 2027; plus annual franchise tax of 0.3% of outstanding capital stock, minimum $150.",
+  "tax": [
+    "Tax year 2026: graduated corporate income tax of 1% to 4.3% (4.3% on income over $11,000), with the top rate cut to 4.1% from 2027",
+    "Plus annual franchise tax of 0.3% of outstanding capital stock, minimum $150"
+  ],
   "sources": {
     "minimums": "https://www.sos.arkansas.gov/uploads/Corp_FT_2020.pdf",
     "number_names": "https://law.justia.com/codes/arkansas/2019/title-4/subtitle-3/chapter-27/subchapter-4/section-4-27-401",

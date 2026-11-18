@@ -13,9 +13,18 @@
   "security_registry": "Secretary of State, UCC",
   "security_registry_url": "https://www.nvsos.gov/sos/businesses/ucc",
   "legal_system": "Common law",
-  "minimums": "One or more directors (natural persons 18+) and incorporators; a president, secretary and treasurer (one person may hold all); no residency or capital rule; a Nevada registered agent; annual list (from $150) plus $500 business licence.",
+  "minimums": [
+    "One or more directors (natural persons 18+) and incorporators",
+    "A president, secretary and treasurer (one person may hold all)",
+    "No residency or capital rule",
+    "A Nevada registered agent",
+    "Annual list (from $150) plus $500 business licence"
+  ],
   "number_names": "No: the filer chooses the name, which must be distinguishable from names on file with the Secretary of State; numbers may be part of a chosen name.",
-  "tax": "No corporate income tax. Instead, a Commerce Tax on Nevada gross revenue above $4 million a year (industry rates about 0.051%-0.331%; fiscal year ending June 2026) and a $500 annual business licence fee.",
+  "tax": [
+    "No corporate income tax",
+    "Instead, a Commerce Tax on Nevada gross revenue above $4 million a year (industry rates about 0.051%-0.331%; fiscal year ending June 2026) and a $500 annual business licence fee"
+  ],
   "sources": {
     "minimums": "https://www.leg.state.nv.us/NRS/NRS-078.html#NRS078Sec115",
     "number_names": "https://www.leg.state.nv.us/NRS/NRS-078.html#NRS078Sec039",

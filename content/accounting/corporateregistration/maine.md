@@ -13,9 +13,18 @@
   "security_registry": "Secretary of State, Uniform Commercial Code",
   "security_registry_url": "https://www.maine.gov/sos/corporations-commissions/uniform-commercial-code",
   "legal_system": "Common law",
-  "minimums": "One or more directors and one or more incorporators; no residency or capital requirement; no required officer titles (one officer keeps minutes); a registered agent in the state; an annual report each year ($85, due June 1).",
+  "minimums": [
+    "One or more directors and one or more incorporators",
+    "No residency or capital requirement",
+    "No required officer titles (one officer keeps minutes)",
+    "A registered agent in the state",
+    "An annual report each year ($85, due June 1)"
+  ],
   "number_names": "No: the filer chooses the name, which need only be distinguishable on the Secretary of State's records (no corporate suffix is required); numbers may be part of a chosen name.",
-  "tax": "Corporate income tax in brackets (2026): 3.5% up to $350,000, 7.93%, 8.33%, and 8.93% on income over $3.5 million; no separate franchise tax for general business corporations.",
+  "tax": [
+    "Corporate income tax in brackets (2026): 3.5% up to $350,000, 7.93%, 8.33%, and 8.93% on income over $3.5 million",
+    "No separate franchise tax for general business corporations"
+  ],
   "sources": {
     "minimums": "https://legislature.maine.gov/statutes/13-C/title13-Csec803.html",
     "number_names": "https://legislature.maine.gov/statutes/13-C/title13-Csec401.html",

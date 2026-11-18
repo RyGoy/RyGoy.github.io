@@ -13,9 +13,18 @@
   "security_registry": "Department of State, Uniform Commercial Code",
   "security_registry_url": "https://www.pa.gov/agencies/dos/resources/business-resources/uniform-commercial-code",
   "legal_system": "Common law",
-  "minimums": "One or more directors, who must be adults, and one or more incorporators. No residency or capital requirement. Needs a president, secretary and treasurer, a Pennsylvania registered office or commercial registered office provider, and an annual report ($7).",
+  "minimums": [
+    "One or more directors, who must be adults, and one or more incorporators",
+    "No residency or capital requirement",
+    "A president, secretary and treasurer",
+    "A registered office in Pennsylvania, or a commercial registered office provider",
+    "An annual report ($7)"
+  ],
   "number_names": "No: the filer chooses the name, which must be distinguishable on Department of State records; numbers may be part of a chosen name.",
-  "tax": "Corporate net income tax 7.49% flat for tax year 2026, falling 0.5 points a year to 4.99% in 2031; capital stock/franchise tax already repealed.",
+  "tax": [
+    "Corporate net income tax 7.49% flat for tax year 2026, falling 0.5 points a year to 4.99% in 2031",
+    "Capital stock/franchise tax already repealed"
+  ],
   "sources": {
     "minimums": "https://www.pa.gov/agencies/dos/programs/business/types-of-filings-and-registrations/annual-reports",
     "number_names": "https://law.justia.com/codes/pennsylvania/title-15/chapter-2/section-202/",

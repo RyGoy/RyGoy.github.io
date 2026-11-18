@@ -12,9 +12,18 @@
   "act_url": "https://laws-lois.justice.gc.ca/eng/acts/c-44/",
   "security_registry": "No federal registry: register in the provincial or territorial PPSA registry where the debtor is located (listed below)",
   "legal_system": "Bijural: federal law is read with the common law in the common-law provinces and territories, and with the civil law (the Civil Code of Québec) in Quebec",
-  "minimums": "One or more directors (three for a distributing corporation with more than one shareholder); at least 25% of directors must be resident Canadians (one, if fewer than four); one or more incorporators; a registered office in the province named in the articles; an annual return each year ($12 online) and a filing of individuals with significant control.",
+  "minimums": [
+    "One or more directors (three for a distributing corporation with more than one shareholder)",
+    "At least 25% of directors must be resident Canadians (one, if fewer than four)",
+    "One or more incorporators",
+    "A registered office in the province named in the articles",
+    "An annual return each year ($12 online) and a filing of individuals with significant control"
+  ],
   "number_names": "Yes: on request the Director assigns a designating number followed by \"Canada\" and a legal ending, such as 1234567 Canada Inc. (s. 11(2)).",
-  "tax": "2026 tax year: federal rates are 15% general and 9% for Canadian-controlled private corporations on the first $500,000 (small business deduction); provincial or territorial tax applies on top where the corporation has a permanent establishment.",
+  "tax": [
+    "2026 tax year: federal rates are 15% general and 9% for Canadian-controlled private corporations on the first $500,000 (small business deduction)",
+    "Provincial or territorial tax applies on top where the corporation has a permanent establishment"
+  ],
   "sources": {
     "minimums": "https://laws-lois.justice.gc.ca/eng/acts/c-44/FullText.html",
     "number_names": "https://laws-lois.justice.gc.ca/eng/acts/c-44/FullText.html",

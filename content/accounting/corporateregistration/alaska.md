@@ -13,9 +13,17 @@
   "security_registry": "Department of Natural Resources, Recorder's Office, UCC Central File",
   "security_registry_url": "https://dnr.alaska.gov/ssd/recoff/ucc",
   "legal_system": "Common law",
-  "minimums": "One or more directors (three if the articles and bylaws are silent) and one or more incorporators aged 18+; a president, secretary and treasurer; no residency or capital requirement; a registered agent in Alaska; a biennial report ($100).",
+  "minimums": [
+    "One or more directors (three if the articles and bylaws are silent) and one or more incorporators aged 18+",
+    "A president, secretary and treasurer",
+    "No residency or capital requirement",
+    "A registered agent in Alaska",
+    "A biennial report ($100)"
+  ],
   "number_names": "No: the filer chooses the name, which must contain \"corporation\", \"company\", \"incorporated\" or \"limited\" (or an abbreviation) and be distinguishable on the register; numbers may be part of a chosen name.",
-  "tax": "Graduated corporate net income tax for tax year 2026: 0% on the first $25,000 of taxable income, rising through ten brackets to a top rate of 9.4% on income above $222,000.",
+  "tax": [
+    "Graduated corporate net income tax for tax year 2026: 0% on the first $25,000 of taxable income, rising through ten brackets to a top rate of 9.4% on income above $222,000"
+  ],
   "sources": {
     "minimums": "https://www.commerce.alaska.gov/web/portals/5/pub/CorporationsStatutesandRegulations.pdf",
     "number_names": "https://www.commerce.alaska.gov/web/portals/5/pub/CorporationsStatutesandRegulations.pdf",

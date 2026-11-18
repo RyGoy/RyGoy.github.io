@@ -13,9 +13,17 @@
   "security_registry": "Secretary of State, Uniform Commercial Code",
   "security_registry_url": "https://sos.nebraska.gov/business-services/uniform-commercial-code",
   "legal_system": "Common law",
-  "minimums": "One or more directors and one incorporator; officers per the bylaws (one person may hold all); no residency or capital requirement; a registered agent in Nebraska; a biennial occupation tax report in even years (from $26, by paid-up capital).",
+  "minimums": [
+    "One or more directors and one incorporator",
+    "Officers per the bylaws (one person may hold all)",
+    "No residency or capital requirement",
+    "A registered agent in Nebraska",
+    "A biennial occupation tax report in even years (from $26, by paid-up capital)"
+  ],
   "number_names": "No: the filer chooses the name, which must contain \"corporation\", \"incorporated\", \"company\" or \"limited\" (or an abbreviation) and be distinguishable on the records; numbers may be part of a chosen name.",
-  "tax": "Corporate income tax 4.55% flat on all Nebraska taxable income (tax years beginning in 2026), down from 5.20% in 2025 and scheduled to fall to 3.99% in 2027.",
+  "tax": [
+    "Corporate income tax 4.55% flat on all Nebraska taxable income (tax years beginning in 2026), down from 5.20% in 2025 and scheduled to fall to 3.99% in 2027"
+  ],
   "sources": {
     "minimums": "https://sos.nebraska.gov/business-services/annualbiennial-reporting",
     "number_names": "https://nebraskalegislature.gov/laws/statutes.php?statute=21-230",

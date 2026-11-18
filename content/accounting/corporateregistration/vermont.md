@@ -13,9 +13,18 @@
   "security_registry": "Secretary of State, UCC Liens",
   "security_registry_url": "https://sos.vermont.gov/business-services/ucc-liens/",
   "legal_system": "Common law",
-  "minimums": "One or more directors and one or more incorporators; no residency or capital requirement; officers as the bylaws provide (one keeps minutes); a registered agent in the state; an annual report each year ($60).",
+  "minimums": [
+    "One or more directors and one or more incorporators",
+    "No residency or capital requirement",
+    "Officers as the bylaws provide (one keeps minutes)",
+    "A registered agent in the state",
+    "An annual report each year ($60)"
+  ],
   "number_names": "No: the filer chooses the name, which must include \"corporation\", \"incorporated\", \"company\", \"limited\" or an abbreviation; numbers may be part of a chosen name.",
-  "tax": "Corporate income tax in brackets (2026): 6% up to $10,000, 7% to $25,000, 8.5% above; minimum tax by Vermont gross receipts, from $100 up to $100,000.",
+  "tax": [
+    "Corporate income tax in brackets (2026): 6% up to $10,000, 7% to $25,000, 8.5% above",
+    "Minimum tax by Vermont gross receipts, from $100 up to $100,000"
+  ],
   "sources": {
     "minimums": "https://legislature.vermont.gov/statutes/section/11A/001/00001.22",
     "number_names": "https://legislature.vermont.gov/statutes/section/11A/004/00004.01",

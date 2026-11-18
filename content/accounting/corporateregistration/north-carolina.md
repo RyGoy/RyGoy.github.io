@@ -13,9 +13,17 @@
   "security_registry": "Secretary of State, Uniform Commercial Code",
   "security_registry_url": "https://www.sosnc.gov/divisions/uniform_commercial_code",
   "legal_system": "Common law",
-  "minimums": "One or more directors and incorporators; no residency or capital requirement; a registered agent in North Carolina; an annual report each year ($25 on paper, $21 online).",
+  "minimums": [
+    "One or more directors and incorporators",
+    "No residency or capital requirement",
+    "A registered agent in North Carolina",
+    "An annual report each year ($25 on paper, $21 online)"
+  ],
   "number_names": "No: the filer chooses the name, which must contain 'Corporation', 'Incorporated', 'Company' or 'Limited' (or an abbreviation) and be distinguishable; numbers may be part of a chosen name.",
-  "tax": "Tax year 2026: flat 2% corporate income tax (2.25% in 2025), scheduled to reach 0% after 2029; plus franchise tax of $1.50 per $1,000 of tax base, $200 minimum and $500 maximum on the first $1 million.",
+  "tax": [
+    "Tax year 2026: flat 2% corporate income tax (2.25% in 2025), scheduled to reach 0% after 2029",
+    "Plus franchise tax of $1.50 per $1,000 of tax base, $200 minimum and $500 maximum on the first $1 million"
+  ],
   "sources": {
     "minimums": "https://sosnc.gov/frequently_asked_questions/by_title/_BRD_FAQ_Annual_Reports",
     "number_names": "https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_55D/GS_55D-20.html",

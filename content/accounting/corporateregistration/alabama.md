@@ -13,9 +13,17 @@
   "security_registry": "Secretary of State, UCC Records",
   "security_registry_url": "https://www.sos.alabama.gov/government-records/ucc-records",
   "legal_system": "Common law",
-  "minimums": "One or more directors and incorporators; no residency or capital requirement; a registered agent in Alabama; a yearly business privilege tax return and annual report to Revenue, not required if the tax would be $100 or less.",
+  "minimums": [
+    "One or more directors and incorporators",
+    "No residency or capital requirement",
+    "A registered agent in Alabama",
+    "A yearly business privilege tax return and annual report to Revenue, not required if the tax would be $100 or less"
+  ],
   "number_names": "No: the filer chooses the name and must reserve it with the Secretary of State before filing the certificate of formation; numbers may be part of a chosen name.",
-  "tax": "Tax year 2026: flat 6.5% corporate income tax (federal income tax deductible), plus business privilege tax of $0.25 to $1.75 per $1,000 of Alabama net worth (maximum $15,000); no minimum tax.",
+  "tax": [
+    "Tax year 2026: flat 6.5% corporate income tax (federal income tax deductible), plus business privilege tax of $0.25 to $1.75 per $1,000 of Alabama net worth (maximum $15,000)",
+    "No minimum tax"
+  ],
   "sources": {
     "minimums": "https://www.revenue.alabama.gov/wp-content/uploads/2026/01/26quickrefcptpptinst.pdf",
     "number_names": "https://www.sos.alabama.gov/sites/default/files/Business-Entities/Domestic%20Business%20Entities%20Brochure%202022.pdf",

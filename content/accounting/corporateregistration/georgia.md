@@ -13,9 +13,17 @@
   "security_registry": "Superior Court Clerks' Cooperative Authority, UCC System (filed with any county clerk)",
   "security_registry_url": "https://www.gsccca.org/learn/projects-programs/ucc-system",
   "legal_system": "Common law",
-  "minimums": "One or more directors and incorporators; no residency or capital requirement; a registered agent in Georgia; newspaper notice of incorporation; an annual registration by April 1 ($50 state fee) naming the CEO, CFO and secretary.",
+  "minimums": [
+    "One or more directors and incorporators",
+    "No residency or capital requirement",
+    "A registered agent in Georgia",
+    "Newspaper notice of incorporation",
+    "An annual registration by April 1 ($50 state fee) naming the CEO, CFO and secretary"
+  ],
   "number_names": "No: the filer chooses the name, which must contain 'Corporation', 'Incorporated', 'Company' or 'Limited' (or an abbreviation) and be distinguishable on the register; numbers may be part of a chosen name.",
-  "tax": "Tax year 2026: flat 4.99% corporate income tax (down from 5.19% in 2025), with further cuts of 0.125 points a year possible, down to 3.99%, if revenue targets are met.",
+  "tax": [
+    "Tax year 2026: flat 4.99% corporate income tax (down from 5.19% in 2025), with further cuts of 0.125 points a year possible, down to 3.99%, if revenue targets are met"
+  ],
   "sources": {
     "minimums": "https://law.justia.com/codes/georgia/title-14/chapter-2/article-2/section-14-2-201-1",
     "number_names": "https://law.justia.com/codes/georgia/title-14/chapter-2/article-4/section-14-2-401/",

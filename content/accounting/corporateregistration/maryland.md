@@ -13,9 +13,18 @@
   "security_registry": "State Department of Assessments and Taxation, UCC filings",
   "security_registry_url": "https://dat.maryland.gov/businesses/Pages/UCC-Filing-Statements.aspx",
   "legal_system": "Common law",
-  "minimums": "At least one director and one or more adult incorporators; no residency or capital requirement; required officers are a president, secretary and treasurer; a resident agent in Maryland; an annual report by April 15 ($300).",
+  "minimums": [
+    "At least one director and one or more adult incorporators",
+    "No residency or capital requirement",
+    "Required officers are a president, secretary and treasurer",
+    "A resident agent in Maryland",
+    "An annual report by April 15 ($300)"
+  ],
   "number_names": "No: the filer chooses the name, which must contain 'Corporation', 'Incorporated' or 'Limited' (or an abbreviation) and be distinguishable; numbers may be part of a chosen name.",
-  "tax": "Tax year 2026: flat 8.25% corporate income tax on Maryland taxable income; no separate franchise tax beyond the $300 annual report fee.",
+  "tax": [
+    "Tax year 2026: flat 8.25% corporate income tax on Maryland taxable income",
+    "No separate franchise tax beyond the $300 annual report fee"
+  ],
   "sources": {
     "minimums": "https://mgaleg.maryland.gov/mgawebsite/Laws/StatuteText?article=gca&section=2-412&enactments=false",
     "number_names": "https://mgaleg.maryland.gov/mgawebsite/Laws/StatuteText?article=gca&section=2-106&enactments=false",

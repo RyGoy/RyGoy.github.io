@@ -13,9 +13,17 @@
   "security_registry": "Oklahoma County Clerk, the central UCC filing office",
   "security_registry_url": "https://www.oklahomacounty.org/county-information/uniform-commercial-code-ucc",
   "legal_system": "Common law",
-  "minimums": "One or more directors and incorporators; no residency or capital requirement; a registered agent in Oklahoma; no annual report for domestic corporations since the franchise tax was repealed.",
+  "minimums": [
+    "One or more directors and incorporators",
+    "No residency or capital requirement",
+    "A registered agent in Oklahoma",
+    "No annual report for domestic corporations since the franchise tax was repealed"
+  ],
   "number_names": "No: the filer chooses the name, which must include a word such as 'Corporation', 'Company', 'Incorporated' or 'Limited' (or an abbreviation); numbers may be part of a chosen name.",
-  "tax": "Tax year 2026: flat 4% corporate income tax; the franchise tax was repealed from tax year 2024 (2023 was the last return).",
+  "tax": [
+    "Tax year 2026: flat 4% corporate income tax",
+    "The franchise tax was repealed from tax year 2024 (2023 was the last return)"
+  ],
   "sources": {
     "minimums": "https://www.harborcompliance.com/information/oklahoma-annual-certificate",
     "number_names": "https://law.justia.com/codes/oklahoma/title-18/section-18-1006/",

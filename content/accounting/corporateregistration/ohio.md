@@ -13,9 +13,19 @@
   "security_registry": "Secretary of State, Uniform Commercial Code",
   "security_registry_url": "https://www.ohiosos.gov/business/uniform-commercial-code",
   "legal_system": "Common law",
-  "minimums": "One or more directors and one or more incorporators (any person, regardless of residence); a president, secretary and treasurer (one person may hold several); no capital requirement; an Ohio statutory agent; no annual report.",
+  "minimums": [
+    "One or more directors and one or more incorporators (any person, regardless of residence)",
+    "A president, secretary and treasurer (one person may hold several)",
+    "No capital requirement",
+    "An Ohio statutory agent",
+    "No annual report"
+  ],
   "number_names": "No: the filer chooses the name, which must include \"company\", \"corporation\", \"incorporated\" or an abbreviation and be distinguishable on the records; numbers may be part of a chosen name.",
-  "tax": "No corporate income tax; the Commercial Activity Tax (gross receipts) is 0.26% on receipts above a $6 million annual exclusion (2025 and later, so 2026). The annual minimum tax was eliminated from 2024.",
+  "tax": [
+    "No corporate income tax",
+    "The Commercial Activity Tax (gross receipts) is 0.26% on receipts above a $6 million annual exclusion (2025 and later, so 2026)",
+    "The annual minimum tax was eliminated from 2024"
+  ],
   "sources": {
     "minimums": "https://codes.ohio.gov/ohio-revised-code/section-1701.56",
     "number_names": "https://codes.ohio.gov/ohio-revised-code/section-1701.05",

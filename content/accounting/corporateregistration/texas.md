@@ -13,9 +13,18 @@
   "security_registry": "Secretary of State, Uniform Commercial Code",
   "security_registry_url": "https://www.sos.state.tx.us/ucc/index.shtml",
   "legal_system": "Common law",
-  "minimums": "One or more directors and organizers; no residency or capital requirement; a registered agent in Texas; no Secretary of State annual report, but a franchise tax report or Public Information Report to the Comptroller each May 15.",
+  "minimums": [
+    "One or more directors and organizers",
+    "No residency or capital requirement",
+    "A registered agent in Texas",
+    "No Secretary of State annual report, but a franchise tax report or Public Information Report to the Comptroller each May 15"
+  ],
   "number_names": "No: the filer chooses the name, which must contain 'Corporation', 'Company' or 'Incorporated' (or an abbreviation) and be distinguishable; numbers may be part of a chosen name.",
-  "tax": "No corporate income tax. 2026 franchise (margin) tax: 0.75% of taxable margin (0.375% retail or wholesale; 0.331% EZ rate up to $20 million revenue); no tax due at or below $2.65 million revenue.",
+  "tax": [
+    "No corporate income tax",
+    "2026 franchise (margin) tax: 0.75% of taxable margin (0.375% retail or wholesale; 0.331% EZ rate up to $20 million revenue)",
+    "No tax due at or below $2.65 million revenue"
+  ],
   "sources": {
     "minimums": "https://comptroller.texas.gov/taxes/franchise/forms/2026-franchise.php",
     "number_names": "https://statutes.capitol.texas.gov/Docs/BO/htm/BO.5.htm",

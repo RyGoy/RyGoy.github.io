@@ -13,9 +13,18 @@
   "security_registry": "Department of State, Uniform Commercial Code",
   "security_registry_url": "https://dos.ny.gov/uniform-commercial-code",
   "legal_system": "Common law",
-  "minimums": "One or more directors and one or more incorporators (natural persons 18 or older); no residency or capital requirement; no required officers; Secretary of State serves as process agent (registered agent optional); biennial statement ($9).",
+  "minimums": [
+    "One or more directors and one or more incorporators (natural persons 18 or older)",
+    "No residency or capital requirement",
+    "No required officers",
+    "Secretary of State serves as process agent (registered agent optional)",
+    "Biennial statement ($9)"
+  ],
   "number_names": "No: the filer chooses the name, which must include \"corporation\", \"incorporated\", \"limited\" or an abbreviation; numbers may be part of a chosen name.",
-  "tax": "Corporation franchise tax (2026): 6.5% of business income, 7.25% for business income over $5 million (extended through 2029), or a small capital-base tax or fixed-dollar minimum if higher; New York City taxes separately.",
+  "tax": [
+    "Corporation franchise tax (2026): 6.5% of business income, 7.25% for business income over $5 million (extended through 2029), or a small capital-base tax or fixed-dollar minimum if higher",
+    "New York City taxes separately"
+  ],
   "sources": {
     "minimums": "https://dos.ny.gov/biennial-statements-business-corporations-and-limited-liability-companies",
     "number_names": "https://www.nysenate.gov/legislation/laws/BSC/301",
