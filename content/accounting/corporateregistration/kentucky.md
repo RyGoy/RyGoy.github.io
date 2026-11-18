@@ -13,9 +13,16 @@
   "security_registry": "Secretary of State, Uniform Commercial Code",
   "security_registry_url": "https://www.sos.ky.gov/bus/UCC/Pages/default.aspx",
   "legal_system": "Common law",
-  "minimums": "One or more directors and incorporators; no residency or capital requirement; a registered agent in Kentucky; an annual report between January 1 and June 30 ($15).",
+  "minimums": [
+    "One or more directors and incorporators",
+    "No residency or capital requirement",
+    "A registered agent in Kentucky",
+    "An annual report between January 1 and June 30 ($15)"
+  ],
   "number_names": "No: the filer chooses the name, which must be distinguishable from names on record and carry a corporate ending such as 'Corporation', 'Incorporated' or 'Company'; numbers may be part of a chosen name.",
-  "tax": "Tax year 2026: flat 5% corporate income tax, plus the limited liability entity tax (the lesser of 0.095% of Kentucky gross receipts or 0.75% of gross profits; $175 minimum), which is largely credited against the income tax.",
+  "tax": [
+    "Tax year 2026: flat 5% corporate income tax, plus the limited liability entity tax (the lesser of 0.095% of Kentucky gross receipts or 0.75% of gross profits; $175 minimum), which is largely credited against the income tax"
+  ],
   "sources": {
     "minimums": "https://apps.legislature.ky.gov/law/statutes/chapter.aspx?id=37090",
     "number_names": "https://apps.legislature.ky.gov/law/statutes/chapter.aspx?id=37090",

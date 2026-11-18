@@ -13,9 +13,18 @@
   "security_registry": "Department of Licensing, Uniform Commercial Code",
   "security_registry_url": "https://dol.wa.gov/professional-licenses/uniform-commercial-code-ucc",
   "legal_system": "Common law",
-  "minimums": "One or more directors (the articles or a shareholder agreement may dispense with a board) and one or more incorporators; officers as set in the bylaws; no residency or capital requirement; a registered agent; an annual report ($70).",
+  "minimums": [
+    "One or more directors (the articles or a shareholder agreement may dispense with a board) and one or more incorporators",
+    "Officers as set in the bylaws",
+    "No residency or capital requirement",
+    "A registered agent",
+    "An annual report ($70)"
+  ],
   "number_names": "No: the filer chooses the name, which must contain \"corporation\", \"incorporated\", \"company\" or \"limited\" (or an abbreviation) and be distinguishable; numbers may be part of a chosen name.",
-  "tax": "No corporate income tax. Instead, the B&O tax on gross receipts (2026: retailing 0.471%, wholesaling and manufacturing 0.484%, services 1.5%-2.1% by size), plus a 0.5% surcharge on Washington taxable income above $250 million.",
+  "tax": [
+    "No corporate income tax",
+    "Instead, the B&O tax on gross receipts (2026: retailing 0.471%, wholesaling and manufacturing 0.484%, services 1.5%-2.1% by size), plus a 0.5% surcharge on Washington taxable income above $250 million"
+  ],
   "sources": {
     "minimums": "https://app.leg.wa.gov/RCW/default.aspx?cite=23B.08.030",
     "number_names": "https://app.leg.wa.gov/RCW/default.aspx?cite=23.95.305",

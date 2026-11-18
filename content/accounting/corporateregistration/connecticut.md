@@ -13,9 +13,19 @@
   "security_registry": "Secretary of the State, UCC filings (Business.CT.gov)",
   "security_registry_url": "https://business.ct.gov/knowledge-base/articles/uniform-commercial-code-forms-and-fees",
   "legal_system": "Common law",
-  "minimums": "One or more directors and one or more incorporators; no residency or capital requirement; officers as the bylaws provide; a registered agent in the state; an annual report each year ($150).",
+  "minimums": [
+    "One or more directors and one or more incorporators",
+    "No residency or capital requirement",
+    "Officers as the bylaws provide",
+    "A registered agent in the state",
+    "An annual report each year ($150)"
+  ],
   "number_names": "No: the filer chooses the name, which must include \"corporation\", \"incorporated\", \"company\", \"limited\" or an abbreviation; numbers may be part of a chosen name.",
-  "tax": "Corporation business tax 7.5% flat (2026), $250 minimum; 10% surtax for companies with $100M+ gross income or combined groups, extended through income year 2028; capital-base alternative tax being phased out.",
+  "tax": [
+    "Corporation business tax 7.5% flat (2026), $250 minimum",
+    "10% surtax for companies with $100M+ gross income or combined groups, extended through income year 2028",
+    "Capital-base alternative tax being phased out"
+  ],
   "sources": {
     "minimums": "https://business.ct.gov/knowledge-base/articles/domestic-annual-report-forms-and-fees",
     "number_names": "https://law.justia.com/codes/connecticut/title-33/chapter-601/section-33-655/",

@@ -13,9 +13,18 @@
   "security_registry": "Secretary of State, Uniform Commercial Code",
   "security_registry_url": "https://sos.oregon.gov/business/ucc/pages/default.aspx",
   "legal_system": "Common law",
-  "minimums": "One or more directors and one or more incorporators; a president and a secretary (one person may hold both); no residency or capital requirement; a registered agent in Oregon; an annual report each year ($100).",
+  "minimums": [
+    "One or more directors and one or more incorporators",
+    "A president and a secretary (one person may hold both)",
+    "No residency or capital requirement",
+    "A registered agent in Oregon",
+    "An annual report each year ($100)"
+  ],
   "number_names": "No: the filer chooses the name, which must contain \"corporation\", \"incorporated\", \"company\" or \"limited\" (or an abbreviation); the statute expressly allows Arabic and Roman numerals in a chosen name.",
-  "tax": "2026 excise tax: 6.6% on the first $1 million, 7.6% above, minimum from $150 by Oregon sales; plus Corporate Activity Tax of $250 + 0.57% of Oregon commercial activity over $1 million.",
+  "tax": [
+    "2026 excise tax: 6.6% on the first $1 million, 7.6% above, minimum from $150 by Oregon sales",
+    "Plus Corporate Activity Tax of $250 + 0.57% of Oregon commercial activity over $1 million"
+  ],
   "sources": {
     "minimums": "https://www.oregonlegislature.gov/bills_laws/ors/ors060.html",
     "number_names": "https://www.oregonlegislature.gov/bills_laws/ors/ors060.html",

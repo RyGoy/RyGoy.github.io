@@ -13,9 +13,19 @@
   "security_registry": "Secretary of State, UCC filing",
   "security_registry_url": "https://sosenterprise.sd.gov/UCC/Default.aspx",
   "legal_system": "Common law",
-  "minimums": "One or more directors and one incorporator; officers per the bylaws, one keeping records; no residency or capital requirement; a registered agent in South Dakota; an annual report each year ($55 online).",
+  "minimums": [
+    "One or more directors and one incorporator",
+    "Officers per the bylaws, one keeping records",
+    "No residency or capital requirement",
+    "A registered agent in South Dakota",
+    "An annual report each year ($55 online)"
+  ],
   "number_names": "No: the filer chooses the name, which must contain \"corporation\", \"incorporated\", \"company\" or \"limited\" (or an abbreviation); numbers may be part of a chosen name.",
-  "tax": "No corporate income tax (2026); only banks and financial institutions pay a bank franchise tax. South Dakota also has no personal income tax.",
+  "tax": [
+    "No corporate income tax (2026)",
+    "Only banks and financial institutions pay a bank franchise tax",
+    "South Dakota also has no personal income tax"
+  ],
   "sources": {
     "minimums": "https://sdlegislature.gov/api/Statutes/47-1A-803.html",
     "number_names": "https://sdlegislature.gov/api/Statutes/47-1A-401.html",

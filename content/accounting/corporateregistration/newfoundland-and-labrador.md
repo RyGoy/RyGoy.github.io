@@ -13,9 +13,20 @@
   "security_registry": "Government Services, Personal Property Registry",
   "security_registry_url": "https://www.gov.nl.ca/gs/registries/personal-property/",
   "legal_system": "Common law",
-  "minimums": "One or more directors (three for a distributing corporation); no director residency rule since 2021; one or more incorporators; a registered office in the province; no minimum capital; an annual return each year ($100).",
+  "minimums": [
+    "One or more directors (three for a distributing corporation)",
+    "No director residency rule since 2021",
+    "One or more incorporators",
+    "A registered office in the province",
+    "No minimum capital",
+    "An annual return each year ($100)"
+  ],
   "number_names": "Yes: on request the registrar assigns a designating number as the corporation's name (s. 20); the exact form of the numbered name was not confirmed from an official source.",
-  "tax": "2026 tax year: general rate 15%; small business rate 2% (cut from 2.5% on January 1, 2026) on the first $500,000; federal rates (15% general, 9% small business) apply on top.",
+  "tax": [
+    "2026 tax year: general rate 15%",
+    "Small business rate 2% (cut from 2.5% on January 1, 2026) on the first $500,000",
+    "Federal rates (15% general, 9% small business) apply on top"
+  ],
   "sources": {
     "minimums": "https://www.assembly.nl.ca/legislation/sr/statutes/c36.htm",
     "number_names": "https://www.assembly.nl.ca/legislation/sr/statutes/c36.htm",

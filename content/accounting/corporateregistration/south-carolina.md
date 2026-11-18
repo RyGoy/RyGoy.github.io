@@ -13,9 +13,17 @@
   "security_registry": "Secretary of State, Uniform Commercial Code",
   "security_registry_url": "https://sos.sc.gov/online-filings/uniform-commercial-code",
   "legal_system": "Common law",
-  "minimums": "One or more directors and incorporators; the articles need a certificate signed by a South Carolina-licensed attorney; no residency or capital requirement; a registered agent in the state; an annual report filed with the SC1120 return.",
+  "minimums": [
+    "One or more directors and incorporators",
+    "The articles need a certificate signed by a South Carolina-licensed attorney",
+    "No residency or capital requirement",
+    "A registered agent in the state",
+    "An annual report filed with the SC1120 return"
+  ],
   "number_names": "No: the filer chooses the name, which must contain 'Corporation', 'Incorporated', 'Company' or 'Limited' (or an abbreviation) and be distinguishable; numbers may be part of a chosen name.",
-  "tax": "Tax year 2026: flat 5% corporate income tax, plus an annual license fee of 0.1% of capital and paid-in surplus plus $15 (minimum $25), paid with the annual report.",
+  "tax": [
+    "Tax year 2026: flat 5% corporate income tax, plus an annual license fee of 0.1% of capital and paid-in surplus plus $15 (minimum $25), paid with the annual report"
+  ],
   "sources": {
     "minimums": "https://www.scstatehouse.gov/code/t33c002.php",
     "number_names": "https://www.scstatehouse.gov/code/t33c004.php",

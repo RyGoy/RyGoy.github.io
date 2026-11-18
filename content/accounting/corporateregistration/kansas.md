@@ -13,9 +13,18 @@
   "security_registry": "Secretary of State, UCC filing information",
   "security_registry_url": "https://sos.ks.gov/general-services/ucc-filing-information.html",
   "legal_system": "Common law",
-  "minimums": "One or more directors and one or more incorporators. No residency or capital requirement. Officers as set by the bylaws, a registered agent in Kansas, and a biennial information report by April 15 ($90 online, $110 paper).",
+  "minimums": [
+    "One or more directors and one or more incorporators",
+    "No residency or capital requirement",
+    "Officers as set by the bylaws",
+    "A registered agent in Kansas",
+    "A biennial information report by April 15 ($90 online, $110 paper)"
+  ],
   "number_names": "No: the filer chooses the name, which must be distinguishable on Secretary of State records; numbers may be part of a chosen name.",
-  "tax": "Corporate income tax for 2026 is a 3.5% normal tax plus a 3% surtax on income over $50,000, so 6.5% at the top. No franchise tax.",
+  "tax": [
+    "Corporate income tax for 2026 is a 3.5% normal tax plus a 3% surtax on income over $50,000, so 6.5% at the top",
+    "No franchise tax"
+  ],
   "sources": {
     "minimums": "https://sos.ks.gov/forms/business_services/IFP.pdf",
     "number_names": "https://ksrevisor.gov/statutes/chapters/ch17/017_079_0018.html",

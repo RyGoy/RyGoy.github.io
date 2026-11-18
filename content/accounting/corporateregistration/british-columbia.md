@@ -13,9 +13,19 @@
   "security_registry": "BC Registries, Personal Property Registry",
   "security_registry_url": "https://www2.gov.bc.ca/gov/content/employment-business/business/managing-a-business/bc-registry-services-personal-property-registry",
   "legal_system": "Common law",
-  "minimums": "One or more directors (three for a public company), with no residency requirement; one or more incorporators; a registered office and records office in B.C.; no minimum capital; an annual report each year ($43.39).",
+  "minimums": [
+    "One or more directors (three for a public company), with no residency requirement",
+    "One or more incorporators",
+    "A registered office and records office in B.C.",
+    "No minimum capital",
+    "An annual report each year ($43.39)"
+  ],
   "number_names": "Yes: if no name is reserved, the name is the incorporation number followed by 'B.C. Ltd.' (or 'B.C. Unlimited Liability Company'), such as 1234567 B.C. Ltd.",
-  "tax": "2026 tax year: general rate 12%; small business rate 2% on the first $500,000; federal rates (15% general, 9% small business) apply on top.",
+  "tax": [
+    "2026 tax year: general rate 12%",
+    "Small business rate 2% on the first $500,000",
+    "Federal rates (15% general, 9% small business) apply on top"
+  ],
   "sources": {
     "minimums": "https://www.bclaws.gov.bc.ca/civix/document/id/complete/statreg/02057_06",
     "number_names": "https://www.bclaws.gov.bc.ca/civix/document/id/complete/statreg/02057_02",

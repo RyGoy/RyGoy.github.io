@@ -13,9 +13,18 @@
   "security_registry": "Secretary of State, UCC filings and searches (INBiz)",
   "security_registry_url": "https://inbiz.in.gov/business-records-and-services/ucc-filings-and-searches",
   "legal_system": "Common law",
-  "minimums": "One or more directors and one or more incorporators. No residency or capital requirement. Officers as set by the bylaws, a registered agent in Indiana, and a business entity report every two years (about $31-32 online, $50 paper).",
+  "minimums": [
+    "One or more directors and one or more incorporators",
+    "No residency or capital requirement",
+    "Officers as set by the bylaws",
+    "A registered agent in Indiana",
+    "A business entity report every two years (about $31-32 online, $50 paper)"
+  ],
   "number_names": "No: the filer chooses the name, which must include a word such as Corporation or Inc.; numbers may be part of a chosen name.",
-  "tax": "Corporate adjusted gross income tax 4.9% flat (2026); no separate franchise tax.",
+  "tax": [
+    "Corporate adjusted gross income tax 4.9% flat (2026)",
+    "No separate franchise tax"
+  ],
   "sources": {
     "minimums": "https://www.in.gov/sos/business/business-entity-reports",
     "number_names": "https://law.justia.com/codes/indiana/title-23/article-0-5/chapter-3/section-23-0-5-3-1/",

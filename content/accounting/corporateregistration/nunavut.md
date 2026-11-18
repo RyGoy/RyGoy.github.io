@@ -13,9 +13,19 @@
   "security_registry": "Legal Registries Division, Personal Property Registry",
   "security_registry_url": "https://www.nunavutlegalregistries.ca/ppr_index_en.shtml",
   "legal_system": "Common law",
-  "minimums": "One or more directors (three for a distributing corporation), with no residency requirement; one or more incorporators; a registered office in Nunavut; no minimum capital; an annual return each year.",
+  "minimums": [
+    "One or more directors (three for a distributing corporation), with no residency requirement",
+    "One or more incorporators",
+    "A registered office in Nunavut",
+    "No minimum capital",
+    "An annual return each year"
+  ],
   "number_names": "Yes: on request the Registrar assigns a designated number with any words it requires as the corporation's name (s. 11(1)); the exact form was not confirmed.",
-  "tax": "2026 tax year: general rate 12%; small business rate 3% on the first $500,000; federal rates (15% general, 9% small business) apply on top.",
+  "tax": [
+    "2026 tax year: general rate 12%",
+    "Small business rate 3% on the first $500,000",
+    "Federal rates (15% general, 9% small business) apply on top"
+  ],
   "sources": {
     "minimums": "https://www.nunavutlegislation.ca/en/file-download/download/public/617",
     "number_names": "https://www.nunavutlegislation.ca/en/file-download/download/public/617",

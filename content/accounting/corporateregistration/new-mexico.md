@@ -13,9 +13,17 @@
   "security_registry": "Secretary of State, UCC Filings",
   "security_registry_url": "https://www.sos.nm.gov/commercial-services/ucc-filings/",
   "legal_system": "Common law",
-  "minimums": "One or more directors; officers as set in the bylaws or by board resolution; no residency or capital requirement; a registered agent in New Mexico; a biennial corporate report ($25).",
+  "minimums": [
+    "One or more directors",
+    "Officers as set in the bylaws or by board resolution",
+    "No residency or capital requirement",
+    "A registered agent in New Mexico",
+    "A biennial corporate report ($25)"
+  ],
   "number_names": "No: the filer chooses the name, which must contain the separate word \"corporation\", \"company\", \"incorporated\" or \"limited\" (or an abbreviation) and be distinguishable; numbers may be part of a chosen name.",
-  "tax": "Flat 5.9% corporate income tax on all income for tax years from 2025, including 2026 (the 4.8% lower bracket was repealed), plus a $50 annual franchise tax on every corporation.",
+  "tax": [
+    "Flat 5.9% corporate income tax on all income for tax years from 2025, including 2026 (the 4.8% lower bracket was repealed), plus a $50 annual franchise tax on every corporation"
+  ],
   "sources": {
     "minimums": "https://www.srca.nm.gov/wp-content/uploads/attachments/12.3.2.pdf",
     "number_names": "https://law.justia.com/codes/new-mexico/chapter-53/article-11/section-53-11-7",

@@ -13,9 +13,19 @@
   "security_registry": "Teranet Manitoba, Personal Property Registry",
   "security_registry_url": "https://teranetmanitoba.ca/",
   "legal_system": "Common law",
-  "minimums": "One or more directors (three for a distributing corporation); at least 25% of directors must be Canadian residents (one, if three or fewer); one or more incorporators; a registered office in Manitoba; an annual return each year.",
+  "minimums": [
+    "One or more directors (three for a distributing corporation)",
+    "At least 25% of directors must be Canadian residents (one, if three or fewer)",
+    "One or more incorporators",
+    "A registered office in Manitoba",
+    "An annual return each year"
+  ],
   "number_names": "Yes: on request the Director assigns a designating number as the corporation's name (s. 11(2)); a legal ending is added, as in 1234567 Manitoba Ltd.",
-  "tax": "2026 tax year: general rate 12%; small business rate 0% on the first $500,000; federal rates (15% general, 9% small business) apply on top.",
+  "tax": [
+    "2026 tax year: general rate 12%",
+    "Small business rate 0% on the first $500,000",
+    "Federal rates (15% general, 9% small business) apply on top"
+  ],
   "sources": {
     "minimums": "https://web2.gov.mb.ca/laws/statutes/ccsm/c225.php",
     "number_names": "https://web2.gov.mb.ca/laws/statutes/ccsm/c225.php",

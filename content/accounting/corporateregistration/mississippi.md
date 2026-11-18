@@ -13,9 +13,17 @@
   "security_registry": "Secretary of State, Uniform Commercial Code",
   "security_registry_url": "https://www.sos.ms.gov/business-services-external-affairs/uniform-commercial-code",
   "legal_system": "Common law",
-  "minimums": "One or more directors and incorporators; no residency or capital requirement; a registered agent in Mississippi; an annual report filed online by April 15 ($25).",
+  "minimums": [
+    "One or more directors and incorporators",
+    "No residency or capital requirement",
+    "A registered agent in Mississippi",
+    "An annual report filed online by April 15 ($25)"
+  ],
   "number_names": "No: the filer chooses the name, which must carry a corporate designator such as 'Corporation' or 'Inc.' and be distinguishable on the register; numbers may be part of a chosen name.",
-  "tax": "Tax year 2026: graduated corporate income tax of 0% on the first $5,000, 4% on the next $5,000 and 5% above $10,000. The franchise tax is phasing out: $0.50 per $1,000 of capital for 2026, $0.25 for 2027.",
+  "tax": [
+    "Tax year 2026: graduated corporate income tax of 0% on the first $5,000, 4% on the next $5,000 and 5% above $10,000",
+    "The franchise tax is phasing out: $0.50 per $1,000 of capital for 2026, $0.25 for 2027"
+  ],
   "sources": {
     "minimums": "https://www.sos.ms.gov/node/101",
     "number_names": "https://law.justia.com/codes/mississippi/2020/title-79/chapter-4/article-4/section-79-4-4-01/",

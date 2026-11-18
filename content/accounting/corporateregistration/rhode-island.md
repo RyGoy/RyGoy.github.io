@@ -13,9 +13,17 @@
   "security_registry": "Department of State, UCC",
   "security_registry_url": "https://www.sos.ri.gov/divisions/business-services/ucc",
   "legal_system": "Common law",
-  "minimums": "One or more directors and one or more incorporators; no residency or capital requirement; a president, secretary and treasurer; a registered agent in the state; an annual report each year ($50, due February 1 to May 1).",
+  "minimums": [
+    "One or more directors and one or more incorporators",
+    "No residency or capital requirement",
+    "A president, secretary and treasurer",
+    "A registered agent in the state",
+    "An annual report each year ($50, due February 1 to May 1)"
+  ],
   "number_names": "No: the filer chooses the name, which must include \"corporation\", \"company\", \"incorporated\", \"limited\" or an abbreviation; numbers may be part of a chosen name.",
-  "tax": "Business corporation tax 7% flat of Rhode Island-apportioned net income (2026), with a $400 minimum.",
+  "tax": [
+    "Business corporation tax 7% flat of Rhode Island-apportioned net income (2026), with a $400 minimum"
+  ],
   "sources": {
     "minimums": "https://webserver.rilegislature.gov/Statutes/TITLE7/7-1.2/7-8/7-1.2-802.htm",
     "number_names": "https://webserver.rilegislature.gov/Statutes/TITLE7/7-1.2/7-4/7-1.2-401.htm",

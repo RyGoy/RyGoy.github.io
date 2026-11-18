@@ -13,9 +13,17 @@
   "security_registry": "Secretary of State, Uniform Commercial Code",
   "security_registry_url": "https://www.coloradosos.gov/pubs/UCC/uccHome.html",
   "legal_system": "Common law",
-  "minimums": "One or more directors and one or more incorporators (18+); officers as set in the bylaws or by the board; no residency or capital requirement; a registered agent in Colorado; an annual periodic report ($25).",
+  "minimums": [
+    "One or more directors and one or more incorporators (18+)",
+    "Officers as set in the bylaws or by the board",
+    "No residency or capital requirement",
+    "A registered agent in Colorado",
+    "An annual periodic report ($25)"
+  ],
   "number_names": "No: the filer chooses the name, which must contain \"corporation\", \"incorporated\", \"company\", \"limited\" or an abbreviation and be distinguishable on the Secretary of State's records; numbers may be part of a chosen name.",
-  "tax": "Flat 4.4% corporate income tax for tax year 2026, which can be cut temporarily (to as low as 4.25%) in years when a TABOR revenue surplus triggers the statutory reduction.",
+  "tax": [
+    "Flat 4.4% corporate income tax for tax year 2026, which can be cut temporarily (to as low as 4.25%) in years when a TABOR revenue surplus triggers the statutory reduction"
+  ],
   "sources": {
     "minimums": "https://coloradosos.gov/pubs/newsRoom/pressReleases/2024/PR20240617Fees.html",
     "number_names": "https://leg.colorado.gov/sites/default/files/images/olls/crs2024-title-07.pdf",

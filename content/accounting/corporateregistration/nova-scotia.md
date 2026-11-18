@@ -13,9 +13,19 @@
   "security_registry": "Personal Property Registry",
   "security_registry_url": "https://www.novascotia.ca/programs-and-services/personal-property-registry",
   "legal_system": "Common law",
-  "minimums": "Companies Act limited company or unlimited company (ULC): at least one director, no residency rule; one or more subscribers; a Nova Scotia registered office and recognized agent; yearly renewal ($118.35, limited company).",
+  "minimums": [
+    "A limited company or an unlimited company (ULC) under the Companies Act",
+    "At least one director, with no residency rule",
+    "One or more subscribers",
+    "A Nova Scotia registered office and recognized agent",
+    "Yearly renewal ($118.35, limited company)"
+  ],
   "number_names": "Yes: the Registry of Joint Stock Companies gives the next available number, in the form '1234567 Nova Scotia Limited'.",
-  "tax": "2026 tax year: general rate 14%; small business rate 1.5% on the first $700,000 (above the $500,000 federal limit); federal rates (15% general, 9% small business) apply on top.",
+  "tax": [
+    "2026 tax year: general rate 14%",
+    "Small business rate 1.5% on the first $700,000 (above the $500,000 federal limit)",
+    "Federal rates (15% general, 9% small business) apply on top"
+  ],
   "sources": {
     "minimums": "https://nslegislature.ca/sites/default/files/legc/statutes/companies.pdf",
     "number_names": "https://novascotia.ca/sns/nsos/bsb/pdf/guide-to-choosing-a-name.pdf",

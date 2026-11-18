@@ -13,9 +13,18 @@
   "security_registry": "Atlantic Canada On-Line, Personal Property Registry",
   "security_registry_url": "https://www.acol.ca/",
   "legal_system": "Common law",
-  "minimums": "One or more directors (three for a distributing corporation), no residency rule, but a PEI lawyer's certificate is needed if no director lives in PEI; one or more incorporators; a registered office in PEI; annual return.",
+  "minimums": [
+    "One or more directors (three for a distributing corporation), no residency rule, but a PEI lawyer's certificate is needed if no director lives in PEI",
+    "One or more incorporators",
+    "A registered office in PEI",
+    "Annual return"
+  ],
   "number_names": "Yes: on request the Director assigns a designating number as the corporation's name (s. 9(2)); the exact form of the numbered name was not confirmed from an official source.",
-  "tax": "2026 tax year: general rate 15% (cut from 16% on July 1, 2025); small business rate 1% on the first $600,000; federal rates (15% general, 9% small business) apply on top.",
+  "tax": [
+    "2026 tax year: general rate 15% (cut from 16% on July 1, 2025)",
+    "Small business rate 1% on the first $600,000",
+    "Federal rates (15% general, 9% small business) apply on top"
+  ],
   "sources": {
     "minimums": "https://www.princeedwardisland.ca/sites/default/files/legislation/b-06-01-business_corporations_act.pdf",
     "number_names": "https://www.princeedwardisland.ca/sites/default/files/legislation/b-06-01-business_corporations_act.pdf",

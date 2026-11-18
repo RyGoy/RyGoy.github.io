@@ -13,9 +13,17 @@
   "security_registry": "Florida Secured Transaction Registry",
   "security_registry_url": "https://www.floridaucc.com/",
   "legal_system": "Common law",
-  "minimums": "One or more directors and incorporators; no residency or capital requirement; a registered agent in Florida; an annual report each year by May 1 ($150; a $400 late fee).",
+  "minimums": [
+    "One or more directors and incorporators",
+    "No residency or capital requirement",
+    "A registered agent in Florida",
+    "An annual report each year by May 1 ($150; a $400 late fee)"
+  ],
   "number_names": "No: the filer chooses the name, which must contain 'Corporation', 'Company' or 'Incorporated' (or an abbreviation) and be distinguishable on the register; numbers may be part of a chosen name.",
-  "tax": "Tax year 2026: flat 5.5% corporate income tax on Florida net income, with the first $50,000 exempt; no franchise or net-worth tax.",
+  "tax": [
+    "Tax year 2026: flat 5.5% corporate income tax on Florida net income, with the first $50,000 exempt",
+    "No franchise or net-worth tax"
+  ],
   "sources": {
     "minimums": "https://dos.myflorida.com/sunbiz/manage-business/efile/annual-report",
     "number_names": "http://www.leg.state.fl.us/statutes/index.cfm?App_mode=Display_Statute&URL=0600-0699/0607/Sections/0607.0401.html",

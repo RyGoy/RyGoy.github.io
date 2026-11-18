@@ -13,9 +13,17 @@
   "security_registry": "Bureau of Conveyances (UCC filings)",
   "security_registry_url": "https://dlnr.hawaii.gov/boc/",
   "legal_system": "Common law",
-  "minimums": "One or more directors and one or more incorporators; officers as set in the bylaws (one person may hold several); no residency or capital requirement; a registered agent in Hawaii; an annual report each year ($15).",
+  "minimums": [
+    "One or more directors and one or more incorporators",
+    "Officers as set in the bylaws (one person may hold several)",
+    "No residency or capital requirement",
+    "A registered agent in Hawaii",
+    "An annual report each year ($15)"
+  ],
   "number_names": "No: the filer chooses the name, which must contain \"corporation\", \"incorporated\" or \"limited\" (or Corp., Inc., Ltd.) and must not be substantially identical to an existing name; numbers may be part of a chosen name.",
-  "tax": "Graduated corporate income tax for tax year 2026: 4.4% on the first $25,000 of taxable income, 5.4% from $25,000 to $100,000, and 6.4% above $100,000.",
+  "tax": [
+    "Graduated corporate income tax for tax year 2026: 4.4% on the first $25,000 of taxable income, 5.4% from $25,000 to $100,000, and 6.4% above $100,000"
+  ],
   "sources": {
     "minimums": "https://data.capitol.hawaii.gov/hrscurrent/Vol08_Ch0401-0429/HRS0414/HRS_0414-0193.htm",
     "number_names": "https://data.capitol.hawaii.gov/hrscurrent/Vol08_Ch0401-0429/HRS0414/HRS_0414-0051.htm",

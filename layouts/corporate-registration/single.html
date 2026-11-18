@@ -1,7 +1,7 @@
 {{ define "main" }}
 {{/* One jurisdiction's corporate registration page (content/accounting/corporateregistration/<slug>.md, JSON front
-     matter): where to incorporate, the statute, where to file security interests, four summaries with their sources, a
-     note if any, and what the act requires the articles of incorporation to say, in its own words. */}}
+     matter): where to incorporate, the statute, where to file security interests, four summaries with their sources
+     (`minimums` and `tax` are lists, shown as bullets when they hold more than one item), a note if any, and what the act requires the articles of incorporation to say, in its own words. */}}
 {{ $p := .Params }}
 {{ $section := .CurrentSection }}
 {{ range slice "country" "region" "flag" "office" "office_url" "act" "citation" "act_url" "security_registry" "legal_system" "minimums" "number_names" "tax" }}
@@ -22,7 +22,9 @@
     <dt>{{ $securityLabel }}</dt><dd>{{ with $p.security_registry_url }}<a href="{{ . }}" rel="noopener">{{ $p.security_registry }}</a>{{ else }}{{ $p.security_registry }}{{ end }}</dd>
     {{ range slice (slice "Legal system" "legal_system") (slice "Note" "note") (slice "Minimums" "minimums") (slice "Number names" "number_names") (slice "Tax" "tax") }}
     {{ $label := index . 0 }}{{ $field := index . 1 }}
-    {{ with index $p $field }}<dt>{{ $label }}</dt><dd>{{ . }}{{ with index $sources $field }} <a class="registry-source" href="{{ . }}" rel="noopener">source</a>{{ end }}</dd>{{ end }}
+    {{ with index $p $field }}<dt>{{ $label }}</dt><dd>
+      {{- if not (reflect.IsSlice .) }}{{ . }}{{ else if eq (len .) 1 }}{{ index . 0 }}{{ else }}<ul class="registry-list">{{ range . }}<li>{{ . }}</li>{{ end }}</ul>{{ end }}
+      {{- with index $sources $field }} <a class="registry-source" href="{{ . }}" rel="noopener">source</a>{{ end }}</dd>{{ end }}
     {{ end }}
   </dl>
   {{ with $p.articles }}
@@ -30,7 +32,7 @@
     <h2 id="articles">What the act requires: {{ .document }}</h2>
     {{ with .who_may_incorporate }}<p class="registry-clause"><span class="registry-section">{{ .section }}</span> {{ .text }}</p>{{ end }}
     <ul>{{ range .items }}<li class="registry-clause"><span class="registry-section">{{ .section }}</span> {{ .text }}</li>{{ end }}</ul>
-    {{ with .url }}<p><a href="{{ . }}" rel="noopener">Read the act</a></p>{{ end }}
+    {{ with .url }}<p class="registry-read"><a href="{{ . }}" rel="noopener">Read the act</a></p>{{ end }}
   </section>
   {{ end }}
   {{ with $section.Params.notice }}<aside class="guide-callout registry-notice">{{ . | markdownify }}</aside>{{ end }}

@@ -13,9 +13,19 @@
   "security_registry": "Service New Brunswick, Personal Property Registry",
   "security_registry_url": "https://www2.snb.ca/content/snb/en/services/services_renderer.1755.Personal_Property_Registration.html",
   "legal_system": "Common law",
-  "minimums": "One or more directors (at least three for a reporting issuer), with no residency requirement; one or more incorporators; a registered office in New Brunswick; no minimum capital; an annual return each year.",
+  "minimums": [
+    "One or more directors (at least three for a reporting issuer), with no residency requirement",
+    "One or more incorporators",
+    "A registered office in New Brunswick",
+    "No minimum capital",
+    "An annual return each year"
+  ],
   "number_names": "Yes: on request the Director assigns a designating number as the corporation's name (s. 9(2)); the usual form is a number plus a New Brunswick legal ending, but the exact wording was not confirmed officially.",
-  "tax": "2026 tax year: general rate 14%; small business rate 2.5% on the first $500,000 of active business income; federal rates (15% general, 9% small business) apply on top.",
+  "tax": [
+    "2026 tax year: general rate 14%",
+    "Small business rate 2.5% on the first $500,000 of active business income",
+    "Federal rates (15% general, 9% small business) apply on top"
+  ],
   "sources": {
     "minimums": "https://laws.gnb.ca/en/document/cs/B-9.1",
     "number_names": "https://laws.gnb.ca/en/document/cs/B-9.1",

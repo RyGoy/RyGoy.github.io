@@ -13,9 +13,18 @@
   "security_registry": "Secretary of State, Uniform Commercial Code",
   "security_registry_url": "https://sos.idaho.gov/ucc/",
   "legal_system": "Common law",
-  "minimums": "One or more directors and one or more incorporators; officers as set in the bylaws; no residency or capital requirement; a registered agent in Idaho; an annual report each year (no fee).",
+  "minimums": [
+    "One or more directors and one or more incorporators",
+    "Officers as set in the bylaws",
+    "No residency or capital requirement",
+    "A registered agent in Idaho",
+    "An annual report each year (no fee)"
+  ],
   "number_names": "No: the filer chooses the name, which must be distinguishable on the Secretary of State's records (words like \"Inc.\" alone do not distinguish); numbers may be part of a chosen name.",
-  "tax": "Flat 5.3% corporate income tax for tax year 2026 (cut from 5.695% starting in 2025), plus a $10 permanent building fund tax per corporation; filing the annual report is free.",
+  "tax": [
+    "Flat 5.3% corporate income tax for tax year 2026 (cut from 5.695% starting in 2025), plus a $10 permanent building fund tax per corporation",
+    "Filing the annual report is free"
+  ],
   "sources": {
     "minimums": "https://legislature.idaho.gov/statutesrules/idstat/Title30/T30CH29/SECT30-29-803/",
     "number_names": "https://legislature.idaho.gov/statutesrules/idstat/Title30/T30CH21/SECT30-21-301/",

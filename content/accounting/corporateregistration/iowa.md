@@ -13,9 +13,18 @@
   "security_registry": "Secretary of State, Uniform Commercial Code",
   "security_registry_url": "https://sos.iowa.gov/businesses/uniform-commercial-code-ucc",
   "legal_system": "Common law",
-  "minimums": "One or more directors and one or more incorporators. No residency or capital requirement. Officers as set by the bylaws, a registered agent in Iowa, and a biennial report in even-numbered years ($60 under statute).",
+  "minimums": [
+    "One or more directors and one or more incorporators",
+    "No residency or capital requirement",
+    "Officers as set by the bylaws",
+    "A registered agent in Iowa",
+    "A biennial report in even-numbered years ($60 under statute)"
+  ],
   "number_names": "No: the filer chooses the name, which must include Corporation, Inc., Company or Ltd. and be distinguishable; numbers may be part of a chosen name.",
-  "tax": "Corporate income tax for 2026 is 5.5% on the first $100,000 and 7.1% above that, unchanged from 2024-2025 by Order 2025-02; 2027 is also unchanged.",
+  "tax": [
+    "Corporate income tax for 2026 is 5.5% on the first $100,000 and 7.1% above that, unchanged from 2024-2025 by Order 2025-02",
+    "2027 is also unchanged"
+  ],
   "sources": {
     "minimums": "https://www.legis.iowa.gov/docs/code/490.1621.pdf",
     "number_names": "https://www.legis.iowa.gov/docs/code/490.401.pdf",

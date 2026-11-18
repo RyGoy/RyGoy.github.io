@@ -13,9 +13,19 @@
   "security_registry": "Department of Justice, Personal Property Registry",
   "security_registry_url": "https://www.justice.gov.nt.ca/en/personal-property-registry/",
   "legal_system": "Common law",
-  "minimums": "One or more directors (three for a distributing corporation), with no residency requirement; one or more incorporators; a registered office in the Northwest Territories; no minimum capital; an annual return each year.",
+  "minimums": [
+    "One or more directors (three for a distributing corporation), with no residency requirement",
+    "One or more incorporators",
+    "A registered office in the Northwest Territories",
+    "No minimum capital",
+    "An annual return each year"
+  ],
   "number_names": "Yes: on request the Registrar assigns a designated number with any words it requires as the corporation's name (s. 11(1)), e.g. a number followed by 'N.W.T. Ltd.'",
-  "tax": "2026 tax year: general rate 11.5%; small business rate 2% on the first $500,000; federal rates (15% general, 9% small business) apply on top.",
+  "tax": [
+    "2026 tax year: general rate 11.5%",
+    "Small business rate 2% on the first $500,000",
+    "Federal rates (15% general, 9% small business) apply on top"
+  ],
   "sources": {
     "minimums": "https://www.justice.gov.nt.ca/en/files/legislation/business-corporations/business-corporations.a.pdf",
     "number_names": "https://www.justice.gov.nt.ca/en/files/legislation/business-corporations/business-corporations.a.pdf",

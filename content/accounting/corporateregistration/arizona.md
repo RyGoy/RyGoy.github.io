@@ -13,9 +13,17 @@
   "security_registry": "Secretary of State, UCC",
   "security_registry_url": "https://azsos.gov/business/ucc",
   "legal_system": "Common law",
-  "minimums": "One or more directors and one or more incorporators; officers as set in the bylaws (one person may hold several); no residency or capital requirement; a statutory agent in Arizona; an annual report each year ($45).",
+  "minimums": [
+    "One or more directors and one or more incorporators",
+    "Officers as set in the bylaws (one person may hold several)",
+    "No residency or capital requirement",
+    "A statutory agent in Arizona",
+    "An annual report each year ($45)"
+  ],
   "number_names": "No: the filer chooses the name, which must contain a word such as \"corporation\", \"company\", \"incorporated\" or \"limited\" (or an abbreviation) and be distinguishable; numbers may be part of a chosen name.",
-  "tax": "Flat 4.9% corporate income tax on Arizona taxable income for tax year 2026 (the rate since 2017), with a $50 minimum tax.",
+  "tax": [
+    "Flat 4.9% corporate income tax on Arizona taxable income for tax year 2026 (the rate since 2017), with a $50 minimum tax"
+  ],
   "sources": {
     "minimums": "https://www.azleg.gov/ars/10/00803.htm",
     "number_names": "https://www.azleg.gov/ars/10/00401.htm",

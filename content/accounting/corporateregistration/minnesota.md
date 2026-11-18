@@ -13,9 +13,17 @@
   "security_registry": "Secretary of State, UCC forms and fees",
   "security_registry_url": "https://www.sos.mn.gov/business-liens/ucc-tax-cns-forms-fees/",
   "legal_system": "Common law",
-  "minimums": "One or more directors and one or more incorporators. No residency or capital requirement. Needs a chief executive officer and a chief financial officer, a Minnesota registered office address, and a free annual renewal by December 31.",
+  "minimums": [
+    "One or more directors and one or more incorporators",
+    "No residency or capital requirement",
+    "A chief executive officer and a chief financial officer",
+    "A registered office address in Minnesota",
+    "A free annual renewal by December 31"
+  ],
   "number_names": "No: the filer chooses the name, which must include Corporation, Incorporated or Limited (or Company) in English letters and be distinguishable; nothing provides for assigned numbered names.",
-  "tax": "Corporate franchise (income) tax 9.8% flat for 2026, among the highest in the US, plus a graduated minimum fee based on Minnesota property, payroll and sales.",
+  "tax": [
+    "Corporate franchise (income) tax 9.8% flat for 2026, among the highest in the US, plus a graduated minimum fee based on Minnesota property, payroll and sales"
+  ],
   "sources": {
     "minimums": "https://www.revisor.mn.gov/statutes/cite/302A.203",
     "number_names": "https://www.revisor.mn.gov/statutes/cite/302A.115",

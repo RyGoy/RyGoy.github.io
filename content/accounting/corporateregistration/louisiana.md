@@ -13,9 +13,16 @@
   "security_registry": "Secretary of State, File Financing Statements (filed with any parish clerk)",
   "security_registry_url": "https://www.sos.la.gov/business-services/file-financing-statements",
   "legal_system": "Mixed: civil law (the Louisiana Civil Code) for private law, with common-law influence; business corporation law is statutory and modeled on the Model Business Corporation Act.",
-  "minimums": "One or more directors and incorporators; no residency or capital requirement; a registered office and at least one registered agent in Louisiana; an annual report each year ($35 from October 1, 2026).",
+  "minimums": [
+    "One or more directors and incorporators",
+    "No residency or capital requirement",
+    "A registered office and at least one registered agent in Louisiana",
+    "An annual report each year ($35 from October 1, 2026)"
+  ],
   "number_names": "No: the filer chooses the name, which must carry a corporate ending, be distinguishable and use English letters or characters; numbers may be part of a chosen name.",
-  "tax": "Tax year 2026: flat 5.5% corporate income tax (since 2025), and the corporation franchise tax is repealed for periods beginning on or after January 1, 2026.",
+  "tax": [
+    "Tax year 2026: flat 5.5% corporate income tax (since 2025), and the corporation franchise tax is repealed for periods beginning on or after January 1, 2026"
+  ],
   "sources": {
     "minimums": "https://static.sos.la.gov/shared/fee_changes_2026.pdf",
     "number_names": "https://www.legis.la.gov/legis/Law.aspx?d=920226",

@@ -13,9 +13,18 @@
   "security_registry": "Division of Corporations and Commercial Code, Uniform Commercial Code",
   "security_registry_url": "https://commerce.utah.gov/corporations/uniform-commercial-code/",
   "legal_system": "Common law",
-  "minimums": "Three or more directors, or no fewer than the shareholders while under three (one before shares issue); one or more incorporators; officers per bylaws; no residency or capital rule; registered agent; annual renewal ($18).",
+  "minimums": [
+    "Three or more directors, or no fewer than the shareholders while under three (one before shares issue)",
+    "One or more incorporators",
+    "Officers per bylaws",
+    "No residency or capital rule",
+    "Registered agent",
+    "Annual renewal ($18)"
+  ],
   "number_names": "No: the filer chooses the name, which must contain \"corporation\", \"incorporated\", \"company\" or an abbreviation; a name counts as distinguishable if it differs by a word, letter or numeral.",
-  "tax": "Flat 4.45% corporate franchise and income tax for tax years beginning in 2026 (down from 4.5% in 2025), with a $100 minimum tax.",
+  "tax": [
+    "Flat 4.45% corporate franchise and income tax for tax years beginning in 2026 (down from 4.5% in 2025), with a $100 minimum tax"
+  ],
   "sources": {
     "minimums": "https://le.utah.gov/xcode/Title16/Chapter10A/16-10a-S803.html",
     "number_names": "https://le.utah.gov/xcode/Title16/Chapter1A/C16-1a-S302_2026050620261001.html",

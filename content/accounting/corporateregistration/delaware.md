@@ -13,9 +13,18 @@
   "security_registry": "Division of Corporations, Uniform Commercial Code",
   "security_registry_url": "https://corp.delaware.gov/ucc/",
   "legal_system": "Common law",
-  "minimums": "One or more directors and one or more incorporators; no residency or capital requirement; a registered agent in Delaware; an annual franchise tax report due March 1 ($50 filing fee plus franchise tax).",
+  "minimums": [
+    "One or more directors and one or more incorporators",
+    "No residency or capital requirement",
+    "A registered agent in Delaware",
+    "An annual franchise tax report due March 1 ($50 filing fee plus franchise tax)"
+  ],
   "number_names": "No: the filer chooses the name, which must include a word such as 'Corporation', 'Company', 'Incorporated' or 'Limited' (or an abbreviation); numbers may be part of a chosen name.",
-  "tax": "Tax year 2026: 8.7% income tax only on corporations doing business in Delaware; those merely keeping a registered office there are exempt. All pay franchise tax: $175 minimum (authorized shares) or $400 (assumed par), up to $200,000.",
+  "tax": [
+    "Tax year 2026: 8.7% income tax only on corporations doing business in Delaware",
+    "Those merely keeping a registered office there are exempt",
+    "All pay franchise tax: $175 minimum (authorized shares) or $400 (assumed par), up to $200,000"
+  ],
   "sources": {
     "minimums": "https://corp.delaware.gov/paytaxes/",
     "number_names": "https://delcode.delaware.gov/title8/c001/sc01/index.html",

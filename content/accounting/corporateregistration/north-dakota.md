@@ -13,9 +13,18 @@
   "security_registry": "Secretary of State, Lien Filings / UCC",
   "security_registry_url": "https://www.sos.nd.gov/business/lien-filings-ucc",
   "legal_system": "Common law",
-  "minimums": "One or more directors and one or more incorporators (adults); a president, secretary and treasurer (one person may hold all); no residency or capital requirement; a registered agent; an annual report each year ($25).",
+  "minimums": [
+    "One or more directors and one or more incorporators (adults)",
+    "A president, secretary and treasurer (one person may hold all)",
+    "No residency or capital requirement",
+    "A registered agent",
+    "An annual report each year ($25)"
+  ],
   "number_names": "No: the filer chooses the name, which must contain \"company\", \"corporation\", \"incorporated\" or \"limited\" (or an abbreviation), use ASCII characters and be distinguishable; numbers may be part of a chosen name.",
-  "tax": "Corporate income tax in brackets for 2026: 1.41% up to $25,000, 3.55% to $50,000 and 4.31% top rate above that (unchanged since 2015); a 3.5% surtax applies to water's-edge filers.",
+  "tax": [
+    "Corporate income tax in brackets for 2026: 1.41% up to $25,000, 3.55% to $50,000 and 4.31% top rate above that (unchanged since 2015)",
+    "A 3.5% surtax applies to water's-edge filers"
+  ],
   "sources": {
     "minimums": "https://ndlegis.gov/cencode/t10c19-1.pdf",
     "number_names": "https://ndlegis.gov/cencode/t10c19-1.pdf",

@@ -18,11 +18,13 @@ If a link no longer works, this is what it was there to help you do, and how to 
 type = "corporate-registration"
 [cascade]
 type = "corporate-registration"
-# The countries in order, each with the label of its security-interest registry line and its regions in order.
+# The countries in order, each with the label of its security-interest registry line, an optional note shown under its
+# heading, and its regions in order.
 # Each jurisdiction's page names its country and region; layouts/corporate-registration/list.html lists them in this order.
 [[countries]]
 name = "Canada"
 security_label = "PPSA registry"
+note = "A corporation can be made federally or in a province or territory. A federal corporation registers in each province where it does business, files its security interests there and pays that province's tax. Federal corporate tax applies on top of every provincial and territorial rate. The federal card's flag is the Canadian Red Ensign of 1921."
 regions = ["Federal", "Atlantic Canada", "Central Canada", "Western Canada", "The North"]
 [[countries]]
 name = "United States"
@@ -30,4 +32,8 @@ security_label = "UCC-1 filing"
 regions = ["Northeast", "Midwest", "South", "West"]
 +++
 
-Each province, territory and state keeps its own registry of corporations and its own statute saying how one is made, and in Canada a corporation can also be made federally, under the Canada Business Corporations Act. Choose one below. Its page links to the office that registers corporations, to that statute on an official site, and to the registry where security interests are filed, and quotes what the statute requires the articles of incorporation to say. It also sums up four things about a business corporation made there: the legal system it lives under, the least it takes to form and keep one, whether the registry will give it a number in place of a name, and how it is taxed. In Canada, federal corporate tax applies on top of the provincial or territorial rates shown, and a federal corporation registers security interests, and pays provincial tax, in the provinces where it does business. The federal card's flag is the Canadian Red Ensign of 1921.
+Each Canadian province and territory, Canada itself, and each US state has its own registry of corporations and its own statute saying how one is made. Choose a jurisdiction to see:
+
+- where to register a corporation, and where to file security interests;
+- the statute, and what it requires the articles of incorporation to say, in its own words;
+- a short summary of its legal system, the least it takes to form and keep a corporation, whether it gives number names, and how it taxes a corporation.

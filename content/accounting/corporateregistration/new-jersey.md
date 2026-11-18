@@ -13,9 +13,19 @@
   "security_registry": "Division of Revenue and Enterprise Services, UCC filings",
   "security_registry_url": "https://www.nj.gov/treasury/revenue/fileucc.shtml",
   "legal_system": "Common law",
-  "minimums": "One or more directors and one or more incorporators; no residency or capital requirement; a president, secretary and treasurer (one person may hold several); a registered agent and office in the state; an annual report each year ($75).",
+  "minimums": [
+    "One or more directors and one or more incorporators",
+    "No residency or capital requirement",
+    "A president, secretary and treasurer (one person may hold several)",
+    "A registered agent and office in the state",
+    "An annual report each year ($75)"
+  ],
   "number_names": "No: the filer chooses the name, which must carry a corporate designator such as \"Corporation\", \"Incorporated\", \"Company\" or an abbreviation; numbers may be part of a chosen name.",
-  "tax": "Corporation business tax (2026): 9% if entire net income exceeds $100,000 (7.5% if $50,001-$100,000; 6.5% if $50,000 or less); 2.5% corporate transit fee on income over $10 million through 2028; $500-$2,000 minimum.",
+  "tax": [
+    "Corporation business tax (2026): 9% if entire net income exceeds $100,000 (7.5% if $50,001-$100,000; 6.5% if $50,000 or less)",
+    "2.5% corporate transit fee on income over $10 million through 2028",
+    "$500-$2,000 minimum"
+  ],
   "sources": {
     "minimums": "https://www.nj.gov/treasury/revenue/fees.shtml",
     "number_names": "https://law.justia.com/codes/new-jersey/title-14a/section-14a-2-2/",
