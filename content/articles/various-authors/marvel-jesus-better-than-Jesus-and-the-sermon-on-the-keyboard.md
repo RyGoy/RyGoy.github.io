@@ -1,5 +1,5 @@
 +++
-author = "Ryan"
+author = "Ryan Wallace"
 title = "Marvel Jesus, Better Than Jesus, & The Sermon on The Keyboard"
 description = "What does accounting have to do with the Kingdom of God? An article on stewardship, debt, and putting reconciliation and truth first."
 date = "2024-11-23"
