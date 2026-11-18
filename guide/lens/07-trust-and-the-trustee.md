@@ -17,15 +17,15 @@ A [**trust**](../terms/trust.md) relationship involves three parties (“[There 
 
 - the [**grantor**](../terms/grantor.md), who holds all the rights in the bundle of rights, splits them into legal and equitable interests, and gives these to the other parties. After that, "[The Grantor's job is DONE.](https://thetenderforlaw.com/vol_i/462493170453287_480677688634835/#entry-483921388310465)"
 - the [**trustee**](../terms/trustee.md), who holds the LEGAL title ([step 4](04-title-is-all-that-is-sold.md)) and must manage it by the terms set out by the grantor. The trustee is the OWNER with a duty, not a benefit: "[it is FIDUCIARY OWNERSHIP. You have duties and obligations](https://thetenderforlaw.com/vol_iv/462493170453287_573236309378972/#entry-576416412394295)".
-- the [**beneficiary**](../terms/beneficiary.md), who has the benefit. These rights are EQUITABLE rights.
+- the [**beneficiary**](../terms/beneficiary.md), who has the benefit: the EQUITABLE rights.
+
+A trust splits title: the trustee, who holds the legal title, must see that the beneficiary receives the intended benefit.
 
 A corporation behaves exactly this way: its founders are the grantors (“[you and the Governmaent are acting as GRANTORS](https://thetenderforlaw.com/vol_i/462493170453287_485784274790843/#entry-490499764319294)”), its directors are the trustees (“[A corporation has DIRECTORS with titles (TRUSTEES)](https://thetenderforlaw.com/vol_i/462493170453287_485784274790843/#entry-490499764319294)”), and its shareholders, the equity holders of [step 3](03-what-is-had-and-what-is-owed.md), are the beneficiaries (“[SHAREHOLDERS who are the BENEFICIARIES](https://thetenderforlaw.com/vol_i/462493170453287_485784274790843/#entry-490499764319294)”).
 
 Anyone acting for another is an [**agent**](../terms/agent.md), and "[AN AGENT IS ALWAYS A TRUSTEE!](https://thetenderforlaw.com/vol_viii/462493170453287_756770651025536/#entry-759182050784396)", with fiduciary duties that are punishable if the trust is breached.
 
-Through this lens, we can see how the post office acts as the trustee for a trust you establish when you've paid the postage and delivered it to them for someone else's benefit.
-
-A trust splits title: the legal title holder is then obligated to ensure the equity holder receives the intended benefit(s).
+Through this lens, even posting a letter sets up a trust: you pay the postage and hand the letter to the post office for someone else's benefit, and the post office holds it as trustee.
 
 ## In the lemonade stand
 
