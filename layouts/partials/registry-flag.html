@@ -1,0 +1,6 @@
+{{- /* A corporate registration page's flag: static/images/flags/<flag>.webp (docs/architecture/library.md says where they
+       come from). A missing file stops the build. */ -}}
+{{- $file := printf "static/images/flags/%s.webp" .Params.flag -}}
+{{- if not (and .Params.flag (fileExists $file)) }}{{ errorf "%s: no flag at %s" .File.Path $file }}{{ end -}}
+{{- $size := imageConfig $file -}}
+<img class="registry-flag" src="{{ strings.TrimPrefix "static" $file }}" width="48" height="{{ div (mul 48 $size.Height) $size.Width }}" alt="" loading="lazy">

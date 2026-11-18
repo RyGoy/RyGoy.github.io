@@ -1,0 +1,26 @@
+{{ define "main" }}
+{{/* Corporate Registration (content/accounting/corporateregistration/_index.md): a small card for each jurisdiction,
+     linking to its page (single.html), under its country and region in the order the section's `countries` gives. */}}
+<header class="page-heading">{{ partial "eyebrow.html" . }}<h1>{{ .Title }}</h1>{{ with .Content }}<div class="prose">{{ . }}</div>{{ end }}</header>
+{{ with .Params.notice }}<aside class="guide-callout registry-notice">{{ . | markdownify }}</aside>{{ end }}
+{{ $pages := .Pages.ByWeight }}
+{{ $listed := 0 }}
+{{ range .Params.countries }}
+{{ $country := .name }}
+<section class="registry-country" aria-labelledby="{{ urlize $country }}">
+  <div class="section-heading"><h2 id="{{ urlize $country }}">{{ $country }}</h2><span class="rule" aria-hidden="true"></span></div>
+  {{ range .regions }}
+  {{ $region := . }}
+  <h3 class="registry-region">{{ $region }}</h3>
+  <ul class="registry-grid">
+    {{ range where (where $pages "Params.country" $country) "Params.region" $region }}
+    {{ $listed = add $listed 1 }}
+    <li class="article-card is-link registry-card"><h4><a href="{{ .RelPermalink }}">{{ partial "registry-flag.html" . }}<span>{{ .Title }}</span></a></h4></li>
+    {{ end }}
+  </ul>
+  {{ end }}
+</section>
+{{ end }}
+{{/* A page whose country or region isn't in the list above would be left out without a word: stop the build instead. */}}
+{{ if ne $listed (len $pages) }}{{ errorf "corporate registration: %d of %d jurisdiction pages are listed; check each page's country and region against countries in _index.md" $listed (len $pages) }}{{ end }}
+{{ end }}
