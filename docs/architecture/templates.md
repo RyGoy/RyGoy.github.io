@@ -36,7 +36,7 @@ A few pages have their own layouts: the dictionary, concordance, search, flash c
 
 ## Rules that bite
 
-- **Templates must work on Hugo 0.114**, the deploy's version. `strings.TrimSpace` is too new, for one: use `trim`.
+- **Templates must work on Hugo 0.152.2**, the deploy's version.
 - **Don't name an attribute `data-poster`.** Go's templates treat it as a web address and encode it, so the poster filter uses `data-author`.
 - **A wrong reference stops the build on purpose.** A missing book cover, an unknown carousel path or a bad flash card deck all do, so mistakes don't reach the site.
 

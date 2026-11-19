@@ -33,7 +33,7 @@ jobs:
     outputs:
       artifact_id: ${{ steps.artifact.outputs.artifact_id }}
     env:
-      HUGO_VERSION: 0.114.0
+      HUGO_VERSION: 0.152.2
     steps:
       - name: Install Hugo CLI
         run: |

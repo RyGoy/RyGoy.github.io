@@ -1,7 +1,7 @@
 {{- /* A lesson's text (guide/lens/), written for Obsidian, as the site shows it. Context: the page.
        - Its "# Title" line is dropped: the page heading already shows the title.
        - Obsidian's callouts become boxes: "> [!warning] Draft" a note (.callout), and a folding one,
-         "> [!question]- The question", a <details> whose answer opens on click. (Hugo 0.114 has no blockquote hook.) */ -}}
+         "> [!question]- The question", a <details> whose answer opens on click. (Written when the deploy's Hugo 0.114 had no blockquote hook.) */ -}}
 {{- $html := string .Content -}}
 {{- $html = replaceRE `^\s*<h2 id="[^"]*" class="h1-size">.*?</h2>` "" $html 1 -}}
 {{- /* Its first line, "[The accounting lens](_index.md) · step N of 8 · … Next: […]", is for Obsidian: the page
