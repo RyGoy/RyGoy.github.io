@@ -10,7 +10,7 @@ flowchart TD
   data[data/: dictionary, decks, anthology, archives, photos] --> hugo
   layouts[layouts/: templates] --> hugo
   static[static/: CSS, JS, images, PDFs, audio, video] --> hugo
-  hugo[Hugo 0.114 in GitHub Actions] --> extras[Pagefind index, concordance, IndexNow]
+  hugo[Hugo 0.152.2 in GitHub Actions] --> extras[Pagefind index, concordance, IndexNow]
   extras --> pages[GitHub Pages: thetenderforlaw.com]
   pages --> browser([Visitor's browser])
   browser -. sign-in, progress .-> bot[Telegram bot: Cloudflare or own machine]
@@ -37,6 +37,6 @@ flowchart TD
 ## Ground rules
 
 - **The record is never edited.** Exported posts and comments render as they were. Anything the site adds (archived links, recovered pictures, printout copies, names from the printout) is labelled as added by this site.
-- **Hugo 0.114 is the version that counts:** the deploy pins it, so templates must work there even if a newer Hugo runs locally.
+- **Hugo 0.152.2 is the version that counts:** the deploy pins it, so templates must work there even if a newer Hugo runs locally.
 - **No `public/` is kept:** it's rebuilt for every deploy. A full build writes about 256,000 files.
 - **Outside services are listed** in [Hosting and outside services](../hosting.md), and the bot's logic stays free of any one host.
