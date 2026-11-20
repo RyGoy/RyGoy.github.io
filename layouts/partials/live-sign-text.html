@@ -1,0 +1,32 @@
+{{- /* A neon sign's text (partials/body.html, [params.live_sign] in config.toml) with its time, if it has one ("20:00"),
+       shown as an old digital clock: seven-segment digits in a dark window, the unlit segments faintly there, and a
+       blinking colon (archive.css, .led-clock). Context: the text. */ -}}
+{{- $text := . -}}
+{{- with index (findRE `\d{1,2}:\d{2}` $text 1) 0 -}}
+  {{- $time := . -}}
+  {{- $parts := split $text $time -}}
+  {{- /* Segments a (top) to g (middle), as bars in a 12 × 20 cell. */ -}}
+  {{- $bars := dict
+        "a" (slice 2.6 0.6 6.8 1.7) "b" (slice 9.7 2.5 1.7 6.6) "c" (slice 9.7 10.9 1.7 6.6) "d" (slice 2.6 17.7 6.8 1.7)
+        "e" (slice 0.6 10.9 1.7 6.6) "f" (slice 0.6 2.5 1.7 6.6) "g" (slice 2.6 9.15 6.8 1.7) -}}
+  {{- $lit := dict "0" "abcdef" "1" "bc" "2" "abged" "3" "abgcd" "4" "fgbc" "5" "afgcd" "6" "afgedc" "7" "abc" "8" "abcdefg" "9" "abcdfg" -}}
+  {{- index $parts 0 -}}
+  <span class="led-clock" role="img" aria-label="{{ $time }}">
+    {{- range split $time "" -}}
+      {{- if eq . ":" -}}
+        <svg class="led-colon" viewBox="0 0 4 20" aria-hidden="true"><rect x="1.2" y="5.6" width="1.7" height="1.7"/><rect x="1.2" y="12.7" width="1.7" height="1.7"/></svg>
+      {{- else -}}
+        {{- $on := index $lit . -}}
+        <svg class="led-digit" viewBox="0 0 12 20" aria-hidden="true"><g transform="skewX(-6) translate(1 0)">
+          {{- range $seg := slice "a" "b" "c" "d" "e" "f" "g" -}}
+            {{- $r := index $bars $seg -}}
+            <rect{{ if in $on $seg }} class="on"{{ end }} x="{{ index $r 0 }}" y="{{ index $r 1 }}" width="{{ index $r 2 }}" height="{{ index $r 3 }}" rx=".6"/>
+          {{- end -}}
+        </g></svg>
+      {{- end -}}
+    {{- end -}}
+  </span>
+  {{- index $parts 1 -}}
+{{- else -}}
+  {{- $text -}}
+{{- end -}}
