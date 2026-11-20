@@ -7,14 +7,6 @@ tags = ["TRUSTS"]
 +++
 *First posted to THE TENDER FOR LAW on 2013-02-24. [Read the original post and its comments in Volume 1](/vol_i/462493170453287_484380801597857/).*
 
-<div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="/img/fraud.jpg" class="d-block w-100" alt="...">
-    </div>
-  </div>
-</div>
-
 ---
 
 ORIGINALLY PUBLISHED on 23 February 2013 · in THE TENDER FOR LAW:ONE PEOPLE’S PUBLIC FRAUD (OPPF) Part ONE (c) 2013 ROGUESUPPORT INC. under a Creative Commons Attribution-NonCommercial-NoDerivs 3.0 Unported License.

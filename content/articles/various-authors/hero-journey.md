@@ -5,11 +5,9 @@ date = "2022-06-01"
 description = "Consumer or Producer"
 tags = ["NARRATIVE", "ACCOUNTING"]
 categories = ["RESPONSIBILITY", "COMPUTER SCIENCE"]
+cc_license = true
 weight = "99"
 +++
-Shared under a Creative Commons Attribution-NonCommercial-NoDerivs 3.0 Unported License.
-
-
 ![The hero's journey drawn as a circle: the call to adventure leads across the threshold from the known into the unknown, through helpers, trials, the abyss, transformation and atonement, and back across a second threshold to the return](/images/articles/hero-journey.svg)
 
 ---
@@ -69,16 +67,6 @@ In my efforts to take control of my story (Accounting Narrtive) I found the foll
 "God is the ONE who does the ACCOUNTING" -Ryan Wallace
 
 {{< youtube _PB-KAgQ1jE >}}
-
----
-
-<div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="/img/the-flood.jpg" class="d-block w-100" alt="...">
-    </div>
-  </div>
-</div>
 
 ---
 {{< youtube 0VnFIbGO1Ok >}}

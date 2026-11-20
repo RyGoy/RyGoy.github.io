@@ -5,9 +5,8 @@ date = "2013-05-30"
 description = "...AND NAZIS!"
 tags = ["TRUSTS", "SURETY"]
 categories = ["COURT", "FREEDUMB"]
+cc_license = true
 +++
-Shared under a Creative Commons Attribution-NonCommercial-NoDerivs 3.0 Unported License.
-
 *First posted to THE TENDER FOR LAW on 2013-05-30. [Read the original post and its comments in Volume 2](/vol_ii/462493170453287_518715888164348/).*
 
 ![Carl Sagan quote over a broken wooden pier in fog: "Are we willing to tolerate ignorance and complacency in matters that affect the entire human family?"](/images/articles/all-the-shit-that-dean-kory-is-doing-wrong.jpg)

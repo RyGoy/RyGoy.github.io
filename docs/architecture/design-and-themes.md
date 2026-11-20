@@ -5,7 +5,7 @@ The site's look: a dark "occult codex", in three colour themes, with animations 
 ## The stylesheet and colours
 
 - **One stylesheet:** `static/css/archive.css`, loaded from `partials/head.html`. The font is Cormorant Garamond (`static/fonts/`).
-- **Three themes:** Sepia (the default), Light and Dark, switched in the sidebar and kept in the browser (`ttfl-theme`). An inline script sets `data-theme` on the page before it paints.
+- **Three themes:** Sepia (the default), Light and Dark, switched in the sidebar and kept in the browser (`ttfl-theme`). Until a visitor picks one, a device set to light mode gets Light. An inline script sets `data-theme` on the page before it paints.
 - **Every colour is a variable.** `scripts/theme_colours.py` works out the Light and Dark values from the Sepia ones, and rewrites that block of the stylesheet. Run it after adding colours.
 
 ## On the home page

@@ -4,21 +4,9 @@ title = "Trustees In Commerce: A Way of Life"
 date = "2014-05-05"
 description = "Title & Trust"
 tags = ["TRUSTS", "PROPERTY", "AGENCY"]
+cc_license = true
 weight = "2"
 +++
-Shared under a Creative Commons Attribution-NonCommercial-NoDerivs 3.0 Unported License.
-
-<div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="/img/everything-is-a-trust.JPG" class="d-block w-100" alt="...">
-    </div>
-  </div>
-</div>
-
----
-
-
 Now, take all that and place a simple barrier between the "sovereign" or "secured party" and commerce. The barrier is called an
 Express Trust under the Common Law. Throw out the fragile sovereign crown andgive the man a bulletproof trustee helmet. Now, instead of him owning a plot of land with a castle, havinga royal army and a royal staff of workers, stockpiling his own weapons, having Federal Reserve Notes orminted coins in his personal possession, and understanding all applicable bodies of law to protecthimself— he now does these things on behalf of a trust. Problem solved.
  

@@ -4,9 +4,8 @@ title = "Irish Rocco"
 date = "2020-04-16"
 description = "There are no good lawyers"
 tags = ["TRUSTS"]
+cc_license = true
 +++
-Shared under a Creative Commons Attribution-NonCommercial-NoDerivs 3.0 Unported License.
-
 ![A man's face faded into a sunset sky over a city skyline at dusk, beside a glass office tower with its windows lit](/images/articles/irish-rocco.jpg)
 
 # IRISH ROCCO!

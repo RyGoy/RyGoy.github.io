@@ -5,6 +5,7 @@ date = "2017-09-23"
 description = "----"
 weight = "5"
 tags = ["ACCOUNTING", "NARRATIVE"]
+cc_license = true
 # The emblem beside the title: the cobra in its own colours (static/images/emblems/cobra-colour.webp).
 emblem = "cobra"
 
@@ -16,12 +17,7 @@ title = "Trained Well My Young Apprentice"
 width = 640
 height = 272
 +++
-Shared under a Creative Commons Attribution-NonCommercial-NoDerivs 3.0 Unported License.
-
-
 By: Chris Schulte
-CC BY-ND-NC 3.0 UNPORTED LICENSE
-
 How to be a plumber, appointed by Ricky South
 
 Step one is to actually know what the fuck you are doing. There is schooling involved, trade hours, etc. [someone remind me to get back to the schooling part later please]

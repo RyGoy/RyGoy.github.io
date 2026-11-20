@@ -5,9 +5,8 @@ date = "2015-12-29"
 description = "Tara Duncan on bullying: a practice as old as recorded history, from the schoolyards of her childhood to today."
 tags = ["AGENCY", "NARRATIVE"]
 categories = ["RESPONSIBILITY", "CRIME"]
+cc_license = true
 +++
-Shared under a Creative Commons Attribution-NonCommercial-NoDerivs 3.0 Unported License.
-
 ![A smiling girl beside a "No Bullying Zone" sign](/images/articles/bullying2.0.jpg)
 
 *Picture: [Minds](https://www.minds.com/blog/view/619149636107513876)*

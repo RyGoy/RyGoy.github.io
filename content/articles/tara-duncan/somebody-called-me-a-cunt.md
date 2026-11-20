@@ -4,9 +4,8 @@ title = "Somebody Called Me A Cunt"
 date = "2019-01-19"
 description = "Tara Duncan on being called a \"cunt\" on social media for disagreeing, and what the insult says about the people who use it."
 tags = ["NARRATIVE"]
+cc_license = true
 +++
-Shared under a Creative Commons Attribution-NonCommercial-NoDerivs 3.0 Unported License.
-
 ![The Morpheus meme from The Matrix, a man in small round dark glasses, captioned "What if I told you you're wrong"](/images/articles/somebody-called-me-a-cunt.jpg)
 
 

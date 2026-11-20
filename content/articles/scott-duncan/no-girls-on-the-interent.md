@@ -4,9 +4,8 @@ title = "THERE ARE NO GIRLS ON THE INTERNET"
 date = "2021-03-03"
 description = "Only Tara knows for sure"
 tags = ["NARRATIVE"]
+cc_license = true
 +++
-Shared under a Creative Commons Attribution-NonCommercial-NoDerivs 3.0 Unported License.
-
 ![An anime-style woman with white hair, in a black dress and boots, seen from behind with a sword in each hand, among smoke and machinery](/images/articles/no-girls-on-the-interent.jpg)
 
 

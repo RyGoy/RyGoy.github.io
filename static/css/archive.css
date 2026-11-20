@@ -1065,6 +1065,7 @@ iframe.video-embed { border: 1px solid var(--line); }
 .article-byline time:first-child::before { content: none; }
 .article-metadata { font-size: .8rem; color: var(--muted); margin-top: 1.25rem; overflow-wrap: anywhere; }
 .article-metadata p { margin: .75rem 0 0; }
+.article-license { margin: 2.5rem 0 0; padding-top: 1rem; border-top: 1px solid var(--line); font-size: .85rem; color: var(--muted); }
 .prose { font-size: 1.15rem; line-height: 1.9; overflow-wrap: anywhere; }
 .prose td, .prose th { overflow-wrap: break-word; }
 /* Intro text in a page header keeps a readable line length. */

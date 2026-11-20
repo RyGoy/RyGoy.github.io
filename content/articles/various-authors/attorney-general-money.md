@@ -4,10 +4,9 @@ title = "Attorney General Money"
 date = "2014-05-05"
 description = "questions before the court"
 tags = ["TRUSTS", "ACCOUNTING"]
+cc_license = true
 weight = "10"
 +++
-Shared under a Creative Commons Attribution-NonCommercial-NoDerivs 3.0 Unported License.
-
 *Posted to THE TENDER FOR LAW by Lou Manotti on 2016-03-03. [Read the post and its comments in Volume 13](/vol_xiii/462493170453287_953462428023023/).*
 
 ![A painted portrait captioned "Minister of Justice and Attorney General"](/images/articles/attorney-general-money.jpg)

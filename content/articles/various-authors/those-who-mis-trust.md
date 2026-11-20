@@ -4,21 +4,9 @@ title = "Those Who Mistrust"
 description = "Title & Trust"
 tags = ["TRUSTS", "TITLE", "PROPERTY"]
 categories = ["CLAIMS"]
+cc_license = true
 weight = "1"
 +++
-Shared under a Creative Commons Attribution-NonCommercial-NoDerivs 3.0 Unported License.
-
-
-<div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="/img/everything-is-a-trust.JPG" class="d-block w-100" alt="...">
-    </div>
-  </div>
-</div>
-
----
-
 The title of this paper is a little tricky. We’ll just clarify at the outset that those who mistrust— miss trusts. Those who mistrust are those who make a serious mistake. What I will be discussing is the mistake of missing the point about Express Trusts and the advantages of using Express Trusts wisely.
 
 To illustrate I will tell you about a peculiar case I worked on in 2002 with an attorney who contacted me on a recommendation from the attorney who I actually assisted in some litigation against one of that attorney’s former clients. The case was interesting because it was one of those situations I had come to appreciate: someone puts all the protections in place before the problems start, instead of scrambling to try to fix a problem at a time when they should’ve had the protections in place already.

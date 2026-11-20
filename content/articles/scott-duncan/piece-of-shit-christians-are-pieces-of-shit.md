@@ -6,17 +6,6 @@ description = "Praise Bob!"
 tags = ["NARRATIVE"]
 categories = ["PARASITES", "RESPONSIBILITY", "EVERYBODY KNOWS"]
 +++
-<div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="/img/pos-christians.jpg" class="d-block w-100" alt="...">
-    </div>
-  </div>
-</div>
-
----
-
-
 Did you know I'm an Ordained Minister?  It's true.  I can legally marry people in Texas.  I've been to Texas twice in my life; both times I wasn't there for more than a week.  I did, however, use my time efficiently and invested it to become an Ordained Minister of the <a href="https://www.subgenius.com/index.htm" target="_blank">Church of the Subgenius</a> (Praise Bob!).  
 
  
@@ -124,15 +113,5 @@ Until you do, the HOLY PREFIX stands, and because it comes from an Ordained Mini
 NOTICE:  BETTER-THAN-JESUS(tm), Piece-of-Shit Christian(tm), Piece-of-Shit Muslim(tm), Piece-of-Shit Jew(tm), are trademarks of Roguesupport Inc. and released under a Creative Commons Attribution-NonCommercial-NoDerivs 3.0 Unported License. 
 
 https://www.minds.com/blog/view/632641088561098766
-
----
-
-<div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="/img/pos-christian.jpg" class="d-block w-100" alt="...">
-    </div>
-  </div>
-</div>
 
 ---
