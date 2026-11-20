@@ -1,7 +1,9 @@
-# server.mjs's settings (the bot's secrets), wrangler dev's copy of them, and its accounts database: never commit them.
+# server.mjs's settings (the bot's secrets), wrangler dev's copy of them, its accounts database, and wrangler's local
+# folder (which holds wrangler dev's copy of the D1 accounts database): never commit them.
 .env
 .dev.vars
 *.db
 *.db-journal
 *.db-wal
 *.db-shm
+.wrangler/
