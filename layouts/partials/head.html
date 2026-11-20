@@ -48,6 +48,7 @@
 <script src="{{ "js/youtube-embed.js" | relURL }}" defer></script>
 <script src="{{ "js/ripple.js" | relURL }}" defer></script>
 <script src="{{ "js/musical-recap.js" | relURL }}" defer></script>
+<script src="{{ "js/video-links.js" | relURL }}" data-video="{{ "videos/accountants-set-policy.mp4" | relURL }}" defer></script>
 <script src="{{ "js/dictionary-terms.js" | relURL }}" data-terms="{{ partialCached "dictionary-terms.html" . }}" data-dictionary="{{ "dictionary/" | relURL }}" defer></script>
 {{/* The sidebar's Webamp player, with its button in partials/navbar.html: [params.webamp_dock] in config.toml. */}}
 {{ if site.Params.webamp_dock.on }}<script src="{{ "js/webamp-dock.js" | relURL }}" defer></script>{{ end }}
