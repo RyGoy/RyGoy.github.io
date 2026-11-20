@@ -27,7 +27,7 @@ commentary = true
 # progress stays in each browser.
 accounts = ""
 
-# The neon sign on the home page's cdd.com button (layouts/partials/body.html): lit only while the show is on, on `day`
+# The neon sign on the home page's show button (layouts/partials/body.html): lit only while the show is on, on `day`
 # from `from` to `to`, Toronto time (EST, or EDT in summer), and hidden the rest of the week. Days are Mon, Tue, Wed,
 # Thu, Fri, Sat, Sun. on = false leaves it out, with the standby sign.
 [params.live_sign]
