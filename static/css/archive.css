@@ -877,10 +877,10 @@ main { min-height: 35vh; }
 .hero-links a:first-child { border-color: var(--c-7b3438); background: var(--c-4c2424); color: var(--c-ebd9bc); }
 .hero-links a:hover { background: var(--c-332d22); }
 .hero-links span { margin-left: .75rem; }
-/* The neon sign on the cdd.com button (live_sign in config.toml; shown by the script after it in partials/body.html while
+/* The neon sign on the show button (live_sign in config.toml; shown by the script after it in partials/body.html while
    the show is on): a line of red tube under the label, the button's frame lit to match. The red is the same in every
    theme (set on :root, so theme_colours.py leaves it as it is). It flickers on, then holds. */
-:root { --live-neon: #ff2a3a; --live-neon-core: #ffe3e5; --standby-neon: #2b8dff; --standby-neon-core: #e3f0ff; }
+:root { --live-neon: #ff2a3a; --live-neon-core: #ffe3e5; --standby-neon: #2b8dff; --standby-neon-core: #e3f0ff; --led-window: #0b0506; --led-bezel: #2a1416; --led-shade: #000; }
 .hero-links .live-sign { display: block; margin: .45rem 0 0; font-family: var(--display); font-size: .82rem; font-weight: 700; letter-spacing: .16em; text-transform: uppercase; text-align: center; color: var(--live-neon-core); text-shadow: 0 0 1px var(--live-neon-core), 0 0 4px var(--live-neon), 0 0 9px var(--live-neon), 0 0 18px var(--live-neon); animation: live-neon-on 1.4s steps(1, end) both; }
 .hero-links .live-sign[hidden] { display: none; }
 .hero-links a:has(> .live-sign:not([hidden])) { border-color: var(--live-neon); box-shadow: 0 0 6px var(--live-neon), inset 0 0 6px var(--live-neon); }
@@ -891,6 +891,15 @@ main { min-height: 35vh; }
 @keyframes live-standby-flash { 50% { opacity: .2; text-shadow: none; } }
 @keyframes live-standby-frame { 50% { border-color: var(--c-665539); box-shadow: none; } }
 @media (prefers-reduced-motion: reduce) { .hero-links .live-sign, .hero-links a:has(> .live-standby:not([hidden])) { animation: none; } }
+/* The sign's time as an old digital clock (partials/live-sign-text.html): seven-segment digits glowing in the sign's
+   colour in a dark window, so they read on every theme; unlit segments faintly there, the colon blinking. */
+.led-clock { display: inline-flex; align-items: center; gap: .08em; margin: 0 .35em; padding: .18em .4em; vertical-align: middle; background: var(--led-window); border: 1px solid var(--led-bezel); border-radius: 3px; box-shadow: inset 0 0 6px var(--led-shade); }
+.led-clock svg { display: block; height: 1.55em; width: auto; overflow: visible; }
+.led-clock rect { fill: var(--live-neon); opacity: .1; }
+.led-clock rect.on, .led-colon rect { fill: var(--live-neon-core); opacity: 1; filter: drop-shadow(0 0 .6px var(--live-neon)) drop-shadow(0 0 1.6px var(--live-neon)); }
+.led-colon { animation: led-colon-blink 1s steps(1, end) infinite; }
+@keyframes led-colon-blink { 50% { opacity: .15; } }
+@media (prefers-reduced-motion: reduce) { .led-colon { animation: none; } }
 .section-heading { display: flex; align-items: center; gap: 1.4rem; margin: 1.5rem 0; }
 .section-heading h2 { font-size: 1.65rem; letter-spacing: .025em; margin: 0; color: var(--c-d3bf98); }
 .section-heading h2 a { text-decoration: none; }
