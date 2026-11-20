@@ -5,19 +5,8 @@ date = "2017-04-11"
 description = "Adults with imaginary friends"
 tags = ["NARRATIVE"]
 categories = ["RESPONSIBILITY", "EVERYBODY KNOWS"]
+cc_license = true
 +++
-Shared under a Creative Commons Attribution-NonCommercial-NoDerivs 3.0 Unported License.
-
-<div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="/img/prodigal-son.jpg" class="d-block w-100" alt="...">
-    </div>
-  </div>
-</div>
-
----
-
 A few words on the subject of being right. 
 
  

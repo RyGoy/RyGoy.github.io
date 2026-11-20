@@ -6,6 +6,7 @@ description = "The mechanism by which the story of the transfer of surety, is to
 weight = "4"
 tags = ["ACCOUNTING", "SURETY", "NARRATIVE"]
 categories = ["RESPONSIBILITY"]
+cc_license = true
 # The emblem beside the title: the cobra in its own colours (static/images/emblems/cobra-colour.webp).
 emblem = "cobra"
 
@@ -17,13 +18,7 @@ title = "Trained Well My Young Apprentice"
 width = 640
 height = 272
 +++
-Shared under a Creative Commons Attribution-NonCommercial-NoDerivs 3.0 Unported License.
-
-
-CC BY-ND-NC 3.0 UNPORTED LICENSE
-
-
-![Jew-Coaster](/static/videos/JewCoaster.mp4)
+![Jew-Coaster](/videos/JewCoaster.mp4)
 
 ---
 

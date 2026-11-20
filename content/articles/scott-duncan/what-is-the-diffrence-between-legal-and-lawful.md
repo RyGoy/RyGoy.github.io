@@ -9,14 +9,6 @@ weight = "19"
 +++
 *First posted to THE TENDER FOR LAW on 2014-01-01. [Read the original post and its comments in Volume 5](/vol_v/462493170453287_606995862669683/).*
 
-<div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="/img/fractal.gif" class="d-block w-100" alt="...">
-    </div>
-  </div>
-</div>
-
 ---
 (c) 2014 ROGUESUPPORT INC. under a Creative Commons Attribution-NonCommercial-NoDerivs 3.0 Unported License.
 

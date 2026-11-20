@@ -5,20 +5,8 @@ date = "2014-05-05"
 description = "ATTENTION-SEEKING FAGGOT: The Trials and Tribulations of the Gender-Fluid"
 tags = ["NARRATIVE", "ACCOUNTING"]
 categories = ["CRIME"]
+cc_license = true
 +++
-Shared under a Creative Commons Attribution-NonCommercial-NoDerivs 3.0 Unported License.
-
-<div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="/img/paperwork-terrorism.jpg" class="d-block w-100" alt="...">
-    </div>
-  </div>
-</div>
-
----
-
-
 I don't know if any of you have read this bill, C-16, and the terrifying ramifications contained therein; but if you haven't you really should, even if you're not in Canada.  
 
  

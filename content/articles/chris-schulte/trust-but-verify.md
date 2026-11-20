@@ -6,6 +6,7 @@ description = "You have to want to not be a useless sack of shit anymore before 
 weight = "2"
 tags = ["AGENCY", "NARRATIVE"]
 categories = ["MAN ≠ PERSON", "RESPONSIBILITY"]
+cc_license = true
 # The emblem beside the title: the cobra in its own colours (static/images/emblems/cobra-colour.webp).
 emblem = "cobra"
 
@@ -17,12 +18,6 @@ title = "Trained Well My Young Apprentice"
 width = 640
 height = 272
 +++
-Shared under a Creative Commons Attribution-NonCommercial-NoDerivs 3.0 Unported License.
-
-
-CC BY-ND-NC 3.0 UNPORTED LICENSE
-
-
 ![A penguin peeking out of a round hole in a wooden wall beside a tag that reads "fact: you are a piece of shit"](/images/articles/trust-but-verify.gif)
 
 ---

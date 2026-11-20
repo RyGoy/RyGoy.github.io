@@ -8,7 +8,7 @@
     <nav aria-label="Sidebar">
       <form class="site-search" action="{{ "search/" | relURL }}" role="search">
         <label class="sr-only" for="site-search-query">Search articles and volumes</label>
-        <input id="site-search-query" type="search" name="q" placeholder="Search articles and volumes" required>
+        <input id="site-search-query" type="search" name="q" placeholder="Search the archive" required>
       </form>
       {{/* The sidebar's Webamp player (its script is loaded in partials/head.html): [params.webamp_dock] in config.toml. */}}
       {{ if site.Params.webamp_dock.on }}{{ with site.Data.webamp.tracks }}

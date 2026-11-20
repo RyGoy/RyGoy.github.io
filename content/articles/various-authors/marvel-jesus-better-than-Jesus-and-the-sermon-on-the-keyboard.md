@@ -4,11 +4,9 @@ title = "Marvel Jesus, Better Than Jesus, & The Sermon on The Keyboard"
 description = "What does accounting have to do with the Kingdom of God? An article on stewardship, debt, and putting reconciliation and truth first."
 date = "2024-11-23"
 tags = ["ACCOUNTING", "NARRATIVE", "SURETY", "AGENCY"]
+cc_license = true
 weight = "12"
 +++
-
----
-
 ![image](https://github.com/user-attachments/assets/bc2df4c5-c6d4-4394-9f85-b5deaf00356a)
 
 ---
@@ -17,8 +15,6 @@ weight = "12"
 
 Appointed by "N" for "Not Surety",
 A reference to THE TENDER FOR LAW on Facebook.
-
-Shared under a Creative Commons Attribution-NonCommercial-NoDerivs 3.0 Unported License.
 
 ---
 

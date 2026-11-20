@@ -5,9 +5,8 @@ date = "2016-05-03"
 description = "Tara Duncan on how the dystopias of Huxley, Orwell and Bradbury are fast becoming our world. First posted on Facebook in May 2016."
 tags = ["NARRATIVE"]
 categories = ["PARASITES", "CITIZENSHIP", "RESPONSIBILITY"]
+cc_license = true
 +++
-Shared under a Creative Commons Attribution-NonCommercial-NoDerivs 3.0 Unported License.
-
 ![An anime schoolgirl wearing a red armband, in front of a swastika and a rally crowd](/images/articles/if-you-see-something-say-something.jpg)
 
 *Picture: [Minds](https://www.minds.com/blog/view/614265122583486478)*

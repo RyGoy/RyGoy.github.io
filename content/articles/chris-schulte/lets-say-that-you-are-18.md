@@ -6,6 +6,7 @@ description = "Teach your kids basic bookkeeping"
 weight = "6"
 tags = ["ACCOUNTING", "NARRATIVE"]
 categories = ["CORPORATIONS"]
+cc_license = true
 # The emblem beside the title: the cobra in its own colours (static/images/emblems/cobra-colour.webp).
 emblem = "cobra"
 
@@ -17,23 +18,6 @@ title = "Trained Well My Young Apprentice"
 width = 640
 height = 272
 +++
-Shared under a Creative Commons Attribution-NonCommercial-NoDerivs 3.0 Unported License.
-
-
-CC BY-ND-NC 3.0 UNPORTED LICENSE
-
-
-<div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="/img/kid-bookkeepers.jpg" class="d-block w-100" alt="...">
-    </div>
-  </div>
-</div>
-
----
-
-
 Ive been hinting at something in here for months, so now I will go into detail using a totally metaphorical and totally not real example. 😁
 Let's say that you are 18 and you are smarter than the rest of your high school buddies, so you opt to go to trade school rather than college. This is a GOOD DECISION! You figure that you can work as an apprentice during the day to collect your hours and go to school at night to satisfy the classroom requirements for the license that you hope to earn (yes, this is hilarious). Does everyone know how this very simple mechanism works? ....good.
 

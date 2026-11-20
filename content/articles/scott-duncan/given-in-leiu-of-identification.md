@@ -4,9 +4,8 @@ title = "Give In Lieu Of “Identification”"
 description = "Give in lieu of “identification”: a NOTICE OF WAIVER OF PUBLIC BENEFITS under Ontario’s Change of Name Act, for the public servant who demands IDENTIFICATION."
 date = "2014-05-05"
 tags = ["AGENCY", "TRUSTS"]
+cc_license = true
 +++
-Shared under a Creative Commons Attribution-NonCommercial-NoDerivs 3.0 Unported License.
-
 *First appeared on THE TENDER FOR LAW as a comment by Pete Daoust on 2013-07-27. [Read it in Volume 3](/vol_iii/462493170453287_541616302540973/#entry-541708009198469).*
 
 

@@ -4,10 +4,9 @@ title = "Our Thoughts and Prayers are With You"
 date = "2016-10-11"
 description = "Why \"our thoughts and prayers are with you\" does nothing: Tara Duncan on hollow platitudes, and on putting care into action."
 tags = ["NARRATIVE"]
+cc_license = true
 weight = "2"
 +++
-Shared under a Creative Commons Attribution-NonCommercial-NoDerivs 3.0 Unported License.
-
 ![A comic strip: a man on a pier offers "thoughts and prayers" to a drowning man instead of help](/images/articles/thoughts-and-prayers.jpg)
 
 *Picture: [Minds](https://www.minds.com/taraduncan/blog/our-thoughts-and-prayers-are-with-you-632763848478175251)*

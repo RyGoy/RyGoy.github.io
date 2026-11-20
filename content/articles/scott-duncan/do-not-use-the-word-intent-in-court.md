@@ -5,9 +5,8 @@ date = "2016-06-14"
 description = "My \"superpower\" is TRUTH."
 tags = ["NARRATIVE"]
 categories = ["COURT"]
+cc_license = true
 +++
-Shared under a Creative Commons Attribution-NonCommercial-NoDerivs 3.0 Unported License.
-
 *First appeared on THE TENDER FOR LAW as a comment by Scott Duncan on 2016-06-14. [Read it in Volume 14](/vol_xiv/462493170453287_1013606882008577/#entry-1014015141967751).*
 
 ---

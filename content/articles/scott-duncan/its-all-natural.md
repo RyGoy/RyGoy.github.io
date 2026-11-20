@@ -4,9 +4,8 @@ title = "IT’S ALL NATURAL!"
 description = "The mechanism by which entities like “Natural News” feed on your credulity, shown with a peer-reviewed article on essential oils. By Scott Duncan, June 2014."
 date = "2014-05-05"
 tags = ["NARRATIVE"]
+cc_license = true
 +++
-Shared under a Creative Commons Attribution-NonCommercial-NoDerivs 3.0 Unported License.
-
 ![An illustration of a snake-oil salesman holding up a bottle in an Old West town](/images/articles/its-all-natural.jpg)
 
 *Picture: [Kent Barrett](https://web.archive.org/web/20190528015618/https://kentbarrett.com/its-all-natural/)*

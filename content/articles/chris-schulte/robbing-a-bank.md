@@ -6,6 +6,7 @@ description = "It's just accounting and surety"
 weight = "7"
 tags = ["ACCOUNTING", "SURETY", "NARRATIVE"]
 categories = ["JOINDER", "CORPORATIONS"]
+cc_license = true
 # The emblem beside the title: the cobra in its own colours (static/images/emblems/cobra-colour.webp).
 emblem = "cobra"
 
@@ -17,22 +18,6 @@ title = "Trained Well My Young Apprentice"
 width = 640
 height = 272
 +++
-Shared under a Creative Commons Attribution-NonCommercial-NoDerivs 3.0 Unported License.
-
-
-CC BY-ND-NC 3.0 UNPORTED LICENSE
-
-
-<div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="/img/robbing-a-bank.jpg" class="d-block w-100" alt="...">
-    </div>
-  </div>
-</div>
-
----
-
 Ok, since there are no questions on the board, I guess everyone is on the same page here.
 
 Lets discuss robbing a bank. 😀

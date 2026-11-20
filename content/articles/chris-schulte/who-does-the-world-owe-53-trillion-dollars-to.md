@@ -6,6 +6,7 @@ description = "What is taxation?"
 weight = "1"
 tags = ["TAXATION", "ACCOUNTING", "NARRATIVE"]
 categories = ["CITIZENSHIP", "ADMIRALTY"]
+cc_license = true
 # The emblem beside the title: the cobra in its own colours (static/images/emblems/cobra-colour.webp).
 emblem = "cobra"
 
@@ -17,22 +18,6 @@ title = "Trained Well My Young Apprentice"
 width = 640
 height = 272
 +++
-Shared under a Creative Commons Attribution-NonCommercial-NoDerivs 3.0 Unported License.
-
-
-CC BY-ND-NC 3.0 UNPORTED LICENSE
-
-
-<div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="/img/ships.jpg" class="d-block w-100" alt="...">
-    </div>
-  </div>
-</div>
-
----
-
 A friend asked me to write something about this, so I figured what better place to write about taxation than in this group.
 What is taxation? If you use the property, isn't it fair to pay for the usage? How can this be theft? I hope to answer these questions in the body here and in the comments if necessary.
 

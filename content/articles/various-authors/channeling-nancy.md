@@ -6,16 +6,6 @@ description = "Ceit Butler, a lifelong reader raised on Narnia, Middle Earth and
 tags = ["ACCOUNTING", "NARRATIVE"]
 weight = "12"
 +++
-<div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="/img/library6.jpg" class="d-block w-100" alt="...">
-    </div>
-  </div>
-</div>
-
----
-
 A Tender For Law Article by Ceit Butler(c), under a Creative Commons Attribution-NonCommercial-NoDerivs 3.0 Unported License.
 
 I am what you would describe as “an avid reader”. I started young; my grandmother had taught me to read chapter books by the time I turned 3, and in doing so she forever instilled in me a love of reading. I spent the majority of my formative years with my nose buried in a book. I read everything that I could get my hands on; comic books, encyclopedias, scientific guides, and novels. I spent days at a time exploring other worlds, as familiar with the landscapes of Narnia, Middle Earth, Olympus, and Xanth as I was with my own backyard. Visions of the future – some glorious, others terrifying – awaited me each month in the pages of Issac Asimov’s Science Fiction Magazine. I spent my nights, hiding under my blanket with flashlight in hand, wandering the dark hallways that sprang from the imagination of Lovecraft and Poe. And last, but not least, I solved mysteries alongside the likes of Sherlock Holmes, Miss Marple, and Hercule Poirot.

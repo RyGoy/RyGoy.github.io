@@ -4,10 +4,9 @@ title = "UNDERSTANDING JURISDICTION"
 date = ""
 description = "Oaths, Income Tax, & Jesus Christ"
 tags = ["TAXATION"]
+cc_license = true
 weight = "1"
 +++
-Shared under a Creative Commons Attribution-NonCommercial-NoDerivs 3.0 Unported License.
-
 *Posted to THE TENDER FOR LAW by Maa Nathltaapaan on 2013-03-15. [Read the post and its comments in Volume 1](/vol_i/462493170453287_492303727472231/).*
 
 ![A painting of Jesus driving the merchants out of the temple, a whip of cords raised, overturning their tables, coins, baskets and fruit spilling on the floor as the merchants and their animals scatter](/images/articles/understanding-jurisdiction.jpg)

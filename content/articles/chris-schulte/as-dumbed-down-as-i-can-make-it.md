@@ -5,6 +5,7 @@ date = "2017-01-14"
 description = "----"
 weight = "3"
 tags = ["ACCOUNTING", "NARRATIVE"]
+cc_license = true
 # The emblem beside the title: the cobra in its own colours (static/images/emblems/cobra-colour.webp).
 emblem = "cobra"
 
@@ -16,12 +17,6 @@ title = "Trained Well My Young Apprentice"
 width = 640
 height = 272
 +++
-Shared under a Creative Commons Attribution-NonCommercial-NoDerivs 3.0 Unported License.
-
-
-CC BY-ND-NC 3.0 UNPORTED LICENSE
-
-
 This isn't easy to write because you are all begging me to come down to your level. Well, I am not at your level. I have never been an "employee", well, as an adult, and I've never not had tens of thousands in Accounts Receivable in case I got into a jam. I am trying really hard to dumb it down and it's proving to be not an easy task. You are going to have to meet me halfway. ....I digress
 
 You start a trust holding corporation. In the Articles of Incorporation, or by-laws, you allow for the corporation to pay the basic living expenses for the President. This covers all of your expenses, you are now free and YOUR accounting is done by this corporation. You then close all the accounts of the person OR the corporation can assume the accounts. Quite frankly, I wouldn't do it the second way, but it's possible. It depends on your goals.

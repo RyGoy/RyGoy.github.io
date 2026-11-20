@@ -5,9 +5,8 @@ date = "2017-02-08"
 description = "Why \"hate speech\" is a legal invention: the law defines hate speech but never hate itself, since defining it would criminalize an emotion."
 tags = ["ACCOUNTING", "NARRATIVE"]
 categories = ["PARASITES", "CRIME"]
+cc_license = true
 +++
-Shared under a Creative Commons Attribution-NonCommercial-NoDerivs 3.0 Unported License.
-
 ![A ruined city of broken, burnt-out towers under a hazy sun](/images/articles/hate-speech.jpg)
 
 

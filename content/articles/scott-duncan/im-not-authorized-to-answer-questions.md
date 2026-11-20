@@ -4,20 +4,8 @@ title = "I'm Not Authorized To Answer Questions"
 date = "2022-05-02"
 description = "I'M NOT AUTHORIZED TO ANSWER QUESTIONS"
 tags = ["SURETY", "ACCOUNTING"]
+cc_license = true
 +++
-Shared under a Creative Commons Attribution-NonCommercial-NoDerivs 3.0 Unported License.
-
-<div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="/img/dont-be-retarded.gif" class="d-block w-100" alt="...">
-    </div>
-  </div>
-</div>
-
----
-
-
 You will need this soon, and it may save your life, so PAY ATTENTION.
 
 IF YOU ARE ARRESTED: You DO NOT TALK TO POLICE, and NEVER ANSWER QUESTIONS. If they say "you're under arrest", you don't answer ANY question. Even if it sounds "innocent".

@@ -5,6 +5,7 @@ date = "2020-10-18"
 description = "Consumer or Producer"
 tags = ["ACCOUNTING", "AGENCY"]
 categories = ["CORPORATIONS"]
+cc_license = true
 weight = "90"
 # The emblem beside the title: the cobra in its own colours (static/images/emblems/cobra-colour.webp).
 emblem = "cobra"
@@ -20,8 +21,6 @@ height = 272
 ![A man in a shirt and tie shouting into a phone, beside the words "Show me the money!"](/images/articles/show-me-the-money.jpg)
 
 ---
-
-Shared under a Creative Commons Attribution-NonCommercial-NoDerivs 3.0 Unported License.
 
 If you’re like me, for most of your life you’ve had minimal conscious interactions with ACCOUNTING, It was always presented to me as something very boring and complicated so I'd always avoided learning about it. While embracing my love of ignorance **I COULD NOT SEE** how this **ABSTRACTION** was being used against me every day or how I could use it for my benefit.
 

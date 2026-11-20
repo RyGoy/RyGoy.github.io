@@ -4,14 +4,13 @@ title = "The Truth About The Illuminati Or Why Piece-Of-Shit Christians Are Such
 date = "2015-10-15"
 description = "This might lead you to believe that I harbour a profound hostility and resentment for Piece-of-Shit Christians, and you would be right."
 tags = ["NARRATIVE", "SURETY", "PROPERTY"]
+cc_license = true
 +++
 ![HAL 9000's red eye at the top of a pyramid](/images/articles/or-why-piece-of-shit-chistiansare-such-pieces-of-shit.webp)
 
 *Picture: [Kent Barrett](https://web.archive.org/web/20190528014343/https://kentbarrett.com/the-truth-about-the-illuminati/)*
 
 ---
-
-Shared under a Creative Commons Attribution-NonCommercial-NoDerivs 3.0 Unported License.
 
 SCOTT DUNCAN·WEDNESDAY, 21 OCTOBER 2015
 

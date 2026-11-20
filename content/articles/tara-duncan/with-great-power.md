@@ -5,9 +5,8 @@ date = "2013-05-20"
 description = "We are running out of time."
 tags = ["NARRATIVE"]
 categories = ["RESPONSIBILITY"]
+cc_license = true
 +++
-Shared under a Creative Commons Attribution-NonCommercial-NoDerivs 3.0 Unported License.
-
 *First posted to THE TENDER FOR LAW on 2013-05-20. [Read the original post and its comments in Volume 2](/vol_ii/462493170453287_515130628522874/).*
 
 ![The Royal Banner of Scotland: a red lion rampant on gold, inside a double red border edged with fleurs-de-lis](/images/articles/with-great-power.png)

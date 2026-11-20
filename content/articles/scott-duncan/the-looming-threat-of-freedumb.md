@@ -102,13 +102,3 @@ Because the point of this article is constantly missed, I shall dumb it down for
 <p><a class="" href="https://web.archive.org/web/20190528004035/https://kentbarrett.com/the-tender-for-law-the-looming-threat-of-freedumb/" targt="_blank">[Kent Barrett]</a></p>
 
 ---
-
-<div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="/img/govern-yourselves-accordingly.jpg" class="d-block w-100" alt="...">
-    </div>
-  </div>
-</div>
-
----
