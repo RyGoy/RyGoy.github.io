@@ -40,7 +40,8 @@
      hearts for eyes (.is-smitten) for the rest of her walk.
      Under reduced motion goats don't jump, and a shot goat fades. Every tenth click sends, instead of a goat, a woman in a red
      skirt and a white shirt strutting across (.strutter): she can't be shot (her pointer says so, and no shot flashes on
-     her) and she doesn't count as a goat. Without JavaScript the link does nothing. */}}
+     her) and she doesn't count as a goat. On 23 November, Toronto time (EST), there are no goats: every click sends
+     her. Without JavaScript the link does nothing. */}}
 <template id="goat"><svg class="goat" viewBox="0 0 120 100" aria-hidden="true" fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
   <g class="goat-hop">
   <g class="goat-leg goat-far" fill="none" stroke-width="4"><path d="M47 54L45 70L47 85"/><path d="M45.5 87h3" stroke-width="4"/></g>
@@ -144,8 +145,12 @@
     };
     document.querySelector('.goat-link')?.addEventListener('click', (event) => {
       event.preventDefault();
-      // Every tenth click: not a goat. She crosses, can't be shot, and isn't one of the herd.
-      if (++clicks % 10 === 0) {
+      // Every tenth click, and every click on 23 November in Toronto (EST): not a goat. She crosses, can't be shot, and
+      // isn't one of the herd.
+      const toronto = Object.fromEntries(new Intl.DateTimeFormat('en-US', { timeZone: 'America/Toronto', month: 'numeric', day: 'numeric' })
+        .formatToParts(new Date()).map((part) => [part.type, part.value]));
+      const waifuDay = toronto.month === '11' && toronto.day === '23';
+      if (++clicks % 10 === 0 || waifuDay) {
         const lady = strutter.content.firstElementChild.cloneNode(true);
         // One time in seven or so (15%) her skirt is blue: its parts carry their blue in data-blue.
         if (Math.random() < 0.15) lady.querySelectorAll('[data-blue]').forEach((el) => el.setAttribute('style', el.dataset.blue));
