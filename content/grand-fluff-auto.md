@@ -18,7 +18,7 @@ GTA VI got a 99 on Metacritic. Every critic agreed. When every expert agrees, ch
 
 Thirteen years after GTA V. Cuck simulator at 30fps, no toxic masculinity allowed. Broken in game physics, trains that won't run you over... was this game made in India?
 
-Nobody asked for a 30fps Cuck simulator. Somebody made this decision. Accountants set policy.
+Nobody asked for a 30 fps Cuck simulator. Somebody made this decision. Accountants set policy.
 
 **Grand Fluff Auto:** your frame rate is between you and your graphics card.
 
@@ -38,7 +38,7 @@ Critics found them bossy: go here, stand there, do this. Women think there is a 
 
 **Grand Fluff Auto:** nobody tells you what to do. If they try, ask for the contract.
 
-![Cover art: "LBGTA6, Beta Cuck Edition", the cast in front of a rainbow Vice City skyline](/images/grand-fluff-auto/lbgta6.jpg)
+![Cover art: "Grand Honey-Do List VI", a man with a drill under a list of chores, the garage, laundry and the dog behind him](/images/grand-fluff-auto/honey-do-list.jpg)
 
 ## The price
 
@@ -75,11 +75,23 @@ There isn't one.
 | Metacritic | 99 | Declines to be scored without consent |
 
 
-![Cover art: "GTGAY6", a rainbow parody of the GTA VI box](/images/grand-fluff-auto/gtgay6.jpg)
+![A man leaning over the handlebars of a bike in a Vice City sunset, captioned "I said we gay today"](/images/grand-fluff-auto/we-gay-today.jpg)
 
 ## Play it
 
 Install [FiveM](https://fivem.net/), own [GTA V](https://store.steampowered.com/app/271590/), then [connect](fivem://connect/gfa.cdd.com:30120). Complaints go to [CDD.com](https://cdd.com), where they will be ignored at 60 frames per second.
+
+## Pictures
+
+Found online, artists unknown unless signed:
+
+- Grand Theft Humiliation Ritual: watermarked Freedom Memes
+- No thanks: signed @Blankets
+- Give me my money back: Fry, from *Futurama* by Matt Groening
+- Franklin: the turtle of the *Franklin* books by Paulette Bourgeois and Brenda Clark
+- Grand Theft Masculinity, Grand Honey-Do List VI, I said we gay today, Grand Fluff Auto Five: artists unknown
+
+Made one of these? Tell us and we'll credit you.
 
 ## Sources
 
