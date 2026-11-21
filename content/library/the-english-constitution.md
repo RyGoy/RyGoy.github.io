@@ -8,7 +8,7 @@ description = "Bagehot's account of how English government actually works: the â
 pdf = "/library/bagehot-the-english-constitution-1888.pdf"
 source = "https://archive.org/details/englishconstitut00bageuoft"
 source_label = "Internet Archive"
-weight = 1
+weight = 2
 # The emblem beside the title, in place of the rose window: the cobra in its own colours (static/images/emblems/cobra-colour.webp).
 emblem = "cobra"
 
