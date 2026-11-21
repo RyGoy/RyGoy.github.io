@@ -7,7 +7,7 @@ description = "The last book of the Foundation trilogy: the Mule, and then the F
 coming_soon = true
 source = "https://archive.org/details/foundationtrilog0000isaa_c7g1"
 source_label = "Borrow it on the Internet Archive"
-weight = 25
+weight = 26
 shelf = "Fiction"
 
 [copyright]

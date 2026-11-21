@@ -7,7 +7,7 @@ description = "Lazarus Long, the oldest living human, tells the stories of his m
 coming_soon = true
 source = "https://openlibrary.org/works/OL59739W"
 source_label = "Find it on Open Library"
-weight = 26
+weight = 27
 shelf = "Fiction"
 
 [copyright]

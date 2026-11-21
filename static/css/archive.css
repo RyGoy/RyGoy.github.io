@@ -527,12 +527,11 @@
   --c-4c2424: #5c2a2a;
 }
 /* theme colours: end */
-/* Set by hand: the light theme's fainter stonework and tartan (15% washed out by the sidebar's own colour), and cream
-   kept on the dark red Volumes button. */
+/* Set by hand: the light theme's fainter stonework, its stronger tartan (robertson-light.svg, so the cloth shows on the
+   pale sidebar), and cream kept on the dark red Volumes button. */
 :root[data-theme="light"] {
   --stone: url("../images/gothic/ashlar-light.svg") 0 0 / 240px 96px;
-  --tartan: linear-gradient(color-mix(in srgb, var(--c-141512) 15%, transparent), color-mix(in srgb, var(--c-141512) 15%, transparent)),
-    url("../images/tartan/robertson.svg") 0 0 / 224px 224px;
+  --tartan: url("../images/tartan/robertson-light.svg") 0 0 / 224px 224px;
   --c-ebd9bc: #f3e4c8;
 }
 /* The dark theme's emblems in cdd.com's red (its buttons, icons and text: Bootstrap's --primary, #901). */
