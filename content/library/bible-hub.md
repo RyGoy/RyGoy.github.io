@@ -6,7 +6,7 @@ edition = "biblehub.com"
 description = "A free online Bible library: dozens of translations side by side, the Hebrew and Greek behind them, word studies and commentaries."
 source = "https://biblehub.com/"
 source_label = "Open Bible Hub"
-weight = 27
+weight = 28
 shelf = "Reference"
 +++
 
