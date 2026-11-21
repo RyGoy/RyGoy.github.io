@@ -1,5 +1,10 @@
 {{ define "main" }}
   {{ partial "body.html" . }}
+  {{/* A quote above the carousel, linked to Livius.org on Apollonius of Tyana. */}}
+  <figure class="home-quote">
+    <blockquote><a href="https://www.livius.org/articles/person/apollonius-of-tyana/">“For The Glory Of Mankind”</a></blockquote>
+    <figcaption>— NieR Automata</figcaption>
+  </figure>
   {{ partial "carousel.html" . }}
   {{ with .Content }}<div class="prose">{{ . }}</div>{{ end }}
   <section class="volume-library" id="volumes" aria-labelledby="volumes-heading">
