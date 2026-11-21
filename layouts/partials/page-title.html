@@ -1,0 +1,6 @@
+{{- /* A page's heading text. [title_word] in its front matter (word, image, width, height) shows that word of the title
+       as a picture, its alt the word, so the title still reads and copies as text (Grand Fluff Auto's logo "Fluff").
+       Used by partials/article.html and library/single.html. */ -}}
+{{- with .Params.title_word -}}
+{{- replace ($.Title | htmlEscape) .word (printf `<img class="title-word" src="%s" alt="%s" width="%v" height="%v">` (relURL .image) .word .width .height) | safeHTML -}}
+{{- else }}{{ .Title }}{{ end -}}

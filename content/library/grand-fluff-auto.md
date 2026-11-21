@@ -1,6 +1,13 @@
 +++
 title = "Grand Fluff Auto Is Just Better"
 description = "Thirteen years after GTA V, GTA VI runs at 30 frames per second. Grand Fluff Auto doesn't."
+cover = "images/library/grand-fluff-auto.webp"
+cover_alt = "Grand Fluff Auto Five cover art: a girl with long dark hair in a school uniform stands between two men under the logo"
+author = "CDD.com"
+edition = "A FiveM server for Grand Theft Auto V"
+weight = 26
+# Moved into the Library from /grand-fluff-auto/, which still leads here.
+aliases = ["/grand-fluff-auto/"]
 # Linked from the Grand Fluff Auto pop-up (layouts/partials/footer.html). The review findings are paraphrased from
 # the sources listed at the end, as reported in GTA VI's launch week, November 2026.
 [title_word] # "Fluff" in the heading, cut from the logo on static/images/grand-fluff-auto.jpg
@@ -8,6 +15,15 @@ word = "Fluff"
 image = "/images/grand-fluff-auto/fluff.png"
 width = 384
 height = 144
+
+# The buttons under the cover (layouts/library/single.html): what you need to play.
+[[links]]
+label = "FiveM"
+url = "https://fivem.net/"
+
+[[links]]
+label = "GTA V on Steam"
+url = "https://store.steampowered.com/app/271590/"
 +++
 
 ![Parody cover art: "Grand Theft Humiliation Ritual", the cast of a certain new game in tears around the VI logo](/images/grand-fluff-auto/grand-theft-humiliation-ritual.jpg "Fan art. Not the official box. Probably.")
