@@ -13,12 +13,21 @@
 <script src="{{ "pagefind/pagefind-ui.js" | relURL }}"></script>
 <script src="{{ "js/search-filters.js" | relURL }}"></script>
 <script>
-  if (window.PagefindUI) {
+  if (window.PagefindUI) (async () => {
+    // Two indexes (see .github/workflows/hugo.yml): the Facebook threads, in pagefind-volumes/, count 0.6 against the
+    // articles, library, dictionary and commentary, so a thread that only mentions a subject doesn't outrank the
+    // writing about it. Titles count a tenth as much as usual: a thread's title is its poster's name (an article's
+    // title is also its heading, which counts anyway). Pagefind UI and search-filters.js load this same module, so
+    // both see the merged index.
+    const pagefind = await import('{{ "pagefind/pagefind.js" | relURL }}');
+    await pagefind.options({ ranking: { metaWeights: { title: 0.1 } } });
+    await pagefind.mergeIndex('{{ "pagefind-volumes/" | relURL }}', { indexWeight: 0.6 });
     document.getElementById('search').replaceChildren();
-    const ui = new PagefindUI({ element: '#search', showImages: false, showSubResults: true, autofocus: true });
+    // bundlePath: js/search/pagefind.js puts the pages with every word as a phrase first.
+    const ui = new PagefindUI({ element: '#search', bundlePath: '{{ "js/search/" | relURL }}', showImages: false, showSubResults: true, autofocus: true });
     const query = new URLSearchParams(location.search).get('q');
     if (query) ui.triggerSearch(query);
     searchFilters(ui, '{{ "pagefind/pagefind.js" | relURL }}', document.querySelector('.search-filters'));
-  }
+  })();
 </script>
 {{ end }}
