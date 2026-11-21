@@ -1066,6 +1066,8 @@ iframe.video-embed { border: 1px solid var(--line); }
 .article-contents.is-columns li { padding: .3rem 0; break-inside: avoid; }
 .longform .page-heading { border-bottom: 1px solid var(--line); margin-bottom: 2.5rem; }
 .longform .page-heading h1 { font-size: clamp(2.5rem, 4.3vw, 4rem); }
+/* A title word shown as a picture ([title_word] in an article's front matter), sized to the heading's letters. */
+.page-heading h1 .title-word { display: inline-block; height: 1.15em; width: auto; vertical-align: -0.2em; }
 .article-author { color: var(--c-c7b68f); margin-bottom: .5rem; }
 .article-byline { display: flex; flex-wrap: wrap; align-items: center; gap: .5rem 1rem; margin-bottom: .5rem; }
 .article-byline .article-author { margin: 0; }
