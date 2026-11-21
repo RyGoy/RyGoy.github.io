@@ -51,7 +51,7 @@
       {{ end }}
       {{/* Library: the subject pages listed in content/library/_index.md. */}}
       {{ with site.GetPage "/library" }}
-      {{/* A subject is current when this page is the subject page or inside it ("/agency/" is a page, "/insurance/" a section). */}}
+      {{/* A subject is current when this page is the subject page or inside it (the subject's page, or a page in its section). */}}
       {{ $open := eq $.Section "library" }}
       {{ range .Params.subjects }}{{ with site.GetPage . }}{{ if hasPrefix $.RelPermalink .RelPermalink }}{{ $open = true }}{{ end }}{{ end }}{{ end }}
       <details class="nav-group article-nav library-nav"{{ if $open }} open{{ end }}>
