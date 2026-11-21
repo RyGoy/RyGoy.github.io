@@ -74,6 +74,7 @@ There isn't one.
 | Ground | Optional | Load-bearing |
 | Metacritic | 99 | Declines to be scored without consent |
 
+
 ![Cover art: "GTGAY6", a rainbow parody of the GTA VI box](/images/grand-fluff-auto/gtgay6.jpg)
 
 ## Play it
