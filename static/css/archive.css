@@ -906,6 +906,8 @@ main { min-height: 35vh; }
 .home-quote blockquote a { color: var(--c-d3bf98); text-decoration: none; transition: color .15s; }
 .home-quote blockquote a:hover, .home-quote blockquote a:focus-visible { color: var(--c-fff5de); text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: .2em; }
 .home-quote figcaption { margin-top: .5rem; font-size: .8rem; letter-spacing: .18em; text-transform: uppercase; color: var(--brass); }
+.home-quote figcaption a { color: inherit; text-decoration: none; }
+.home-quote figcaption a:hover, .home-quote figcaption a:focus-visible { color: var(--c-fff5de); text-decoration: underline; text-underline-offset: .2em; }
 .section-heading { display: flex; align-items: center; gap: 1.4rem; margin: 1.5rem 0; }
 .section-heading h2 { font-size: 1.65rem; letter-spacing: .025em; margin: 0; color: var(--c-d3bf98); }
 .section-heading h2 a { text-decoration: none; }
