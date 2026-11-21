@@ -101,9 +101,7 @@ If it's true, the game finally has a story worth $80: you speed with nobody chas
 | Ground | Optional | Load-bearing |
 | Telemetry | Sold to your insurer, allegedly | Nobody's counting |
 | Metacritic | 99 | Declines to be scored without consent |
-
-
-
+\
 ![A man leaning over the handlebars of a bike in a Vice City sunset, captioned "I said we gay today"](/images/grand-fluff-auto/we-gay-today.jpg)
 
 ## Play it
