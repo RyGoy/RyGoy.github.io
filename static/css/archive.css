@@ -1977,6 +1977,21 @@ a.page-emblem:focus-visible { outline: 2px solid var(--brass); outline-offset: 6
 .anthology-copy img { display: block; max-width: 100%; height: auto; background: #fff; border: 1px solid var(--line); }
 .anthology-copy figcaption { margin-top: .5rem; font-style: italic; }
 .anthology-copy figcaption a { color: var(--c-d7be91); }
+/* A citation of a Quatloos post on the Quatloosers page (layouts/shortcodes/quatloos.html): "(saved copy · post)",
+   where "saved copy" (a label for a hidden checkbox) drops the post's saved picture down under the line. */
+.quatloos-check { position: absolute; opacity: 0; width: 1px; height: 1px; pointer-events: none; }
+.quatloos-ref label { cursor: pointer; color: var(--brass); text-decoration: underline dotted; text-underline-offset: .2em; }
+.quatloos-ref label:hover, .quatloos-check:focus-visible + label { color: var(--c-d6ba86); }
+.quatloos-check:focus-visible + label { outline: 1px solid var(--brass); outline-offset: 2px; }
+.quatloos-check:checked + label { color: var(--c-d6ba86); text-decoration-style: solid; }
+.quatloos-shot { display: none; margin: .75rem 0 1rem; font-size: .75rem; color: var(--muted); }
+.quatloos-check:checked ~ .quatloos-shot { display: block; }
+.quatloos-shot img { display: block; max-width: 100%; height: auto; background: #fff; border: 1px solid var(--line); }
+.quatloos-caption { display: block; margin-top: .5rem; font-style: italic; }
+/* In a table (the insults), the picture opens across the whole table, over the rows below, not squeezed into its cell:
+   such a table is a real table (not the scrolling block prose tables are), so it can hold it. */
+.prose table:has(.quatloos-ref) { display: table; width: 100%; position: relative; }
+.prose td .quatloos-shot { position: absolute; left: 0; right: 0; z-index: 2; margin-top: .5rem; padding: .75rem; background: var(--surface); border: 1px solid var(--line); box-shadow: 0 .5rem 1.5rem var(--c-000000b0); }
 .anthology-links { margin: .75rem 0 0; padding-left: 1.2rem; font-size: .85rem; overflow-wrap: anywhere; }
 
 /* The beginner's guide's lessons (layouts/lesson/, partials/lesson-content.html): Obsidian's callouts as boxes, the

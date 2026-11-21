@@ -1,0 +1,15 @@
+{{- /* {{< quatloos ID >}}: a citation of a Quatloos post, "(saved copy · post)". "post" links to the post; "saved copy"
+       drops down a picture of it under the line, saved in case it is deleted (CSS only: a checkbox and its label,
+       .quatloos-ref in archive.css). The pictures and their bylines are in data/quatloos.json and
+       static/images/quatloosers/, made by scripts/quatloos_capture.mjs; a post not yet saved fails the build, so run
+       the script after citing a new one. Used by content/library/quatloosers.md. */ -}}
+{{- $id := string (.Get 0) -}}
+{{- $url := printf "https://quatloos.com/Q-Forum/viewtopic.php?p=%s#p%s" $id $id -}}
+{{- with index site.Data.quatloos $id -}}
+  {{- $key := printf "quatloos-%s-%d" $id $.Ordinal -}}
+  {{- $date := (time.AsTime .date).Format "2 January 2006" -}}
+  {{- $saved := (time.AsTime .saved).Format "2 January 2006" -}}
+<span class="quatloos-ref" data-pagefind-ignore>(<input type="checkbox" class="quatloos-check" id="{{ $key }}"><label for="{{ $key }}" title="Show the saved picture of this post">saved copy</label> · <a href="{{ $url }}">post</a>)<span class="quatloos-shot" hidden><img src="{{ .image | relURL }}" width="{{ .w }}" height="{{ .h }}" alt="The post by {{ .author }} on Quatloos, {{ $date }}" loading="lazy"><span class="quatloos-caption">{{ .author }}, {{ $date }}. Saved from Quatloos on {{ $saved }}, in case it is deleted; added by this site.</span></span></span>
+{{- else -}}
+  {{- errorf "%s: Quatloos post %s has no saved picture in data/quatloos.json (run scripts/quatloos_capture.mjs)" $.Page.File.Path $id -}}
+{{- end -}}
