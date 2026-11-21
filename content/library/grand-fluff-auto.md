@@ -81,6 +81,16 @@ There isn't one.
 
 ![Grand Fluff Auto Five cover art: a girl with long dark hair in a school uniform stands between two men under the logo](/images/grand-fluff-auto.jpg "Grand Fluff Auto Five. Accept no substitutes.")
 
+## The telemetry
+
+A [post going round X](https://x.com/make_claude/status/2123908856145232060), from someone who says Rockstar fired them the day before launch, claims GTA VI times every button press to the millisecond and turns it into a "behavioural signature": impulse control, risk tolerance, aggression, patience, spending. Then, it says, the profiles get sold to insurers, credit scorers and HR screeners. Nobody has backed it up yet. Rockstar hasn't answered it. Saved in case it disappears: [the post in English](/images/grand-fluff-auto/telemetry-post-en.webp) (X's translation; the original is in Chinese) and [the photo posted with it](/images/grand-fluff-auto/telemetry-post-photo.jpg), a termination letter it says came from Take-Two.
+
+If it's true, the game finally has a story worth $80: you speed with nobody chasing you, the insurer raises your premium. Run a red light in Vice City, get turned down for a job in Ohio. Lucia was never the one keeping score.
+
+**Grand Fluff Auto:** we don't know your name. Your behavioural signature is "stole a car." You already knew that.
+
+![Parody cover art: "GTGAY 6", "Be Gay. Pay More.", a man in a pink bikini top with rainbow earrings, a unicorn in sunglasses and a rainbow sports car, rated M for "Woke Content" and "Radical Agendas"](/images/grand-fluff-auto/gtgay-6.jpg)
+
 ## Scorecard
 
 | | GTA VI | Grand Fluff Auto |
@@ -89,6 +99,7 @@ There isn't one.
 | Story | Couples therapy | Car theft |
 | Price | $80–$100 | Already paid |
 | Ground | Optional | Load-bearing |
+| Telemetry | Sold to your insurer, allegedly | Nobody's counting |
 | Metacritic | 99 | Declines to be scored without consent |
 
 
@@ -101,16 +112,17 @@ Install [FiveM](https://fivem.net/), own [GTA V](https://store.steampowered.com/
 
 ## Pictures
 
-Found online, artists unknown unless signed:
+Found online, artists unknown unless named:
 
 - Grand Theft Humiliation Ritual: watermarked Freedom Memes
 - No thanks: signed @Blankets
+- GTGAY 6: watermarked @cheeksmeta
 - Give me my money back: Fry, from *Futurama* by Matt Groening
-- Franklin: the turtle of the *Franklin* books by Paulette Bourgeois and Brenda Clark
+- Franklin: made by Maverick Darby ([@MaverickDarby](https://x.com/MaverickDarby)), using the turtle of the *Franklin* books by Paulette Bourgeois and Brenda Clark
 - Grand Theft Masculinity, Grand Honey-Do List VI, I said we gay today, Grand Fluff Auto Five: artists unknown
 
 Made one of these? Tell us and we'll credit you.
 
 ## Sources
 
-[The Statesman](https://www.thestatesman.com/entertainment/gta-6-reviews-critics-call-it-a-masterpiece-but-here-are-the-complaints-almost-every-review-keeps-repeating-1503664147.html) · [Dot Esports](https://dotesports.com/gta/news/gta-6-review-roundup) · [Push Square](https://www.pushsquare.com/features/poll-is-gta-6-being-stuck-at-30fps-on-ps5-a-dealbreaker) · [Latin Times](https://www.latintimes.com/gta-6-metacritic-record-launch-bugs-psn-outage-601565) · [Yahoo Tech](https://tech.yahoo.com/gaming/articles/gta-6-players-t-escape-174117006.html) · [iGameMag](https://igamemag.com/gta-6-reviews/) · [CryptoTicker](https://cryptoticker.io/en/gta-6-review-metacritic-problems-pc-release/)
+[The Statesman](https://www.thestatesman.com/entertainment/gta-6-reviews-critics-call-it-a-masterpiece-but-here-are-the-complaints-almost-every-review-keeps-repeating-1503664147.html) · [Dot Esports](https://dotesports.com/gta/news/gta-6-review-roundup) · [Push Square](https://www.pushsquare.com/features/poll-is-gta-6-being-stuck-at-30fps-on-ps5-a-dealbreaker) · [Latin Times](https://www.latintimes.com/gta-6-metacritic-record-launch-bugs-psn-outage-601565) · [Yahoo Tech](https://tech.yahoo.com/gaming/articles/gta-6-players-t-escape-174117006.html) · [iGameMag](https://igamemag.com/gta-6-reviews/) · [CryptoTicker](https://cryptoticker.io/en/gta-6-review-metacritic-problems-pc-release/) · [The telemetry post on X](https://x.com/make_claude/status/2123908856145232060) (unverified)
