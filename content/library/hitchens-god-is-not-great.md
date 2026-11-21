@@ -8,6 +8,7 @@ coming_soon = true
 source = "https://openlibrary.org/works/OL2974379W"
 source_label = "Find it on Open Library"
 weight = 16
+shelf = "Nonfiction"
 
 [copyright]
 status = "In copyright. Twelve published the book in the United States, and Atlantic Books in Britain, in 2007. Hitchens died in 2011, and the copyright passed to his estate."

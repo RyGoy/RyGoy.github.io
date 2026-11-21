@@ -1,20 +1,29 @@
 {{ define "main" }}
 {{/* Laid out like /articles/ (partials/article-list.html): one card per group, each listing its pages. */}}
 <header class="page-heading"><p class="eyebrow">The Tender For Law</p><h1>{{ .Title }}</h1>{{ with .Description }}<div class="prose"><p>{{ . }}</p></div>{{ end }}{{ if and .Content .Params.guide_title }}<p class="guide-jump"><a href="#guide">{{ .Params.guide_title }} <span aria-hidden="true">↓</span></a></p>{{ end }}</header>
-<div class="article-grid">
-  {{ with .Pages.ByWeight }}
-  <article class="article-card">
-    <h2>Books</h2>
-    <ul class="article-contents">{{ range . }}<li class="book-item">{{ with .Params.cover }}{{ with resources.Get . }}{{ $thumb := .Resize "72x webp q80" }}<img class="book-thumb" src="{{ $thumb.RelPermalink }}" width="{{ $thumb.Width }}" height="{{ $thumb.Height }}" alt="" loading="lazy">{{ end }}{{ end }}<span><a href="{{ .RelPermalink }}">{{ .Title }}</a>{{ with .Params.author }} <span class="book-author">{{ . }}</span>{{ end }}</span></li>{{ end }}</ul>
-  </article>
-  {{ end }}
+{{/* The books, by shelf (shelves in content/library/_index.md, shelf in each book's front matter), each shelf a grid
+     of covers with title and author; then the subject pages, one card each. */}}
+<section class="library-shelves" aria-labelledby="books-heading">
+  <div class="section-heading"><h2 id="books-heading">Books</h2><span class="rule" aria-hidden="true"></span></div>
+  {{ range .Pages }}{{ if not (in $.Params.shelves .Params.shelf) }}{{ errorf "%s: shelf %q is not one of the shelves in content/library/_index.md" .File.Path .Params.shelf }}{{ end }}{{ end }}
+  {{ range .Params.shelves }}{{ $shelf := . }}{{ with where $.Pages.ByWeight "Params.shelf" $shelf }}
+  <div class="shelf">
+    <h3 class="shelf-title">{{ $shelf }}</h3>
+    <ul class="shelf-books">{{ range . }}<li class="book-item">{{ with .Params.cover }}{{ with resources.Get . }}{{ $thumb := .Resize "96x webp q80" }}<img class="book-thumb" src="{{ $thumb.RelPermalink }}" width="{{ $thumb.Width }}" height="{{ $thumb.Height }}" alt="" loading="lazy">{{ end }}{{ end }}<span class="book-text"><a href="{{ .RelPermalink }}">{{ .Title }}</a>{{ with .Params.author }}<span class="book-author">{{ . }}</span>{{ end }}</span></li>{{ end }}</ul>
+  </div>
+  {{ end }}{{ end }}
+</section>
+<section class="library-subjects" aria-labelledby="subjects-heading">
+  <div class="section-heading"><h2 id="subjects-heading">Subjects</h2><span class="rule" aria-hidden="true"></span></div>
+  <div class="article-grid">
   {{ range .Params.subjects }}{{ with site.GetPage . }}
   <article class="article-card">
     <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
     {{ if .IsSection }}<ul class="article-contents">{{ range .Pages.ByWeight }}<li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>{{ end }}</ul>{{ else }}{{ with .Description }}<p>{{ . }}</p>{{ end }}<ul class="article-contents"><li><a href="{{ .RelPermalink }}">Read {{ .Title }} <span aria-hidden="true">→</span></a></li></ul>{{ end }}
   </article>
   {{ end }}{{ end }}
-</div>
+  </div>
+</section>
 {{/* The body of content/library/_index.md is a guide below the cards, titled by guide_title. Its cards and
      panels come from the cards, card and callout shortcodes (layouts/shortcodes/). */}}
 {{ with .Content }}

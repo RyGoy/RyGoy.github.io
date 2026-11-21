@@ -1828,6 +1828,19 @@ a.page-emblem:focus-visible { outline: 2px solid var(--brass); outline-offset: 6
 .library-book .volume-pagination { clear: both; }
 @media (max-width: 40rem) { .book-cover { float: none; width: 8rem; margin: 0 0 1.25rem; } }
 .book-item { display: flex; align-items: center; gap: .85rem; }
+/* The Library page's shelves (layouts/library/list.html): a heading per shelf over its books in two columns (one
+   on phones), cover beside the title with the author under it. */
+.library-shelves, .library-subjects { margin-top: 2.5rem; }
+.shelf + .shelf { margin-top: 2rem; }
+.shelf-title { margin: 0 0 1rem; font-family: var(--display); font-size: .85rem; font-weight: 500; letter-spacing: .14em; text-transform: uppercase; color: var(--brass); }
+.shelf-books { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); column-gap: 2.5rem; margin: 0; padding: 0; list-style: none; border-bottom: 1px solid var(--line); }
+.shelf-books .book-item { padding: .7rem 0; border-top: 1px solid var(--line); }
+@media (max-width: 48rem) { .shelf-books { grid-template-columns: 1fr; } }
+.shelf-books .book-thumb { width: 2.6rem; height: 3.8rem; }
+.book-text { display: flex; flex-direction: column; gap: .25rem; min-width: 0; line-height: 1.3; }
+.book-text a { color: var(--c-d1c5ae); overflow-wrap: anywhere; }
+.book-text .book-author { margin-left: 0; }
+.library-subjects .article-grid { align-items: stretch; }
 /* Corporate registration (layouts/corporate-registration/): small linked cards on the section page, one page per jurisdiction. */
 .registry-country { margin-top: 3rem; }
 .registry-region { margin: 2rem 0 1rem; font-size: 1.35rem; letter-spacing: .02em; color: var(--c-dfcba4); }

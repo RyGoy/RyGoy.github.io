@@ -6,6 +6,7 @@ cover_alt = "Grand Fluff Auto Five cover art: a girl with long dark hair in a sc
 author = "CDD.com"
 edition = "A FiveM server for Grand Theft Auto V"
 weight = 1
+shelf = "Featured"
 # Moved into the Library from /grand-fluff-auto/, which still leads here.
 aliases = ["/grand-fluff-auto/"]
 # Linked from the Grand Fluff Auto pop-up (layouts/partials/footer.html). The review findings are paraphrased from

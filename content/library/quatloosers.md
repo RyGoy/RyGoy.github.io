@@ -8,6 +8,7 @@ description = "Scott Duncan said what tender, surety and the Charter mean. Quatl
 source = "https://www.quatloos.com/Q-Forum/viewtopic.php?t=11275"
 source_label = "The thread on Quatloos"
 weight = 21
+shelf = "Nonfiction"
 # Every point links to the Quatloos post it comes from: mostly the thread "Scott Duncan strikes back in Quebec"
 # (viewtopic.php?t=11275, 659 posts, 2016–2017) and "Tender For Law Likes Us!" (t=9968, 2015), read in November
 # 2026. Each post is cited as {{< quatloos ID >}} (layouts/shortcodes/quatloos.html): a link to it and its saved picture, from
