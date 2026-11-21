@@ -56,8 +56,13 @@ jobs:
             --minify \
             --baseURL "${{ steps.pages.outputs.base_url }}/"
       - name: Build search index
-        # Indexes pages marked data-pagefind-body into public/pagefind/ for /search/.
-        run: npx --yes pagefind@1.5.2 --site public
+        # Indexes pages marked data-pagefind-body for /search/, in two bundles that the search page merges with
+        # different weights: everything outside the volume folders (vol_*) into public/pagefind/, and the volumes'
+        # Facebook threads into public/pagefind-volumes/. --force-language zz (a code with no stemmer) keeps words as
+        # written, so a search finds the words as typed ("accountants" doesn't match "accounts").
+        run: |
+          npx --yes pagefind@1.5.2 --site public --force-language zz --glob '{*.html,[!v]*/**/*.html,v[!o]*/**/*.html}'
+          npx --yes pagefind@1.5.2 --site public --force-language zz --glob 'vol_*/**/*.html' --output-subdir pagefind-volumes
       - name: Build concordance
         # Every use of each dictionary term, as JSON in public/concordance/ for /concordance/.
         run: python3 scripts/concordance.py public/concordance
