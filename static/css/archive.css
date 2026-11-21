@@ -1104,7 +1104,7 @@ iframe.video-embed { border: 1px solid var(--line); }
 .prose li { margin-bottom: .5em; }
 .prose pre { white-space: pre-wrap; padding: 1rem; border: 1px solid var(--line); background: var(--c-0e100d); }
 .prose code { font-size: .85em; }
-.prose table { display: block; max-width: 100%; overflow-x: auto; border-collapse: collapse; font-size: .95rem; }
+.prose table { display: block; max-width: 100%; overflow-x: auto; margin-bottom: 1.5em; border-collapse: collapse; font-size: .95rem; }
 .prose td, .prose th { border: 1px solid var(--line); padding: .6rem .9rem; text-align: left; }
 .prose hr { border: 0; border-top: 1px solid var(--line); margin-block: 2.5rem; }
 .site-footer { margin-top: 5rem; border-top: 1px solid var(--c-665239); padding: 2.5rem 0 1.5rem; color: var(--muted); background: var(--arcade) 0 0 / 1.2rem 1.2rem repeat-x; }

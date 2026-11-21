@@ -7,7 +7,7 @@ description = "As the Galactic Empire decays, the mathematician Hari Seldon uses
 coming_soon = true
 source = "https://archive.org/details/foundationtrilog0000isaa_c7g1"
 source_label = "Borrow it on the Internet Archive"
-weight = 24
+weight = 25
 shelf = "Fiction"
 
 [copyright]
