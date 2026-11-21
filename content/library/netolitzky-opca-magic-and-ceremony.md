@@ -9,6 +9,7 @@ pdf = "https://albertalawreview.com/index.php/ALR/article/download/2485/2470"
 source = "https://albertalawreview.com/index.php/ALR/article/view/2485"
 source_label = "Alberta Law Review"
 weight = 22
+shelf = "Nonfiction"
 # The summary is paraphrased from the article; the second half is The Tender For Law's own teaching, from the
 # articles and dictionary entries it links. The journal is open access but states no licence to share copies, so
 # "Read the PDF" opens the journal's own copy and none is kept here.

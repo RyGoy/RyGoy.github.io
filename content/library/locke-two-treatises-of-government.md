@@ -9,6 +9,7 @@ pdf = "/library/locke-two-treatises-of-government.pdf"
 source = "https://www.yorku.ca/comninel/courses/3025pdf/Locke.pdf"
 source_label = "York University"
 weight = 13
+shelf = "Nonfiction"
 +++
 
 John Locke (1632–1704) published the *Two Treatises* anonymously in 1689. The first tears down Sir Robert Filmer's claim that kings inherit Adam's authority. The second asks where lawful power comes from and finds it in the consent of the governed. Its chapter "Of Property" argues that a man owns what he mixes his labour with, and that government exists to protect that property.

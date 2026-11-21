@@ -9,6 +9,7 @@ pdf = "/library/whyte-a-constitutional-conference-1996.pdf"
 source = "https://journals.library.ualberta.ca/constitutional_forum/index.php/constitutional_forum/article/view/12055"
 source_label = "Constitutional Forum constitutionnel"
 weight = 4
+shelf = "Constitution"
 
 [copyright]
 status = "In copyright, but free to share. The journal publishes it under a Creative Commons licence (CC BY-NC-ND 3.0), which lets anyone copy and share it unchanged, for non-commercial purposes, with credit to the author and the journal. So the PDF and the download stay on: this copy is the journal's own PDF."

@@ -3,6 +3,9 @@ title = "Library"
 description = "Books and documents to read, and the subject pages: accounting, agency, bills of exchange, insurance, and title and property."
 # The subjects, in order. The sidebar, the home page and this page all read this list.
 subjects = ["/accounting", "/agency", "/bills-of-exchange", "/insurance", "/title&property"]
+# The shelves the books are grouped under on this page, in order. Each book names its own (shelf in its front
+# matter); within a shelf the books go by weight. A book on no listed shelf fails the build.
+shelves = ["Featured", "Constitution", "Nonfiction", "Fiction", "Reference"]
 # Heading of the guide below the cards (the body of this file); layouts/library/list.html links to it from the top.
 guide_title = "Reading the Bible"
 +++

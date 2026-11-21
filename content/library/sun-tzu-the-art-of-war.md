@@ -8,6 +8,7 @@ pdf = "/library/sun-tzu-the-art-of-war.pdf"
 source = "https://commons.wikimedia.org/wiki/File:The_Art_of_War_(Giles,_1910).pdf"
 source_label = "Wikimedia Commons"
 weight = 19
+shelf = "Nonfiction"
 # The emblem beside the title, in place of the rose window: the cobra in its own colours (static/images/emblems/cobra-colour.webp).
 emblem = "cobra"
 

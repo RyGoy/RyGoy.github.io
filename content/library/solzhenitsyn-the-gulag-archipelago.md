@@ -9,6 +9,7 @@ coming_soon = true
 source = "https://openlibrary.org/works/OL35325460W"
 source_label = "Borrow volume 1 on Open Library"
 weight = 15
+shelf = "Nonfiction"
 
 [copyright]
 status = "In copyright. The Russian text was first published in Paris in 1973, and Thomas P. Whitney's English translation of its first two parts by Harper & Row in 1974. Solzhenitsyn died in 2008 and Whitney in 2007. The text and the translation each have their own copyright."
