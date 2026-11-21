@@ -900,6 +900,12 @@ main { min-height: 35vh; }
 .led-colon { animation: led-colon-blink 1s steps(1, end) infinite; }
 @keyframes led-colon-blink { 50% { opacity: .15; } }
 @media (prefers-reduced-motion: reduce) { .led-colon { animation: none; } }
+/* The quote above the home page carousel (layouts/index.html). */
+.home-quote { margin: 2.5rem auto 0; text-align: center; }
+.home-quote blockquote { margin: 0; font-family: var(--display); font-style: italic; font-size: clamp(1.5rem, 3vw, 2.1rem); line-height: 1.2; }
+.home-quote blockquote a { color: var(--c-d3bf98); text-decoration: none; transition: color .15s; }
+.home-quote blockquote a:hover, .home-quote blockquote a:focus-visible { color: var(--c-fff5de); text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: .2em; }
+.home-quote figcaption { margin-top: .5rem; font-size: .8rem; letter-spacing: .18em; text-transform: uppercase; color: var(--brass); }
 .section-heading { display: flex; align-items: center; gap: 1.4rem; margin: 1.5rem 0; }
 .section-heading h2 { font-size: 1.65rem; letter-spacing: .025em; margin: 0; color: var(--c-d3bf98); }
 .section-heading h2 a { text-decoration: none; }
