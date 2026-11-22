@@ -11,17 +11,11 @@
 <link rel="canonical" href="{{ .Permalink }}">
 {{ if or (isset .Params "post_id") (eq .Kind "404") }}<meta name="robots" content="noindex, follow">{{ end }}
 {{ partial "structured-data.html" . }}
-{{/* Link previews when the page is shared: its title and description, and a picture: a post's or comment's own
-     recovered picture (data/photos.json, the first one, when it is at least 200 pixels across and no more than twice
-     as tall as it is wide), or else the site's card (params.link_preview in config.toml, 1200 by 630, the size Facebook
-     and X show full width, so a "summary_large_image" card). */}}
+{{/* Link previews when the page is shared: its title and description, and on every page the same picture, the
+     Grand Fluff Auto card (params.link_preview in config.toml, 1200 by 630, the size Facebook and X show full width,
+     so a "summary_large_image" card). */}}
 {{ $share := site.Params.link_preview }}
 {{ $img := dict "src" $share.image "w" $share.image_width "h" $share.image_height "alt" $share.image_alt }}
-{{ with .Params.id }}{{ with site.Data.photos }}{{ with index .entries $.Params.id }}{{ with index . 0 }}
-  {{ if and (ge .w 200) (le .h (mul .w 2)) }}
-    {{ $img = dict "src" .src "w" .w "h" .h "alt" (printf "Picture shared in this %s" (cond (isset $.Params "post_id") "comment" "post")) }}
-  {{ end }}
-{{ end }}{{ end }}{{ end }}{{ end }}
 <meta property="og:site_name" content="The Tender For Law">
 <meta property="og:type" content="{{ if $.IsPage }}article{{ else }}website{{ end }}">
 <meta property="og:title" content="{{ $title }}">

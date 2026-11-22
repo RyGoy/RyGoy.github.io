@@ -1,6 +1,7 @@
 +++
 title = "Foundation"
 cover = "images/library/asimov-foundation.webp"
+cover_alt = "The first-edition dust jacket: a spiral galaxy in white on black, with a line of rocket ships crossing it, the title in red and \"An Interplanetary Novel by Isaac Asimov\""
 author = "Isaac Asimov"
 edition = "Gnome Press, 1951"
 description = "As the Galactic Empire decays, the mathematician Hari Seldon uses psychohistory, a science that predicts the behaviour of whole populations, to shorten the dark age that will follow it."

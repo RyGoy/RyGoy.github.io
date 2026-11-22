@@ -4,7 +4,7 @@ title = "Who’s On First: FOR IDIOTS"
 date = "2014-05-05"
 description = "---"
 tags = ["AGENCY", "NARRATIVE"]
-weight = "11"
+weight = 11
 +++
 
 ##### Who’s On First: FOR IDIOTS (c) 2015 ROGUESUPPORT INC. under a Creative Commons Attribution-NonCommercial-NoDerivs 3.0 Unported License.

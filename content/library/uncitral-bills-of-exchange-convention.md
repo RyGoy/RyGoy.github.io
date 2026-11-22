@@ -1,6 +1,7 @@
 +++
 title = "UN Convention on International Bills of Exchange and International Promissory Notes"
 cover = "images/library/uncitral-bills-of-exchange-convention.webp"
+cover_alt = "The title page of the United Nations' 1988 printing, with the UN emblem"
 author = "United Nations Commission on International Trade Law (UNCITRAL)"
 edition = "New York, 1988"
 description = "Uniform rules for international bills of exchange and promissory notes: how an instrument is made, transferred and paid, and the rights and liabilities of the drawer, acceptor, endorsers and guarantors."

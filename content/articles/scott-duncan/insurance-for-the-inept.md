@@ -4,7 +4,7 @@ title = "INSURANCE FOR THE INEPT"
 date = "2014-05-05"
 description = "Scott Duncan's 2013 appointed article on insurance, written at Gail Blackman's request for THE TENDER FOR LAW."
 tags = ["SURETY", "ACCOUNTING"]
-weight = "17"
+weight = 17
 +++
 *First posted to THE TENDER FOR LAW on 2013-07-11. [Read the original post and its comments in Volume 3](/vol_iii/462493170453287_535384496497487/).*
 

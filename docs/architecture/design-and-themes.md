@@ -30,7 +30,7 @@ The site's look: a dark "occult codex", in three colour themes, with animations 
 
 **Reduced motion:** every animation has a still version for visitors who ask their system for less motion.
 
-**Leftovers:** `static/js/buttons.js` and the `alert`, `banner` and `header` partials are from the previous design and aren't used. Its Tailwind setup was removed in November 2026.
+**Leftovers:** none. The previous design's Tailwind setup, its partials (`alert`, `banner`, `header`) and `static/js/buttons.js` were removed in November 2026.
 
 ## Connected
 

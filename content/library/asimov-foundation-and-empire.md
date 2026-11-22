@@ -1,6 +1,7 @@
 +++
 title = "Foundation and Empire"
 cover = "images/library/asimov-foundation-and-empire.webp"
+cover_alt = "The first-edition dust jacket: two men, one young in a blue hood and one old and white-haired, before a silver rocket and towers on a red ground"
 author = "Isaac Asimov"
 edition = "Gnome Press, 1952"
 description = "The second Foundation book: the Foundation survives an attack by the last great general of the dying Empire, then faces the Mule, a mutant who can bend people's emotions and whom Hari Seldon's plan did not foresee."

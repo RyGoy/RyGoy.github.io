@@ -6,7 +6,7 @@ description = "Consumer or Producer"
 tags = ["NARRATIVE", "ACCOUNTING"]
 categories = ["RESPONSIBILITY", "COMPUTER SCIENCE"]
 cc_license = true
-weight = "99"
+weight = 99
 +++
 ![The hero's journey drawn as a circle: the call to adventure leads across the threshold from the known into the unknown, through helpers, trials, the abyss, transformation and atonement, and back across a second threshold to the return](/images/articles/hero-journey.svg)
 

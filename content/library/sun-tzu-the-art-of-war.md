@@ -1,6 +1,7 @@
 +++
 title = "The Art of War"
 cover = "images/library/sun-tzu-the-art-of-war.webp"
+cover_alt = "Allandale Online Publishing's cover: \"Sun Tzu on the Art of War, the oldest military treatise in the world\" in white on purple"
 author = "Sun Tzu"
 edition = "Translated by Lionel Giles, 1910 · Allandale Online Publishing, 2000"
 description = "The classic Chinese treatise on strategy, in thirteen chapters: planning, deception, terrain, the use of spies, and winning without fighting."

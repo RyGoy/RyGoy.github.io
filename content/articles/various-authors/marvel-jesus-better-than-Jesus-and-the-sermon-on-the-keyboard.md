@@ -5,7 +5,7 @@ description = "What does accounting have to do with the Kingdom of God? An artic
 date = "2024-11-23"
 tags = ["ACCOUNTING", "NARRATIVE", "SURETY", "AGENCY"]
 cc_license = true
-weight = "12"
+weight = 12
 +++
 ![image](https://github.com/user-attachments/assets/bc2df4c5-c6d4-4394-9f85-b5deaf00356a)
 

@@ -60,13 +60,13 @@ on = false
 website = ""
 
 # Link previews when a page is shared (Open Graph and Twitter tags in layouts/partials/head.html, and the articles'
-# structured data): the picture for pages with none of their own, a 1200 by 630 card with the seal and the site's
-# name (made with ImageMagick from images/seal.svg and the site font).
+# structured data): the one picture for every page, a 1200 by 630 card of the Grand Fluff Auto cover
+# (images/grand-fluff-auto.jpg, made with ImageMagick: the cover at full height over a blurred, darkened copy of itself).
 [params.link_preview]
-image = "images/share-card.jpg"
+image = "images/share-card-gfa.jpg"
 image_width = 1200
 image_height = 630
-image_alt = "The Tender For Law: the seal and the site's name, with the words: The Facebook group archive, 2013–2018."
+image_alt = "Grand Fluff Auto Five cover art: a girl with long dark hair in a school uniform stands between two men under the logo"
 
 # The Grand Fluff Auto pop-up's picture (layouts/partials/footer.html), shown 300 pixels wide. Its text is in the
 # template, with its links.

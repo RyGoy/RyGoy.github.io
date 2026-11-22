@@ -5,7 +5,7 @@ description = "All of you have encountered the term “PERSON”. You are not a 
 date = "2014-05-05"
 tags = ["AGENCY", "SURETY"]
 categories = ["JOINDER", "MAN ≠ PERSON", "HER MAJESTY AND AN ORGANIZATION"]
-weight = "11"
+weight = 11
 +++
 ![Gomer Pyle, hand on his cap, looking surprised](/images/articles/persons-for-idiots.webp)
 

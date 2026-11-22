@@ -3,8 +3,9 @@ author = "Chris Schulte"
 title = "As Dumbed Down as I Can Make It"
 date = "2017-01-14"
 description = "----"
-weight = "3"
+weight = 3
 tags = ["ACCOUNTING", "NARRATIVE"]
+categories = ["CORPORATIONS"]
 cc_license = true
 # The emblem beside the title: the cobra in its own colours (static/images/emblems/cobra-colour.webp).
 emblem = "cobra"

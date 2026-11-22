@@ -1,6 +1,7 @@
 +++
 title = "UN Convention on the Carriage of Goods by Sea (the Hamburg Rules)"
 cover = "images/library/hamburg-rules.webp"
+cover_alt = "The title page of the United Nations' 1994 printing, with the UN emblem"
 author = "United Nations Commission on International Trade Law (UNCITRAL)"
 edition = "Hamburg, 1978"
 description = "Sets the liability of a sea carrier for loss of, damage to, or delay in delivering the goods it carries, and what a bill of lading must contain."

@@ -1,6 +1,7 @@
 +++
 title = "Second Foundation"
 cover = "images/library/asimov-second-foundation.webp"
+cover_alt = "The first-edition dust jacket: a rocket ship passing a ringed planet against a bright yellow sky, the title in red"
 author = "Isaac Asimov"
 edition = "Gnome Press, 1953"
 description = "The last book of the Foundation trilogy: the Mule, and then the Foundation itself, hunt for the hidden Second Foundation that Hari Seldon set up to keep his plan on course."
