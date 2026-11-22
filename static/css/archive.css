@@ -906,22 +906,14 @@ main { min-height: 35vh; }
 .home-quote { position: relative; margin: 3.5rem auto 0; padding: 1.5rem 0 1rem; text-align: center; }
 /* A wide brass glow behind the motto. */
 .home-quote::before { content: ""; position: absolute; inset: 0 10%; z-index: -1; pointer-events: none; background: radial-gradient(ellipse at 50% 60%, color-mix(in srgb, var(--brass) 12%, transparent), transparent 70%); }
-.home-quote-mark { display: flex; align-items: center; gap: 1.2rem; margin-bottom: 1.2rem; }
-.home-quote-mark::before, .home-quote-mark::after { content: ""; flex: 1; height: 2px; background: linear-gradient(to right, transparent, var(--brass)); transform-origin: right; animation: motto-rule 1.4s cubic-bezier(.2, .7, .2, 1) both; }
-.home-quote-mark::after { background: linear-gradient(to left, transparent, var(--brass)); transform-origin: left; }
-.home-quote-mark .seal { width: 3.6rem; height: 3.6rem; flex: none; background: var(--brass); animation: motto-seal 1.2s ease-out both, motto-turn 90s linear 1.2s infinite; filter: drop-shadow(0 0 .7rem color-mix(in srgb, var(--brass) 60%, transparent)); }
-:root[data-theme="dark"] .home-quote-mark .seal { background: var(--seal-colour); filter: drop-shadow(0 0 .8rem color-mix(in srgb, var(--seal-colour) 70%, transparent)); }
 .home-quote blockquote { margin: 0; font-family: var(--display); font-weight: 700; text-transform: uppercase; letter-spacing: .32em; font-size: clamp(1.3rem, 4.3vw, 3.4rem); line-height: 1.1; white-space: nowrap; padding-left: .32em; animation: motto-in 1.6s cubic-bezier(.2, .7, .2, 1) .3s both; }
 .home-quote blockquote a { text-decoration: none; color: var(--brass); background: linear-gradient(100deg, var(--brass) 40%, color-mix(in srgb, var(--brass) 25%, #fff) 50%, var(--brass) 60%) 0 0 / 300% 100%; -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; animation: motto-glint 9s ease-in-out 1.6s infinite; filter: drop-shadow(0 0 .8rem color-mix(in srgb, var(--brass) 30%, transparent)); }
 .home-quote blockquote a:hover, .home-quote blockquote a:focus-visible { text-decoration: underline; text-decoration-color: var(--brass); text-decoration-thickness: 1px; text-underline-offset: .25em; }
 /* On load: the rules draw out from the seal, the seal fades in and then turns slowly, the words close in from wide
    spacing, then the glint crosses them at once and every 9s after. All still under reduced motion. */
-@keyframes motto-rule { from { transform: scaleX(0); } to { transform: scaleX(1); } }
-@keyframes motto-seal { from { opacity: 0; transform: scale(.6); } to { opacity: 1; transform: scale(1); } }
-@keyframes motto-turn { to { transform: rotate(360deg); } }
 @keyframes motto-in { from { opacity: 0; letter-spacing: .7em; filter: blur(4px); } to { opacity: 1; letter-spacing: .32em; filter: none; } }
 @keyframes motto-glint { 0% { background-position: 100% 0; } 20%, 100% { background-position: 0 0; } }
-@media (prefers-reduced-motion: reduce) { .home-quote-mark::before, .home-quote-mark::after, .home-quote-mark .seal, .home-quote blockquote, .home-quote blockquote a { animation: none; } }
+@media (prefers-reduced-motion: reduce) { .home-quote blockquote, .home-quote blockquote a { animation: none; } }
 .footer-motto { margin: .4rem 0 .2rem; font-family: var(--display); font-weight: 700; text-transform: uppercase; letter-spacing: .3em; font-size: 1.35rem; text-shadow: 0 0 .8rem color-mix(in srgb, var(--brass) 45%, transparent); }
 .footer-motto a { color: var(--brass); text-decoration: none; }
 .footer-motto a:hover, .footer-motto a:focus-visible { color: var(--c-fff5de); }
@@ -1036,6 +1028,7 @@ iframe.video-embed { border: 1px solid var(--line); }
   .volume-pagination { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: .75rem 1rem; }
   .volume-pagination a[rel="prev"] { grid-column: 1; grid-row: 1; }
   .volume-pagination a[rel="next"] { grid-column: 2; grid-row: 1; }
+  .volume-pagination a { border-radius: 1rem; align-self: center; }
   .volume-pagination a:not([rel]) { grid-column: 1 / -1; grid-row: 2; text-align: center; }
 }
 .article-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); align-items: start; gap: 1.5rem; }
@@ -2055,3 +2048,7 @@ a.page-emblem:focus-visible { outline: 2px solid var(--brass); outline-offset: 6
 .lesson-pager a > span { font-size: .8rem; letter-spacing: .08em; text-transform: uppercase; color: var(--brass); }
 .lesson-pager a:hover, .lesson-pager a:focus-visible { border-color: var(--brass); }
 .lesson-pager .lesson-next { text-align: right; align-items: flex-end; }
+
+/* Footer link to the Grand Fluff Auto server, shown as a small copy of its logo (images/grand-fluff-auto/logo-small.webp). */
+.footer-gfa-logo { display: block; width: 90px; height: auto; transition: transform .2s; }
+.game-launch-link:hover .footer-gfa-logo, .game-launch-link:focus-visible .footer-gfa-logo { transform: scale(1.06); }
