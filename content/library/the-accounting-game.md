@@ -8,7 +8,7 @@ description = "Basic accounting taught through running a lemonade stand: assets,
 coming_soon = true
 source = "https://openlibrary.org/books/OL24315384M/Accounting_Game"
 source_label = "Find it on Open Library"
-weight = 5
+weight = 6
 shelf = "Nonfiction"
 
 [copyright]

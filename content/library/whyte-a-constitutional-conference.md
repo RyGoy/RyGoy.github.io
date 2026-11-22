@@ -1,5 +1,6 @@
 +++
 title = "“A Constitutional Conference … Shall Be Convened …”: Living with Constitutional Promises"
+linkTitle = "“A Constitutional Conference … Shall Be Convened …”" # shorter, for links to it (.LinkTitle)
 cover = "images/library/whyte-a-constitutional-conference.webp"
 cover_alt = "First page of the article"
 author = "John D. Whyte"
@@ -8,7 +9,7 @@ description = "Whyte argues that Canada's first ministers never held the review 
 pdf = "/library/whyte-a-constitutional-conference-1996.pdf"
 source = "https://journals.library.ualberta.ca/constitutional_forum/index.php/constitutional_forum/article/view/12055"
 source_label = "Constitutional Forum constitutionnel"
-weight = 4
+weight = 5
 shelf = "Constitution"
 
 [copyright]

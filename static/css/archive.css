@@ -175,6 +175,7 @@
   --c-fff3d080: #fff3d080;
   --c-fff3d099: #fff3d099;
   --c-fff5de: #fff5de;
+  --c-ffffff: #ffffff;
   --c-ffffff12: #ffffff12;
   --c-ffffff14: #ffffff14;
   --c-ffffff1f: #ffffff1f;
@@ -327,6 +328,7 @@
   --c-fff3d080: #20150080;
   --c-fff3d099: #20150099;
   --c-fff5de: #1c1401;
+  --c-ffffff: #0f0f0f;
   --c-ffffff12: #0f0f0f12;
   --c-ffffff14: #0f0f0f14;
   --c-ffffff1f: #0f0f0f1f;
@@ -479,6 +481,7 @@
   --c-fff3d080: #f0eee980;
   --c-fff3d099: #f0eee999;
   --c-fff5de: #f0eeeb;
+  --c-ffffff: #eeeeee;
   --c-ffffff12: #eeeeee12;
   --c-ffffff14: #eeeeee14;
   --c-ffffff1f: #eeeeee1f;
@@ -900,11 +903,29 @@ main { min-height: 35vh; }
 @keyframes led-colon-blink { 50% { opacity: .15; } }
 @media (prefers-reduced-motion: reduce) { .led-colon { animation: none; } }
 /* The quote above the home page carousel (layouts/index.html). */
-.home-quote { margin: 2.5rem auto 0; text-align: center; }
-.home-quote blockquote { margin: 0; font-family: var(--display); font-style: italic; font-size: clamp(1.5rem, 3vw, 2.1rem); line-height: 1.2; }
-.home-quote blockquote a { color: var(--c-d3bf98); text-decoration: none; transition: color .15s; }
-.home-quote blockquote a:hover, .home-quote blockquote a:focus-visible { color: var(--c-fff5de); text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: .2em; }
-.home-quote figcaption { margin-top: .5rem; font-size: .8rem; letter-spacing: .18em; text-transform: uppercase; color: var(--brass); }
+.home-quote { position: relative; margin: 3.5rem auto 0; padding: 1.5rem 0 1rem; text-align: center; }
+/* A wide brass glow behind the motto. */
+.home-quote::before { content: ""; position: absolute; inset: 0 10%; z-index: -1; pointer-events: none; background: radial-gradient(ellipse at 50% 60%, color-mix(in srgb, var(--brass) 12%, transparent), transparent 70%); }
+.home-quote-mark { display: flex; align-items: center; gap: 1.2rem; margin-bottom: 1.2rem; }
+.home-quote-mark::before, .home-quote-mark::after { content: ""; flex: 1; height: 2px; background: linear-gradient(to right, transparent, var(--brass)); transform-origin: right; animation: motto-rule 1.4s cubic-bezier(.2, .7, .2, 1) both; }
+.home-quote-mark::after { background: linear-gradient(to left, transparent, var(--brass)); transform-origin: left; }
+.home-quote-mark .seal { width: 3.6rem; height: 3.6rem; flex: none; background: var(--brass); animation: motto-seal 1.2s ease-out both, motto-turn 90s linear 1.2s infinite; filter: drop-shadow(0 0 .7rem color-mix(in srgb, var(--brass) 60%, transparent)); }
+:root[data-theme="dark"] .home-quote-mark .seal { background: var(--seal-colour); filter: drop-shadow(0 0 .8rem color-mix(in srgb, var(--seal-colour) 70%, transparent)); }
+.home-quote blockquote { margin: 0; font-family: var(--display); font-weight: 700; text-transform: uppercase; letter-spacing: .32em; font-size: clamp(1.3rem, 4.3vw, 3.4rem); line-height: 1.1; white-space: nowrap; padding-left: .32em; animation: motto-in 1.6s cubic-bezier(.2, .7, .2, 1) .3s both; }
+.home-quote blockquote a { text-decoration: none; color: var(--brass); background: linear-gradient(100deg, var(--brass) 40%, color-mix(in srgb, var(--brass) 25%, #fff) 50%, var(--brass) 60%) 0 0 / 300% 100%; -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; animation: motto-glint 9s ease-in-out 1.6s infinite; filter: drop-shadow(0 0 .8rem color-mix(in srgb, var(--brass) 30%, transparent)); }
+.home-quote blockquote a:hover, .home-quote blockquote a:focus-visible { text-decoration: underline; text-decoration-color: var(--brass); text-decoration-thickness: 1px; text-underline-offset: .25em; }
+/* On load: the rules draw out from the seal, the seal fades in and then turns slowly, the words close in from wide
+   spacing, then the glint crosses them at once and every 9s after. All still under reduced motion. */
+@keyframes motto-rule { from { transform: scaleX(0); } to { transform: scaleX(1); } }
+@keyframes motto-seal { from { opacity: 0; transform: scale(.6); } to { opacity: 1; transform: scale(1); } }
+@keyframes motto-turn { to { transform: rotate(360deg); } }
+@keyframes motto-in { from { opacity: 0; letter-spacing: .7em; filter: blur(4px); } to { opacity: 1; letter-spacing: .32em; filter: none; } }
+@keyframes motto-glint { 0% { background-position: 100% 0; } 20%, 100% { background-position: 0 0; } }
+@media (prefers-reduced-motion: reduce) { .home-quote-mark::before, .home-quote-mark::after, .home-quote-mark .seal, .home-quote blockquote, .home-quote blockquote a { animation: none; } }
+.footer-motto { margin: .4rem 0 .2rem; font-family: var(--display); font-weight: 700; text-transform: uppercase; letter-spacing: .3em; font-size: 1.35rem; text-shadow: 0 0 .8rem color-mix(in srgb, var(--brass) 45%, transparent); }
+.footer-motto a { color: var(--brass); text-decoration: none; }
+.footer-motto a:hover, .footer-motto a:focus-visible { color: var(--c-fff5de); }
+.home-quote figcaption { margin-top: .9rem; font-size: .8rem; letter-spacing: .18em; text-transform: uppercase; color: var(--brass); }
 .home-quote figcaption a { color: inherit; text-decoration: none; }
 .home-quote figcaption a:hover, .home-quote figcaption a:focus-visible { color: var(--c-fff5de); text-decoration: underline; text-underline-offset: .2em; }
 .section-heading { display: flex; align-items: center; gap: 1.4rem; margin: 1.5rem 0; }
@@ -1005,8 +1026,9 @@ iframe.video-embed { border: 1px solid var(--line); }
 /* Post and comment pages: the heading is the author, with the date beneath. */
 .thread-heading h1 .thread-date { display: block; margin-top: .3em; font-size: .42em; letter-spacing: .03em; color: var(--muted); }
 .volume-pagination { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 1rem; padding: 1.5rem 0; border-block: 1px solid var(--line); font-size: .95rem; }
-.volume-pagination a { text-decoration: none; color: var(--c-d3bf98); }
-.volume-pagination a:hover, .volume-pagination a:focus-visible { color: var(--c-fff5de); }
+.volume-pagination a { text-decoration: none; color: var(--c-d3bf98); padding: .6rem 1.1rem; border: 1px solid var(--brass); border-radius: 999px; background: color-mix(in srgb, var(--brass) 12%, transparent); font-weight: 600; letter-spacing: .02em; transition: background .2s, color .2s, box-shadow .2s; }
+.volume-pagination a [aria-hidden="true"] { font-size: 1.25em; line-height: 1; vertical-align: -.08em; }
+.volume-pagination a:hover, .volume-pagination a:focus-visible { color: var(--c-fff5de); background: color-mix(in srgb, var(--brass) 30%, transparent); box-shadow: 0 0 .8rem color-mix(in srgb, var(--brass) 45%, transparent); }
 .volume-pagination a[rel="next"] { margin-left: auto; text-align: right; }
 .library-book .volume-pagination { margin-bottom: 2.5rem; }
 /* Phones: previous and next side by side, the middle link on its own row. */
@@ -1074,6 +1096,7 @@ iframe.video-embed { border: 1px solid var(--line); }
 .longform .page-heading { border-bottom: 1px solid var(--line); margin-bottom: 2.5rem; }
 .longform .page-heading h1 { font-size: clamp(2.5rem, 4.3vw, 4rem); }
 /* A title word shown as a picture ([title_word] in an article's front matter), sized to the heading's letters. */
+.page-heading h1 .title-image { display: block; width: min(100%, 26rem); height: auto; }
 .page-heading h1 .title-word { display: inline-block; height: 1.15em; width: auto; vertical-align: -0.2em; }
 .article-author { color: var(--c-c7b68f); margin-bottom: .5rem; }
 .article-byline { display: flex; flex-wrap: wrap; align-items: center; gap: .5rem 1rem; margin-bottom: .5rem; }
@@ -1799,6 +1822,16 @@ a.page-emblem:focus-visible { outline: 2px solid var(--brass); outline-offset: 6
   a.page-emblem:hover, a.page-emblem:focus-visible { transform: scale(1.04); }
 }
 @media (prefers-reduced-motion: reduce) { a.page-emblem { transition: none; } }
+/* .shimmer: a band of light sweeps across now and then (every 7s) to say something important is there: Grand Fluff
+   Auto's button to The English Constitution, and that book's cobra (shimmer_next, emblem_shimmer). On the cobra the band
+   is masked to its shape. None under reduced motion. */
+.shimmer { position: relative; overflow: hidden; isolation: isolate; }
+.shimmer::after { content: ""; position: absolute; inset: 0; pointer-events: none; background: linear-gradient(105deg, transparent 35%, rgb(255 255 255 / .55) 50%, transparent 65%) no-repeat; background-size: 250% 100%; background-position: 150% 0; animation: shimmer 7s ease-in-out 1.5s infinite; }
+.page-emblem.shimmer { overflow: visible; position: absolute; }
+@media (max-width: 720px) { .page-emblem.shimmer { position: relative; } }
+.page-emblem.shimmer::after { -webkit-mask: url("../images/emblems/cobra-colour.webp") center / contain no-repeat; mask: url("../images/emblems/cobra-colour.webp") center / contain no-repeat; }
+@keyframes shimmer { 0%, 70% { background-position: 150% 0; } 85%, 100% { background-position: -50% 0; } }
+@media (prefers-reduced-motion: reduce) { .shimmer::after { animation: none; display: none; } }
 /* Volume pages and the posts and comments in them show the volume's numeral (data-numeral) in place of the rose. */
 .page-heading[data-numeral]::after { content: attr(data-numeral); width: auto; aspect-ratio: auto; font-family: var(--display); font-size: 10rem; font-weight: 500; line-height: 1; letter-spacing: .02em; color: var(--emblem-colour); background: none; opacity: calc(.08 * var(--emblem-strength)); -webkit-mask: none; mask: none; }
 .discussed-heading::after { -webkit-mask-image: var(--emblem-crucifix); mask-image: var(--emblem-crucifix); }
@@ -1998,7 +2031,7 @@ a.page-emblem:focus-visible { outline: 2px solid var(--brass); outline-offset: 6
 .quatloos-check:checked + label { color: var(--c-d6ba86); text-decoration-style: solid; }
 .quatloos-shot { display: none; margin: .75rem 0 1rem; font-size: .75rem; color: var(--muted); }
 .quatloos-check:checked ~ .quatloos-shot { display: block; }
-.quatloos-shot img { display: block; max-width: 100%; height: auto; background: #fff; border: 1px solid var(--line); }
+.quatloos-shot img { display: block; max-width: 100%; height: auto; background: var(--c-ffffff); border: 1px solid var(--line); }
 .quatloos-caption { display: block; margin-top: .5rem; font-style: italic; }
 /* In a table (the insults), the picture opens across the whole table, over the rows below, not squeezed into its cell:
    such a table is a real table (not the scrolling block prose tables are), so it can hold it. */

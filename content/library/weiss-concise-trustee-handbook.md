@@ -6,7 +6,7 @@ author = "Carlton Weiss"
 edition = "NACRS, 2005–2008 · 77 pages, with sample forms"
 description = "A handbook for the trustee of an express trust: the declaration of trust, the trust corpus and its certificates, the trustee's powers, duties and liabilities, banking, transferring assets, keeping minutes, legal affairs and the I.R.S., with sample forms."
 pdf = "/library/weiss-concise-trustee-handbook.pdf"
-weight = 30
+weight = 31
 shelf = "Nonfiction"
 # Shared from the copy in static/library/ for private, non-commercial educational use, as its notice allows (see [copyright]).
 

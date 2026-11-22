@@ -8,7 +8,7 @@ description = "Smith's account of how nations grow rich: the division of labour,
 pdf = "/library/smith-the-wealth-of-nations.pdf"
 source = "https://www.gutenberg.org/ebooks/3300"
 source_label = "Project Gutenberg"
-weight = 20
+weight = 21
 shelf = "Nonfiction"
 +++
 

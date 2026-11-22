@@ -8,7 +8,7 @@ description = "Solzhenitsyn's history of the Soviet prison-camp system, built fr
 coming_soon = true
 source = "https://openlibrary.org/works/OL35325460W"
 source_label = "Borrow volume 1 on Open Library"
-weight = 15
+weight = 16
 shelf = "Nonfiction"
 
 [copyright]

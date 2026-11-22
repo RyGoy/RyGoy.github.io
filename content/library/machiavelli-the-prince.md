@@ -8,7 +8,7 @@ description = "Machiavelli's handbook on how principalities are won, held and lo
 pdf = "/library/machiavelli-the-prince.pdf"
 source = "https://www.gutenberg.org/ebooks/1232"
 source_label = "Project Gutenberg"
-weight = 18
+weight = 19
 shelf = "Nonfiction"
 +++
 

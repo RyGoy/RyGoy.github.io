@@ -8,7 +8,7 @@ description = "Hitchens's polemic against organised religion: that its scripture
 coming_soon = true
 source = "https://openlibrary.org/works/OL2974379W"
 source_label = "Find it on Open Library"
-weight = 16
+weight = 17
 shelf = "Nonfiction"
 
 [copyright]

@@ -9,7 +9,7 @@
   {{ range .Params.shelves }}{{ $shelf := . }}{{ with where $.Pages.ByWeight "Params.shelf" $shelf }}
   <div class="shelf">
     <h3 class="shelf-title">{{ $shelf }}</h3>
-    <ul class="shelf-books">{{ range . }}<li class="book-item">{{ with .Params.cover }}{{ with resources.Get . }}{{ $thumb := .Resize "96x webp q80" }}<img class="book-thumb" src="{{ $thumb.RelPermalink }}" width="{{ $thumb.Width }}" height="{{ $thumb.Height }}" alt="" loading="lazy">{{ end }}{{ end }}<span class="book-text"><a href="{{ .RelPermalink }}">{{ .Title }}</a>{{ with .Params.author }}<span class="book-author">{{ . }}</span>{{ end }}</span></li>{{ end }}</ul>
+    <ul class="shelf-books">{{ range . }}<li class="book-item">{{ with .Params.cover }}{{ with resources.Get . }}{{ $thumb := .Resize "96x webp q80" }}<img class="book-thumb" src="{{ $thumb.RelPermalink }}" width="{{ $thumb.Width }}" height="{{ $thumb.Height }}" alt="" loading="lazy">{{ end }}{{ end }}<span class="book-text"><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>{{ with .Params.author }}<span class="book-author">{{ . }}</span>{{ end }}</span></li>{{ end }}</ul>
   </div>
   {{ end }}{{ end }}
 </section>

@@ -8,7 +8,7 @@ description = "Philostratus' life of Apollonius of Tyana, the first-century Pyth
 pdf = "/library/philostratus-life-of-apollonius.pdf"
 source = "https://archive.org/details/conybeare-1912-philostratus-apollonius"
 source_label = "Internet Archive"
-weight = 24
+weight = 25
 shelf = "Fiction"
 # The home page's quote, "Glory To Mankind" (layouts/index.html), links here.
 

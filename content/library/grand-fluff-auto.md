@@ -11,11 +11,10 @@ shelf = "Featured"
 aliases = ["/grand-fluff-auto/"]
 # Linked from the Grand Fluff Auto pop-up (layouts/partials/footer.html). The review findings are paraphrased from
 # the sources listed at the end, as reported in GTA VI's launch week, November 2026.
-[title_word] # "Fluff" in the heading, cut from the logo on static/images/grand-fluff-auto.jpg
-word = "Fluff"
-image = "/images/grand-fluff-auto/fluff.png"
-width = 384
-height = 144
+[title_image] # The whole heading as the logo, cut from static/images/grand-fluff-auto.jpg, with "is just better" added
+image = "/images/grand-fluff-auto/logo.webp"
+width = 538
+height = 483
 
 # The buttons under the cover (layouts/library/single.html): what you need to play.
 [[links]]

@@ -8,7 +8,7 @@ description = "Hobbes's argument that without a common power people live in a wa
 pdf = "/library/hobbes-leviathan-1914.pdf"
 source = "https://archive.org/details/in.ernet.dli.2015.32247"
 source_label = "Internet Archive"
-weight = 12
+weight = 13
 shelf = "Nonfiction"
 +++
 

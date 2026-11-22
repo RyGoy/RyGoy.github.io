@@ -8,7 +8,7 @@ description = "Sets the liability of a sea carrier for loss of, damage to, or de
 pdf = "https://uncitral.un.org/sites/default/files/media-documents/uncitral/en/hamburg_rules_e.pdf"
 source = "https://uncitral.un.org/"
 source_label = "UNCITRAL"
-weight = 7
+weight = 8
 shelf = "Nonfiction"
 +++
 
