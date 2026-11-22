@@ -17,7 +17,7 @@ How visitors find things on the site, and how search engines find the site.
 - **Structured data** (`partials/structured-data.html`): the home page is a WebSite, posts are forum posts with their comments, and articles are Articles, with breadcrumbs.
 - **`robots.txt` and the sitemap** come from `layouts/robots.txt` and `layouts/_default/sitemap.xml`.
 - **IndexNow:** after each deploy, the changed pages are sent to search engines (`scripts/indexnow.py`). See [Build and deploy](build-and-deploy.md).
-- **Link previews** (Open Graph and Twitter tags in `partials/head.html`) use one picture on every page, whatever the page: the Grand Fluff Auto card (`static/images/share-card-gfa.jpg`), set in `[params.link_preview]` in `config.toml`.
+- **Link previews** (Open Graph and Twitter tags in `partials/head.html`) use Grand Fluff Auto's title and description (from `content/library/grand-fluff-auto.md`) and one picture on every page, whatever the page; the link and the page's own title and description for search engines are unchanged. The picture is the Grand Fluff Auto card (`static/images/share-card-gfa.jpg`), set in `[params.link_preview]` in `config.toml`.
 
 ## Connected
 

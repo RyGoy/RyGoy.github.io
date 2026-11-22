@@ -11,23 +11,27 @@
 <link rel="canonical" href="{{ .Permalink }}">
 {{ if or (isset .Params "post_id") (eq .Kind "404") }}<meta name="robots" content="noindex, follow">{{ end }}
 {{ partial "structured-data.html" . }}
-{{/* Link previews when the page is shared: its title and description, and on every page the same picture, the
-     Grand Fluff Auto card (params.link_preview in config.toml, 1200 by 630, the size Facebook and X show full width,
-     so a "summary_large_image" card). */}}
+{{/* Link previews when the page is shared: on every page, whatever the page, Grand Fluff Auto's title, description
+     and card (content/library/grand-fluff-auto.md; the picture is params.link_preview in config.toml, 1200 by 630, the
+     size Facebook and X show full width, so a "summary_large_image" card). The link itself (og:url) stays the page's
+     own, and the page's <title> and meta description, which search engines read, are its own. */}}
+{{ $gfa := site.GetPage "/library/grand-fluff-auto" }}
+{{ $shareTitle := $gfa.Title }}
+{{ $shareDesc := $gfa.Description }}
 {{ $share := site.Params.link_preview }}
 {{ $img := dict "src" $share.image "w" $share.image_width "h" $share.image_height "alt" $share.image_alt }}
 <meta property="og:site_name" content="The Tender For Law">
 <meta property="og:type" content="{{ if $.IsPage }}article{{ else }}website{{ end }}">
-<meta property="og:title" content="{{ $title }}">
-<meta property="og:description" content="{{ $meta.description }}">
+<meta property="og:title" content="{{ $shareTitle }}">
+<meta property="og:description" content="{{ $shareDesc }}">
 <meta property="og:url" content="{{ $.Permalink }}">
 <meta property="og:image" content="{{ $img.src | absURL }}">
 <meta property="og:image:width" content="{{ $img.w }}">
 <meta property="og:image:height" content="{{ $img.h }}">
 <meta property="og:image:alt" content="{{ $img.alt }}">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="{{ $title }}">
-<meta name="twitter:description" content="{{ $meta.description }}">
+<meta name="twitter:title" content="{{ $shareTitle }}">
+<meta name="twitter:description" content="{{ $shareDesc }}">
 <meta name="twitter:image" content="{{ $img.src | absURL }}">
 <meta name="twitter:image:alt" content="{{ $img.alt }}">
 <link rel="icon" href="{{ "images/favicon-crucifix.svg" | relURL }}" type="image/svg+xml">
