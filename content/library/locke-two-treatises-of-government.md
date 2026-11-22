@@ -8,7 +8,7 @@ description = "Locke's answer to Robert Filmer's divine right of kings, and his 
 pdf = "/library/locke-two-treatises-of-government.pdf"
 source = "https://www.yorku.ca/comninel/courses/3025pdf/Locke.pdf"
 source_label = "York University"
-weight = 13
+weight = 14
 shelf = "Nonfiction"
 +++
 

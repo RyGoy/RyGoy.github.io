@@ -8,7 +8,7 @@ description = "Newton's plain-language account of universal gravitation: why the
 pdf = "/library/newton-system-of-the-world-1731.pdf"
 source = "https://archive.org/details/b30538531"
 source_label = "Internet Archive"
-weight = 10
+weight = 11
 shelf = "Nonfiction"
 +++
 

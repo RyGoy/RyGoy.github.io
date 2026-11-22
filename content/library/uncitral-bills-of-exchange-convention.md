@@ -8,7 +8,7 @@ description = "Uniform rules for international bills of exchange and promissory 
 pdf = "https://uncitral.un.org/sites/default/files/media-documents/uncitral/en/x_12_e.pdf"
 source = "https://uncitral.un.org/"
 source_label = "UNCITRAL"
-weight = 6
+weight = 7
 shelf = "Nonfiction"
 +++
 

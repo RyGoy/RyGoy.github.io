@@ -8,7 +8,7 @@ description = "Paine's case for deism: belief in one God known through reason an
 pdf = "/library/paine-the-age-of-reason.pdf"
 source = "https://en.wikisource.org/wiki/The_Age_of_Reason"
 source_label = "Wikisource"
-weight = 14
+weight = 15
 shelf = "Nonfiction"
 +++
 

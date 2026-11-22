@@ -8,7 +8,7 @@ description = "Riegel's case for money issued by the people who trade, not by go
 pdf = "https://www.community-exchange.org/docs/Riegel/private_enterprise_money.pdf"
 source = "https://www.community-exchange.org/"
 source_label = "Community Exchange System"
-weight = 9
+weight = 10
 shelf = "Nonfiction"
 +++
 

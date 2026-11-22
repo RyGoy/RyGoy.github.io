@@ -8,7 +8,7 @@ description = "Sagan's case for scientific thinking against pseudoscience and su
 coming_soon = true
 source = "https://openlibrary.org/works/OL2950942W"
 source_label = "Find it on Open Library"
-weight = 17
+weight = 18
 shelf = "Nonfiction"
 
 [copyright]

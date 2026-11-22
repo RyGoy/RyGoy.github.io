@@ -12,6 +12,8 @@ weight = 2
 shelf = "Constitution"
 # The emblem beside the title, in place of the rose window: the cobra in its own colours (static/images/emblems/cobra-colour.webp).
 emblem = "cobra"
+emblem_shimmer = true # the cobra shimmers now and then
+shimmer_links = true # and so do the buttons to this book on the books either side (Grand Fluff Auto, Ho, Canada!)
 
 # The cobra is a link that plays this video in a pop-up (layouts/partials/page-emblem.html).
 [emblem_video]

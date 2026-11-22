@@ -8,7 +8,7 @@ description = "Bastiat's argument that law exists to protect each person's life,
 pdf = "https://cdn.mises.org/thelaw.pdf"
 source = "https://mises.org/"
 source_label = "Mises Institute"
-weight = 11
+weight = 12
 shelf = "Nonfiction"
 +++
 
