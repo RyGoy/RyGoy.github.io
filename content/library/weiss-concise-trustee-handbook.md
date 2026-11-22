@@ -5,20 +5,13 @@ cover_alt = "The title page: \"Weiss's Concise Trustee Handbook, a guide to the 
 author = "Carlton Weiss"
 edition = "NACRS, 2005–2008 · 77 pages, with sample forms"
 description = "A handbook for the trustee of an express trust: the declaration of trust, the trust corpus and its certificates, the trustee's powers, duties and liabilities, banking, transferring assets, keeping minutes, legal affairs and the I.R.S., with sample forms."
-coming_soon = true
 pdf = "/library/weiss-concise-trustee-handbook.pdf"
-source = "https://drydenwire.com/site/assets/files/30245/weisss-trustee-handbook.pdf"
-source_label = "DrydenWire"
 weight = 30
 shelf = "Nonfiction"
-# A copy is kept in static/library/ for when the buttons are turned on; DrydenWire's copy is linked meanwhile.
-
-[[links]]
-label = "A copy on DrydenWire"
-url = "https://drydenwire.com/site/assets/files/30245/weisss-trustee-handbook.pdf"
+# Shared from the copy in static/library/ for private, non-commercial educational use, as its notice allows (see [copyright]).
 
 [copyright]
-status = "In copyright. The handbook's own copyright page reads \"Copyright © 2005-8 by NACRS. All Rights Reserved.\" and limits it to private educational use. The copy linked here is one DrydenWire, a Wisconsin news site, posted on its own site."
+status = "In copyright. The handbook's licence is its own notice, on its copyright page: \"Copyright © 2005-8 by NACRS. All Rights Reserved. For private educational use only.\" It is shared here on those terms, for education, free and not for profit."
 holder = "NACRS, as the handbook names it. The handbook names its author only as Weiss: Carlton Weiss."
 us = "1 January 2104 if NACRS is the author or the work is anonymous (95 years after publication in 2008); otherwise 70 years after the author's death"
 canada = "If the author stays unknown, 1 January after the 75th anniversary of publication (2084); otherwise 70 years after the author's death"
