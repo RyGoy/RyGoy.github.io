@@ -3,8 +3,9 @@ author = "Chris Schulte"
 title = "How To Be a Plumber"
 date = "2017-09-23"
 description = "----"
-weight = "5"
+weight = 5
 tags = ["ACCOUNTING", "NARRATIVE"]
+categories = ["CORPORATIONS"]
 cc_license = true
 # The emblem beside the title: the cobra in its own colours (static/images/emblems/cobra-colour.webp).
 emblem = "cobra"

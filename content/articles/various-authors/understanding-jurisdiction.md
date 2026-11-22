@@ -5,7 +5,7 @@ date = ""
 description = "Oaths, Income Tax, & Jesus Christ"
 tags = ["TAXATION"]
 cc_license = true
-weight = "1"
+weight = 1
 +++
 *Posted to THE TENDER FOR LAW by Maa Nathltaapaan on 2013-03-15. [Read the post and its comments in Volume 1](/vol_i/462493170453287_492303727472231/).*
 

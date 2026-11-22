@@ -5,7 +5,7 @@ date = "2014-05-05"
 description = "Dan Lien-Your-Name Wilson"
 tags = ["TRUSTS", "ACCOUNTING", "PROPERTY"]
 categories = ["RIGHTS", "DAN LIEN-YOUR-NAME WILSON"]
-weight = "9"
+weight = 9
 +++
 ![J. R. "Bob" Dobbs, the pipe-smoking face of the Church of the SubGenius](/images/articles/lien-your-name.gif)
 

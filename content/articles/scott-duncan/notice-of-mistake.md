@@ -4,7 +4,7 @@ title = "NOTICE OF MISTAKE"
 date = "2015-05-30"
 description = "questions before the court"
 tags = ["SURETY", "TRUSTS", "AGENCY"]
-weight = "10"
+weight = 10
 +++
 *First appeared on THE TENDER FOR LAW as a comment by Derek Moran on 2013-12-21. [Read it in Volume 3](/vol_iii/462493170453287_537421026293834/#entry-602411166461486).*
 

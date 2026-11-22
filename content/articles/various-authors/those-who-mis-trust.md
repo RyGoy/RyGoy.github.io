@@ -5,7 +5,7 @@ description = "Title & Trust"
 tags = ["TRUSTS", "TITLE", "PROPERTY"]
 categories = ["CLAIMS"]
 cc_license = true
-weight = "1"
+weight = 1
 +++
 The title of this paper is a little tricky. We’ll just clarify at the outset that those who mistrust— miss trusts. Those who mistrust are those who make a serious mistake. What I will be discussing is the mistake of missing the point about Express Trusts and the advantages of using Express Trusts wisely.
 

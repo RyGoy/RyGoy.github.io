@@ -5,7 +5,7 @@ date = "2014-05-05"
 description = "You MUST give notice"
 tags = ["TRUSTS"]
 categories = ["CITIZENSHIP", "ADMIRALTY"]
-weight = "12"
+weight = 12
 +++
 *First posted to THE TENDER FOR LAW on 2013-02-19. [Read the original post and its comments in Volume 1](/vol_i/462493170453287_482690341766903/).*
 

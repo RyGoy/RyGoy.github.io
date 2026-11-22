@@ -5,7 +5,7 @@ date = "2014-05-05"
 description = "All that is “legal” relies on belief.  Legal has nothing to do with right and wrong.  It always has to do with money."
 tags = ["ACCOUNTING", "SURETY"]
 categories = ["CRIME", "MONEY"]
-weight = "19"
+weight = 19
 +++
 *First posted to THE TENDER FOR LAW on 2014-01-01. [Read the original post and its comments in Volume 5](/vol_v/462493170453287_606995862669683/).*
 

@@ -4,7 +4,7 @@ title = "LEGALESE FOR IDIOTS"
 description = "It’s feast or famine around here at THE TENDER FOR LAW. Derek Moran doubted Scott Duncan could top the SURETY article. CHALLENGE ACCEPTED: LEGALESE FOR IDIOTS."
 date = "2013-01-01"
 tags = ["SURETY", "TRUSTS"]
-weight = "16"
+weight = 16
 +++
 *First posted to THE TENDER FOR LAW on 2013-03-11. [Read the original post and its comments in Volume 1](/vol_i/462493170453287_490962517606352/).*
 

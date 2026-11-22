@@ -1,6 +1,7 @@
 +++
 title = "The Demon-Haunted World: Science as a Candle in the Dark"
 cover = "images/library/sagan-the-demon-haunted-world.webp"
+cover_alt = "The first-edition cover: the author's name in red on white, the subtitle \"Science as a Candle in the Dark\" on a red band, and the title in white on black under a candle"
 author = "Carl Sagan"
 edition = "Random House, 1995"
 description = "Sagan's case for scientific thinking against pseudoscience and superstition, with his \"baloney detection kit\" for testing claims."

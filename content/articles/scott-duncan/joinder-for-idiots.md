@@ -4,7 +4,7 @@ title = "JOINDER FOR IDIOTS"
 date = "2014-05-05"
 description = "The legal name, its case and spelling, and what they really mean: why a name in capitals is administrative policy, not a corporation."
 tags = ["AGENCY", "TRUSTS"]
-weight = "15"
+weight = 15
 +++
 ![A parody event banner: "480 Day Event! Advanced Bullshit and Evasions: Divestment from Sanity & Logic"](/images/articles/joinder-for-idiots.webp)
 

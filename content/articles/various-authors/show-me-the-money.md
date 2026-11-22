@@ -6,7 +6,7 @@ description = "Consumer or Producer"
 tags = ["ACCOUNTING", "AGENCY"]
 categories = ["CORPORATIONS"]
 cc_license = true
-weight = "90"
+weight = 90
 # The emblem beside the title: the cobra in its own colours (static/images/emblems/cobra-colour.webp).
 emblem = "cobra"
 

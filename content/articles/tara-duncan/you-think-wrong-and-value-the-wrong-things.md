@@ -4,7 +4,7 @@ title = "YOU THINK WRONG, AND VALUE THE WRONG THINGS"
 date = "2014-05-05"
 description = "Tara Duncan on the people who come to realize they \"think wrong and value the wrong things\", and return asking for help."
 tags = ["NARRATIVE"]
-weight = "1"
+weight = 1
 +++
 ![The cover of Harlan Ellison's book Stalking the Nightmare](/images/articles/you-think-wrong-and-value-the-wrong-things.webp)
 

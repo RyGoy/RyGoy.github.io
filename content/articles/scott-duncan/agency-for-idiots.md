@@ -5,7 +5,7 @@ description = "HER MAJESTY AND AN ORGANIZATION: it’s the ultimate artificial p
 date = "2014-05-05"
 tags = ["AGENCY", "SURETY", "TRUSTS"]
 categories = ["HER MAJESTY AND AN ORGANIZATION", "JOINDER"]
-weight = "14"
+weight = 14
 +++
 *Posted to THE TENDER FOR LAW by Pete Daoust on 2014-10-26. [Read the post and its comments in Volume 8](/vol_viii/462493170453287_738361576199777/).*
 

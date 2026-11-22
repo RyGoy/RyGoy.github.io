@@ -27,7 +27,7 @@
     {{ if .Params.coming_soon }}
     {{ $openLibrary := hasPrefix (.Params.source | default "") "https://openlibrary.org/" }}
     <span class="book-button is-off" title="Off while the book is in copyright">Read the PDF <span aria-hidden="true">↗</span></span><span class="book-link is-off" title="Off while the book is in copyright">Download</span>{{ with .Params.source }}{{ if $openLibrary }}<a class="book-link" href="{{ . }}" rel="noopener noreferrer">{{ $.Params.source_label | default "Source" }} <span aria-hidden="true">↗</span></a>{{ else }}<span class="book-link is-off" title="Off while the book is in copyright">{{ $.Params.source_label | default "Source" }} <span aria-hidden="true">↗</span></span>{{ end }}{{ end }}
-    {{- /* [[links]] stay on: a copy elsewhere that the entry's copyright section explains (Frankl: a user upload on the Internet Archive). */}}
+    {{- /* [[links]] stay on: a copy elsewhere that the entry's copyright section explains (Frankl: a user upload on the Internet Archive; Weiss: DrydenWire's copy). */}}
     {{ range .Params.links }}<a class="book-button" href="{{ .url }}" rel="noopener noreferrer">{{ .label }} <span aria-hidden="true">↗</span></a>{{ end }}
     <p class="book-off-note">In copyright, so {{ if $openLibrary }}the PDF is{{ else }}these links are{{ end }} off: see Copyright, below.</p>
     {{ else }}
