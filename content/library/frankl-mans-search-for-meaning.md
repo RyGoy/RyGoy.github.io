@@ -1,5 +1,7 @@
 +++
 title = "Man's Search for Meaning"
+cover = "images/library/frankl-mans-search-for-meaning.webp"
+cover_alt = "The Beacon Press cover: \"Man's Search for Meaning, Viktor E. Frankl\" in white over a blue sky, with a new foreword by Harold S. Kushner"
 author = "Viktor E. Frankl"
 edition = "1946 · English translation by Ilse Lasch, 1959 · Beacon Press"
 description = "A psychiatrist's account of surviving Auschwitz and Dachau, and the therapy he built on it: that a person can bear almost anything if life still asks something of them."
@@ -10,10 +12,14 @@ weight = 23
 shelf = "Nonfiction"
 
 [copyright]
-status = "In copyright. Frankl wrote the book in German in 1946 (… trotzdem Ja zum Leben sagen); Ilse Lasch's English translation appeared in 1959, and Beacon Press publishes it today. Frankl died in 1997."
+status = "In copyright. Frankl wrote the book in German in 1946 (… trotzdem Ja zum Leben sagen); Ilse Lasch's English translation appeared in 1959, and Beacon Press publishes it today. Frankl died in 1997. The copy on the Internet Archive was uploaded by one of its users; the archive gives no licence for it, and none is kept here."
 holder = "The Frankl estate, and Beacon Press for the English edition"
 us = "1 January 2055 for the 1959 translation, 95 years after publication; the 1946 original, 1 January 2042"
 canada = "1 January 2068, 70 years after Frankl's death in 1997"
+
+[[links]]
+label = "A copy on the Internet Archive"
+url = "https://archive.org/details/viktor-emil-frankl-mans-search-for-meaning"
 +++
 
 Viktor Frankl (1905–1997) was a Viennese psychiatrist and neurologist. In 1942 he was deported with his wife and parents to the Theresienstadt ghetto, and from there to Auschwitz and two subcamps of Dachau, where he was freed in April 1945. His father died at Theresienstadt, his mother and brother at Auschwitz, and his wife at Bergen-Belsen. He wrote this book in nine days the following year.
