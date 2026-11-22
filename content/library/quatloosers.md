@@ -124,7 +124,7 @@ Their insults fare no better. Netolitzky reports that mental health professional
 
 Even some of their own objected: one poster said mental illness is not for ridicule {{< quatloos 240067 >}}.
 
-**By gossip.** A past in the porn industry, with no source {{< quatloos 195011 >}}. A "summary" of his life, with a dead daughter and a killing in it, that its poster admits is "neither all true" {{< quatloos 244483 >}}. A sexual insinuation about his partner, Tara {{< quatloos 238936 >}}. A cult, with no evidence {{< quatloos 236828 >}}.
+**By gossip.** A past in the porn industry, with no source {{< quatloos 195011 >}}. A "summary" of his life, with a [dead daughter](https://thetenderforlaw.com/vol_i/462493170453287_494830160552921/#entry-604488429587093) and a killing in it, that its poster admits is "neither all true" {{< quatloos 244483 >}}. A sexual insinuation about his partner, Tara {{< quatloos 238936 >}}. A cult, with no evidence {{< quatloos 236828 >}}.
 
 **By going after the people around him.** A member's legal name and court record {{< quatloos 247459 >}}, a seizure document for his car {{< quatloos 236937 >}}, a guess that his marriage was breaking down {{< quatloos 246931 >}}, another man's alleged criminal record with no source {{< quatloos 236895 >}}, a private Facebook user's real surname {{< quatloos 239815 >}}, and a private man in Ireland's speeding fine {{< quatloos 197845 >}}.
 
