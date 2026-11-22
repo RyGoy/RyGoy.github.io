@@ -86,7 +86,14 @@
     <script src="{{ "js/webamp-links.js" | relURL }}"></script>
     {{ end }}
     <h1 id="site-title">The Tender For Law</h1>
-    <p>An archive of the group's Facebook posts, 2013–2018, and articles by its authors.</p>
+    {{/* Three picture links under the title: the Grand Fluff Auto logo (its launch pop-up, as in the footer), a syringe
+         (What's in the Jab?) and a stack of books (the Library). The two icons are drawn for this site in a two-tone
+         style: currentColor, the secondary parts at .4 opacity (.hero-icons in archive.css). */}}
+    <ul class="hero-icons">
+      <li><a href="fivem://connect/gfa.cdd.com:30120" class="game-launch-link" aria-haspopup="dialog"><img src="{{ "images/grand-fluff-auto/logo-small.webp" | relURL }}" width="90" height="81" alt="Grand Fluff Auto (FiveM)"></a></li>
+      <li><a href="{{ "whats-in-the-jab/" | relURL }}" title="What's in the Jab?"><svg viewBox="0 0 64 64" aria-hidden="true"><g opacity=".4"><rect x="20" y="22" width="22" height="22" rx="1" transform="rotate(45 32 32)"/><path d="M12 52 22 42l2.8 2.8-10 10z"/></g><path d="M44.5 9.3l10.2 10.2-2.8 2.8-2.1-2.1-4.2 4.2 2.1 2.1-2.8 2.8-1.4-1.4-19.8 19.8a3 3 0 0 1-4.2 0l-4.6-4.6a3 3 0 0 1 0-4.2l19.8-19.8-1.4-1.4 2.8-2.8 2.1 2.1 4.2-4.2-2.1-2.1zM34.6 21.3l-16.9 16.9 1.4 1.4 4-4 1.4 1.4-4 4 1.4 1.4 4-4 1.4 1.4-4 4 1.4 1.4 16.9-16.9z"/></svg><span>What's in the Jab?</span></a></li>
+      <li><a href="{{ "library/" | relURL }}" title="Library"><svg viewBox="0 0 64 64" aria-hidden="true"><g opacity=".4"><path d="M10 14h10v38H10zM22 10h10v42H22z"/><path d="M36.5 16.6l9.4-3.4 13 35.7-9.4 3.4z"/></g><path d="M10 18h10v3H10zM10 44h10v3H10zM22 15h10v3H22zM22 44h10v3H22zM38.1 21l9.4-3.4 1 2.8-9.4 3.4zM46.6 44.5l9.4-3.4 1 2.8-9.4 3.4zM6 54h54v4H6z"/></svg><span>Library</span></a></li>
+    </ul>
     <div class="hero-links"><a href="#volumes">Volumes <span aria-hidden="true">↓</span></a><a href="{{ "articles/" | relURL }}">Articles <span aria-hidden="true">↗</span></a><a class="hero-cdd" href="https://aquilae.ddns.net/group/roguesupport/" target="_blank" rel="noopener noreferrer">Super Powered Nigger Bitches From Space <span aria-hidden="true">↗</span>{{ with site.Params.live_sign }}{{ if .on }}{{ $sign := . }}{{ with .standby }}{{ if .on }}{{ with .text }}<span class="live-sign live-standby" data-day="{{ $sign.day }}" data-from="{{ $sign.standby.from }}" data-to="{{ $sign.from }}" hidden>{{ partial "live-sign-text.html" . }}</span>{{ end }}{{ end }}{{ end }}{{ with .text }}<span class="live-sign" data-day="{{ $sign.day }}" data-from="{{ $sign.from }}" data-to="{{ $sign.to }}" hidden>{{ partial "live-sign-text.html" . }}</span>{{ end }}{{ end }}{{ end }}</a></div>
     {{ if site.Params.live_sign.on }}
     {{/* The neon signs on the show button ([params.live_sign] in config.toml): each shown only on its day

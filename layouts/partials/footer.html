@@ -216,10 +216,10 @@
 <script>
   {
     const dialog = document.getElementById('game-launch');
-    const link = document.querySelector('.game-launch-link');
-    if (link && typeof dialog.showModal === 'function') {
-      link.addEventListener('click', (event) => { event.preventDefault(); dialog.showModal(); });
-      dialog.querySelector('.game-launch-continue').addEventListener('click', () => { dialog.close(); location.href = link.href; });
+    const links = document.querySelectorAll('.game-launch-link');
+    if (links.length && typeof dialog.showModal === 'function') {
+      links.forEach((link) => link.addEventListener('click', (event) => { event.preventDefault(); dialog.showModal(); }));
+      dialog.querySelector('.game-launch-continue').addEventListener('click', () => { dialog.close(); location.href = links[0].href; });
       dialog.querySelector('.game-launch-back').addEventListener('click', () => dialog.close());
     }
   }
