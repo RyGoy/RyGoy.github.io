@@ -1,4 +1,12 @@
 {
+  "173182": {
+    "image": "/images/quatloosers/p173182.webp",
+    "w": 900,
+    "h": 360,
+    "author": "Hilfskreuzer Möwe",
+    "date": "2014-07-06T14:18:11+00:00",
+    "saved": "2026-11-22"
+  },
   "194977": {
     "image": "/images/quatloosers/p194977.webp",
     "w": 900,
@@ -183,6 +191,22 @@
     "date": "2016-12-27T02:46:23+00:00",
     "saved": "2026-11-21"
   },
+  "239359": {
+    "image": "/images/quatloosers/p239359.webp",
+    "w": 900,
+    "h": 982,
+    "author": "coffeekitten",
+    "date": "2017-01-08T04:09:48+00:00",
+    "saved": "2026-11-22"
+  },
+  "239610": {
+    "image": "/images/quatloosers/p239610.webp",
+    "w": 900,
+    "h": 348,
+    "author": "GlimDropper",
+    "date": "2017-01-13T01:51:29+00:00",
+    "saved": "2026-11-22"
+  },
   "239653": {
     "image": "/images/quatloosers/p239653.webp",
     "w": 900,
@@ -359,6 +383,14 @@
     "date": "2017-08-28T16:08:15+00:00",
     "saved": "2026-11-21"
   },
+  "254225": {
+    "image": "/images/quatloosers/p254225.webp",
+    "w": 900,
+    "h": 777,
+    "author": "Burnaby49",
+    "date": "2017-10-12T18:33:18+00:00",
+    "saved": "2026-11-22"
+  },
   "254241": {
     "image": "/images/quatloosers/p254241.webp",
     "w": 900,
@@ -382,5 +414,13 @@
     "author": "Burnaby49",
     "date": "2017-12-30T10:30:31+00:00",
     "saved": "2026-11-21"
+  },
+  "296009": {
+    "image": "/images/quatloosers/p296009.webp",
+    "w": 900,
+    "h": 651,
+    "author": "The Observer",
+    "date": "2023-08-13T01:57:20+00:00",
+    "saved": "2026-11-22"
   }
 }
