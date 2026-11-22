@@ -874,7 +874,11 @@ main { min-height: 35vh; }
 }
 .hero h1 { font-size: clamp(3.3rem, 5.8vw, 6rem); letter-spacing: -.025em; margin-bottom: 1.4rem; text-wrap: balance; }
 .hero p { max-width: 34rem; margin: 0 auto; color: var(--muted); font-size: 1.05rem; line-height: 1.7; }
-.hero-links { display: flex; justify-content: center; flex-wrap: wrap; gap: .85rem; margin-top: 2rem; }
+/* Volumes and Articles side by side, the show button under them; the grid is as wide as its widest button, so the two reach its edges. */
+.hero-links { display: grid; grid-template-columns: 1fr 1fr; width: fit-content; max-width: 100%; margin-inline: auto; gap: .85rem; margin-top: 2rem; }
+.hero-links .hero-cdd { grid-column: 1 / -1; }
+.hero-links a { text-align: center; }
+.hero-links a:not(.hero-cdd) { white-space: nowrap; padding-inline: 1rem; }
 .hero-links a { padding: .5rem 1.5rem; color: var(--c-d1b780); border: 1px solid var(--c-665539); text-decoration: none; font-size: .88rem; letter-spacing: .07em; }
 .hero-links a:first-child { border-color: var(--c-7b3438); background: var(--c-4c2424); color: var(--c-ebd9bc); }
 .hero-links a:hover { background: var(--c-332d22); }
@@ -2052,3 +2056,10 @@ a.page-emblem:focus-visible { outline: 2px solid var(--brass); outline-offset: 6
 /* Footer link to the Grand Fluff Auto server, shown as a small copy of its logo (images/grand-fluff-auto/logo-small.webp). */
 .footer-gfa-logo { display: block; width: 90px; height: auto; transition: transform .2s; }
 .game-launch-link:hover .footer-gfa-logo, .game-launch-link:focus-visible .footer-gfa-logo { transform: scale(1.06); }
+
+/* Home page: picture links under the title (partials/body.html), in place of the old one-line description. */
+.hero-icons { list-style: none; display: flex; justify-content: center; align-items: flex-end; gap: clamp(1rem, 5vw, 2.5rem); margin: 1.2rem auto 0; padding: 0; }
+.hero-icons a { display: flex; flex-direction: column; align-items: center; gap: .4rem; color: var(--brass); text-decoration: none; font-size: clamp(.7rem, 2.6vw, .85rem); white-space: nowrap; letter-spacing: .08em; text-transform: uppercase; transition: transform .2s, filter .2s; }
+.hero-icons img { display: block; width: 90px; height: auto; }
+.hero-icons svg { width: 64px; height: 64px; fill: currentColor; }
+.hero-icons a:hover, .hero-icons a:focus-visible { transform: translateY(-3px); filter: drop-shadow(0 0 .5rem color-mix(in srgb, var(--brass) 45%, transparent)); }
