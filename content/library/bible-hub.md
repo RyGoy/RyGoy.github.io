@@ -1,14 +1,18 @@
 +++
 title = "Bible Hub"
 cover = "images/library/bible-hub.webp"
-cover_alt = "Bible Hub's logo"
+cover_alt = "Title page of the first edition of the King James Bible, 1611 (Wikimedia Commons, public domain)"
 edition = "biblehub.com"
 description = "A free online Bible library: dozens of translations side by side, the Hebrew and Greek behind them, word studies and commentaries."
 source = "https://biblehub.com/"
 source_label = "Open Bible Hub"
-weight = 30
-shelf = "Reference"
+weight = 24
+shelf = "Fiction"
 +++
+
+> KING JAMES BIBLE - IT SAYS RIGHT ON THE COVER, WHO'S SCAMMING YOU
+
+> — Scott Duncan, [16 July 2014](/vol_vii/462493170453287_693050800730855/#entry-694627663906502) (Volume VII). He had said it before, on [11 July 2013](/vol_iii/462493170453287_535384496497487/): "It says right on the fucking cover who is scamming you!"
 
 Bible Hub puts many translations of the same verse on one page, so you can see where they agree and where they part ways. It also has an interlinear that sets the Hebrew and Greek under the English, Strong's concordance for looking up each original word, and commentaries old and new.
 
