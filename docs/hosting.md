@@ -168,6 +168,10 @@ None of these is Cloudflare. They're listed so the whole picture is in one place
 | IndexNow (`api.indexnow.org`) | Tells search engines about changed pages after each deploy | `scripts/indexnow.py`, `.github/workflows/hugo.yml` |
 | Wayback Machine, archive.today | Archived links (run by hand, not at deploy) | `scripts/archive_links.py` |
 
+## Local Gitea copy
+
+A copy of the repository lives on the owner's Gitea server on the home network: `http://192.168.222.254:30008/rygoy/rygoy.github.io` (web), SSH on port 30009. GitHub stays the source of truth; Gitea only receives pushes. In the owner's checkout, `origin` has two push addresses, GitHub and `gitea:rygoy/rygoy.github.io.git`, so one `git push` updates both. `gitea` is a host entry in `~/.ssh/config` (192.168.222.254, port 30009, user `git`, key `~/.ssh/gitea`, made 2026-11-22; its public half is in Gitea under the owner's SSH keys), so no password or token is involved. Pull requests are merged on GitHub, so after a merge `main` reaches Gitea when it is pushed from the checkout (`git push gitea origin/main:main` over SSH, or `git push origin main` after pulling). GitHub can't push to Gitea itself: the server is not reachable from the internet.
+
 ## Related notes
 
 [The bot](architecture/telegram-bot.md) · [Flash card accounts](architecture/flash-card-accounts.md) · [Build and deploy](architecture/build-and-deploy.md) · [The map](README.md)
