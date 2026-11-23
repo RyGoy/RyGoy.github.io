@@ -1,0 +1,30 @@
+name: Deploy Hugo site
+on:
+  push:
+    branches: [main]        # ← change if your branch isn't main
+  workflow_dispatch:        # adds a manual "Run workflow" button
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    container:
+      image: catthehacker/ubuntu:act-latest
+      volumes:
+        - /mnt/diskpool1/pages/blog:/deploy
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          submodules: recursive
+          fetch-depth: 0
+
+      - uses: peaceiris/actions-hugo@v3
+        with:
+          hugo-version: 0.152.2
+          extended: true
+
+      - run: hugo --minify --baseURL "https://wfgresearch.org"
+
+      - name: Deploy
+        run: |
+          apt-get update && apt-get install -y rsync
+          rsync -a --delete public/ /deploy/
