@@ -34,7 +34,7 @@
 <meta name="twitter:description" content="{{ $shareDesc }}">
 <meta name="twitter:image" content="{{ $img.src | absURL }}">
 <meta name="twitter:image:alt" content="{{ $img.alt }}">
-<link rel="icon" href="{{ "images/favicon-crucifix.svg" | relURL }}" type="image/svg+xml">
+<link rel="icon" href="{{ "images/favicon-shield.svg" | relURL }}" type="image/svg+xml">
 <link rel="icon" href="{{ "images/favicon-32.png" | relURL }}" type="image/png" sizes="32x32">
 <link rel="apple-touch-icon" href="{{ "images/apple-touch-icon.png" | relURL }}">
 {{/* The colour theme chosen in the sidebar (static/js/navigation.js), set before the stylesheet paints. */}}
@@ -48,6 +48,7 @@
 <script src="{{ "js/musical-recap.js" | relURL }}" defer></script>
 <script src="{{ "js/video-links.js" | relURL }}" data-video="{{ "videos/accountants-set-policy.mp4" | relURL }}" defer></script>
 <script src="{{ "js/dictionary-terms.js" | relURL }}" data-terms="{{ partialCached "dictionary-terms.html" . }}" data-dictionary="{{ "dictionary/" | relURL }}" defer></script>
+<script src="{{ "js/quatloos-links.js" | relURL }}" data-quatloos="{{ "library/quatloosers/" | relURL }}" defer></script>
 {{/* The sidebar's Webamp player, with its button in partials/navbar.html: [params.webamp_dock] in config.toml. */}}
 {{ if site.Params.webamp_dock.on }}<script src="{{ "js/webamp-dock.js" | relURL }}" defer></script>{{ end }}
 {{ partialCached "terms-gate.html" . }}
