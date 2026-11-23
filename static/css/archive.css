@@ -2063,3 +2063,15 @@ a.page-emblem:focus-visible { outline: 2px solid var(--brass); outline-offset: 6
 .hero-icons img { display: block; width: 90px; height: auto; }
 .hero-icons svg { width: 64px; height: 64px; fill: currentColor; }
 .hero-icons a:hover, .hero-icons a:focus-visible { transform: translateY(-3px); filter: drop-shadow(0 0 .5rem color-mix(in srgb, var(--brass) 45%, transparent)); }
+
+/* The Library list: a book with the cobra (emblem = "cobra") shows it small at the end of its row (layouts/library/list.html),
+   in its own colours as beside the book's title, playing the same video and shimmering where that one does. */
+.book-cobra { flex: none; margin-left: auto; display: block; width: 3.4rem; aspect-ratio: 701 / 720; background: url("../images/emblems/cobra-colour.webp") center / contain no-repeat; filter: sepia(.25) saturate(.85) drop-shadow(0 .2rem .5rem var(--c-00000059)); }
+:root[data-theme="light"] .book-cobra { filter: saturate(.95) drop-shadow(0 .2rem .5rem var(--c-00000059)); }
+:root[data-theme="dark"] .book-cobra { filter: brightness(.9) saturate(.9) drop-shadow(0 0 .6rem color-mix(in srgb, var(--emblem-colour) 45%, transparent)); }
+a.book-cobra { cursor: pointer; transition: transform .2s; }
+a.book-cobra:hover, a.book-cobra:focus-visible { transform: scale(1.08); }
+a.book-cobra:focus-visible { outline: 2px solid var(--brass); outline-offset: 4px; border-radius: 6px; }
+.book-cobra.shimmer { overflow: visible; }
+.book-cobra.shimmer::after { -webkit-mask: url("../images/emblems/cobra-colour.webp") center / contain no-repeat; mask: url("../images/emblems/cobra-colour.webp") center / contain no-repeat; }
+@media (prefers-reduced-motion: reduce) { a.book-cobra { transition: none; } }
