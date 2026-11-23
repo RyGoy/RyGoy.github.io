@@ -675,6 +675,24 @@ main { min-height: 35vh; }
 :root[data-theme="dark"] .hero:has(.hero-cdd:hover) .hero-zoom > .hero-swap-empire,
 :root:not([data-theme]) .hero:has(.hero-cdd:hover) .hero-zoom > .hero-swap-cobra,
 :root[data-theme="light"] .hero:has(.hero-cdd:hover) .hero-zoom > .hero-swap-spnbfs { transform: none; }
+/* What's in the Jab?: with the pointer on (or focus in) the syringe under the title (.hero-jab), the poster slides out to
+the left as this theme's picture slides in from the right (partials/body.html, .hero-swap-jab-*); off it, both slide back.
+Light's (jab-light.webp) is two headline screenshots, one above the other, shown whole on white. Sepia's (jab-sepia.webp) is cropped to the frame; Dark's (jab-dark.webp, a meme whose
+caption runs to its edges) is shown whole on its own navy. */
+:root:not([data-theme]) .hero-plate .hero-swap-jab-sepia, :root[data-theme="dark"] .hero-plate .hero-swap-jab-dark, :root[data-theme="light"] .hero-plate .hero-swap-jab-light { display: block; position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; transform: translateX(100%); transition: transform .7s ease-in-out; }
+:root[data-theme="dark"] .hero-plate .hero-swap-jab-dark { object-fit: contain; background: #15202b; }
+:root[data-theme="light"] .hero-plate .hero-swap-jab-light { object-fit: contain; background: white; } /* two headlines stacked, their text to the edges */
+:root:not([data-theme]) .hero:has(.hero-swap-jab-sepia) .hero-zoom > img:not(.hero-swap), :root[data-theme="dark"] .hero:has(.hero-swap-jab-dark) .hero-zoom > img:not(.hero-swap), :root[data-theme="light"] .hero:has(.hero-swap-jab-light) .hero-zoom > img:not(.hero-swap) { transition: transform .7s ease-in-out; }
+:root:not([data-theme]) .hero:has(.hero-jab:hover, .hero-jab:focus-visible) .hero-zoom > img:not(.hero-swap), :root[data-theme="dark"] .hero:has(.hero-jab:hover, .hero-jab:focus-visible) .hero-zoom > img:not(.hero-swap), :root[data-theme="light"] .hero:has(.hero-jab:hover, .hero-jab:focus-visible) .hero-zoom > img:not(.hero-swap) { transform: translateX(-100%); }
+:root:not([data-theme]) .hero:has(.hero-jab:hover, .hero-jab:focus-visible) .hero-zoom > .hero-swap-jab-sepia, :root[data-theme="dark"] .hero:has(.hero-jab:hover, .hero-jab:focus-visible) .hero-zoom > .hero-swap-jab-dark, :root[data-theme="light"] .hero:has(.hero-jab:hover, .hero-jab:focus-visible) .hero-zoom > .hero-swap-jab-light { transform: none; }
+/* Grand Fluff Auto: with the pointer on (or focus in) its logo under the title (.hero-gfa), the other way round: its
+cover (images/grand-fluff-auto.jpg, also the footer pop-up's) slides in from the left as the poster slides out to the
+right, in every theme; shown whole, on black, as it is narrower than the frame. */
+.hero-plate .hero-swap-gfa { display: block; position: absolute; inset: 0; width: 100%; height: 100%; object-fit: contain; background: #000; transform: translateX(-100%); transition: transform .7s ease-in-out; }
+.hero .hero-zoom > img:not(.hero-swap) { transition: transform .7s ease-in-out; }
+.hero:has(.hero-gfa:hover, .hero-gfa:focus-visible) .hero-zoom > img:not(.hero-swap) { transform: translateX(100%); }
+.hero:has(.hero-gfa:hover, .hero-gfa:focus-visible) .hero-zoom > .hero-swap-gfa { transform: none; }
+@media (prefers-reduced-motion: reduce) { .hero-plate .hero-swap-jab-sepia, .hero-plate .hero-swap-jab-dark, .hero-plate .hero-swap-jab-light, .hero-plate .hero-swap-gfa, .hero .hero-zoom > img:not(.hero-swap) { transition: none !important; } }
 @media (prefers-reduced-motion: reduce) { :root[data-theme="dark"] .hero:has(.hero-saber-hilt:hover) .hero-zoom > img, :root[data-theme="light"] .hero:has(.hero-waves-source:hover) .hero-zoom > img, :root:not([data-theme]) .hero:has(.hero-exp-dot:hover) .hero-zoom > img, :root[data-theme="dark"] .hero:has(.hero-cdd:hover) .hero-zoom > img, :root:not([data-theme]) .hero:has(.hero-cdd:hover) .hero-zoom > img, :root[data-theme="light"] .hero:has(.hero-cdd:hover) .hero-zoom > img { transition: none; } }
 .image-viewer { padding: 12px 12px 0; max-width: min(92vw, 888px); max-height: 94vh; border: 1px solid var(--c-a08455); outline: 1px solid var(--c-b89a6338); outline-offset: -7px; background: linear-gradient(var(--c-1a1915), var(--c-0c0c0b)); color: var(--paper); box-shadow: 0 0 0 1px var(--c-000000), 0 2rem 5rem var(--c-000000cc), 0 0 6rem var(--c-b89a631a); }
 .image-viewer img { display: block; width: auto; height: auto; max-width: 100%; max-height: calc(94vh - 3.5rem); margin-inline: auto; }
