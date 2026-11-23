@@ -22,7 +22,7 @@ jobs:
           hugo-version: 'latest'
           extended: true
 
-      - run: hugo --minify --baseURL "https://thetenderforlaw.com"
+      - run: hugo --minify --baseURL "https://wfgresearch.org"
 
       - name: Deploy
         run: |
