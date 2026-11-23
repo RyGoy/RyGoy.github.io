@@ -12,6 +12,8 @@ weight = 20
 shelf = "Nonfiction"
 # The emblem beside the title, in place of the rose window: the cobra in its own colours (static/images/emblems/cobra-colour.webp).
 emblem = "cobra"
+# Its cobra is not repeated at the end of its row on /library/ (layouts/library/list.html).
+list_cobra = false
 
 # The cobra is a link that plays this video in a pop-up (layouts/partials/page-emblem.html).
 [emblem_video]

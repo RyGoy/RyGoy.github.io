@@ -9,10 +9,37 @@
   {{ range .Params.shelves }}{{ $shelf := . }}{{ with where $.Pages.ByWeight "Params.shelf" $shelf }}
   <div class="shelf">
     <h3 class="shelf-title">{{ $shelf }}</h3>
-    <ul class="shelf-books">{{ range . }}<li class="book-item">{{ with .Params.cover }}{{ with resources.Get . }}{{ $thumb := .Resize "96x webp q80" }}<img class="book-thumb" src="{{ $thumb.RelPermalink }}" width="{{ $thumb.Width }}" height="{{ $thumb.Height }}" alt="" loading="lazy">{{ end }}{{ end }}<span class="book-text"><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>{{ with .Params.author }}<span class="book-author">{{ . }}</span>{{ end }}</span></li>{{ end }}</ul>
+    <ul class="shelf-books">{{ range . }}<li class="book-item">{{ with .Params.cover }}{{ with resources.Get . }}{{ $thumb := .Resize "96x webp q80" }}<img class="book-thumb" src="{{ $thumb.RelPermalink }}" width="{{ $thumb.Width }}" height="{{ $thumb.Height }}" alt="" loading="lazy">{{ end }}{{ end }}<span class="book-text"><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>{{ with .Params.author }}<span class="book-author">{{ . }}</span>{{ end }}</span>{{ if and (eq .Params.emblem "cobra") (ne .Params.list_cobra false) }}{{ $shimmer := .Params.emblem_shimmer }}{{ with .Params.emblem_video }}<a class="book-cobra{{ if $shimmer }} shimmer{{ end }}" href="{{ .src | relURL }}" data-video="{{ .src | relURL }}" data-poster="{{ with .poster }}{{ . | relURL }}{{ end }}" data-title="{{ .title }}" data-ratio="{{ div (float .width) .height }}" aria-haspopup="dialog" aria-label="Play the video {{ .title }}" title="Play {{ .title }}"></a>{{ else }}<span class="book-cobra{{ if $shimmer }} shimmer{{ end }}" aria-hidden="true"></span>{{ end }}{{ end }}</li>{{ end }}</ul>
   </div>
   {{ end }}{{ end }}
 </section>
+{{/* The cobras at the end of the books' rows (books with emblem = "cobra") play their book's [emblem_video] in this
+     one pop-up, as the cobra beside the book's own title does; without JavaScript the link opens the file. */}}
+<dialog class="image-viewer video-viewer emblem-video" id="book-cobra-video" aria-label="Video">
+  <video controls playsinline preload="none"></video>
+  <form method="dialog"><button class="image-viewer-close">Close</button></form>
+</dialog>
+<script>
+  {
+    const player = document.getElementById('book-cobra-video');
+    if (typeof player.showModal === 'function') {
+      const video = player.querySelector('video');
+      for (const link of document.querySelectorAll('a.book-cobra')) {
+        link.addEventListener('click', (event) => {
+          event.preventDefault();
+          video.src = link.dataset.video;
+          if (link.dataset.poster) video.poster = link.dataset.poster; else video.removeAttribute('poster');
+          player.style.setProperty('--video-ratio', link.dataset.ratio);
+          player.setAttribute('aria-label', link.dataset.title + ' (video)');
+          player.showModal();
+          video.play().catch(() => {});
+        });
+      }
+      player.addEventListener('click', (event) => { if (event.target === player) player.close(); });
+      player.addEventListener('close', () => video.pause());
+    }
+  }
+</script>
 <section class="library-subjects" aria-labelledby="subjects-heading">
   <div class="section-heading"><h2 id="subjects-heading">Subjects</h2><span class="rule" aria-hidden="true"></span></div>
   <div class="article-grid">
