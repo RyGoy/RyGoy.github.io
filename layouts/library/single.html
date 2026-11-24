@@ -49,6 +49,29 @@
   {{ end }}{{ end }}
   </nav>
   <div class="prose">{{ .Content }}</div>
+  {{/* Photographs of the book or document ([[photos]] in the front matter: src under assets/, alt, credit), in the
+       home page carousel's frames and script (static/js/carousel.js), each picture shown whole. */}}
+  {{ with .Params.photos }}
+  {{ $count := len . }}
+  <section class="carousel-section book-photos" aria-labelledby="book-photos-heading" data-pagefind-ignore>
+  <h2 id="book-photos-heading">Photographs</h2>
+  <div class="carousel" aria-roledescription="carousel" aria-labelledby="book-photos-heading">
+    <div class="carousel-stage">
+      {{ range $i, $p := . }}{{ with resources.Get $p.src }}
+      {{ $pos := $i }}{{ if gt $i (div $count 2) }}{{ $pos = sub $i $count }}{{ end }}
+      <figure class="carousel-frame carousel-photo" role="group" aria-roledescription="slide" aria-label="{{ add $i 1 }} of {{ $count }}: {{ $p.alt }}" data-pos="{{ $pos }}"{{ if ne $pos 0 }} aria-hidden="true"{{ end }}>
+        <img src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}" alt="{{ $p.alt }}" loading="lazy">
+        {{ with $p.credit }}<figcaption>{{ . }}</figcaption>{{ end }}
+      </figure>
+      {{ else }}{{ errorf "%s: no photo %q under assets/" $.File.Path $p.src }}{{ end }}{{ end }}
+    </div>
+    <button class="carousel-arrow carousel-prev" type="button" aria-label="Previous" hidden>‹</button>
+    <button class="carousel-arrow carousel-next" type="button" aria-label="Next" hidden>›</button>
+    <p class="carousel-status sr-only" aria-live="polite"></p>
+  </div>
+  </section>
+  <script src="{{ "js/carousel.js" | relURL }}" defer></script>
+  {{ end }}
   {{/* Books still in copyright: what their status is, who holds it, and when it is expected to end ([copyright] in the
        front matter: status, holder, us and canada). */}}
   {{ with .Params.copyright }}
