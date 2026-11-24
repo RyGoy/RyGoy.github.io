@@ -17,7 +17,7 @@ In 17th century France, the King is sovereign (owns title to all land) and rules
 
 The American constitution is still the best in the world, but it’s not perfect, it made a Monarch out of the President in the eyes of the People but gave him more power and less responsibility, An English Monarch, since Charles I MUST sign his own death warrant if laid in front of him by the houses, the President has no such duty.
 
-Canada has it’s own problems, we are in no position to judge our older brother, their had a fight with the parents at a young age and moved out on their own, we’re like the 40 year old that still lives in the basement… but it’s so much worse, let me explain:
+Canada has it’s own problems, we are in no position to judge our older brother, they had a fight with the parents at a young age and moved out on their own, we’re like the 40 year old that still lives in the basement… but it’s so much worse, let me explain:
 
 1. [Canada never confederated](https://thetenderforlaw.com/library/ho-canada/), you would have to change the definition of confederation to say that the Dominion was a confederation. Canada’s colonies united as a Dominion under the crown until the Dominion ended in 1931, the purpose of the Dominion was to pay war debt Britain owed the United States for Canada’s involvement in aiding the South during the American Civil War.
 
