@@ -661,7 +661,7 @@ main { min-height: 35vh; }
 :root:not([data-theme]) .hero:has(.hero-exp-dot:hover) .hero-zoom > img:not(.hero-swap) { transform: translateY(-100%); transition: transform 4s ease-in-out; }
 :root[data-theme="dark"] .hero:has(.hero-saber-hilt:hover) .hero-zoom > .hero-swap-dark,
 :root[data-theme="light"] .hero:has(.hero-waves-source:hover) .hero-zoom > .hero-swap-light,
-:root:not([data-theme]) .hero:has(.hero-exp-dot:hover) .hero-zoom > .hero-swap-sepia { transform: none; }
+:root:not([data-theme]) .hero:has(.hero-exp-dot:hover) .hero-zoom > .hero-swap-sepia { transform: none; transition: transform 4s ease-in-out; }
 /* The other way round: with the pointer on the cdd.com button (.hero-cdd), the poster drops slowly down and away as
    that theme's picture comes down from the top. Dark's join-the-empire.jpg and Sepia's cobra-army.jpg are narrower than
    the poster's frame, so they are shown whole, not cropped, widened to the frame by their own border colour (the Empire
@@ -674,7 +674,7 @@ main { min-height: 35vh; }
 :root[data-theme="light"] .hero:has(.hero-cdd:hover) .hero-zoom > img:not(.hero-swap) { transform: translateY(100%); transition: transform 4s ease-in-out; }
 :root[data-theme="dark"] .hero:has(.hero-cdd:hover) .hero-zoom > .hero-swap-empire,
 :root:not([data-theme]) .hero:has(.hero-cdd:hover) .hero-zoom > .hero-swap-cobra,
-:root[data-theme="light"] .hero:has(.hero-cdd:hover) .hero-zoom > .hero-swap-spnbfs { transform: none; }
+:root[data-theme="light"] .hero:has(.hero-cdd:hover) .hero-zoom > .hero-swap-spnbfs { transform: none; transition: transform 4s ease-in-out; }
 /* What's in the Jab?: with the pointer on (or focus in) the syringe under the title (.hero-jab), the poster slides out to
 the left as this theme's picture slides in from the right (partials/body.html, .hero-swap-jab-*); off it, both slide back.
 Light's (jab-light.webp) is two headline screenshots, one above the other, shown whole on white. Sepia's (jab-sepia.webp) is cropped to the frame; Dark's (jab-dark.webp, a meme whose
@@ -693,6 +693,7 @@ right, in every theme; shown whole, on black, as it is narrower than the frame. 
 .hero:has(.hero-gfa:hover, .hero-gfa:focus-visible) .hero-zoom > img:not(.hero-swap) { transform: translateX(100%); }
 .hero:has(.hero-gfa:hover, .hero-gfa:focus-visible) .hero-zoom > .hero-swap-gfa { transform: none; }
 @media (prefers-reduced-motion: reduce) { .hero-plate .hero-swap-jab-sepia, .hero-plate .hero-swap-jab-dark, .hero-plate .hero-swap-jab-light, .hero-plate .hero-swap-gfa, .hero .hero-zoom > img:not(.hero-swap) { transition: none !important; } }
+@media (prefers-reduced-motion: reduce) { .hero .hero-zoom > .hero-swap-dark, .hero .hero-zoom > .hero-swap-light, .hero .hero-zoom > .hero-swap-sepia, .hero .hero-zoom > .hero-swap-empire, .hero .hero-zoom > .hero-swap-cobra, .hero .hero-zoom > .hero-swap-spnbfs { transition: none !important; } }
 @media (prefers-reduced-motion: reduce) { :root[data-theme="dark"] .hero:has(.hero-saber-hilt:hover) .hero-zoom > img:not(.hero-swap), :root[data-theme="light"] .hero:has(.hero-waves-source:hover) .hero-zoom > img:not(.hero-swap), :root:not([data-theme]) .hero:has(.hero-exp-dot:hover) .hero-zoom > img:not(.hero-swap), :root[data-theme="dark"] .hero:has(.hero-cdd:hover) .hero-zoom > img:not(.hero-swap), :root:not([data-theme]) .hero:has(.hero-cdd:hover) .hero-zoom > img:not(.hero-swap), :root[data-theme="light"] .hero:has(.hero-cdd:hover) .hero-zoom > img:not(.hero-swap) { transition: none; } }
 .image-viewer { padding: 12px 12px 0; max-width: min(92vw, 888px); max-height: 94vh; border: 1px solid var(--c-a08455); outline: 1px solid var(--c-b89a6338); outline-offset: -7px; background: linear-gradient(var(--c-1a1915), var(--c-0c0c0b)); color: var(--paper); box-shadow: 0 0 0 1px var(--c-000000), 0 2rem 5rem var(--c-000000cc), 0 0 6rem var(--c-b89a631a); }
 .image-viewer img { display: block; width: auto; height: auto; max-width: 100%; max-height: calc(94vh - 3.5rem); margin-inline: auto; }
