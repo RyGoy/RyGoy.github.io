@@ -21,3 +21,10 @@ A few places to start, all on the Project's site:
 - [The original charters of King John](https://magnacartaresearch.org/read/original_charters)
 
 The site calls itself work in progress, and its material may change.
+
+## The Charter of the Forest
+
+Magna Carta had a companion. In 1217, when Magna Carta was reissued, its clauses on the royal forests were taken out and enlarged into a charter of their own, the Charter of the Forest. The royal forests were not only woodland but great tracts of land, villages and fields among them, under the King's forest law, where taking game or timber, grazing animals or clearing ground could be punished harshly. The Charter limited that law: it took back land put under it since Henry II's time, restored to free men rights such as pasturing their pigs and gathering wood, and ended the death penalty and mutilation for taking the King's deer. It was reissued with Magna Carta in 1225 and confirmed with it for centuries after.
+
+- [The Charter of the Forest, 1225](https://www.nationalarchives.gov.uk/education/resources/magna-carta/charter-forest-1225-westminster/), at the National Archives (UK)
+- [The Charter of the Forest, 1225](https://www.bl.uk/collection-items/charter-of-the-forest-1225), at the British Library

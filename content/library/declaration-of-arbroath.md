@@ -15,10 +15,14 @@ shelf = "Constitution"
 # The site's content is under the Open Government Licence v3.0. The cover is a detail of the Lizars engraving (about 1815, public domain).
 
 [copyright]
-status = "The Declaration itself (1320) is long in the public domain. The transcription, translation and booklet are Crown copyright, published by National Records of Scotland under the Open Government Licence v3.0, which lets anyone copy and share them with credit. The cover is a detail of an engraving made about 1815, out of copyright. The photographs are © Queen's Printer for Scotland, National Records of Scotland, shown here with credit at the owner's request."
+status = "The Declaration itself (1320) is long in the public domain. The transcription, translation and booklets are Crown copyright, published by National Records of Scotland under the Open Government Licence v3.0, which lets anyone copy and share them with credit. The cover is a detail of an engraving made about 1815, out of copyright. The photographs are © Queen's Printer for Scotland, National Records of Scotland, shown here with credit at the owner's request."
 holder = "Crown copyright, National Records of Scotland (transcription, translation and booklet)"
 us = "Public domain (the Declaration); the NRS texts are shared under the Open Government Licence"
 canada = "Public domain (the Declaration); the NRS texts are shared under the Open Government Licence"
+[[links]]
+label = "Gaelic booklet (PDF)"
+url = "/library/nrs-declaration-of-arbroath-700-booklet-gaelic.pdf"
+
 [[photos]]
 src = "images/library/arbroath/declaration.webp"
 alt = "The Declaration of Arbroath, 6 April 1320"
@@ -61,7 +65,7 @@ On 6 April 1320, at the Abbey of Arbroath, eight earls, about forty barons and "
 
 The Declaration says the people made Robert king by their "due consent and assent", and that they would drive him out and choose another if he ever gave the kingdom over to England. England recognised Scotland's independence in 1328.
 
-The copy kept in Edinburgh, the only one to survive in its original form, is in National Records of Scotland (SP13/7). It was damaged by damp in the seventeenth century, and only 19 of perhaps 50 seals remain, but the full text is known from an engraving of the early 1700s, re-engraved by W. and D. Lizars about 1815. National Records of Scotland's photographs of the original, its seals and the engraving are at the foot of this page, and the PDF on this page is its 700th-anniversary booklet.
+The copy kept in Edinburgh, the only one to survive in its original form, is in National Records of Scotland (SP13/7). It was damaged by damp in the seventeenth century, and only 19 of perhaps 50 seals remain, but the full text is known from an engraving of the early 1700s, re-engraved by W. and D. Lizars about 1815. National Records of Scotland's photographs of the original, its seals and the engraving are at the foot of this page, and the PDF on this page is its 700th-anniversary booklet, in English and in Gaelic.
 
 The Latin follows Sir James Fergusson, *The Declaration of Arbroath 1320* (1970), his reconstruction of the letter that went to the Pope. The English is the version revised by Alan Borthwick (2005) from Fergusson's, with reference to A. A. M. Duncan and D. E. R. Watt. Both are [published by National Records of Scotland](https://www.nrscotland.gov.uk/learning-and-events/the-declaration-of-arbroath/transcription-of-the-declaration-of-arbroath/) under the Open Government Licence.
 
