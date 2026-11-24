@@ -2033,6 +2033,14 @@ a.page-emblem:focus-visible { outline: 2px solid var(--brass); outline-offset: 6
 .carousel-prev { left: clamp(.25rem, 4vw, 3rem); }
 .carousel-next { right: clamp(.25rem, 4vw, 3rem); }
 @media (prefers-reduced-motion: reduce) { .carousel-frame { transition: none; } }
+/* A library page's photographs (layouts/library/single.html): each picture whole on black, its credit beneath, and
+   no relief behind it. */
+.book-photos .carousel { --card-w: min(36rem, 72cqw); --card-ratio: 4 / 3; --step: min(7rem, 11cqw); }
+@media (max-width: 42rem) { .book-photos .carousel { --card-w: 74cqw; --card-ratio: 3 / 4; --step: 12cqw; } }
+.carousel-photo { grid-template-rows: minmax(0, 1fr) auto; place-items: stretch; margin: 0; overflow: hidden; background: #000; }
+.carousel-photo::before { content: none !important; }
+.carousel-photo img { display: block; width: 100%; height: 100%; min-height: 0; object-fit: contain; }
+.carousel-photo figcaption { width: 100%; padding: .4em .8em; font-size: clamp(.65rem, 1.3cqw, .8rem); color: var(--muted); text-align: center; }
 
 /* The Tender For Law Anthology (partials/anthology-*.html): printed copies of posts and comments. Names that come only
    from the printout are in the dictionary's Wex blue. */
