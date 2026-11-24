@@ -62,9 +62,6 @@
         </ul>
       </details>
       {{ end }}
-      {{ with site.GetPage "/whats-in-the-jab" }}
-      <div class="nav-group article-nav"><a class="nav-heading" href="{{ .RelPermalink }}"{{ if eq $.RelPermalink .RelPermalink }} aria-current="page"{{ end }}>{{ .Title }}</a></div>
-      {{ end }}
       {{/* Musical Recap: play/pause for static/audio/the-sound-of-violence.mp3, which keeps playing from page to page
            (static/js/musical-recap.js, which shows it; hidden without JavaScript). The words round it are decoration: the
            button's own name says the same. Its lyrics, if static/audio/the-sound-of-violence.lrc exists, show in a floating

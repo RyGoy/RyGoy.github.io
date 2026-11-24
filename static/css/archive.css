@@ -656,9 +656,9 @@ main { min-height: 35vh; }
 :root[data-theme="dark"] .hero-plate .hero-swap-dark, :root[data-theme="light"] .hero-plate .hero-swap-light, :root:not([data-theme]) .hero-plate .hero-swap-sepia { display: block; position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 50% 0; transform: translateY(100%); }
 :root[data-theme="dark"] .hero-plate .hero-swap-dark { object-position: 100% 0; } /* my-country.jpg: its text is to the right */
 :root:not([data-theme]) .hero-plate .hero-swap-sepia { object-fit: contain; background: white; } /* coda-2.jpg: a white book page, text to its edges, so shown whole */
-:root[data-theme="dark"] .hero:has(.hero-saber-hilt:hover) .hero-zoom > img,
-:root[data-theme="light"] .hero:has(.hero-waves-source:hover) .hero-zoom > img,
-:root:not([data-theme]) .hero:has(.hero-exp-dot:hover) .hero-zoom > img { transform: translateY(-100%); transition: transform 4s ease-in-out; }
+:root[data-theme="dark"] .hero:has(.hero-saber-hilt:hover) .hero-zoom > img:not(.hero-swap),
+:root[data-theme="light"] .hero:has(.hero-waves-source:hover) .hero-zoom > img:not(.hero-swap),
+:root:not([data-theme]) .hero:has(.hero-exp-dot:hover) .hero-zoom > img:not(.hero-swap) { transform: translateY(-100%); transition: transform 4s ease-in-out; }
 :root[data-theme="dark"] .hero:has(.hero-saber-hilt:hover) .hero-zoom > .hero-swap-dark,
 :root[data-theme="light"] .hero:has(.hero-waves-source:hover) .hero-zoom > .hero-swap-light,
 :root:not([data-theme]) .hero:has(.hero-exp-dot:hover) .hero-zoom > .hero-swap-sepia { transform: none; }
@@ -669,9 +669,9 @@ main { min-height: 35vh; }
 :root[data-theme="dark"] .hero-plate .hero-swap-empire, :root:not([data-theme]) .hero-plate .hero-swap-cobra, :root[data-theme="light"] .hero-plate .hero-swap-spnbfs { display: block; position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 50% 50%; transform: translateY(-100%); }
 :root[data-theme="dark"] .hero-plate .hero-swap-empire { object-fit: contain; background: #d7120f; }
 :root:not([data-theme]) .hero-plate .hero-swap-cobra { object-fit: contain; background: #c1a592; }
-:root[data-theme="dark"] .hero:has(.hero-cdd:hover) .hero-zoom > img,
-:root:not([data-theme]) .hero:has(.hero-cdd:hover) .hero-zoom > img,
-:root[data-theme="light"] .hero:has(.hero-cdd:hover) .hero-zoom > img { transform: translateY(100%); transition: transform 4s ease-in-out; }
+:root[data-theme="dark"] .hero:has(.hero-cdd:hover) .hero-zoom > img:not(.hero-swap),
+:root:not([data-theme]) .hero:has(.hero-cdd:hover) .hero-zoom > img:not(.hero-swap),
+:root[data-theme="light"] .hero:has(.hero-cdd:hover) .hero-zoom > img:not(.hero-swap) { transform: translateY(100%); transition: transform 4s ease-in-out; }
 :root[data-theme="dark"] .hero:has(.hero-cdd:hover) .hero-zoom > .hero-swap-empire,
 :root:not([data-theme]) .hero:has(.hero-cdd:hover) .hero-zoom > .hero-swap-cobra,
 :root[data-theme="light"] .hero:has(.hero-cdd:hover) .hero-zoom > .hero-swap-spnbfs { transform: none; }
@@ -693,7 +693,7 @@ right, in every theme; shown whole, on black, as it is narrower than the frame. 
 .hero:has(.hero-gfa:hover, .hero-gfa:focus-visible) .hero-zoom > img:not(.hero-swap) { transform: translateX(100%); }
 .hero:has(.hero-gfa:hover, .hero-gfa:focus-visible) .hero-zoom > .hero-swap-gfa { transform: none; }
 @media (prefers-reduced-motion: reduce) { .hero-plate .hero-swap-jab-sepia, .hero-plate .hero-swap-jab-dark, .hero-plate .hero-swap-jab-light, .hero-plate .hero-swap-gfa, .hero .hero-zoom > img:not(.hero-swap) { transition: none !important; } }
-@media (prefers-reduced-motion: reduce) { :root[data-theme="dark"] .hero:has(.hero-saber-hilt:hover) .hero-zoom > img, :root[data-theme="light"] .hero:has(.hero-waves-source:hover) .hero-zoom > img, :root:not([data-theme]) .hero:has(.hero-exp-dot:hover) .hero-zoom > img, :root[data-theme="dark"] .hero:has(.hero-cdd:hover) .hero-zoom > img, :root:not([data-theme]) .hero:has(.hero-cdd:hover) .hero-zoom > img, :root[data-theme="light"] .hero:has(.hero-cdd:hover) .hero-zoom > img { transition: none; } }
+@media (prefers-reduced-motion: reduce) { :root[data-theme="dark"] .hero:has(.hero-saber-hilt:hover) .hero-zoom > img:not(.hero-swap), :root[data-theme="light"] .hero:has(.hero-waves-source:hover) .hero-zoom > img:not(.hero-swap), :root:not([data-theme]) .hero:has(.hero-exp-dot:hover) .hero-zoom > img:not(.hero-swap), :root[data-theme="dark"] .hero:has(.hero-cdd:hover) .hero-zoom > img:not(.hero-swap), :root:not([data-theme]) .hero:has(.hero-cdd:hover) .hero-zoom > img:not(.hero-swap), :root[data-theme="light"] .hero:has(.hero-cdd:hover) .hero-zoom > img:not(.hero-swap) { transition: none; } }
 .image-viewer { padding: 12px 12px 0; max-width: min(92vw, 888px); max-height: 94vh; border: 1px solid var(--c-a08455); outline: 1px solid var(--c-b89a6338); outline-offset: -7px; background: linear-gradient(var(--c-1a1915), var(--c-0c0c0b)); color: var(--paper); box-shadow: 0 0 0 1px var(--c-000000), 0 2rem 5rem var(--c-000000cc), 0 0 6rem var(--c-b89a631a); }
 .image-viewer img { display: block; width: auto; height: auto; max-width: 100%; max-height: calc(94vh - 3.5rem); margin-inline: auto; }
 .image-viewer form { margin: 0; padding: .6rem; text-align: center; }
@@ -733,18 +733,20 @@ right, in every theme; shown whole, on black, as it is narrower than the frame. 
 :root[data-theme="dark"] a.hero-saber-hilt:hover, :root[data-theme="dark"] a.hero-saber-hilt:focus-visible { filter: drop-shadow(0 1px 2px #000000c0) drop-shadow(0 0 5px #ffffff40) brightness(1.2); }
 :root[data-theme="dark"] a.hero-saber-hilt:focus-visible { outline: 1px solid var(--brass); outline-offset: 4px; }
 :root[data-theme="dark"] .hero-saber-hilt i { display: block; position: relative; }
-:root[data-theme="dark"] .hero-saber-pommel { width: .42rem; height: .74rem; border-radius: .22rem .06rem .06rem .22rem; background: linear-gradient(#c4c4c4, #5c5c5c 45%, #262626 80%, #111); box-shadow: inset .1rem 0 0 #00000059; }
-:root[data-theme="dark"] .hero-saber-ring { width: .16rem; height: .7rem; border-radius: 1px; background: linear-gradient(#f3e5bb, #a68c52 45%, #4a3c1c); }
-:root[data-theme="dark"] .hero-saber-grip { width: 1.9rem; height: .6rem; background: linear-gradient(#ffffff30, #0000 40%, #00000080), repeating-linear-gradient(90deg, #161616 0 .14rem, #4a4a4a .14rem .18rem, #0b0b0b .18rem .24rem); }
-:root[data-theme="dark"] .hero-saber-body { width: 1rem; height: .66rem; background: linear-gradient(#f2f2f2, #9a9a9a 38%, #474747 70%, #1e1e1e); }
-:root[data-theme="dark"] .hero-saber-body::before { content: ""; position: absolute; left: .22rem; top: -.13rem; width: .34rem; height: .16rem; border-radius: .1rem .1rem 0 0; background-color: #4a1015; animation: saber-button .13s linear .26s forwards, saber-tint .78s ease-in 2.2s forwards; }
-:root[data-theme="dark"] .hero-saber-body::after { content: ""; position: absolute; right: .12rem; top: .2rem; width: .3rem; height: .26rem; border-radius: 1px; background: repeating-linear-gradient(90deg, #111 0 .05rem, #7a7a7a .05rem .1rem); }
-:root[data-theme="dark"] .hero-saber-emitter { width: .62rem; height: .92rem; border-radius: .08rem .24rem .24rem .08rem; background: repeating-linear-gradient(90deg, #0000 0 .12rem, #0000008c .12rem .17rem) center / 100% 40% no-repeat, linear-gradient(#e8e8e8, #8c8c8c 35%, #3a3a3a 70%, #141414); }
+:root[data-theme="dark"] .hero-saber-pommel { width: .42rem; height: .74rem; border-radius: .22rem .06rem .06rem .22rem; background: linear-gradient(#ffffff70 0 1px, #0000 1px), repeating-linear-gradient(90deg, #0000 0 .07rem, #00000073 .07rem .09rem, #ffffff1f .09rem .1rem) .1rem 0 / calc(100% - .1rem) 100% no-repeat, linear-gradient(#d6d6d6, #7a7a7a 30%, #2e2e2e 72%, #0d0d0d); box-shadow: inset .1rem 0 0 #00000066, inset -1px 0 0 #ffffff26; }
+:root[data-theme="dark"] .hero-saber-pommel::before { content: ""; position: absolute; left: .06rem; top: .14rem; bottom: .14rem; width: .07rem; border-radius: 50%; background: #ffffff38; } /* the end cap's rim catching the light */
+:root[data-theme="dark"] .hero-saber-ring { width: .16rem; height: .7rem; border-radius: 1px; background: linear-gradient(90deg, #0000 0 40%, #fff6d580 50%, #0000 60%), linear-gradient(#fff4d1, #c9ab63 22%, #8a7033 55%, #3a2e14); box-shadow: inset 1px 0 0 #00000059, inset -1px 0 0 #00000059; }
+:root[data-theme="dark"] .hero-saber-grip { width: 1.9rem; height: .6rem; background: linear-gradient(#ffffff2e, #ffffff0a 22%, #0000 42%, #0000008c), repeating-linear-gradient(90deg, #121212 0 .1rem, #5a5a5a .1rem .115rem, #2a2a2a .115rem .15rem, #050505 .15rem .19rem), #161616; box-shadow: inset 0 1px 0 #ffffff1a, inset 0 -1px 0 #000; } /* rubber T-tracks: each ridge lit on its leading edge, shadowed behind */
+:root[data-theme="dark"] .hero-saber-body { width: 1rem; height: .66rem; background: radial-gradient(circle at .12rem .5rem, #1a1a1a 0 .035rem, #b5b5b5 .045rem, #0000 .06rem), radial-gradient(circle at .12rem .16rem, #1a1a1a 0 .035rem, #b5b5b5 .045rem, #0000 .06rem), repeating-linear-gradient(#ffffff0d 0 1px, #0000 1px 2px), linear-gradient(#ffffff 0 1px, #f2f2f2 1px, #bdbdbd 20%, #8f8f8f 38%, #4a4a4a 68%, #1c1c1c); box-shadow: inset 0 -1px 0 #00000080; } /* brushed steel, two screws by the grip */
+:root[data-theme="dark"] .hero-saber-body::before { content: ""; position: absolute; left: .22rem; top: -.13rem; width: .34rem; height: .16rem; border-radius: .1rem .1rem 0 0; background-color: #4a1015; background-image: radial-gradient(ellipse 60% 50% at 40% 30%, #ffffffa6, #fff0); box-shadow: 0 0 .2rem #ffffff1a, inset 0 -1px 0 #00000066; animation: saber-button .13s linear .26s forwards, saber-tint .78s ease-in 2.2s forwards; }
+:root[data-theme="dark"] .hero-saber-body::after { content: ""; position: absolute; right: .1rem; top: .19rem; width: .36rem; height: .28rem; border-radius: .05rem; background: repeating-linear-gradient(90deg, #0a0a0a 0 .045rem, #8a8a8a .045rem .06rem, #3c3c3c .06rem .09rem); box-shadow: inset 0 1px 1px #000000b3, 0 1px 0 #ffffff40; } /* cooling vents, sunk into the body */
+:root[data-theme="dark"] .hero-saber-emitter { width: .62rem; height: .92rem; border-radius: .08rem .24rem .24rem .08rem; background: linear-gradient(90deg, #0000 0 .1rem, #00000080 .1rem .13rem, #0000 .13rem), repeating-linear-gradient(90deg, #0000 0 .1rem, #000000a6 .1rem .14rem, #ffffff26 .14rem .155rem) .17rem 50% / calc(100% - .25rem) 44% no-repeat, linear-gradient(#ffffff 0 1px, #f0f0f0 1px, #a8a8a8 24%, #6a6a6a 46%, #2e2e2e 74%, #0e0e0e); box-shadow: inset 0 1px 0 #ffffff59, inset -1px 0 0 #00000099; } /* the shroud: a seam, slotted vents */
+:root[data-theme="dark"] .hero-saber-emitter::after { content: ""; position: absolute; right: -1px; top: .08rem; bottom: .08rem; width: .14rem; border-radius: 0 .2rem .2rem 0; background-color: var(--saber-blue); filter: blur(1px); mix-blend-mode: screen; opacity: 0; animation: saber-rim .5s ease-out .36s forwards, saber-tint .78s ease-in 2.2s forwards; } /* the crown lit by the blade, its colour following it */
 :root[data-theme="dark"] .hero-saber-blade { position: relative; flex: 1; height: .3rem; margin-left: -1px; border-radius: 0 999px 999px 0; transform-origin: left center; transform: scaleX(0); background: linear-gradient(90deg, #ffe1e4 0 40%, #e3f3ff 60% 100%) 100% 0 / 250% 100%; box-shadow: 0 0 2px #fff; animation: saber-ignite 1.1s cubic-bezier(.2, .9, .3, 1) .33s forwards, saber-bleed 3.38s ease-in-out 2.2s forwards, saber-hum 3.12s ease-in-out 1.45s infinite; }
 :root[data-theme="dark"] .hero-saber-blade::before, :root[data-theme="dark"] .hero-saber-blade::after { content: ""; position: absolute; border-radius: inherit; background: linear-gradient(90deg, #ff1f33 0 40%, #2b8dff 60% 100%) 100% 0 / 250% 100%; pointer-events: none; animation: saber-bleed 3.38s ease-in-out 2.2s forwards; }
 :root[data-theme="dark"] .hero-saber-blade::before { inset: -.22rem -.15rem; filter: blur(5px); opacity: .95; z-index: -1; }
 :root[data-theme="dark"] .hero-saber-blade::after { inset: -.7rem -.5rem; filter: blur(16px); opacity: .6; z-index: -2; animation: saber-bleed 3.38s ease-in-out 2.2s forwards, saber-plasma 2.21s ease-in-out 1.45s infinite; }
-:root[data-theme="dark"] .hero-saber-core { position: absolute; left: 0; right: .12rem; top: 50%; height: 42%; transform: translateY(-50%); border-radius: inherit; background: #fff; }
+:root[data-theme="dark"] .hero-saber-core { position: absolute; left: 0; right: .1rem; top: 50%; height: 78%; transform: translateY(-50%); border-radius: inherit; background: linear-gradient(90deg, #fff 0 8%, #fff0 30%) 0 0 / 100% 100%, linear-gradient(#fff0, #fffffff2 30% 70%, #fff0); box-shadow: 0 0 1px #fff; } /* white hot, soft at its edges, hottest by the emitter */
 :root[data-theme="dark"] .hero-saber-flow { position: absolute; inset: 0; border-radius: inherit; background: repeating-linear-gradient(90deg, #fff0 0 1.2rem, #ffffffa0 1.8rem, #fff0 2.4rem); opacity: .55; animation: saber-flow 1.04s linear infinite; }
 :root[data-theme="dark"] .hero-saber-flash { position: absolute; z-index: 1; left: 3.95rem; top: 50%; width: 1.3rem; height: 1.3rem; margin-top: -.65rem; border-radius: 50%; background-color: var(--saber-blue); box-shadow: inset 0 0 0 .4rem #ffffff80; filter: blur(4px); opacity: 0; pointer-events: none; animation: saber-flash 1s ease-out .29s forwards, saber-tint .78s ease-in 2.2s forwards, saber-flicker 3.12s ease-in-out 1.45s infinite; }
 /* Heat shimmer: the air over the blade wavers, its glow and the stone above it warped by #saber-heat (a drifting
@@ -764,6 +766,7 @@ right, in every theme; shown whole, on black, as it is narrower than the frame. 
 :root[data-theme="dark"] .hero-saber.is-windu .hero-saber-blade::after { animation: saber-windu 3.38s ease-in-out forwards, saber-plasma 2.21s ease-in-out 1.45s infinite; }
 :root[data-theme="dark"] .hero-saber.is-windu .hero-saber-flash { opacity: .7; background-color: var(--saber-red); animation: saber-flicker 3.12s ease-in-out 1.45s infinite, saber-windu-tint 1.1s ease-in 2s forwards; }
 :root[data-theme="dark"] .hero-saber.is-windu::after { opacity: .22; background-color: var(--saber-red); animation: saber-windu-tint 1.1s ease-in 2s forwards; }
+:root[data-theme="dark"] .hero-saber.is-windu .hero-saber-emitter::after { opacity: .85; background-color: var(--saber-red); animation: saber-windu-tint .78s ease-in 2.3s forwards; }
 :root[data-theme="dark"] .hero-saber.is-windu .hero-saber-body::before { background-color: var(--saber-red); animation: saber-windu-tint .78s ease-in 2.3s forwards; }
 @keyframes saber-heat { to { opacity: 1; } }
 @keyframes saber-ready { to { visibility: visible; } }
@@ -778,6 +781,7 @@ right, in every theme; shown whole, on black, as it is narrower than the frame. 
 @keyframes saber-flicker { 0%, 100% { opacity: .7; } 8% { opacity: .45; } 12% { opacity: .8; } 50% { opacity: .6; } }
 @keyframes saber-cast { to { opacity: .22; } }
 @keyframes saber-button { to { background-color: var(--saber-blue); } }
+@keyframes saber-rim { to { opacity: .85; } }
 @keyframes saber-tint { to { background-color: var(--saber-red); } }
 @media (prefers-reduced-motion: reduce) {
   :root[data-theme="dark"] .hero-saber *, :root[data-theme="dark"] .hero-saber *::before, :root[data-theme="dark"] .hero-saber *::after, :root[data-theme="dark"] .hero-saber::after { animation: none !important; }
@@ -785,11 +789,12 @@ right, in every theme; shown whole, on black, as it is narrower than the frame. 
   :root[data-theme="dark"] .hero-saber-blade, :root[data-theme="dark"] .hero-saber-blade::before, :root[data-theme="dark"] .hero-saber-blade::after { background-position: 0 0; }
   :root[data-theme="dark"] .hero-saber-flash { opacity: .7; }
   :root[data-theme="dark"] .hero-saber::after { opacity: .22; }
-  :root[data-theme="dark"] .hero-saber-flash, :root[data-theme="dark"] .hero-saber::after, :root[data-theme="dark"] .hero-saber-body::before { background-color: var(--saber-red); }
+  :root[data-theme="dark"] .hero-saber-flash, :root[data-theme="dark"] .hero-saber::after, :root[data-theme="dark"] .hero-saber-body::before, :root[data-theme="dark"] .hero-saber-emitter::after { background-color: var(--saber-red); }
+  :root[data-theme="dark"] .hero-saber-emitter::after { opacity: .85; }
   :root[data-theme="dark"] .hero-saber::before { display: none; }
   :root[data-theme="dark"] .hero-saber-tip { visibility: visible; }
   :root[data-theme="dark"] .hero-saber.is-windu .hero-saber-blade, :root[data-theme="dark"] .hero-saber.is-windu .hero-saber-blade::before, :root[data-theme="dark"] .hero-saber.is-windu .hero-saber-blade::after { background-position: 100% 0; }
-  :root[data-theme="dark"] .hero-saber.is-windu .hero-saber-flash, :root[data-theme="dark"] .hero-saber.is-windu::after, :root[data-theme="dark"] .hero-saber.is-windu .hero-saber-body::before { background-color: var(--saber-purple); }
+  :root[data-theme="dark"] .hero-saber.is-windu .hero-saber-flash, :root[data-theme="dark"] .hero-saber.is-windu::after, :root[data-theme="dark"] .hero-saber.is-windu .hero-saber-body::before, :root[data-theme="dark"] .hero-saber.is-windu .hero-saber-emitter::after { background-color: var(--saber-purple); }
 }
 /* Light theme only: the blade's motion drawn as moving lines between two points, SOURCE (a ringed point) and DESTINATION
    (a ringed diamond), in the same place (the rule above the title gives way to it as it does to the blade). The points
@@ -818,12 +823,25 @@ right, in every theme; shown whole, on black, as it is narrower than the frame. 
 :root[data-theme="light"] .hero-waves-end::after { border: 1px solid #5e5e5e; border-radius: 50%; opacity: 0; animation: waves-ring .8s ease-out .9s infinite; }
 :root[data-theme="light"] .hero-waves-destination::after { animation-delay: 3.3s; }
 :root[data-theme="light"] .hero-waves-path { position: relative; flex: 1; align-self: stretch; clip-path: inset(0 100% 0 0); animation: waves-open .42s cubic-bezier(.2, .9, .3, 1) .25s forwards; }
-:root[data-theme="light"] .hero-waves-path > i { position: absolute; inset: 0; background: linear-gradient(90deg, var(--to) 0 40%, var(--from) 60% 100%) 100% 0 / 250% 100%; -webkit-mask: var(--wave) 0 50% / var(--period) var(--amp) repeat-x; mask: var(--wave) 0 50% / var(--period) var(--amp) repeat-x; animation: waves-bleed 2.6s ease-in-out 2.67s forwards, waves-flow var(--speed) linear infinite, waves-surge .7s ease-out .25s backwards, waves-swell var(--swell) ease-in-out .95s infinite; }
-:root[data-theme="light"] .hero-waves-a { --wave: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 32' preserveAspectRatio='none'%3E%3Cpath d='M0 16C16 2 16 2 32 16S48 30 64 16' fill='none' stroke='white' stroke-width='2' vector-effect='non-scaling-stroke'/%3E%3C/svg%3E"); --period: 3.2rem; --amp: 58%; --speed: 1.6s; --swell: 1.9s; --from: #6b6b6b; --to: #2b2b2b; }
-:root[data-theme="light"] .hero-waves-b { --wave: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 32' preserveAspectRatio='none'%3E%3Cpath d='M0 16C16 2 16 2 32 16S48 30 64 16' fill='none' stroke='white' stroke-width='1.4' vector-effect='non-scaling-stroke'/%3E%3C/svg%3E"); --period: 5.2rem; --amp: 40%; --speed: 2.6s; --swell: 2.7s; --from: #a3a3a3; --to: #5e5e5e; }
-:root[data-theme="light"] .hero-waves-c { --wave: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 32' preserveAspectRatio='none'%3E%3Cpath d='M0 16C16 2 16 2 32 16S48 30 64 16' fill='none' stroke='white' stroke-width='1.1' vector-effect='non-scaling-stroke'/%3E%3C/svg%3E"); --period: 2.1rem; --amp: 24%; --speed: 1.1s; --swell: 1.3s; --from: #c4c4c4; --to: #8c8c8c; }
-:root[data-theme="light"] .hero-waves-path > .hero-waves-core { --from: #4d4d4d; --to: #141414; inset: calc(50% - 1px) 0; -webkit-mask: none; mask: none; animation: waves-bleed 2.6s ease-in-out 2.67s forwards; }
-:root[data-theme="light"] .hero-waves-path > .hero-waves-packet { inset: auto; left: 0; top: 50%; width: .34rem; height: .34rem; margin-top: -.17rem; border-radius: 50%; background: #2b2b2b; box-shadow: 0 0 0 .14rem #ffffffa0; -webkit-mask: none; mask: none; opacity: 0; animation: waves-transit 2.4s linear .9s infinite; }
+/* The three waves are inline SVG sine curves (partials/body.html), drawn at a scale set only by the box's height
+(viewBox 600 by 41.6, slice), so their strokes keep one width and stay sharp at any zoom; each is drawn twice, the light
+colour (--from) under the dark (--to), whose mask sweeps in from the left to bleed it dark, as the core line does.
+They flow left by one period (--period, in the SVG's units) and swell up and down (scaleY, which leaves the stroke's
+width alone, as the path's vector-effect asks). */
+:root[data-theme="light"] .hero-waves-path > i { position: absolute; inset: 0; }
+:root[data-theme="light"] .hero-waves-path svg { position: absolute; inset: 0; width: 100%; height: 100%; overflow: hidden; }
+:root[data-theme="light"] .hero-waves-path path { fill: none; stroke-linecap: round; vector-effect: non-scaling-stroke; transform-box: view-box; transform-origin: 50% 50%; animation: waves-surge .7s ease-out .25s backwards, waves-swell var(--swell) ease-in-out .95s infinite; }
+:root[data-theme="light"] .hero-waves-path svg g { animation: waves-flow var(--speed) linear infinite; }
+:root[data-theme="light"] .hero-waves-from { stroke: var(--from); }
+:root[data-theme="light"] .hero-waves-to { stroke: var(--to); -webkit-mask: linear-gradient(90deg, #000 0 40%, transparent 60% 100%) 100% 0 / 250% 100% no-repeat; mask: linear-gradient(90deg, #000 0 40%, transparent 60% 100%) 100% 0 / 250% 100% no-repeat; animation: waves-bleed-mask 2.6s ease-in-out 2.67s forwards; }
+/* The waves fade out over their last stretch at each end, so they settle into the core line before the end points
+instead of stopping at them. */
+:root[data-theme="light"] .hero-waves-a, :root[data-theme="light"] .hero-waves-b, :root[data-theme="light"] .hero-waves-c { -webkit-mask: linear-gradient(90deg, transparent, #000 18%, #000 82%, transparent); mask: linear-gradient(90deg, transparent, #000 18%, #000 82%, transparent); }
+:root[data-theme="light"] .hero-waves-a { --period: 51.2px; --speed: 1.6s; --swell: 1.9s; --from: #6b6b6b; --to: #2b2b2b; }
+:root[data-theme="light"] .hero-waves-b { --period: 83.2px; --speed: 2.6s; --swell: 2.7s; --from: #a3a3a3; --to: #5e5e5e; }
+:root[data-theme="light"] .hero-waves-c { --period: 33.6px; --speed: 1.1s; --swell: 1.3s; --from: #c4c4c4; --to: #8c8c8c; }
+:root[data-theme="light"] .hero-waves-path > .hero-waves-core { --from: #4d4d4d; --to: #141414; inset: calc(50% - 1px) 0; border-radius: 1px; background: linear-gradient(90deg, var(--to) 0 40%, var(--from) 60% 100%) 100% 0 / 250% 100%; animation: waves-bleed 2.6s ease-in-out 2.67s forwards; }
+:root[data-theme="light"] .hero-waves-path > .hero-waves-packet { inset: auto; left: 0; top: 50%; width: .34rem; height: .34rem; margin-top: -.17rem; border-radius: 50%; background: #2b2b2b; box-shadow: 0 0 0 .14rem #ffffffa0; opacity: 0; animation: waves-transit 2.4s linear .9s infinite; }
 :root[data-theme="light"] .hero-waves-packet:nth-of-type(6) { animation-delay: 1.7s; }
 :root[data-theme="light"] .hero-waves-packet:nth-of-type(7) { animation-delay: 2.5s; }
 @keyframes waves-appear { from { opacity: 0; transform: scale(.6); } to { opacity: 1; transform: scale(1); } }
@@ -831,14 +849,16 @@ right, in every theme; shown whole, on black, as it is narrower than the frame. 
 @keyframes waves-transit { 0% { left: 0; opacity: 0; } 8% { opacity: 1; } 92% { opacity: 1; } 100% { left: calc(100% - .34rem); opacity: 0; } }
 @keyframes waves-open { 0% { clip-path: inset(0 100% 0 0); opacity: .4; } 35% { opacity: 1; } 50% { opacity: .5; } 62% { opacity: 1; } 100% { clip-path: inset(0 0 0 0); opacity: 1; } }
 @keyframes waves-bleed { to { background-position: 0 0; } }
-@keyframes waves-flow { to { -webkit-mask-position: calc(var(--period) * -1) 50%; mask-position: calc(var(--period) * -1) 50%; } }
-@keyframes waves-surge { 0% { -webkit-mask-size: var(--period) 0%; mask-size: var(--period) 0%; } 45% { -webkit-mask-size: var(--period) calc(var(--amp) * 1.6); mask-size: var(--period) calc(var(--amp) * 1.6); } 100% { -webkit-mask-size: var(--period) var(--amp); mask-size: var(--period) var(--amp); } }
-@keyframes waves-swell { 0%, 100% { -webkit-mask-size: var(--period) var(--amp); mask-size: var(--period) var(--amp); } 30% { -webkit-mask-size: var(--period) calc(var(--amp) * .55); mask-size: var(--period) calc(var(--amp) * .55); } 65% { -webkit-mask-size: var(--period) calc(var(--amp) * 1.25); mask-size: var(--period) calc(var(--amp) * 1.25); } }
+@keyframes waves-flow { to { transform: translateX(calc(var(--period) * -1)); } }
+@keyframes waves-surge { 0% { transform: scaleY(0); } 45% { transform: scaleY(1.6); } 100% { transform: scaleY(1); } }
+@keyframes waves-swell { 0%, 100% { transform: scaleY(1); } 30% { transform: scaleY(.55); } 65% { transform: scaleY(1.25); } }
+@keyframes waves-bleed-mask { to { -webkit-mask-position: 0 0; mask-position: 0 0; } }
 @media (prefers-reduced-motion: reduce) {
   :root[data-theme="light"] .hero-waves *, :root[data-theme="light"] .hero-waves *::before, :root[data-theme="light"] .hero-waves *::after { animation: none !important; }
   :root[data-theme="light"] .hero-waves-end { opacity: 1; }
   :root[data-theme="light"] .hero-waves-path { clip-path: none; }
   :root[data-theme="light"] .hero-waves-path > i { background-position: 0 0; }
+  :root[data-theme="light"] .hero-waves-to { -webkit-mask-position: 0 0; mask-position: 0 0; }
   :root[data-theme="light"] .hero-waves-path > .hero-waves-packet { display: none; }
 }
 /* Sepia theme only: the exponential function, y = e^x, in the same place as the blade (dark) and the moving lines (light),
@@ -925,7 +945,7 @@ right, in every theme; shown whole, on black, as it is narrower than the frame. 
 @keyframes led-colon-blink { 50% { opacity: .15; } }
 @media (prefers-reduced-motion: reduce) { .led-colon { animation: none; } }
 /* The quote above the home page carousel (layouts/index.html). */
-.home-quote { position: relative; margin: 3.5rem auto 0; padding: 1.5rem 0 1rem; text-align: center; }
+.home-quote { position: relative; margin: 1.75rem auto 0; padding: .75rem 0 1rem; text-align: center; }
 /* A wide brass glow behind the motto. */
 .home-quote::before { content: ""; position: absolute; inset: 0 10%; z-index: -1; pointer-events: none; background: radial-gradient(ellipse at 50% 60%, color-mix(in srgb, var(--brass) 12%, transparent), transparent 70%); }
 .home-quote blockquote { margin: 0; font-family: var(--display); font-weight: 700; text-transform: uppercase; letter-spacing: .32em; font-size: clamp(1.3rem, 4.3vw, 3.4rem); line-height: 1.1; white-space: nowrap; padding-left: .32em; animation: motto-in 1.6s cubic-bezier(.2, .7, .2, 1) .3s both; }
