@@ -14,7 +14,7 @@ weight = 99
 #### "Every one lives out a myth, and you should know what your myth is because maybe it's a tragedy"
 ---
 
-Jews stole your birthright, now there’s only ritual without reflection.
+Everyone forgot their birthright, now there’s only ritual without reflection.
 
 [https://en.m.wikipedia.org/wiki/Hero's_journey](https://en.m.wikipedia.org/wiki/Hero's_journey)
 
@@ -30,7 +30,7 @@ Most of us don't even start the journey, or use a [journal](https://www.investop
 ##### "You can't tell the difference between what's TRUE and what feels good"
 -Scott Duncan
 
-I was a fundamentalist Catholic for more than 20 years, I found out twice in the last 6 years that I was still a Woofucker. Rather than ignoring my mistake, I looked at it deeply. The Bible is a stupid evil book, but a good metaphor can change how One sees and interacts with the world [see Jordan Peterson's work for details].
+I was a fundamentalist Catholic for more than 20 years, I found out twice in the last 6 years that I was still a Woofucker. Rather than ignoring my mistake, I looked at it deeply. The Bible is a stupid evil book, but a good metaphor can change how One sees and interacts with the world \[see [Jordan Peterson's work](https://www.youtube.com/watch?v=DtiRzQMgBDM) for details\].
 
 ##### "Leverage the negative"
 -Scott Duncan
