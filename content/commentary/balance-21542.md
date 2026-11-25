@@ -8,4 +8,6 @@ connects:
   - "/dictionary/"
 ---
 
-The notice of mistake brings accounting to ZERO, the burden to show you have given away any rights starts with the questions in this document. https://thetenderforlaw.com/articles/scott-duncan/all-the-shit-that-dean-kory-is-doing-wrong/ https://thetenderforlaw.com/dictionary/#notice-of-mistake
+The notice of mistake brings accounting to ZERO, the burden to show you have given away any rights starts with the questions in this document.
+https://thetenderforlaw.com/articles/scott-duncan/all-the-shit-that-dean-kory-is-doing-wrong/ 
+https://thetenderforlaw.com/dictionary/#notice-of-mistake
