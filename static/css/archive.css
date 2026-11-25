@@ -2125,3 +2125,31 @@ a.book-cobra:focus-visible { outline: 2px solid var(--brass); outline-offset: 4p
 .book-cobra.shimmer { overflow: visible; }
 .book-cobra.shimmer::after { -webkit-mask: url("../images/emblems/cobra-colour.webp") center / contain no-repeat; mask: url("../images/emblems/cobra-colour.webp") center / contain no-repeat; }
 @media (prefers-reduced-motion: reduce) { a.book-cobra { transition: none; } }
+/* Sidebar fleuron: a hairline rule with a small ornament, pressed in (soft-light), above the first menu.
+   Sepia ❦, Light ⚖ (the carousel's scales), Dark ✠. */
+.article-nav:not(.article-nav + .article-nav)::before {
+  content: "❦"; display: block; margin: -.25rem 0 1rem; text-align: center;
+  font-family: var(--display); font-size: 1.05rem; line-height: 1; color: var(--brass); opacity: .75;
+  background: linear-gradient(var(--brass), var(--brass)) left 50% / calc(50% - 1rem) 1px no-repeat,
+              linear-gradient(var(--brass), var(--brass)) right 50% / calc(50% - 1rem) 1px no-repeat;
+  mix-blend-mode: soft-light;
+}
+:root[data-theme="light"] .article-nav:not(.article-nav + .article-nav)::before { content: "⚖"; mix-blend-mode: multiply; opacity: .55; }
+:root[data-theme="dark"] .article-nav:not(.article-nav + .article-nav)::before { content: "✠"; }
+/* Musical Recap, option B: a gramophone record. Grooved black disc with a brass label; while it plays the disc
+   and the lettering round it turn slowly (the play/pause glyph on the label stays upright). */
+.musical-recap-button { background: repeating-radial-gradient(circle, var(--c-11120e) 0 1.5px, #24231d 2px 2.5px), var(--c-11120e); box-shadow: 0 4px 10px var(--c-000000a6), inset 0 0 0 2px #0008; }
+.musical-recap-button::before { top: 0; left: 0; width: 100%; height: 100%; background: conic-gradient(from 30deg, #fff0 0 10%, #ffffff1c 14%, #fff0 20% 60%, #ffffff14 64%, #fff0 70%); box-shadow: none; }
+.musical-recap-button::after { top: 31%; left: 31%; width: 38%; height: 38%; background: radial-gradient(circle, var(--c-11120e) 0 7%, var(--brass) 9% 100%); box-shadow: inset 0 0 0 1px #0006; }
+.musical-recap-button span::before, .musical-recap-button span::after { background-color: var(--c-11120e); box-shadow: none; }
+.musical-recap-button.is-playing span::before, .musical-recap-button.is-playing span::after { background-color: var(--c-11120e); box-shadow: none; }
+.musical-recap-button span { top: 50%; left: 50%; transform: translate(0, 0); }
+.musical-recap-button:not(.is-playing) span { opacity: .85; }
+@keyframes recap-spin { to { transform: rotate(360deg); } }
+.musical-recap-button.is-playing::before { animation: recap-spin 1.8s linear infinite; box-shadow: none; }
+.musical-recap:has(.is-playing) .musical-recap-ring { animation: recap-spin 24s linear infinite; }
+@media (prefers-reduced-motion: reduce) { .musical-recap-button::before, .musical-recap-ring { animation: none !important; } }
+/* Light: the theme's palette turns the disc pale, so it is set in fixed colours, a black record with a gold label. */
+:root[data-theme="light"] .musical-recap-button { background: repeating-radial-gradient(circle, #141410 0 1.5px, #2b2a23 2px 2.5px), #141410; box-shadow: 0 4px 10px #0005, inset 0 0 0 2px #0008; }
+:root[data-theme="light"] .musical-recap-button::after { background: radial-gradient(circle, #141410 0 7%, #c9a24e 9% 100%); }
+:root[data-theme="light"] .musical-recap-button span::before, :root[data-theme="light"] .musical-recap-button span::after { background-color: #141410; }
