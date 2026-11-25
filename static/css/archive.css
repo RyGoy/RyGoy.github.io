@@ -2153,3 +2153,26 @@ a.book-cobra:focus-visible { outline: 2px solid var(--brass); outline-offset: 4p
 :root[data-theme="light"] .musical-recap-button { background: repeating-radial-gradient(circle, #141410 0 1.5px, #2b2a23 2px 2.5px), #141410; box-shadow: 0 4px 10px #0005, inset 0 0 0 2px #0008; }
 :root[data-theme="light"] .musical-recap-button::after { background: radial-gradient(circle, #141410 0 7%, #c9a24e 9% 100%); }
 :root[data-theme="light"] .musical-recap-button span::before, :root[data-theme="light"] .musical-recap-button span::after { background-color: #141410; }
+/* Light: pressable blocks (after how-its-wired.vercel.app's chunky parts and tiles). Buttons stand a little proud on a
+   hard brass edge, lift on hover and press flat when clicked. */
+:root[data-theme="light"] :is(.book-button, .volume-pagination a, .article-nav > summary, .article-nav > .nav-heading, .hero-links a) {
+  box-shadow: 0 3px 0 #6e4f0040, 0 4px 8px #6e4f0014; transform: translateY(0); transition: transform .12s ease, box-shadow .12s ease, background .15s, border-color .15s, color .15s;
+}
+:root[data-theme="light"] :is(.book-button, .volume-pagination a, .article-nav > summary, .article-nav > .nav-heading, .hero-links a):hover { transform: translateY(-1px); box-shadow: 0 4px 0 #6e4f0047, 0 7px 12px #6e4f001c; }
+:root[data-theme="light"] :is(.book-button, .volume-pagination a, .article-nav > summary, .article-nav > .nav-heading, .hero-links a):active { transform: translateY(3px); box-shadow: 0 0 0 #6e4f0040, 0 1px 2px #6e4f0014; }
+@media (prefers-reduced-motion: reduce) { :root[data-theme="light"] :is(.book-button, .volume-pagination a, .article-nav > summary, .article-nav > .nav-heading, .hero-links a) { transition: none; } }
+/* Sepia and Dark: their sidebars are dark, where soft-light all but hides the fleuron and a black record sinks into
+   the cloth. The fleuron is drawn plainly, brighter, with a faint glow; the record gets a brass rim and a lift. */
+:root:not([data-theme="light"]) .article-nav:not(.article-nav + .article-nav)::before { mix-blend-mode: normal; opacity: .9; font-size: 1.2rem; text-shadow: 0 0 6px var(--c-b89a631c); }
+:root:not([data-theme="light"]) .musical-recap-button { box-shadow: 0 0 0 1.5px var(--brass), 0 0 14px var(--c-b89a631c), 0 4px 10px var(--c-000000a6), inset 0 0 0 2px #0008; }
+:root:not([data-theme="light"]) .musical-recap-button::after { background: radial-gradient(circle, var(--c-11120e) 0 7%, var(--c-e1c797) 9% 100%); }
+:root:not([data-theme="light"]) .musical-recap-ring { fill: var(--c-e1c797); }
+/* Polish. The fleuron's rules taper away from the ornament, as a printer's rule does; the record's label gets a thin
+   printed ring and a bright spindle, and its sheen sits still while the grooves turn under it. */
+.article-nav:not(.article-nav + .article-nav)::before {
+  background: linear-gradient(90deg, #0000, var(--brass)) left 50% / calc(50% - 1.1rem) 1px no-repeat,
+              linear-gradient(90deg, var(--brass), #0000) right 50% / calc(50% - 1.1rem) 1px no-repeat;
+}
+.musical-recap-button::after { box-shadow: inset 0 0 0 1px #0006, inset 0 0 0 .32rem #0000, inset 0 0 0 calc(.32rem + 1px) #0003; }
+.musical-recap-button span { filter: drop-shadow(0 1px 0 #fff3); }
+:root:not([data-theme="light"]) .musical-recap-button:hover { box-shadow: 0 0 0 1.5px var(--c-e1c797), 0 0 18px var(--c-b89a6330, #b89a6330), 0 4px 10px var(--c-000000a6), inset 0 0 0 2px #0008; }
