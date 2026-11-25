@@ -32,14 +32,6 @@
           <button type="button" data-theme-choice="dark" aria-pressed="false">Dark</button>
         </span>
       </div>
-      <div class="nav-group">
-        <a class="nav-heading" href="{{ site.Home.RelPermalink }}#volumes">Volumes</a>
-        <ol class="volume-nav">
-        {{ range partialCached "volumes.html" . }}
-          <li><a href="{{ .RelPermalink }}"{{ if eq $.FirstSection.RelPermalink .RelPermalink }} aria-current="page"{{ end }}><span class="volume-number" aria-hidden="true">{{ .Params.symbol | default (upper (strings.TrimPrefix "vol_" .Section)) }}</span>{{ .Title }}</a></li>
-        {{ end }}
-        </ol>
-      </div>
       {{ with site.GetPage "/articles" }}
       <details class="nav-group article-nav"{{ if eq $.Section "articles" }} open{{ end }}>
         <summary>Articles</summary>
@@ -62,6 +54,15 @@
         </ul>
       </details>
       {{ end }}
+      {{/* Volumes: last of the links, open by default; a reader can fold it away. */}}
+      <details class="nav-group article-nav volume-group" open>
+        <summary>Volumes</summary>
+        <ol class="volume-nav">
+        {{ range partialCached "volumes.html" . }}
+          <li><a href="{{ .RelPermalink }}"{{ if eq $.FirstSection.RelPermalink .RelPermalink }} aria-current="page"{{ end }}><span class="volume-number" aria-hidden="true">{{ .Params.symbol | default (upper (strings.TrimPrefix "vol_" .Section)) }}</span>{{ .Title }}</a></li>
+        {{ end }}
+        </ol>
+      </details>
       {{/* Musical Recap: play/pause for static/audio/the-sound-of-violence.mp3, which keeps playing from page to page
            (static/js/musical-recap.js, which shows it; hidden without JavaScript). The words round it are decoration: the
            button's own name says the same. Its lyrics, if static/audio/the-sound-of-violence.lrc exists, show in a floating
