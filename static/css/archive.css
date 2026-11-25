@@ -2109,6 +2109,8 @@ a.page-emblem:focus-visible { outline: 2px solid var(--brass); outline-offset: 6
 .hero-icons { list-style: none; display: flex; justify-content: center; align-items: flex-start; gap: clamp(1rem, 5vw, 2.5rem); margin: 1.2rem auto 0; padding: 0; }
 .hero-icons a { display: flex; flex-direction: column; align-items: center; gap: .4rem; color: var(--brass); text-decoration: none; font-size: clamp(.7rem, 2.6vw, .85rem); white-space: nowrap; letter-spacing: .08em; text-transform: uppercase; transition: transform .2s, filter .2s; }
 .hero-icons img { display: block; width: auto; height: 64px; object-fit: contain; }
+/* The Grand Fluff Auto logo (180×162) has no caption: it reaches down to the baseline of the captions beside it (64px icon, .4rem gap, 1.2em to the baseline), its full width counted, so the three stay centred over the buttons below. */
+.hero-gfa img { height: calc(64px + .4rem + 1.2em); width: calc((64px + .4rem + 1.2em) * 10 / 9); max-width: none; }
 .hero-icons svg { width: 64px; height: 64px; fill: currentColor; }
 .hero-icons a:hover, .hero-icons a:focus-visible { transform: translateY(-3px); filter: drop-shadow(0 0 .5rem color-mix(in srgb, var(--brass) 45%, transparent)); }
 
