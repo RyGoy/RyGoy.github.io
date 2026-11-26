@@ -3,7 +3,7 @@ title = "What's in the Jab?"
 # Linked from the sidebar (layouts/partials/navbar.html). Content to come.
 +++
 
-The Original Notice Posted by ROGUESUPORT INC can be found here: https://github.com/roguesupport/Assemblies-of-putative-SARS-CoV2-spike-encoding-mRNA-sequences-for-vaccines-BNT-162b2-and-mRNA-1273
+The Original Notice Posted by ROGUESUPPORT INC can be found here: https://github.com/roguesupport/Assemblies-of-putative-SARS-CoV2-spike-encoding-mRNA-sequences-for-vaccines-BNT-162b2-and-mRNA-1273
 
 Assemblies-of-putative-SARS-CoV2-spike-encoding-mRNA-sequences-for-vaccines-BNT-162b2-and-mRNA-1273
 ##version 0.21Beta 04/14/21: (updates intended to (i) clarify the clinical and research importance of sequence information and strand topology measurements, and (ii) clarify that the mRNA sequence is not a recipe to produce vaccine)##
