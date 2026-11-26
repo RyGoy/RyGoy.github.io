@@ -10,6 +10,16 @@ source = "https://openlibrary.org/works/OL2974379W"
 source_label = "Find it on Open Library"
 weight = 17
 shelf = "Nonfiction"
+# The emblem beside the title, in place of the rose window: the cobra in its own colours (static/images/emblems/cobra-colour.webp).
+emblem = "cobra"
+
+# The cobra is a link that plays this video in a pop-up (layouts/partials/page-emblem.html).
+[emblem_video]
+src = "/videos/hitch-slap.mp4"
+poster = "/videos/hitch-slap.webp"
+title = "Hitchslap"
+width = 720
+height = 1280
 
 [copyright]
 status = "In copyright. Twelve published the book in the United States, and Atlantic Books in Britain, in 2007. Hitchens died in 2011, and the copyright passed to his estate."
