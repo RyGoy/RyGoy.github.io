@@ -97,5 +97,4 @@ A lie is deliberately wrong accounting, it is not an unintentional mistake. We r
 
 Who else is going to take responsibility if a Man doesn't? Turned out to be the answer to the second question that "N" and I were stuck on. #ScottIsAlwaysRight
 
-
-
+![A knight in armour and a woman with long fair hair in a white dress walk away hand in hand across a meadow of dandelions towards a distant castle, captioned “Let’s be warriors for heaven on earth”](/images/articles/marvel-jesus-better-than-jesus-heaven-on-earth.jpg)
