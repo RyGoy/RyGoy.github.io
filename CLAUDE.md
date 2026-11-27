@@ -25,6 +25,7 @@ The lessons are also the site's pages: `[module]` in `config.toml` mounts `guide
 - Dev server: `hugo server`
 - Production build (mirrors CI): `hugo --minify`
 - Hugo version is pinned to **0.152.2 extended** in `.github/workflows/hugo.yml` (0.114 until November 2026, when it failed some builds with `readAndProcessContent: open …/public/_index.html`). Avoid template functions newer than 0.152.2.
+- Theme screenshots: `scripts/theme_screens.py <built site> <out dir> [--compare <earlier out dir>]` (headless Chrome plus Pillow) shoots about a dozen key pages in Sepia, Light and Dark at desktop and phone widths, with reduced motion and a seeded `Math.random`, so two runs of the same build match. Before a change that should leave the themes as they are, build `main` and take a set; after it, build again and compare: it lists every shot over 0.1% changed, writes a `-diff.png` showing where, and exits non-zero. Build and shoot outside the repo (no `public/`).
 - No tests or linter. Verify changes by building and inspecting output. The content tree is ~126k files, so full builds are slow.
 
 ## Deployment
