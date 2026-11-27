@@ -1,5 +1,6 @@
 +++
-author = "The Tender For Law"
+author = "Ryan Wallace"
+cc_license = true
 title = "The Maxims of Equity"
 date = "2026-11-11"
 description = "The short rules the Court of Chancery decides by: where each was first stated, what it meant then, and the original report or book to check it in"

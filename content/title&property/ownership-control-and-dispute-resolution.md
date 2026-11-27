@@ -1,5 +1,6 @@
 +++
-author = "The Tender For Law"
+author = "Ryan Wallace"
+cc_license = true
 title = "Ownership, Control, and Dispute Resolution"
 date = "2026-11-02"
 description = "How property rights move from person to person, where each one sits on the balance sheet, and how owners keep others out, up to defending the home"

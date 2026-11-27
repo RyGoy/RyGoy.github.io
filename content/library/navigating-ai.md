@@ -2,7 +2,8 @@
 title = "Navigating AI"
 cover = "images/library/navigating-ai.webp"
 cover_alt = "Google's AI Mode answering \"Tell me about Scott Duncan and the tender for law\": it calls him a \"Canadian pseudolegal theorist\", citing Kahane Law Office"
-author = "Google's AI Mode (Gemini), put to the test"
+author = "Ryan Wallace"
+cc_license = true
 edition = "Four conversations, 27 November 2026"
 description = "Ask Google's AI about Scott Duncan and it describes Robert Menard. The courts, scholars and encyclopedias it draws on write about Menard's Freemen and never name Scott, so it judges him as Menard. Four conversations, checked line by line."
 source = "https://www.google.com/search?udm=50"

@@ -1,4 +1,6 @@
 +++
+author = "Ryan Wallace"
+cc_license = true
 title = "Start Here: Debits and Credits"
 description = "Debits and credits from zero, in five minutes: what a business has, what it owes, the claim of the one who put money in, and the one rule that says which side each change goes on."
 weight = 1

@@ -1,4 +1,6 @@
 +++
+author = "Ryan Wallace"
+cc_license = true
 title = "Debit and Credit Flash Cards"
 description = "Choose the accounts to debit and credit for each accounting transaction, starting from zero with a lemonade stand."
 layout = "flashcards"

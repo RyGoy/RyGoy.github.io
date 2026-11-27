@@ -1,9 +1,11 @@
 +++
+author = "Ryan Wallace"
 title = "You Do the Crime, Someone Else Does the Time"
 description = "A letter to a Christian friend: an insurer is a surety for your accidents and your liability. Treating Jesus the same way, with faith as the premium and prayer in place of restitution, is immoral, and it leaves the injured party unpaid."
 date = "2026-11-01"
 weight = 1
 tags = ["SURETY", "ACCOUNTING"]
+cc_license = true
 +++
 
 ![A mock Disney Pixar film poster, "Regreta: Ghosts of the Past": a tattooed young woman with her arms crossed and a sorry look walks barefoot towards the viewer, followed by a crowd of crying, ghostly blue babies](/images/articles/someone-else-does-the-time.jpg)

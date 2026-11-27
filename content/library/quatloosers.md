@@ -2,7 +2,8 @@
 title = "Quatloosers"
 cover = "images/library/quatloosers.webp"
 cover_alt = "The first page of the Quatloos thread \"Scott Duncan strikes back in Quebec\""
-author = "The posters of Quatloos!"
+author = "Ryan Wallace"
+cc_license = true
 edition = "Quatloos! forum, 2015–2017, as read in November 2026"
 description = "Scott Duncan said what tender, surety and the Charter mean. Quatloos answered with comparisons, insults and \"as near as I can tell\". Their own posts, each saved in case it disappears."
 source = "https://www.quatloos.com/Q-Forum/viewtopic.php?t=11275"
