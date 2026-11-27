@@ -34,6 +34,7 @@
 <header class="page-heading reading-column">
   <p class="eyebrow"><a href="{{ .Parent.RelPermalink }}">{{ .Parent.Title }}</a></p>
   <h1>{{ .Title }}</h1>
+  {{ with .Params.author }}<p class="article-author">{{ . }}</p>{{ end }}
   {{ with .Params.image }}{{ $size := imageConfig (printf "static%s" .) }}
   <img class="fc-title-image" src="{{ . | relURL }}" width="{{ $size.Width }}" height="{{ $size.Height }}" alt="{{ $.Params.image_alt }}">
   {{ end }}
@@ -91,6 +92,7 @@
     {{ end }}
   </div>
 </div>
+<div class="reading-column">{{ partial "cc-license.html" . }}</div>
 <script type="application/json" id="fc-data">{{ $decks | jsonify | safeJS }}</script>
 <script src="{{ "js/flashcards.js" | relURL }}" defer></script>
 {{ end }}

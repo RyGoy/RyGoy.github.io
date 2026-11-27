@@ -22,7 +22,6 @@
     {{ if or .Params.tags .Params.categories }}<details class="article-metadata"><summary>Tags &amp; categories</summary>{{ range slice "tags" "categories" }}{{ with $.GetTerms . }}<p>{{ range $i, $term := . }}{{ if $i }} · {{ end }}<a href="{{ $term.RelPermalink }}">{{ upper $term.LinkTitle }}</a>{{ end }}</p>{{ end }}{{ end }}</details>{{ end }}
   </header>
   <div class="prose">{{ .Content }}</div>
-  {{/* Articles shared under CC BY-NC-ND 3.0 (front matter cc_license = true) say so once, after the text. */}}
-  {{ if .Params.cc_license }}<p class="article-license">Shared under a <a href="https://creativecommons.org/licenses/by-nc-nd/3.0/" rel="license noopener">Creative Commons Attribution-NonCommercial-NoDerivs 3.0 Unported License</a>.</p>{{ end }}
+  {{ partial "cc-license.html" . }}
   {{ if $writing }}{{ partial "commentary-panel.html" . }}{{ end }}
 </article>

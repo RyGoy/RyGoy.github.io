@@ -1,4 +1,6 @@
 +++
+author = "Ryan Wallace"
+cc_license = true
 title = "Bills of Exchange"
 description = "How a bill of exchange moves a debt between parties, who stands as surety for whom, and how each step is recorded in the books."
 +++
