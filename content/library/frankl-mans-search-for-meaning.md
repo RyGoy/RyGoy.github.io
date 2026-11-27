@@ -8,7 +8,7 @@ description = "A psychiatrist's account of surviving Auschwitz and Dachau, and t
 coming_soon = true
 source = "https://openlibrary.org/works/OL1268413W"
 source_label = "Find it on Open Library"
-weight = 24
+weight = 25
 shelf = "Nonfiction"
 
 [copyright]
