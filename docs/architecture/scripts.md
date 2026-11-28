@@ -16,7 +16,7 @@ The site itself is HTML, CSS and JavaScript. Python came in on 6 November 2026, 
 | `scripts/import_db.py "<TTFL DB.db>" [--dry-run]` | Imports the posts and comments a later export has and the site lacks | [Recovered records](recovered-records.md) |
 | `scripts/archive_links.py` | Finds archived copies of outside links; slow, can be stopped and continued | [Recovered records](recovered-records.md) |
 | `scripts/import_photos.py <collection>` | Copies recovered pictures in and writes `data/photos.json` | [Recovered records](recovered-records.md) |
-| `scripts/theme_colours.py` | Works out the Light and Dark colours from the Sepia ones | [Design and themes](design-and-themes.md) |
+| `scripts/theme_screens.py <built site> <out> [--compare <earlier>]` | Screenshots each theme at desktop and phone widths, and lists what changed since an earlier set | [Design and themes](design-and-themes.md) |
 | `scripts/anthology/*.py` | The printout pipeline (needs Pillow and poppler) | [Anthology](anthology.md) |
 | `scripts/guide_build.py [check]` | Builds the beginner's guide's term notes and quote candidates, and checks every quote in its lessons | `guide/README.md` |
 | `scripts/docs_changelog.py` | Refreshes [What we built](../changelog.md) from GitHub (needs `gh`) | [Home](../README.md) |

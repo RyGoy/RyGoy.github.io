@@ -10,7 +10,7 @@
 // draw one rectangle) is left out. Its clock starts at 50, not the pen's -10000.
 // Plasma grid: "Shader Background" by Le Thanh, https://21st.dev/@minhxthanh/components/shader-background. Its own
 // dark blue-to-purple ground and purple lines are replaced by the theme's colours: the carousel's background
-// (u_ground) and --brass (u_ink), read from the stylesheet, so the lines move over the page's own parchment.
+// (u_ground) and --accent (u_ink), read from the stylesheet, so the lines move over the page's own parchment.
 (() => {
   const VERTEX = 'attribute vec2 position; void main() { gl_Position = vec4(position, 0.0, 1.0); }';
 
@@ -205,7 +205,7 @@
       theme = document.documentElement.getAttribute('data-theme');
       canvas.hidden = !programs[theme];
       const css = getComputedStyle(carousel);
-      ground = rgb(css.backgroundColor); ink = rgb(css.getPropertyValue('--brass'));
+      ground = rgb(css.backgroundColor); ink = rgb(css.getPropertyValue('--accent'));
       cancelAnimationFrame(frame); frame = 0;
       if (programs[theme] && onScreen) frame = requestAnimationFrame(draw);
     };
