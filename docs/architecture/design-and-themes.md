@@ -6,7 +6,8 @@ The site's look: a dark "occult codex", in three colour themes, with animations 
 
 - **One stylesheet:** `static/css/archive.css`, loaded from `partials/head.html`. The font is Cormorant Garamond (`static/fonts/`).
 - **Three themes:** Sepia (the default), Light and Dark, switched in the sidebar and kept in the browser (`ttfl-theme`). Until a visitor picks one, a device set to light mode gets Light. An inline script sets `data-theme` on the page before it paints.
-- **Every colour is a variable.** `scripts/theme_colours.py` works out the Light and Dark values from the Sepia ones, and rewrites that block of the stylesheet. Run it after adding colours.
+- **13 colour roles.** Every themed colour is one of 13 roles (the page, text, the accents, lines, shadow, ...) or a mix of two of them, so a theme sets the roles only: the start of the character themes, where each character is a set of roles. The three current themes also keep the colours the mixes don't reproduce, at their old values, until each is redesigned. Details: `CLAUDE.md`, "Colour themes".
+- **Checking a change:** `scripts/theme_screens.py` screenshots each theme before and after and lists what changed.
 
 ## On the home page
 
